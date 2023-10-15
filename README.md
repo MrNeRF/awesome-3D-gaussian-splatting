@@ -5,7 +5,7 @@ A curated list of papers and resources focused on 3D Gaussian Splatting, intende
 ### Update Log:
 - **October 15, 2023**: Initial list with first 6 papers.
 
-## Seminal Paper Introducing 3D Gaussian Splatting
+## Seminal Paper Introducing 3D Gaussian Splatting:
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
 **Authors**: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
 
@@ -32,9 +32,11 @@ time rendering. We demonstrate state-of-the-art visual quality and real-time
 rendering on several established datasets.
 </details>
   
+  ## Open Source Implementations
+- Original code: 
   [📄 Paper (Low Resolution)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_low.pdf) | [📄 Paper (High Resolution)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | [💻 Code](https://github.com/graphdeco-inria/gaussian-splatting) | [🎥 Short Presentation](https://youtu.be/T_kXY43VZnk?si=DrkbDFxQAv5scQNT) | [🎥 Explanation Video](https://www.youtube.com/live/xgwvU7S0K-k?si=edF8NkYtsRbgTbKi)
 
-## Dynamic 3D Gaussian Splatting
+## Dynamic 3D Gaussian Splatting:
 
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
@@ -87,7 +89,7 @@ state-of-the-art method.
 
   [📄 Paper](https://arxiv.org/pdf/2310.08528.pdf) | [🌐 Project Page](https://guanjunwu.github.io/4dgs/) | [💻 Code](https://github.com/hustvl/4DGaussians)
   
-## Diffusion 3D Gaussian Splatting
+## Diffusion 3D Gaussian Splatting:
 
 ### 1. DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation
 **Authors**: Jiaxiang Tang, Jiawei Ren, Hang Zhou, Ziwei Liu, Gang Zeng
@@ -160,5 +162,23 @@ GPU, much faster than previous methods, while the generated instances can be dir
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code (to be released)](https://github.com/hustvl/GaussianDreamer) 
+
+## Open Source Implementations 🚀
+
+### 📚 Reference 
+- [Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
+
+### 🔄 Taichi Implementations
+- [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
+
+### 🎮 Game Engines 
+- [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
+
+### 🏋️ Training
+- [C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
+
+### 🌐 Viewers 
+- [WebGL Viewer 1](https://github.com/antimatter15/splat)
+- [WebGL Viewer 2](https://github.com/cvlab-epfl/gaussian-splatting-web)
 
 ## Credits
