@@ -3,7 +3,7 @@
 A curated list of papers and resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
-- **October 15, 2023**: Initial list with first 5 papers.
+- **October 15, 2023**: Initial list with first 6 papers.
 
 ## Seminal Paper Introducing 3D Gaussian Splatting
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
@@ -47,5 +47,11 @@ proper representation... (shortened for readability)
 
   [📄 Paper](https://arxiv.org/pdf/2309.16585.pdf) | [🌐 Project Page](https://gsgen3d.github.io/) | [💻 Code](https://github.com/gsgen3d/gsgen) | [🎥 Short Presentation](https://streamable.com/28snte) |  [🎥 Explanation Video](https://www.youtube.com/live/l956ye13F8M?si=ZkvFL_lsY5OQUB7e)
 
+### 3. GaussianDreamer: Fast Generation from Text to 3D Gaussian Splatting with Point Cloud Priors
+- **Authors**:  Taoran Yi1, Jiemin Fang, Guanjun Wu1, Lingxi Xie, Xiaopeng Zhang,
+Wenyu Liu, Tian Qi, Xinggang Wang 
+- **Abstract**: In recent times, the generation of 3D assets from text prompts has shown impressive results. Both 2D and 3D diffusion models can generate decent 3D objects based on prompts. 3D diffusion models have good 3D consistency, but their quality and generalization are limited as trainable 3D data is expensive and hard to obtain.... (shortened for readability)
+
+  [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code (to be released)](https://github.com/hustvl/GaussianDreamer) 
 
 ## Credits
