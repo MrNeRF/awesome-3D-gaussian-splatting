@@ -5,7 +5,7 @@ A curated list of papers and open source resources focused on 3D Gaussian Splatt
 ### Update Log:
 - **October 15, 2023**: Initial list with first 6 papers.
 
-## Seminal Paper Introducing 3D Gaussian Splatting:
+## Seminal Paper introducing 3D Gaussian Splatting:
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
 **Authors**: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
 
@@ -173,7 +173,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
 
 ### Training
-- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
+- [fastt: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
 ### Viewers 
@@ -188,7 +188,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 
 ## Tutorial Videos
 
-1. [Getting Started with 3D Gaussian Splatting](https://youtu.be/UXtuigy_wYc?si=j1vfORNspcocSH-b)
-2. [Tutorial Video 2](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
+1. [Getting Started with 3DGS](https://youtu.be/UXtuigy_wYc?si=j1vfORNspcocSH-b)
+2. [How to view 3DGS Scenes in Unity](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
 
 ## Credits
