@@ -3,7 +3,7 @@
 A curated list of papers and resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ## Seminal Paper Introducing 3D Gaussian Splatting
-- **Title**: 3D Gaussian Splatting for Real-Time Radiance Field Rendering
+### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
 - **Authors**: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
 - **Abstract**: Radiance Field methods have recently revolutionized novel-view synthesis... (shortened for readability)
   
