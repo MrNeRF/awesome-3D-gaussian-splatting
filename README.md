@@ -2,6 +2,9 @@
 
 A curated list of papers and resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
+### Update Log:
+- **October 15, 2023**: Initial list with first 5 papers.
+
 ## Seminal Paper Introducing 3D Gaussian Splatting
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
 - **Authors**: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
@@ -11,7 +14,7 @@ A curated list of papers and resources focused on 3D Gaussian Splatting, intende
 
 ## Dynamic 3D Gaussian Splatting
 
-### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis 
+### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 - **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
 - **Abstract**: Radiance Field methods have recently revolutionized novel-view synthesis
 of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality... (shortened for readability)
