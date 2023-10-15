@@ -1,6 +1,6 @@
 # Awesome 3D Gaussian Splatting Resources 
 
-A curated list of papers and resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
+A curated list of papers and open source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
 - **October 15, 2023**: Initial list with first 6 papers.
@@ -161,22 +161,33 @@ GPU, much faster than previous methods, while the generated instances can be dir
 
   [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code (to be released)](https://github.com/hustvl/GaussianDreamer) 
 
-## Open Source Implementations 🚀
+## Open Source Implementations 
 
-### 📚 Reference 
+### Reference 
 - [Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 
-### 🔄 Taichi Implementations
+### Taichi Implementations
 - [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
 
-### 🎮 Game Engines 
+### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
 
-### 🏋️ Training
+### Training
 - [C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 
-### 🌐 Viewers 
+### Viewers 
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
 - [WebGL Viewer 2](https://github.com/cvlab-epfl/gaussian-splatting-web)
+
+## Blog Posts
+
+1. [Gaussian Splatting is pretty cool](https://aras-p.info/blog/2023/09/05/Gaussian-Splatting-is-pretty-cool/)
+2. [Making Gaussian Splats smaller](https://aras-p.info/blog/2023/09/13/Making-Gaussian-Splats-smaller/)
+3. [Making Gaussian Splats more smaller](https://aras-p.info/blog/2023/09/27/Making-Gaussian-Splats-more-smaller/)
+
+## Tutorial Videos
+
+1. [Getting Started with 3D Gaussian Splatting](https://youtu.be/UXtuigy_wYc?si=j1vfORNspcocSH-b)
+2. [Tutorial Video 2](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
 
 ## Credits
