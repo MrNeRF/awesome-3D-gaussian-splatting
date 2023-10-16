@@ -36,17 +36,6 @@ rendering on several established datasets.
   [📄 Paper (Low Resolution)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_low.pdf) | [📄 Paper (High Resolution)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | [💻 Code](https://github.com/graphdeco-inria/gaussian-splatting) | [🎥 Short Presentation](https://youtu.be/T_kXY43VZnk?si=DrkbDFxQAv5scQNT) | [🎥 Explanation Video](https://www.youtube.com/live/xgwvU7S0K-k?si=edF8NkYtsRbgTbKi)
 
 ## Dynamic 3D Gaussian Splatting:
-### Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
-**Authors**: Ziyi Yang, Xinyu Gao, Wen Zhou, Shaohui Jiao, Yuqing Zhang, Xiaogang Jin 
-
-<details open>
-<summary><b>Abstract</b></summary>
-Implicit neural representation has opened up new avenues for dynamic scene reconstruction and rendering. Nonetheless, state-of-the-art methods of dynamic neural rendering rely heavily on these implicit representations, which frequently struggle with accurately capturing the intricate details of objects in the scene. Furthermore, implicit methods struggle to achieve real-time rendering in general dynamic scenes, limiting their use in a wide range of tasks. To address the issues, we propose a deformable 3D Gaussians Splatting method that reconstructs scenes using explicit 3D Gaussians and learns Gaussians in canonical space with a deformation field to model monocular dynamic scenes. We also introduced a smoothing training mechanism with no extra overhead to mitigate the impact of inaccurate poses in real datasets on the smoothness of time interpolation tasks. Through differential gaussian rasterization, the deformable 3D Gaussians not only achieve higher rendering quality but also real-time rendering speed. Experiments show that our method outperforms existing methods significantly in terms of both rendering quality and speed, making it well-suited for tasks such as novel-view synthesis, time synthesis, and real-time rendering. 
-</details>
-
-  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code (to be released)](https://github.com/ingra14m/Deformable-3D-Gaussians) 
-
-
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
 
@@ -75,7 +64,18 @@ sitional scene synthesis, and 4D video editing.
 
   [📄 Paper](https://dynamic3dgaussians.github.io/paper.pdf) | [🌐 Project Page](https://dynamic3dgaussians.github.io/) | [💻 Code (to be released)](https://github.com/JonathonLuiten/Dynamic3DGaussians) | [🎥 Explanation Video](https://www.youtube.com/live/hDuy1TgD8I4?si=6oGN0IYnPRxOibpg)
 
-### 2. 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
+### 2. Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
+**Authors**: Ziyi Yang, Xinyu Gao, Wen Zhou, Shaohui Jiao, Yuqing Zhang, Xiaogang Jin 
+
+<details open>
+<summary><b>Abstract</b></summary>
+Implicit neural representation has opened up new avenues for dynamic scene reconstruction and rendering. Nonetheless, state-of-the-art methods of dynamic neural rendering rely heavily on these implicit representations, which frequently struggle with accurately capturing the intricate details of objects in the scene. Furthermore, implicit methods struggle to achieve real-time rendering in general dynamic scenes, limiting their use in a wide range of tasks. To address the issues, we propose a deformable 3D Gaussians Splatting method that reconstructs scenes using explicit 3D Gaussians and learns Gaussians in canonical space with a deformation field to model monocular dynamic scenes. We also introduced a smoothing training mechanism with no extra overhead to mitigate the impact of inaccurate poses in real datasets on the smoothness of time interpolation tasks. Through differential gaussian rasterization, the deformable 3D Gaussians not only achieve higher rendering quality but also real-time rendering speed. Experiments show that our method outperforms existing methods significantly in terms of both rendering quality and speed, making it well-suited for tasks such as novel-view synthesis, time synthesis, and real-time rendering. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code (to be released)](https://github.com/ingra14m/Deformable-3D-Gaussians) 
+
+
+### 3. 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
 **Authors**: Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Tian Qi, Xinggang Wang
 
 <details open>
@@ -100,7 +100,32 @@ state-of-the-art method.
   
 ## Diffusion 3D Gaussian Splatting:
 
-### 1. DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation
+### 1. Text-to-3D using Gaussian Splatting
+**Authors**: Zilong Chen, Feng Wang, Huaping Liu
+
+<details open>
+<summary><b>Abstract</b></summary>
+In this paper, we present Gaussian Splatting based text-to-3D generation (GSGEN),
+a novel approach for generating high-quality 3D objects. Previous methods suffer
+from inaccurate geometry and limited fidelity due to the absence of 3D prior and
+proper representation. We leverage 3D Gaussian Splatting, a recent state-of-the-art
+representation, to address existing shortcomings by exploiting the explicit nature
+that enables the incorporation of 3D prior. Specifically, our method adopts a pro-
+gressive optimization strategy, which includes a geometry optimization stage and an
+appearance refinement stage. In geometry optimization, a coarse representation is
+established under a 3D geometry prior along with the ordinary 2D SDS loss, ensur-
+ing a sensible and 3D-consistent rough shape. Subsequently, the obtained Gaussians
+undergo an iterative refinement to enrich details. In this stage, we increase the num-
+ber of Gaussians by compactness-based densification to enhance continuity and
+improve fidelity. With these designs, our approach can generate 3D content with
+delicate details and more accurate geometry. Extensive evaluations demonstrate the
+effectiveness of our method, especially for capturing high-frequency components.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2309.16585.pdf) | [🌐 Project Page](https://gsgen3d.github.io/) | [💻 Code](https://github.com/gsgen3d/gsgen) | [🎥 Short Presentation](https://streamable.com/28snte) | [🎥 Explanation Video](https://www.youtube.com/live/l956ye13F8M?si=ZkvFL_lsY5OQUB7e)
+
+
+### 2. DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation
 **Authors**: Jiaxiang Tang, Jiawei Ren, Hang Zhou, Ziwei Liu, Gang Zeng
 
 <details open>
@@ -124,30 +149,6 @@ mately 10 times acceleration compared to existing methods.
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2309.16653.pdf) | [🌐 Project Page](https://dreamgaussian.github.io/) | [💻 Code](https://github.com/dreamgaussian/dreamgaussian) | [🎥 Explanation Video](https://www.youtube.com/live/l956ye13F8M?si=ZkvFL_lsY5OQUB7e)
-
-### 2. Text-to-3D using Gaussian Splatting
-**Authors**: Zilong Chen, Feng Wang, Huaping Liu
-
-<details open>
-<summary><b>Abstract</b></summary>
-In this paper, we present Gaussian Splatting based text-to-3D generation (GSGEN),
-a novel approach for generating high-quality 3D objects. Previous methods suffer
-from inaccurate geometry and limited fidelity due to the absence of 3D prior and
-proper representation. We leverage 3D Gaussian Splatting, a recent state-of-the-art
-representation, to address existing shortcomings by exploiting the explicit nature
-that enables the incorporation of 3D prior. Specifically, our method adopts a pro-
-gressive optimization strategy, which includes a geometry optimization stage and an
-appearance refinement stage. In geometry optimization, a coarse representation is
-established under a 3D geometry prior along with the ordinary 2D SDS loss, ensur-
-ing a sensible and 3D-consistent rough shape. Subsequently, the obtained Gaussians
-undergo an iterative refinement to enrich details. In this stage, we increase the num-
-ber of Gaussians by compactness-based densification to enhance continuity and
-improve fidelity. With these designs, our approach can generate 3D content with
-delicate details and more accurate geometry. Extensive evaluations demonstrate the
-effectiveness of our method, especially for capturing high-frequency components.
-</details>
-
-[📄 Paper](https://arxiv.org/pdf/2309.16585.pdf) | [🌐 Project Page](https://gsgen3d.github.io/) | [💻 Code](https://github.com/gsgen3d/gsgen) | [🎥 Short Presentation](https://streamable.com/28snte) | [🎥 Explanation Video](https://www.youtube.com/live/l956ye13F8M?si=ZkvFL_lsY5OQUB7e)
 
 ### 3. GaussianDreamer: Fast Generation from Text to 3D Gaussian Splatting with Point Cloud Priors
 **Authors**:  Taoran Yi1, Jiemin Fang, Guanjun Wu1, Lingxi Xie, Xiaopeng Zhang,
