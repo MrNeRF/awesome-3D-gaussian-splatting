@@ -185,7 +185,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
 
 ### Training
-- [fastt: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
+- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
 ### Viewers 
