@@ -3,7 +3,9 @@
 A curated list of papers and open source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
-- **October 16, 2023**: Added Deformable 3D Gaussians paper.
+- **October 16, 2023**: 
+  - Added Deformable 3D Gaussians paper.
+  - Dynamic 3D Gaussians Code release.
 - **October 15, 2023**: Initial list with first 6 papers.
 
 ## Seminal Paper introducing 3D Gaussian Splatting:
@@ -62,7 +64,7 @@ tion, including first-person view synthesis, dynamic compo-
 sitional scene synthesis, and 4D video editing.
 </details>
 
-  [📄 Paper](https://dynamic3dgaussians.github.io/paper.pdf) | [🌐 Project Page](https://dynamic3dgaussians.github.io/) | [💻 Code (to be released)](https://github.com/JonathonLuiten/Dynamic3DGaussians) | [🎥 Explanation Video](https://www.youtube.com/live/hDuy1TgD8I4?si=6oGN0IYnPRxOibpg)
+  [📄 Paper](https://dynamic3dgaussians.github.io/paper.pdf) | [🌐 Project Page](https://dynamic3dgaussians.github.io/) | [💻 Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) | [🎥 Explanation Video](https://www.youtube.com/live/hDuy1TgD8I4?si=6oGN0IYnPRxOibpg)
 
 ### 2. Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
 **Authors**: Ziyi Yang, Xinyu Gao, Wen Zhou, Shaohui Jiao, Yuqing Zhang, Xiaogang Jin 
