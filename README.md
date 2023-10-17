@@ -3,10 +3,12 @@
 A curated list of papers and open source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
-- **October 17, 2023**: GaussianDreamer code released.
+- **October 17, 2023**: 
+  - GaussianDreamer code released.
+  - Added Real-time Photorealistic Dynamic Scene Representation.
 - **October 16, 2023**: 
   - Added Deformable 3D Gaussians paper.
-  - Dynamic 3D Gaussians Code release.
+  - Dynamic 3D Gaussians code released.
 - **October 15, 2023**: Initial list with first 6 papers.
 
 ## Seminal Paper introducing 3D Gaussian Splatting:
@@ -77,7 +79,6 @@ Implicit neural representation has opened up new avenues for dynamic scene recon
 
   [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code (to be released)](https://github.com/ingra14m/Deformable-3D-Gaussians) 
 
-
 ### 3. 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
 **Authors**: Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Tian Qi, Xinggang Wang
 
@@ -101,6 +102,15 @@ state-of-the-art method.
 
   [📄 Paper](https://arxiv.org/pdf/2310.08528.pdf) | [🌐 Project Page](https://guanjunwu.github.io/4dgs/) | [💻 Code](https://github.com/hustvl/4DGaussians)
   
+### 4. Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting
+
+<details open>
+<summary><b>Abstract</b></summary>
+Reconstructing dynamic 3D scenes from 2D images and generating diverse views over time is challenging due to scene complexity and temporal dynamics. Despite advancements in neural implicit models, limitations persist: (i) Inadequate Scene Structure: Existing methods struggle to reveal the spatial and temporal structure of dynamic scenes from directly learning the complex 6D plenoptic function. (ii) Scaling Deformation Modeling: Explicitly modeling scene element deformation becomes impractical for complex dynamics. To address these issues, we consider the spacetime as an entirety and propose to approximate the underlying spatio-temporal 4D volume of a dynamic scene by optimizing a collection of 4D primitives, with explicit geometry and appearance modeling. Learning to optimize the 4D primitives enables us to synthesize novel views at any desired time with our tailored rendering routine. Our model is conceptually simple, consisting of a 4D Gaussian parameterized by anisotropic ellipses that can rotate arbitrarily in space and time, as well as view-dependent and time-evolved appearance represented by the coefficient of 4D spherindrical harmonics. This approach offers simplicity, flexibility for variable-length video and end-to-end training, and efficient real-time rendering, making it suitable for capturing complex dynamic scene motions. Experiments across various benchmarks, including monocular and multi-view scenarios, demonstrate our 4DGS model's superior visual quality and efficiency. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) 
+
 ## Diffusion 3D Gaussian Splatting:
 
 ### 1. Text-to-3D using Gaussian Splatting
@@ -209,3 +219,5 @@ GPU, much faster than previous methods, while the generated instances can be dir
 2. [How to view 3DGS Scenes in Unity](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
 
 ## Credits
+
+Thanks to [leonidk](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
