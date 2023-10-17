@@ -3,6 +3,7 @@
 A curated list of papers and open source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
+- **October 17, 2023**: GaussianDreamer code released.
 - **October 16, 2023**: 
   - Added Deformable 3D Gaussians paper.
   - Dynamic 3D Gaussians Code release.
@@ -173,7 +174,7 @@ initialized Gaussians. Our GaussianDreamer can generate a high-quality 3D instan
 GPU, much faster than previous methods, while the generated instances can be directly rendered in real time.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code (to be released)](https://github.com/hustvl/GaussianDreamer) 
+  [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code](https://github.com/hustvl/GaussianDreamer) 
 
 ## Open Source Implementations 
 
