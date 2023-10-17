@@ -195,6 +195,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
 - [WebGL Viewer 2](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
+- [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
 
 ## Blog Posts
 
