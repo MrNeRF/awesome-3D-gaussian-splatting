@@ -8,8 +8,7 @@ A curated list of papers and open source resources focused on 3D Gaussian Splatt
   - Re-ordered headings.
   - Added other unofficial implementations of the method.
   - Moved Nerfstudio gplat to Unofficial Implementations.
-  - Added Nerfstudio, Blender, WebRTC, iOS & Metal viewers.
-  - Added Paid / Closed Source Implementations as reference.
+  - Added Nerfstudio, Blender, WebRTC, iOS & Metal and Unreal viewers.
 - **October 17, 2023**: 
   - GaussianDreamer code released.
   - Added Real-time Photorealistic Dynamic Scene Representation.
@@ -200,7 +199,6 @@ GPU, much faster than previous methods, while the generated instances can be dir
 
 ### Training
 - [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
-- [Google Colab](https://github.com/camenduru)
   
 ### Unofficial Implementations
 - [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
@@ -221,22 +219,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Blender (Editor)](https://github.com/ReshotAI/gaussian-splatting-blender-addon/tree/master)
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
-
-## Paid / Closed Source Implementations
-
-### Training
-- [Polycam Gaussian Splatting](https://poly.cam/gaussian-splatting)
-
-### Unofficial Implementations
-- [Luma AI Interactive Scenes](https://lumalabs.ai/interactive-scenes)
-
-### Game Engines 
-- [Unreal Plugin](https://vrlab.akiya-souken.co.jp/en/products/threedgaussianplugin/)
 - [Unreal via Volinga](https://volinga.ai/)
-
-### Viewers
-- [gsplat.tech](https://gsplat.tech/)
-- [Tellusim WebGPU](https://tellusim.com/07_hello_splatting/)
 
 ## Blog Posts
 
