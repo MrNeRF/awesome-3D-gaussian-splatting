@@ -5,9 +5,11 @@ A curated list of papers and open source resources focused on 3D Gaussian Splatt
 ### Update Log:
 - **October 18, 2023**: 
   - Added Github page link for Real-time Photorealistic Dynamic Scene Representation.
-  - Added other unofficial implementations based on the original paper.
+  - Re-ordered headings.
+  - Added other unofficial implementations of the method.
+  - Moved Nerfstudio gplat to Unofficial Implementations.
   - Added Nerfstudio, Blender, WebRTC, iOS & Metal viewers.
-  - Added Paid Implementations - Unreal Plugin and Tellusim.
+  - Added Paid / Closed Source Implementations as reference.
 - **October 17, 2023**: 
   - GaussianDreamer code released.
   - Added Real-time Photorealistic Dynamic Scene Representation.
@@ -196,17 +198,18 @@ GPU, much faster than previous methods, while the generated instances can be dir
 ### Reference 
 - [Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 
+### Training
+- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
+- [Google Colab](https://github.com/camenduru)
+  
 ### Unofficial Implementations
 - [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
 - [Gaussian Splatting 3D](https://github.com/heheyas/gaussian_splatting_3d)
 - [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
+- [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
-
-### Training
-- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
-- [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
 ### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
@@ -219,12 +222,20 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 
-## Paid Implementations
+## Paid / Closed Source Implementations
+
+### Training
+- [Polycam Gaussian Splatting](https://poly.cam/gaussian-splatting)
+
+### Unofficial Implementations
+- [Luma AI Interactive Scenes](https://lumalabs.ai/interactive-scenes)
 
 ### Game Engines 
 - [Unreal Plugin](https://vrlab.akiya-souken.co.jp/en/products/threedgaussianplugin/)
+- [Unreal via Volinga](https://volinga.ai/)
 
 ### Viewers
+- [gsplat.tech](https://gsplat.tech/)
 - [Tellusim WebGPU](https://tellusim.com/07_hello_splatting/)
 
 ## Blog Posts
