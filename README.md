@@ -3,6 +3,12 @@
 A curated list of papers and open source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
+- **October 19, 2023**: 
+  - Added Github page link for Real-time Photorealistic Dynamic Scene Representation.
+  - Re-ordered headings.
+  - Added other unofficial implementations.
+  - Moved Nerfstudio gplat and fast: C++/CUDA to Unofficial Implementations.
+  - Added Nerfstudio, Blender, WebRTC, iOS & Metal viewers.
 - **October 17, 2023**: 
   - GaussianDreamer code released.
   - Added Real-time Photorealistic Dynamic Scene Representation.
@@ -109,7 +115,7 @@ state-of-the-art method.
 Reconstructing dynamic 3D scenes from 2D images and generating diverse views over time is challenging due to scene complexity and temporal dynamics. Despite advancements in neural implicit models, limitations persist: (i) Inadequate Scene Structure: Existing methods struggle to reveal the spatial and temporal structure of dynamic scenes from directly learning the complex 6D plenoptic function. (ii) Scaling Deformation Modeling: Explicitly modeling scene element deformation becomes impractical for complex dynamics. To address these issues, we consider the spacetime as an entirety and propose to approximate the underlying spatio-temporal 4D volume of a dynamic scene by optimizing a collection of 4D primitives, with explicit geometry and appearance modeling. Learning to optimize the 4D primitives enables us to synthesize novel views at any desired time with our tailored rendering routine. Our model is conceptually simple, consisting of a 4D Gaussian parameterized by anisotropic ellipses that can rotate arbitrarily in space and time, as well as view-dependent and time-evolved appearance represented by the coefficient of 4D spherindrical harmonics. This approach offers simplicity, flexibility for variable-length video and end-to-end training, and efficient real-time rendering, making it suitable for capturing complex dynamic scene motions. Experiments across various benchmarks, including monocular and multi-view scenarios, demonstrate our 4DGS model's superior visual quality and efficiency. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) 
+  [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) | [💻 Code (to be released)](https://github.com/fudan-zvg/4d-gaussian-splatting) 
 
 ## Diffusion 3D Gaussian Splatting:
 
@@ -191,21 +197,26 @@ GPU, much faster than previous methods, while the generated instances can be dir
 ### Reference 
 - [Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 
-### Taichi Implementations
+### Unofficial Implementations
 - [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
+- [Gaussian Splatting 3D](https://github.com/heheyas/gaussian_splatting_3d)
+- [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
+- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
+- [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
 
-### Training
-- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
-- [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
-
-### Viewers 
+### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
 - [WebGL Viewer 2](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
 - [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
+- [Nerfstudio Unofficial](https://github.com/yzslab/nerfstudio/tree/gaussian_splatting)
+- [Nerfstudio Viser](https://github.com/nerfstudio-project/viser)
+- [Blender (Editor)](https://github.com/ReshotAI/gaussian-splatting-blender-addon/tree/master)
+- [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
+- [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 
 ## Blog Posts
 
