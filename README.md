@@ -3,12 +3,12 @@
 A curated list of papers and open source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
-- **October 18, 2023**: 
+- **October 19, 2023**: 
   - Added Github page link for Real-time Photorealistic Dynamic Scene Representation.
   - Re-ordered headings.
-  - Added other unofficial implementations of the method.
-  - Moved Nerfstudio gplat to Unofficial Implementations.
-  - Added Nerfstudio, Blender, WebRTC, iOS & Metal and Unreal viewers.
+  - Added other unofficial implementations.
+  - Moved Nerfstudio gplat and fast: C++/CUDA to Unofficial Implementations.
+  - Added Nerfstudio, Blender, WebRTC, iOS & Metal viewers.
 - **October 17, 2023**: 
   - GaussianDreamer code released.
   - Added Real-time Photorealistic Dynamic Scene Representation.
@@ -197,13 +197,11 @@ GPU, much faster than previous methods, while the generated instances can be dir
 ### Reference 
 - [Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 
-### Training
-- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
-  
 ### Unofficial Implementations
 - [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
 - [Gaussian Splatting 3D](https://github.com/heheyas/gaussian_splatting_3d)
 - [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
+- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
 ### Game Engines 
@@ -219,7 +217,6 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Blender (Editor)](https://github.com/ReshotAI/gaussian-splatting-blender-addon/tree/master)
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
-- [Unreal via Volinga](https://volinga.ai/)
 
 ## Blog Posts
 
