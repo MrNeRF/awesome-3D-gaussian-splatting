@@ -3,10 +3,13 @@
 A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
+  **October 21, 2023**:
+  - Added python OpenGL viewer
   **October 20, 2023**:
   - Made abstracts readable (removed hyphenations).
   - Added Windows tutorial.
   - Other minor text fixes.
+  - Added Jupyter notebook viewer.
 - **October 19, 2023**: 
   - Added Github page link for Real-time Photorealistic Dynamic Scene Representation.
   - Re-ordered headings.
@@ -222,6 +225,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 - [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
+- [python OpenGL viewer](https://github.com/limacv/GaussianSplattingViewer.git)
 
 ## Blog Posts
 
