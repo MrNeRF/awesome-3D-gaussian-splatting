@@ -221,6 +221,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Blender (Editor)](https://github.com/ReshotAI/gaussian-splatting-blender-addon/tree/master)
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
+- [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
 
 ## Blog Posts
 
@@ -235,7 +236,9 @@ GPU, much faster than previous methods, while the generated instances can be dir
 2. [How to view 3DGS Scenes in Unity](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
 3. [Two-minute explanation of 3DGS](https://youtu.be/HVv_IQKlafQ?si=w5c9XKHfKIBuXDLW)
 4. [Getting Started With 3D Gaussian Splatting for Windows](https://youtu.be/UXtuigy_wYc?si=UTNeym4-srcS9NuQ)
+5. [Jupyter notebook tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM&t=2s)
 
 ## Credits
 
-Thanks to [leonidk](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
+-  Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
+- Thanks to  [Eric Haines](https://github.com/erich666) for suggesting the jupyter notebook viewer, windows tutorial and for fixing text hyphenations and other issues.
