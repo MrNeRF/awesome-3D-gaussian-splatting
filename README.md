@@ -220,9 +220,9 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
 
 ### Viewers
-- [WebGL Viewer 1](https://github.com/antimatter15/splat)
-- [WebGL Viewer 2](https://github.com/cvlab-epfl/gaussian-splatting-web)
-- [WebGPU](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
+- [WebGL Viewer](https://github.com/antimatter15/splat)
+- [WebGPU Viewer 1](https://github.com/cvlab-epfl/gaussian-splatting-web)
+- [WebGPU Viewer 2](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
 - [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
 - [Nerfstudio Unofficial](https://github.com/yzslab/nerfstudio/tree/gaussian_splatting)
