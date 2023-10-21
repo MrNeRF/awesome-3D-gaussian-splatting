@@ -4,9 +4,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
 ### Update Log:
   **October 20, 2023**:
-  - Added 4K4D paper and links.
   - Made abstracts readable (removed hyphenations).
-  - Added splatting for Windows fork and tutorial.
+  - Added Windows tutorial.
   - Other minor text fixes.
 - **October 19, 2023**: 
   - Added Github page link for Real-time Photorealistic Dynamic Scene Representation.
@@ -122,38 +121,9 @@ Reconstructing dynamic 3D scenes from 2D images and generating diverse views ove
 
   [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) | [💻 Code (to be released)](https://github.com/fudan-zvg/4d-gaussian-splatting) 
 
-### 5. 4K4D: Real-Time 4D View Synthesis at 4K Resolution
-**Authors**:  Zhen Xu, Sida Peng, Haotong Lin, Guangzhao He,
-Jiaming Sun, Yujun Shen, Hujun Bao, Xiaowei Zhou
-<details open>
-<summary><b>Abstract</b></summary>
-This paper targets high-fidelity and real-time view synthesis
-of dynamic 3D scenes at 4K resolution. Recently, some
-methods on dynamic view synthesis have shown impressive
-rendering quality. However, their speed is still limited when
-rendering high-resolution images. To overcome this problem,
-we propose 4K4D, a 4D point cloud representation that
-supports hardware rasterization and enables unprecedented
-rendering speed. Our representation is built on a 4D feature
-grid so that the points are naturally regularized and can be
-robustly optimized. In addition, we design a novel hybrid
-appearance model that significantly boosts the rendering
-quality while preserving efficiency. Moreover, we develop a
-differentiable depth peeling algorithm to effectively learn the
-proposed model from RGB videos. Experiments show that
-our representation can be rendered at over 400 FPS on the
-DNA-Rendering dataset at 1080p resolution and 80 FPS on
-the ENeRF-Outdoor dataset at 4K resolution using an RTX
-4090 GPU, which is 30× faster than previous methods and
-achieves the state-of-the-art rendering quality. Our project
-page is available at https://zju3dv.github.io/4k4d.
-</details>
-
-  [📄 Paper](https://drive.google.com/file/d/1Y-C6ASIB8ofvcZkyZ_Vp-a2TtbiPw1Yx/view?usp=sharing) | [🌐 Project Page](https://zju3dv.github.io/4k4d/) | [💻 Code](https://github.com/zju3dv/4K4D) 
-
 ## Diffusion 3D Gaussian Splatting:
 
-### 1. Gsgen: Text-to-3D using Gaussian Splatting
+### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
 
 <details open>
@@ -237,7 +207,6 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
 - [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
-- [gaussian-splatting-Windows](https://github.com/jonstephens85/gaussian-splatting-Windows)
 
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
