@@ -5,24 +5,29 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 ### Update Log:
   **October 21, 2023**:
   - Added python OpenGL viewer
+  - Added typescript WebGPU viewer
+
   **October 20, 2023**:
   - Made abstracts readable (removed hyphenations).
   - Added Windows tutorial.
   - Other minor text fixes.
   - Added Jupyter notebook viewer.
-- **October 19, 2023**: 
+
+**October 19, 2023**: 
   - Added Github page link for Real-time Photorealistic Dynamic Scene Representation.
   - Re-ordered headings.
   - Added other unofficial implementations.
   - Moved Nerfstudio gsplat and fast: C++/CUDA to Unofficial Implementations.
   - Added Nerfstudio, Blender, WebRTC, iOS & Metal viewers.
-- **October 17, 2023**: 
+
+**October 17, 2023**: 
   - GaussianDreamer code released.
   - Added Real-time Photorealistic Dynamic Scene Representation.
-- **October 16, 2023**: 
+
+**October 16, 2023**: 
   - Added Deformable 3D Gaussians paper.
   - Dynamic 3D Gaussians code released.
-- **October 15, 2023**: Initial list with first 6 papers.
+**October 15, 2023**: Initial list with first 6 papers.
 
 ## Seminal Paper introducing 3D Gaussian Splatting:
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
@@ -217,6 +222,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 ### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
 - [WebGL Viewer 2](https://github.com/cvlab-epfl/gaussian-splatting-web)
+- [WebGPU](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
 - [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
 - [Nerfstudio Unofficial](https://github.com/yzslab/nerfstudio/tree/gaussian_splatting)
