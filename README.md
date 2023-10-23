@@ -3,9 +3,13 @@
 A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
 ### Update Log:
+  **October 23, 2023**:
+  - Added python WebGL viewer 2.
+  - Added Intro to gaussian splatting (and Unity viewer) video blog.
+
   **October 21, 2023**:
-  - Added python OpenGL viewer
-  - Added typescript WebGPU viewer
+  - Added python OpenGL viewer.
+  - Added typescript WebGPU viewer.
 
   **October 20, 2023**:
   - Made abstracts readable (removed hyphenations).
@@ -220,7 +224,8 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
 
 ### Viewers
-- [WebGL Viewer](https://github.com/antimatter15/splat)
+- [WebGL Viewer 1](https://github.com/antimatter15/splat)
+- [WebGL Viewer 2](https://github.com/kishimisu/Gaussian-Splatting-WebGL)
 - [WebGPU Viewer 1](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [WebGPU Viewer 2](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
@@ -240,15 +245,17 @@ GPU, much faster than previous methods, while the generated instances can be dir
 3. [Making Gaussian Splats more smaller](https://aras-p.info/blog/2023/09/27/Making-Gaussian-Splats-more-smaller/)
 4. [Introduction to 3D Gaussian Splatting](https://huggingface.co/blog/gaussian-splatting)
 
+
 ## Tutorial Videos
 
 1. [Getting Started with 3DGS for Windows](https://youtu.be/UXtuigy_wYc?si=j1vfORNspcocSH-b)
 2. [How to view 3DGS Scenes in Unity](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
 3. [Two-minute explanation of 3DGS](https://youtu.be/HVv_IQKlafQ?si=w5c9XKHfKIBuXDLW)
 4. [Jupyter notebook tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM&t=2s)
+5. [Intro to gaussian splatting (and Unity plugin)](https://www.xuanprada.com/blog/2023/10/22/intro-to-gaussian-splatting)
 
 ## Credits
 
--  Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
+- Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
 - Thanks to [Eric Haines](https://github.com/erich666) for suggesting the jupyter notebook viewer, windows tutorial and for fixing text hyphenations and other issues.
-- Thanks to [Henry Pearce](https://github.com/henrypearce4D) for debugging the video links.
+- Thanks to [Henry Pearce](https://github.com/henrypearce4D) for adding more resources and debugging the video links.
