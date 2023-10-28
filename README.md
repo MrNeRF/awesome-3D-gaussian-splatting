@@ -2,8 +2,15 @@
 
 A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
-### Update Log:
-  **October 23, 2023**:
+<details span>
+<summary><b>Update Log:</b></summary>
+<br>
+
+ **October 28, 2023**:
+  - Added Utilities Section.
+  - Added 3DGS Converter for editing 3DGS .ply files in Cloud Compare to Utilities.
+
+ **October 23, 2023**:
   - Added python WebGL viewer 2.
   - Added Intro to gaussian splatting (and Unity viewer) video blog.
 
@@ -32,6 +39,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
   - Added Deformable 3D Gaussians paper.
   - Dynamic 3D Gaussians code released.
 **October 15, 2023**: Initial list with first 6 papers.
+</details>
 
 ## Seminal Paper introducing 3D Gaussian Splatting:
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
@@ -237,6 +245,9 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 - [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
 - [python OpenGL viewer](https://github.com/limacv/GaussianSplattingViewer.git)
+
+### Utilities
+- [3DGS Converter for editing 3DGS .ply files in Cloud Compare](https://github.com/francescofugazzi/3dgsconverter)
 
 ## Blog Posts
 
