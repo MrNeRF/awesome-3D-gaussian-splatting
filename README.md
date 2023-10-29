@@ -246,6 +246,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 - [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
 - [python OpenGL viewer](https://github.com/limacv/GaussianSplattingViewer.git)
+- [PlayCanvas Viewer](https://github.com/playcanvas/model-viewer)
 
 ### Utilities
 - [3DGS Converter for editing 3DGS .ply files in Cloud Compare](https://github.com/francescofugazzi/3dgsconverter)
