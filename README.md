@@ -6,6 +6,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **November 4, 2023**:
+  - Added 2D gaussian splatting.
+
  **October 28, 2023**:
   - Added Utilities Section.
   - Added 3DGS Converter for editing 3DGS .ply files in Cloud Compare to Utilities.
@@ -228,6 +231,9 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
 - [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
+
+### 2D Gaussian Splatting
+- [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
 
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
