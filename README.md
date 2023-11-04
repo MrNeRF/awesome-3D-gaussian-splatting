@@ -8,6 +8,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **November 4, 2023**:
   - Added 2D gaussian splatting.
+  - Added very detailed (technical) blog post explainig 3D gaussian splatting.
 
  **October 28, 2023**:
   - Added Utilities Section.
@@ -265,6 +266,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 2. [Making Gaussian Splats smaller](https://aras-p.info/blog/2023/09/13/Making-Gaussian-Splats-smaller/)
 3. [Making Gaussian Splats more smaller](https://aras-p.info/blog/2023/09/27/Making-Gaussian-Splats-more-smaller/)
 4. [Introduction to 3D Gaussian Splatting](https://huggingface.co/blog/gaussian-splatting)
+5. [Very good (technical) intro to 3D Gaussian Splatting](https://medium.com/@AriaLeeNotAriel/numbynum-3d-gaussian-splatting-for-real-time-radiance-field-rendering-kerbl-et-al-60c0b25e5544)
 
 
 ## Tutorial Videos
