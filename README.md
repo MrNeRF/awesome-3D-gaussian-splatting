@@ -5,12 +5,13 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
  **November 8, 2023**:
   - Some notes about the 3DGS implementation and unsiversal format discussion.
 
  **November 4, 2023**:
   - Added 2D gaussian splatting.
-  - Added very detailed (technical) blog post explainig 3D gaussian splatting.
+  - Added very detailed (technical) blog post explaining 3D gaussian splatting.
 
  **October 28, 2023**:
   - Added Utilities Section.
