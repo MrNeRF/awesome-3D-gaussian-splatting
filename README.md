@@ -260,9 +260,10 @@ GPU, much faster than previous methods, while the generated instances can be dir
 - [gsplat.js](https://github.com/dylanebert/gsplat.js)
 
 ### Utilities
-- [3DGS Converter for editing 3DGS .ply files in Cloud Compare](https://github.com/francescofugazzi/3dgsconverter)
-- [Kapture (for bundler to colmap model conversion)](https://github.com/naver/kapture) 
-- [Kapture image cropper script and conversion instructions](https://gist.github.com/jo-chemla/258e6e40d3d6c2220b29518ff3c17c40)
+- [Kapture](https://github.com/naver/kapture) - a unified data format to facilitate visual localization and structure from motion e.g. for bundler to colmap model conversion
+- [Kapture image cropper script](https://gist.github.com/jo-chemla/258e6e40d3d6c2220b29518ff3c17c40) - undistorted image cropper script to remove black borders with included conversion instructions
+- [camorph](https://github.com/Fraunhofer-IIS/camorph) - a toolbox for conversion between camera parameter conventions e.g. Reality Capture to colmap model
+- [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - a tool for converting 3D Gaussian Splatting .ply files into a format suitable for Cloud Compare and vice-versa.
 - [SuperSplat](https://github.com/playcanvas/super-splat) - open source browser-based tool to clean up and reorient .ply files
 
 ## Blog Posts
