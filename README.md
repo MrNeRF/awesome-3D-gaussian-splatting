@@ -275,6 +275,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 5. [Very good (technical) intro to 3D Gaussian Splatting](https://medium.com/@AriaLeeNotAriel/numbynum-3d-gaussian-splatting-for-real-time-radiance-field-rendering-kerbl-et-al-60c0b25e5544)
 6. [Write up on some mathematical details of the 3DGS implementation](https://github.com/kwea123/gaussian_splatting_notes)
 7. [Discussion about gs universal format](https://github.com/mkkellogg/GaussianSplats3D/issues/47#issuecomment-1801360116)
+8. [Math explanation to understand 3DGS](https://github.com/chiehwangs/3d-gaussian-theory)
 
 
 
