@@ -5,6 +5,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **November 16, 2023**:
+  - Deformable 3D Gaussians code released.
+  - Drivable 3D Gaussian Avatars paper added. 
 
  **November 8, 2023**:
   - Some notes about the 3DGS implementation and unsiversal format discussion.
@@ -115,7 +118,7 @@ scene synthesis, and 4D video editing.
 Implicit neural representation has opened up new avenues for dynamic scene reconstruction and rendering. Nonetheless, state-of-the-art methods of dynamic neural rendering rely heavily on these implicit representations, which frequently struggle with accurately capturing the intricate details of objects in the scene. Furthermore, implicit methods struggle to achieve real-time rendering in general dynamic scenes, limiting their use in a wide range of tasks. To address the issues, we propose a deformable 3D Gaussians Splatting method that reconstructs scenes using explicit 3D Gaussians and learns Gaussians in canonical space with a deformation field to model monocular dynamic scenes. We also introduced a smoothing training mechanism with no extra overhead to mitigate the impact of inaccurate poses in real datasets on the smoothness of time interpolation tasks. Through differential gaussian rasterization, the deformable 3D Gaussians not only achieve higher rendering quality but also real-time rendering speed. Experiments show that our method outperforms existing methods significantly in terms of both rendering quality and speed, making it well-suited for tasks such as novel-view synthesis, time synthesis, and real-time rendering. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code (to be released)](https://github.com/ingra14m/Deformable-3D-Gaussians) 
+  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code](https://github.com/ingra14m/Deformable-3D-Gaussians) 
 
 ### 3. 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
 **Authors**: Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Tian Qi, Xinggang Wang
@@ -223,6 +226,31 @@ GPU, much faster than previous methods, while the generated instances can be dir
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code](https://github.com/hustvl/GaussianDreamer) 
+
+## 3D Gaussian Splatting Avatars:
+### 1. Drivable 3D Gaussian Avatars 
+**Authors**:  Taoran Yi1, Jiemin Fang, Guanjun Wu1, Lingxi Xie, Xiaopeng Zhang,
+Wenyu Liu, Tian Qi, Xinggang Wang 
+<details open>
+<summary><b>Abstract</b></summary>
+We present Drivable 3D Gaussian Avatars (D3GA), the
+first 3D controllable model for human bodies rendered with
+Gaussian splats. Current photorealistic drivable avatars
+require either accurate 3D registrations during training,
+dense input images during testing, or both. The ones based
+on neural radiance fields also tend to be prohibitively slow
+for telepresence applications. This work uses the recently
+presented 3D Gaussian Splatting (3DGS) technique to render realistic humans at real-time framerates, using dense
+calibrated multi-view videos as input. To deform those
+primitives, we depart from the commonly used point deformation method of linear blend skinning (LBS) and use
+a classic volumetric deformation method: cage deformations. Given their smaller size, we drive these deformations
+with joint angles and keypoints, which are more suitable for
+communication applications. Our experiments on nine subjects with varied body shapes, clothes, and motions obtain
+higher-quality results than state-of-the-art methods when
+using the same training and test data.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.08581.pdf) | [🌐 Project Page](https://zielon.github.io/d3ga/) | | [🎥 Short Presentation](https://youtu.be/C4IT1gnkaF0?si=zUJLm8adM68pVvR8) 
 
 ## Open Source Implementations 
 
