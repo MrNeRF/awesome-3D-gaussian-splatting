@@ -269,6 +269,7 @@ using the same training and test data.
 
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
+- [Blender Implementation](https://github.com/ReshotAI/gaussian-splatting-blender-addon)
 
 ### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
