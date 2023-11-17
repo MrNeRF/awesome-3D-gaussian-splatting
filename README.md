@@ -5,6 +5,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+**November 17, 2023**:
+  - Added PlayCanvas implementation to Game Engines section.
+
  **November 16, 2023**:
   - Deformable 3D Gaussians code released.
   - Drivable 3D Gaussian Avatars paper added. 
