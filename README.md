@@ -269,6 +269,7 @@ using the same training and test data.
 
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
+- [PlayCanvas Implementation](https://github.com/playcanvas/engine/tree/main/extras/splat)
 
 ### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
