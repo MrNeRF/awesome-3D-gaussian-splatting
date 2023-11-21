@@ -236,8 +236,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 
 ## 3D Gaussian Splatting Avatars:
 ### 1. Drivable 3D Gaussian Avatars 
-**Authors**:  Taoran Yi1, Jiemin Fang, Guanjun Wu1, Lingxi Xie, Xiaopeng Zhang,
-Wenyu Liu, Tian Qi, Xinggang Wang 
+**Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
 <details open>
 <summary><b>Abstract</b></summary>
 We present Drivable 3D Gaussian Avatars (D3GA), the
