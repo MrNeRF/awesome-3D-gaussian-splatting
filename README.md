@@ -271,7 +271,7 @@ The recent advancements in text-to-3D generation mark a significant milestone in
 
   [📄 Paper](https://arxiv.org/pdf/2311.11284.pdf) [💻 Code](https://github.com/EnVision-Research/LucidDreamer) 
 
-### 5. LucidDreamer: Domain-free Generation of 3D Gaussian Splatting Scenes
+### 6. LucidDreamer: Domain-free Generation of 3D Gaussian Splatting Scenes
 Jaeyoung Chung, Suyoung Lee, Hyeongjin Nam, Jaerin Lee, Kyoung Mu Lee
 <details open>
 <summary><b>Abstract</b></summary>
