@@ -7,11 +7,12 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **November 21, 2023**:
-  - 3 new GS papers added: Animatable, Depth-Regularized, and Monocular/Multi-view 3DGS
+  - 3 new GS papers added: Animatable, Depth-Regularized, and Monocular/Multi-view 3DGS.
+  - Added some classic papers.
 
  **November 21, 2023**:
-  - 3 new GS papers added: GaussianDiffusion, LucidDreamer, PhysGaussian
-  - 2 more GS papers added: SuGaR, PhysGaussian
+  - 3 new GS papers added: GaussianDiffusion, LucidDreamer, PhysGaussian.
+  - 2 more GS papers added: SuGaR, PhysGaussian.
 
  **November 21, 2023**:
   - Added the paper GS-SLAM
