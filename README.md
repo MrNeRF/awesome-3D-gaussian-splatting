@@ -253,7 +253,7 @@ GPU, much faster than previous methods, while the generated instances can be dir
 
   [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code](https://github.com/hustvl/GaussianDreamer) 
 
-### 4. GaussianDiffusion: 3D Gaussian Splatting for Denoising Diffusion Probabilistic Models with Structured Noise **:  
+### 4. GaussianDiffusion: 3D Gaussian Splatting for Denoising Diffusion Probabilistic Models with Structured Noise  
  Xinhai Li, Huaibin Wang, Kuo-Kun Tseng
 <details open>
 <summary><b>Abstract</b></summary>
