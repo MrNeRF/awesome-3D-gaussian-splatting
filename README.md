@@ -2,10 +2,46 @@
 
 A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
-### Update Log:
+<details span>
+<summary><b>Update Log:</b></summary>
+<br>
+
+ **November 21, 2023**:
+  - 3 new GS papers added: Animatable, Depth-Regularized, and Monocular/Multi-view 3DGS
+
+ **November 21, 2023**:
+  - 3 new GS papers added: GaussianDiffusion, LucidDreamer, PhysGaussian
+  - 2 more GS papers added: SuGaR, PhysGaussian
+
+ **November 21, 2023**:
+  - Added the paper GS-SLAM
+
+**November 17, 2023**:
+  - Added PlayCanvas implementation to Game Engines section.
+
+ **November 16, 2023**:
+  - Deformable 3D Gaussians code released.
+  - Drivable 3D Gaussian Avatars paper added. 
+
+ **November 8, 2023**:
+  - Some notes about the 3DGS implementation and unsiversal format discussion.
+
+ **November 4, 2023**:
+  - Added 2D gaussian splatting.
+  - Added very detailed (technical) blog post explaining 3D gaussian splatting.
+
+ **October 28, 2023**:
+  - Added Utilities Section.
+  - Added 3DGS Converter for editing 3DGS .ply files in Cloud Compare to Utilities.
+  - Added Kapture (for bundler to colmap model conversion) and Kapture image cropper script with conversion instructions to Utilities.
+
+ **October 23, 2023**:
+  - Added python WebGL viewer 2.
+  - Added Intro to gaussian splatting (and Unity viewer) video blog.
+
   **October 21, 2023**:
-  - Added python OpenGL viewer
-  - Added typescript WebGPU viewer
+  - Added python OpenGL viewer.
+  - Added typescript WebGPU viewer.
 
   **October 20, 2023**:
   - Made abstracts readable (removed hyphenations).
@@ -28,6 +64,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
   - Added Deformable 3D Gaussians paper.
   - Dynamic 3D Gaussians code released.
 **October 15, 2023**: Initial list with first 6 papers.
+</details>
 
 ## Seminal Paper introducing 3D Gaussian Splatting:
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
@@ -95,7 +132,7 @@ scene synthesis, and 4D video editing.
 Implicit neural representation has opened up new avenues for dynamic scene reconstruction and rendering. Nonetheless, state-of-the-art methods of dynamic neural rendering rely heavily on these implicit representations, which frequently struggle with accurately capturing the intricate details of objects in the scene. Furthermore, implicit methods struggle to achieve real-time rendering in general dynamic scenes, limiting their use in a wide range of tasks. To address the issues, we propose a deformable 3D Gaussians Splatting method that reconstructs scenes using explicit 3D Gaussians and learns Gaussians in canonical space with a deformation field to model monocular dynamic scenes. We also introduced a smoothing training mechanism with no extra overhead to mitigate the impact of inaccurate poses in real datasets on the smoothness of time interpolation tasks. Through differential gaussian rasterization, the deformable 3D Gaussians not only achieve higher rendering quality but also real-time rendering speed. Experiments show that our method outperforms existing methods significantly in terms of both rendering quality and speed, making it well-suited for tasks such as novel-view synthesis, time synthesis, and real-time rendering. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code (to be released)](https://github.com/ingra14m/Deformable-3D-Gaussians) 
+  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code](https://github.com/ingra14m/Deformable-3D-Gaussians) 
 
 ### 3. 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
 **Authors**: Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Tian Qi, Xinggang Wang
@@ -128,6 +165,16 @@ Reconstructing dynamic 3D scenes from 2D images and generating diverse views ove
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) | [💻 Code (to be released)](https://github.com/fudan-zvg/4d-gaussian-splatting) 
+
+### 5. An Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes 
+**Authors**: Kai Katsumata, Duc Minh Vo, Hideki Nakayama 
+
+<details open>
+<summary><b>Abstract</b></summary>
+In novel view synthesis of scenes from multiple input views, 3D Gaussian splatting emerges as a viable alternative to existing radiance field approaches, delivering great visual quality and real-time rendering. While successful in static scenes, the present advancement of 3D Gaussian representation, however, faces challenges in dynamic scenes in terms of memory consumption and the need for numerous observations per time step, due to the onus of storing 3D Gaussian parameters per time step. In this study, we present an efficient 3D Gaussian representation tailored for dynamic scenes in which we define positions and rotations as functions of time while leaving other time-invariant properties of the static 3D Gaussian unchanged. Notably, our representation reduces memory usage, which is consistent regardless of the input sequence length. Additionally, it mitigates the risk of overfitting observed frames by accounting for temporal changes. The optimization of our Gaussian representation based on image and flow reconstruction results in a powerful framework for dynamic scene view synthesis in both monocular and multi-view cases. We obtain the highest rendering speed of 118 frames per second (FPS) at a resolution of 1352×1014 with a single GPU, showing the practical usability and effectiveness of our proposed method in dynamic scene rendering scenarios
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.12897.pdf) 
 
 ## Diffusion 3D Gaussian Splatting:
 
@@ -203,6 +250,105 @@ GPU, much faster than previous methods, while the generated instances can be dir
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2310.08529.pdf) | [🌐 Project Page](https://taoranyi.com/gaussiandreamer/) | [💻 Code](https://github.com/hustvl/GaussianDreamer) 
+
+### 4. GaussianDiffusion: 3D Gaussian Splatting for Denoising Diffusion Probabilistic Models with Structured Noise **:  
+ Xinhai Li, Huaibin Wang, Kuo-Kun Tseng
+<details open>
+<summary><b>Abstract</b></summary>
+ Text-to-3D, known for its efficient generation methods and expansive creative potential, has garnered significant attention in the AIGC domain. However, the amalgamation of Nerf and 2D diffusion models frequently yields oversaturated images, posing severe limitations on downstream industrial applications due to the constraints of pixelwise rendering method. Gaussian splatting has recently superseded the traditional pointwise sampling technique prevalent in NeRF-based methodologies, revolutionizing various aspects of 3D reconstruction. This paper introduces a novel text to 3D content generation framework based on Gaussian splatting, enabling fine control over image saturation through individual Gaussian sphere transparencies, thereby producing more realistic images. The challenge of achieving multi-view consistency in 3D generation significantly impedes modeling complexity and accuracy. Taking inspiration from SJC, we explore employing multi-view noise distributions to perturb images generated by 3D Gaussian splatting, aiming to rectify inconsistencies in multi-view geometry. We ingeniously devise an efficient method to generate noise that produces Gaussian noise from diverse viewpoints, all originating from a shared noise source. Furthermore, vanilla 3D Gaussian-based generation tends to trap models in local minima, causing artifacts like floaters, burrs, or proliferative elements. To mitigate these issues, we propose the variational Gaussian splatting technique to enhance the quality and stability of 3D appearance. To our knowledge, our approach represents the first comprehensive utilization of Gaussian splatting across the entire spectrum of 3D content generation processes.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.11221.pdf)  
+
+### 5. LucidDreamer: Towards High-Fidelity Text-to-3D Generation via Interval Score Matching  
+Yixun Liang, Xin Yang, Jiantao Lin, Haodong Li, Xiaogang Xu, Yingcong Chen
+<details open>
+<summary><b>Abstract</b></summary>
+The recent advancements in text-to-3D generation mark a significant milestone in generative models, unlocking new possibilities for creating imaginative 3D assets across various real-world scenarios. While recent advancements in text-to-3D generation have shown promise, they often fall short in rendering detailed and high-quality 3D models. This problem is especially prevalent as many methods base themselves on Score Distillation Sampling (SDS). This paper identifies a notable deficiency in SDS, that it brings inconsistent and low-quality updating direction for the 3D model, causing the over-smoothing effect. To address this, we propose a novel approach called Interval Score Matching (ISM). ISM employs deterministic diffusing trajectories and utilizes interval-based score matching to counteract over-smoothing. Furthermore, we incorporate 3D Gaussian Splatting into our text-to-3D generation pipeline. Extensive experiments show that our model largely outperforms the state-of-the-art in quality and training efficiency.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.11284.pdf)  
+
+## 3D Gaussian Splatting Avatars:
+### 1. Drivable 3D Gaussian Avatars 
+**Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
+<details open>
+<summary><b>Abstract</b></summary>
+We present Drivable 3D Gaussian Avatars (D3GA), the
+first 3D controllable model for human bodies rendered with
+Gaussian splats. Current photorealistic drivable avatars
+require either accurate 3D registrations during training,
+dense input images during testing, or both. The ones based
+on neural radiance fields also tend to be prohibitively slow
+for telepresence applications. This work uses the recently
+presented 3D Gaussian Splatting (3DGS) technique to render realistic humans at real-time framerates, using dense
+calibrated multi-view videos as input. To deform those
+primitives, we depart from the commonly used point deformation method of linear blend skinning (LBS) and use
+a classic volumetric deformation method: cage deformations. Given their smaller size, we drive these deformations
+with joint angles and keypoints, which are more suitable for
+communication applications. Our experiments on nine subjects with varied body shapes, clothes, and motions obtain
+higher-quality results than state-of-the-art methods when
+using the same training and test data.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.08581.pdf) | [🌐 Project Page](https://zielon.github.io/d3ga/) | | [🎥 Short Presentation](https://youtu.be/C4IT1gnkaF0?si=zUJLm8adM68pVvR8) 
+
+### 2. SplatArmor: Articulated Gaussian splatting for animatable humans from monocular RGB videos 
+**Authors**: Rohit Jena, Ganesh Subramanian Iyer, Siddharth Choudhary, Brandon Smith, Pratik Chaudhari, James Gee 
+<details open>
+<summary><b>Abstract</b></summary>
+We propose SplatArmor, a novel approach for recovering detailed and animatable human models by `armoring' a parameterized body model with 3D Gaussians. Our approach represents the human as a set of 3D Gaussians within a canonical space, whose articulation is defined by extending the skinning of the underlying SMPL geometry to arbitrary locations in the canonical space. To account for pose-dependent effects, we introduce a SE(3) field, which allows us to capture both the location and anisotropy of the Gaussians. Furthermore, we propose the use of a neural color field to provide color regularization and 3D supervision for the precise positioning of these Gaussians. We show that Gaussian splatting provides an interesting alternative to neural rendering based methods by leverging a rasterization primitive without facing any of the non-differentiability and optimization challenges typically faced in such approaches. The rasterization paradigms allows us to leverage forward skinning, and does not suffer from the ambiguities associated with inverse skinning and warping. We show compelling results on the ZJU MoCap and People Snapshot datasets, which underscore the effectiveness of our method for controllable human synthesis.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.10812.pdf) 
+
+### 3. Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions 
+**Authors**: Keyang Ye, Tianjia Shao, Kun Zhou 
+<details open>
+<summary><b>Abstract</b></summary>
+We present a novel animatable 3D Gaussian model for rendering high-fidelity free-view human motions in real time. Compared to existing NeRF-based methods, the model owns better capability in synthesizing high-frequency details without the jittering problem across video frames. The core of our model is a novel augmented 3D Gaussian representation, which attaches each Gaussian with a learnable code. The learnable code serves as a pose-dependent appearance embedding for refining the erroneous appearance caused by geometric transformation of Gaussians, based on which an appearance refinement model is learned to produce residual Gaussian properties to match the appearance in target pose. To force the Gaussians to learn the foreground human only without background interference, we further design a novel alpha loss to explicitly constrain the Gaussians within the human body. We also propose to jointly optimize the human joint parameters to improve the appearance accuracy. The animatable 3D Gaussian model can be learned with shallow MLPs, so new human motions can be synthesized in real time (66 fps on avarage). Experiments show that our model has superior performance over NeRF-based methods. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.13404.pdf) 
+  
+## 3D Gaussian Splatting SLAM:
+### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting 
+**Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
+<details open>
+<summary><b>Abstract</b></summary>
+In this paper, we introduce GS-SLAM that first utilizes 3D Gaussian representation in the Simultaneous Localization and Mapping (SLAM) system. It facilitates a better balance between efficiency and accuracy. Compared to recent SLAM methods employing neural implicit representations, our method utilizes a real-time differentiable splatting rendering pipeline that offers significant speedup to map optimization and RGB-D re-rendering. Specifically, we propose an adaptive expansion strategy that adds new or deletes noisy 3D Gaussian in order to efficiently reconstruct new observed scene geometry and improve the mapping of previously observed areas. This strategy is essential to extend 3D Gaussian representation to reconstruct the whole scene rather than synthesize a static object in existing methods. Moreover, in the pose tracking process, an effective coarse-to-fine technique is designed to select reliable 3D Gaussian representations to optimize camera pose, resulting in runtime reduction and robust estimation. Our method achieves competitive performance compared with existing state-of-the-art real-time methods on the Replica, TUM-RGBD datasets. The source code will be released upon acceptance. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.11700.pdf) 
+
+## 3D Gaussian Splatting Mesh Extraction and Physics:
+### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
+**Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
+<details open>
+<summary><b>Abstract</b></summary>
+We introduce PhysGaussian, a new method that seamlessly integrates physically grounded Newtonian dynamics within 3D Gaussians to achieve high-quality novel motion synthesis. Employing a custom Material Point Method (MPM), our approach enriches 3D Gaussian kernels with physically meaningful kinematic deformation and mechanical stress attributes, all evolved in line with continuum mechanics principles. A defining characteristic of our method is the seamless integration between physical simulation and visual rendering: both components utilize the same 3D Gaussian kernels as their discrete representations. This negates the necessity for triangle/tetrahedron meshing, marching cubes, "cage meshes," or any other geometry embedding, highlighting the principle of "what you see is what you simulate (WS2)." Our method demonstrates exceptional versatility across a wide variety of materials--including elastic entities, metals, non-Newtonian fluids, and granular materials--showcasing its strong capabilities in creating diverse visual content with novel viewpoints and movements. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.12198.pdf) | [🌐 Project Page](https://xpandora.github.io/PhysGaussian/) | [💻 Code (not released yet)](https://github.com/XPandora/PhysGaussian) 
+
+### 2.SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering 
+**Authors**: Antoine Guédon, Vincent Lepetit
+<details open>
+<summary><b>Abstract</b></summary>
+We introduce PhysGaussian, a new method that seamlessly integrates physically grounded Newtonian dynamics within 3D Gaussians to achieve high-quality novel motion synthesis. Employing a custom Material Point Method (MPM), our approach enriches 3D Gaussian kernels with physically meaningful kinematic deformation and mechanical stress attributes, all evolved in line with continuum mechanics principles. A defining characteristic of our method is the seamless integration between physical simulation and visual rendering: both components utilize the same 3D Gaussian kernels as their discrete representations. This negates the necessity for triangle/tetrahedron meshing, marching cubes, "cage meshes," or any other geometry embedding, highlighting the principle of "what you see is what you simulate (WS2)." Our method demonstrates exceptional versatility across a wide variety of materials--including elastic entities, metals, non-Newtonian fluids, and granular materials--showcasing its strong capabilities in creating diverse visual content with novel viewpoints and movements. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code (not released yet)](https://github.com/Anttwo/SuGaR) 
+
+## Regularization and Optimization:
+### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
+**Authors**: Jaeyoung Chung, Jeongtaek Oh, Kyoung Mu Lee 
+<details open>
+<summary><b>Abstract</b></summary>
+In this paper, we present a method to optimize Gaussian splatting with a limited number of images while avoiding overfitting. Representing a 3D scene by combining numerous Gaussian splats has yielded outstanding visual quality. However, it tends to overfit the training views when only a small number of images are available. To address this issue, we introduce a dense depth map as a geometry guide to mitigate overfitting. We obtained the depth map using a pre-trained monocular depth estimation model and aligning the scale and offset using sparse COLMAP feature points. The adjusted depth aids in the color-based optimization of 3D Gaussian splatting, mitigating floating artifacts, and ensuring adherence to geometric constraints. We verify the proposed method on the NeRF-LLFF dataset with varying numbers of few images. Our approach demonstrates robust geometry compared to the original method that relies solely on images. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.13398.pdf) 
 
 ## Classic work:
 
@@ -306,11 +452,16 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 - [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 
+### 2D Gaussian Splatting
+- [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
+
 ### Game Engines 
 - [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
+- [PlayCanvas Implementation](https://github.com/playcanvas/engine/tree/main/extras/splat)
 
 ### Viewers
-- [WebGL Viewer](https://github.com/antimatter15/splat)
+- [WebGL Viewer 1](https://github.com/antimatter15/splat)
+- [WebGL Viewer 2](https://github.com/kishimisu/Gaussian-Splatting-WebGL)
 - [WebGPU Viewer 1](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [WebGPU Viewer 2](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
@@ -322,6 +473,15 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 - [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
 - [python OpenGL viewer](https://github.com/limacv/GaussianSplattingViewer.git)
+- [PlayCanvas Viewer](https://github.com/playcanvas/model-viewer)
+- [gsplat.js](https://github.com/dylanebert/gsplat.js)
+
+### Utilities
+- [Kapture](https://github.com/naver/kapture) - a unified data format to facilitate visual localization and structure from motion e.g. for bundler to colmap model conversion
+- [Kapture image cropper script](https://gist.github.com/jo-chemla/258e6e40d3d6c2220b29518ff3c17c40) - undistorted image cropper script to remove black borders with included conversion instructions
+- [camorph](https://github.com/Fraunhofer-IIS/camorph) - a toolbox for conversion between camera parameter conventions e.g. Reality Capture to colmap model
+- [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - a tool for converting 3D Gaussian Splatting .ply files into a format suitable for Cloud Compare and vice-versa.
+- [SuperSplat](https://github.com/playcanvas/super-splat) - open source browser-based tool to clean up and reorient .ply files
 
 ## Blog Posts
 
@@ -329,6 +489,12 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 2. [Making Gaussian Splats smaller](https://aras-p.info/blog/2023/09/13/Making-Gaussian-Splats-smaller/)
 3. [Making Gaussian Splats more smaller](https://aras-p.info/blog/2023/09/27/Making-Gaussian-Splats-more-smaller/)
 4. [Introduction to 3D Gaussian Splatting](https://huggingface.co/blog/gaussian-splatting)
+5. [Very good (technical) intro to 3D Gaussian Splatting](https://medium.com/@AriaLeeNotAriel/numbynum-3d-gaussian-splatting-for-real-time-radiance-field-rendering-kerbl-et-al-60c0b25e5544)
+6. [Write up on some mathematical details of the 3DGS implementation](https://github.com/kwea123/gaussian_splatting_notes)
+7. [Discussion about gs universal format](https://github.com/mkkellogg/GaussianSplats3D/issues/47#issuecomment-1801360116)
+8. [Math explanation to understand 3DGS](https://github.com/chiehwangs/3d-gaussian-theory)
+
+
 
 ## Tutorial Videos
 
@@ -336,9 +502,10 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 2. [How to view 3DGS Scenes in Unity](https://youtu.be/5_GaPYBHqOo?si=6u9j1HqXwF_5WSUL)
 3. [Two-minute explanation of 3DGS](https://youtu.be/HVv_IQKlafQ?si=w5c9XKHfKIBuXDLW)
 4. [Jupyter notebook tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM&t=2s)
+5. [Intro to gaussian splatting (and Unity plugin)](https://www.xuanprada.com/blog/2023/10/22/intro-to-gaussian-splatting)
 
 ## Credits
 
--  Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
+- Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
 - Thanks to [Eric Haines](https://github.com/erich666) for suggesting the jupyter notebook viewer, windows tutorial and for fixing text hyphenations and other issues.
-- Thanks to [Henry Pearce](https://github.com/henrypearce4D) for debugging the video links.
+- Thanks to [Henry Pearce](https://github.com/henrypearce4D) for adding more resources and debugging the video links.
