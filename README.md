@@ -7,6 +7,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **November 21, 2023**:
+  - 3 new GS papers added: Animatable, Depth-Regularized, and Monocular/Multi-view 3DGS
+
+ **November 21, 2023**:
   - 3 new GS papers added: GaussianDiffusion, LucidDreamer, PhysGaussian
   - 2 more GS papers added: SuGaR, PhysGaussian
 
@@ -163,6 +166,16 @@ Reconstructing dynamic 3D scenes from 2D images and generating diverse views ove
 
   [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) | [💻 Code (to be released)](https://github.com/fudan-zvg/4d-gaussian-splatting) 
 
+### 5. An Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes 
+**Authors**: Kai Katsumata, Duc Minh Vo, Hideki Nakayama 
+
+<details open>
+<summary><b>Abstract</b></summary>
+In novel view synthesis of scenes from multiple input views, 3D Gaussian splatting emerges as a viable alternative to existing radiance field approaches, delivering great visual quality and real-time rendering. While successful in static scenes, the present advancement of 3D Gaussian representation, however, faces challenges in dynamic scenes in terms of memory consumption and the need for numerous observations per time step, due to the onus of storing 3D Gaussian parameters per time step. In this study, we present an efficient 3D Gaussian representation tailored for dynamic scenes in which we define positions and rotations as functions of time while leaving other time-invariant properties of the static 3D Gaussian unchanged. Notably, our representation reduces memory usage, which is consistent regardless of the input sequence length. Additionally, it mitigates the risk of overfitting observed frames by accounting for temporal changes. The optimization of our Gaussian representation based on image and flow reconstruction results in a powerful framework for dynamic scene view synthesis in both monocular and multi-view cases. We obtain the highest rendering speed of 118 frames per second (FPS) at a resolution of 1352×1014 with a single GPU, showing the practical usability and effectiveness of our proposed method in dynamic scene rendering scenarios
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.12897.pdf) 
+
 ## Diffusion 3D Gaussian Splatting:
 
 ### 1. Text-to-3D using Gaussian Splatting
@@ -288,6 +301,15 @@ We propose SplatArmor, a novel approach for recovering detailed and animatable h
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.10812.pdf) 
+
+### 3. Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions 
+**Authors**: Keyang Ye, Tianjia Shao, Kun Zhou 
+<details open>
+<summary><b>Abstract</b></summary>
+We present a novel animatable 3D Gaussian model for rendering high-fidelity free-view human motions in real time. Compared to existing NeRF-based methods, the model owns better capability in synthesizing high-frequency details without the jittering problem across video frames. The core of our model is a novel augmented 3D Gaussian representation, which attaches each Gaussian with a learnable code. The learnable code serves as a pose-dependent appearance embedding for refining the erroneous appearance caused by geometric transformation of Gaussians, based on which an appearance refinement model is learned to produce residual Gaussian properties to match the appearance in target pose. To force the Gaussians to learn the foreground human only without background interference, we further design a novel alpha loss to explicitly constrain the Gaussians within the human body. We also propose to jointly optimize the human joint parameters to improve the appearance accuracy. The animatable 3D Gaussian model can be learned with shallow MLPs, so new human motions can be synthesized in real time (66 fps on avarage). Experiments show that our model has superior performance over NeRF-based methods. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.13404.pdf) 
   
 ## 3D Gaussian Splatting SLAM:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting 
@@ -318,6 +340,15 @@ We introduce PhysGaussian, a new method that seamlessly integrates physically gr
 
   [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code (not released yet)](https://github.com/Anttwo/SuGaR) 
 
+## Regularization and Optimization:
+### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
+**Authors**: Jaeyoung Chung, Jeongtaek Oh, Kyoung Mu Lee 
+<details open>
+<summary><b>Abstract</b></summary>
+In this paper, we present a method to optimize Gaussian splatting with a limited number of images while avoiding overfitting. Representing a 3D scene by combining numerous Gaussian splats has yielded outstanding visual quality. However, it tends to overfit the training views when only a small number of images are available. To address this issue, we introduce a dense depth map as a geometry guide to mitigate overfitting. We obtained the depth map using a pre-trained monocular depth estimation model and aligning the scale and offset using sparse COLMAP feature points. The adjusted depth aids in the color-based optimization of 3D Gaussian splatting, mitigating floating artifacts, and ensuring adherence to geometric constraints. We verify the proposed method on the NeRF-LLFF dataset with varying numbers of few images. Our approach demonstrates robust geometry compared to the original method that relies solely on images. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.13398.pdf) 
 
 ## Open Source Implementations 
 
