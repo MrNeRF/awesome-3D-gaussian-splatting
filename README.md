@@ -5,8 +5,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **November 25, 2023**:
+  - Animatable Gaussians project added (paper not yet released).
 
- **November 21, 2023**:
+ **November 22, 2023**:
   - 3 new GS papers added: Animatable, Depth-Regularized, and Monocular/Multi-view 3DGS.
   - Added some classic papers.
   - Added another GS paper also called LucidDreamer.
@@ -322,6 +324,15 @@ We present a novel animatable 3D Gaussian model for rendering high-fidelity free
 
   [📄 Paper](https://arxiv.org/pdf/2311.13404.pdf) 
   
+### 4. Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling 
+**Authors**: Zhe Li, Zerong Zheng, Lizhen Wang, Yebin Liu 
+<details open>
+<summary><b>Abstract</b></summary>
+Modeling animatable human avatars from RGB videos is a long-standing and challenging problem. Recent works usually adopt MLP-based neural radiance fields (NeRF) to represent 3D humans, but it remains difficult for pure MLPs to regress pose-dependent garment details. To this end, we introduce Animatable Gaussians, a new avatar representation that leverages powerful 2D CNNs and 3D Gaussian splatting to create high-fidelity avatars. To associate 3D Gaussians with the animatable avatar, we learn a parametric template from the input videos, and then parameterize the template on two front & back canonical Gaussian maps where each pixel represents a 3D Gaussian. The learned template is adaptive to the wearing garments for modeling looser clothes like dresses. Such template-guided 2D parameterization enables us to employ a powerful StyleGAN-based CNN to learn the pose-dependent Gaussian maps for modeling detailed dynamic appearances. Furthermore, we introduce a pose projection strategy for better generalization given novel poses. Overall, our method can create lifelike avatars with dynamic, realistic and generalized appearances. Experiments show that our method outperforms other state-of-the-art approaches. 
+</details>
+
+  [📄 Paper(not yet)]() | [🌐 Project Page](https://animatable-gaussians.github.io/) | [💻 Code (not yet)](https://github.com/lizhe00/AnimatableGaussians)
+
 ## 3D Gaussian Splatting SLAM:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting 
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
