@@ -6,8 +6,11 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **November 28, 2023**:
+  - Added four papers: GaussinEditor, Relightable Gaussians, GART, and Mip-Splatting.
+
  **November 27, 2023**:
-  - Added two papers: GaussinEditor and Compact 3D Gaussians.
+  - Added two papers: Gaussian Editing and Compact 3D Gaussians.
 
  **November 25, 2023**:
   - Animatable Gaussians project added (paper not yet released).
