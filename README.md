@@ -7,7 +7,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **November 28, 2023**:
-  - Added four papers: GaussinEditor, Relightable Gaussians, GART, and Mip-Splatting.
+  - Added five papers: GaussinEditor, Relightable Gaussians, GART, Mip-Splatting, HumanGaussian.
 
  **November 27, 2023**:
   - Added two papers: Gaussian Editing and Compact 3D Gaussians.
@@ -288,6 +288,15 @@ With the widespread usage of VR devices and contents, demands for 3D scene gener
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.13384.pdf) | [🌐 Project Page](https://luciddreamer-cvlab.github.io/) | [💻 Code (not yet)](https://github.com/anonymous-luciddreamer/LucidDreamer) 
+
+### 7. HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting  
+Xian Liu, Xiaohang Zhan, Jiaxiang Tang, Ying Shan, Gang Zeng, Dahua Lin, Xihui Liu, Ziwei Liu
+<details open>
+<summary><b>Abstract</b></summary>
+Realistic 3D human generation from text prompts is a desirable yet challenging task. Existing methods optimize 3D representations like mesh or neural fields via score distillation sampling (SDS), which suffers from inadequate fine details or excessive training time. In this paper, we propose an efficient yet effective framework, HumanGaussian, that generates high-quality 3D humans with fine-grained geometry and realistic appearance. Our key insight is that 3D Gaussian Splatting is an efficient renderer with periodic Gaussian shrinkage or growing, where such adaptive density control can be naturally guided by intrinsic human structures. Specifically, 1) we first propose a Structure-Aware SDS that simultaneously optimizes human appearance and geometry. The multi-modal score function from both RGB and depth space is leveraged to distill the Gaussian densification and pruning process. 2) Moreover, we devise an Annealed Negative Prompt Guidance by decomposing SDS into a noisier generative score and a cleaner classifier score, which well addresses the over-saturation issue. The floating artifacts are further eliminated based on Gaussian size in a prune-only phase to enhance generation smoothness. Extensive experiments demonstrate the superior efficiency and competitive quality of our framework, rendering vivid 3D humans under diverse scenarios.
+</details>
+
+  [📄 Paper](https://alvinliu0.github.io/projects/HumanGaussian/humangaussian.pdf) | [🌐 Project Page](https://alvinliu0.github.io/projects/HumanGaussian) | [💻 Code](https://github.com/alvinliu0/HumanGaussian) | [🎥 Short Presentation](https://www.youtube.com/watch?v=S3djzHoqPKY)
 
 ## 3D Gaussian Splatting Avatars:
 ### 1. Drivable 3D Gaussian Avatars 
