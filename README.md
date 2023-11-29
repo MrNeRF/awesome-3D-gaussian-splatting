@@ -332,7 +332,7 @@ using the same training and test data.
 We propose SplatArmor, a novel approach for recovering detailed and animatable human models by `armoring' a parameterized body model with 3D Gaussians. Our approach represents the human as a set of 3D Gaussians within a canonical space, whose articulation is defined by extending the skinning of the underlying SMPL geometry to arbitrary locations in the canonical space. To account for pose-dependent effects, we introduce a SE(3) field, which allows us to capture both the location and anisotropy of the Gaussians. Furthermore, we propose the use of a neural color field to provide color regularization and 3D supervision for the precise positioning of these Gaussians. We show that Gaussian splatting provides an interesting alternative to neural rendering based methods by leverging a rasterization primitive without facing any of the non-differentiability and optimization challenges typically faced in such approaches. The rasterization paradigms allows us to leverage forward skinning, and does not suffer from the ambiguities associated with inverse skinning and warping. We show compelling results on the ZJU MoCap and People Snapshot datasets, which underscore the effectiveness of our method for controllable human synthesis.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.10812.pdf) 
+  [📄 Paper](https://arxiv.org/pdf/2311.10812.pdf) |  [🌐 Project Page](https://jenaroh.it/splatarmor/) | [💻 Code (not yet)](https://github.com/rohitrango/splatarmor)
 
 ### 3. Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions 
 **Authors**: Keyang Ye, Tianjia Shao, Kun Zhou 
