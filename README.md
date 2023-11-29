@@ -428,6 +428,14 @@ Recently, impressive results have been achieved in 3D scene editing with text in
 
   [📄 Paper](https://arxiv.org/pdf/2311.14521.pdf) | [🌐 Project Page](https://gaussianeditor.github.io/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/KWtALsigR3k?si=h6-A44brd5rm3_CM)
 
+### 3. Point'n Move: Interactive Scene Object Manipulation on Gaussian Splatting Radiance Fields 
+**Authors**: Jiajun Huang, Hongchuan Yu 
+<details open>
+<summary><b>Abstract</b></summary>
+We propose Point'n Move, a method that achieves interactive scene object manipulation with exposed region inpainting. Interactivity here further comes from intuitive object selection and real-time editing. To achieve this, we adopt Gaussian Splatting Radiance Field as the scene representation and fully leverage its explicit nature and speed advantage. Its explicit representation formulation allows us to devise a 2D prompt points to 3D mask dual-stage self-prompting segmentation algorithm, perform mask refinement and merging, minimize change as well as provide good initialization for scene inpainting and perform editing in real-time without per-editing training, all leads to superior quality and performance. We test our method by performing editing on both forward-facing and 360 scenes. We also compare our method against existing scene object removal methods, showing superior quality despite being more capable and having a speed advantage. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.16737.pdf)
 
 ## 3D Gaussian Rendering:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
