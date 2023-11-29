@@ -6,6 +6,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **November 29, 2023**:
+  - Added two papers: Point and Move and IR-GS.
+
  **November 28, 2023**:
   - Added five papers: GaussinEditor, Relightable Gaussians, GART, Mip-Splatting, HumanGaussian.
 
