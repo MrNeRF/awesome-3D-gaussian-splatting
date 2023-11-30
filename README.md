@@ -304,6 +304,15 @@ Realistic 3D human generation from text prompts is a desirable yet challenging t
 
   [📄 Paper](https://alvinliu0.github.io/projects/HumanGaussian/humangaussian.pdf) | [🌐 Project Page](https://alvinliu0.github.io/projects/HumanGaussian) | [💻 Code](https://github.com/alvinliu0/HumanGaussian) | [🎥 Short Presentation](https://www.youtube.com/watch?v=S3djzHoqPKY)
 
+### 8. CG3D: Compositional Generation for Text-to-3D
+Alexander Vilesov, Pradyumna Chari, Achuta Kadambi
+<details open>
+<summary><b>Abstract</b></summary>
+With the onset of diffusion-based generative models and their ability to generate text-conditioned images, content generation has received a massive invigoration. Recently, these models have been shown to provide useful guidance for the generation of 3D graphics assets. However, existing work in text-conditioned 3D generation faces fundamental constraints: (i) inability to generate detailed, multi-object scenes, (ii) inability to textually control multi-object configurations, and (iii) physically realistic scene composition. In this work, we propose CG3D, a method for compositionally generating scalable 3D assets that resolves these constraints. We find that explicit Gaussian radiance fields, parameterized to allow for compositions of objects, possess the capability to enable semantically and physically consistent scenes. By utilizing a guidance framework built around this explicit representation, we show state of the art results, capable of even exceeding the guiding diffusion model in terms of object combinations and physics accuracy.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.17907.pdf) | [🌐 Project Page](https://asvilesov.github.io/CG3D/) | | [🎥 Short Presentation](https://www.youtube.com/watch?v=FMAVeolsE7s)
+
 ## 3D Gaussian Splatting Avatars:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
