@@ -8,6 +8,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **November 30, 2023**:
   - Added Unreal game engine implementation.
+  - 5 papers added: LightGaussian, FisherRF, HUGS, HumanGaussian, CG3D, and Multi Scale 3DGS.
   
  **November 29, 2023**:
   - Added two papers: Point and Move and IR-GS.
