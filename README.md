@@ -6,6 +6,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **November 30, 2023**:
+  - Added Unreal game engine implementation.
+  
  **November 29, 2023**:
   - Added two papers: Point and Move and IR-GS.
 
@@ -575,8 +578,9 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 - [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
 
 ### Game Engines 
-- [Unity Implementation](https://github.com/aras-p/UnityGaussianSplatting)
-- [PlayCanvas Implementation](https://github.com/playcanvas/engine/tree/main/extras/splat)
+- [Unity](https://github.com/aras-p/UnityGaussianSplatting)
+- [PlayCanvas](https://github.com/playcanvas/engine/tree/main/extras/splat)
+- [Unreal](https://github.com/xverse-engine/XV3DGS-UEPlugin)
 
 ### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
