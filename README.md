@@ -530,6 +530,15 @@ This study addresses the challenging problem of active view selection and uncert
 
   [📄 Paper](https://arxiv.org/pdf/2311.17874.pdf) | [🌐 Project Page](https://jiangwenpl.github.io/FisherRF/) | [💻 Code (not yet)](https://github.com/JiangWenPL/FisherRF) 
 
+### 2. Periodic Vibration Gaussian: Dynamic Urban Scene Reconstruction and Real-time Rendering 
+**Authors**: Yurui Chen, Chun Gu, Junzhe Jiang, Xiatian Zhu, Li Zhang 
+<details span>
+<summary><b>Abstract</b></summary>
+Modeling dynamic, large-scale urban scenes is challenging due to their highly intricate geometric structures and unconstrained dynamics in both space and time. Prior methods often employ high-level architectural priors, separating static and dynamic elements, resulting in suboptimal capture of their synergistic interactions. To address this challenge, we present a unified representation model, called Periodic Vibration Gaussian (PVG). PVG builds upon the efficient 3D Gaussian splatting technique, originally designed for static scene representation, by introducing periodic vibration-based temporal dynamics. This innovation enables PVG to elegantly and uniformly represent the characteristics of various objects and elements in dynamic urban scenes. To enhance temporally coherent representation learning with sparse training data, we introduce a novel flow-based temporal smoothing mechanism and a position-aware adaptive control strategy. Extensive experiments on Waymo Open Dataset and KITTI benchmarks demonstrate that PVG surpasses state-of-the-art alternatives in both reconstruction and novel view synthesis for both dynamic and static scenes. Notably, PVG achieves this without relying on manually labeled object bounding boxes or expensive optical flow estimation. Moreover, PVG exhibits 50/6000-fold acceleration in training/rendering over the best alternative. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.18561.pdf) | [🌐 Project Page](https://fudan-zvg.github.io/PVG/) | [💻 Code (not yet)](https://github.com/fudan-zvg/PVG) 
+
 ## Classic work:
 
 ### 1. A Generalization of Algebraic Surface Drawing
