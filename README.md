@@ -2,11 +2,39 @@
 
 A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
+## Table of contents
+
+- [Seminal Paper introducing 3D Gaussian Splatting](#seminal-paper-introducing-3d-gaussian-splatting)
+- [Dynamic 3D Gaussian Splatting](#dynamic-3d-gaussian-splatting)
+- [Diffusion 3D Gaussian Splatting](#diffusion-3d-gaussian-splatting)
+- [3D Gaussian Splatting Avatars](#3d-gaussian-splatting-avatars)
+- [3D Gaussian Splatting SLAM](#3d-gaussian-splatting-slam)
+- [3D Gaussian Splatting Mesh Extraction and Physics](#3d-gaussian-splatting-mesh-extraction-and-physics)
+- [Regularization and Optimization](#regularization-and-optimization)
+- [3D Gaussian Editing](#3d-gaussian-editing)
+- [3D Gaussian Rendering](#3d-gaussian-rendering)
+- [3D Gaussian Compression](#3d-gaussian-compression)
+- [Misc](#misc)
+- [Classic work](#classic-work)
+- [Open Source Implementations](#open-source-implementations)
+  * [Reference](#reference)
+  * [Unofficial Implementations](#unofficial-implementations)
+  * [2D Gaussian Splatting](#2d-gaussian-splatting)
+  * [Game Engines](#game-engines)
+  * [Viewers](#viewers)
+  * [Utilities](#utilities)
+- [Blog Posts](#blog-posts)
+- [Tutorial Videos](#tutorial-videos)
+- [Credits](#credits)
+
+
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
  **December 1, 2023**:
   - 4 papers added: Compact3D, GaussianShader, Periodic Vibration Gaussian and Gaussian Shell Maps for Efficient 3D Human Generation.
+  - Created Table of contents for each category and added line breaks.
 
  **November 30, 2023**:
   - Added Unreal game engine implementation.
@@ -86,6 +114,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 **October 15, 2023**: Initial list with first 6 papers.
 </details>
 
+<br>
+
 ## Seminal Paper introducing 3D Gaussian Splatting:
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
 **Authors**: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
@@ -114,6 +144,8 @@ rendering on several established datasets.
 </details>
   
   [📄 Paper (Low Resolution)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_low.pdf) | [📄 Paper (High Resolution)](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | [💻 Code](https://github.com/graphdeco-inria/gaussian-splatting) | [🎥 Short Presentation](https://youtu.be/T_kXY43VZnk?si=DrkbDFxQAv5scQNT) | [🎥 Explanation Video](https://www.youtube.com/live/xgwvU7S0K-k?si=edF8NkYtsRbgTbKi)
+
+<br>
 
 ## Dynamic 3D Gaussian Splatting:
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
@@ -196,6 +228,8 @@ In novel view synthesis of scenes from multiple input views, 3D Gaussian splatti
 
   [📄 Paper](https://arxiv.org/pdf/2311.12897.pdf) 
 
+<br>
+
 ## Diffusion 3D Gaussian Splatting:
 
 ### 1. Text-to-3D using Gaussian Splatting
@@ -221,7 +255,6 @@ effectiveness of our method, especially for capturing high-frequency components.
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2309.16585.pdf) | [🌐 Project Page](https://gsgen3d.github.io/) | [💻 Code](https://github.com/gsgen3d/gsgen) | [🎥 Short Presentation](https://streamable.com/28snte) | [🎥 Explanation Video](https://www.youtube.com/live/l956ye13F8M?si=ZkvFL_lsY5OQUB7e)
-
 
 ### 2. DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation
 **Authors**: Jiaxiang Tang, Jiawei Ren, Hang Zhou, Ziwei Liu, Gang Zeng
@@ -316,6 +349,8 @@ With the onset of diffusion-based generative models and their ability to generat
 
   [📄 Paper](https://arxiv.org/pdf/2311.17907.pdf) | [🌐 Project Page](https://asvilesov.github.io/CG3D/) | | [🎥 Short Presentation](https://www.youtube.com/watch?v=FMAVeolsE7s)
 
+<br>
+
 ## 3D Gaussian Splatting Avatars:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
@@ -403,6 +438,8 @@ Efficient generation of 3D digital humans is important in several industries, in
 
   [📄 Paper](https://arxiv.org/abs/2311.17857) | [🌐 Project Page](https://rameenabdal.github.io/GaussianShellMaps/) | [💻 Code (not yet)](https://github.com/computational-imaging/GSM)
 
+<br>
+
 ## 3D Gaussian Splatting SLAM:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting 
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
@@ -432,6 +469,8 @@ We propose a method to allow precise and extremely fast mesh extraction from 3D 
 
   [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code (not released yet)](https://github.com/Anttwo/SuGaR) 
 
+<br>
+
 ## Regularization and Optimization:
 ### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
 **Authors**: Jaeyoung Chung, Jeongtaek Oh, Kyoung Mu Lee 
@@ -450,6 +489,8 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.13681.pdf) | [🌐 Project Page](https://maincold2.github.io/c3dgs/) | [💻 Code ](https://github.com/maincold2/Compact-3DGS) 
+
+<br>
 
 ## 3D Gaussian Editing:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
@@ -480,6 +521,8 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.16737.pdf)
+
+<br>
 
 ## 3D Gaussian Rendering:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
@@ -527,6 +570,8 @@ The advent of neural 3D Gaussians has recently brought about a revolution in the
 
   [📄 Paper](https://arxiv.org/pdf/2311.17977.pdf) | [🌐 Project Page](https://asparagus15.github.io/GaussianShader.github.io/) | [💻 Code](https://github.com/Asparagus15/GaussianShader) 
 
+<br>
+
 ## 3D Gaussian Compression:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
 **Authors**: Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang 
@@ -548,6 +593,8 @@ In summary, LightGaussian achieves an averaged compression rate over 15x while b
 
   [📄 Paper](https://arxiv.org/pdf/2311.18159.pdf) | [💻 Code](https://github.com/UCDvision/compact3d)
 
+<br>
+
 ## Misc:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
@@ -567,8 +614,9 @@ Modeling dynamic, large-scale urban scenes is challenging due to their highly in
 
   [📄 Paper](https://arxiv.org/pdf/2311.18561.pdf) | [🌐 Project Page](https://fudan-zvg.github.io/PVG/) | [💻 Code (not yet)](https://github.com/fudan-zvg/PVG) 
 
-## Classic work:
+<br>
 
+## Classic work:
 ### 1. A Generalization of Algebraic Surface Drawing
 **Authors**: James F. Blinn
 
@@ -657,6 +705,8 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 
 [📄 Paper](https://old.cescg.org/CESCG-2006/papers/Prague-Man-Petr.pdf) 
 
+<br>
+
 ## Open Source Implementations 
 
 ### Reference 
@@ -712,8 +762,6 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 7. [Discussion about gs universal format](https://github.com/mkkellogg/GaussianSplats3D/issues/47#issuecomment-1801360116)
 8. [Math explanation to understand 3DGS](https://github.com/chiehwangs/3d-gaussian-theory)
 
-
-
 ## Tutorial Videos
 
 1. [Getting Started with 3DGS for Windows](https://youtu.be/UXtuigy_wYc?si=j1vfORNspcocSH-b)
@@ -726,4 +774,4 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 
 - Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
 - Thanks to [Eric Haines](https://github.com/erich666) for suggesting the jupyter notebook viewer, windows tutorial and for fixing text hyphenations and other issues.
-- Thanks to [Henry Pearce](https://github.com/henrypearce4D) for adding more resources and debugging the video links.
+- Thanks to [Henry Pearce](https://github.com/henrypearce4D) for maintaining contributions.
