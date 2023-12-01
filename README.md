@@ -357,6 +357,7 @@ Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu L
  rendering while also enjoying high training and storage efficiency. An efficient deformation field is constructed to model both Gaussian motions and shape deformations. Different adjacent Gaussians are connected via a HexPlane to produce more accurate position and 
  shape deformations. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at an 800×800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods. More demos and code are available at https://guanjunwu.github.io/4dgs/.
  </details>
+ 
  [📄 Paper](https://arxiv.org/pdf/2310.08528.pdf) | [🌐 Project Page](https://guanjunwu.github.io/4dgs/) | | [💻 Code](https://github.com/hustvl/4DGaussians)
 
  ### 10. Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
@@ -365,6 +366,7 @@ Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu L
 <summary><b>Abstract</b></summary>
 Implicit neural representation has opened up new avenues for dynamic scene reconstruction and rendering. Nonetheless, state-of-the-art methods of dynamic neural rendering rely heavily on these implicit representations, which frequently struggle with accurately capturing the intricate details of objects in the scene. Furthermore, implicit methods struggle to achieve real-time rendering in general dynamic scenes, limiting their use in a wide range of tasks. To address the issues, we propose a deformable 3D Gaussians Splatting method that reconstructs scenes using explicit 3D Gaussians and learns Gaussians in canonical space with a deformation field to model monocular dynamic scenes. We also introduced a smoothing training mechanism with no extra overhead to mitigate the impact of inaccurate poses in real datasets on the smoothness of time interpolation tasks. Through differential gaussian rasterization, the deformable 3D Gaussians not only achieve higher rendering quality but also real-time rendering speed. Experiments show that our method outperforms existing methods significantly in terms of both rendering quality and speed, making it well-suited for tasks such as novel-view synthesis, time synthesis, and real-time rendering. We plan to release our code and data soon.
 </details>
+
  [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | | [💻 Code](https://github.com/ingra14m/Deformable-3D-Gaussians)
 
 <br>
