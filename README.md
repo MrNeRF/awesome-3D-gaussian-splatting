@@ -5,6 +5,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **December 1, 2023**:
+  - 3 papers added: Compact3D, GaussianShader, and Periodic Vibration Gaussian.
 
  **November 30, 2023**:
   - Added Unreal game engine implementation.
@@ -42,7 +44,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
   - Drivable 3D Gaussian Avatars paper added. 
 
  **November 8, 2023**:
-  - Some notes about the 3DGS implementation and unsiversal format discussion.
+  - Some notes about the 3DGS implementation and unsive/rsal format discussion.
 
  **November 4, 2023**:
   - Added 2D gaussian splatting.
@@ -514,7 +516,7 @@ We propose GS-IR, a novel inverse rendering approach based on 3D Gaussian Splatt
 The advent of neural 3D Gaussians has recently brought about a revolution in the field of neural rendering, facilitating the generation of high-quality renderings at real-time speeds. However, the explicit and discrete representation encounters challenges when applied to scenes featuring reflective surfaces. In this paper, we present GaussianShader, a novel method that applies a simplified shading function on 3D Gaussians to enhance the neural rendering in scenes with reflective surfaces while preserving the training and rendering efficiency. The main challenge in applying the shading function lies in the accurate normal estimation on discrete 3D Gaussians. Specifically, we proposed a novel normal estimation framework based on the shortest axis directions of 3D Gaussians with a delicately designed loss to make the consistency between the normals and the geometries of Gaussian spheres. Experiments show that GaussianShader strikes a commendable balance between efficiency and visual quality. Our method surpasses Gaussian Splatting in PSNR on specular object datasets, exhibiting an improvement of 1.57dB. When compared to prior works handling reflective surfaces, such as Ref-NeRF, our optimization time is significantly accelerated (23h vs. 0.58h). Please click on our project website to see more results. 
 </details>
 
-  [📄 Paper](https://arxiv.org/abs/2311.17977) | [🌐 Project Page](https://asparagus15.github.io/GaussianShader.github.io/) | [💻 Code](https://github.com/Asparagus15/GaussianShader) 
+  [📄 Paper](https://arxiv.org/pdf/2311.17977.pdf) | [🌐 Project Page](https://asparagus15.github.io/GaussianShader.github.io/) | [💻 Code](https://github.com/Asparagus15/GaussianShader) 
 
 ## 3D Gaussian Compression:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
@@ -527,6 +529,15 @@ In summary, LightGaussian achieves an averaged compression rate over 15x while b
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.17245.pdf) | [🌐 Project Page](https://lightgaussian.github.io/) | [💻 Code](https://github.com/VITA-Group/LightGaussian) | [🎥 Short Presentation](https://youtu.be/470hul75bSM?si=EKm-UaBaTs9qJH6K)
+
+### 2. Compact3D: Compressing Gaussian Splat Radiance Field Models with Vector Quantization 
+**Authors**: KL Navaneet, Kossar Pourahmadi Meibodi, Soroush Abbasi Koohpayegani, Hamed Pirsiavash 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting is a new method for modeling and rendering 3D radiance fields that achieves much faster learning and rendering time compared to SOTA NeRF methods. However, it comes with a drawback in the much larger storage demand compared to NeRF methods since it needs to store the parameters for several 3D Gaussians. We notice that many Gaussians may share similar parameters, so we introduce a simple vector quantization method based on \kmeans algorithm to quantize the Gaussian parameters. Then, we store the small codebook along with the index of the code for each Gaussian. Moreover, we compress the indices further by sorting them and using a method similar to run-length encoding. We do extensive experiments on standard benchmarks as well as a new benchmark which is an order of magnitude larger than the standard benchmarks. We show that our simple yet effective method can reduce the storage cost for the original 3D Gaussian Splatting method by a factor of almost 20× with a very small drop in the quality of rendered images. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.18159.pdf) | [💻 Code](https://github.com/UCDvision/compact3d)
 
 ## Misc:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
