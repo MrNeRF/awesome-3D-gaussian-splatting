@@ -5,15 +5,15 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 ## Table of contents
 
 - [Seminal Paper introducing 3D Gaussian Splatting](#seminal-paper-introducing-3d-gaussian-splatting)
-- [Dynamic 3D Gaussian Splatting](#dynamic-3d-gaussian-splatting)
-- [Diffusion 3D Gaussian Splatting](#diffusion-3d-gaussian-splatting)
-- [3D Gaussian Splatting Avatars](#3d-gaussian-splatting-avatars)
-- [3D Gaussian Splatting SLAM](#3d-gaussian-splatting-slam)
-- [3D Gaussian Splatting Mesh Extraction and Physics](#3d-gaussian-splatting-mesh-extraction-and-physics)
+- [Dynamics and Deformation](#dynamics-and-deformation)
+- [Diffusion](#diffusion)
+- [Avatars](#avatars)
+- [SLAM](#slam)
+- [Mesh Extraction and Physics](#mesh-extraction-and-physics)
 - [Regularization and Optimization](#regularization-and-optimization)
-- [3D Gaussian Editing](#3d-gaussian-editing)
-- [3D Gaussian Rendering](#3d-gaussian-rendering)
-- [3D Gaussian Compression](#3d-gaussian-compression)
+- [Editing](#editing)
+- [Rendering](#rendering)
+- [Compression](#compression)
 - [Misc](#misc)
 - [Classic work](#classic-work)
 - [Open Source Implementations](#open-source-implementations)
@@ -147,7 +147,7 @@ rendering on several established datasets.
 
 <br>
 
-## Dynamic 3D Gaussian Splatting:
+## Dynamics and Deformation:
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
 
@@ -230,7 +230,7 @@ In novel view synthesis of scenes from multiple input views, 3D Gaussian splatti
 
 <br>
 
-## Diffusion 3D Gaussian Splatting:
+## Diffusion:
 
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
@@ -351,7 +351,7 @@ With the onset of diffusion-based generative models and their ability to generat
 
 <br>
 
-## 3D Gaussian Splatting Avatars:
+## Avatars:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
 <details span>
@@ -440,7 +440,7 @@ Efficient generation of 3D digital humans is important in several industries, in
 
 <br>
 
-## 3D Gaussian Splatting SLAM:
+## SLAM:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting 
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
 <details span>
@@ -450,7 +450,7 @@ In this paper, we introduce GS-SLAM that first utilizes 3D Gaussian representati
 
   [📄 Paper](https://arxiv.org/pdf/2311.11700.pdf) 
 
-## 3D Gaussian Splatting Mesh Extraction and Physics:
+## Mesh Extraction and Physics: 
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
 <details span>
@@ -492,7 +492,7 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 
 <br>
 
-## 3D Gaussian Editing:
+## Editing:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
 <details span>
@@ -524,7 +524,7 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 
 <br>
 
-## 3D Gaussian Rendering:
+## Rendering:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
 <details span>
@@ -572,7 +572,7 @@ The advent of neural 3D Gaussians has recently brought about a revolution in the
 
 <br>
 
-## 3D Gaussian Compression:
+## Compression:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
 **Authors**: Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang 
 <details span>
