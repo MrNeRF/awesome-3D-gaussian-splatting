@@ -32,6 +32,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 4, 2023**:
+  - x papers added: Gaussian Grouping
+
  **December 1, 2023**:
   - 4 papers added: Compact3D, GaussianShader, Periodic Vibration Gaussian and Gaussian Shell Maps for Efficient 3D Human Generation.
   - Created Table of contents for each category and added line breaks.
@@ -522,7 +525,14 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 
   [📄 Paper](https://arxiv.org/pdf/2311.16737.pdf)
 
-<br>
+### 3. Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
+**Authors**: Mingqiao Ye, Martin Danelljan, Fisher Yu, Lei Ke 
+<details span>
+<summary><b>Abstract</b></summary>
+The recent Gaussian Splatting achieves high-quality and real-time novel-view synthesis of the 3D scenes. However, it is solely concentrated on the appearance and geometry modeling, while lacking in fine-grained object-level scene understanding. To address this issue, we propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. We augment each Gaussian with a compact Identity Encoding, allowing the Gaussians to be grouped according to their object instance or stuff membership in the 3D scene. Instead of resorting to expensive 3D labels, we supervise the Identity Encodings during the differentiable rendering by leveraging the 2D mask predictions by SAM, along with introduced 3D spatial consistency regularization. Comparing to the implicit NeRF representation, we show that the discrete and grouped 3D Gaussians can reconstruct, segment and edit anything in 3D with high visual quality, fine granularity and efficiency. Based on Gaussian Grouping, we further propose a local Gaussian Editing scheme, which shows efficacy in versatile scene editing applications, including 3D object removal, inpainting, colorization and scene recomposition. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.00732.pdf) | [💻 Code (not yet)](https://github.com/lkeab/gaussian-grouping) 
 
 ## Rendering:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
