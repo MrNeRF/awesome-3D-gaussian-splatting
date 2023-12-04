@@ -33,7 +33,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 4, 2023**:
-  - x papers added: Gaussian Grouping, MD Splatting, DynMF, Scaffold-GS, SparseGS, FSGS
+  - 7 papers added: Gaussian Grouping, MD Splatting, DynMF, Scaffold-GS, SparseGS, FSGS, and Control4D
 
  **December 1, 2023**:
   - 4 papers added: Compact3D, GaussianShader, Periodic Vibration Gaussian and Gaussian Shell Maps for Efficient 3D Human Generation.
@@ -240,6 +240,16 @@ Accurately and efficiently modeling dynamic scenes and motions is considered so 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.00112.pdf) | [🌐 Project Page](https://agelosk.github.io/dynmf/) | [💻 Code (not yet)](https://github.com/agelosk/dynmf)
+
+### 7. Control4D: Efficient 4D Portrait Editing with Text 
+**Authors**: Ruizhi Shao, Jingxiang Sun, Cheng Peng, Zerong Zheng, Boyao Zhou, Hongwen Zhang, Yebin Liu  
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Control4D, an innovative framework for editing dynamic 4D portraits using text instructions. Our method addresses the prevalent challenges in 4D editing, notably the inefficiencies of existing 4D representations and the inconsistent editing effect caused by diffusion-based editors. We first propose GaussianPlanes, a novel 4D representation that makes Gaussian Splatting more structured by applying plane-based decomposition in 3D space and time. This enhances both efficiency and robustness in 4D editing. Furthermore, we propose to leverage a 4D generator to learn a more continuous generation space from inconsistent edited images produced by the diffusion-based editor, which effectively improves the consistency and quality of 4D editing. Comprehensive evaluation demonstrates the superiority of Control4D, including significantly reduced training time, high-quality rendering, and spatial-temporal consistency in 4D portrait editing.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2305.20082.pdf) | [🌐 Project Page](https://control4darxiv.github.io/) | [💻 Code (not yet)]()
 
 <br>
 
