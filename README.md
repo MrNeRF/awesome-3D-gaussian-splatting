@@ -33,7 +33,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 4, 2023**:
-  - x papers added: Gaussian Grouping, MD Splatting, DynMF, Scaffold-GS, SparseGS
+  - x papers added: Gaussian Grouping, MD Splatting, DynMF, Scaffold-GS, SparseGS, FSGS
 
  **December 1, 2023**:
   - 4 papers added: Compact3D, GaussianShader, Periodic Vibration Gaussian and Gaussian Shell Maps for Efficient 3D Human Generation.
@@ -618,6 +618,15 @@ The problem of novel view synthesis has grown significantly in popularity recent
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.00206.pdf) | [🌐 Project Page](https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/) | [💻 Code (not yet)]() 
+
+### 8. FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting  
+**Authors**: Zehao Zhu, Zhiwen Fan, Yifan Jiang, Zhangyang Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+Novel view synthesis from limited observations remains an important and persistent task. However, high efficiency in existing NeRF-based few-shot view synthesis is often compromised to obtain an accurate 3D representation. To address this challenge, we propose a few-shot view synthesis framework based on 3D Gaussian Splatting that enables real-time and photo-realistic view synthesis with as few as three training views. The proposed method, dubbed FSGS, handles the extremely sparse initialized SfM points with a thoughtfully designed Gaussian Unpooling process. Our method iteratively distributes new Gaussians around the most representative locations, subsequently infilling local details in vacant areas. We also integrate a large-scale pre-trained monocular depth estimator within the Gaussians optimization process, leveraging online augmented views to guide the geometric optimization towards an optimal solution. Starting from sparse points observed from limited input viewpoints, our FSGS can accurately grow into unseen regions, comprehensively covering the scene and boosting the rendering quality of novel views. Overall, FSGS achieves state-of-the-art performance in both accuracy and rendering efficiency across diverse datasets, including LLFF, Mip-NeRF360, and Blender
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.00451.pdf) | [🌐 Project Page](https://zehaozhu.github.io/FSGS/) | [💻 Code](https://github.com/VITA-Group/FSGS) 
 
 <br>
 
