@@ -216,6 +216,7 @@ state-of-the-art method.
   [📄 Paper](https://arxiv.org/pdf/2310.08528.pdf) | [🌐 Project Page](https://guanjunwu.github.io/4dgs/) | [💻 Code](https://github.com/hustvl/4DGaussians)
   
 ### 4. Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting
+**Authors**: Zeyu Yang, Hongye Yang, Zijie Pan, Xiatian Zhu, Li Zhang
 
 <details span>
 <summary><b>Abstract</b></summary>
