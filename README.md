@@ -32,6 +32,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 5, 2023**:
+  - 8 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS and Segment Any 3D Gaussians
+
  **December 4, 2023**:
   - 8 papers added: Gaussian Grouping, MD Splatting, DynMF, Scaffold-GS, SparseGS, FSGS, Control4D, and SC-GS.
 
@@ -261,6 +264,15 @@ Novel view synthesis for dynamic scenes is still a challenging problem in comput
 
   [📄 Paper](https://yihua7.github.io/SC-GS-web/materials/SC_GS_Arxiv.pdf) | [🌐 Project Page](https://yihua7.github.io/SC-GS-web/) | [💻 Code (not yet)](https://github.com/yihua7/SC-GS)
 
+### 9. Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction
+**Authors**: Devikalyan Das, Christopher Wewer, Raza Yunus, Eddy Ilg, Jan Eric Lenssen
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing dynamic objects from monocular videos is a severely underconstrained and challenging problem, and recent work has approached it in various directions. However, owing to the ill-posed nature of this problem, there has been no solution that can provide consistent, highquality novel views from camera positions that are significantly different from the training views. In this work, we introduce Neural Parametric Gaussians (NPGs) to take on this challenge by imposing a two-stage approach: first, we fit a low-rank neural deformation model, which then is used as regularization for non-rigid reconstruction in the second stage. The first stage learns the object’s deformations such that it preserves consistency in novel views. The second stage obtains high reconstruction quality by optimizing 3D Gaussians that are driven by the coarse model. To this end, we introduce a local 3D Gaussian representation, where temporally shared Gaussians are anchored in and deformed by local oriented volumes. The resulting combined model can be rendered as radiance fields, resulting in high-quality photo-realistic reconstructions of the non-rigidly deforming objects, maintaining 3D consistency across novel views. We demonstrate that NPGs achieve superior results compared to previous works, especially in challenging scenarios with few multi-view cues. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.01196.pdf)
 
 <br>
 
@@ -472,10 +484,41 @@ Efficient generation of 3D digital humans is important in several industries, in
 
   [📄 Paper](https://arxiv.org/abs/2311.17857) | [🌐 Project Page](https://rameenabdal.github.io/GaussianShellMaps/) | [💻 Code (not yet)](https://github.com/computational-imaging/GSM)
 
+### 9. GaussianHead: Impressive 3D Gaussian-based Head Avatars with Dynamic Hybrid Neural Field
+**Authors**: Jie Wang, Xianyan Li, Jiucheng Xie, Feng Xu, Hao Gao
+
+<details span>
+<summary><b>Abstract</b></summary>
+Previous head avatar methods have mostly relied on fixed explicit primitives (mesh, point) or implicit surfaces (Sign Distance Function) and volumetric neural radiance field, it challenging to strike a balance among high fidelity, training speed, and resource consumption. The recent popularity of hybrid field has brought novel representation, but is limited by relying on parameterization factors obtained through fixed mappings. We propose GaussianHead: an head avatar algorithm based on anisotropic 3D gaussian primitives. We leverage canonical gaussians to represent dynamic scenes. Using explicit "dynamic" tri-plane as an efficient container for parameterized head geometry, aligned well with factors in the underlying geometry and tri-plane, we obtain aligned canonical factors for the canonical gaussians. With a tiny MLP, factors are decoded into opacity and spherical harmonic coefficients of 3D gaussian primitives. Finally, we use efficient differentiable gaussian rasterizer for rendering. Our approach benefits significantly from our novel representation based on 3D gaussians, and the proper alignment transformation of underlying geometry structures and factors in tri-plane eliminates biases introduced by fixed mappings. Compared to state-of-the-art techniques, we achieve optimal visual results in tasks such as self-reconstruction, novel view synthesis, and cross-identity reenactment while maintaining high rendering efficiency (0.12s per frame). Even the pores around the nose are clearly visible in some cases. Code and additional video can be found on the project homepage.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2312.01632) | [🌐 Project Page](https://github.com/chiehwangs/gaussian-head) | [💻 Code (not yet)](https://github.com/chiehwangs/gaussian-head)
+
+### 10. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
+**Authors**: Shenhan Qian, Tobias Kirschstein, Liam Schoneveld, Davide Davoli, Simon Giebenhain, Matthias Nießner
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce GaussianAvatars, a new method to create photorealistic head avatars that are fully controllable in terms of expression, pose, and viewpoint. The core idea is a dynamic 3D representation based on 3D Gaussian splats that are rigged to a parametric morphable face model. This combination facilitates photorealistic rendering while allowing for precise animation control via the underlying parametric model, e.g., through expression transfer from a driving sequence or by manually changing the morphable model parameters. We parameterize each splat by a local coordinate frame of a triangle and optimize for explicit displacement offset to obtain a more accurate geometric representation. During avatar reconstruction, we jointly optimize for the morphable model parameters and Gaussian splat parameters in an end-to-end fashion. We demonstrate the animation capabilities of our photorealistic avatar in several challenging scenarios. For instance, we show reenactments from a driving video, where our method outperforms existing works by a significant margin.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | | [🎥 Presentation](https://youtu.be/lVEY78RwU_I)
+
+### 11.GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
+**Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present a new approach, termed GPS-Gaussian, for synthesizing novel views of a character in a real-time manner. The proposed method enables 2K-resolution rendering under a sparse-view camera setting. Unlike the original Gaussian Splatting or neural implicit rendering methods that necessitate per-subject optimizations, we introduce Gaussian parameter maps defined on the source views and regress directly Gaussian Splatting properties for instant novel view synthesis without any fine-tuning or optimization. To this end, we train our Gaussian parameter regression module on a large amount of human scan data, jointly with a depth estimation module to lift 2D parameter maps to 3D space. The proposed framework is fully differentiable and experiments on several datasets demonstrate that our method outperforms state-of-the-art methods while achieving an exceeding rendering speed.
+</details>
+
+ [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code (not yet)](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Presentation](https://youtu.be/TBIekcqt0j0)
+
+
 <br>
 
 ## SLAM:
-### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting 
+### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
 <details span>
 <summary><b>Abstract</b></summary>
@@ -484,9 +527,21 @@ In this paper, we introduce GS-SLAM that first utilizes 3D Gaussian representati
 
   [📄 Paper](https://arxiv.org/pdf/2311.11700.pdf) 
 
+### 2. SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM
+**Authors**: Nikhil Keetha, Jay Karhade, Krishna Murthy Jatavallabhula, Gengshan Yang,
+Sebastian Scherer, Deva Ramanan, Jonathon Luiten
+
+<details span>
+<summary><b>Abstract</b></summary>
+Dense simultaneous localization and mapping (SLAM) is pivotal for embodied scene understanding. Recent work has shown that 3D Gaussians enable high-quality reconstruction and real-time rendering of scenes using multiple posed cameras. In this light, we show for the first time that representing a scene by 3D Gaussians can enable dense SLAM using a single unposed monocular RGB-D camera. Our method, SplaTAM, addresses the limitations of prior radiance field-based representations, including fast rendering and optimization, the ability to determine if areas have been previously mapped, and structured map expansion by adding more Gaussians. We employ an online tracking and mapping pipeline while tailoring it to specifically use an underlying Gaussian representation and silhouette-guided optimization via differentiable rendering. Extensive experiments show that SplaTAM achieves up to 2× state-of-theart performance in camera pose estimation, map construction, and novel-view synthesis, demonstrating its superiority over existing approaches, while allowing real-time rendering of a high-resolution dense 3D map.
+</details>
+
+ [📄 Paper (not ready)](https://arxiv.org/pdf/2312.02126.pdf) | [🌐 Project Page](https://spla-tam.github.io/) | [💻 Code (not yet)](https://github.com/spla-tam/SplaTAM)
+
 ## Mesh Extraction and Physics: 
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
+
 <details span>
 <summary><b>Abstract</b></summary>
 We introduce PhysGaussian, a new method that seamlessly integrates physically grounded Newtonian dynamics within 3D Gaussians to achieve high-quality novel motion synthesis. Employing a custom Material Point Method (MPM), our approach enriches 3D Gaussian kernels with physically meaningful kinematic deformation and mechanical stress attributes, all evolved in line with continuum mechanics principles. A defining characteristic of our method is the seamless integration between physical simulation and visual rendering: both components utilize the same 3D Gaussian kernels as their discrete representations. This negates the necessity for triangle/tetrahedron meshing, marching cubes, "cage meshes," or any other geometry embedding, highlighting the principle of "what you see is what you simulate (WS2)." Our method demonstrates exceptional versatility across a wide variety of materials--including elastic entities, metals, non-Newtonian fluids, and granular materials--showcasing its strong capabilities in creating diverse visual content with novel viewpoints and movements. 
@@ -494,8 +549,9 @@ We introduce PhysGaussian, a new method that seamlessly integrates physically gr
 
   [📄 Paper](https://arxiv.org/pdf/2311.12198.pdf) | [🌐 Project Page](https://xpandora.github.io/PhysGaussian/) | [💻 Code (not released yet)](https://github.com/XPandora/PhysGaussian) | [🎥 Short Presentation](https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view)
 
-### 2. SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering 
+### 2. SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering
 **Authors**: Antoine Guédon, Vincent Lepetit
+
 <details span>
 <summary><b>Abstract</b></summary>
 We propose a method to allow precise and extremely fast mesh extraction from 3D Gaussian Splatting. Gaussian Splatting has recently become very popular as it yields realistic rendering while being significantly faster to train than NeRFs. It is however challenging to extract a mesh from the millions of tiny 3D gaussians as these gaussians tend to be unorganized after optimization and no method has been proposed so far. Our first key contribution is a regularization term that encourages the gaussians to align well with the surface of the scene. We then introduce a method that exploits this alignment to sample points on the real surface of the scene and extract a mesh from the Gaussians using Poisson reconstruction, which is fast, scalable, and preserves details, in contrast to the Marching Cubes algorithm usually applied to extract meshes from Neural SDFs. Finally, we introduce an optional refinement strategy that binds gaussians to the surface of the mesh, and jointly optimizes these Gaussians and the mesh through Gaussian splatting rendering. This enables easy editing, sculpting, rigging, animating, compositing and relighting of the Gaussians using traditional softwares by manipulating the mesh instead of the gaussians themselves. Retrieving such an editable mesh for realistic rendering is done within minutes with our method, compared to hours with the state-of-the-art methods on neural SDFs, while providing a better rendering quality. 
@@ -503,14 +559,25 @@ We propose a method to allow precise and extremely fast mesh extraction from 3D 
 
   [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code (not released yet)](https://github.com/Anttwo/SuGaR) 
 
-### 3.  MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes  
-**Authors**: Bardienus P. Duisterhof, Zhao Mandi, Yunchao Yao, Jia-Wei Liu, Mike Zheng Shou, Shuran Song, Jeffrey Ichnowski 
+### 3.  MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes
+**Authors**: Bardienus P. Duisterhof, Zhao Mandi, Yunchao Yao, Jia-Wei Liu, Mike Zheng Shou, Shuran Song, Jeffrey Ichnowski
+
 <details span>
 <summary><b>Abstract</b></summary>
 Accurate 3D tracking in highly deformable scenes with occlusions and shadows can facilitate new applications in robotics, augmented reality, and generative AI. However, tracking under these conditions is extremely challenging due to the ambiguity that arises with large deformations, shadows, and occlusions. We introduce MD-Splatting, an approach for simultaneous 3D tracking and novel view synthesis, using video captures of a dynamic scene from various camera poses. MD-Splatting builds on recent advances in Gaussian splatting, a method that learns the properties of a large number of Gaussians for state-of-the-art and fast novel view synthesis. MD-Splatting learns a deformation function to project a set of Gaussians with non-metric, thus canonical, properties into metric space. The deformation function uses a neural-voxel encoding and a multilayer perceptron (MLP) to infer Gaussian position, rotation, and a shadow scalar. We enforce physics-inspired regularization terms based on local rigidity, conservation of momentum, and isometry, which leads to trajectories with smaller trajectory errors. MD-Splatting achieves high-quality 3D tracking on highly deformable scenes with shadows and occlusions. Compared to state-of-the-art, we improve 3D tracking by an average of 23.9 %, while simultaneously achieving high-quality novel view synthesis. With sufficient texture such as in scene 6, MD-Splatting achieves a median tracking error of 3.39 mm on a cloth of 1 x 1 meters in size
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.00583) | [🌐 Project Page](https://md-splatting.github.io/) | [💻 Code (not released yet)](https://github.com/momentum-robotics-lab/md-splatting) 
+
+### 4. NeuSG: Neural Implicit Surface Reconstruction with 3D Gaussian Splatting Guidance
+**Authors**: Hanlin Chen, Chen Li, Gim Hee Lee
+
+<details span>
+<summary><b>Abstract</b></summary>
+Existing neural implicit surface reconstruction methods have achieved impressive performance in multi-view 3D reconstruction by leveraging explicit geometry priors such as depth maps or point clouds as regularization. However, the reconstruction results still lack fine details because of the over-smoothed depth map or sparse point cloud. In this work, we propose a neural implicit surface reconstruction pipeline with guidance from 3D Gaussian Splatting to recover highly detailed surfaces. The advantage of 3D Gaussian Splatting is that it can generate dense point clouds with detailed structure. Nonetheless, a naive adoption of 3D Gaussian Splatting can fail since the generated points are the centers of 3D Gaussians that do not necessarily lie on the surface. We thus introduce a scale regularizer to pull the centers close to the surface by enforcing the 3D Gaussians to be extremely thin. Moreover, we propose to refine the point cloud from 3D Gaussians Splatting with the normal priors from the surface predicted by neural implicit models instead of using a fixed set of points as guidance. Consequently, the quality of surface reconstruction improves from the guidance of the more accurate 3D Gaussian splatting. By jointly optimizing the 3D Gaussian Splatting and the neural implicit model, our approach benefits from both representations and generates complete surfaces with intricate details. Experiments on Tanks and Temples verify the effectiveness of our proposed method.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.00846.pdf)
 
 <br>
 
@@ -565,7 +632,7 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 
   [📄 Paper](https://arxiv.org/pdf/2311.16737.pdf)
 
-### 3. Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
+### 4. Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
 **Authors**: Mingqiao Ye, Martin Danelljan, Fisher Yu, Lei Ke 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -573,6 +640,17 @@ The recent Gaussian Splatting achieves high-quality and real-time novel-view syn
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.00732.pdf) | [💻 Code (not yet)](https://github.com/lkeab/gaussian-grouping) 
+
+### 5. Segment Any 3D Gaussians
+**Authors**:Jiazhong Cen, Jiemin Fang, Chen Yang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian
+
+<details span>
+<summary><b>Abstract</b></summary>
+Interactive 3D segmentation in radiance fields is an appealing task since its importance in 3D scene understanding and manipulation. However, existing methods face challenges in either achieving fine-grained, multi-granularity segmentation or contending with substantial computational overhead, inhibiting real-time interaction. In this paper, we introduce Segment Any 3D GAussians (SAGA), a novel 3D interactive segmentation approach that seamlessly blends a 2D segmentation foundation model with 3D Gaussian Splatting (3DGS), a recent breakthrough of radiance fields. SAGA efficiently embeds multi-granularity 2D segmentation results generated by the segmentation foundation model into 3D Gaussian point features through well-designed contrastive training. Evaluation on existing benchmarks demonstrates that SAGA can achieve competitive performance with state-of-the-art methods. Moreover, SAGA achieves multi-granularity segmentation and accommodates various prompts, including points, scribbles, and 2D masks. Notably, SAGA can finish the 3D segmentation within milliseconds, achieving nearly 1000× acceleration1 compared to previous SOTA.
+</details>
+
+  [📄 Paper](https://jumpat.github.io/SAGA/SAGA_paper.pdf) | [🌐 Project Page](https://jumpat.github.io/SAGA/) | [💻 Code (not yet)](https://github.com/Jumpat/SegAnyGAussians)
+
 
 <br>
 
@@ -692,6 +770,17 @@ Modeling dynamic, large-scale urban scenes is challenging due to their highly in
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.18561.pdf) | [🌐 Project Page](https://fudan-zvg.github.io/PVG/) | [💻 Code (not yet)](https://github.com/fudan-zvg/PVG) 
+
+### 3. MANUS: Markerless Hand-Object Grasp Capture using Articulated 3D Gaussians
+**Authors**: Chandradeep Pokhariya, Ishaan N Shah, Angela Xing, Zekun Li, Kefan Chen, Avinash Sharma, Srinath Sridhar
+
+<details span>
+<summary><b>Abstract</b></summary>
+Understanding how we grasp objects with our hands has important applications in areas like robotics and mixed reality. However, this challenging problem requires accurate modeling of the contact between hands and objects. To capture grasps, existing methods use skeletons, meshes, or parametric models that can cause misalignments resulting in inaccurate contacts. We present MANUS, a method for Markerless Hand-Object Grasp Capture using Articulated 3D Gaussians. We build a novel articulated 3D Gaussians representation that extends 3D Gaussian splatting [33] for high-fidelity representation of articulating hands. Since our representation uses Gaussian primitives, it enables us to efficiently and accurately estimate contacts between the hand and the object. For the most accurate results, our method requires tens of camera views that current datasets do not provide. We therefore build MANUS-Grasps, a new dataset that contains hand-object grasps viewed from 53 cameras across 30+ scenes, 3 subjects, and comprising over 7M frames. In addition to extensive qualitative results, we also show that our method outperforms others on a quantitative contact evaluation method that uses paint transfer from the object to the hand. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
+
 
 <br>
 
