@@ -14,6 +14,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Editing](#editing)
 - [Rendering](#rendering)
 - [Compression](#compression)
+- [Language Embedding](#language-embedding)
 - [Misc](#misc)
 - [Classic work](#classic-work)
 - [Open Source Implementations](#open-source-implementations)
@@ -33,7 +34,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 5, 2023**:
-  - 8 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS and Segment Any 3D Gaussians
+  - 9 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS, Segment Any, and Language embedded 3D Gaussians
 
  **December 4, 2023**:
   - 8 papers added: Gaussian Grouping, MD Splatting, DynMF, Scaffold-GS, SparseGS, FSGS, Control4D, and SC-GS.
@@ -753,6 +754,18 @@ In summary, LightGaussian achieves an averaged compression rate over 15x while b
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.18159.pdf) | [💻 Code](https://github.com/UCDvision/compact3d)
+
+<br>
+
+## Language Embedding:
+### 1. Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding 
+**Authors**: Jin-Chuan Shi, Miao Wang, Hao-Bin Duan, Shao-Hua Guan 
+<details span>
+<summary><b>Abstract</b></summary>
+Open-vocabulary querying in 3D space is challenging but essential for scene understanding tasks such as object localization and segmentation. Language-embedded scene representations have made progress by incorporating language features into 3D spaces. However, their efficacy heavily depends on neural networks that are resource-intensive in training and rendering. Although recent 3D Gaussians offer efficient and high-quality novel view synthesis, directly embedding language features in them leads to prohibitive memory usage and decreased performance. In this work, we introduce Language Embedded 3D Gaussians, a novel scene representation for open-vocabulary query tasks. Instead of embedding high-dimensional raw semantic features on 3D Gaussians, we propose a dedicated quantization scheme that drastically alleviates the memory requirement, and a novel embedding procedure that achieves smoother yet high accuracy query, countering the multi-view feature inconsistencies and the high-frequency inductive bias in point-based representations. Our comprehensive experiments show that our representation achieves the best visual quality and language querying accuracy across current language-embedded representations, while maintaining real-time rendering frame rates on a single desktop GPU. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.18482.pdf) | [🌐 Project Page](https://buaavrcg.github.io/LEGaussians/) | [💻 Code (not yet)]()
 
 <br>
 
