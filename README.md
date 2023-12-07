@@ -35,7 +35,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 7, 2023**:
   - LucidDreamer code released.
-  - 7 papers added: GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar, FlashAvatar
+  - 8 papers added: GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar, FlashAvatar, 
 
  **December 5, 2023**:
   - 9 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS, Segment Any, and Language embedded 3D Gaussians
@@ -579,6 +579,16 @@ We propose FlashAvatar, a novel and lightweight 3D animatable avatar representat
 </details>
 
  [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
+
+### 17. Relightable Gaussian Codec Avatars 
+**Authors**: Shunsuke Saito, Gabriel Schwartz, Tomas Simon, Junxuan Li, Giljoo Nam  
+
+<details span>
+<summary><b>Abstract</b></summary>
+The fidelity of relighting is bounded by both geometry and appearance representations. For geometry, both mesh and volumetric approaches have difficulty modeling intricate structures like 3D hair geometry. For appearance, existing relighting models are limited in fidelity and often too slow to render in real-time with high-resolution continuous environments. In this work, we present Relightable Gaussian Codec Avatars, a method to build high-fidelity relightable head avatars that can be animated to generate novel expressions. Our geometry model based on 3D Gaussians can capture 3D-consistent sub-millimeter details such as hair strands and pores on dynamic face sequences. To support diverse materials of human heads such as the eyes, skin, and hair in a unified manner, we present a novel relightable appearance model based on learnable radiance transfer. Together with global illumination-aware spherical harmonics for the diffuse components, we achieve real-time relighting with spatially all-frequency reflections using spherical Gaussians. This appearance model can be efficiently relit under both point light and continuous illumination. We further improve the fidelity of eye reflections and enable explicit gaze control by introducing relightable explicit eye models. Our method outperforms existing approaches without compromising real-time performance. We also demonstrate real-time relighting of avatars on a tethered consumer VR headset, showcasing the efficiency and fidelity of our avatars. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.03704.pdf) | [🌐 Project Page](https://shunsukesaito.github.io/rgca/)
 
 <br>
 
