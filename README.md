@@ -35,7 +35,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 7, 2023**:
   - LucidDreamer code released.
-  - 8 papers added: GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar, FlashAvatar, 
+  - 9 papers added: GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar, FlashAvatar, Relightable, and Deblurring Gaussians.
 
  **December 5, 2023**:
   - 9 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS, Segment Any, and Language embedded 3D Gaussians
@@ -814,6 +814,15 @@ Novel view synthesis from limited observations remains an important and persiste
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.00451.pdf) | [🌐 Project Page](https://zehaozhu.github.io/FSGS/) | [💻 Code](https://github.com/VITA-Group/FSGS) 
+
+### 9. Deblurring 3D Gaussian Splatting 
+**Authors**: Byeonghyeon Lee, Howoong Lee1, Xiangyu Sun, Usman Ali, and Eunbyung Park 
+<details span>
+<summary><b>Abstract</b></summary>
+Novel-view synthesis of scenes acquired with several images or videos has been revolutionized by Radiance Field techniques. However, their high visual quality was achieved only with neural networks, which are costly to train and do not provide real-time rendering. Recently, 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves state-of-the-art visual quality as well as renders in real-time. However, this approach suffers from severe degradation in the rendering quality if the training images are blurry. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. However, the majority of those works are designed only for volumetric rendering-based neural fields and are not applicable to rasterization-based approaches. To fill this gap, we propose a novel neural field-based deblurring framework for the recently proposed rasterization-based approaches, 3D Gaussians, and rasterization. Specifically, we employ a small Multi-Layer Perceptron (MLP), which manipulates the covariance of each 3D Gaussian to model the scene blurriness. While deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring.
+</details>
+
+  [📄 Paper (not yet)]() | [🌐 Project Page](https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/) | [💻 Code](https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting) 
 
 <br>
 
