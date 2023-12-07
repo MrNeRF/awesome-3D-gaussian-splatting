@@ -33,6 +33,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 7, 2023**:
+  - LucidDreamer code released.
+  - GauHuman.
+
  **December 5, 2023**:
   - 9 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS, Segment Any, and Language embedded 3D Gaussians
 
@@ -377,7 +381,7 @@ Jaeyoung Chung, Suyoung Lee, Hyeongjin Nam, Jaerin Lee, Kyoung Mu Lee
 With the widespread usage of VR devices and contents, demands for 3D scene generation techniques become more popular. Existing 3D scene generation models, however, limit the target scene to specific domain, primarily due to their training strategies using 3D scan dataset that is far from the real-world. To address such limitation, we propose LucidDreamer, a domain-free scene generation pipeline by fully leveraging the power of existing large-scale diffusion-based generative model. Our LucidDreamer has two alternate steps: Dreaming and Alignment. First, to generate multi-view consistent images from inputs, we set the point cloud as a geometrical guideline for each image generation. Specifically, we project a portion of point cloud to the desired view and provide the projection as a guidance for inpainting using the generative model. The inpainted images are lifted to 3D space with estimated depth maps, composing a new points. Second, to aggregate the new points into the 3D scene, we propose an aligning algorithm which harmoniously integrates the portions of newly generated 3D scenes. The finally obtained 3D scene serves as initial points for optimizing Gaussian splats. LucidDreamer produces Gaussian splats that are highly-detailed compared to the previous 3D scene generation methods, with no constraint on domain of the target scene. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.13384.pdf) | [🌐 Project Page](https://luciddreamer-cvlab.github.io/) | [💻 Code (not yet)](https://github.com/anonymous-luciddreamer/LucidDreamer) 
+  [📄 Paper](https://arxiv.org/pdf/2311.13384.pdf) | [🌐 Project Page](https://luciddreamer-cvlab.github.io/) | [💻 Code](https://github.com/anonymous-luciddreamer/LucidDreamer) 
 
 ### 7. HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting  
 Xian Liu, Xiaohang Zhan, Jiaxiang Tang, Ying Shan, Gang Zeng, Dahua Lin, Xihui Liu, Ziwei Liu
@@ -516,6 +520,15 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 
  [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code (not yet)](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Presentation](https://youtu.be/TBIekcqt0j0)
 
+### 12. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
+**Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We present, GauHuman, a 3D human model with Gaussian Splatting for both fast training (1~2 minutes) and real-time rendering (up to 189 FPS), compared with existing NeRF-based implicit representation modelling frameworks demanding hours of training and seconds of rendering per frame. Specifically, GauHuman encodes Gaussian Splatting in the canonical space and transforms 3D Gaussians from canonical space to posed space with linear blend skinning (LBS), in which effective pose and LBS refinement modules are designed to learn fine details of 3D humans under negligible computational cost. Moreover, to enable fast optimization of GauHuman, we initialize and prune 3D Gaussians with 3D human prior, while splitting/cloning via KL divergence guidance, along with a novel merge operation for further speeding up. Extensive experiments on ZJU_Mocap and MonoCap datasets demonstrate that GauHuman achieves state-of-the-art performance quantitatively and qualitatively with fast training and real-time rendering speed. Notably, without sacrificing rendering quality, GauHuman can fast model the 3D human performer with ~13k 3D Gaussians.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.02973.pdf) | [🌐 Project Page](https://skhu101.github.io/GauHuman/) | [💻 Code](https://github.com/skhu101/GauHuman) | [🎥 Presentation](https://www.youtube.com/embed/47772bgt5Xo)
 
 <br>
 
