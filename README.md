@@ -518,7 +518,7 @@ Previous head avatar methods have mostly relied on fixed explicit primitives (me
 We introduce GaussianAvatars, a new method to create photorealistic head avatars that are fully controllable in terms of expression, pose, and viewpoint. The core idea is a dynamic 3D representation based on 3D Gaussian splats that are rigged to a parametric morphable face model. This combination facilitates photorealistic rendering while allowing for precise animation control via the underlying parametric model, e.g., through expression transfer from a driving sequence or by manually changing the morphable model parameters. We parameterize each splat by a local coordinate frame of a triangle and optimize for explicit displacement offset to obtain a more accurate geometric representation. During avatar reconstruction, we jointly optimize for the morphable model parameters and Gaussian splat parameters in an end-to-end fashion. We demonstrate the animation capabilities of our photorealistic avatar in several challenging scenarios. For instance, we show reenactments from a driving video, where our method outperforms existing works by a significant margin.
 </details>
 
- [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | | [🎥 Presentation](https://youtu.be/lVEY78RwU_I)
+ [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
 
 ### 11.GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
 **Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
@@ -528,7 +528,7 @@ We introduce GaussianAvatars, a new method to create photorealistic head avatars
 We present a new approach, termed GPS-Gaussian, for synthesizing novel views of a character in a real-time manner. The proposed method enables 2K-resolution rendering under a sparse-view camera setting. Unlike the original Gaussian Splatting or neural implicit rendering methods that necessitate per-subject optimizations, we introduce Gaussian parameter maps defined on the source views and regress directly Gaussian Splatting properties for instant novel view synthesis without any fine-tuning or optimization. To this end, we train our Gaussian parameter regression module on a large amount of human scan data, jointly with a depth estimation module to lift 2D parameter maps to 3D space. The proposed framework is fully differentiable and experiments on several datasets demonstrate that our method outperforms state-of-the-art methods while achieving an exceeding rendering speed.
 </details>
 
- [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code (not yet)](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Presentation](https://youtu.be/TBIekcqt0j0)
+ [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code (not yet)](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Short Presentation](https://youtu.be/TBIekcqt0j0)
 
 ### 12. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
 **Authors**: Shoukang Hu Ziwei Liu  
@@ -538,7 +538,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
  We present, GauHuman, a 3D human model with Gaussian Splatting for both fast training (1~2 minutes) and real-time rendering (up to 189 FPS), compared with existing NeRF-based implicit representation modelling frameworks demanding hours of training and seconds of rendering per frame. Specifically, GauHuman encodes Gaussian Splatting in the canonical space and transforms 3D Gaussians from canonical space to posed space with linear blend skinning (LBS), in which effective pose and LBS refinement modules are designed to learn fine details of 3D humans under negligible computational cost. Moreover, to enable fast optimization of GauHuman, we initialize and prune 3D Gaussians with 3D human prior, while splitting/cloning via KL divergence guidance, along with a novel merge operation for further speeding up. Extensive experiments on ZJU_Mocap and MonoCap datasets demonstrate that GauHuman achieves state-of-the-art performance quantitatively and qualitatively with fast training and real-time rendering speed. Notably, without sacrificing rendering quality, GauHuman can fast model the 3D human performer with ~13k 3D Gaussians.
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.02973.pdf) | [🌐 Project Page](https://skhu101.github.io/GauHuman/) | [💻 Code](https://github.com/skhu101/GauHuman) | [🎥 Presentation](https://www.youtube.com/embed/47772bgt5Xo)
+ [📄 Paper](https://arxiv.org/pdf/2312.02973.pdf) | [🌐 Project Page](https://skhu101.github.io/GauHuman/) | [💻 Code](https://github.com/skhu101/GauHuman) | [🎥 Short Presentation](https://www.youtube.com/embed/47772bgt5Xo)
 
 ### 13. HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting 
 **Authors**: Helisa Dhamo, Yinyu Nie, Arthur Moreau, Jifei Song, Richard Shaw, Yiren Zhou, Eduardo Pérez-Pellitero  
@@ -558,7 +558,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 We have recently seen tremendous progress in photo-real human modeling and rendering. Yet, efficiently rendering realistic human performance and integrating it into the rasterization pipeline remains challenging. In this paper, we present HiFi4G, an explicit and compact Gaussian-based approach for high-fidelity human performance rendering from dense footage. Our core intuition is to marry the 3D Gaussian representation with non-rigid tracking, achieving a compact and compression-friendly representation. We first propose a dual-graph mechanism to obtain motion priors, with a coarse deformation graph for effective initialization and a fine-grained Gaussian graph to enforce subsequent constraints. Then, we utilize a 4D Gaussian optimization scheme with adaptive spatial-temporal regularizers to effectively balance the non-rigid prior and Gaussian updating. We also present a companion compression scheme with residual compensation for immersive experiences on various platforms. It achieves a substantial compression rate of approximately 25 times, with less than 2MB of storage per frame. Extensive experiments demonstrate the effectiveness of our approach, which significantly outperforms existing approaches in terms of optimization speed, rendering quality, and storage overhead. 
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.03461.pdf) 
+ [📄 Paper](https://arxiv.org/pdf/2312.03461.pdf) | [🌐 Project Page](https://nowheretrix.github.io/HiFi4G/) | [🎥 Short Presentation](https://youtu.be/917WVr2EHh4)
 
 ### 15. GaussianAvatar: Towards Realistic Human Avatar Modeling from a Single Video via Animatable 3D Gaussians  
 **Authors**: Liangxiao Hu, Hongwen Zhang, Yuxiang Zhang, Boyao Zhou, Boning Liu, Shengping Zhang, Liqiang Nie  
