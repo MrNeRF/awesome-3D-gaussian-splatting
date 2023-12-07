@@ -35,7 +35,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 7, 2023**:
   - LucidDreamer code released.
-  - GauHuman.
+  - GauHuman, HeadGaS
 
  **December 5, 2023**:
   - 9 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS, Segment Any, and Language embedded 3D Gaussians
@@ -521,7 +521,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
  [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code (not yet)](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Presentation](https://youtu.be/TBIekcqt0j0)
 
 ### 12. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
-**Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
+**Authors**: Shoukang Hu Ziwei Liu  
 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -529,6 +529,16 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 </details>
 
  [📄 Paper](https://arxiv.org/pdf/2312.02973.pdf) | [🌐 Project Page](https://skhu101.github.io/GauHuman/) | [💻 Code](https://github.com/skhu101/GauHuman) | [🎥 Presentation](https://www.youtube.com/embed/47772bgt5Xo)
+
+### 13. HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting 
+**Authors**: Helisa Dhamo, Yinyu Nie, Arthur Moreau, Jifei Song, Richard Shaw, Yiren Zhou, Eduardo Pérez-Pellitero  
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D head animation has seen major quality and runtime improvements over the last few years, particularly empowered by the advances in differentiable rendering and neural radiance fields. Real-time rendering is a highly desirable goal for real-world applications. We propose HeadGaS, the first model to use 3D Gaussian Splats (3DGS) for 3D head reconstruction and animation. In this paper we introduce a hybrid model that extends the explicit representation from 3DGS with a base of learnable latent features, which can be linearly blended with low-dimensional parameters from parametric head models to obtain expression-dependent final color and opacity values. We demonstrate that HeadGaS delivers state-of-the-art results in real-time inference frame rates, which surpasses baselines by up to ~2dB, while accelerating rendering speed by over x10. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.02902.pdf)
 
 <br>
 
