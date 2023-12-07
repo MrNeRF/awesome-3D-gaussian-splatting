@@ -35,7 +35,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 7, 2023**:
   - LucidDreamer code released.
-  - GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar
+  - 7 papers added: GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar, FlashAvatar
 
  **December 5, 2023**:
   - 9 papers added: NeuSG, GaussianHead, GaussianAvatars, GPS-Gaussian, Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction, SplaTAM, MANUS, Segment Any, and Language embedded 3D Gaussians
@@ -569,6 +569,16 @@ We present GaussianAvatar, an efficient approach to creating realistic human ava
 </details>
 
  [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://huliangxiao.github.io/GaussianAvatar) | [💻 Code (not yet)](https://github.com/huliangxiao/GaussianAvatar) | [🎥 Short Presentation](https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view)
+
+### 16. FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS  
+**Authors**: Jun Xiang, Xuan Gao, Yudong Guo, Juyong Zhang  
+
+<details span>
+<summary><b>Abstract</b></summary>
+We propose FlashAvatar, a novel and lightweight 3D animatable avatar representation that could reconstruct a digital avatar from a short monocular video sequence in minutes and render high-fidelity photo-realistic images at 300FPS on a consumer-grade GPU. To achieve this, we maintain a uniform 3D Gaussian field embedded in the surface of a parametric face model and learn extra spatial offset to model non-surface regions and subtle facial details. While full use of geometric priors can capture high-frequency facial details and preserve exaggerated expressions, proper initialization can help reduce the number of Gaussians, thus enabling super-fast rendering speed. Extensive experimental results demonstrate that FlashAvatar outperforms existing works regarding visual quality and personalized details and is almost an order of magnitude faster in rendering speed.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
 
 <br>
 
