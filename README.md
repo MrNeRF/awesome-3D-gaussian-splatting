@@ -34,6 +34,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 7, 2023**:
+  - 2 papers added: EAGLES and MonoGaussianAvatar.
+
+ **December 7, 2023**:
   - LucidDreamer code released.
   - 9 papers added: GauHuman, HeadGaS, HiFi4G, Gaussian-Flow, Feature-3DGS, Gaussian-Avatar, FlashAvatar, Relightable, and Deblurring Gaussians.
 
@@ -590,6 +593,17 @@ The fidelity of relighting is bounded by both geometry and appearance representa
 
  [📄 Paper](https://arxiv.org/pdf/2312.03704.pdf) | [🌐 Project Page](https://shunsukesaito.github.io/rgca/)
 
+### 18. MonoGaussianAvatar: Monocular Gaussian Point-based Head Avatar 
+**Authors**: Yufan Chen, Lizhen Wang, Qijing Li, Hongjiang Xiao, Shengping Zhang, Hongxun Yao, Yebin Liu  
+
+<details span>
+<summary><b>Abstract</b></summary>
+The ability to animate photo-realistic head avatars reconstructed from monocular portrait video sequences represents a crucial step in bridging the gap between the virtual and real worlds. Recent advancements in head avatar techniques, including explicit 3D morphable meshes (3DMM), point clouds, and neural implicit representation have been exploited for this ongoing research. However, 3DMM-based methods are constrained by their fixed topologies, point-based approaches suffer from a heavy training burden due to the extensive quantity of points involved, and the last ones suffer from limitations in deformation flexibility and rendering efficiency. In response to these challenges, we propose MonoGaussianAvatar (Monocular Gaussian Point-based Head Avatar), a novel approach that harnesses 3D Gaussian point representation coupled with a Gaussian deformation field to learn explicit head avatars from monocular portrait videos. We define our head avatars with Gaussian points characterized by adaptable shapes, enabling flexible topology. These points exhibit movement with a Gaussian deformation field in alignment with the target pose and expression of a person, facilitating efficient deformation. Additionally, the Gaussian points have controllable shape, size, color, and opacity combined with Gaussian splatting, allowing for efficient training and rendering. Experiments demonstrate the superior performance of our method, which achieves state-of-the-art results among previous methods. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.04558.pdf) | [🌐 Project Page](https://yufan1012.github.io/MonoGaussianAvatar) | [💻 Code (not yet)](https://github.com/yufan1012/MonoGaussianAvatar) | [🎥 Short Presentation](https://youtu.be/3UvBkyPc-oc?si=SbveQKBLJh5GuhIY)
+
+
 <br>
 
 ## SLAM:
@@ -677,6 +691,15 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.13681.pdf) | [🌐 Project Page](https://maincold2.github.io/c3dgs/) | [💻 Code ](https://github.com/maincold2/Compact-3DGS) 
+
+### 3. EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS 
+**Authors**: Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park 
+<details span>
+<summary><b>Abstract</b></summary>
+Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scene synthesis. It addresses the challenges of lengthy training times and slow rendering speeds associated with Neural Radiance Fields (NeRFs). Through rapid, differentiable rasterization of 3D Gaussians, 3D-GS achieves real-time rendering and accelerated training. They, however, demand substantial memory resources for both training and storage, as they require millions of Gaussians in their point cloud representation for each scene. We present a technique utilizing quantized embeddings to significantly reduce memory storage requirements and a coarse-to-fine training strategy for a faster and more stable optimization of the Gaussian point clouds. Our approach results in scene representations with fewer Gaussians and quantized representations, leading to faster training times and rendering speeds for real-time rendering of high resolution scenes. We reduce memory by more than an order of magnitude all while maintaining the reconstruction quality. We validate the effectiveness of our approach on a variety of datasets and scenes preserving the visual quality while consuming 10-20x less memory and faster training/inference speed. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.04564.pdf) | [🌐 Project Page](https://efficientgaussian.github.io/) | [💻 Code ](https://github.com/Sharath-girish/efficientgaussian) 
 
 <br>
 
