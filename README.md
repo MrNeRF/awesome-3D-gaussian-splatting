@@ -35,6 +35,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 11, 2023**:
   - 2 papers added: Gaussian Splatting SLAM and Denoising Scores for 3D Generation.
+  - ScaffoldGS code released.
 
  **December 8, 2023**:
   - 2 papers added: EAGLES and MonoGaussianAvatar.
@@ -842,7 +843,7 @@ The advent of neural 3D Gaussians has recently brought about a revolution in the
 Neural rendering methods have significantly advanced photo-realistic 3D scene rendering in various academic and industrial applications. The recent 3D Gaussian Splatting method has achieved the state-of-the-art rendering quality and speed combining the benefits of both primitive-based representations and volumetric representations. However, it often leads to heavily redundant Gaussians that try to fit every training view, neglecting the underlying scene geometry. Consequently, the resulting model becomes less robust to significant view changes, texture-less area and lighting effects. We introduce Scaffold-GS, which uses anchor points to distribute local 3D Gaussians, and predicts their attributes on-the-fly based on viewing direction and distance within the view frustum. Anchor growing and pruning strategies are developed based on the importance of neural Gaussians to reliably improve the scene coverage. We show that our method effectively reduces redundant Gaussians while delivering high-quality rendering. We also demonstrates an enhanced capability to accommodate scenes with varying levels-of-detail and view-dependent observations, without sacrificing the rendering speed.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2312.00109.pdf) | [🌐 Project Page](https://city-super.github.io/scaffold-gs/) | [💻 Code (not yet)](https://github.com/city-super/Scaffold-GS) 
+  [📄 Paper](https://arxiv.org/pdf/2312.00109.pdf) | [🌐 Project Page](https://city-super.github.io/scaffold-gs/) | [💻 Code](https://github.com/city-super/Scaffold-GS) 
 
 ### 7. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
