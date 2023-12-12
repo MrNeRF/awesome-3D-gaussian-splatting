@@ -33,6 +33,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 13, 2023**:
+  - 3 papers added: Gaussian-SLAM, CoGS, and ASH.
+
+
  **December 11, 2023**:
   - 2 papers added: Gaussian Splatting SLAM and Denoising Scores for 3D Generation.
   - ScaffoldGS code released.
@@ -296,6 +300,16 @@ We introduce Gaussian-Flow, a novel point-based approach for fast dynamic scene 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2310.08528.pdf) | [🌐 Project Page](https://nju-3dv.github.io/projects/Gaussian-Flow) | [💻 Code (not yet)]()
+
+### 11.CoGS: Controllable Gaussian Splatting 
+**Authors**: Heng Yu, Joel Julin, Zoltán Á. Milacski, Koichiro Niinuma, László A. Jeni 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Capturing and re-animating the 3D structure of articulated objects present significant barriers. On one hand, methods requiring extensively calibrated multi-view setups are prohibitively complex and resource-intensive, limiting their practical applicability. On the other hand, while single-camera Neural Radiance Fields (NeRFs) offer a more streamlined approach, they have excessive training and rendering costs. 3D Gaussian Splatting would be a suitable alternative but for two reasons. Firstly, existing methods for 3D dynamic Gaussians require synchronized multi-view cameras, and secondly, the lack of controllability in dynamic scenarios. We present CoGS, a method for Controllable Gaussian Splatting, that enables the direct manipulation of scene elements, offering real-time control of dynamic scenes without the prerequisite of pre-computing control signals. We evaluated CoGS using both synthetic and real-world datasets that include dynamic objects that differ in degree of difficulty. In our evaluations, CoGS consistently outperformed existing dynamic and controllable neural representations in terms of visual fidelity. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.05664.pdf) | [🌐 Project Page](https://cogs2023.github.io/) | [💻 Code (not yet)]()
 
 <br>
 
@@ -618,6 +632,15 @@ The ability to animate photo-realistic head avatars reconstructed from monocular
 
  [📄 Paper](https://arxiv.org/pdf/2312.04558.pdf) | [🌐 Project Page](https://yufan1012.github.io/MonoGaussianAvatar) | [💻 Code (not yet)](https://github.com/yufan1012/MonoGaussianAvatar) | [🎥 Short Presentation](https://youtu.be/3UvBkyPc-oc?si=SbveQKBLJh5GuhIY)
 
+### 19. ASH: Animatable Gaussian Splats for Efficient and Photoreal Human Rendering  
+**Authors**: Haokai Pang, Heming Zhu, Adam Kortylewski, Christian Theobalt, Marc Habermann 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Real-time rendering of photorealistic and controllable human avatars stands as a cornerstone in Computer Vision and Graphics. While recent advances in neural implicit rendering have unlocked unprecedented photorealism for digital avatars, real-time performance has mostly been demonstrated for static scenes only. To address this, we propose ASH, an animatable Gaussian splatting approach for photorealistic rendering of dynamic humans in real-time. We parameterize the clothed human as animatable 3D Gaussians, which can be efficiently splatted into image space to generate the final rendering. However, naively learning the Gaussian parameters in 3D space poses a severe challenge in terms of compute. Instead, we attach the Gaussians onto a deformable character model, and learn their parameters in 2D texture space, which allows leveraging efficient 2D convolutional architectures that easily scale with the required number of Gaussians. We benchmark ASH with competing methods on pose-controllable avatars, demonstrating that our method outperforms existing real-time methods by a large margin and shows comparable or even better results than offline methods. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.05941.pdf) | [🌐 Project Page](https://vcai.mpi-inf.mpg.de/projects/ash/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://vcai.mpi-inf.mpg.de/projects/ash/videos/video_for_page.mp4)
 
 <br>
 
@@ -642,7 +665,7 @@ Dense simultaneous localization and mapping (SLAM) is pivotal for embodied scene
 
  [📄 Paper](https://arxiv.org/pdf/2312.02126.pdf) | [🌐 Project Page](https://spla-tam.github.io/) | [💻 Code](https://github.com/spla-tam/SplaTAM)
 
-### 3.Gaussian Splatting SLAM 
+### 3. Gaussian Splatting SLAM 
 **Authors**: Hidenobu Matsuki, Riku Murai, Paul H. J. Kelly, Andrew J. Davison 
 
 <details span>
@@ -652,6 +675,18 @@ Several innovations are required to continuously reconstruct 3D scenes with high
 </details>
 
  [📄 Paper](https://www.imperial.ac.uk/media/imperial-college/research-centres-and-groups/dyson-robotics-lab/hide-et-al_GaussianSplattingSLAM_Dec2023.pdf) | [🌐 Project Page](https://rmurai.co.uk/projects/GaussianSplattingSLAM/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/x604ghp9R_Q?si=fPtz4kgBKFfcnQf3)
+
+### 4. Gaussian-SLAM: Photo-realistic Dense SLAM with Gaussian Splatting 
+**Authors**: Vladimir Yugay, Yue Li, Theo Gevers, Martin R. Oswald  
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present the first neural RGBD SLAM method capable of photorealistically reconstructing real-world scenes.
+Despite modern SLAM methods achieving impressive results on synthetic datasets, they still struggle with real-world datasets. Our approach utilizes 3D Gaussians as a primary unit for our scene representation to overcome the limitations of the previous methods. We observe that classical 3D Gaussians are hard to use in a monocular setup: they can't encode accurate geometry and are hard to optimize with single-view sequential supervision. By extending classical 3D Gaussians to encode geometry, and designing a novel scene representation and the means to grow, and optimize it, we propose a SLAM system capable of reconstructing and rendering real-world datasets without compromising on speed and efficiency.
+We show that Gaussian-SLAM can reconstruct and photorealistically render real-world scenes. We evaluate our method on common synthetic and real-world datasets and compare it against other state-of-the-art SLAM methods. Finally, we demonstrate, that the final 3D scene representation that we obtain can be rendered in Real-time thanks to the efficient Gaussian Splatting rendering.
+</details>
+
+ [📄 Paper](https://ivi.fnwi.uva.nl/cv/paper/GaussianSLAM.pdf) | [🌐 Project Page](https://vladimiryugay.github.io/gaussian_slam/) | [💻 Code (not yet)](https://github.com/VladimirYugay/Gaussian-SLAM) | [🎥 Short Presentation](https://www.youtube.com/watch?v=RZK1o_ija7M)
 
 <br>
 
