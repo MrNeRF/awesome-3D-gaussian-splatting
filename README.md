@@ -1086,6 +1086,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 6. [Write up on some mathematical details of the 3DGS implementation](https://github.com/kwea123/gaussian_splatting_notes)
 7. [Discussion about gs universal format](https://github.com/mkkellogg/GaussianSplats3D/issues/47#issuecomment-1801360116)
 8. [Math explanation to understand 3DGS](https://github.com/chiehwangs/3d-gaussian-theory)
+9. [Compressing Gaussian Splats](https://blog.playcanvas.com/compressing-gaussian-splats/)
 
 ## Tutorial Videos
 
