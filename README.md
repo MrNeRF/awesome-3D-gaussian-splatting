@@ -35,6 +35,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 13, 2023**:
   - 3 papers added: Gaussian-SLAM, CoGS, and ASH.
+  - 3 more papers: CF-GS,
 
 
  **December 11, 2023**:
@@ -760,6 +761,17 @@ Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scen
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.04564.pdf) | [🌐 Project Page](https://efficientgaussian.github.io/) | [💻 Code ](https://github.com/Sharath-girish/efficientgaussian) 
+
+<br>
+
+### 3. COLMAP-Free 3D Gaussian Splatting 
+**Authors**: Yang Fu, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, Xiaolong Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+While neural rendering has led to impressive advances in scene reconstruction and novel view synthesis, it relies heavily on accurately pre-computed camera poses. To relax this constraint, multiple efforts have been made to train Neural Radiance Fields (NeRFs) without pre-processed camera poses. However, the implicit representations of NeRFs provide extra challenges to optimize the 3D structure and camera poses at the same time. On the other hand, the recently proposed 3D Gaussian Splatting provides new opportunities given its explicit point cloud representations. This paper leverages both the explicit geometric representation and the continuity of the input video stream to perform novel view synthesis without any SfM preprocessing. We process the input frames in a sequential manner and progressively grow the 3D Gaussians set by taking one input frame at a time, without the need to pre-compute the camera poses. Our method significantly improves over previous approaches in view synthesis and camera pose estimation under large motion changes.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.07504.pdf) | [🌐 Project Page](https://oasisyang.github.io/colmap-free-3dgs/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/IJtnx4keJvg)
 
 <br>
 
