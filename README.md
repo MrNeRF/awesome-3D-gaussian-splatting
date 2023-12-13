@@ -772,7 +772,7 @@ Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scen
 
 <br>
 
-### 3. COLMAP-Free 3D Gaussian Splatting 
+### 4. COLMAP-Free 3D Gaussian Splatting 
 **Authors**: Yang Fu, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, Xiaolong Wang 
 <details span>
 <summary><b>Abstract</b></summary>
