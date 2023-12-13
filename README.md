@@ -34,9 +34,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 13, 2023**:
-  - 3 papers added: Gaussian-SLAM, CoGS, and ASH.
-  - 3 more papers: CF-GS,
-
+  - 5 papers added: Gaussian-SLAM, CoGS, ASH, CF-GS, and Photo-SLAM
 
  **December 11, 2023**:
   - 2 papers added: Gaussian Splatting SLAM and Denoising Scores for 3D Generation.
@@ -688,6 +686,16 @@ We show that Gaussian-SLAM can reconstruct and photorealistically render real-wo
 </details>
 
  [📄 Paper](https://ivi.fnwi.uva.nl/cv/paper/GaussianSLAM.pdf) | [🌐 Project Page](https://vladimiryugay.github.io/gaussian_slam/) | [💻 Code (not yet)](https://github.com/VladimirYugay/Gaussian-SLAM) | [🎥 Short Presentation](https://www.youtube.com/watch?v=RZK1o_ija7M)
+
+### 5. Photo-SLAM: Real-time Simultaneous Localization and Photorealistic Mapping for Monocular, Stereo, and RGB-D Cameras  
+**Authors**: Huajian Huang, Longwei Li, Hui Cheng, Sai-Kit Yeung  
+
+<details span>
+<summary><b>Abstract</b></summary>
+The integration of neural rendering and the SLAM system recently showed promising results in joint localization and photorealistic view reconstruction. However, existing methods, fully relying on implicit representations, are so resource-hungry that they cannot run on portable devices, which deviates from the original intention of SLAM. In this paper, we present Photo-SLAM, a novel SLAM framework with a hyper primitives map. Specifically, we simultaneously exploit explicit geometric features for localization and learn implicit photometric features to represent the texture information of the observed environment. In addition to actively densifying hyper primitives based on geometric features, we further introduce a Gaussian-Pyramid-based training method to progressively learn multi-level features, enhancing photorealistic mapping performance. The extensive experiments with monocular, stereo, and RGB-D datasets prove that our proposed system Photo-SLAM significantly outperforms current state-of-the-art SLAM systems for online photorealistic mapping, e.g., PSNR is 30% higher and rendering speed is hundreds of times faster in the Replica dataset. Moreover, the Photo-SLAM can run at real-time speed using an embedded platform such as Jetson AGX Orin, showing the potential of robotics applications. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2311.16728.pdf)
 
 <br>
 
