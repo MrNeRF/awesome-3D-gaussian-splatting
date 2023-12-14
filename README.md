@@ -15,6 +15,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Rendering](#rendering)
 - [Compression](#compression)
 - [Language Embedding](#language-embedding)
+- [Autonomous Driving](#autonomous-driving)
 - [Misc](#misc)
 - [Classic work](#classic-work)
 - [Open Source Implementations](#open-source-implementations)
@@ -32,6 +33,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **December 15, 2023**:
+  - 1 papers added: DrivingGaussian 
 
  **December 13, 2023**:
   - 5 papers added: Gaussian-SLAM, CoGS, ASH, CF-GS, and Photo-SLAM
@@ -961,6 +965,18 @@ Open-vocabulary querying in 3D space is challenging but essential for scene unde
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.18482.pdf) | [🌐 Project Page](https://buaavrcg.github.io/LEGaussians/) | [💻 Code (not yet)]()
+
+<br>
+
+## Autonomous Driving:
+### 1. DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes  
+**Authors**: Xiaoyu Zhou, Zhiwei Lin, Xiaojun Shan, Yongtao Wang, Deqing Sun, Ming-Hsuan Yang 
+<details span>
+<summary><b>Abstract</b></summary>
+We present DrivingGaussian, an efficient and effective framework for surrounding dynamic autonomous driving scenes. For complex scenes with moving objects, we first sequentially and progressively model the static background of the entire scene with incremental static 3D Gaussians. We then leverage a composite dynamic Gaussian graph to handle multiple moving objects, individually reconstructing each object and restoring their accurate positions and occlusion relationships within the scene. We further use a LiDAR prior for Gaussian Splatting to reconstruct scenes with greater details and maintain panoramic consistency. DrivingGaussian outperforms existing methods in driving scene reconstruction and enables photorealistic surround-view synthesis with high-fidelity and multi-camera consistency.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.07920.pdf) | [🌐 Project Page](https://pkuvdig.github.io/DrivingGaussian/) | [💻 Code (not yet)]() 
 
 <br>
 
