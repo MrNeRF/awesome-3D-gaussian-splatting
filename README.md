@@ -1055,7 +1055,7 @@ any surrogate losses or regularization. These reconstructions work well
 even on natural video sequences with segmentation artifacts.
 </details>
 
-[📄 Paper](https://arxiv.org/pdf/2309.16585.pdf) | [🌐 Project Page](https://leonidk.com/fuzzy-metaballs/) | [💻 Code](https://github.com/leonidk/fuzzy-metaballs) | [🎥 Short Presentation](https://www.youtube.com/watch?v=Ec7cxEc9eOU) 
+[📄 Paper](https://arxiv.org/pdf/2207.10606.pdf) | [🌐 Project Page](https://leonidk.com/fuzzy-metaballs/) | [💻 Code](https://github.com/leonidk/fuzzy-metaballs) | [🎥 Short Presentation](https://www.youtube.com/watch?v=Ec7cxEc9eOU) 
 
 ### 3. Unbiased Gradient Estimation for Differentiable Surface Splatting via Poisson Sampling
 **Authors**: Jan U. Müller, Michael Weinmann, Reinhard Klein
