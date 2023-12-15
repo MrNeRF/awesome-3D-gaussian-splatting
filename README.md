@@ -35,7 +35,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 15, 2023**:
-  - 1 papers added: DrivingGaussian 
+  - 4 papers added: DrivingGaussian, iComMa, Triplane, and 3DGS-Avatar
+  - Relightable Gaussians code released.
 
  **December 13, 2023**:
   - 5 papers added: Gaussian-SLAM, CoGS, ASH, CF-GS, and Photo-SLAM
@@ -437,7 +438,7 @@ With the onset of diffusion-based generative models and their ability to generat
 
 <br>
 
-### 9.Learn to Optimize Denoising Scores for 3D Generation - A Unified and Improved Diffusion Prior on NeRF and 3D Gaussian Splatting 
+### 9. Learn to Optimize Denoising Scores for 3D Generation - A Unified and Improved Diffusion Prior on NeRF and 3D Gaussian Splatting 
 Alexander Vilesov, Pradyumna Chari, Achuta Kadambi
 <details span>
 <summary><b>Abstract</b></summary>
@@ -445,6 +446,16 @@ We propose a unified framework aimed at enhancing the diffusion priors for 3D ge
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.04820.pdf) | [🌐 Project Page](https://yangxiaofeng.github.io/demo_diffusion_prior/) | [💻 Code](https://github.com/yangxiaofeng/LODS)
+
+### 10. Triplane Meets Gaussian Splatting: Fast and Generalizable Single-View 3D Reconstruction with Transformers 
+Alexander Vilesov, Pradyumna Chari, Achuta Kadambi
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in 3D reconstruction from single images have been driven by the evolution of generative models. Prominent among these are methods based on Score Distillation Sampling (SDS) and the adaptation of diffusion models in the 3D domain. Despite their progress, these techniques often face limitations due to slow optimization or rendering processes, leading to extensive training and optimization times. In this paper, we introduce a novel approach for single-view reconstruction that efficiently generates a 3D model from a single image via feed-forward inference. Our method utilizes two transformer-based networks, namely a point decoder and a triplane decoder, to reconstruct 3D objects using a hybrid Triplane-Gaussian intermediate representation. This hybrid representation strikes a balance, achieving a faster rendering speed compared to implicit representations while simultaneously delivering superior rendering quality than explicit representations. The point decoder is designed for generating point clouds from single images, offering an explicit representation which is then utilized by the triplane decoder to query Gaussian features for each point. This design choice addresses the challenges associated with directly regressing explicit 3D Gaussian attributes characterized by their non-structural nature. Subsequently, the 3D Gaussians are decoded by an MLP to enable rapid rendering through splatting. Both decoders are built upon a scalable, transformer-based architecture and have been efficiently trained on large-scale 3D datasets. The evaluations conducted on both synthetic datasets and real-world images demonstrate that our method not only achieves higher quality but also ensures a faster runtime in comparison to previous state-of-the-art techniques.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.09147.pdf) | [🌐 Project Page](https://zouzx.github.io/TriplaneGaussian/)
+
 
 <br>
 
@@ -645,6 +656,16 @@ Real-time rendering of photorealistic and controllable human avatars stands as a
 
  [📄 Paper](https://arxiv.org/pdf/2312.05941.pdf) | [🌐 Project Page](https://vcai.mpi-inf.mpg.de/projects/ash/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://vcai.mpi-inf.mpg.de/projects/ash/videos/video_for_page.mp4)
 
+### 20. 3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting  
+**Authors**: Zhiyin Qian, Shaofei Wang, Marko Mihajlovic, Andreas Geiger, Siyu Tang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce an approach that creates animatable human avatars from monocular videos using 3D Gaussian Splatting (3DGS). Existing methods based on neural radiance fields (NeRFs) achieve high-quality novel-view/novel-pose image synthesis but often require days of training, and are extremely slow at inference time. Recently, the community has explored fast grid structures for efficient training of clothed avatars. Albeit being extremely fast at training, these methods can barely achieve an interactive rendering frame rate with around 15 FPS. In this paper, we use 3D Gaussian Splatting and learn a non-rigid deformation network to reconstruct animatable clothed human avatars that can be trained within 30 minutes and rendered at real-time frame rates (50+ FPS). Given the explicit nature of our representation, we further introduce as-isometric-as-possible regularizations on both the Gaussian mean vectors and the covariance matrices, enhancing the generalization of our model on highly articulated unseen poses. Experimental results show that our method achieves comparable and even better performance compared to state-of-the-art approaches on animatable avatar creation from a monocular input, while being 400x and 250x faster in training and inference, respectively. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.09228.pdf) 
+
 <br>
 
 ## SLAM:
@@ -785,6 +806,15 @@ While neural rendering has led to impressive advances in scene reconstruction an
 
   [📄 Paper](https://arxiv.org/pdf/2312.07504.pdf) | [🌐 Project Page](https://oasisyang.github.io/colmap-free-3dgs/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/IJtnx4keJvg)
 
+### 5. iComMa: Inverting 3D Gaussians Splatting for Camera Pose Estimation via Comparing and Matching 
+**Authors**: Yuan Sun, Xuan Wang, Yunfan Zhang, Jie Zhang, Caigui Jiang, Yu Guo, Fei Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+We present a method named iComMa to address the 6D pose estimation problem in computer vision. The conventional pose estimation methods typically rely on the target's CAD model or necessitate specific network training tailored to particular object classes. Some existing methods address mesh-free 6D pose estimation by employing the inversion of a Neural Radiance Field (NeRF), aiming to overcome the aforementioned constraints. However, it still suffers from adverse initializations. By contrast, we model the pose estimation as the problem of inverting the 3D Gaussian Splatting (3DGS) with both the comparing and matching loss. In detail, a render-and-compare strategy is adopted for the precise estimation of poses. Additionally, a matching module is designed to enhance the model's robustness against adverse initializations by minimizing the distances between 2D keypoints. This framework systematically incorporates the distinctive characteristics and inherent rationale of render-and-compare and matching-based approaches. This comprehensive consideration equips the framework to effectively address a broader range of intricate and challenging scenarios, including instances with substantial angular deviations, all while maintaining a high level of prediction accuracy. Experimental results demonstrate the superior precision and robustness of our proposed jointly optimized framework when evaluated on synthetic and complex real-world data in challenging scenarios. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.09031.pdf) 
+
 <br>
 
 ## Editing:
@@ -866,7 +896,7 @@ Recently, 3D Gaussian Splatting (3DGS) has demonstrated impressive novel view sy
 We present a novel differentiable point-based rendering framework for material and lighting decomposition from multi-view images, enabling editing, ray-tracing, and real-time relighting of the 3D point cloud. Specifically, a 3D scene is represented as a set of relightable 3D Gaussian points, where each point is additionally associated with a normal direction, BRDF parameters, and incident lights from different directions. To achieve robust lighting estimation, we further divide incident lights of each point into global and local components, as well as view-dependent visibilities. The 3D scene is optimized through the 3D Gaussian Splatting technique while BRDF and lighting are decomposed by physically-based differentiable rendering. Moreover, we introduce an innovative point-based ray-tracing approach based on the bounding volume hierarchy for efficient visibility baking, enabling real-time rendering and relighting of 3D Gaussian points with accurate shadow effects. Extensive experiments demonstrate improved BRDF estimation and novel view rendering results compared to state-of-the-art material estimation approaches. Our framework showcases the potential to revolutionize the mesh-based graphics pipeline with a relightable, traceable, and editable rendering pipeline solely based on point cloud.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.16043.pdf) | [🌐 Project Page](https://nju-3dv.github.io/projects/Relightable3DGaussian/) | [💻 Code (not yet)]() 
+  [📄 Paper](https://arxiv.org/pdf/2311.16043.pdf) | [🌐 Project Page](https://nju-3dv.github.io/projects/Relightable3DGaussian/) | [💻 Code](https://github.com/NJU-3DV/Relightable3DGaussian) 
 
 ### 3. GS-IR: 3D Gaussian Splatting for Inverse Rendering 
 **Authors**: Zhihao Liang, Qi Zhang, Ying Feng, Ying Shan, Kui Jia 
