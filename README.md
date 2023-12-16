@@ -34,6 +34,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 16, 2023**:
+  - Added WebGL viewer 3: Gauzilla.
+
  **December 15, 2023**:
   - 4 papers added: DrivingGaussian, iComMa, Triplane, and 3DGS-Avatar
   - Relightable Gaussians code released.
@@ -1156,6 +1159,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 ### Viewers
 - [WebGL Viewer 1](https://github.com/antimatter15/splat)
 - [WebGL Viewer 2](https://github.com/kishimisu/Gaussian-Splatting-WebGL)
+- [WebGL Viewer 3](https://github.com/BladeTransformerLLC/gauzilla)
 - [WebGPU Viewer 1](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [WebGPU Viewer 2](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
