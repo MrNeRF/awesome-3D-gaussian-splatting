@@ -36,6 +36,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 18, 2023**:
   - Added utility: SpectacularAI - Conversion scripts for different 3DGS conventions.
+  - SuGaR code released.
 
  **December 16, 2023**:
   - Added WebGL viewer 3: Gauzilla.
@@ -749,7 +750,7 @@ We introduce PhysGaussian, a new method that seamlessly integrates physically gr
 We propose a method to allow precise and extremely fast mesh extraction from 3D Gaussian Splatting. Gaussian Splatting has recently become very popular as it yields realistic rendering while being significantly faster to train than NeRFs. It is however challenging to extract a mesh from the millions of tiny 3D gaussians as these gaussians tend to be unorganized after optimization and no method has been proposed so far. Our first key contribution is a regularization term that encourages the gaussians to align well with the surface of the scene. We then introduce a method that exploits this alignment to sample points on the real surface of the scene and extract a mesh from the Gaussians using Poisson reconstruction, which is fast, scalable, and preserves details, in contrast to the Marching Cubes algorithm usually applied to extract meshes from Neural SDFs. Finally, we introduce an optional refinement strategy that binds gaussians to the surface of the mesh, and jointly optimizes these Gaussians and the mesh through Gaussian splatting rendering. This enables easy editing, sculpting, rigging, animating, compositing and relighting of the Gaussians using traditional softwares by manipulating the mesh instead of the gaussians themselves. Retrieving such an editable mesh for realistic rendering is done within minutes with our method, compared to hours with the state-of-the-art methods on neural SDFs, while providing a better rendering quality. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code (not released yet)](https://github.com/Anttwo/SuGaR) 
+  [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code](https://github.com/Anttwo/SuGaR) 
 
 ### 3.  MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes
 **Authors**: Bardienus P. Duisterhof, Zhao Mandi, Yunchao Yao, Jia-Wei Liu, Mike Zheng Shou, Shuran Song, Jeffrey Ichnowski
