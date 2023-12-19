@@ -35,6 +35,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 18, 2023**:
+ - 2 papers added: GAvatar and GauFRe
+
+ **December 18, 2023**:
   - Added utility: SpectacularAI - Conversion scripts for different 3DGS conventions.
   - SuGaR code released.
 
@@ -322,6 +325,16 @@ Capturing and re-animating the 3D structure of articulated objects present signi
 
   [📄 Paper](https://arxiv.org/pdf/2312.05664.pdf) | [🌐 Project Page](https://cogs2023.github.io/) | [💻 Code (not yet)]()
 
+### 12. GauFRe: Gaussian Deformation Fields for Real-time Dynamic Novel View Synthesis 
+**Authors**: Yiqing Liang, Numair Khan, Zhengqin Li, Thu Nguyen-Phuoc, Douglas Lanman, James Tompkin, Lei Xiao 
+
+<details span>
+<summary><b>Abstract</b></summary>
+We propose a method for dynamic scene reconstruction using deformable 3D Gaussians that is tailored for monocular video. Building upon the efficiency of Gaussian splatting, our approach extends the representation to accommodate dynamic elements via a deformable set of Gaussians residing in a canonical space, and a time-dependent deformation field defined by a multi-layer perceptron (MLP). Moreover, under the assumption that most natural scenes have large regions that remain static, we allow the MLP to focus its representational power by additionally including a static Gaussian point cloud. The concatenated dynamic and static point clouds form the input for the Gaussian Splatting rasterizer, enabling real-time rendering. The differentiable pipeline is optimized end-to-end with a self-supervised rendering loss. Our method achieves results that are comparable to state-of-the-art dynamic neural radiance field methods while allowing much faster optimization and rendering.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.11458.pdf) | [🌐 Project Page](https://lynl7130.github.io/gaufre/index.html) | [🎥 Short Presentation](https://youtu.be/YweWidWO8rI?si=jMssQdIXQV67kwzS)
+
 <br>
 
 ## Diffusion:
@@ -462,7 +475,6 @@ Recent advancements in 3D reconstruction from single images have been driven by 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.09147.pdf) | [🌐 Project Page](https://zouzx.github.io/TriplaneGaussian/)
-
 
 <br>
 
@@ -672,6 +684,16 @@ We introduce an approach that creates animatable human avatars from monocular vi
 </details>
 
  [📄 Paper](https://arxiv.org/pdf/2312.09228.pdf) 
+
+### 21. GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning  
+**Authors**: Ye Yuan, Xueting Li, Yangyi Huang, Shalini De Mello, Koki Nagano, Jan Kautz, Umar Iqbal 
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Gaussian splatting has emerged as a powerful 3D representation that harnesses the advantages of both explicit (mesh) and implicit (NeRF) 3D representations. In this paper, we seek to leverage Gaussian splatting to generate realistic animatable avatars from textual descriptions, addressing the limitations (e.g., flexibility and efficiency) imposed by mesh or NeRF-based representations. However, a naive application of Gaussian splatting cannot generate high-quality animatable avatars and suffers from learning instability; it also cannot capture fine avatar geometries and often leads to degenerate body parts. To tackle these problems, we first propose a primitive-based 3D Gaussian representation where Gaussians are defined inside pose-driven primitives to facilitate animation. Second, to stabilize and amortize the learning of millions of Gaussians, we propose to use neural implicit fields to predict the Gaussian attributes (e.g., colors). Finally, to capture fine avatar geometries and extract detailed meshes, we propose a novel SDF-based implicit mesh learning approach for 3D Gaussians that regularizes the underlying geometries and extracts highly detailed textured meshes. Our proposed method, GAvatar, enables the large-scale generation of diverse animatable avatars using only text prompts. GAvatar significantly surpasses existing methods in terms of both appearance and geometry quality, and achieves extremely fast rendering (100 fps) at 1K resolution.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.11461.pdf) | [🌐 Project Page](https://nvlabs.github.io/GAvatar/) | [🎥 Short Presentation](https://www.youtube.com/watch?v=PbCF1HzrKrs)
 
 <br>
 
