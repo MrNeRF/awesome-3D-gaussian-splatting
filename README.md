@@ -990,6 +990,15 @@ Novel-view synthesis of scenes acquired with several images or videos has been r
 
   [📄 Paper (not yet)]() | [🌐 Project Page](https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/) | [💻 Code](https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting) 
 
+### 10. GIR: 3D Gaussian Inverse Rendering for Relightable Scene Factorization
+**Authors**: Yahao Shi, Yanmin Wu, Chenming Wu, Xing Liu, Chen Zhao, Haocheng Feng, Jingtuo Liu, Liangjun Zhang, Jian Zhang, Bin Zhou, Errui Ding, Jingdong Wang
+<details span>
+<summary><b>Abstract</b></summary>
+This paper presents GIR, a 3D Gaussian Inverse Rendering method for relightable scene factorization. Compared to existing methods leveraging discrete meshes or neural implicit fields for inverse rendering, our method utilizes 3D Gaussians to estimate the material properties, illumination, and geometry of an object from multi-view images. Our study is motivated by the evidence showing that 3D Gaussian is a more promising backbone than neural fields in terms of performance, versatility, and efficiency. In this paper, we aim to answer the question: "How can 3D Gaussian be applied to improve the performance of inverse rendering?" To address the complexity of estimating normals based on discrete and often in-homogeneous distributed 3D Gaussian representations, we proposed an efficient self-regularization method that facilitates the modeling of surface normals without the need for additional supervision. To reconstruct indirect illumination, we propose an approach that simulates ray tracing. Extensive experiments demonstrate our proposed GIR's superior performance over existing methods across multiple tasks on a variety of widely used datasets in inverse rendering. This substantiates its efficacy and broad applicability, highlighting its potential as an influential tool in relighting and reconstruction.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.05133) | [🌐 Project Page](https://3dgir.github.io/) | [💻 Code(not yet)]() 
+  
 <br>
 
 ## Compression:
