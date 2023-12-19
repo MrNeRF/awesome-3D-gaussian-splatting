@@ -34,8 +34,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
- **December 18, 2023**:
- - 2 papers added: GAvatar and GauFRe
+ **December 19, 2023**:
+ - 2 papers added: GAvatar and GauFRe.
 
  **December 18, 2023**:
   - Added utility: SpectacularAI - Conversion scripts for different 3DGS conventions.
@@ -45,11 +45,11 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
   - Added WebGL viewer 3: Gauzilla.
 
  **December 15, 2023**:
-  - 4 papers added: DrivingGaussian, iComMa, Triplane, and 3DGS-Avatar
+  - 4 papers added: DrivingGaussian, iComMa, Triplane, and 3DGS-Avatar.
   - Relightable Gaussians code released.
 
  **December 13, 2023**:
-  - 5 papers added: Gaussian-SLAM, CoGS, ASH, CF-GS, and Photo-SLAM
+  - 5 papers added: Gaussian-SLAM, CoGS, ASH, CF-GS, and Photo-SLAM.
 
  **December 11, 2023**:
   - 2 papers added: Gaussian Splatting SLAM and Denoising Scores for 3D Generation.
