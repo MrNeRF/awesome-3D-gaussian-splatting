@@ -1205,7 +1205,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 - [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
-- [python OpenGL viewer](https://github.com/limacv/GaussianSplattingViewer.git)
+- [PyOpenGL viewer (also with official CUDA backend)](https://github.com/limacv/GaussianSplattingViewer.git)
 - [PlayCanvas Viewer](https://github.com/playcanvas/model-viewer)
 - [gsplat.js](https://github.com/dylanebert/gsplat.js)
 
