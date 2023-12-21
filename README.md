@@ -37,6 +37,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 21, 2023**:
  - 3 papers added: Splatter Image, pixelSplat, and align your gaussians.
+ - Gaussian Grouping code released.
 
  **December 19, 2023**:
  - 2 papers added: GAvatar and GauFRe.
@@ -899,7 +900,7 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 The recent Gaussian Splatting achieves high-quality and real-time novel-view synthesis of the 3D scenes. However, it is solely concentrated on the appearance and geometry modeling, while lacking in fine-grained object-level scene understanding. To address this issue, we propose Gaussian Grouping, which extends Gaussian Splatting to jointly reconstruct and segment anything in open-world 3D scenes. We augment each Gaussian with a compact Identity Encoding, allowing the Gaussians to be grouped according to their object instance or stuff membership in the 3D scene. Instead of resorting to expensive 3D labels, we supervise the Identity Encodings during the differentiable rendering by leveraging the 2D mask predictions by SAM, along with introduced 3D spatial consistency regularization. Comparing to the implicit NeRF representation, we show that the discrete and grouped 3D Gaussians can reconstruct, segment and edit anything in 3D with high visual quality, fine granularity and efficiency. Based on Gaussian Grouping, we further propose a local Gaussian Editing scheme, which shows efficacy in versatile scene editing applications, including 3D object removal, inpainting, colorization and scene recomposition. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2312.00732.pdf) | [💻 Code (not yet)](https://github.com/lkeab/gaussian-grouping) 
+  [📄 Paper](https://arxiv.org/pdf/2312.00732.pdf) | [💻 Code](https://github.com/lkeab/gaussian-grouping) 
 
 ### 5. Segment Any 3D Gaussians
 **Authors**: Jiazhong Cen, Jiemin Fang, Chen Yang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian
