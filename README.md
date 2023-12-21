@@ -13,6 +13,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Regularization and Optimization](#regularization-and-optimization)
 - [Editing](#editing)
 - [Rendering](#rendering)
+- [Sparse](#sparse)
 - [Compression](#compression)
 - [Language Embedding](#language-embedding)
 - [Autonomous Driving](#autonomous-driving)
@@ -34,8 +35,14 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 21, 2023**:
+ - 2 papers added: Splatter Image and pixelSplat
+
  **December 19, 2023**:
  - 2 papers added: GAvatar and GauFRe.
+
+ **December 18, 2023**:
+ - 2 papers added: GAvatar and GauFRe
 
  **December 18, 2023**:
   - Added utility: SpectacularAI - Conversion scripts for different 3DGS conventions.
@@ -905,7 +912,6 @@ Interactive 3D segmentation in radiance fields is an appealing task since its im
 
   [📄 Paper](https://arxiv.org/pdf/2312.03203.pdf) | [🌐 Project Page](https://feature-3dgs.github.io/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://www.youtube.com/watch?v=YWZiF-WvMN4&t=4s)
 
-
 <br>
 
 ## Rendering:
@@ -963,7 +969,19 @@ Neural rendering methods have significantly advanced photo-realistic 3D scene re
 
   [📄 Paper](https://arxiv.org/pdf/2312.00109.pdf) | [🌐 Project Page](https://city-super.github.io/scaffold-gs/) | [💻 Code](https://github.com/city-super/Scaffold-GS) 
 
-### 7. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
+### 7. Deblurring 3D Gaussian Splatting 
+**Authors**: Byeonghyeon Lee, Howoong Lee1, Xiangyu Sun, Usman Ali, and Eunbyung Park 
+<details span>
+<summary><b>Abstract</b></summary>
+Novel-view synthesis of scenes acquired with several images or videos has been revolutionized by Radiance Field techniques. However, their high visual quality was achieved only with neural networks, which are costly to train and do not provide real-time rendering. Recently, 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves state-of-the-art visual quality as well as renders in real-time. However, this approach suffers from severe degradation in the rendering quality if the training images are blurry. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. However, the majority of those works are designed only for volumetric rendering-based neural fields and are not applicable to rasterization-based approaches. To fill this gap, we propose a novel neural field-based deblurring framework for the recently proposed rasterization-based approaches, 3D Gaussians, and rasterization. Specifically, we employ a small Multi-Layer Perceptron (MLP), which manipulates the covariance of each 3D Gaussian to model the scene blurriness. While deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring.
+</details>
+
+  [📄 Paper (not yet)]() | [🌐 Project Page](https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/) | [💻 Code](https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting) 
+
+<br>
+
+## Sparse:
+### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -972,7 +990,7 @@ The problem of novel view synthesis has grown significantly in popularity recent
 
   [📄 Paper](https://arxiv.org/pdf/2312.00206.pdf) | [🌐 Project Page](https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/) | [💻 Code (not yet)]() 
 
-### 8. FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting  
+### 2. FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting  
 **Authors**: Zehao Zhu, Zhiwen Fan, Yifan Jiang, Zhangyang Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -981,14 +999,23 @@ Novel view synthesis from limited observations remains an important and persiste
 
   [📄 Paper](https://arxiv.org/pdf/2312.00451.pdf) | [🌐 Project Page](https://zehaozhu.github.io/FSGS/) | [💻 Code](https://github.com/VITA-Group/FSGS) 
 
-### 9. Deblurring 3D Gaussian Splatting 
-**Authors**: Byeonghyeon Lee, Howoong Lee1, Xiangyu Sun, Usman Ali, and Eunbyung Park 
+### 3. pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction 
+**Authors**: David Charatan, Sizhe Li, Andrea Tagliasacchi, Vincent Sitzmann 
 <details span>
 <summary><b>Abstract</b></summary>
-Novel-view synthesis of scenes acquired with several images or videos has been revolutionized by Radiance Field techniques. However, their high visual quality was achieved only with neural networks, which are costly to train and do not provide real-time rendering. Recently, 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves state-of-the-art visual quality as well as renders in real-time. However, this approach suffers from severe degradation in the rendering quality if the training images are blurry. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. However, the majority of those works are designed only for volumetric rendering-based neural fields and are not applicable to rasterization-based approaches. To fill this gap, we propose a novel neural field-based deblurring framework for the recently proposed rasterization-based approaches, 3D Gaussians, and rasterization. Specifically, we employ a small Multi-Layer Perceptron (MLP), which manipulates the covariance of each 3D Gaussian to model the scene blurriness. While deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring.
+We introduce pixelSplat, a feed-forward model that learns to reconstruct 3D radiance fields parameterized by 3D Gaussian primitives from pairs of images. Our model features real-time and memory-efficient rendering for scalable training as well as fast 3D reconstruction at inference time. To overcome local minima inherent to sparse and locally supported representations, we predict a dense probability distribution over 3D and sample Gaussian means from that probability distribution. We make this sampling operation differentiable via a reparameterization trick, allowing us to back-propagate gradients through the Gaussian splatting representation. We benchmark our method on wide-baseline novel view synthesis on the real-world RealEstate10k and ACID datasets, where we outperform state-of-the-art light field transformers and accelerate rendering by 2.5 orders of magnitude while reconstructing an interpretable and editable 3D radiance field. 
 </details>
 
-  [📄 Paper (not yet)]() | [🌐 Project Page](https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/) | [💻 Code](https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting) 
+  [📄 Paper](https://arxiv.org/pdf/2312.12337.pdf) | [🌐 Project Page](https://davidcharatan.com/pixelsplat/) | [💻 Code](https://github.com/dcharatan/pixelsplat) 
+
+### 4. Splatter Image: Ultra-Fast Single-View 3D Reconstruction 
+**Authors**: Stanislaw Szymanowicz, Christian Rupprecht, Andrea Vedaldi 
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce the Splatter Image, an ultra-fast approach for monocular 3D object reconstruction which operates at 38 FPS. Splatter Image is based on Gaussian Splatting, which has recently brought real-time rendering, fast training, and excellent scaling to multi-view reconstruction. For the first time, we apply Gaussian Splatting in a monocular reconstruction setting. Our approach is learning-based, and, at test time, reconstruction only requires the feed-forward evaluation of a neural network. The main innovation of Splatter Image is the surprisingly straightforward design: it uses a 2D image-to-image network to map the input image to one 3D Gaussian per pixel. The resulting Gaussians thus have the form of an image, the Splatter Image. We further extend the method to incorporate more than one image as input, which we do by adding cross-view attention. Owning to the speed of the renderer (588 FPS), we can use a single GPU for training while generating entire images at each iteration in order to optimize perceptual metrics like LPIPS. On standard benchmarks, we demonstrate not only fast reconstruction but also better results than recent and much more expensive baselines in terms of PSNR, LPIPS, and other metrics. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.13150.pdf) | [🌐 Project Page](https://szymanowiczs.github.io/splatter-image.html) | [💻 Code](https://github.com/szymanowiczs/splatter-image) [🎥 Short Presentation](https://www.youtube.com/watch?v=pcKTf9SVh4g)
 
 ### 10. GIR: 3D Gaussian Inverse Rendering for Relightable Scene Factorization
 **Authors**: Yahao Shi, Yanmin Wu, Chenming Wu, Xing Liu, Chen Zhao, Haocheng Feng, Jingtuo Liu, Liangjun Zhang, Jian Zhang, Bin Zhou, Errui Ding, Jingdong Wang
