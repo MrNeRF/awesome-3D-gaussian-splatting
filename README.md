@@ -43,9 +43,6 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - 2 papers added: GAvatar and GauFRe.
 
  **December 18, 2023**:
- - 2 papers added: GAvatar and GauFRe
-
- **December 18, 2023**:
   - Added utility: SpectacularAI - Conversion scripts for different 3DGS conventions.
   - SuGaR code released.
 
