@@ -34,6 +34,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ 
+ **December 24, 2023**:
 
  **December 21, 2023**:
  - 3 papers added: Splatter Image, pixelSplat, and align your gaussians.
@@ -820,16 +822,7 @@ In this paper, we present a method to optimize Gaussian splatting with a limited
 
   [📄 Paper](https://arxiv.org/pdf/2311.13398.pdf) 
 
-### 2. Compact 3D Gaussian Representation for Radiance Field 
-**Authors**: Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park 
-<details span>
-<summary><b>Abstract</b></summary>
-Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturing complex 3D scenes with high fidelity. However, one persistent challenge that hinders the widespread adoption of NeRFs is the computational bottleneck due to the volumetric rendering. On the other hand, 3D Gaussian splatting (3DGS) has recently emerged as an alternative representation that leverages a 3D Gaussisan-based representation and adopts the rasterization pipeline to render the images rather than volumetric rendering, achieving very fast rendering speed and promising image quality. However, a significant drawback arises as 3DGS entails a substantial number of 3D Gaussians to maintain the high fidelity of the rendered images, which requires a large amount of memory and storage. To address this critical issue, we place a specific emphasis on two key objectives: reducing the number of Gaussian points without sacrificing performance and compressing the Gaussian attributes, such as view-dependent color and covariance. To this end, we propose a learnable mask strategy that significantly reduces the number of Gaussians while preserving high performance. In addition, we propose a compact but effective representation of view-dependent color by employing a grid-based neural field rather than relying on spherical harmonics. Finally, we learn codebooks to compactly represent the geometric attributes of Gaussian by vector quantization. In our extensive experiments, we consistently show over 10× reduced storage and enhanced rendering speed, while maintaining the quality of the scene representation, compared to 3DGS. Our work provides a comprehensive framework for 3D scene representation, achieving high performance, fast training, compactness, and real-time rendering.
-</details>
-
-  [📄 Paper](https://arxiv.org/pdf/2311.13681.pdf) | [🌐 Project Page](https://maincold2.github.io/c3dgs/) | [💻 Code ](https://github.com/maincold2/Compact-3DGS) 
-
-### 3. EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS 
+### 2. EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS 
 **Authors**: Sharath Girish, Kamal Gupta, Abhinav Shrivastava 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -840,7 +833,7 @@ Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scen
 
 <br>
 
-### 4. COLMAP-Free 3D Gaussian Splatting 
+### 3. COLMAP-Free 3D Gaussian Splatting 
 **Authors**: Yang Fu, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, Xiaolong Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -849,7 +842,7 @@ While neural rendering has led to impressive advances in scene reconstruction an
 
   [📄 Paper](https://arxiv.org/pdf/2312.07504.pdf) | [🌐 Project Page](https://oasisyang.github.io/colmap-free-3dgs/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/IJtnx4keJvg)
 
-### 5. iComMa: Inverting 3D Gaussians Splatting for Camera Pose Estimation via Comparing and Matching 
+### 4. iComMa: Inverting 3D Gaussians Splatting for Camera Pose Estimation via Comparing and Matching 
 **Authors**: Yuan Sun, Xuan Wang, Yunfan Zhang, Jie Zhang, Caigui Jiang, Yu Guo, Fei Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1055,6 +1048,15 @@ In summary, LightGaussian achieves an averaged compression rate over 15x while b
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.18159.pdf) | [💻 Code](https://github.com/UCDvision/compact3d)
+
+### 3. Compact 3D Gaussian Representation for Radiance Field 
+**Authors**: Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park 
+<details span>
+<summary><b>Abstract</b></summary>
+Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturing complex 3D scenes with high fidelity. However, one persistent challenge that hinders the widespread adoption of NeRFs is the computational bottleneck due to the volumetric rendering. On the other hand, 3D Gaussian splatting (3DGS) has recently emerged as an alternative representation that leverages a 3D Gaussisan-based representation and adopts the rasterization pipeline to render the images rather than volumetric rendering, achieving very fast rendering speed and promising image quality. However, a significant drawback arises as 3DGS entails a substantial number of 3D Gaussians to maintain the high fidelity of the rendered images, which requires a large amount of memory and storage. To address this critical issue, we place a specific emphasis on two key objectives: reducing the number of Gaussian points without sacrificing performance and compressing the Gaussian attributes, such as view-dependent color and covariance. To this end, we propose a learnable mask strategy that significantly reduces the number of Gaussians while preserving high performance. In addition, we propose a compact but effective representation of view-dependent color by employing a grid-based neural field rather than relying on spherical harmonics. Finally, we learn codebooks to compactly represent the geometric attributes of Gaussian by vector quantization. In our extensive experiments, we consistently show over 10× reduced storage and enhanced rendering speed, while maintaining the quality of the scene representation, compared to 3DGS. Our work provides a comprehensive framework for 3D scene representation, achieving high performance, fast training, compactness, and real-time rendering.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.13681.pdf) | [🌐 Project Page](https://maincold2.github.io/c3dgs/) | [💻 Code ](https://github.com/maincold2/Compact-3DGS) 
 
 <br>
 
