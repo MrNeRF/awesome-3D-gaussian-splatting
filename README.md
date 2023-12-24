@@ -36,6 +36,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
  
  **December 24, 2023**:
+ - 2 papers added: Self-Organization Gaussian Grids and Gaussian Splitting
 
  **December 21, 2023**:
  - 3 papers added: Splatter Image, pixelSplat, and align your gaussians.
@@ -986,6 +987,16 @@ This paper presents GIR, a 3D Gaussian Inverse Rendering method for relightable 
 </details>
 
  [📄 Paper](https://arxiv.org/pdf/2312.05133) | [🌐 Project Page](https://3dgir.github.io/) | [💻 Code(not yet)]() 
+
+### 9.Gaussian Splitting Algorithm with Color and Opacity Depended on Viewing Direction 
+**Authors**: Dawid Malarz, Weronika Smolak, Jacek Tabor, Sławomir Tadeja, Przemysław Spurek 
+<details span>
+<summary><b>Abstract</b></summary>
+Neural Radiance Fields (NeRFs) have demonstrated the remarkable potential of neural networks to capture the intricacies of 3D objects. By encoding the shape and color information within neural network weights, NeRFs excel at producing strikingly sharp novel views of 3D objects. Recently, numerous generalizations of NeRFs utilizing generative models have emerged, expanding its versatility. In contrast, Gaussian Splatting (GS) offers a similar renders quality with faster training and inference as it does not need neural networks to work. We encode information about the 3D objects in the set of Gaussian distributions that can be rendered in 3D similarly to classical meshes. Unfortunately, GS are difficult to condition since they usually require circa hundred thousand Gaussian components. To mitigate the caveats of both models, we propose a hybrid model that uses GS representation of the 3D object's shape and NeRF-based encoding of color and opacity. Our model uses Gaussian distributions with trainable positions (i.e. means of Gaussian), shape (i.e. covariance of Gaussian), color and opacity, and neural network, which takes parameters of Gaussian and viewing direction to produce changes in color and opacity. Consequently, our model better describes shadows, light reflections, and transparency of 3D objects. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.13729.pdf) | [🌐 Project Page]() | [💻 Code](https://github.com/gmum/ViewingDirectionGaussianSplatting) 
+  
   
 <br>
 
@@ -1057,6 +1068,15 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2311.13681.pdf) | [🌐 Project Page](https://maincold2.github.io/c3dgs/) | [💻 Code ](https://github.com/maincold2/Compact-3DGS) 
+
+### 4. Compact 3D Scene Representation via Self-Organizing Gaussian Grids 
+**Authors**: Wieland Morgenstern, Florian Barthel, Anna Hilsmann, Peter Eisert 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting has recently emerged as a highly promising technique for modeling of static 3D scenes. In contrast to Neural Radiance Fields, it utilizes efficient rasterization allowing for very fast rendering at high-quality. However, the storage size is significantly higher, which hinders practical deployment, e.g.~on resource constrained devices. In this paper, we introduce a compact scene representation organizing the parameters of 3D Gaussian Splatting (3DGS) into a 2D grid with local homogeneity, ensuring a drastic reduction in storage requirements without compromising visual quality during rendering. Central to our idea is the explicit exploitation of perceptual redundancies present in natural scenes. In essence, the inherent nature of a scene allows for numerous permutations of Gaussian parameters to equivalently represent it. To this end, we propose a novel highly parallel algorithm that regularly arranges the high-dimensional Gaussian parameters into a 2D grid while preserving their neighborhood structure. During training, we further enforce local smoothness between the sorted parameters in the grid. The uncompressed Gaussians use the same structure as 3DGS, ensuring a seamless integration with established renderers. Our method achieves a reduction factor of 8x to 26x in size for complex scenes with no increase in training time, marking a substantial leap forward in the domain of 3D scene distribution and consumption. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.13299.pdf) | [🌐 Project Page](https://fraunhoferhhi.github.io/Self-Organizing-Gaussians/) | [💻 Code (not yet)](https://github.com/fraunhoferhhi/Self-Organizing-Gaussians) 
 
 <br>
 
