@@ -26,6 +26,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
   * [Game Engines](#game-engines)
   * [Viewers](#viewers)
   * [Utilities](#utilities)
+  * [Other](#other)
 - [Blog Posts](#blog-posts)
 - [Tutorial Videos](#tutorial-videos)
 - [Credits](#credits)
@@ -36,7 +37,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
  
  **December 24, 2023**:
- - 2 papers added: Self-Organization Gaussian Grids and Gaussian Splitting
+ - 2 papers added: Self-Organization Gaussian Grids and Gaussian Splitting.
+ - Added repo for enhancing Gaussian rendering to model more complex scenes. 
 
  **December 21, 2023**:
  - 3 papers added: Splatter Image, pixelSplat, and align your gaussians.
@@ -1272,6 +1274,10 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 - [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - A tool for converting 3D Gaussian Splatting .ply files into a format suitable for Cloud Compare and vice-versa.
 - [SuperSplat](https://github.com/playcanvas/super-splat) - Open source browser-based tool to clean/filter, reorient and compress .ply/.splat files
 - [SpectacularAI](https://github.com/SpectacularAI/point-cloud-tools) - Conversion scripts for different 3DGS conventions
+
+### Other
+- [My-exp-Gaussians](https://github.com/ingra14m/My-exp-Gaussians) - Enhancing the ability of 3D Gaussians to model complex scenes
+
 
 ## Blog Posts
 
