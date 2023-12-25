@@ -38,6 +38,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 25, 2023**:
  - Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes code released. 
+ - GPS-Gaussian code released.
 
  **December 24, 2023**:
  - 2 papers added: Self-Organization Gaussian Grids and Gaussian Splitting.
@@ -615,7 +616,7 @@ We introduce GaussianAvatars, a new method to create photorealistic head avatars
 We present a new approach, termed GPS-Gaussian, for synthesizing novel views of a character in a real-time manner. The proposed method enables 2K-resolution rendering under a sparse-view camera setting. Unlike the original Gaussian Splatting or neural implicit rendering methods that necessitate per-subject optimizations, we introduce Gaussian parameter maps defined on the source views and regress directly Gaussian Splatting properties for instant novel view synthesis without any fine-tuning or optimization. To this end, we train our Gaussian parameter regression module on a large amount of human scan data, jointly with a depth estimation module to lift 2D parameter maps to 3D space. The proposed framework is fully differentiable and experiments on several datasets demonstrate that our method outperforms state-of-the-art methods while achieving an exceeding rendering speed.
 </details>
 
- [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code (not yet)](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Short Presentation](https://youtu.be/TBIekcqt0j0)
+ [📄 Paper (not ready)](https://arxiv.org/abs/xxx) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Short Presentation](https://youtu.be/TBIekcqt0j0)
 
 ### 12. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
 **Authors**: Shoukang Hu Ziwei Liu  
