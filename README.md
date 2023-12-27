@@ -36,6 +36,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **December 27, 2023**:
+ - 3 papers added: LangSplat, Deformable 3DGS, and Human101.
+
  **December 25, 2023**:
  - Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes code released. 
  - GPS-Gaussian code released.
@@ -727,6 +730,16 @@ Recent advances in neural radiance fields enable novel view synthesis of photo-r
 </details>
 
  [📄 Paper](https://arxiv.org/pdf/2312.15059.pdf) 
+
+### 23. Human101: Training 100+FPS Human Gaussians in 100s from 1 View  
+**Authors**: Mingwei Li, Jiachen Tao, Zongxin Yang, Yi Yang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing the human body from single-view videos plays a pivotal role in the virtual reality domain. One prevalent application scenario necessitates the rapid reconstruction of high-fidelity 3D digital humans while simultaneously ensuring real-time rendering and interaction. Existing methods often struggle to fulfill both requirements. In this paper, we introduce Human101, a novel framework adept at producing high-fidelity dynamic 3D human reconstructions from 1-view videos by training 3D Gaussians in 100 seconds and rendering in 100+ FPS. Our method leverages the strengths of 3D Gaussian Splatting, which provides an explicit and efficient representation of 3D humans. Standing apart from prior NeRF-based pipelines, Human101 ingeniously applies a Human-centric Forward Gaussian Animation method to deform the parameters of 3D Gaussians, thereby enhancing rendering speed (i.e., rendering 1024-resolution images at an impressive 60+ FPS and rendering 512-resolution images at 100+ FPS). Experimental results indicate that our approach substantially eclipses current methods, clocking up to a 10 times surge in frames per second and delivering comparable or superior rendering quality.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.15258.pdf) | [🌐 Project Page](https://longxiang-ai.github.io/Human101/) | [💻 Code (not yet)](https://github.com/longxiang-ai/Human101) 
 
 <br>
 
