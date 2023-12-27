@@ -38,6 +38,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **December 27, 2023**:
  - 3 papers added: LangSplat, Deformable 3DGS, and Human101.
+ - Blog post added: Comprehensive Review of 3DGS.
 
  **December 25, 2023**:
  - Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes code released. 
@@ -1325,6 +1326,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 7. [Discussion about gs universal format](https://github.com/mkkellogg/GaussianSplats3D/issues/47#issuecomment-1801360116)
 8. [Math explanation to understand 3DGS](https://github.com/chiehwangs/3d-gaussian-theory)
 9. [Compressing Gaussian Splats](https://blog.playcanvas.com/compressing-gaussian-splats/)
+10. [Comprehensive overview of Gaussian Splatting](https://towardsdatascience.com/a-comprehensive-overview-of-gaussian-splatting-e7d570081362)
 
 ## Tutorial Videos
 
