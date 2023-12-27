@@ -718,6 +718,16 @@ We introduce an approach that creates animatable human avatars from monocular vi
 
  [📄 Paper](https://arxiv.org/pdf/2312.11461.pdf) | [🌐 Project Page](https://nvlabs.github.io/GAvatar/) | [🎥 Short Presentation](https://www.youtube.com/watch?v=PbCF1HzrKrs)
 
+### 22. Deformable 3D Gaussian Splatting for Animatable Human Avatars 
+**Authors**: HyunJun Jung, Nikolas Brasch, Jifei Song, Eduardo Perez-Pellitero, Yiren Zhou, Zhihao Li, Nassir Navab, Benjamin Busam 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in neural radiance fields enable novel view synthesis of photo-realistic images in dynamic settings, which can be applied to scenarios with human animation. Commonly used implicit backbones to establish accurate models, however, require many input views and additional annotations such as human masks, UV maps and depth maps. In this work, we propose ParDy-Human (Parameterized Dynamic Human Avatar), a fully explicit approach to construct a digital avatar from as little as a single monocular sequence. ParDy-Human introduces parameter-driven dynamics into 3D Gaussian Splatting where 3D Gaussians are deformed by a human pose model to animate the avatar. Our method is composed of two parts: A first module that deforms canonical 3D Gaussians according to SMPL vertices and a consecutive module that further takes their designed joint encodings and predicts per Gaussian deformations to deal with dynamics beyond SMPL vertex deformations. Images are then synthesized by a rasterizer. ParDy-Human constitutes an explicit model for realistic dynamic human avatars which requires significantly fewer training views and images. Our avatars learning is free of additional annotations such as masks and can be trained with variable backgrounds while inferring full-resolution images efficiently even on consumer hardware. We provide experimental evidence to show that ParDy-Human outperforms state-of-the-art methods on ZJU-MoCap and THUman4.0 datasets both quantitatively and visually. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.15059.pdf) 
+
 <br>
 
 ## SLAM:
