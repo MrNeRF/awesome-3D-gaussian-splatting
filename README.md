@@ -1051,7 +1051,7 @@ This paper presents GIR, a 3D Gaussian Inverse Rendering method for relightable 
 
  [📄 Paper](https://arxiv.org/pdf/2312.05133) | [🌐 Project Page](https://3dgir.github.io/) | [💻 Code(not yet)]() 
 
-### 9.Gaussian Splitting Algorithm with Color and Opacity Depended on Viewing Direction 
+### 9. Gaussian Splitting Algorithm with Color and Opacity Depended on Viewing Direction 
 **Authors**: Dawid Malarz, Weronika Smolak, Jacek Tabor, Sławomir Tadeja, Przemysław Spurek 
 <details span>
 <summary><b>Abstract</b></summary>
