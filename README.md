@@ -37,7 +37,11 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **December 29, 2023**:
- - 3 papers added: DreamGaussian4D, 4DGen, and Spacetime Gaussian
+ - 1 paper added (apparently missed that one before): Gaussian-Head-Avatar.
+ - Blog post head avatars added.
+
+ **December 29, 2023**:
+ - 3 papers added: DreamGaussian4D, 4DGen, and Spacetime Gaussian.
 
  **December 27, 2023**:
  - 3 papers added: LangSplat, Deformable 3DGS, and Human101.
@@ -775,6 +779,16 @@ Reconstructing the human body from single-view videos plays a pivotal role in th
 
  [📄 Paper](https://arxiv.org/pdf/2312.15258.pdf) | [🌐 Project Page](https://longxiang-ai.github.io/Human101/) | [💻 Code (not yet)](https://github.com/longxiang-ai/Human101) 
 
+### 24. Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians  
+**Authors**: Yuelang Xu, Benwang Chen, Zhe Li, Hongwen Zhang, Lizhen Wang, Zerong Zheng, Yebin Liu 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Creating high-fidelity 3D head avatars has always been a research hotspot, but there remains a great challenge under lightweight sparse view setups. In this paper, we propose Gaussian Head Avatar represented by controllable 3D Gaussians for high-fidelity head avatar modeling. We optimize the neutral 3D Gaussians and a fully learned MLP-based deformation field to capture complex expressions. The two parts benefit each other, thereby our method can model fine-grained dynamic details while ensuring expression accuracy. Furthermore, we devise a well-designed geometry-guided initialization strategy based on implicit SDF and Deep Marching Tetrahedra for the stability and convergence of the training procedure. Experiments show our approach outperforms other state-of-the-art sparse-view methods, achieving ultra high-fidelity rendering quality at 2K resolution even under exaggerated expressions. 
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2312.03029.pdf) | [🌐 Project Page](https://yuelangx.github.io/gaussianheadavatar/) | | [💻 Code (not yet)](https://github.com/YuelangX/Gaussian-Head-Avatar) | [🎥 Short Presentation](https://www.youtube.com/watch?v=kvrrI3EoM5g)
+
 <br>
 
 ## SLAM:
@@ -1360,6 +1374,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 8. [Math explanation to understand 3DGS](https://github.com/chiehwangs/3d-gaussian-theory)
 9. [Compressing Gaussian Splats](https://blog.playcanvas.com/compressing-gaussian-splats/)
 10. [Comprehensive overview of Gaussian Splatting](https://towardsdatascience.com/a-comprehensive-overview-of-gaussian-splatting-e7d570081362)
+11. [Gaussian Head Avatars: A Summary](https://towardsdatascience.com/gaussian-head-avatars-a-summary-2bd17bd48500)
 
 ## Tutorial Videos
 
