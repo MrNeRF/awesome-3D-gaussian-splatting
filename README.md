@@ -36,6 +36,11 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **January 2, 2024**:
+ - Deblurring Gaussians paper link updated.
+ - SAGA code released
+ - 2 papers from 2023 added: Text2Immersion and 2D-Guided 3DG Segmentation.
+
  **December 29, 2023**:
  - 1 paper added (apparently missed that one before): Gaussian-Head-Avatar.
  - Blog post head avatars added.
