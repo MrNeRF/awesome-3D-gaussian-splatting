@@ -540,6 +540,16 @@ Aided by text-to-image and text-to-video diffusion models, existing 4D content c
 
 [📄 Paper](https://arxiv.org/pdf/2312.17225.pdf) | [🌐 Project Page](https://vita-group.github.io/4DGen/) | [💻 Code](https://github.com/VITA-Group/4DGen) | [🎥 Short Presentation](https://www.youtube.com/watch?v=-bXyBKdpQ1o) 
 
+### 14. Text2Immersion: Generative Immersive Scene with 3D Gaussian 
+**Authors**: Hao Ouyang, Kathryn Heal, Stephen Lombardi, Tiancheng Sun 
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Text2Immersion, an elegant method for producing high-quality 3D immersive scenes from text prompts. Our proposed pipeline initiates by progressively generating a Gaussian cloud using pre-trained 2D diffusion and depth estimation models. This is followed by a refining stage on the Gaussian cloud, interpolating and refining it to enhance the details of the generated scene. Distinct from prevalent methods that focus on single object or indoor scenes, or employ zoom-out trajectories, our approach generates diverse scenes with various objects, even extending to the creation of imaginary scenes. Consequently, Text2Immersion can have wide-ranging implications for various applications such as virtual reality, game development, and automated content creation. Extensive evaluations demonstrate that our system surpasses other methods in rendering quality and diversity, further progressing towards text-driven 3D scene generation.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2312.09242.pdf) | [🌐 Project Page](https://ken-ouyang.github.io/text2immersion/index.html) | [💻 Code (not yet)]() 
+
 <br>
 
 ## Avatars:
