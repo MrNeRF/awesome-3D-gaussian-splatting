@@ -41,6 +41,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - SAGA code released
  - 2 papers from 2023 added: Text2Immersion and 2D-Guided 3DG Segmentation.
  - Mathematical supplemend of gsplat lib
+ - Add years in categories
 
  **December 29, 2023**:
  - 1 paper added (apparently missed that one before): Gaussian-Head-Avatar.
@@ -215,6 +216,8 @@ rendering on several established datasets.
 <br>
 
 ## Dynamics and Deformation:
+
+## 2023:
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
 
@@ -379,7 +382,7 @@ Novel view synthesis of dynamic scenes has been an intriguing yet challenging pr
 <br>
 
 ## Diffusion:
-
+## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
 
@@ -559,6 +562,7 @@ We introduce Text2Immersion, an elegant method for producing high-quality 3D imm
 <br>
 
 ## Avatars:
+## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
 <details span>
@@ -808,6 +812,7 @@ Creating high-fidelity 3D head avatars has always been a research hotspot, but t
 <br>
 
 ## SLAM:
+## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
 <details span>
@@ -864,6 +869,7 @@ The integration of neural rendering and the SLAM system recently showed promisin
 <br>
 
 ## Mesh Extraction and Physics: 
+## 2023:
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
 
@@ -948,6 +954,7 @@ We present a method named iComMa to address the 6D pose estimation problem in co
 <br>
 
 ## Editing:
+## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
 <details span>
@@ -1019,6 +1026,7 @@ Recently, 3D Gaussian, as an explicit 3D representation method, has demonstrated
 <br>
 
 ## Rendering:
+## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
 <details span>
@@ -1104,6 +1112,7 @@ Neural Radiance Fields (NeRFs) have demonstrated the remarkable potential of neu
 <br>
 
 ## Sparse:
+## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
 <details span>
@@ -1143,6 +1152,7 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 <br>
 
 ## Compression:
+## 2023:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
 **Authors**: Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang 
 <details span>
@@ -1184,6 +1194,7 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 <br>
 
 ## Language Embedding:
+## 2023:
 ### 1. Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding 
 **Authors**: Jin-Chuan Shi, Miao Wang, Hao-Bin Duan, Shao-Hua Guan 
 <details span>
@@ -1205,6 +1216,7 @@ Human lives in a 3D world and commonly uses natural language to interact with a 
 <br>
 
 ## Autonomous Driving:
+## 2023:
 ### 1. DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes  
 **Authors**: Xiaoyu Zhou, Zhiwei Lin, Xiaojun Shan, Yongtao Wang, Deqing Sun, Ming-Hsuan Yang 
 <details span>
@@ -1217,6 +1229,7 @@ We present DrivingGaussian, an efficient and effective framework for surrounding
 <br>
 
 ## Misc:
+## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
 <details span>
