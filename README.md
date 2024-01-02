@@ -38,10 +38,11 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **January 2, 2024**:
  - Deblurring Gaussians paper link updated.
- - SAGA code released
+ - SAGA code released.
  - 2 papers from 2023 added: Text2Immersion and 2D-Guided 3DG Segmentation.
- - Mathematical supplemend of gsplat lib
- - Add years in categories
+ - Mathematical supplemend of gsplat lib.
+ - Add years in categories.
+ - GSM code released.
 
  **December 29, 2023**:
  - 1 paper added (apparently missed that one before): Gaussian-Head-Avatar.
@@ -647,7 +648,7 @@ Recent advances in neural rendering have improved both training and rendering ti
 Efficient generation of 3D digital humans is important in several industries, including virtual reality, social media, and cinematic production. 3D generative adversarial networks (GANs) have demonstrated state-of-the-art (SOTA) quality and diversity for generated assets. Current 3D GAN architectures, however, typically rely on volume representations, which are slow to render, thereby hampering the GAN training and requiring multi-view-inconsistent 2D upsamplers. Here, we introduce Gaussian Shell Maps (GSMs) as a framework that connects SOTA generator network architectures with emerging 3D Gaussian rendering primitives using an articulable multi shell–based scaffold. In this setting, a CNN generates a 3D texture stack with features that are mapped to the shells. The latter represent inflated and deflated versions of a template surface of a digital human in a canonical body pose. Instead of rasterizing the shells directly, we sample 3D Gaussians on the shells whose attributes are encoded in the texture features. These Gaussians are efficiently and differentiably rendered. The ability to articulate the shells is important during GAN training and, at inference time, to deform a body into arbitrary userdefined poses. Our efficient rendering scheme bypasses the need for view-inconsistent upsamplers and achieves highquality multi-view consistent renderings at a native resolution of 512 × 512 pixels. We demonstrate that GSMs successfully generate 3D humans when trained on single-view datasets, including SHHQ and DeepFashion.
 </details>
 
-  [📄 Paper](https://arxiv.org/abs/2311.17857) | [🌐 Project Page](https://rameenabdal.github.io/GaussianShellMaps/) | [💻 Code (not yet)](https://github.com/computational-imaging/GSM)
+  [📄 Paper](https://arxiv.org/abs/2311.17857) | [🌐 Project Page](https://rameenabdal.github.io/GaussianShellMaps/) | [💻 Code](https://github.com/computational-imaging/GSM)
 
 ### 9. GaussianHead: Impressive 3D Gaussian-based Head Avatars with Dynamic Hybrid Neural Field
 **Authors**: Jie Wang, Xianyan Li, Jiucheng Xie, Feng Xu, Hao Gao
