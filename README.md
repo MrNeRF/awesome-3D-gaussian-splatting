@@ -40,6 +40,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Deblurring Gaussians paper link updated.
  - SAGA code released
  - 2 papers from 2023 added: Text2Immersion and 2D-Guided 3DG Segmentation.
+ - Mathematical supplemend of gsplat lib
 
  **December 29, 2023**:
  - 1 paper added (apparently missed that one before): Gaussian-Head-Avatar.
@@ -1244,6 +1245,16 @@ Understanding how we grasp objects with our hands has important applications in 
 
   [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
 
+### 4. Mathematical Supplement for the gsplat Library 
+**Authors**: Vickie Ye, Angjoo Kanazawa 
+This report provides the mathematical details of the gsplat library, a modular toolbox for efficient differentiable Gaussian splatting, as proposed by Kerbl et al. It provides a self-contained reference for the computations involved in the forward and backward passes of differentiable Gaussian splatting. To facilitate practical usage and development, we provide a user friendly Python API that exposes each component of the forward and backward passes in rasterization of [gsplat](https://github.com/nerfstudio-project/gsplat).
+
+<details span>
+<summary><b>Abstract</b></summary>
+Understanding how we grasp objects with our hands has important applications in areas like robotics and mixed reality. However, this challenging problem requires accurate modeling of the contact between hands and objects. To capture grasps, existing methods use skeletons, meshes, or parametric models that can cause misalignments resulting in inaccurate contacts. We present MANUS, a method for Markerless Hand-Object Grasp Capture using Articulated 3D Gaussians. We build a novel articulated 3D Gaussians representation that extends 3D Gaussian splatting for high-fidelity representation of articulating hands. Since our representation uses Gaussian primitives, it enables us to efficiently and accurately estimate contacts between the hand and the object. For the most accurate results, our method requires tens of camera views that current datasets do not provide. We therefore build MANUS-Grasps, a new dataset that contains hand-object grasps viewed from 53 cameras across 30+ scenes, 3 subjects, and comprising over 7M frames. In addition to extensive qualitative results, we also show that our method outperforms others on a quantitative contact evaluation method that uses paint transfer from the object to the hand. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
 
 <br>
 
