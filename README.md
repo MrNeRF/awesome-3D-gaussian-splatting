@@ -37,6 +37,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **January 2, 2024**:
+ - 1 paper added: Street Gaussians.
+
+ **January 2, 2024**:
  - Deblurring Gaussians paper link updated.
  - SAGA code released.
  - 2 papers from 2023 added: Text2Immersion and 2D-Guided 3DG Segmentation.
@@ -1217,6 +1220,16 @@ Human lives in a 3D world and commonly uses natural language to interact with a 
 <br>
 
 ## Autonomous Driving:
+## 2024:
+### 1. Street Gaussians for Modeling Dynamic Urban Scenes  
+**Authors**: Yunzhi Yan, Haotong Lin, Chenxu Zhou, Weijie Wang, Haiyang Sun, Kun Zhan, Xianpeng Lang, Xiaowei Zhou, Sida Peng 
+<details span>
+<summary><b>Abstract</b></summary>
+This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos. Recent methods extend NeRF by incorporating tracked vehicle poses to animate vehicles, enabling photo-realistic view synthesis of dynamic urban street scenes. However, significant limitations are their slow training and rendering speed, coupled with the critical need for high precision in tracked vehicle poses. We introduce Street Gaussians, a new explicit scene representation that tackles all these limitations. Specifically, the dynamic urban street is represented as a set of point clouds equipped with semantic logits and 3D Gaussians, each associated with either a foreground vehicle or the background. To model the dynamics of foreground object vehicles, each object point cloud is optimized with optimizable tracked poses, along with a dynamic spherical harmonics model for the dynamic appearance. The explicit representation allows easy composition of object vehicles and background, which in turn allows for scene editing operations and rendering at 133 FPS (1066×1600 resolution) within half an hour of training. The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets. Experiments show that the proposed method consistently outperforms state-of-the-art methods across all datasets. Furthermore, the proposed representation delivers performance on par with that achieved using precise ground-truth poses, despite relying only on poses from an off-the-shelf tracker.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.01339.pdf) | [🌐 Project Page](https://zju3dv.github.io/street_gaussians/) | [💻 Code (not yet)](https://github.com/zju3dv/street_gaussians) 
+
 ## 2023:
 ### 1. DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes  
 **Authors**: Xiaoyu Zhou, Zhiwei Lin, Xiaojun Shan, Yongtao Wang, Deqing Sun, Ming-Hsuan Yang 
