@@ -36,6 +36,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **January 5, 2024**:
+ - 3 papers added: FMGS, PEGASUS, and Repaint123.
+
  **January 2, 2024**:
  - 1 paper added: Street Gaussians.
 
@@ -563,6 +566,16 @@ We introduce Text2Immersion, an elegant method for producing high-quality 3D imm
 
 [📄 Paper](https://arxiv.org/pdf/2312.09242.pdf) | [🌐 Project Page](https://ken-ouyang.github.io/text2immersion/index.html) | [💻 Code (not yet)]() 
 
+### 15. Repaint123: Fast and High-quality One Image to 3D Generation with Progressive Controllable 2D Repainting 
+**Authors**: Junwu Zhang, Zhenyu Tang, Yatian Pang, Xinhua Cheng, Peng Jin, Yida Wei, Munan Ning, Li Yuan 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent one image to 3D generation methods commonly adopt Score Distillation Sampling (SDS). Despite the impressive results, there are multiple deficiencies including multi-view inconsistency, over-saturated and over-smoothed textures, as well as the slow generation speed. To address these deficiencies, we present Repaint123 to alleviate multi-view bias as well as texture degradation and speed up the generation process. The core idea is to combine the powerful image generation capability of the 2D diffusion model and the texture alignment ability of the repainting strategy for generating high-quality multi-view images with consistency. We further propose visibility-aware adaptive repainting strength for overlap regions to enhance the generated image quality in the repainting process. The generated high-quality and multi-view consistent images enable the use of simple Mean Square Error (MSE) loss for fast 3D content generation. We conduct extensive experiments and show that our method has a superior ability to generate high-quality 3D content with multi-view consistency and fine textures in 2 minutes from scratch.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2312.13271.pdf) | [🌐 Project Page](https://pku-yuangroup.github.io/repaint123/) | [💻 Code (not yet)](https://github.com/PKU-YuanGroup/repaint123) 
+
 <br>
 
 ## Avatars:
@@ -661,7 +674,7 @@ Efficient generation of 3D digital humans is important in several industries, in
 Previous head avatar methods have primarily relied on fixed-shape scene primitives, lacking a balance between geometric topology, texture details, and computational efficiency. Some hybrid neural network methods (e.g., planes and voxels) gained advantages in fast rendering, but they all used axis-aligned mappings to extract features explicitly, leading to issues of axis-aligned bias and feature dilution. We present GaussianHead, which utilizes deformable 3D Gaussians as building blocks for the head avatars. We propose a novel methodology where the core Gaussians designated for rendering undergo dynamic diffusion before being mapped onto a factor plane to acquire canonical sub-factors. Through our factor integration strategy, the canonical features for the core Gaussians used in rendering are obtained. This approach deviates from the previous practice of utilizing axis-aligned mappings, effectively improving the representation capability of subtle structures such as teeth, wrinkles, hair, and even facial pores. In comparison to state-of-the-art methods, our unique primitive selection and factor decomposition in GaussianHead deliver superior visual results while maintaining rendering performance (0.1 seconds per frame). We have released the code for research. 
 </details>
 
-  [📄 Paper](http://arxiv.org/abs/2312.01632) | [🌐 Project Page](https://github.com/chiehwangs/gaussian-head) | [💻 Code](https://github.com/chiehwangs/gaussian-head)
+  [📄 Paper](https://arxiv.org/pdf/2312.01632.pdf) | [🌐 Project Page](https://github.com/chiehwangs/gaussian-head) | [💻 Code](https://github.com/chiehwangs/gaussian-head)
 
 ### 10. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
 **Authors**: Shenhan Qian, Tobias Kirschstein, Liam Schoneveld, Davide Davoli, Simon Giebenhain, Matthias Nießner
@@ -1217,6 +1230,15 @@ Human lives in a 3D world and commonly uses natural language to interact with a 
 
   [📄 Paper](https://arxiv.org/pdf/2312.16084.pdf) | [🌐 Project Page](https://langsplat.github.io/) | [💻 Code](https://github.com/minghanqin/LangSplat) | [🎥 Short Presentation](https://www.youtube.com/watch?v=XMlyjsei-Es)
 
+### 3. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding 
+**Authors**: Xingxing Zuo, Pouya Samangouei, Yunwen Zhou, Yan Di, Mingyang Li 
+<details span>
+<summary><b>Abstract</b></summary>
+Precisely perceiving the geometric and semantic properties of real-world 3D objects is crucial for the continued evolution of augmented reality and robotic applications. To this end, we present \algfull{} (\algname{}), which incorporates vision-language embeddings of foundation models into 3D Gaussian Splatting (GS). The key contribution of this work is an efficient method to reconstruct and represent 3D vision-language models. This is achieved by distilling feature maps generated from image-based foundation models into those rendered from our 3D model. To ensure high-quality rendering and fast training, we introduce a novel scene representation by integrating strengths from both GS and multi-resolution hash encodings (MHE). Our effective training procedure also introduces a pixel alignment loss that makes the rendered feature distance of same semantic entities close, following the pixel-level semantic boundaries. Our results demonstrate remarkable multi-view semantic consistency, facilitating diverse downstream tasks, beating state-of-the-art methods by 10.2 percent on open-vocabulary language-based object detection, despite that we are 851× faster for inference. This research explores the intersection of vision, language, and 3D scene representation, paving the way for enhanced scene understanding in uncontrolled real-world environments.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.01970.pdf) 
+
 <br>
 
 ## Autonomous Driving:
@@ -1282,6 +1304,15 @@ Understanding how we grasp objects with our hands has important applications in 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
+
+### 5. PEGASUS: Physically Enhanced Gaussian Splatting Simulation System for 6DOF Object Pose Dataset Generation 
+**Authors**: Lukas Meyer, Floris Erich, Yusuke Yoshiyasu, Marc Stamminger, Noriaki Ando, Yukiyasu Domae 
+<details span>
+<summary><b>Abstract</b></summary>
+Modeling dynamic, large-scale urban scenes is challenging due to their highly intricate geometric structures and unconstrained dynamics in both space and time. Prior methods often employ high-level architectural priors, separating static and dynamic elements, resulting in suboptimal capture of their synergistic interactions. To address this challenge, we present a unified representation model, called Periodic Vibration Gaussian (PVG). PVG builds upon the efficient 3D Gaussian splatting technique, originally designed for static scene representation, by introducing periodic vibration-based temporal dynamics. This innovation enables PVG to elegantly and uniformly represent the characteristics of various objects and elements in dynamic urban scenes. To enhance temporally coherent representation learning with sparse training data, we introduce a novel flow-based temporal smoothing mechanism and a position-aware adaptive control strategy. Extensive experiments on Waymo Open Dataset and KITTI benchmarks demonstrate that PVG surpasses state-of-the-art alternatives in both reconstruction and novel view synthesis for both dynamic and static scenes. Notably, PVG achieves this without relying on manually labeled object bounding boxes or expensive optical flow estimation. Moreover, PVG exhibits 50/6000-fold acceleration in training/rendering over the best alternative. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.02281.pdf) | [🌐 Project Page](https://meyerls.github.io/pegasus_web/) | [💻 Code (not yet)](https://github.com/meyerls/PEGASUS) 
 
 <br>
 
