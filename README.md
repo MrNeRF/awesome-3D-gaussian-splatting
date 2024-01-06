@@ -35,6 +35,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ 
+ **January 7, 2024**:
+ - 1 Open source implementation: taichi-splatting
 
  **January 5, 2024**:
  - 3 papers added: FMGS, PEGASUS, and Repaint123.
@@ -1417,6 +1420,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 - [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
 - [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
+- [taichi-splatting: pytorch/taichi](https://github.com/uc_vision/taichi-splatting)
 
 ### 2D Gaussian Splatting
 - [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
