@@ -17,6 +17,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Compression](#compression)
 - [Language Embedding](#language-embedding)
 - [Autonomous Driving](#autonomous-driving)
+- [Reviews](#reviews)
 - [Misc](#misc)
 - [Classic work](#classic-work)
 - [Open Source Implementations](#open-source-implementations)
@@ -1287,7 +1288,30 @@ We present DrivingGaussian, an efficient and effective framework for surrounding
 
 <br>
 
+## Reviews:
+## 2024:
+### 1. Progress and Prospects in 3D Generative AI: A Technical Overview including 3D human 
+**Authors**: Song Bai, Jie Li 
+<details span>
+<summary><b>Abstract</b></summary>
+While AI-generated text and 2D images continue to expand its territory, 3D generation has gradually emerged as a trend that cannot be ignored. Since the year 2023 an abundant amount of research papers has emerged in the domain of 3D generation. This growth encompasses not just the creation of 3D objects, but also the rapid development of 3D character and motion generation. Several key factors contribute to this progress. The enhanced fidelity in stable diffusion, coupled with control methods that ensure multi-view consistency, and realistic human models like SMPL-X, contribute synergistically to the production of 3D models with remarkable consistency and near-realistic appearances. The advancements in neural network-based 3D storing and rendering models, such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS), have accelerated the efficiency and realism of neural rendered models. Furthermore, the multimodality capabilities of large language models have enabled language inputs to transcend into human motion outputs. This paper aims to provide a comprehensive overview and summary of the relevant papers published mostly during the latter half year of 2023. It will begin by discussing the AI generated object models in 3D, followed by the generated 3D human models, and finally, the generated 3D human motions, culminating in a conclusive summary and a vision for the future. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.02620.pdf)
+
+<br>
+
 ## Misc:
+## 2024:
+### 1. Characterizing Satellite Geometry via Accelerated 3D Gaussian Splatting 
+**Authors**: Van Minh Nguyen, Emma Sandidge, Trupti Mahendrakar, Ryan T. White 
+<details span>
+<summary><b>Abstract</b></summary>
+The accelerating deployment of spacecraft in orbit have generated interest in on-orbit servicing (OOS), inspection of spacecraft, and active debris removal (ADR). Such missions require precise rendezvous and proximity operations in the vicinity of non-cooperative, possible unknown, resident space objects. Safety concerns with manned missions and lag times with ground-based control necessitate complete autonomy. This requires robust characterization of the target's geometry. In this article, we present an approach for mapping geometries of satellites on orbit based on 3D Gaussian Splatting that can run on computing resources available on current spaceflight hardware. We demonstrate model training and 3D rendering performance on a hardware-in-the-loop satellite mock-up under several realistic lighting and motion conditions. Our model is shown to be capable of training on-board and rendering higher quality novel views of an unknown satellite nearly 2 orders of magnitude faster than previous NeRF-based algorithms. Such on-board capabilities are critical to enable downstream machine intelligence tasks necessary for autonomous guidance, navigation, and control tasks. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.02588.pdf)
+
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
