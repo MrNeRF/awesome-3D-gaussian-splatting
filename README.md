@@ -36,6 +36,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **January 8, 2024**:
+ - 4 papers added: SWAGS (added paper from 2023 which I forgot to add before, ), first review paper, compressed 3DGS, and an application paper for Characterizing Satellite Geometry.
  
  **January 7, 2024**:
  - 1 Open source implementation: taichi-splatting - work is originally derived off Taichi 3D Gaussian Splatting, with significant re-organisation and changes.
