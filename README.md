@@ -1182,6 +1182,16 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 <br>
 
 ## Compression:
+## 2024:
+### 1. Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis 
+**Authors**: Simon Niedermayr, Josef Stumpfegger, Rüdiger Westermann 
+<details span>
+<summary><b>Abstract</b></summary>
+Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat representation has been introduced for novel view synthesis from sparse image sets. Making such representations suitable for applications like network streaming and rendering on low-power devices requires significantly reduced memory consumption as well as improved rendering efficiency. We propose a compressed 3D Gaussian splat representation that utilizes sensitivity-aware vector clustering with quantization-aware training to compress directional colors and Gaussian parameters. The learned codebooks have low bitrates and achieve a compression rate of up to 31× on real-world scenes with only minimal degradation of visual quality. We demonstrate that the compressed splat representation can be efficiently rendered with hardware rasterization on lightweight GPUs at up to 4× higher framerates than reported via an optimized GPU compute pipeline. Extensive experiments across multiple datasets demonstrate the robustness and rendering speed of the proposed approach. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.02436.pdf) 
+
 ## 2023:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
 **Authors**: Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang 
