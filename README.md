@@ -957,7 +957,7 @@ Existing neural implicit surface reconstruction methods have achieved impressive
 In this paper, we present a method to optimize Gaussian splatting with a limited number of images while avoiding overfitting. Representing a 3D scene by combining numerous Gaussian splats has yielded outstanding visual quality. However, it tends to overfit the training views when only a small number of images are available. To address this issue, we introduce a dense depth map as a geometry guide to mitigate overfitting. We obtained the depth map using a pre-trained monocular depth estimation model and aligning the scale and offset using sparse COLMAP feature points. The adjusted depth aids in the color-based optimization of 3D Gaussian splatting, mitigating floating artifacts, and ensuring adherence to geometric constraints. We verify the proposed method on the NeRF-LLFF dataset with varying numbers of few images. Our approach demonstrates robust geometry compared to the original method that relies solely on images. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.13398.pdf) 
+  [📄 Paper](https://arxiv.org/pdf/2311.13398.pdf) | [🌐 Project Page](https://robot0321.github.io/DepthRegGS/index.html) | [💻 Code ](https://github.com/robot0321/DepthRegularizedGS) 
 
 ### 2. EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS 
 **Authors**: Sharath Girish, Kamal Gupta, Abhinav Shrivastava 
