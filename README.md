@@ -38,7 +38,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **January 13, 2024**:
- - 3 papers added: CoSSegGaussians, TRIPS, Gaussian Shadow Casting for Neural Characters
+ - 4 papers added: CoSSegGaussians, TRIPS, Gaussian Shadow Casting for Neural Characters and DISTWAR
 
  **January 9, 2024**:
  - 1 paper added: A Survey on 3D Gaussian Splatting (The first survey)
@@ -953,6 +953,17 @@ Existing neural implicit surface reconstruction methods have achieved impressive
 <br>
 
 ## Regularization and Optimization:
+## 2024:
+### 1. DISTWAR: Fast Differentiable Rendering on Raster-based Rendering Pipelines
+**Authors**: Sankeerth Durvasula, Adrian Zhao, Fan Chen, Ruofan Liang, Pawan Kumar Sanjaya, Nandita Vijaykumar
+<details span>
+<summary><b>Abstract</b></summary>
+Differentiable rendering is a technique used in an important emerging class of visual computing applications that involves representing a 3D scene as a model that is trained from 2D images using gradient descent. Recent works (e.g. 3D Gaussian Splatting) use a rasterization pipeline to enable rendering high quality photo-realistic imagery at high speeds from these learned 3D models. These methods have been demonstrated to be very promising, providing state-of-art quality for many important tasks. However, training a model to represent a scene is still a time-consuming task even when using powerful GPUs. In this work, we observe that the gradient computation phase during training is a significant bottleneck on GPUs due to the large number of atomic operations that need to be processed. These atomic operations overwhelm atomic units in the L2 partitions causing stalls. To address this challenge, we leverage the observations that during the gradient computation: (1) for most warps, all threads atomically update the same memory locations; and (2) warps generate varying amounts of atomic traffic (since some threads may be inactive). We propose DISTWAR, a software-approach to accelerate atomic operations based on two key ideas: First, we enable warp-level reduction of threads at the SM sub-cores using registers to leverage the locality in intra-warp atomic updates. Second, we distribute the atomic computation between the warp-level reduction at the SM and the L2 atomic units to increase the throughput of atomic computation. Warps with many threads performing atomic updates to the same memory locations are scheduled at the SM, and the rest using L2 atomic units. We implement DISTWAR using existing warp-level primitives. We evaluate DISTWAR on widely used raster-based differentiable rendering workloads. We demonstrate significant speedups of 2.44x on average (up to 5.7x).
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.13398.pdf) | [🌐 Project Page](https://robot0321.github.io/DepthRegGS/index.html) | [💻 Code ](https://github.com/robot0321/DepthRegularizedGS) 
+  
+## 2023:
 ### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
 **Authors**: Jaeyoung Chung, Jeongtaek Oh, Kyoung Mu Lee 
 <details span>
