@@ -38,7 +38,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **January 13, 2024**:
- - 1 paper added: CoSSegGaussians
+ - 2 papers added: CoSSegGaussians, TRIPS
 
  **January 9, 2024**:
  - 1 paper added: A Survey on 3D Gaussian Splatting (The first survey)
@@ -1340,6 +1340,15 @@ The accelerating deployment of spacecraft in orbit have generated interest in on
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.02588.pdf)
+
+### 2. TRIPS: Trilinear Point Splatting for Real-Time Radiance Field Rendering
+**Authors**: Linus Franke, Darius Rückert, Laura Fink, Marc Stamminger
+<details span>
+<summary><b>Abstract</b></summary>
+Point-based radiance field rendering has demonstrated impressive results for novel view synthesis, offering a compelling blend of rendering quality and computational efficiency. However, also latest approaches in this domain are not without their shortcomings. 3D Gaussian Splatting [Kerbl and Kopanas et al. 2023] struggles when tasked with rendering highly detailed scenes, due to blurring and cloudy artifacts. On the other hand, ADOP [Rückert et al. 2022] can accommodate crisper images, but the neural reconstruction network decreases performance, it grapples with temporal instability and it is unable to effectively address large gaps in the point cloud. In this paper, we present TRIPS (Trilinear Point Splatting), an approach that combines ideas from both Gaussian Splatting and ADOP. The fundamental concept behind our novel technique involves rasterizing points into a screen-space image pyramid, with the selection of the pyramid layer determined by the projected point size. This approach allows rendering arbitrarily large points using a single trilinear write. A lightweight neural network is then used to reconstruct a hole-free image including detail beyond splat resolution. Importantly, our render pipeline is entirely differentiable, allowing for automatic optimization of both point sizes and positions. Our evaluation demonstrate that TRIPS surpasses existing state-of-the-art methods in terms of rendering quality while maintaining a real-time frame rate of 60 frames per second on readily available hardware. This performance extends to challenging scenarios, such as scenes featuring intricate geometry, expansive landscapes, and auto-exposed footage.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.06003.pdf) | [🌐 Project Page](https://lfranke.github.io/trips/) | [💻 Code (not yet)](https://github.com/lfranke/trips) 
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
