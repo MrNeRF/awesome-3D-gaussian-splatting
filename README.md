@@ -37,6 +37,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **January 13, 2024**:
+ - 1 paper added: CoSSegGaussians
+
  **January 9, 2024**:
  - 1 paper added: A Survey on 3D Gaussian Splatting (The first survey)
  
@@ -991,6 +994,17 @@ We present a method named iComMa to address the 6D pose estimation problem in co
 <br>
 
 ## Editing:
+## 2024:
+### 1. CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians
+**Authors**: Bin Dou, Tianyu Zhang, Yongjia Ma, Zhaohui Wang, Zejian Yuan
+<details span>
+<summary><b>Abstract</b></summary>
+We propose Compact and Swift Segmenting 3D Gaussians(CoSSegGaussians), a method for compact 3D-consistent scene segmentation at fast rendering speed with only RGB images input. Previous NeRF-based 3D segmentation methods have relied on implicit or voxel neural scene representation and ray-marching volume rendering which are time consuming. Recent 3D Gaussian Splatting significantly improves the rendering speed, however, existing Gaussians-based segmentation methods(eg: Gaussian Grouping) fail to provide compact segmentation masks especially in zero-shot segmentation, which is mainly caused by the lack of robustness and compactness for straightforwardly assigning learnable parameters to each Gaussian when encountering inconsistent 2D machine-generated labels. Our method aims to achieve compact and reliable zero-shot scene segmentation swiftly by mapping fused spatial and semantically meaningful features for each Gaussian
+point with a shallow decoding network. Specifically, our method firstly optimizes Gaussian points’ position, convariance and color attributes under the supervision of RGB images. After Gaussian Locating, we distill multi-scale DINO features extracted from images through unprojection to each Gaussian, which is then incorporated with spatial features from the fast point features processing network, i.e. RandLA-Net. Then the shallow decoding MLP is applied to the multi-scale fused features to obtain compact segmentation. Experimental results show that our model can perform high-quality zero-shot scene segmentation, as our model outperforms other segmentation methods on both semantic and panoptic segmentation task, meanwhile consumes approximately only 10% segmenting time compared to NeRF-based segmentation.
+</details
+
+ [📄 Paper](https://arxiv.org/pdf/2401.05925.pdf) | [💻 Code (not yet)](https://DavidDou.github.io/CoSSegGaussians)
+
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
