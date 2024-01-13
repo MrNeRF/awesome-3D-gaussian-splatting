@@ -38,7 +38,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **January 13, 2024**:
- - 2 papers added: CoSSegGaussians, TRIPS
+ - 3 papers added: CoSSegGaussians, TRIPS, Gaussian Shadow Casting for Neural Characters
 
  **January 9, 2024**:
  - 1 paper added: A Survey on 3D Gaussian Splatting (The first survey)
@@ -1077,6 +1077,16 @@ Recently, 3D Gaussian, as an explicit 3D representation method, has demonstrated
 <br>
 
 ## Rendering:
+## 2024:
+### 1. Gaussian Shadow Casting for Neural Characters 
+**Authors**: Luis Bolanos, Shih-Yang Su, Helge Rhodin
+<details span>
+<summary><b>Abstract</b></summary>
+Neural character models can now reconstruct detailed geometry and texture from video, but they lack explicit shadows and shading, leading to artifacts when generating novel views and poses or during relighting. It is particularly difficult to include shadows as they are a global effect and the required casting of secondary rays is costly. We propose a new shadow model using a Gaussian density proxy that replaces sampling with a simple analytic formula. It supports dynamic motion and is tailored for shadow computation, thereby avoiding the affine projection approximation and sorting required by the closely related Gaussian splatting. Combined with a deferred neural rendering model, our Gaussian shadows enable Lambertian shading and shadow casting with minimal overhead. We demonstrate improved reconstructions, with better separation of albedo, shading, and shadows in challenging outdoor scenes with direct sun light and hard shadows. Our method is able to optimize the light direction without any input from the user. As a result, novel poses have fewer shadow artifacts and relighting in novel scenes is more realistic compared to the state-of-the-art methods, providing new ways to pose neural characters in novel environments, increasing their applicability.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.06116.pdf)
+
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
