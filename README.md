@@ -671,7 +671,16 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 
 ## Diffusion:
 ## 2024:
-### 1. Fast Dynamic 3D Object Generation from a Single-view Video 
+### 1. AGG: Amortized Generative 3D Gaussians for Single Image to 3D 
+**Authors**: Dejia Xu, Ye Yuan, Morteza Mardani, Sifei Liu, Jiaming Song, Zhangyang Wang, Arash Vahdat 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Given the growing need for automatic 3D content creation pipelines, various 3D representations have been studied to generate 3D objects from a single image. Due to its superior rendering efficiency, 3D Gaussian splatting-based models have recently excelled in both 3D reconstruction and generation. 3D Gaussian splatting approaches for image to 3D generation are often optimization-based, requiring many computationally expensive score-distillation steps. To overcome these challenges, we introduce an Amortized Generative 3D Gaussian framework (AGG) that instantly produces 3D Gaussians from a single image, eliminating the need for per-instance optimization. Utilizing an intermediate hybrid representation, AGG decomposes the generation of 3D Gaussian locations and other appearance attributes for joint optimization. Moreover, we propose a cascaded pipeline that first generates a coarse representation of the 3D data and later upsamples it with a 3D Gaussian super-resolution module. Our method is evaluated against existing optimization-based 3D Gaussian frameworks and sampling-based pipelines utilizing other 3D representations, where AGG showcases competitive generation abilities both qualitatively and quantitatively while being several orders of magnitude faster. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2401.04099.pdf) | [🌐 Project Page](https://ir1d.github.io/AGG/)| [🎥 Short Presentation](https://youtu.be/jkwmp2UH0Ug?si=lBXjme-d9bVrXTNf)
+### 2. Fast Dynamic 3D Object Generation from a Single-view Video 
 **Authors**: Zijie Pan, Zeyu Yang, Xiatian Zhu, Li Zhang 
 
 <details span>
