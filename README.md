@@ -45,7 +45,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
  **January 23, 2024**:
  - 3 papers added: Amortized Gen3D, Deformable Endoscopic Tissues, Fast dynamic 3D Object Generation
- - Code release: Animatable Avatars
+ - Code releases: Animatable Avatars, Compressed 3D Gaussians, GaussianAvatar
  
  **January 13, 2024**:
  - 4 papers added: CoSSegGaussians, TRIPS, Gaussian Shadow Casting for Neural Characters and DISTWAR
@@ -435,7 +435,7 @@ We have recently seen tremendous progress in photo-real human modeling and rende
 We present GaussianAvatar, an efficient approach to creating realistic human avatars with dynamic 3D appearances from a single video. We start by introducing animatable 3D Gaussians to explicitly represent humans in various poses and clothing styles. Such an explicit and animatable representation can fuse 3D appearances more efficiently and consistently from 2D observations. Our representation is further augmented with dynamic properties to support pose-dependent appearance modeling, where a dynamic appearance network along with an optimizable feature tensor is designed to learn the motion-to-appearance mapping. Moreover, by leveraging the differentiable motion condition, our method enables a joint optimization of motions and appearances during avatar modeling, which helps to tackle the long-standing issue of inaccurate motion estimation in monocular settings. The efficacy of GaussianAvatar is validated on both the public dataset and our collected dataset, demonstrating its superior performances in terms of appearance quality and rendering efficiency. 
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://huliangxiao.github.io/GaussianAvatar) | [💻 Code (not yet)](https://github.com/huliangxiao/GaussianAvatar) | [🎥 Short Presentation](https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view)
+ [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://huliangxiao.github.io/GaussianAvatar) | [💻 Code](https://github.com/huliangxiao/GaussianAvatar) | [🎥 Short Presentation](https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view)
 
 ### 16. FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS  
 **Authors**: Jun Xiang, Xuan Gao, Yudong Guo, Juyong Zhang  
