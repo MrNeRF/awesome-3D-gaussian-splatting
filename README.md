@@ -659,6 +659,17 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 <br>
 
 ## Diffusion:
+## 2024:
+### 1. Fast Dynamic 3D Object Generation from a Single-view Video 
+**Authors**: Zijie Pan, Zeyu Yang, Xiatian Zhu, Li Zhang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Generating dynamic three-dimensional (3D) object from a single-view video is challenging due to the lack of 4D labeled data. Existing methods extend text-to-3D pipelines by transferring off-the-shelf image generation models such as score distillation sampling, but they are slow and expensive to scale (e.g., 150 minutes per object) due to the need for back-propagating the information-limited supervision signals through a large pretrained model. To address this limitation, we propose an efficient video-to-4D object generation framework called Efficient4D. It generates high-quality spacetime-consistent images under different camera views, and then uses them as labeled data to directly train a novel 4D Gaussian splatting model with explicit point cloud geometry, enabling real-time rendering under continuous camera trajectories. Extensive experiments on synthetic and real videos show that Efficient4D offers a remarkable 10-fold increase in speed when compared to prior art alternatives while preserving the same level of innovative view synthesis quality. For example, Efficient4D takes only 14 minutes to model a dynamic object. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2401.08742.pdf) | [🌐 Project Page](https://fudan-zvg.github.io/Efficient4D/) | [💻 Code](https://github.com/fudan-zvg/Efficient4D) | [🎥 Short Presentation](https://fudan-zvg.github.io/Efficient4D/assets/video/demo.mp4)
+
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
