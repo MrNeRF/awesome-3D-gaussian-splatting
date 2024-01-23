@@ -266,6 +266,17 @@ We present DrivingGaussian, an efficient and effective framework for surrounding
 <br>
 
 ## Avatars:
+## 2024:
+### 1. GaussianBody: Clothed Human Reconstruction via 3d Gaussian Splatting 
+**Authors**: Mengtian Li, Shengxiang Yao, Zhifeng Xie, Keyu Chen, Yu-Gang Jiang 
+<details span>
+<summary><b>Abstract</b></summary>
+In this work, we propose a novel clothed human reconstruction method called GaussianBody, based on 3D Gaussian Splatting. Compared with the costly neural radiance based models, 3D Gaussian Splatting has recently demonstrated great performance in terms of training time and rendering quality. However, applying the static 3D Gaussian Splatting model to the dynamic human reconstruction problem is non-trivial due to complicated non-rigid deformations and rich cloth details. To address these challenges, our method considers explicit pose-guided deformation to associate dynamic Gaussians across the canonical space and the observation space, introducing a physically-based prior with regularized transformations helps mitigate ambiguity between the two spaces. During the training process, we further propose a pose refinement strategy to update the pose regression for compensating the inaccurate initial estimation and a split-with-scale mechanism to enhance the density of regressed point clouds. The experiments validate that our method can achieve state-of-the-art photorealistic novel-view rendering results with high-quality details for dynamic clothed human bodies, along with explicit geometry reconstruction. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.09720.pdf)  
+
+
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
@@ -1151,6 +1162,15 @@ Point-based radiance field rendering has demonstrated impressive results for nov
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.06003.pdf) | [🌐 Project Page](https://lfranke.github.io/trips/) | [💻 Code (not yet)](https://github.com/lfranke/trips) 
+
+### 3. Deformable Endoscopic Tissues Reconstruction with Gaussian Splatting 
+**Authors**: Van Minh Nguyen, Emma Sandidge, Trupti Mahendrakar, Ryan T. White 
+<details span>
+<summary><b>Abstract</b></summary>
+Surgical 3D reconstruction is a critical area of research in robotic surgery, with recent works adopting variants of dynamic radiance fields to achieve success in 3D reconstruction of deformable tissues from single-viewpoint videos. However, these methods often suffer from time-consuming optimization or inferior quality, limiting their adoption in downstream tasks. Inspired by 3D Gaussian Splatting, a recent trending 3D representation, we present EndoGS, applying Gaussian Splatting for deformable endoscopic tissue reconstruction. Specifically, our approach incorporates deformation fields to handle dynamic scenes, depth-guided supervision to optimize 3D targets with a single viewpoint, and a spatial-temporal weight mask to mitigate tool occlusion. As a result, EndoGS reconstructs and renders high-quality deformable endoscopic tissues from a single-viewpoint video, estimated depth maps, and labeled tool masks. Experiments on DaVinci robotic surgery videos demonstrate that EndoGS achieves superior rendering quality.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.11535.pdf) | [💻 Code](https://github.com/HKU-MedAI/EndoGS)
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
