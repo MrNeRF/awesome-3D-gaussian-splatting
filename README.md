@@ -353,15 +353,15 @@ Efficient generation of 3D digital humans is important in several industries, in
 
   [📄 Paper](https://arxiv.org/abs/2311.17857) | [🌐 Project Page](https://rameenabdal.github.io/GaussianShellMaps/) | [💻 Code](https://github.com/computational-imaging/GSM)
 
-### 9. GaussianHead: Impressive Head Avatars with Learnable Gaussian Diffusion
-**Authors**: Jie Wang, Jiucheng Xie, Xianyan Li, Chi-Man Pun, Feng Xu, Hao Gao
+### 9. GaussianHead: High-fidelity Head Avatars with Learnable Gaussian Derivation
+**Authors**: Jie Wang, Jiu-Cheng Xie, Xianyan Li, Chi-Man Pun, Feng Xu, Hao Gao
 
 <details span>
 <summary><b>Abstract</b></summary>
-Previous head avatar methods have primarily relied on fixed-shape scene primitives, lacking a balance between geometric topology, texture details, and computational efficiency. Some hybrid neural network methods (e.g., planes and voxels) gained advantages in fast rendering, but they all used axis-aligned mappings to extract features explicitly, leading to issues of axis-aligned bias and feature dilution. We present GaussianHead, which utilizes deformable 3D Gaussians as building blocks for the head avatars. We propose a novel methodology where the core Gaussians designated for rendering undergo dynamic diffusion before being mapped onto a factor plane to acquire canonical sub-factors. Through our factor integration strategy, the canonical features for the core Gaussians used in rendering are obtained. This approach deviates from the previous practice of utilizing axis-aligned mappings, effectively improving the representation capability of subtle structures such as teeth, wrinkles, hair, and even facial pores. In comparison to state-of-the-art methods, our unique primitive selection and factor decomposition in GaussianHead deliver superior visual results while maintaining rendering performance (0.1 seconds per frame). We have released the code for research. 
+Constructing vivid 3D head avatars for given subjects and realizing a series of animations on them is valuable yet challenging. This paper presents GaussianHead, which models the actional human head with anisotropic 3D Gaussians. In our framework, a motion deformation field and multi-resolution tri-plane are constructed respectively to deal with the head's dynamic geometry and complex texture. Notably, we impose an exclusive derivation scheme on each Gaussian, which generates its multiple doppelgangers through a set of learnable parameters for position transformation. With this design, we can compactly and accurately encode the appearance information of Gaussians, even those fitting the head's particular components with sophisticated structures. In addition, an inherited derivation strategy for newly added Gaussians is adopted to facilitate training acceleration. Extensive experiments show that our method can produce high-fidelity renderings, outperforming state-of-the-art approaches in reconstruction, cross-identity reenactment, and novel view synthesis tasks.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2312.01632.pdf) | [🌐 Project Page](https://github.com/chiehwangs/gaussian-head) | [💻 Code](https://github.com/chiehwangs/gaussian-head)
+  [📄 Paper](https://arxiv.org/pdf/2312.01632.pdf) | [🌐 Project Page](https://chiehwangs.github.io/gaussian-head-page/) | [💻 Code](https://github.com/chiehwangs/gaussian-head)
 
 ### 10. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
 **Authors**: Shenhan Qian, Tobias Kirschstein, Liam Schoneveld, Davide Davoli, Simon Giebenhain, Matthias Nießner
