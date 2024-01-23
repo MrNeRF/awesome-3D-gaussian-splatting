@@ -43,7 +43,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
-
+ **January 23, 2024**:
+ - 3 papers added: Amortized Gen3D, Deformable Endoscopic Tissues, Fast dynamic 3D Object Generation
+ - Code release: Animatable Avatars
+ 
  **January 13, 2024**:
  - 4 papers added: CoSSegGaussians, TRIPS, Gaussian Shadow Casting for Neural Characters and DISTWAR
 
@@ -680,6 +683,7 @@ Given the growing need for automatic 3D content creation pipelines, various 3D r
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2401.04099.pdf) | [🌐 Project Page](https://ir1d.github.io/AGG/)| [🎥 Short Presentation](https://youtu.be/jkwmp2UH0Ug?si=lBXjme-d9bVrXTNf)
+
 ### 2. Fast Dynamic 3D Object Generation from a Single-view Video 
 **Authors**: Zijie Pan, Zeyu Yang, Xiatian Zhu, Li Zhang 
 
