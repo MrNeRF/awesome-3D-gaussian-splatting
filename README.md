@@ -43,6 +43,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **January 24, 2024**:
+ - Added utility - GSOPs (Gaussian Splat Operators) for SideFX Houdini
+
  **January 23, 2024**:
  - 3 papers added: Amortized Gen3D, Deformable Endoscopic Tissues, Fast dynamic 3D Object Generation
  - Code releases: Animatable Avatars, Compressed 3D Gaussians, GaussianAvatar
