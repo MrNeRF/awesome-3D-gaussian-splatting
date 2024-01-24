@@ -46,6 +46,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **January 24, 2024**:
  - Added utility - GSOPs (Gaussian Splat Operators) for SideFX Houdini
+ - Code releases: GaussianAvatars
 
  **January 23, 2024**:
  - 3 papers added: Amortized Gen3D, Deformable Endoscopic Tissues, Fast dynamic 3D Object Generation
@@ -389,7 +390,7 @@ Constructing vivid 3D head avatars for given subjects and realizing a series of 
 We introduce GaussianAvatars, a new method to create photorealistic head avatars that are fully controllable in terms of expression, pose, and viewpoint. The core idea is a dynamic 3D representation based on 3D Gaussian splats that are rigged to a parametric morphable face model. This combination facilitates photorealistic rendering while allowing for precise animation control via the underlying parametric model, e.g., through expression transfer from a driving sequence or by manually changing the morphable model parameters. We parameterize each splat by a local coordinate frame of a triangle and optimize for explicit displacement offset to obtain a more accurate geometric representation. During avatar reconstruction, we jointly optimize for the morphable model parameters and Gaussian splat parameters in an end-to-end fashion. We demonstrate the animation capabilities of our photorealistic avatar in several challenging scenarios. For instance, we show reenactments from a driving video, where our method outperforms existing works by a significant margin.
 </details>
 
- [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
+ [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
 
 ### 11. GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
 **Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
