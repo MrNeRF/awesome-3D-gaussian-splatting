@@ -998,6 +998,17 @@ Novel view synthesis of dynamic scenes has been an intriguing yet challenging pr
 
 [📄 Paper](https://arxiv.org/pdf/2312.16812.pdf) | [🌐 Project Page](https://oppo-us-research.github.io/SpacetimeGaussians-website/) | [💻 Code](https://github.com/oppo-us-research/SpacetimeGaussians) | [🎥 Short Presentation](https://www.youtube.com/watch?v=YsPPmf-E6Lg)
 
+### 14. MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes
+**Authors**: Bardienus P. Duisterhof, Zhao Mandi, Yunchao Yao, Jia-Wei Liu, Mike Zheng Shou, Shuran Song, Jeffrey Ichnowski
+
+<details span>
+<summary><b>Abstract</b></summary>
+Accurate 3D tracking in highly deformable scenes with occlusions and shadows can facilitate new applications in robotics, augmented reality, and generative AI. However, tracking under these conditions is extremely challenging due to the ambiguity that arises with large deformations, shadows, and occlusions. We introduce MD-Splatting, an approach for simultaneous 3D tracking and novel view synthesis, using video captures of a dynamic scene from various camera poses. MD-Splatting builds on recent advances in Gaussian splatting, a method that learns the properties of a large number of Gaussians for state-of-the-art and fast novel view synthesis. MD-Splatting learns a deformation function to project a set of Gaussians with non-metric, thus canonical, properties into metric space. The deformation function uses a neural-voxel encoding and a multilayer perceptron (MLP) to infer Gaussian position, rotation, and a shadow scalar. We enforce physics-inspired regularization terms based on local rigidity, conservation of momentum, and isometry, which leads to trajectories with smaller trajectory errors. MD-Splatting achieves high-quality 3D tracking on highly deformable scenes with shadows and occlusions. Compared to state-of-the-art, we improve 3D tracking by an average of 23.9 %, while simultaneously achieving high-quality novel view synthesis. With sufficient texture such as in scene 6, MD-Splatting achieves a median tracking error of 3.39 mm on a cloth of 1 x 1 meters in size
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.00583) | [🌐 Project Page](https://md-splatting.github.io/) | [💻 Code (not released yet)](https://github.com/momentum-robotics-lab/md-splatting) 
+
+
 <br>
 
 ## Editing:
@@ -1136,17 +1147,7 @@ We propose a method to allow precise and extremely fast mesh extraction from 3D 
 
   [📄 Paper](https://arxiv.org/pdf/2311.12775.pdf) | [🌐 Project Page](https://imagine.enpc.fr/~guedona/sugar/) | [💻 Code](https://github.com/Anttwo/SuGaR) | [🎥 Short Presentation](https://www.youtube.com/watch?v=MAkFyWfiBQo.&t)
 
-### 3.  MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes
-**Authors**: Bardienus P. Duisterhof, Zhao Mandi, Yunchao Yao, Jia-Wei Liu, Mike Zheng Shou, Shuran Song, Jeffrey Ichnowski
-
-<details span>
-<summary><b>Abstract</b></summary>
-Accurate 3D tracking in highly deformable scenes with occlusions and shadows can facilitate new applications in robotics, augmented reality, and generative AI. However, tracking under these conditions is extremely challenging due to the ambiguity that arises with large deformations, shadows, and occlusions. We introduce MD-Splatting, an approach for simultaneous 3D tracking and novel view synthesis, using video captures of a dynamic scene from various camera poses. MD-Splatting builds on recent advances in Gaussian splatting, a method that learns the properties of a large number of Gaussians for state-of-the-art and fast novel view synthesis. MD-Splatting learns a deformation function to project a set of Gaussians with non-metric, thus canonical, properties into metric space. The deformation function uses a neural-voxel encoding and a multilayer perceptron (MLP) to infer Gaussian position, rotation, and a shadow scalar. We enforce physics-inspired regularization terms based on local rigidity, conservation of momentum, and isometry, which leads to trajectories with smaller trajectory errors. MD-Splatting achieves high-quality 3D tracking on highly deformable scenes with shadows and occlusions. Compared to state-of-the-art, we improve 3D tracking by an average of 23.9 %, while simultaneously achieving high-quality novel view synthesis. With sufficient texture such as in scene 6, MD-Splatting achieves a median tracking error of 3.39 mm on a cloth of 1 x 1 meters in size
-</details>
-
-  [📄 Paper](https://arxiv.org/pdf/2312.00583) | [🌐 Project Page](https://md-splatting.github.io/) | [💻 Code (not released yet)](https://github.com/momentum-robotics-lab/md-splatting) 
-
-### 4. NeuSG: Neural Implicit Surface Reconstruction with 3D Gaussian Splatting Guidance
+### 3. NeuSG: Neural Implicit Surface Reconstruction with 3D Gaussian Splatting Guidance
 **Authors**: Hanlin Chen, Chen Li, Gim Hee Lee
 
 <details span>
