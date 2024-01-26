@@ -45,6 +45,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **January 25, 2024**:
+ - Removed retracted paper: Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions
+
+ **January 25, 2024**:
  - Added viewer: Splatapult - 3d gaussian splatting renderer in C++ and OpenGL, works with OpenXR for tethered VR
 
  **January 24, 2024**:
@@ -321,16 +324,7 @@ We propose SplatArmor, a novel approach for recovering detailed and animatable h
 
   [📄 Paper](https://arxiv.org/pdf/2311.10812.pdf) |  [🌐 Project Page](https://jenaroh.it/splatarmor/) | [💻 Code (not yet)](https://github.com/rohitrango/splatarmor)
 
-### 3. Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions 
-**Authors**: Keyang Ye, Tianjia Shao, Kun Zhou 
-<details span>
-<summary><b>Abstract</b></summary>
-We present a novel animatable 3D Gaussian model for rendering high-fidelity free-view human motions in real time. Compared to existing NeRF-based methods, the model owns better capability in synthesizing high-frequency details without the jittering problem across video frames. The core of our model is a novel augmented 3D Gaussian representation, which attaches each Gaussian with a learnable code. The learnable code serves as a pose-dependent appearance embedding for refining the erroneous appearance caused by geometric transformation of Gaussians, based on which an appearance refinement model is learned to produce residual Gaussian properties to match the appearance in target pose. To force the Gaussians to learn the foreground human only without background interference, we further design a novel alpha loss to explicitly constrain the Gaussians within the human body. We also propose to jointly optimize the human joint parameters to improve the appearance accuracy. The animatable 3D Gaussian model can be learned with shallow MLPs, so new human motions can be synthesized in real time (66 fps on avarage). Experiments show that our model has superior performance over NeRF-based methods. 
-</details>
-
-  [📄 Paper](https://arxiv.org/pdf/2311.13404.pdf) 
-  
-### 4. Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling 
+### 3. Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling 
 **Authors**: Zhe Li, Zerong Zheng, Lizhen Wang, Yebin Liu 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -339,7 +333,7 @@ Modeling animatable human avatars from RGB videos is a long-standing and challen
 
   [📄 Paper](https://arxiv.org/pdf/2311.16096.pdf) | [🌐 Project Page](https://animatable-gaussians.github.io/) | [💻 Code (not yet)](https://github.com/lizhe00/AnimatableGaussians)
 
-### 5. GART: Gaussian Articulated Template Models 
+### 4. GART: Gaussian Articulated Template Models 
 **Authors**: Jiahui Lei, Yufu Wang, Georgios Pavlakos, Lingjie Liu, Kostas Daniilidis 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -348,7 +342,7 @@ We introduce Gaussian Articulated Template Model GART, an explicit, efficient, a
 
   [📄 Paper](https://arxiv.org/pdf/2311.16099.pdf) | [🌐 Project Page](https://www.cis.upenn.edu/~leijh/projects/gart/) | [💻 Code](https://github.com/JiahuiLei/GART) | [🎥 Short Presentation](https://www.youtube.com/watch?v=-xYNtIlW4WY)
 
-### 6. Human Gaussian Splatting: Real-time Rendering of Animatable Avatars 
+### 5. Human Gaussian Splatting: Real-time Rendering of Animatable Avatars 
 **Authors**: Arthur Moreau, Jifei Song, Helisa Dhamo, Richard Shaw, Yiren Zhou, Eduardo Pérez-Pellitero 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -357,7 +351,7 @@ This work addresses the problem of real-time rendering of photorealistic human b
 
   [📄 Paper](https://arxiv.org/pdf/2311.17113.pdf) 
 
-### 7. HUGS: Human Gaussian Splats 
+### 6. HUGS: Human Gaussian Splats 
 **Authors**: Muhammed Kocabas, Jen-Hao Rick Chang, James Gabriel, Oncel Tuzel, Anurag Ranjan 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -366,7 +360,7 @@ Recent advances in neural rendering have improved both training and rendering ti
 
   [📄 Paper](https://arxiv.org/pdf/2311.17910.pdf) | [🌐 Project Page](https://machinelearning.apple.com/research/hugs) | [💻 Code (not yet)](https://github.com/apple/ml-hugs)
 
-### 8. Gaussian Shell Maps for Efficient 3D Human Generation
+### 7. Gaussian Shell Maps for Efficient 3D Human Generation
 **Authors**: Rameen Abdal, Wang Yifan, Zifan Shi, Yinghao Xu, Ryan Po, Zhengfei Kuang, Qifeng Chen, Dit-Yan Yeung, Gordon Wetzstein
 <details span>
 <summary><b>Abstract</b></summary>
@@ -375,7 +369,7 @@ Efficient generation of 3D digital humans is important in several industries, in
 
   [📄 Paper](https://arxiv.org/abs/2311.17857) | [🌐 Project Page](https://rameenabdal.github.io/GaussianShellMaps/) | [💻 Code](https://github.com/computational-imaging/GSM)
 
-### 9. GaussianHead: High-fidelity Head Avatars with Learnable Gaussian Derivation
+### 8. GaussianHead: High-fidelity Head Avatars with Learnable Gaussian Derivation
 **Authors**: Jie Wang, Jiu-Cheng Xie, Xianyan Li, Chi-Man Pun, Feng Xu, Hao Gao
 
 <details span>
@@ -385,7 +379,7 @@ Constructing vivid 3D head avatars for given subjects and realizing a series of 
 
   [📄 Paper](https://arxiv.org/pdf/2312.01632.pdf) | [🌐 Project Page](https://chiehwangs.github.io/gaussian-head-page/) | [💻 Code](https://github.com/chiehwangs/gaussian-head)
 
-### 10. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
+### 9. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
 **Authors**: Shenhan Qian, Tobias Kirschstein, Liam Schoneveld, Davide Davoli, Simon Giebenhain, Matthias Nießner
 
 <details span>
@@ -395,7 +389,7 @@ We introduce GaussianAvatars, a new method to create photorealistic head avatars
 
  [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
 
-### 11. GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
+### 10. GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
 **Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
 
 <details span>
@@ -405,7 +399,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 
  [📄 Paper)](https://arxiv.org/pdf/2312.02155.pdf) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Short Presentation](https://youtu.be/TBIekcqt0j0)
 
-### 12. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
+### 11. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
 **Authors**: Shoukang Hu Ziwei Liu  
 
 <details span>
@@ -415,7 +409,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 
  [📄 Paper](https://arxiv.org/pdf/2312.02973.pdf) | [🌐 Project Page](https://skhu101.github.io/GauHuman/) | [💻 Code](https://github.com/skhu101/GauHuman) | [🎥 Short Presentation](https://www.youtube.com/embed/47772bgt5Xo)
 
-### 13. HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting 
+### 12. HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting 
 **Authors**: Helisa Dhamo, Yinyu Nie, Arthur Moreau, Jifei Song, Richard Shaw, Yiren Zhou, Eduardo Pérez-Pellitero  
 
 <details span>
@@ -425,7 +419,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 
  [📄 Paper](https://arxiv.org/pdf/2312.02902.pdf)
 
-### 14. HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting
+### 13. HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting
 **Authors**: Yuheng Jiang, Zhehao Shen, Penghao Wang, Zhuo Su, Yu Hong, Yingliang Zhang, Jingyi Yu, Lan Xu  
 
 <details span>
@@ -435,7 +429,7 @@ We have recently seen tremendous progress in photo-real human modeling and rende
 
  [📄 Paper](https://arxiv.org/pdf/2312.03461.pdf) | [🌐 Project Page](https://nowheretrix.github.io/HiFi4G/) | [🎥 Short Presentation](https://youtu.be/917WVr2EHh4)
 
-### 15. GaussianAvatar: Towards Realistic Human Avatar Modeling from a Single Video via Animatable 3D Gaussians  
+### 14. GaussianAvatar: Towards Realistic Human Avatar Modeling from a Single Video via Animatable 3D Gaussians  
 **Authors**: Liangxiao Hu, Hongwen Zhang, Yuxiang Zhang, Boyao Zhou, Boning Liu, Shengping Zhang, Liqiang Nie  
 
 <details span>
@@ -445,7 +439,7 @@ We present GaussianAvatar, an efficient approach to creating realistic human ava
 
  [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://huliangxiao.github.io/GaussianAvatar) | [💻 Code](https://github.com/huliangxiao/GaussianAvatar) | [🎥 Short Presentation](https://www.youtube.com/watch?v=a4g8Z9nCF-k&t=1s)
 
-### 16. FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS  
+### 15. FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS  
 **Authors**: Jun Xiang, Xuan Gao, Yudong Guo, Juyong Zhang  
 
 <details span>
@@ -455,7 +449,7 @@ We propose FlashAvatar, a novel and lightweight 3D animatable avatar representat
 
  [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
 
-### 17. Relightable Gaussian Codec Avatars 
+### 16. Relightable Gaussian Codec Avatars 
 **Authors**: Shunsuke Saito, Gabriel Schwartz, Tomas Simon, Junxuan Li, Giljoo Nam  
 
 <details span>
@@ -465,7 +459,7 @@ The fidelity of relighting is bounded by both geometry and appearance representa
 
  [📄 Paper](https://arxiv.org/pdf/2312.03704.pdf) | [🌐 Project Page](https://shunsukesaito.github.io/rgca/)
 
-### 18. MonoGaussianAvatar: Monocular Gaussian Point-based Head Avatar 
+### 17. MonoGaussianAvatar: Monocular Gaussian Point-based Head Avatar 
 **Authors**: Yufan Chen, Lizhen Wang, Qijing Li, Hongjiang Xiao, Shengping Zhang, Hongxun Yao, Yebin Liu  
 
 <details span>
@@ -475,7 +469,7 @@ The ability to animate photo-realistic head avatars reconstructed from monocular
 
  [📄 Paper](https://arxiv.org/pdf/2312.04558.pdf) | [🌐 Project Page](https://yufan1012.github.io/MonoGaussianAvatar) | [💻 Code (not yet)](https://github.com/yufan1012/MonoGaussianAvatar) | [🎥 Short Presentation](https://youtu.be/3UvBkyPc-oc?si=SbveQKBLJh5GuhIY)
 
-### 19. ASH: Animatable Gaussian Splats for Efficient and Photoreal Human Rendering  
+### 18. ASH: Animatable Gaussian Splats for Efficient and Photoreal Human Rendering  
 **Authors**: Haokai Pang, Heming Zhu, Adam Kortylewski, Christian Theobalt, Marc Habermann 
 
 <details span>
@@ -485,7 +479,7 @@ Real-time rendering of photorealistic and controllable human avatars stands as a
 
  [📄 Paper](https://arxiv.org/pdf/2312.05941.pdf) | [🌐 Project Page](https://vcai.mpi-inf.mpg.de/projects/ash/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://vcai.mpi-inf.mpg.de/projects/ash/videos/video_for_page.mp4)
 
-### 20. 3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting  
+### 19. 3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting  
 **Authors**: Zhiyin Qian, Shaofei Wang, Marko Mihajlovic, Andreas Geiger, Siyu Tang 
 
 <details span>
@@ -495,7 +489,7 @@ We introduce an approach that creates animatable human avatars from monocular vi
 
  [📄 Paper](https://arxiv.org/pdf/2312.09228.pdf) | [🌐 Project Page](https://neuralbodies.github.io/3DGS-Avatar/index.html) | [💻 Code](https://github.com/mikeqzy/3dgs-avatar-release) | [🎥 Short Presentation](https://youtu.be/FJ29U9OkmmU?si=5ua2mtpv5ei2n28Z)
 
-### 21. GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning  
+### 20. GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning  
 **Authors**: Ye Yuan, Xueting Li, Yangyi Huang, Shalini De Mello, Koki Nagano, Jan Kautz, Umar Iqbal 
 
 <details span>
@@ -505,7 +499,7 @@ We introduce an approach that creates animatable human avatars from monocular vi
 
  [📄 Paper](https://arxiv.org/pdf/2312.11461.pdf) | [🌐 Project Page](https://nvlabs.github.io/GAvatar/) | [🎥 Short Presentation](https://www.youtube.com/watch?v=PbCF1HzrKrs)
 
-### 22. Deformable 3D Gaussian Splatting for Animatable Human Avatars 
+### 21. Deformable 3D Gaussian Splatting for Animatable Human Avatars 
 **Authors**: HyunJun Jung, Nikolas Brasch, Jifei Song, Eduardo Perez-Pellitero, Yiren Zhou, Zhihao Li, Nassir Navab, Benjamin Busam 
 
 <details span>
@@ -515,7 +509,7 @@ Recent advances in neural radiance fields enable novel view synthesis of photo-r
 
  [📄 Paper](https://arxiv.org/pdf/2312.15059.pdf) 
 
-### 23. Human101: Training 100+FPS Human Gaussians in 100s from 1 View  
+### 22. Human101: Training 100+FPS Human Gaussians in 100s from 1 View  
 **Authors**: Mingwei Li, Jiachen Tao, Zongxin Yang, Yi Yang 
 
 <details span>
@@ -525,7 +519,7 @@ Reconstructing the human body from single-view videos plays a pivotal role in th
 
  [📄 Paper](https://arxiv.org/pdf/2312.15258.pdf) | [🌐 Project Page](https://longxiang-ai.github.io/Human101/) | [💻 Code (not yet)](https://github.com/longxiang-ai/Human101) 
 
-### 24. Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians  
+### 23. Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians  
 **Authors**: Yuelang Xu, Benwang Chen, Zhe Li, Hongwen Zhang, Lizhen Wang, Zerong Zheng, Yebin Liu 
 
 <details span>
