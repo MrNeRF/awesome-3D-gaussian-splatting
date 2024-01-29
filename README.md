@@ -794,16 +794,8 @@ We propose a unified framework aimed at enhancing the diffusion priors for 3D ge
 
   [📄 Paper](https://arxiv.org/pdf/2312.04820.pdf) | [🌐 Project Page](https://yangxiaofeng.github.io/demo_diffusion_prior/) | [💻 Code](https://github.com/yangxiaofeng/LODS)
 
-### 10. Triplane Meets Gaussian Splatting: Fast and Generalizable Single-View 3D Reconstruction with Transformers 
-Alexander Vilesov, Pradyumna Chari, Achuta Kadambi
-<details span>
-<summary><b>Abstract</b></summary>
-Recent advancements in 3D reconstruction from single images have been driven by the evolution of generative models. Prominent among these are methods based on Score Distillation Sampling (SDS) and the adaptation of diffusion models in the 3D domain. Despite their progress, these techniques often face limitations due to slow optimization or rendering processes, leading to extensive training and optimization times. In this paper, we introduce a novel approach for single-view reconstruction that efficiently generates a 3D model from a single image via feed-forward inference. Our method utilizes two transformer-based networks, namely a point decoder and a triplane decoder, to reconstruct 3D objects using a hybrid Triplane-Gaussian intermediate representation. This hybrid representation strikes a balance, achieving a faster rendering speed compared to implicit representations while simultaneously delivering superior rendering quality than explicit representations. The point decoder is designed for generating point clouds from single images, offering an explicit representation which is then utilized by the triplane decoder to query Gaussian features for each point. This design choice addresses the challenges associated with directly regressing explicit 3D Gaussian attributes characterized by their non-structural nature. Subsequently, the 3D Gaussians are decoded by an MLP to enable rapid rendering through splatting. Both decoders are built upon a scalable, transformer-based architecture and have been efficiently trained on large-scale 3D datasets. The evaluations conducted on both synthetic datasets and real-world images demonstrate that our method not only achieves higher quality but also ensures a faster runtime in comparison to previous state-of-the-art techniques.
-</details>
 
-  [📄 Paper](https://arxiv.org/pdf/2312.09147.pdf) | [🌐 Project Page](https://zouzx.github.io/TriplaneGaussian/)
-
-### 11. Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models 
+### 10. Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models 
 Andreas Blattmann, Robin Rombach, Huan Ling, Tim Dockhorn, Seung Wook Kim, Sanja Fidler, Karsten Kreis
 <details span>
 <summary><b>Abstract</b></summary>
@@ -812,7 +804,7 @@ Recent advancements in 3D reconstruction from single images have been driven by 
 
   [📄 Paper](https://arxiv.org/pdf/2304.08818.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)
 
-### 12. DreamGaussian4D: Generative 4D Gaussian Splatting 
+### 11. DreamGaussian4D: Generative 4D Gaussian Splatting 
 **Authors**: Jiawei Ren, Liang Pan, Jiaxiang Tang, Chi Zhang, Ang Cao, Gang Zeng, Ziwei Liu 
 
 <details span>
@@ -822,7 +814,7 @@ Remarkable progress has been made in 4D content generation recently. However, ex
 
 [📄 Paper](https://arxiv.org/pdf/2312.17142.pdf) | [🌐 Project Page](https://jiawei-ren.github.io/projects/dreamgaussian4d/) | [💻 Code](https://github.com/jiawei-ren/dreamgaussian4d) 
 
-### 13. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency 
+### 12. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency 
 **Authors**: Yuyang Yin, Dejia Xu, Zhangyang Wang, Yao Zhao, Yunchao Wei 
 
 <details span>
@@ -832,7 +824,7 @@ Aided by text-to-image and text-to-video diffusion models, existing 4D content c
 
 [📄 Paper](https://arxiv.org/pdf/2312.17225.pdf) | [🌐 Project Page](https://vita-group.github.io/4DGen/) | [💻 Code](https://github.com/VITA-Group/4DGen) | [🎥 Short Presentation](https://www.youtube.com/watch?v=-bXyBKdpQ1o) 
 
-### 14. Text2Immersion: Generative Immersive Scene with 3D Gaussian 
+### 13. Text2Immersion: Generative Immersive Scene with 3D Gaussian 
 **Authors**: Hao Ouyang, Kathryn Heal, Stephen Lombardi, Tiancheng Sun 
 
 <details span>
@@ -842,7 +834,7 @@ We introduce Text2Immersion, an elegant method for producing high-quality 3D imm
 
 [📄 Paper](https://arxiv.org/pdf/2312.09242.pdf) | [🌐 Project Page](https://ken-ouyang.github.io/text2immersion/index.html) | [💻 Code (not yet)]() 
 
-### 15. Repaint123: Fast and High-quality One Image to 3D Generation with Progressive Controllable 2D Repainting 
+### 14. Repaint123: Fast and High-quality One Image to 3D Generation with Progressive Controllable 2D Repainting 
 **Authors**: Junwu Zhang, Zhenyu Tang, Yatian Pang, Xinhua Cheng, Peng Jin, Yida Wei, Munan Ning, Li Yuan 
 
 <details span>
@@ -852,7 +844,7 @@ Recent one image to 3D generation methods commonly adopt Score Distillation Samp
 
 [📄 Paper](https://arxiv.org/pdf/2312.13271.pdf) | [🌐 Project Page](https://pku-yuangroup.github.io/repaint123/) | [💻 Code (not yet)](https://github.com/PKU-YuanGroup/repaint123) 
 
-### 16. SWAGS: Sampling Windows Adaptively for Dynamic 3D Gaussian Splatting 
+### 15. SWAGS: Sampling Windows Adaptively for Dynamic 3D Gaussian Splatting 
 **Authors**: Richard Shaw, Jifei Song, Arthur Moreau, Michal Nazarczuk, Sibi Catley-Chandar, Helisa Dhamo, Eduardo Perez-Pellitero 
 
 <details span>
@@ -1265,9 +1257,19 @@ Modeling dynamic, large-scale urban scenes is challenging due to their highly in
 Understanding how we grasp objects with our hands has important applications in areas like robotics and mixed reality. However, this challenging problem requires accurate modeling of the contact between hands and objects. To capture grasps, existing methods use skeletons, meshes, or parametric models that can cause misalignments resulting in inaccurate contacts. We present MANUS, a method for Markerless Hand-Object Grasp Capture using Articulated 3D Gaussians. We build a novel articulated 3D Gaussians representation that extends 3D Gaussian splatting for high-fidelity representation of articulating hands. Since our representation uses Gaussian primitives, it enables us to efficiently and accurately estimate contacts between the hand and the object. For the most accurate results, our method requires tens of camera views that current datasets do not provide. We therefore build MANUS-Grasps, a new dataset that contains hand-object grasps viewed from 53 cameras across 30+ scenes, 3 subjects, and comprising over 7M frames. In addition to extensive qualitative results, we also show that our method outperforms others on a quantitative contact evaluation method that uses paint transfer from the object to the hand. 
 </details>
 
+
   [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
 
-### 4. Mathematical Supplement for the gsplat Library 
+### 4. Triplane Meets Gaussian Splatting: Fast and Generalizable Single-View 3D Reconstruction with Transformers 
+Alexander Vilesov, Pradyumna Chari, Achuta Kadambi
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in 3D reconstruction from single images have been driven by the evolution of generative models. Prominent among these are methods based on Score Distillation Sampling (SDS) and the adaptation of diffusion models in the 3D domain. Despite their progress, these techniques often face limitations due to slow optimization or rendering processes, leading to extensive training and optimization times. In this paper, we introduce a novel approach for single-view reconstruction that efficiently generates a 3D model from a single image via feed-forward inference. Our method utilizes two transformer-based networks, namely a point decoder and a triplane decoder, to reconstruct 3D objects using a hybrid Triplane-Gaussian intermediate representation. This hybrid representation strikes a balance, achieving a faster rendering speed compared to implicit representations while simultaneously delivering superior rendering quality than explicit representations. The point decoder is designed for generating point clouds from single images, offering an explicit representation which is then utilized by the triplane decoder to query Gaussian features for each point. This design choice addresses the challenges associated with directly regressing explicit 3D Gaussian attributes characterized by their non-structural nature. Subsequently, the 3D Gaussians are decoded by an MLP to enable rapid rendering through splatting. Both decoders are built upon a scalable, transformer-based architecture and have been efficiently trained on large-scale 3D datasets. The evaluations conducted on both synthetic datasets and real-world images demonstrate that our method not only achieves higher quality but also ensures a faster runtime in comparison to previous state-of-the-art techniques.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.09147.pdf) | [🌐 Project Page](https://zouzx.github.io/TriplaneGaussian/) | [💻 Code](https://github.com/VAST-AI-Research/TriplaneGaussian)
+
+### 5. Mathematical Supplement for the gsplat Library 
 **Authors**: Vickie Ye, Angjoo Kanazawa 
 This report provides the mathematical details of the gsplat library, a modular toolbox for efficient differentiable Gaussian splatting, as proposed by Kerbl et al. It provides a self-contained reference for the computations involved in the forward and backward passes of differentiable Gaussian splatting. To facilitate practical usage and development, we provide a user friendly Python API that exposes each component of the forward and backward passes in rasterization of [gsplat](https://github.com/nerfstudio-project/gsplat).
 
@@ -1278,7 +1280,7 @@ Understanding how we grasp objects with our hands has important applications in 
 
   [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
 
-### 5. PEGASUS: Physically Enhanced Gaussian Splatting Simulation System for 6DOF Object Pose Dataset Generation 
+### 6. PEGASUS: Physically Enhanced Gaussian Splatting Simulation System for 6DOF Object Pose Dataset Generation 
 **Authors**: Lukas Meyer, Floris Erich, Yusuke Yoshiyasu, Marc Stamminger, Noriaki Ando, Yukiyasu Domae 
 <details span>
 <summary><b>Abstract</b></summary>
