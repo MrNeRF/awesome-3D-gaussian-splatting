@@ -43,8 +43,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **January 29, 2024**:
+ - Added 2 papers: LIV-GaussMap and TIP-Editor
 
- **January 25, 2024**:
+ **January 26, 2024**:
  - Removed retracted paper: Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions
  - 3 papers added: EndoGaussians, PSAvatar, and GauU-Scene
 
@@ -1033,6 +1035,15 @@ point with a shallow decoding network. Specifically, our method firstly optimize
 
  [📄 Paper](https://arxiv.org/pdf/2401.05925.pdf) | [💻 Code (not yet)](https://DavidDou.github.io/CoSSegGaussians)
 
+### 2. TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts 
+**Authors**: Jingyu Zhuang, Di Kang, Yan-Pei Cao, Guanbin Li, Liang Lin, Ying Shan 
+<details span>
+<summary><b>Abstract</b></summary>
+Text-driven 3D scene editing has gained significant attention owing to its convenience and user-friendliness. However, existing methods still lack accurate control of the specified appearance and location of the editing result due to the inherent limitations of the text description. To this end, we propose a 3D scene editing framework, TIPEditor, that accepts both text and image prompts and a 3D bounding box to specify the editing region. With the image prompt, users can conveniently specify the detailed appearance/style of the target content in complement to the text description, enabling accurate control of the appearance. Specifically, TIP-Editor employs a stepwise 2D personalization strategy to better learn the representation of the existing scene and the reference image, in which a localization loss is proposed to encourage correct object placement as specified by the bounding box. Additionally, TIPEditor utilizes explicit and flexible 3D Gaussian splatting as the 3D representation to facilitate local editing while keeping the background unchanged. Extensive experiments have demonstrated that TIP-Editor conducts accurate editing following the text and image prompts in the specified bounding box region, consistently outperforming the baselines in editing quality, and the alignment to the prompts, qualitatively and quantitatively. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.14828.pdf) | [🌐 Project Page](https://zjy526223908.github.io/TIP-Editor/)
+
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
@@ -1215,6 +1226,17 @@ We introduce a novel large-scale scene reconstruction benchmark using the newly 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.14032.pdf)
+
+### 6. LIV-GaussMap: LiDAR-Inertial-Visual Fusion for Real-time 3D Radiance Field Map Rendering 
+**Authors**: Sheng Hong, Junjie He, Xinhu Zheng, Hesheng Wang, Hao Fang, Kangcheng Liu, Chunran Zheng, Shaojie Shen 
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce an integrated precise LiDAR, Inertial, and Visual (LIV) multi-modal sensor fused mapping system that builds on the differentiable surface splatting to improve the mapping fidelity, quality, and structural accuracy. Notably, this is also a novel form of tightly coupled map for LiDAR-visual-inertial sensor fusion.
+This system leverages the complementary characteristics of LiDAR and visual data to capture the geometric structures of large-scale 3D scenes and restore their visual surface information with high fidelity. The initial poses for surface Gaussian scenes are obtained using a LiDAR-inertial system with size-adaptive voxels. Then, we optimized and refined the Gaussians by visual-derived photometric gradients to optimize the quality and density of LiDAR measurements.
+Our method is compatible with various types of LiDAR, including solid-state and mechanical LiDAR, supporting both repetitive and non-repetitive scanning modes. bolstering structure construction through LiDAR and facilitating real-time generation of photorealistic renderings across diverse LIV datasets. It showcases notable resilience and versatility in generating real-time photorealistic scenes potentially for digital twins and virtual reality while also holding potential applicability in real-time SLAM and robotics domains. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.14857.pdf) | [💻 Code (not yet)](https://github.com/sheng00125/LIV-GaussMap)
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
