@@ -43,6 +43,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **January 30, 2024**:
+  - Code changes: GaussianAvatars code changed to private
+
  **January 29, 2024**:
  - Added 2 papers: LIV-GaussMap and TIP-Editor
 
@@ -399,7 +403,7 @@ Constructing vivid 3D head avatars for given subjects and realizing a series of 
 We introduce GaussianAvatars, a new method to create photorealistic head avatars that are fully controllable in terms of expression, pose, and viewpoint. The core idea is a dynamic 3D representation based on 3D Gaussian splats that are rigged to a parametric morphable face model. This combination facilitates photorealistic rendering while allowing for precise animation control via the underlying parametric model, e.g., through expression transfer from a driving sequence or by manually changing the morphable model parameters. We parameterize each splat by a local coordinate frame of a triangle and optimize for explicit displacement offset to obtain a more accurate geometric representation. During avatar reconstruction, we jointly optimize for the morphable model parameters and Gaussian splat parameters in an end-to-end fashion. We demonstrate the animation capabilities of our photorealistic avatar in several challenging scenarios. For instance, we show reenactments from a driving video, where our method outperforms existing works by a significant margin.
 </details>
 
- [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
+ [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code (privated)](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
 
 ### 10. GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
 **Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
