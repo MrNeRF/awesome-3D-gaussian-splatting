@@ -559,7 +559,7 @@ The mathematical description of three-dimensional surfaces usually falls into on
 parametric and implicit. An implicit surface is defined to be all points which satisfy some
 equation F (x, y, z) = 0. This form is ideally suited for image space shaded picture drawing; the pixel
 coordinates are substituted for x and y, and the equation is solved for z. Algorithms for drawing such
-objects have been developed primarily for fLrst- and second-order polynomial functions, a subcategory
+objects have been developed primarily for first- and second-order polynomial functions, a subcategory
 known as algebraic surfaces. This paper presents a new algorithm applicable to other functional
 forms, in particular to the summation of several Gaussian density distributions. The algorithm was
 created to model electron density maps of molecular structures, but it can be used for other artistically
@@ -599,15 +599,7 @@ even on natural video sequences with segmentation artifacts.
 
 <details span>
 <summary><b>Abstract</b></summary>
-The mathematical description of three-dimensional surfaces usually falls into one of two classifica-
-tions: parametric and implicit. An implicit surface is defined to be all points which satisfy some
-equation F (x, y, z) = 0. This form is ideally suited for image space shaded picture drawing; the pixel
-coordinates are substituted for x and y, and the equation is solved for z. Algorithms for drawing such
-objects have been developed primarily for fLrst- and second-order polynomial functions, a subcategory
-known as algebraic surfaces. This paper presents a new algorithm applicable to other functional
-forms, in particular to the summation of several Gaussian density distributions. The algorithm was
-created to model electron density maps of molecular structures, but it can be used for other artistically
-interesting shapes.
+We propose an efficient and GPU-accelerated sampling framework which enables unbiased gradient approximation for differentiable point cloud rendering based on surface splatting. Our framework models the contribution of a point to the rendered image as a probability distribution. We derive an unbiased approximative gradient for the rendering function within this model. To efficiently evaluate the proposed sample estimate, we introduce a tree-based data-structure which employs multi-pole methods to draw samples in near linear time. Our gradient estimator allows us to avoid regularization required by previous methods, leading to a more faithful shape recovery from images. Furthermore, we validate that these improvements are applicable to real-world applications by refining the camera poses and point cloud obtained from a real-time SLAM system. Finally, employing our framework in a neural rendering setting optimizes both the point cloud and network parameters, highlighting the framework’s ability to enhance data driven approaches.
 </details>
 
 [📄 Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136930276.pdf) [💻 Code](https://github.com/muellerju/unbiased-differentiable-splatting) 
