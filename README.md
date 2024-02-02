@@ -43,6 +43,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **February 2, 2024**:
+  - Added 6 papers: VR-GS, Segment Anything, Gaussian Splashing, GS++, 360-GS, and StopThePop
+  - TRIPS code release
 
  **January 30, 2024**:
   - Code changes: GaussianAvatars code changed to private
@@ -1032,6 +1035,15 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   [📄 Paper](https://arxiv.org/pdf/2401.14828.pdf) | [🌐 Project Page](https://zjy526223908.github.io/TIP-Editor/)
 
+### 3. Segment Anything in 3D Gaussians 
+**Authors**: Xu Hu, Yuxi Wang, Lue Fan, Junsong Fan, Junran Peng, Zhen Lei, Qing Li, Zhaoxiang Zhang 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting has emerged as an alternative 3D representation of Neural Radiance Fields (NeRFs), benefiting from its high-quality rendering results and real-time rendering speed. Considering the 3D Gaussian representation remains unparsed, it is necessary first to execute object segmentation within this domain. Subsequently, scene editing and collision detection can be performed, proving vital to a multitude of applications, such as virtual reality (VR), augmented reality (AR), game/movie production, etc. In this paper, we propose a novel approach to achieve object segmentation in 3D Gaussian via an interactive procedure without any training process and learned parameters. We refer to the proposed method as SA-GS, for Segment Anything in 3D Gaussians. Given a set of clicked points in a single input view, SA-GS can generalize SAM to achieve 3D consistent segmentation via the proposed multi-view mask generation and view-wise label assignment methods. We also propose a cross-view label-voting approach to assign labels from different views. In addition, in order to address the boundary roughness issue of segmented objects resulting from the non-negligible spatial sizes of 3D Gaussian located at the boundary, SA-GS incorporates the simple but effective Gaussian Decomposition scheme. Extensive experiments demonstrate that SA-GS achieves high-quality 3D segmentation results, which can also be easily applied for scene editing and collision detection tasks.
+</details>
+
+  [📄 Paper](https://browse.arxiv.org/pdf/2401.17857.pdf) 
+
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
@@ -1135,6 +1147,18 @@ Precisely perceiving the geometric and semantic properties of real-world 3D obje
 <br>
 
 ## Mesh Extraction and Physics: 
+## 2024:
+### 1. Gaussian Splashing: Dynamic Fluid Synthesis with Gaussian Splatting 
+**Authors**: Yutao Feng, Xiang Feng, Yintong Shang, Ying Jiang, Chang Yu, Zeshun Zong, Tianjia Shao, Hongzhi Wu, Kun Zhou, Chenfanfu Jiang, Yin Yang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+We demonstrate the feasibility of integrating physics-based animations of solids and fluids with 3D Gaussian Splatting (3DGS) to create novel effects in virtual scenes reconstructed using 3DGS. Leveraging the coherence of the Gaussian splatting and position-based dynamics (PBD) in the underlying representation, we manage rendering, view synthesis, and the dynamics of solids and fluids in a cohesive manner. Similar to Gaussian shader, we enhance each Gaussian kernel with an added normal, aligning the kernel's orientation with the surface normal to refine the PBD simulation. This approach effectively eliminates spiky noises that arise from rotational deformation in solids. It also allows us to integrate physically based rendering to augment the dynamic surface reflections on fluids. Consequently, our framework is capable of realistically reproducing surface highlights on dynamic fluids and facilitating interactions between scene objects and fluids from new views. 
+</details>
+
+  [📄 Paper](https://browse.arxiv.org/pdf/2401.15318.pdf) | [🌐 Project Page](https://amysteriouscat.github.io/GaussianSplashing/) | [💻 Code (not released yet)]() | [🎥 Short Presentation](https://www.youtube.com/watch?v=KgaR1ni-Egg&t)
+
+
 ## 2023:
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
@@ -1186,7 +1210,7 @@ The accelerating deployment of spacecraft in orbit have generated interest in on
 Point-based radiance field rendering has demonstrated impressive results for novel view synthesis, offering a compelling blend of rendering quality and computational efficiency. However, also latest approaches in this domain are not without their shortcomings. 3D Gaussian Splatting [Kerbl and Kopanas et al. 2023] struggles when tasked with rendering highly detailed scenes, due to blurring and cloudy artifacts. On the other hand, ADOP [Rückert et al. 2022] can accommodate crisper images, but the neural reconstruction network decreases performance, it grapples with temporal instability and it is unable to effectively address large gaps in the point cloud. In this paper, we present TRIPS (Trilinear Point Splatting), an approach that combines ideas from both Gaussian Splatting and ADOP. The fundamental concept behind our novel technique involves rasterizing points into a screen-space image pyramid, with the selection of the pyramid layer determined by the projected point size. This approach allows rendering arbitrarily large points using a single trilinear write. A lightweight neural network is then used to reconstruct a hole-free image including detail beyond splat resolution. Importantly, our render pipeline is entirely differentiable, allowing for automatic optimization of both point sizes and positions. Our evaluation demonstrate that TRIPS surpasses existing state-of-the-art methods in terms of rendering quality while maintaining a real-time frame rate of 60 frames per second on readily available hardware. This performance extends to challenging scenarios, such as scenes featuring intricate geometry, expansive landscapes, and auto-exposed footage.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2401.06003.pdf) | [🌐 Project Page](https://lfranke.github.io/trips/) | [💻 Code (not yet)](https://github.com/lfranke/trips) 
+  [📄 Paper](https://arxiv.org/pdf/2401.06003.pdf) | [🌐 Project Page](https://lfranke.github.io/trips/) | [💻 Code](https://github.com/lfranke/trips) 
 
 ### 3. Deformable Endoscopic Tissues Reconstruction with Gaussian Splatting 
 **Authors**: Van Minh Nguyen, Emma Sandidge, Trupti Mahendrakar, Ryan T. White 
@@ -1225,6 +1249,15 @@ Our method is compatible with various types of LiDAR, including solid-state and 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.14857.pdf) | [💻 Code (not yet)](https://github.com/sheng00125/LIV-GaussMap)
+
+### 7. VR-GS: A Physical Dynamics-Aware Interactive Gaussian Splatting System in Virtual Reality 
+**Authors**: Ying Jiang, Chang Yu, Tianyi Xie, Xuan Li, Yutao Feng, Huamin Wang, Minchen Li, Henry Lau, Feng Gao, Yin Yang, Chenfanfu Jiang 
+<details span>
+<summary><b>Abstract</b></summary>
+As consumer Virtual Reality (VR) and Mixed Reality (MR) technologies gain momentum, there's a growing focus on the development of engagements with 3D virtual content. Unfortunately, traditional techniques for content creation, editing, and interaction within these virtual spaces are fraught with difficulties. They tend to be not only engineering-intensive but also require extensive expertise, which adds to the frustration and inefficiency in virtual object manipulation. Our proposed VR-GS system represents a leap forward in human-centered 3D content interaction, offering a seamless and intuitive user experience. By developing a physical dynamics-aware interactive Gaussian Splatting in a Virtual Reality setting, and constructing a highly efficient two-level embedding strategy alongside deformable body simulations, VR-GS ensures real-time execution with highly realistic dynamic responses. The components of our Virtual Reality system are designed for high efficiency and effectiveness, starting from detailed scene reconstruction and object segmentation, advancing through multi-view image in-painting, and extending to interactive physics-based editing. The system also incorporates real-time deformation embedding and dynamic shadow casting, ensuring a comprehensive and engaging virtual experience.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.16663.pdf) | [🌐 Project Page](https://yingjiang96.github.io/VR-GS/) 
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
@@ -1349,6 +1382,33 @@ Neural character models can now reconstruct detailed geometry and texture from v
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.06116.pdf)
+
+### 2. GS++: Error Analyzing and Optimal Gaussian Splatting 
+**Authors**: Letian Huang, Jiayang Bai, Jie Guo, Yanwen Guo 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting has garnered extensive attention and application in real-time neural rendering. Concurrently, concerns have been raised about the limitations of this technology in aspects such as point cloud storage, performance , and robustness in sparse viewpoints , leading to various improvements. However, there has been a notable lack of attention to the projection errors introduced by the local affine approximation inherent in the splatting itself, and the consequential impact of these errors on the quality of photo-realistic rendering. This paper addresses the projection error function of 3D Gaussian Splatting, commencing with the residual error from the first-order Taylor expansion of the projection function ϕ. The analysis establishes a correlation between the error and the Gaussian mean position. Subsequently, leveraging function optimization theory, this paper analyzes the function's minima to provide an optimal projection strategy for Gaussian Splatting referred to Optimal Gaussian Splatting. Experimental validation further confirms that this projection methodology reduces artifacts, resulting in a more convincingly realistic rendering. 
+</details>
+
+  [📄 Paper](https://browse.arxiv.org/pdf/2402.00752.pdf)
+
+### 3. 360-GS: Layout-guided Panoramic Gaussian Splatting For Indoor Roaming 
+**Authors**: Letian Huang, Jiayang Bai, Jie Guo, Yanwen Guo 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3D-GS) has recently attracted great attention with real-time and photo-realistic renderings. This technique typically takes perspective images as input and optimizes a set of 3D elliptical Gaussians by splatting them onto the image planes, resulting in 2D Gaussians. However, applying 3D-GS to panoramic inputs presents challenges in effectively modeling the projection onto the spherical surface of 360∘ images using 2D Gaussians. In practical applications, input panoramas are often sparse, leading to unreliable initialization of 3D Gaussians and subsequent degradation of 3D-GS quality. In addition, due to the under-constrained geometry of texture-less planes (e.g., walls and floors), 3D-GS struggles to model these flat regions with elliptical Gaussians, resulting in significant floaters in novel views. To address these issues, we propose 360-GS, a novel 360∘ Gaussian splatting for a limited set of panoramic inputs. Instead of splatting 3D Gaussians directly onto the spherical surface, 360-GS projects them onto the tangent plane of the unit sphere and then maps them to the spherical projections. This adaptation enables the representation of the projection using Gaussians. We guide the optimization of 360-GS by exploiting layout priors within panoramas, which are simple to obtain and contain strong structural information about the indoor scene. Our experimental results demonstrate that 360-GS allows panoramic rendering and outperforms state-of-the-art methods with fewer artifacts in novel view synthesis, thus providing immersive roaming in indoor scenarios. 
+</details>
+
+  [📄 Paper](https://browse.arxiv.org/pdf/2402.00763.pdf)
+
+### 4. StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering 
+**Authors**: Lukas Radl, Michael Steiner, Mathias Parger, Alexander Weinrauch, Bernhard Kerbl, Markus Steinberger 
+<details span>
+<summary><b>Abstract</b></summary>
+Gaussian Splatting has emerged as a prominent model for constructing 3D representations from images across diverse domains. However, the efficiency of the 3D Gaussian Splatting rendering pipeline relies on several simplifications. Notably, reducing Gaussian to 2D splats with a single view-space depth introduces popping and blending artifacts during view rotation. Addressing this issue requires accurate per-pixel depth computation, yet a full per-pixel sort proves excessively costly compared to a global sort operation. In this paper, we present a novel hierarchical rasterization approach that systematically resorts and culls splats with minimal processing overhead. Our software rasterizer effectively eliminates popping artifacts and view inconsistencies, as demonstrated through both quantitative and qualitative measurements. Simultaneously, our method mitigates the potential for cheating view-dependent effects with popping, ensuring a more authentic representation. Despite the elimination of cheating, our approach achieves comparable quantitative results for test images, while increasing the consistency for novel view synthesis in motion. Due to its design, our hierarchical approach is only 4% slower on average than the original Gaussian Splatting. Notably, enforcing consistency enables a reduction in the number of Gaussians by approximately half with nearly identical quality and view-consistency. Consequently, rendering performance is nearly doubled, making our approach 1.6x faster than the original Gaussian Splatting, with a 50% reduction in memory requirements. 
+</details>
+
+  [📄 Paper](arxiv.org/pdf/2402.00525.pdf) | [🎥 Short Presentation](https://youtu.be/RJQlSORNkr0)
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
