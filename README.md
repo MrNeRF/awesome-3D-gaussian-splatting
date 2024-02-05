@@ -43,6 +43,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **February 5, 2024**:
+ - Moved SWAGS to Dynmatics and Deformation section
+ 
  **February 2, 2024**:
   - Added 6 papers: VR-GS, Segment Anything, Gaussian Splashing, GS++, 360-GS, and StopThePop
   - TRIPS code release
