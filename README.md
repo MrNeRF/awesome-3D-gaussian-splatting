@@ -46,6 +46,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **February 5, 2024**:
  - Moved SWAGS to Dynmatics and Deformation section
+ - Added 2 paper: GaussianObject and GaMeSh
+ - GS++ renamed to Optimal Projection
  
  **February 2, 2024**:
   - Added 6 papers: VR-GS, Segment Anything, Gaussian Splashing, GS++, 360-GS, and StopThePop
@@ -711,6 +713,16 @@ Generating dynamic three-dimensional (3D) object from a single-view video is cha
 
 [📄 Paper](https://arxiv.org/pdf/2401.08742.pdf) | [🌐 Project Page](https://fudan-zvg.github.io/Efficient4D/) | [💻 Code](https://github.com/fudan-zvg/Efficient4D) | [🎥 Short Presentation](https://fudan-zvg.github.io/Efficient4D/assets/video/demo.mp4)
 
+### 3. GaussianObject: Just Taking Four Images to Get A High-Quality 3D Object with Gaussian Splattingt
+**Authors**: Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian  
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing and rendering 3D objects from highly sparse views is of critical importance for promoting applications of 3D vision techniques and improving user experience. However, images from sparse views only contain very limited 3D information, leading to two significant challenges: 1) Difficulty in building multi-view consistency as images for matching are too few; 2) Partially omitted or highly compressed object information as view coverage is insufficient. To tackle these challenges, we propose GaussianObject, a framework to represent and render the 3D object with Gaussian splatting, that achieves high rendering quality with only 4 input images. We first introduce techniques of visual hull and floater elimination which explicitly inject structure priors into the initial optimization process for helping build multi-view consistency, yielding a coarse 3D Gaussian representation. Then we construct a Gaussian repair model based on diffusion models to supplement the omitted object information, where Gaussians are further refined. We design a self-generating strategy to obtain image pairs for training the repair model. Our GaussianObject is evaluated on several challenging datasets, including MipNeRF360, OmniObject3D, and OpenIllumination, achieving strong reconstruction results from only 4 views and significantly outperforming previous state-of-the-art methods. 
+</details>
+
+[📄 Paper](https://raw.githubusercontent.com/GaussianObject/gaussianobject.github.io/main/assets/paper.pdf) | [🌐 Project Page](https://gaussianobject.github.io/) | [💻 Code (not yet)](https://github.com/GaussianObject/GaussianObject) | [🎥 Short Presentation](https://youtu.be/ozoI0tmW3r0?si=KcaHtvVnrexqaf58) 
+
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
@@ -1161,6 +1173,15 @@ We demonstrate the feasibility of integrating physics-based animations of solids
 
   [📄 Paper](https://browse.arxiv.org/pdf/2401.15318.pdf) | [🌐 Project Page](https://amysteriouscat.github.io/GaussianSplashing/) | [💻 Code (not released yet)]() | [🎥 Short Presentation](https://www.youtube.com/watch?v=KgaR1ni-Egg&t)
 
+### 2. GaMeS: Mesh-Based Adapting and Modification of Gaussian Splatting 
+**Authors**: Joanna Waczyńska, Piotr Borycki, Sławomir Tadeja, Jacek Tabor, Przemysław Spurek 
+
+<details span>
+<summary><b>Abstract</b></summary>
+In recent years, a range of neural network-based methods for image rendering have been introduced. For instance, widely-researched neural radiance fields (NeRF) rely on a neural network to represent 3D scenes, allowing for realistic view synthesis from a small number of 2D images. However, most NeRF models are constrained by long training and inference times. In comparison, Gaussian Splatting (GS) is a novel, state-of-theart technique for rendering points in a 3D scene by approximating their contribution to image pixels through Gaussian distributions, warranting fast training and swift, real-time rendering. A drawback of GS is the absence of a well-defined approach for its conditioning due to the necessity to condition several hundred thousand Gaussian components. To solve this, we introduce Gaussian Mesh Splatting (GaMeS) model, a hybrid of mesh and a Gaussian distribution, that pin all Gaussians splats on the object surface (mesh). The unique contribution of our methods is defining Gaussian splats solely based on their location on the mesh, allowing for automatic adjustments in position, scale, and rotation during animation. As a result, we obtain high-quality renders in the real-time generation of high-quality views. Furthermore, we demonstrate that in the absence of a predefined mesh, it is possible to fine-tune the initial mesh during the learning process. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.01459.pdf) | [💻 Code (not released yet)](https://github.com/waczjoan/gaussian-mesh-splatting) 
 
 ## 2023:
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
@@ -1386,7 +1407,7 @@ Neural character models can now reconstruct detailed geometry and texture from v
 
   [📄 Paper](https://arxiv.org/pdf/2401.06116.pdf)
 
-### 2. GS++: Error Analyzing and Optimal Gaussian Splatting 
+### 2. Optimal Projection for 3D Gaussian Splatting  
 **Authors**: Letian Huang, Jiayang Bai, Jie Guo, Yanwen Guo 
 <details span>
 <summary><b>Abstract</b></summary>
