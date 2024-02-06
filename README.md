@@ -43,6 +43,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **February 6, 2024**:
+ - Added 2 papers: SGS-SLAM and 4D Gaussian Splatting
 
  **February 5, 2024**:
  - Moved SWAGS to Dynmatics and Deformation section
@@ -862,6 +864,17 @@ Recent one image to 3D generation methods commonly adopt Score Distillation Samp
 <br>
 
 ## Dynamics and Deformation:
+## 2024:
+### 1. 4D Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes 
+**Authors**: Yuanxing Duan, Fangyin Wei, Qiyu Dai, Yuhang He, Wenzheng Chen, Baoquan Chen 
+
+<details span>
+<summary><b>Abstract</b></summary>
+We consider the problem of novel view synthesis (NVS) for dynamic scenes. Recent neural approaches have accomplished exceptional NVS results for static 3D scenes, but extensions to 4D time-varying scenes remain non-trivial. Prior efforts often encode dynamics by learning a canonical space plus implicit or explicit deformation fields, which struggle in challenging scenarios like sudden movements or capturing high-fidelity renderings. In this paper, we introduce 4D Gaussian Splatting (4DGS), a novel method that represents dynamic scenes with anisotropic 4D XYZT Gaussians, inspired by the success of 3D Gaussian Splatting in static scenes. We model dynamics at each timestamp by temporally slicing the 4D Gaussians, which naturally compose dynamic 3D Gaussians and can be seamlessly projected into images. As an explicit spatial-temporal representation, 4DGS demonstrates powerful capabilities for modeling complicated dynamics and fine details, especially for scenes with abrupt motions. We further implement our temporal slicing and splatting techniques in a highly optimized CUDA acceleration framework, achieving real-time inference rendering speeds of up to 277 FPS on an RTX 3090 GPU and 583 FPS on an RTX 4090 GPU. Rigorous evaluations on scenes with diverse motions showcase the superior efficiency and effectiveness of 4DGS, which consistently outperforms existing methods both quantitatively and qualitatively. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.03307.pdf) 
+
 
 ## 2023:
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
@@ -1541,6 +1554,15 @@ While AI-generated text and 2D images continue to expand its territory, 3D gener
 <br>
 
 ## SLAM:
+## 2024:
+### 1. SGS-SLAM: Semantic Gaussian Splatting For Neural Dense SLAM 
+**Authors**: Mingrui Li, Shuhong Liu, Heng Zhou 
+<details span>
+<summary><b>Abstract</b></summary>
+Semantic understanding plays a crucial role in Dense Simultaneous Localization and Mapping (SLAM), facilitating comprehensive scene interpretation. Recent advancements that integrate Gaussian Splatting into SLAM systems have demonstrated its effectiveness in generating high-quality renderings through the use of explicit 3D Gaussian representations. Building on this progress, we propose SGS-SLAM, the first semantic dense visual SLAM system grounded in 3D Gaussians, which provides precise 3D semantic segmentation alongside high-fidelity reconstructions. Specifically, we propose to employ multi-channel optimization during the mapping process, integrating appearance, geometric, and semantic constraints with key-frame optimization to enhance reconstruction quality. Extensive experiments demonstrate that SGS-SLAM delivers state-of-the-art performance in camera pose estimation, map reconstruction, and semantic segmentation, outperforming existing methods meanwhile preserving real-time rendering ability. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.03246.pdf) 
 ## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
