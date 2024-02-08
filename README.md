@@ -43,6 +43,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **February 8, 2024**:
+ - 3 papers added: Rig3DGS, Mesh-based GS, and LGM
  **February 6, 2024**:
  - Added 2 papers: SGS-SLAM and 4D Gaussian Splatting
 
@@ -317,6 +319,14 @@ Despite much progress, achieving real-time high-fidelity head avatar animation i
 
   [📄 Paper](https://arxiv.org/pdf/2401.12900.pdf)  
 
+### 3. Rig3DGS: Creating Controllable Portraits from Casual Monocular Videos 
+**Authors**: Alfredo Rivero, ShahRukh Athar, Zhixin Shu, Dimitris Samaras 
+<details span>
+<summary><b>Abstract</b></summary>
+Creating controllable 3D human portraits from casual smartphone videos is highly desirable due to their immense value in AR/VR applications. The recent development of 3D Gaussian Splatting (3DGS) has shown improvements in rendering quality and training efficiency. However, it still remains a challenge to accurately model and disentangle head movements and facial expressions from a single-view capture to achieve high-quality renderings. In this paper, we introduce Rig3DGS to address this challenge. We represent the entire scene, including the dynamic subject, using a set of 3D Gaussians in a canonical space. Using a set of control signals, such as head pose and expressions, we transform them to the 3D space with learned deformations to generate the desired rendering. Our key innovation is a carefully designed deformation method which is guided by a learnable prior derived from a 3D morphable model. This approach is highly efficient in training and effective in controlling facial expressions, head positions, and view synthesis across various captures. We demonstrate the effectiveness of our learned deformation through extensive quantitative and qualitative experiments.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.03723.pdf) | [🌐 Project Page](http://shahrukhathar.github.io/2024/02/05/Rig3DGS.html) 
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
@@ -715,7 +725,17 @@ Generating dynamic three-dimensional (3D) object from a single-view video is cha
 
 [📄 Paper](https://arxiv.org/pdf/2401.08742.pdf) | [🌐 Project Page](https://fudan-zvg.github.io/Efficient4D/) | [💻 Code](https://github.com/fudan-zvg/Efficient4D) | [🎥 Short Presentation](https://fudan-zvg.github.io/Efficient4D/assets/video/demo.mp4)
 
-### 3. GaussianObject: Just Taking Four Images to Get A High-Quality 3D Object with Gaussian Splattingt
+### 3. GaussianObject: Just Taking Four Images to Get A High-Quality 3D Object with Gaussian Splatting
+**Authors**: Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian  
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing and rendering 3D objects from highly sparse views is of critical importance for promoting applications of 3D vision techniques and improving user experience. However, images from sparse views only contain very limited 3D information, leading to two significant challenges: 1) Difficulty in building multi-view consistency as images for matching are too few; 2) Partially omitted or highly compressed object information as view coverage is insufficient. To tackle these challenges, we propose GaussianObject, a framework to represent and render the 3D object with Gaussian splatting, that achieves high rendering quality with only 4 input images. We first introduce techniques of visual hull and floater elimination which explicitly inject structure priors into the initial optimization process for helping build multi-view consistency, yielding a coarse 3D Gaussian representation. Then we construct a Gaussian repair model based on diffusion models to supplement the omitted object information, where Gaussians are further refined. We design a self-generating strategy to obtain image pairs for training the repair model. Our GaussianObject is evaluated on several challenging datasets, including MipNeRF360, OmniObject3D, and OpenIllumination, achieving strong reconstruction results from only 4 views and significantly outperforming previous state-of-the-art methods. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2402.05054.pdf) | [🌐 Project Page](https://me.kiui.moe/lgm/) | [💻 Code](https://github.com/3DTopia/LGM) 
+
+### 4.LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation 
 **Authors**: Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian  
 
 <details span>
@@ -1195,6 +1215,16 @@ In recent years, a range of neural network-based methods for image rendering hav
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.01459.pdf) | [💻 Code (not released yet)](https://github.com/waczjoan/gaussian-mesh-splatting) 
+
+### 3. Mesh-based Gaussian Splatting for Real-time Large-scale Deformation 
+**Authors**: Lin Gao, Jie Yang, Bo-Tao Zhang, Jia-Mu Sun, Yu-Jie Yuan, Hongbo Fu, Yu-Kun Lai 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Neural implicit representations, including Neural Distance Fields and Neural Radiance Fields, have demonstrated significant capabilities for reconstructing surfaces with complicated geometry and topology, and generating novel views of a scene. Nevertheless, it is challenging for users to directly deform or manipulate these implicit representations with large deformations in the real-time fashion. Gaussian Splatting(GS) has recently become a promising method with explicit geometry for representing static scenes and facilitating high-quality and real-time synthesis of novel views. However,it cannot be easily deformed due to the use of discrete Gaussians and lack of explicit topology. To address this, we develop a novel GS-based method that enables interactive deformation. Our key idea is to design an innovative mesh-based GS representation, which is integrated into Gaussian learning and manipulation. 3D Gaussians are defined over an explicit mesh, and they are bound with each other: the rendering of 3D Gaussians guides the mesh face split for adaptive refinement, and the mesh face split directs the splitting of 3D Gaussians. Moreover, the explicit mesh constraints help regularize the Gaussian distribution, suppressing poor-quality Gaussians(e.g. misaligned Gaussians,long-narrow shaped Gaussians), thus enhancing visual quality and avoiding artifacts during deformation. Based on this representation, we further introduce a large-scale Gaussian deformation technique to enable deformable GS, which alters the parameters of 3D Gaussians according to the manipulation of the associated mesh. Our method benefits from existing mesh deformation datasets for more realistic data-driven Gaussian deformation. Extensive experiments show that our approach achieves high-quality reconstruction and effective deformation, while maintaining the promising rendering results at a high frame rate(65 FPS on average). 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.04796.pdf) 
 
 ## 2023:
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
