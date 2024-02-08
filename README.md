@@ -1052,7 +1052,7 @@ We propose Compact and Swift Segmenting 3D Gaussians(CoSSegGaussians), a method 
 point with a shallow decoding network. Specifically, our method firstly optimizes Gaussian points’ position, convariance and color attributes under the supervision of RGB images. After Gaussian Locating, we distill multi-scale DINO features extracted from images through unprojection to each Gaussian, which is then incorporated with spatial features from the fast point features processing network, i.e. RandLA-Net. Then the shallow decoding MLP is applied to the multi-scale fused features to obtain compact segmentation. Experimental results show that our model can perform high-quality zero-shot scene segmentation, as our model outperforms other segmentation methods on both semantic and panoptic segmentation task, meanwhile consumes approximately only 10% segmenting time compared to NeRF-based segmentation.
 </details
 
- [📄 Paper](https://arxiv.org/pdf/2401.05925.pdf) | [💻 Code (not yet)](https://DavidDou.github.io/CoSSegGaussians)
+ [📄 Paper](https://arxiv.org/pdf/2401.05925.pdf) | [🌐 Project Page](https://david-dou.github.io/CoSSegGaussians/) | [💻 Code (not yet)](https://DavidDou.github.io/CoSSegGaussians)
 
 ### 2. TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts 
 **Authors**: Jingyu Zhuang, Di Kang, Yan-Pei Cao, Guanbin Li, Liang Lin, Ying Shan 
