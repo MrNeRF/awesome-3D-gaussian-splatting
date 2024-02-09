@@ -43,6 +43,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **February 9, 2024**:
+ - 1 Paper added: HeadStudio
+
  **February 8, 2024**:
  - 3 papers added: Rig3DGS, Mesh-based GS, and LGM
  **February 6, 2024**:
@@ -327,6 +330,34 @@ Creating controllable 3D human portraits from casual smartphone videos is highly
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.03723.pdf) | [🌐 Project Page](http://shahrukhathar.github.io/2024/02/05/Rig3DGS.html) 
+
+### 4. HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting 
+**Authors**: Zhenglin Zhou, Fan Ma, Hehe Fan, Yi Yang 
+<details span>
+<summary><b>Abstract</b></summary>
+Creating digital avatars from textual prompts has long been a desirable
+yet challenging task. Despite the promising outcomes obtained through
+2D diffusion priors in recent works, current methods face challenges in
+achieving high-quality and animated avatars effectively. In this paper, we
+present HeadStudio, a novel framework that utilizes 3D Gaussian splatting
+to generate realistic and animated avatars from text prompts. Our method
+drives 3D Gaussians semantically to create a flexible and achievable ap-
+pearance through the intermediate FLAME representation. Specifically, we
+incorporate the FLAME into both 3D representation and score distillation: 1)
+FLAME-based 3D Gaussian splatting, driving 3D Gaussian points by rigging
+each point to a FLAME mesh. 2) FLAME-based score distillation sampling,
+utilizing FLAME-based fine-grained control signal to guide score distillation
+from the text prompt. Extensive experiments demonstrate the efficacy of
+HeadStudio in generating animatable avatars from textual prompts, exhibit-
+ing visually appealing appearances. The avatars are capable of rendering
+high-quality real-time (≥ 40 fps) novel views at a resolution of 1024. They
+can be smoothly controlled by real-world speech and video. We hope that
+HeadStudio can advance digital avatar creation and that the present method
+can widely be applied across various domains. The code will be publicly
+available.
+</details>
+
+  [📄 Paper](https://github.com/ZhenglinZhou/HeadStudio/blob/main/docs/technical-report.pdf) |  [🌐 Project Page](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/) | [💻 Code](https://github.com/ZhenglinZhou/HeadStudio/)
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
