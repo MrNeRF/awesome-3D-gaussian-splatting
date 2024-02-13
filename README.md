@@ -43,12 +43,13 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
- 
+
  **February 13, 2024**:
  - Code releases: (16th Jan 2024) Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting
+ - 3 papers added: 3DGala, ImplicitDeepFake, and 3D Gaussians as a New Vision Era.
  
  **February 9, 2024**:
- - 1 Paper added: HeadStudio
+ - 1 paper added: HeadStudio
 
  **February 8, 2024**:
  - 3 papers added: Rig3DGS, Mesh-based GS, and LGM
@@ -339,29 +340,19 @@ Creating controllable 3D human portraits from casual smartphone videos is highly
 **Authors**: Zhenglin Zhou, Fan Ma, Hehe Fan, Yi Yang 
 <details span>
 <summary><b>Abstract</b></summary>
-Creating digital avatars from textual prompts has long been a desirable
-yet challenging task. Despite the promising outcomes obtained through
-2D diffusion priors in recent works, current methods face challenges in
-achieving high-quality and animated avatars effectively. In this paper, we
-present HeadStudio, a novel framework that utilizes 3D Gaussian splatting
-to generate realistic and animated avatars from text prompts. Our method
-drives 3D Gaussians semantically to create a flexible and achievable ap-
-pearance through the intermediate FLAME representation. Specifically, we
-incorporate the FLAME into both 3D representation and score distillation: 1)
-FLAME-based 3D Gaussian splatting, driving 3D Gaussian points by rigging
-each point to a FLAME mesh. 2) FLAME-based score distillation sampling,
-utilizing FLAME-based fine-grained control signal to guide score distillation
-from the text prompt. Extensive experiments demonstrate the efficacy of
-HeadStudio in generating animatable avatars from textual prompts, exhibit-
-ing visually appealing appearances. The avatars are capable of rendering
-high-quality real-time (≥ 40 fps) novel views at a resolution of 1024. They
-can be smoothly controlled by real-world speech and video. We hope that
-HeadStudio can advance digital avatar creation and that the present method
-can widely be applied across various domains. The code will be publicly
-available.
+Creating digital avatars from textual prompts has long been a desirable yet challenging task. Despite the promising outcomes obtained through 2D diffusion priors in recent works, current methods face challenges in achieving high-quality and animated avatars effectively. In this paper, we present HeadStudio, a novel framework that utilizes 3D Gaussian splatting to generate realistic and animated avatars from text prompts. Our method drives 3D Gaussians semantically to create a flexible and achievable appearance through the intermediate FLAME representation. Specifically, we incorporate the FLAME into both 3D representation and score distillation: 1) FLAME-based 3D Gaussian splatting, driving 3D Gaussian points by rigging each point to a FLAME mesh. 2) FLAME-based score distillation sampling, utilizing FLAME-based fine-grained control signal to guide score distillation from the text prompt. Extensive experiments demonstrate the efficacy of HeadStudio in generating animatable avatars from textual prompts, exhibiting visually appealing appearances. The avatars are capable of rendering high-quality real-time (≥40 fps) novel views at a resolution of 1024. They can be smoothly controlled by real-world speech and video. We hope that HeadStudio can advance digital avatar creation and that the present method can widely be applied across various domains. 
 </details>
 
-  [📄 Paper](https://github.com/ZhenglinZhou/HeadStudio/blob/main/docs/technical-report.pdf) |  [🌐 Project Page](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/) | [💻 Code](https://github.com/ZhenglinZhou/HeadStudio/)
+  [📄 Paper](https://arxiv.org/pdf/2402.06149.pdf) |  [🌐 Project Page](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/) | [💻 Code (not yet)](https://github.com/ZhenglinZhou/HeadStudio/)
+
+### 5. ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting 
+**Authors**: Georgii Stanishevskii, Jakub Steczkiewicz, Tomasz Szczepanik, Sławomir Tadeja, Jacek Tabor, Przemysław Spurek 
+<details span>
+<summary><b>Abstract</b></summary>
+Numerous emerging deep-learning techniques have had a substantial impact on computer graphics. Among the most promising breakthroughs are the recent rise of Neural Radiance Fields (NeRFs) and Gaussian Splatting (GS). NeRFs encode the object's shape and color in neural network weights using a handful of images with known camera positions to generate novel views. In contrast, GS provides accelerated training and inference without a decrease in rendering quality by encoding the object's characteristics in a collection of Gaussian distributions. These two techniques have found many use cases in spatial computing and other domains. On the other hand, the emergence of deepfake methods has sparked considerable controversy. Such techniques can have a form of artificial intelligence-generated videos that closely mimic authentic footage. Using generative models, they can modify facial features, enabling the creation of altered identities or facial expressions that exhibit a remarkably realistic appearance to a real person. Despite these controversies, deepfake can offer a next-generation solution for avatar creation and gaming when of desirable quality. To that end, we show how to combine all these emerging technologies to obtain a more plausible outcome. Our ImplicitDeepfake1 uses the classical deepfake algorithm to modify all training images separately and then train NeRF and GS on modified faces. Such relatively simple strategies can produce plausible 3D deepfake-based avatars.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.06390.pdf) | [💻 Code (not yet)](https://github.com/quereste/implicit-deepfake)
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
@@ -459,7 +450,7 @@ Constructing vivid 3D head avatars for given subjects and realizing a series of 
 We introduce GaussianAvatars, a new method to create photorealistic head avatars that are fully controllable in terms of expression, pose, and viewpoint. The core idea is a dynamic 3D representation based on 3D Gaussian splats that are rigged to a parametric morphable face model. This combination facilitates photorealistic rendering while allowing for precise animation control via the underlying parametric model, e.g., through expression transfer from a driving sequence or by manually changing the morphable model parameters. We parameterize each splat by a local coordinate frame of a triangle and optimize for explicit displacement offset to obtain a more accurate geometric representation. During avatar reconstruction, we jointly optimize for the morphable model parameters and Gaussian splat parameters in an end-to-end fashion. We demonstrate the animation capabilities of our photorealistic avatar in several challenging scenarios. For instance, we show reenactments from a driving video, where our method outperforms existing works by a significant margin.
 </details>
 
- [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code (privated)](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
+ [📄 Paper](https://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
 
 ### 10. GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
 **Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
@@ -779,6 +770,17 @@ Reconstructing and rendering 3D objects from highly sparse views is of critical 
 </details>
 
 [📄 Paper](https://raw.githubusercontent.com/GaussianObject/gaussianobject.github.io/main/assets/paper.pdf) | [🌐 Project Page](https://gaussianobject.github.io/) | [💻 Code (not yet)](https://github.com/GaussianObject/GaussianObject) | [🎥 Short Presentation](https://youtu.be/ozoI0tmW3r0?si=KcaHtvVnrexqaf58) 
+
+### 5. GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting 
+**Authors**: Xiaoyu Zhou, Xingjian Ran, Yajiao Xiong, Jinlin He, Zhiwei Lin, Yongtao Wang, Deqing Sun, Ming-Hsuan Yang  
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present GALA3D, generative 3D GAussians with LAyout-guided control, for effective compositional text-to-3D generation. We first utilize large language models (LLMs) to generate the initial layout and introduce a layout-guided 3D Gaussian representation for 3D content generation with adaptive geometric constraints. We then propose an object-scene compositional optimization mechanism with conditioned diffusion to collaboratively generate realistic 3D scenes with consistent geometry, texture, scale, and accurate interactions among multiple objects while simultaneously adjusting the coarse layout priors extracted from the LLMs to align with the generated scene. Experiments show that GALA3D is a user-friendly, end-to-end framework for state-of-the-art scene-level 3D content generation and controllable editing while ensuring the high fidelity of object-level entities within the scene.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2402.07207.pdf) | [🌐 Project Page](https://gala3d.github.io/) | [💻 Code (not yet)](https://github.com/VDIGPKU/GALA3D)
+
 
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
@@ -1615,6 +1617,15 @@ While AI-generated text and 2D images continue to expand its territory, 3D gener
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.03890.pdf)
+
+### 3. 3D Gaussian as a New Vision Era: A Survey 
+**Authors**: Ben Fei, Jingyi Xu, Rui Zhang, Qingyuan Zhou, Weidong Yang, Ying He 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3D-GS) has emerged as a significant advancement in the field of Computer Graphics, offering explicit scene representation and novel view synthesis without the reliance on neural networks, such as Neural Radiance Fields (NeRF). This technique has found diverse applications in areas such as robotics, urban mapping, autonomous navigation, and virtual reality/augmented reality, just name a few. Given the growing popularity and expanding research in 3D Gaussian Splatting, this paper presents a comprehensive survey of relevant papers from the past year. We organize the survey into taxonomies based on characteristics and applications, providing an introduction to the theoretical underpinnings of 3D Gaussian Splatting. Our goal through this survey is to acquaint new researchers with 3D Gaussian Splatting, serve as a valuable reference for seminal works in the field, and inspire future research directions, as discussed in our concluding section. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.07181.pdf)
 
 <br>
 
