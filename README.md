@@ -43,6 +43,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ 
+ **February 13, 2024**:
+ - Code releases: (16th Jan 2024) Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting
+ 
  **February 9, 2024**:
  - 1 Paper added: HeadStudio
 
