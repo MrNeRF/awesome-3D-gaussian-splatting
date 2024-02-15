@@ -44,6 +44,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **February 14, 2024**:
+ - Added viewer: VulkanSplatting - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute
+
  **February 13, 2024**:
  - Code releases: (16th Jan 2024) Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting
  - 3 papers added: 3DGala, ImplicitDeepFake, and 3D Gaussians as a New Vision Era.
@@ -1773,6 +1776,7 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 - [PlayCanvas Viewer](https://github.com/playcanvas/model-viewer)
 - [gsplat.js](https://github.com/dylanebert/gsplat.js)
 - [Splatapult](https://github.com/hyperlogic/splatapult) - 3d gaussian splatting renderer in C++ and OpenGL, works with OpenXR for tethered VR
+- [VulkanSplatting](https://github.com/shg8/VulkanSplatting) - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute
 
 ### Utilities
 - [Kapture](https://github.com/naver/kapture) - A unified data format to facilitate visual localization and structure from motion e.g. for bundler to colmap model conversion
