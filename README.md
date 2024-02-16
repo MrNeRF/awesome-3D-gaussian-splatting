@@ -44,6 +44,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **February 16, 2024**:
+ - 2 papers added: IM-3D and GES
+
  **February 14, 2024**:
  - Added viewer: VulkanSplatting - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute
 
@@ -784,6 +787,15 @@ We present GALA3D, generative 3D GAussians with LAyout-guided control, for effec
 
 [📄 Paper](https://arxiv.org/pdf/2402.07207.pdf) | [🌐 Project Page](https://gala3d.github.io/) | [💻 Code (not yet)](https://github.com/VDIGPKU/GALA3D)
 
+### 6. IM-3D: Iterative Multiview Diffusion and Reconstruction for High-Quality 3D Generation  
+**Authors**: Luke Melas-Kyriazi, Iro Laina, Christian Rupprecht, Natalia Neverova, Andrea Vedaldi, Oran Gafni, Filippos Kokkinos 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Most text-to-3D generators build upon off-the-shelf text-to-image models trained on billions of images. They use variants of Score Distillation Sampling (SDS), which is slow, somewhat unstable, and prone to artifacts. A mitigation is to fine-tune the 2D generator to be multi-view aware, which can help distillation or can be combined with reconstruction networks to output 3D objects directly. In this paper, we further explore the design space of text-to-3D models. We significantly improve multi-view generation by considering video instead of image generators. Combined with a 3D reconstruction algorithm which, by using Gaussian splatting, can optimize a robust image-based loss, we directly produce high-quality 3D outputs from the generated views. Our new method, IM-3D, reduces the number of evaluations of the 2D generator network 10-100x, resulting in a much more efficient pipeline, better quality, fewer geometric inconsistencies, and higher yield of usable 3D assets. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2402.08682.pdf) 
 
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
@@ -1516,6 +1528,16 @@ Gaussian Splatting has emerged as a prominent model for constructing 3D represen
 </details>
 
   [📄 Paper](arxiv.org/pdf/2402.00525.pdf) | [🎥 Short Presentation](https://youtu.be/RJQlSORNkr0)
+
+### 5. GES: Generalized Exponential Splatting for Efficient Radiance Field Rendering 
+**Authors**: Abdullah Hamdi, Luke Melas-Kyriazi, Guocheng Qian, Jinjie Mai, Ruoshi Liu, Carl Vondrick, Bernard Ghanem, Andrea Vedaldi 
+<details span>
+<summary><b>Abstract</b></summary>
+Advancements in 3D Gaussian Splatting have significantly accelerated 3D reconstruction and generation. However, it may require a large number of Gaussians, which creates a substantial memory footprint. This paper introduces GES (Generalized Exponential Splatting), a novel representation that employs Generalized Exponential Function (GEF) to model 3D scenes, requiring far fewer particles to represent a scene and thus significantly outperforming Gaussian Splatting methods in efficiency with a plug-and-play replacement ability for Gaussian-based utilities. GES is validated theoretically and empirically in both principled 1D setup and realistic 3D scenes.
+It is shown to represent signals with sharp edges more accurately, which are typically challenging for Gaussians due to their inherent low-pass characteristics. Our empirical analysis demonstrates that GEF outperforms Gaussians in fitting natural-occurring signals (e.g. squares, triangles, and parabolic signals), thereby reducing the need for extensive splitting operations that increase the memory footprint of Gaussian Splatting. With the aid of a frequency-modulated loss, GES achieves competitive performance in novel-view synthesis benchmarks while requiring less than half the memory storage of Gaussian Splatting and increasing the rendering speed by up to 39%.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.10128.pdf) | [🌐 Project Page](https://abdullahamdi.com/ges/) | [💻 Code](https://github.com/ajhamdi/ges-splatting) | [🎥 Presentation](https://youtu.be/edSvNy3roV8?si=VGncH7op1OfqkEtx) 
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
