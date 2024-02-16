@@ -46,6 +46,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **February 16, 2024**:
  - 2 papers added: IM-3D and GES
+ - GaMeS code released
 
  **February 14, 2024**:
  - Added viewer: VulkanSplatting - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute
@@ -1266,7 +1267,7 @@ We demonstrate the feasibility of integrating physics-based animations of solids
 In recent years, a range of neural network-based methods for image rendering have been introduced. For instance, widely-researched neural radiance fields (NeRF) rely on a neural network to represent 3D scenes, allowing for realistic view synthesis from a small number of 2D images. However, most NeRF models are constrained by long training and inference times. In comparison, Gaussian Splatting (GS) is a novel, state-of-theart technique for rendering points in a 3D scene by approximating their contribution to image pixels through Gaussian distributions, warranting fast training and swift, real-time rendering. A drawback of GS is the absence of a well-defined approach for its conditioning due to the necessity to condition several hundred thousand Gaussian components. To solve this, we introduce Gaussian Mesh Splatting (GaMeS) model, a hybrid of mesh and a Gaussian distribution, that pin all Gaussians splats on the object surface (mesh). The unique contribution of our methods is defining Gaussian splats solely based on their location on the mesh, allowing for automatic adjustments in position, scale, and rotation during animation. As a result, we obtain high-quality renders in the real-time generation of high-quality views. Furthermore, we demonstrate that in the absence of a predefined mesh, it is possible to fine-tune the initial mesh during the learning process. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2402.01459.pdf) | [💻 Code (not released yet)](https://github.com/waczjoan/gaussian-mesh-splatting) 
+  [📄 Paper](https://arxiv.org/pdf/2402.01459.pdf) | [💻 Code](https://github.com/waczjoan/gaussian-mesh-splatting) 
 
 ### 3. Mesh-based Gaussian Splatting for Real-time Large-scale Deformation 
 **Authors**: Lin Gao, Jie Yang, Bo-Tao Zhang, Jia-Mu Sun, Yu-Jie Yuan, Hongbo Fu, Yu-Kun Lai 
