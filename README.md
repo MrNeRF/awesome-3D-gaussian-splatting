@@ -44,6 +44,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ February 19, 2024:
+ - Blog post added: NeRFs vs. 3DGS.
+
  **February 16, 2024**:
  - 2 papers added: IM-3D and GES
  - GaMeS code released
@@ -1828,6 +1831,7 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 9. [Compressing Gaussian Splats](https://blog.playcanvas.com/compressing-gaussian-splats/)
 10. [Comprehensive overview of Gaussian Splatting](https://towardsdatascience.com/a-comprehensive-overview-of-gaussian-splatting-e7d570081362)
 11. [Gaussian Head Avatars: A Summary](https://towardsdatascience.com/gaussian-head-avatars-a-summary-2bd17bd48500)
+12. [NeRFs vs. 3DGS](https://edwardahn.me/writing/NeRFvs3DGS/)
 
 ## Tutorial Videos
 
