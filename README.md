@@ -45,6 +45,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
  February 20, 2024:
  - GaussianObject code released
+ - Added one paper: GaussianHair
 
  February 19, 2024:
  - Blog post added: NeRFs vs. 3DGS.
@@ -365,6 +366,15 @@ Numerous emerging deep-learning techniques have had a substantial impact on comp
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.06390.pdf) | [💻 Code (not yet)](https://github.com/quereste/implicit-deepfake)
+
+### 6. GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians 
+**Authors**: Haimin Luo, Min Ouyang, Zijun Zhao, Suyi Jiang, Longwen Zhang, Qixuan Zhang, Wei Yang, Lan Xu, Jingyi Yu 
+<details span>
+<summary><b>Abstract</b></summary>
+Hairstyle reflects culture and ethnicity at first glance. In the digital era, various realistic human hairstyles are also critical to high-fidelity digital human assets for beauty and inclusivity. Yet, realistic hair modeling and real-time rendering for animation is a formidable challenge due to its sheer number of strands, complicated structures of geometry, and sophisticated interaction with light. This paper presents GaussianHair, a novel explicit hair representation. It enables comprehensive modeling of hair geometry and appearance from images, fostering innovative illumination effects and dynamic animation capabilities. At the heart of GaussianHair is the novel concept of representing each hair strand as a sequence of connected cylindrical 3D Gaussian primitives. This approach not only retains the hair's geometric structure and appearance but also allows for efficient rasterization onto a 2D image plane, facilitating differentiable volumetric rendering. We further enhance this model with the "GaussianHair Scattering Model", adept at recreating the slender structure of hair strands and accurately capturing their local diffuse color in uniform lighting. Through extensive experiments, we substantiate that GaussianHair achieves breakthroughs in both geometric and appearance fidelity, transcending the limitations encountered in state-of-the-art methods for hair reconstruction. Beyond representation, GaussianHair extends to support editing, relighting, and dynamic rendering of hair, offering seamless integration with conventional CG pipeline workflows. Complementing these advancements, we have compiled an extensive dataset of real human hair, each with meticulously detailed strand geometry, to propel further research in this field. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.10483.pdf)
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
