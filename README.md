@@ -43,6 +43,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ February 20, 2024:
+ - GaussianObject code released
 
  February 19, 2024:
  - Blog post added: NeRFs vs. 3DGS.
@@ -769,7 +771,7 @@ Generating dynamic three-dimensional (3D) object from a single-view video is cha
 Reconstructing and rendering 3D objects from highly sparse views is of critical importance for promoting applications of 3D vision techniques and improving user experience. However, images from sparse views only contain very limited 3D information, leading to two significant challenges: 1) Difficulty in building multi-view consistency as images for matching are too few; 2) Partially omitted or highly compressed object information as view coverage is insufficient. To tackle these challenges, we propose GaussianObject, a framework to represent and render the 3D object with Gaussian splatting, that achieves high rendering quality with only 4 input images. We first introduce techniques of visual hull and floater elimination which explicitly inject structure priors into the initial optimization process for helping build multi-view consistency, yielding a coarse 3D Gaussian representation. Then we construct a Gaussian repair model based on diffusion models to supplement the omitted object information, where Gaussians are further refined. We design a self-generating strategy to obtain image pairs for training the repair model. Our GaussianObject is evaluated on several challenging datasets, including MipNeRF360, OmniObject3D, and OpenIllumination, achieving strong reconstruction results from only 4 views and significantly outperforming previous state-of-the-art methods. 
 </details>
 
-[📄 Paper](https://raw.githubusercontent.com/GaussianObject/gaussianobject.github.io/main/assets/paper.pdf) | [🌐 Project Page](https://gaussianobject.github.io/) | [💻 Code (not yet)](https://github.com/GaussianObject/GaussianObject) | [🎥 Short Presentation](https://youtu.be/ozoI0tmW3r0?si=KcaHtvVnrexqaf58) 
+[📄 Paper](https://arxiv.org/pdf/2402.10259.pdf) | [🌐 Project Page](https://gaussianobject.github.io/) | [💻 Code](https://github.com/GaussianObject/GaussianObject) | [🎥 Short Presentation](https://youtu.be/ozoI0tmW3r0?si=KcaHtvVnrexqaf58) 
 
 ### 4.LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation 
 **Authors**: Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian  
