@@ -43,11 +43,15 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
- February 20, 2024:
+
+ **February 21, 2024**:
+ - Added one paper: Reshaping SLAM: a Survey
+
+ **February 20, 2024**:
  - GaussianObject code released
  - Added one paper: GaussianHair
 
- February 19, 2024:
+ **February 19, 2024**:
  - Blog post added: NeRFs vs. 3DGS.
 
  **February 16, 2024**:
@@ -1667,6 +1671,15 @@ While AI-generated text and 2D images continue to expand its territory, 3D gener
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.07181.pdf)
+
+### 4. How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey 
+**Authors**: Fabio Tosi, Youmin Zhang, Ziren Gong, Erik Sandström, Stefano Mattoccia, Martin R. Oswald, Matteo Poggi 
+<details span>
+<summary><b>Abstract</b></summary>
+Over the past two decades, research in the field of Simultaneous Localization and Mapping (SLAM) has undergone a significant evolution, highlighting its critical role in enabling autonomous exploration of unknown environments. This evolution ranges from hand-crafted methods, through the era of deep learning, to more recent developments focused on Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (3DGS) representations. Recognizing the growing body of research and the absence of a comprehensive survey on the topic, this paper aims to provide the first comprehensive overview of SLAM progress through the lens of the latest advancements in radiance fields. It sheds light on the background, evolutionary path, inherent strengths and limitations, and serves as a fundamental reference to highlight the dynamic progress and specific challenges. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.13255.pdf)
 
 <br>
 
