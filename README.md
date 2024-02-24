@@ -44,6 +44,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **February 24, 2024**:
+- 2 papers added: Identifying unnecessary Gaussians and Gaussian Pro
+
  **February 23, 2024**:
  - Corrected Authors and updated abstract for EndoGS: Deformable Endoscopic Tissues Reconstruction with Gaussian Splatting
 
@@ -1561,6 +1564,24 @@ It is shown to represent signals with sharp edges more accurately, which are typ
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.10128.pdf) | [🌐 Project Page](https://abdullahamdi.com/ges/) | [💻 Code](https://github.com/ajhamdi/ges-splatting) | [🎥 Presentation](https://youtu.be/edSvNy3roV8?si=VGncH7op1OfqkEtx) 
+
+### 6. Identifying Unnecessary 3D Gaussians using Clustering for Fast Rendering of 3D Gaussian Splatting
+**Authors**: Joongho Jo, Hyeongwon Kim, Jongsun Park 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting (3D-GS) is a new rendering approach that outperforms the neural radiance field (NeRF) in terms of both speed and image quality. 3D-GS represents 3D scenes by utilizing millions of 3D Gaussians and projects these Gaussians onto the 2D image plane for rendering. However, during the rendering process, a substantial number of unnecessary 3D Gaussians exist for the current view direction, resulting in significant computation costs associated with their identification. In this paper, we propose a computational reduction technique that quickly identifies unnecessary 3D Gaussians in real-time for rendering the current view without compromising image quality. This is accomplished through the offline clustering of 3D Gaussians that are close in distance, followed by the projection of these clusters onto a 2D image plane during runtime. Additionally, we analyze the bottleneck associated with the proposed technique when executed on GPUs and propose an efficient hardware architecture that seamlessly supports the proposed scheme. For the Mip-NeRF360 dataset, the proposed technique excludes 63% of 3D Gaussians on average before the 2D image projection, which reduces the overall rendering computation by almost 38.3% without sacrificing peak-signal-to-noise-ratio (PSNR). The proposed accelerator also achieves a speedup of 10.7x compared to a GPU. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.13827.pdf) 
+
+### 7. GaussianPro: 3D Gaussian Splatting with Progressive Propagation 
+**Authors**: Kai Cheng, Xiaoxiao Long, Kaizhi Yang, Yao Yao, Wei Yin, Yuexin Ma, Wenping Wang, Xuejin Chen 
+<details span>
+<summary><b>Abstract</b></summary>
+The advent of 3D Gaussian Splatting (3DGS) has recently brought about a revolution in the field of neural rendering, facilitating high-quality renderings at real-time speed. However, 3DGS heavily depends on the initialized point cloud produced by Structure-from-Motion (SfM) techniques. When tackling with large-scale scenes that unavoidably contain texture-less surfaces, the SfM techniques always fail to produce enough points in these surfaces and cannot provide good initialization for 3DGS. As a result, 3DGS suffers from difficult optimization and low-quality renderings. In this paper, inspired by classical multi-view stereo (MVS) techniques, we propose GaussianPro, a novel method that applies a progressive propagation strategy to guide the densification of the 3D Gaussians. Compared to the simple split and clone strategies used in 3DGS, our method leverages the priors of the existing reconstructed geometries of the scene and patch matching techniques to produce new Gaussians with accurate positions and orientations. Experiments on both large-scale and small-scale scenes validate the effectiveness of our method, where our method significantly surpasses 3DGS on the Waymo dataset, exhibiting an improvement of 1.15dB in terms of PSNR. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.14650.pdf) | [🌐 Project Page](https://kcheng1021.github.io/gaussianpro.github.io/) | [💻 Code (not yet)](https://github.com/kcheng1021/GaussianPro) 
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
