@@ -25,6 +25,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
 <br>
 
+- [Data](#data)
+
+<br>
+
 - [Open Source Implementations](#open-source-implementations)
   * [Reference](#reference)
   * [Unofficial Implementations](#unofficial-implementations)
@@ -1810,6 +1814,11 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.13150.pdf) | [🌐 Project Page](https://szymanowiczs.github.io/splatter-image.html) | [💻 Code](https://github.com/szymanowiczs/splatter-image) | [🎥 Short Presentation](https://www.youtube.com/watch?v=pcKTf9SVh4g)
+
+<br>
+
+## Data
+- [NERDS 360 Multi-View dataset for Outdoor Scenes](https://zubair-irshad.github.io/projects/neo360.html)
 
 <br>
 
