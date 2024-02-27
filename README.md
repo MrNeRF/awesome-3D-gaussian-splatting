@@ -48,6 +48,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **February 27, 2024**:
+- 2 papers added: Spec-Gaussian and GEA
+- SC-GS coded released
+
  **February 24, 2024**:
 - 2 papers added: Identifying unnecessary Gaussians and Gaussian Pro
 
@@ -389,6 +393,16 @@ Hairstyle reflects culture and ethnicity at first glance. In the digital era, va
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.10483.pdf)
+
+### 7. GEA: Reconstructing Expressive 3D Gaussian Avatar from Monocular Video  
+**Authors**: Haimin Luo, Min Ouyang, Zijun Zhao, Suyi Jiang, Longwen Zhang, Qixuan Zhang, Wei Yang, Lan Xu, Jingyi Yu 
+<details span>
+<summary><b>Abstract</b></summary>
+This paper presents GEA, a novel method for creating expressive 3D avatars with high-fidelity reconstructions of body and hands based on 3D Gaussians. The key contributions are twofold. First, we design a two-stage pose estimation method to obtain an accurate SMPL-X pose from input images, providing a correct mapping between the pixels of a training image and the SMPL-X model. It uses an attention-aware network and an optimization scheme to align the normal and silhouette between the estimated SMPL-X body and the real body in the image. Second, we propose an iterative re-initialization strategy to handle unbalanced aggregation and initialization bias faced by Gaussian representation. This strategy iteratively redistributes the avatar's Gaussian points, making it evenly distributed near the human body surface by applying meshing, resampling and re-Gaussian operations. As a result, higher-quality rendering can be achieved. Extensive experimental analyses validate the effectiveness of the proposed model, demonstrating that it achieves state-of-the-art performance in photorealistic novel view synthesis while offering fine-grained control over the human body and hand pose.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.16607.pdf) |  [🌐 Project Page](https://3d-aigc.github.io/GEA/) | [💻 Code (not yet)]()
+
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
@@ -1070,7 +1084,7 @@ We introduce Control4D, an innovative framework for editing dynamic 4D portraits
 Novel view synthesis for dynamic scenes is still a challenging problem in computer vision and graphics. Recently, Gaussian splatting has emerged as a robust technique to represent static scenes and enable high-quality and real-time novel view synthesis. Building upon this technique, we propose a new representation that explicitly decomposes the motion and appearance of dynamic scenes into sparse control points and dense Gaussians, respectively. Our key idea is to use sparse control points, significantly fewer in number than the Gaussians, to learn compact 6 DoF transformation bases, which can be locally interpolated through learned interpolation weights to yield the motion field of 3D Gaussians. We employ a deformation MLP to predict time-varying 6 DoF transformations for each control point, which reduces learning complexities, enhances learning abilities, and facilitates obtaining temporal and spatial coherent motion patterns. Then, we jointly learn the 3D Gaussians, the canonical space locations of control points, and the deformation MLP to reconstruct the appearance, geometry, and dynamics of 3D scenes. During learning, the location and number of control points are adaptively adjusted to accommodate varying motion complexities in different regions, and an ARAP loss following the principle of as rigid as possible is developed to enforce spatial continuity and local rigidity of learned motions. Finally, thanks to the explicit sparse motion representation and its decomposition from appearance, our method can enable user-controlled motion editing while retaining high-fidelity appearances. Extensive experiments demonstrate that our approach outperforms existing approaches on novel view synthesis with a high rendering speed and enables novel appearance-preserved motion editing applications.
 </details>
 
-  [📄 Paper](https://yihua7.github.io/SC-GS-web/materials/SC_GS_Arxiv.pdf) | [🌐 Project Page](https://yihua7.github.io/SC-GS-web/) | [💻 Code (not yet)](https://github.com/yihua7/SC-GS)
+  [📄 Paper](https://yihua7.github.io/SC-GS-web/materials/SC_GS_Arxiv.pdf) | [🌐 Project Page](https://yihua7.github.io/SC-GS-web/) | [💻 Code](https://github.com/yihua7/SC-GS)
 
 ### 9. Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction
 **Authors**: Devikalyan Das, Christopher Wewer, Raza Yunus, Eddy Ilg, Jan Eric Lenssen
@@ -1586,6 +1600,15 @@ The advent of 3D Gaussian Splatting (3DGS) has recently brought about a revoluti
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.14650.pdf) | [🌐 Project Page](https://kcheng1021.github.io/gaussianpro.github.io/) | [💻 Code (not yet)](https://github.com/kcheng1021/GaussianPro) 
+
+### 8. Spec-Gaussian: Anisotropic View-Dependent Appearance for 3D Gaussian Splatting 
+**Authors**: Ziyi Yang, Xinyu Gao, Yangtian Sun, Yihua Huang, Xiaoyang Lyu, Wen Zhou, Shaohui Jiao, Xiaojuan Qi, Xiaogang Jin 
+<details span>
+<summary><b>Abstract</b></summary>
+The recent advancements in 3D Gaussian splatting (3D-GS) have not only facilitated real-time rendering through modern GPU rasterization pipelines but have also attained state-of-the-art rendering quality. Nevertheless, despite its exceptional rendering quality and performance on standard datasets, 3D-GS frequently encounters difficulties in accurately modeling specular and anisotropic components. This issue stems from the limited ability of spherical harmonics (SH) to represent high-frequency information. To overcome this challenge, we introduce Spec-Gaussian, an approach that utilizes an anisotropic spherical Gaussian (ASG) appearance field instead of SH for modeling the view-dependent appearance of each 3D Gaussian. Additionally, we have developed a coarse-to-fine training strategy to improve learning efficiency and eliminate floaters caused by overfitting in real-world scenes. Our experimental results demonstrate that our method surpasses existing approaches in terms of rendering quality. Thanks to ASG, we have significantly improved the ability of 3D-GS to model scenes with specular and anisotropic components without increasing the number of 3D Gaussians. This improvement extends the applicability of 3D GS to handle intricate scenarios with specular and anisotropic surfaces. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.15870.pdf) 
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
