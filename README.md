@@ -26,6 +26,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
 - [Data](#data)
+- [Courses](#courses)
 
 <br>
 
@@ -48,9 +49,16 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 2, 2024**:
+ - 1 paper added: 3D Gaussian Model for Animation and Texturing
+ - New section: Courses that also teach 3DGS.
+
+ **February 28, 2024**:
+ - VastGaussian
+
  **February 27, 2024**:
 - 2 papers added: Spec-Gaussian and GEA
-- SC-GS coded released
+- SC-GS code released
 
  **February 24, 2024**:
 - 2 papers added: Identifying unnecessary Gaussians and Gaussian Pro
@@ -1610,6 +1618,24 @@ The recent advancements in 3D Gaussian splatting (3D-GS) have not only facilitat
 
   [📄 Paper](https://arxiv.org/pdf/2402.15870.pdf) 
 
+### 9. VastGaussian: Vast 3D Gaussians for Large Scene Reconstruction 
+**Authors**: Jiaqi Lin, Zhihao Li, Xiao Tang, Jianzhuang Liu, Shiyong Liu, Jiayue Liu, Yangdi Lu, Xiaofei Wu, Songcen Xu, Youliang Yan, Wenming Yang 
+<details span>
+<summary><b>Abstract</b></summary>
+Existing NeRF-based methods for large scene reconstruction often have limitations in visual quality and rendering speed. While the recent 3D Gaussian Splatting works well on small-scale and object-centric scenes, scaling it up to large scenes poses challenges due to limited video memory, long optimization time, and noticeable appearance variations. To address these challenges, we present VastGaussian, the first method for high-quality reconstruction and real-time rendering on large scenes based on 3D Gaussian Splatting. We propose a progressive partitioning strategy to divide a large scene into multiple cells, where the training cameras and point cloud are properly distributed with an airspace-aware visibility criterion. These cells are merged into a complete scene after parallel optimization. We also introduce decoupled appearance modeling into the optimization process to reduce appearance variations in the rendered images. Our approach outperforms existing NeRF-based methods and achieves state-of-the-art results on multiple large scene datasets, enabling fast optimization and high-fidelity real-time rendering. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.17427.pdf) | [🌐 Project Page](https://vastgaussian.github.io/) | [💻 Code (not yet)]() 
+
+### 10. 3D Gaussian Model for Animation and Texturing
+**Authors**: Xiangzhi Eric Wang, Zackary P. T. Sin 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting has made a marked impact on neural rendering by achieving impressive fidelity and performance. Despite this achievement, however, it is not readily applicable to developing interactive applications. Real-time applications like XR apps and games require functions such as animation, UV-mapping, and model editing simultaneously manipulated through the usage of a 3D model. We propose a modeling that is analogous to typical 3D models, which we call 3D Gaussian Model (3DGM); it provides a manipulatable proxy for novel animation and texture transfer. By binding the 3D Gaussians in texture space and re-projecting them back to world space through implicit shell mapping, we show how our 3D modeling can serve as a valid rendering methodology for interactive applications. It is further noted that recently, 3D mesh reconstruction works have been able to produce high-quality mesh for rendering. Our work, on the other hand, only requires an approximated geometry for rendering an object in high fidelity. Applicationwise, we will show that our proxy-based 3DGM is capable of driving novel animation without animated training data and texture transferring via UV mapping of the 3D Gaussians. We believe the result indicates the potential of our work for enabling interactive applications for 3D Gaussian Splatting. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2402.19441.pdf) 
+
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
@@ -1842,6 +1868,11 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 
 ## Data
 - [NERDS 360 Multi-View dataset for Outdoor Scenes](https://zubair-irshad.github.io/projects/neo360.html)
+
+<br>
+
+## Courses
+- [MIT Inverse Rendering Lectures (Module 2)](https://www.scenerepresentations.org/courses/inverse-graphics-23/)
 
 <br>
 
