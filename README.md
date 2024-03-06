@@ -49,6 +49,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 6, 2024**:
+ - 1 paper added: Splat-Nav
+
  **March 5, 2024**:
  - 1 paper added: 3DGStream
  - Code releases 
@@ -1444,6 +1447,15 @@ As consumer Virtual Reality (VR) and Mixed Reality (MR) technologies gain moment
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.16663.pdf) | [🌐 Project Page](https://yingjiang96.github.io/VR-GS/) 
+
+### 8. Splat-Nav: Safe Real-Time Robot Navigation in Gaussian Splatting Maps 
+**Authors**: Timothy Chen, Ola Shorinwa, Weijia Zeng, Joseph Bruno, Philip Dames, Mac Schwager 
+<details span>
+<summary><b>Abstract</b></summary>
+We present Splat-Nav, a navigation pipeline that consists of a real-time safe planning module and a robust state estimation module designed to operate in the Gaussian Splatting (GSplat) environment representation, a popular emerging 3D scene representation from computer vision. We formulate rigorous collision constraints that can be computed quickly to build a guaranteed-safe polytope corridor through the map. We then optimize a B-spline trajectory through this corridor. We also develop a real-time, robust state estimation module by interpreting the GSplat representation as a point cloud. The module enables the robot to localize its global pose with zero prior knowledge from RGB-D images using point cloud alignment, and then track its own pose as it moves through the scene from RGB images using image-to-point cloud localization. We also incorporate semantics into the GSplat in order to obtain better images for localization. All of these modules operate mainly on CPU, freeing up GPU resources for tasks like real-time scene reconstruction. We demonstrate the safety and robustness of our pipeline in both simulation and hardware, where we show re-planning at 5 Hz and pose estimation at 20 Hz, an order of magnitude faster than Neural Radiance Field (NeRF)-based navigation methods, thereby enabling real-time navigation. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.02751.pdf)
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
