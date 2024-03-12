@@ -51,7 +51,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
- - Added x papers: SplattingAvatar, DNGaussian, Radiative Gaussians, BAGS
+ - Added 6 papers: SplattingAvatar, DNGaussian, Radiative Gaussians, BAGS, GSEdit, and ManiGaussian
 
  **March 8, 2024**:
  - Added 3DGStream Viewer
@@ -1229,6 +1229,15 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   [📄 Paper](https://browse.arxiv.org/pdf/2401.17857.pdf) 
 
+### 4. GSEdit: Efficient Text-Guided Editing of 3D Objects via Gaussian Splatting 
+**Authors**: Francesco Palandra, Andrea Sanchietti, Daniele Baieri, Emanuele Rodolà 
+<details span>
+<summary><b>Abstract</b></summary>
+We present GSEdit, a pipeline for text-guided 3D object editing based on Gaussian Splatting models. Our method enables the editing of the style and appearance of 3D objects without altering their main details, all in a matter of minutes on consumer hardware. We tackle the problem by leveraging Gaussian splatting to represent 3D scenes, and we optimize the model while progressively varying the image supervision by means of a pretrained image-based diffusion model. The input object may be given as a 3D triangular mesh, or directly provided as Gaussians from a generative model such as DreamGaussian. GSEdit ensures consistency across different viewpoints, maintaining the integrity of the original object's information. Compared to previously proposed methods relying on NeRF-like MLP models, GSEdit stands out for its efficiency, making 3D editing tasks much faster. Our editing process is refined via the application of the SDS loss, ensuring that our edits are both precise and accurate. Our comprehensive evaluation demonstrates that GSEdit effectively alters object shape and appearance following the given textual instructions while preserving their coherence and detail. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.05154.pdf) 
+
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
@@ -1481,6 +1490,16 @@ X-ray is widely applied for transmission imaging due to its stronger penetration
 
   [📄 Paper](https://arxiv.org/pdf/2403.04116.pdf)
 
+### 10. ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation 
+**Authors**: TYuanhao Cai, Yixun Liang, Jiahao Wang, Angtian Wang, Yulun Zhang, Xiaokang Yang, Zongwei Zhou, Alan Yuille 
+<details span>
+<summary><b>Abstract</b></summary>
+X-ray is widely applied for transmission imaging due to its stronger penetration than natural light. When rendering novel view X-ray projections, existing methods mainly based on NeRF suffer from long training time and slow inference speed. In this paper, we propose a 3D Gaussian splatting-based framework, namely X-Gaussian, for X-ray novel view synthesis. Firstly, we redesign a radiative Gaussian point cloud model inspired by the isotropic nature of X-ray imaging. Our model excludes the influence of view direction when learning to predict the radiation intensity of 3D points. Based on this model, we develop a Differentiable Radiative Rasterization (DRR) with CUDA implementation. Secondly, we customize an Angle-pose Cuboid Uniform Initialization (ACUI) strategy that directly uses the parameters of the X-ray scanner to compute the camera information and then uniformly samples point positions within a cuboid enclosing the scanned object. Experiments show that our X-Gaussian outperforms state-of-the-art methods by 6.5 dB while enjoying less than 15% training time and over 73x inference speed. The application on sparse-view CT reconstruction also reveals the practical values of our method. 
+</details>
+
+  [📄 Paper (not yet)]() | [🌐 Project Page](https://guanxinglu.github.io/ManiGaussian/) | [💻 Code](https://github.com/GuanxingLu/ManiGaussian) 
+
+
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
@@ -1552,6 +1571,15 @@ Differentiable rendering is a technique used in an important emerging class of v
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.05345.pdf)
+
+### 2. FreGS: 3D Gaussian Splatting with Progressive Frequency Regularization  
+**Authors**: Jiahui Zhang, Fangneng Zhan, Muyu Xu, Shijian Lu, Eric Xing 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting has achieved very impressive performance in real-time novel view synthesis. However, it often suffers from over-reconstruction during Gaussian densification where high-variance image regions are covered by a few large Gaussians only, leading to blur and artifacts in the rendered images. We design a progressive frequency regularization (FreGS) technique to tackle the over-reconstruction issue within the frequency space. Specifically, FreGS performs coarse-to-fine Gaussian densification by exploiting low-to-high frequency components that can be easily extracted with low-pass and high-pass filters in the Fourier space. By minimizing the discrepancy between the frequency spectrum of the rendered image and the corresponding ground truth, it achieves high-quality Gaussian densification and alleviates the over-reconstruction of Gaussian splatting effectively. Experiments over multiple widely adopted benchmarks (e.g., Mip-NeRF360, Tanks-and-Temples and Deep Blending) show that FreGS achieves superior novel view synthesis and outperforms the state-of-the-art consistently. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.06908.pdf)
   
 ## 2023:
 ### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
