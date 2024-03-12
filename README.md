@@ -50,6 +50,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 8, 2024**:
+ - Tutorial: Howto capture images for 3DGS
+
+ **March 8, 2024**:
  - Added 3DGStream Viewer
 
  **March 6, 2024**:
@@ -1975,6 +1978,7 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 10. [Comprehensive overview of Gaussian Splatting](https://towardsdatascience.com/a-comprehensive-overview-of-gaussian-splatting-e7d570081362)
 11. [Gaussian Head Avatars: A Summary](https://towardsdatascience.com/gaussian-head-avatars-a-summary-2bd17bd48500)
 12. [NeRFs vs. 3DGS](https://edwardahn.me/writing/NeRFvs3DGS/)
+13. [Howto capture images for 3DGS](https://medium.com/@heyulei/capture-images-for-gaussian-splatting-81d081bbc826)
 
 ## Tutorial Videos
 
