@@ -51,6 +51,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
+ - Added x papers: SplattingAvatar
 
  **March 8, 2024**:
  - Added 3DGStream Viewer
@@ -425,6 +426,14 @@ This paper presents GEA, a novel method for creating expressive 3D avatars with 
 
   [📄 Paper](https://arxiv.org/pdf/2402.16607.pdf) |  [🌐 Project Page](https://3d-aigc.github.io/GEA/) | [💻 Code (not yet)]()
 
+### 8. SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting  
+**Authors**: Zhijing Shao, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+We present SplattingAvatar, a hybrid 3D representation of photorealistic human avatars with Gaussian Splatting embedded on a triangle mesh, which renders over 300 FPS on a modern GPU and 30 FPS on a mobile device. We disentangle the motion and appearance of a virtual human with explicit mesh geometry and implicit appearance modeling with Gaussian Splatting. The Gaussians are defined by barycentric coordinates and displacement on a triangle mesh as Phong surfaces. We extend lifted optimization to simultaneously optimize the parameters of the Gaussians while walking on the triangle mesh. SplattingAvatar is a hybrid representation of virtual humans where the mesh represents low-frequency motion and surface deformation, while the Gaussians take over the high-frequency geometry and detailed appearance. Unlike existing deformation methods that rely on an MLP-based linear blend skinning (LBS) field for motion, we control the rotation and translation of the Gaussians directly by mesh, which empowers its compatibility with various animation techniques, e.g., skeletal animation, blend shapes, and mesh editing. Trainable from monocular videos for both full-body and head avatars, SplattingAvatar shows state-of-the-art rendering quality across multiple datasets. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.05087.pdf) |  [🌐 Project Page](https://initialneil.github.io/SplattingAvatar) | [💻 Code](https://github.com/initialneil/SplattingAvatar)| [🎥 Short Presentation](https://www.youtube.com/watch?v=IzC-fLvdntA)
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
