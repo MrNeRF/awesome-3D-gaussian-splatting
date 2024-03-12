@@ -51,7 +51,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
- - Added x papers: SplattingAvatar
+ - Added x papers: SplattingAvatar, DNGaussian, Radiative Gaussians, BAGS
 
  **March 8, 2024**:
  - Added 3DGStream Viewer
@@ -1472,6 +1472,15 @@ We present Splat-Nav, a navigation pipeline that consists of a real-time safe pl
 
   [📄 Paper](https://arxiv.org/pdf/2403.02751.pdf)
 
+### 9. Radiative Gaussian Splatting for Efficient X-ray Novel View Synthesis 
+**Authors**: TYuanhao Cai, Yixun Liang, Jiahao Wang, Angtian Wang, Yulun Zhang, Xiaokang Yang, Zongwei Zhou, Alan Yuille 
+<details span>
+<summary><b>Abstract</b></summary>
+X-ray is widely applied for transmission imaging due to its stronger penetration than natural light. When rendering novel view X-ray projections, existing methods mainly based on NeRF suffer from long training time and slow inference speed. In this paper, we propose a 3D Gaussian splatting-based framework, namely X-Gaussian, for X-ray novel view synthesis. Firstly, we redesign a radiative Gaussian point cloud model inspired by the isotropic nature of X-ray imaging. Our model excludes the influence of view direction when learning to predict the radiation intensity of 3D points. Based on this model, we develop a Differentiable Radiative Rasterization (DRR) with CUDA implementation. Secondly, we customize an Angle-pose Cuboid Uniform Initialization (ACUI) strategy that directly uses the parameters of the X-ray scanner to compute the camera information and then uniformly samples point positions within a cuboid enclosing the scanned object. Experiments show that our X-Gaussian outperforms state-of-the-art methods by 6.5 dB while enjoying less than 15% training time and over 73x inference speed. The application on sparse-view CT reconstruction also reveals the practical values of our method. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.04116.pdf)
+
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
@@ -1678,6 +1687,15 @@ Existing NeRF-based methods for large scene reconstruction often have limitation
 
   [📄 Paper](https://arxiv.org/pdf/2402.19441.pdf) 
 
+### 11. BAGS: Blur Agnostic Gaussian Splatting through Multi-Scale Kernel Modeling 
+**Authors**: Cheng Peng, Yutao Tang, Yifan Zhou, Nengyu Wang, Xijun Liu, Deming Li, Rama Chellappa 
+<details span>
+<summary><b>Abstract</b></summary>
+Recent efforts in using 3D Gaussians for scene reconstruction and novel view synthesis can achieve impressive results on curated benchmarks; however, images captured in real life are often blurry. In this work, we analyze the robustness of Gaussian-Splatting-based methods against various image blur, such as motion blur, defocus blur, downscaling blur, \etc. Under these degradations, Gaussian-Splatting-based methods tend to overfit and produce worse results than Neural-Radiance-Field-based methods. To address this issue, we propose Blur Agnostic Gaussian Splatting (BAGS). BAGS introduces additional 2D modeling capacities such that a 3D-consistent and high quality scene can be reconstructed despite image-wise blur. Specifically, we model blur by estimating per-pixel convolution kernels from a Blur Proposal Network (BPN). BPN is designed to consider spatial, color, and depth variations of the scene to maximize modeling capacity. Additionally, BPN also proposes a quality-assessing mask, which indicates regions where blur occur. Finally, we introduce a coarse-to-fine kernel optimization scheme; this optimization scheme is fast and avoids sub-optimal solutions due to a sparse point cloud initialization, which often occurs when we apply Structure-from-Motion on blurry images. We demonstrate that BAGS achieves photorealistic renderings under various challenging blur conditions and imaging geometry, while significantly improving upon existing approaches. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.04926.pdf) 
+
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
@@ -1869,6 +1887,16 @@ The integration of neural rendering and the SLAM system recently showed promisin
 <br>
 
 ## Sparse:
+## 2024:
+### 1. DNGaussian: Optimizing Sparse-View 3D Gaussian Radiance Fields with Global-Local Depth Normalization 
+**Authors**: Jiahe Li, Jiawei Zhang, Xiao Bai, Jin Zheng, Xin Ning, Jun Zhou, Lin Gu 
+<details span>
+<summary><b>Abstract</b></summary>
+Radiance fields have demonstrated impressive performance in synthesizing novel views from sparse input views, yet prevailing methods suffer from high training costs and slow inference speed. This paper introduces DNGaussian, a depth-regularized framework based on 3D Gaussian radiance fields, offering real-time and high-quality few-shot novel view synthesis at low costs. Our motivation stems from the highly efficient representation and surprising quality of the recent 3D Gaussian Splatting, despite it will encounter a geometry degradation when input views decrease. In the Gaussian radiance fields, we find this degradation in scene geometry primarily lined to the positioning of Gaussian primitives and can be mitigated by depth constraint. Consequently, we propose a Hard and Soft Depth Regularization to restore accurate scene geometry under coarse monocular depth supervision while maintaining a fine-grained color appearance. To further refine detailed geometry reshaping, we introduce Global-Local Depth Normalization, enhancing the focus on small local depth changes. Extensive experiments on LLFF, DTU, and Blender datasets demonstrate that DNGaussian outperforms state-of-the-art methods, achieving comparable or better results with significantly reduced memory cost, a 25× reduction in training time, and over 3000× faster rendering speed. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.06912.pdf) | [🌐 Project Page](https://fictionarry.github.io/DNGaussian/) | [💻 Code](https://github.com/Fictionarry/DNGaussian) | [🎥 Short Presentation](https://www.youtube.com/watch?v=WKXCFNJHZ4o)
+
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
