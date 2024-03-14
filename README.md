@@ -50,7 +50,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 14, 2024**:
- - Paper added: SemGauss, StyleGaussian
+ - Paper added: SemGauss, StyleGaussian, Gaussian Splatting in Style
 
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
@@ -1734,6 +1734,16 @@ We introduce StyleGaussian, a novel 3D style transfer technique that allows inst
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.04926.pdf) | [🌐 Project Page](https://kunhao-liu.github.io/StyleGaussian/) | [💻 Code](https://github.com/Kunhao-Liu/StyleGaussian)  
+
+### 13. Gaussian Splatting in Style 
+**Authors**: Abhishek Saroha, Mariia Gladkova, Cecilia Curreli, Tarun Yenamandra, Daniel Cremers 
+<details span>
+<summary><b>Abstract</b></summary>
+Scene stylization extends the work of neural style transfer to three spatial dimensions. A vital challenge in this problem is to maintain the uniformity of the stylized appearance across a multi-view setting. A vast majority of the previous works achieve this by optimizing the scene with a specific style image. In contrast, we propose a novel architecture trained on a collection of style images, that at test time produces high quality stylized novel views. Our work builds up on the framework of 3D Gaussian splatting. For a given scene, we take the pretrained Gaussians and process them using a multi resolution hash grid and a tiny MLP to obtain the conditional stylised views. The explicit nature of 3D Gaussians give us inherent advantages over NeRF-based methods including geometric consistency, along with having a fast training and rendering regime. This enables our method to be useful for vast practical use cases such as in augmented or virtual reality applications. Through our experiments, we show our methods achieve state-of-the-art performance with superior visual quality on various indoor and outdoor real-world data. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.08498)  
+
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
