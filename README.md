@@ -49,6 +49,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 14, 2024**:
+ - Paper added: SemGauss
+
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
  - Added 6 papers: SplattingAvatar, DNGaussian, Radiative Gaussians, BAGS, GSEdit, and ManiGaussian
@@ -1857,6 +1860,16 @@ Semantic understanding plays a crucial role in Dense Simultaneous Localization a
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.03246.pdf) 
+
+### 2. SemGauss-SLAM: Dense Semantic Gaussian Splatting SLAM 
+**Authors**: Siting Zhu, Renjie Qin, Guangming Wang, Jiuming Liu, Hesheng Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+We propose SemGauss-SLAM, the first semantic SLAM system utilizing 3D Gaussian representation, that enables accurate 3D semantic mapping, robust camera tracking, and high-quality rendering in real-time. In this system, we incorporate semantic feature embedding into 3D Gaussian representation, which effectively encodes semantic information within the spatial layout of the environment for precise semantic scene representation. Furthermore, we propose feature-level loss for updating 3D Gaussian representation, enabling higher-level guidance for 3D Gaussian optimization. In addition, to reduce cumulative drift and improve reconstruction accuracy, we introduce semantic-informed bundle adjustment leveraging semantic associations for joint optimization of 3D Gaussian representation and camera poses, leading to more robust tracking and consistent mapping. Our SemGauss-SLAM method demonstrates superior performance over existing dense semantic SLAM methods in terms of mapping and tracking accuracy on Replica and ScanNet datasets, while also showing excellent capabilities in novel-view semantic synthesis and 3D semantic mapping.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.07494.pdf) 
+
 ## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
