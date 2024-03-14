@@ -50,7 +50,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 14, 2024**:
- - Paper added: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl, GaussianImage
+ - Added 6 papers: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl, GaussianImage, and RAIN-GS
 
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
@@ -1606,6 +1606,16 @@ Differentiable rendering is a technique used in an important emerging class of v
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.06908.pdf)
+
+### 3. RAIN-GS: Relaxing Accurate Initialization Constraint for 3D Gaussian Splatting 
+**Authors**: Jaewoo Jung, Jisang Han, Honggyu An, Jiwon Kang, Seonghoon Park, Seungryong Kim† 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting (3DGS) has recently demonstrated impressive capabilities in real-time novel view synthesis and 3D reconstruction. However, 3DGS heavily depends on the accurate initialization derived from Structure-from-Motion (SfM) methods. When trained with randomly initialized point clouds, 3DGS often fails to maintain its ability to produce high-quality images, undergoing large performance drops of 4-5 dB in PSNR in general. Through extensive analysis of SfM initialization in the frequency domain and analysis of a 1D regression task with multiple 1D Gaussians, we propose a novel optimization strategy dubbed RAIN-GS (Relaxing Accurate INitialization Constraint for 3D Gaussian Splatting) that successfully trains 3D Gaussians from randomly initialized point clouds. We show the effectiveness of our strategy through quantitative and qualitative comparisons on standard datasets, largely improving the performance in all settings. 
+</details>
+
+  [📄 Paper(not yet)]() | [🌐 Project Page](https://ku-cvlab.github.io/RAIN-GS/) | [💻 Code ](https://github.com/KU-CVLAB/RAIN-GS) 
+
   
 ## 2023:
 ### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
