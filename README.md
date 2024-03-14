@@ -1497,7 +1497,7 @@ X-ray is widely applied for transmission imaging due to its stronger penetration
 X-ray is widely applied for transmission imaging due to its stronger penetration than natural light. When rendering novel view X-ray projections, existing methods mainly based on NeRF suffer from long training time and slow inference speed. In this paper, we propose a 3D Gaussian splatting-based framework, namely X-Gaussian, for X-ray novel view synthesis. Firstly, we redesign a radiative Gaussian point cloud model inspired by the isotropic nature of X-ray imaging. Our model excludes the influence of view direction when learning to predict the radiation intensity of 3D points. Based on this model, we develop a Differentiable Radiative Rasterization (DRR) with CUDA implementation. Secondly, we customize an Angle-pose Cuboid Uniform Initialization (ACUI) strategy that directly uses the parameters of the X-ray scanner to compute the camera information and then uniformly samples point positions within a cuboid enclosing the scanned object. Experiments show that our X-Gaussian outperforms state-of-the-art methods by 6.5 dB while enjoying less than 15% training time and over 73x inference speed. The application on sparse-view CT reconstruction also reveals the practical values of our method. 
 </details>
 
-  [📄 Paper (not yet)]() | [🌐 Project Page](https://guanxinglu.github.io/ManiGaussian/) | [💻 Code](https://github.com/GuanxingLu/ManiGaussian) 
+  [📄 Paper](https://arxiv.org/pdf/2403.08321.pdf) | [🌐 Project Page](https://guanxinglu.github.io/ManiGaussian/) | [💻 Code](https://github.com/GuanxingLu/ManiGaussian) 
 
 
 ## 2023:
