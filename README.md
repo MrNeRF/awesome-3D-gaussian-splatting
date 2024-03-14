@@ -50,7 +50,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 14, 2024**:
- - Paper added: SemGauss, StyleGaussian, Gaussian Splatting in Style
+ - Paper added: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl
 
  **March 8, 2024**:
  - Tutorial: Howto capture images for 3DGS
@@ -1240,6 +1240,22 @@ We present GSEdit, a pipeline for text-guided 3D object editing based on Gaussia
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.05154.pdf) 
+
+### 5. GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing  
+**Authors**: Jing Wu, Jia-Wang Bian, Xinghui Li, Guangrun Wang, Ian Reid, Philip Torr, Victor Adrian Prisacariu 
+<details span>
+<summary><b>Abstract</b></summary>
+We propose GaussCtrl, a text-driven method to edit a 3D scene reconstructed by the 3D Gaussian Splatting (3DGS).
+Our method first renders a collection of images by using the 3DGS and edits them by using a pre-trained 2D diffusion model (ControlNet) based on the input prompt, which is then used to optimise the 3D model.
+Our key contribution is multi-view consistent editing, which enables editing all images together instead of iteratively editing one image while updating the 3D model as in previous works.
+It leads to faster editing as well as higher visual quality.
+This is achieved by the two terms:
+(a) depth-conditioned editing that enforces geometric consistency across multi-view images by leveraging naturally consistent depth maps.
+(b) attention-based latent code alignment that unifies the appearance of edited images by conditioning their editing to several reference views through self and cross-view attention between images' latent representations.
+Experiments demonstrate that our method achieves faster editing and better visual results than previous state-of-the-art methods. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.08733.pdf) 
 
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
