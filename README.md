@@ -51,7 +51,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **March 16, 2024**:
  - SplatTV
- - Added 3 papers: GaussianGrasper, new splitting algorithm, Controllable Text-to-3D Generation
+ - Added 5 papers: GaussianGrasper, new splitting algorithm, Controllable Text-to-3D Generation, Spring-Mass 3DGS, Hyper-3DGS
 
  **March 14, 2024**:
  - Added 6 papers: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl, GaussianImage, and RAIN-GS
@@ -889,6 +889,16 @@ Most text-to-3D generators build upon off-the-shelf text-to-image models trained
 
 [📄 Paper](https://lizhiqi49.github.io/MVControl/assets/paper.pdf) | [🌐 Project Page](https://lizhiqi49.github.io/MVControl/) | [💻 Code](https://github.com/WU-CVGL/MVControl-threestudio) 
 
+### 8. Hyper-3DG:Text-to-3D Gaussian Generation via Hypergraph  
+**Authors**: Donglin Di, Jiahui Yang, Chaofan Luo, Zhou Xue, Wei Chen, Xun Yang, Yue Gao 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-3D generation represents an exciting field that has seen rapid advancements, facilitating the transformation of textual descriptions into detailed 3D models. However, current progress often neglects the intricate high-order correlation of geometry and texture within 3D objects, leading to challenges such as over-smoothness, over-saturation and the Janus problem. In this work, we propose a method named ``3D Gaussian Generation via Hypergraph (Hyper-3DG)'', designed to capture the sophisticated high-order correlations present within 3D objects. Our framework is anchored by a well-established mainflow and an essential module, named ``Geometry and Texture Hypergraph Refiner (HGRefiner)''. This module not only refines the representation of 3D Gaussians but also accelerates the update process of these 3D Gaussians by conducting the Patch-3DGS Hypergraph Learning on both explicit attributes and latent visual features. Our framework allows for the production of finely generated 3D objects within a cohesive optimization, effectively circumventing degradation. Extensive experimentation has shown that our proposed method significantly enhances the quality of 3D generation while incurring no additional computational overhead for the underlying framework.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2403.09236.pdf) | [💻 Code (not yet)](https://github.com/yjhboy/Hyper3DG) 
+
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
@@ -1424,7 +1434,7 @@ Reconstructing and simulating elastic objects from visual observations is crucia
 We introduce PhysGaussian, a new method that seamlessly integrates physically grounded Newtonian dynamics within 3D Gaussians to achieve high-quality novel motion synthesis. Employing a custom Material Point Method (MPM), our approach enriches 3D Gaussian kernels with physically meaningful kinematic deformation and mechanical stress attributes, all evolved in line with continuum mechanics principles. A defining characteristic of our method is the seamless integration between physical simulation and visual rendering: both components utilize the same 3D Gaussian kernels as their discrete representations. This negates the necessity for triangle/tetrahedron meshing, marching cubes, "cage meshes," or any other geometry embedding, highlighting the principle of "what you see is what you simulate (WS2)." Our method demonstrates exceptional versatility across a wide variety of materials--including elastic entities, metals, non-Newtonian fluids, and granular materials--showcasing its strong capabilities in creating diverse visual content with novel viewpoints and movements. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.12198.pdf) | [🌐 Project Page](https://zlicheng.com/spring_gaus/) | [💻 Code (not yet)](https://github.com/Colmar-zlicheng/Spring-Gaus)
+  [📄 Paper](https://arxiv.org/pdf/2311.12198.pdf) | [🌐 Project Page](https://xpandora.github.io/PhysGaussian/) | [💻 Code](https://github.com/XPandora/PhysGaussian) | [🎥 Short Presentation](https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view)
 
 ### 2. SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering
 **Authors**: Antoine Guédon, Vincent Lepetit
