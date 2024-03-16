@@ -51,6 +51,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **March 16, 2024**:
  - SplatTV
+ - Added x papers: GaussianGrasper, new splitting algorithm,
 
  **March 14, 2024**:
  - Added 6 papers: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl, GaussianImage, and RAIN-GS
@@ -1530,6 +1531,15 @@ Implicit neural representations (INRs) recently achieved great success in image 
 
   [📄 Paper](https://arxiv.org/pdf/2403.08551) 
 
+### 12. GaussianGrasper: 3D Language Gaussian Splatting for Open-vocabulary Robotic Grasping 
+**Authors**: Yuhang Zheng, Xiangyu Chen, Yupeng Zheng, Songen Gu, Runyi Yang, Bu Jin, Pengfei Li, Chengliang Zhong, Zengmao Wang, Lina Liu, Chao Yang, Dawei Wang, Zhen Chen, Xiaoxiao Long, Meiqing Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+Constructing a 3D scene capable of accommodating open-ended language queries, is a pivotal pursuit, particularly within the domain of robotics. Such technology facilitates robots in executing object manipulations based on human language directives. To tackle this challenge, some research efforts have been dedicated to the development of language-embedded implicit fields. However, implicit fields (e.g. NeRF) encounter limitations due to the necessity of processing a large number of input views for reconstruction, coupled with their inherent inefficiencies in inference. Thus, we present the GaussianGrasper, which utilizes 3D Gaussian Splatting to explicitly represent the scene as a collection of Gaussian primitives. Our approach takes a limited set of RGB-D views and employs a tile-based splatting technique to create a feature field. In particular, we propose an Efficient Feature Distillation (EFD) module that employs contrastive learning to efficiently and accurately distill language embeddings derived from foundational models. With the reconstructed geometry of the Gaussian field, our method enables the pre-trained grasping model to generate collision-free grasp pose candidates. Furthermore, we propose a normal-guided grasp module to select the best grasp pose. Through comprehensive real-world experiments, we demonstrate that GaussianGrasper enables robots to accurately query and grasp objects with language instructions, providing a new solution for language-guided manipulation tasks. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.09637) | [💻 Code (not yet)](https://github.com/MrSecant/GaussianGrasper)
+
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
@@ -1611,14 +1621,22 @@ Differentiable rendering is a technique used in an important emerging class of v
   [📄 Paper](https://arxiv.org/pdf/2403.06908.pdf)
 
 ### 3. RAIN-GS: Relaxing Accurate Initialization Constraint for 3D Gaussian Splatting 
-**Authors**: Jaewoo Jung, Jisang Han, Honggyu An, Jiwon Kang, Seonghoon Park, Seungryong Kim† 
+**Authors**: Jaewoo Jung, Jisang Han, Honggyu An, Jiwon Kang, Seonghoon Park, Seungryong Kim 
 <details span>
 <summary><b>Abstract</b></summary>
 3D Gaussian splatting (3DGS) has recently demonstrated impressive capabilities in real-time novel view synthesis and 3D reconstruction. However, 3DGS heavily depends on the accurate initialization derived from Structure-from-Motion (SfM) methods. When trained with randomly initialized point clouds, 3DGS often fails to maintain its ability to produce high-quality images, undergoing large performance drops of 4-5 dB in PSNR in general. Through extensive analysis of SfM initialization in the frequency domain and analysis of a 1D regression task with multiple 1D Gaussians, we propose a novel optimization strategy dubbed RAIN-GS (Relaxing Accurate INitialization Constraint for 3D Gaussian Splatting) that successfully trains 3D Gaussians from randomly initialized point clouds. We show the effectiveness of our strategy through quantitative and qualitative comparisons on standard datasets, largely improving the performance in all settings. 
 </details>
 
-  [📄 Paper(not yet)]() | [🌐 Project Page](https://ku-cvlab.github.io/RAIN-GS/) | [💻 Code ](https://github.com/KU-CVLAB/RAIN-GS) 
+  [📄 Paper](https://arxiv.org/pdf/2403.09413) | [🌐 Project Page](https://ku-cvlab.github.io/RAIN-GS/) | [💻 Code ](https://github.com/KU-CVLAB/RAIN-GS) 
 
+### 4. A New Split Algorithm for 3D Gaussian Splatting 
+**Authors**: Qiyuan Feng, Gengchen Cao, Haoxiang Chen, Tai-Jiang Mu, Ralph R. Martin, Shi-Min Hu 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting models, as a novel explicit 3D representation, have been applied in many domains recently, such as explicit geometric editing and geometry generation. Progress has been rapid. However, due to their mixed scales and cluttered shapes, 3D Gaussian splatting models can produce a blurred or needle-like effect near the surface. At the same time, 3D Gaussian splatting models tend to flatten large untextured regions, yielding a very sparse point cloud. These problems are caused by the non-uniform nature of 3D Gaussian splatting models, so in this paper, we propose a new 3D Gaussian splitting algorithm, which can produce a more uniform and surface-bounded 3D Gaussian splatting model. Our algorithm splits an N-dimensional Gaussian into two N-dimensional Gaussians. It ensures consistency of mathematical characteristics and similarity of appearance, allowing resulting 3D Gaussian splatting models to be more uniform and a better fit to the underlying surface, and thus more suitable for explicit editing, point cloud extraction and other tasks. Meanwhile, our 3D Gaussian splitting approach has a very simple closed-form solution, making it readily applicable to any 3D Gaussian model. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.09143) 
   
 ## 2023:
 ### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
