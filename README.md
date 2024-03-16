@@ -51,7 +51,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 
  **March 16, 2024**:
  - SplatTV
- - Added 5 papers: GaussianGrasper, new splitting algorithm, Controllable Text-to-3D Generation, Spring-Mass 3DGS, Hyper-3DGS
+ - Added 6 papers: GaussianGrasper, new splitting algorithm, Controllable Text-to-3D Generation, Spring-Mass 3DGS, Hyper-3DGS, and DreamScene
 
  **March 14, 2024**:
  - Added 6 papers: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl, GaussianImage, and RAIN-GS
@@ -898,6 +898,16 @@ Text-to-3D generation represents an exciting field that has seen rapid advanceme
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2403.09236.pdf) | [💻 Code (not yet)](https://github.com/yjhboy/Hyper3DG) 
+
+### 9. DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling  
+**Authors**:  Haoran Li, Haolin Shi, Wenli Zhang, Wenjun Wu, Yong Liao, Lin Wang, Lik Hang Lee, Pengyuan Zhou  
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-3D scene generation holds immense potential for the gaming, film, and architecture sectors, increasingly capturing the attention of both academic and industry circles. Despite significant progress, current methods still struggle with maintaining high quality, consistency, and editing flexibility. In this paper, we propose DreamScene, a 3D Gaussian-based novel text-to-3D scene generation framework that leverages Formation Pattern Sampling (FPS) for core structuring, augmented with a strategic camera sampling and supported by holistic object-environment integration to overcome these hurdles. FPS, guided by the formation patterns of 3D objects, employs multi-timesteps sampling to quickly form semantically rich, high-quality representations, uses 3D Gaussian filtering for optimization stability, and leverages reconstruction techniques to generate plausible textures. The camera sampling strategy incorporates a progressive three-stage approach, specifically designed for both indoor and outdoor settings, to effectively ensure scene-wide 3D consistency. DreamScene enhances scene editing flexibility by combining objects and environments, enabling targeted adjustments. Extensive experiments showcase DreamScene's superiority over current state-of-the-art techniques, heralding its wide-ranging potential for diverse applications. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2403.09236.pdf) | | [🌐 Project Page](https://dreamscene-project.github.io/) 
 
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
