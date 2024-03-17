@@ -907,7 +907,7 @@ Text-to-3D generation represents an exciting field that has seen rapid advanceme
 Text-to-3D scene generation holds immense potential for the gaming, film, and architecture sectors, increasingly capturing the attention of both academic and industry circles. Despite significant progress, current methods still struggle with maintaining high quality, consistency, and editing flexibility. In this paper, we propose DreamScene, a 3D Gaussian-based novel text-to-3D scene generation framework that leverages Formation Pattern Sampling (FPS) for core structuring, augmented with a strategic camera sampling and supported by holistic object-environment integration to overcome these hurdles. FPS, guided by the formation patterns of 3D objects, employs multi-timesteps sampling to quickly form semantically rich, high-quality representations, uses 3D Gaussian filtering for optimization stability, and leverages reconstruction techniques to generate plausible textures. The camera sampling strategy incorporates a progressive three-stage approach, specifically designed for both indoor and outdoor settings, to effectively ensure scene-wide 3D consistency. DreamScene enhances scene editing flexibility by combining objects and environments, enabling targeted adjustments. Extensive experiments showcase DreamScene's superiority over current state-of-the-art techniques, heralding its wide-ranging potential for diverse applications. 
 </details>
 
-[📄 Paper](https://arxiv.org/pdf/2403.09236.pdf) | | [🌐 Project Page](https://dreamscene-project.github.io/) 
+[📄 Paper (not yet)]() | [🌐 Project Page](https://dreamscene-project.github.io/) 
 
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
@@ -2179,6 +2179,7 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 3. [Two-minute explanation of 3DGS](https://youtu.be/HVv_IQKlafQ?si=w5c9XKHfKIBuXDLW)
 4. [Jupyter notebook tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM&t=2s)
 5. [Intro to gaussian splatting (and Unity plugin)](https://www.xuanprada.com/blog/2023/10/22/intro-to-gaussian-splatting)
+6. [Computerphile 3DGS explanation](https://youtu.be/VkIJbpdTujE?si=1GLjzBfF9LCuT22o)
 
 ## Credits
 
