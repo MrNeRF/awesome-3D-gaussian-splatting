@@ -49,6 +49,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 17, 2024**:
+ - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
+
  **March 16, 2024**:
  - SplatTV
  - Added 6 papers: GaussianGrasper, new splitting algorithm, Controllable Text-to-3D Generation, Spring-Mass 3DGS, Hyper-3DGS, and DreamScene
@@ -2139,7 +2142,7 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 - [PlayCanvas Viewer](https://github.com/playcanvas/model-viewer)
 - [gsplat.js](https://github.com/dylanebert/gsplat.js)
 - [Splatapult](https://github.com/hyperlogic/splatapult) - 3d gaussian splatting renderer in C++ and OpenGL, works with OpenXR for tethered VR
-- [VulkanSplatting](https://github.com/shg8/VulkanSplatting) - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute
+- [3DGS.cpp](https://github.com/shg8/3DGS.cpp) - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute, supporting Windows, macOS, Linux, iOS, and visionOS
 - [Gaussian Viewer](https://github.com/Florian-Barthel/gaussian_viewer) - Loads also Compact3D plys.
 - [spaTV](https://github.com/antimatter15/splaTV) - WebGL Viewer for 4D Gaussians (based on SpaceTime Gaussian) with demo [here](http://antimatter15.com/splaTV/)
 
