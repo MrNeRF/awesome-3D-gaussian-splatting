@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS,
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1112,6 +1112,15 @@ Creating 4D fields of Gaussian Splatting from images or videos is a challenging 
 
   [📄 Paper](https://drive.google.com/file/d/1_g4OBn5_ZBaLjXLUMQyN_wflhfYhpVwB/view) | [🌐 Project Page](https://zerg-overmind.github.io/GaussianFlow.github.io/) | [💻 Code (not yet)](https://github.com/Zerg-Overmind/GaussianFlow) | [🎥 Short Presentation](https://www.youtube.com/watch?v=0qRcjTw7-YU)
 
+### 3. Motion-aware 3D Gaussian Splatting for Efficient Dynamic Scene Reconstruction 
+**Authors**: Zhiyang Guo, Wengang Zhou, Li Li, Min Wang, Houqiang Li 
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has become an emerging tool for dynamic scene reconstruction. However, existing methods focus mainly on extending static 3DGS into a time-variant representation, while overlooking the rich motion information carried by 2D observations, thus suffering from performance degradation and model redundancy. To address the above problem, we propose a novel motion-aware enhancement framework for dynamic scene reconstruction, which mines useful motion cues from optical flow to improve different paradigms of dynamic 3DGS. Specifically, we first establish a correspondence between 3D Gaussian movements and pixel-level flow. Then a novel flow augmentation method is introduced with additional insights into uncertainty and loss collaboration. Moreover, for the prevalent deformation-based paradigm that presents a harder optimization problem, a transient-aware deformation auxiliary module is proposed. We conduct extensive experiments on both multi-view and monocular scenes to verify the merits of our work. Compared with the baselines, our method shows significant superiority in both rendering quality and efficiency. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11447) 
 
 ## 2023:
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
