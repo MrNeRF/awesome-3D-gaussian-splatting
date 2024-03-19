@@ -38,6 +38,8 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
   * [Game Engines](#game-engines)
   * [Viewers](#viewers)
   * [Utilities](#utilities)
+  * [Tutorial](#tutorial)
+  * [Framework](#framework)
   * [Other](#other)
 <br>
 
@@ -49,6 +51,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **March 19, 2024**:
+ - Added Pointrix
+ - Added 3DGS tutorial by the original authors 
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -2179,6 +2185,12 @@ Our code will be made publicly available.
 - [SuperSplat](https://github.com/playcanvas/super-splat) - Open source browser-based tool to clean/filter, reorient and compress .ply/.splat files
 - [SpectacularAI](https://github.com/SpectacularAI/point-cloud-tools) - Conversion scripts for different 3DGS conventions
 - [GSOPs](https://github.com/david-rhodes/GSOPs) - GSOPs (Gaussian Splat Operators) for SideFX Houdini. Import, edit, and export models, or generate synthetic training data
+
+### Tutorial
+- [Tutorial from the authors of 3DGS](https://3dgstutorial.github.io/)
+
+### Framework
+- [Pointrix](https://github.com/pointrix-project/pointrix) - A differentiable point-based rendering library with a focus on gaussian splatting
 
 ### Other
 - [My-exp-Gaussians](https://github.com/ingra14m/My-exp-Gaussians) - Enhancing the ability of 3D Gaussians to model complex scenes
