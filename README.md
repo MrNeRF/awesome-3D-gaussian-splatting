@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1486,6 +1486,16 @@ Reconstructing and simulating elastic objects from visual observations is crucia
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.09434) | [🌐 Project Page](https://zlicheng.com/spring_gaus/) | [💻 Code (not yet)](https://github.com/Colmar-zlicheng/Spring-Gaus)
+
+### 5. Texture-GS: Disentangling the Geometry and Texture for 3D Gaussian Splatting Editing  
+**Authors**: Tian-Xing Xu, Wenbo Hu, Yu-Kun Lai, Ying Shan, Song-Hai Zhang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting, emerging as a groundbreaking approach, has drawn increasing attention for its capabilities of high-fidelity reconstruction and real-time rendering. However, it couples the appearance and geometry of the scene within the Gaussian attributes, which hinders the flexibility of editing operations, such as texture swapping. To address this issue, we propose a novel approach, namely Texture-GS, to disentangle the appearance from the geometry by representing it as a 2D texture mapped onto the 3D surface, thereby facilitating appearance editing. Technically, the disentanglement is achieved by our proposed texture mapping module, which consists of a UV mapping MLP to learn the UV coordinates for the 3D Gaussian centers, a local Taylor expansion of the MLP to efficiently approximate the UV coordinates for the ray-Gaussian intersections, and a learnable texture to capture the fine-grained appearance. Extensive experiments on the DTU dataset demonstrate that our method not only facilitates high-fidelity appearance editing but also achieves real-time rendering on consumer-level devices, e.g. a single RTX 2080 Ti GPU. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.10050) | [🌐 Project Page](https://zlicheng.com/spring_gaus/) | [💻 Code (not yet)](https://github.com/Colmar-zlicheng/Spring-Gaus)
 
 ## 2023:
 ### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
