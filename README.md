@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1081,6 +1081,16 @@ We consider the problem of novel view synthesis (NVS) for dynamic scenes. Recent
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2402.03307.pdf) 
+
+### 2. GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation 
+**Authors**:  Quankai Gao, Qiangeng Xu, Zhe Cao, Ben Mildenhall, Wenchao Ma, Le Chen, Danhang Tang, Ulrich Neumann 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Creating 4D fields of Gaussian Splatting from images or videos is a challenging task due to its under-constrained nature. While the optimization can draw photometric reference from the input videos or be regulated by generative models, directly supervising Gaussian motions remains underexplored. In this paper, we introduce a novel concept, Gaussian flow, which connects the dynamics of 3D Gaussians and pixel velocities between consecutive frames. The Gaussian flow can be efficiently obtained by splatting Gaussian dynamics into the image space. This differentiable process enables direct dynamic supervision from optical flow. Our method significantly benefits 4D dynamic content generation and 4D novel view synthesis with Gaussian Splatting, especially for contents with rich motions that are hard to be handled by existing methods. The common color drifting issue that happens in 4D generation is also resolved with improved Guassian dynamics. Superior visual quality on extensive experiments demonstrates our method's effectiveness. Quantitative and qualitative evaluations show that our method achieves state-of-the-art results on both tasks of 4D generation and 4D novel view synthesis. 
+</details>
+
+  [📄 Paper](https://drive.google.com/file/d/1_g4OBn5_ZBaLjXLUMQyN_wflhfYhpVwB/view) | [🌐 Project Page](https://zerg-overmind.github.io/GaussianFlow.github.io/) | [💻 Code (not yet)](https://github.com/Zerg-Overmind/GaussianFlow) | [🎥 Short Presentation](https://www.youtube.com/watch?v=0qRcjTw7-YU)
 
 
 ## 2023:
