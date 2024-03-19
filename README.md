@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1640,6 +1640,16 @@ We have built a custom mobile multi-camera large-space dense light field capture
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.09973.pdf)
+
+### 14. Creating Seamless 3D Maps Using Radiance Fields 
+**Authors**: Sai Tarun Sathyan, Thomas B. Kinsman 
+<details span>
+<summary><b>Abstract</b></summary>
+It is desirable to create 3D object models and 3D maps from 2D input images for applications such as navigation, virtual tourism, and urban planning. The traditional methods of creating 3D maps, (such as photogrammetry), require a large number of images and odometry. Additionally, traditional methods have difficulty with reflective surfaces and specular reflections; windows and chrome in the scene can be problematic. Google Road View is a familiar application, which uses traditional methods to fuse a collection of 2D input images into the illusion of a 3D map. However, Google Road View does not create an actual 3D object model, only a collection of views. The objective of this work is to create an actual 3D object model using updated techniques. Neural Radiance Fields (NeRF[1]) has emerged as a potential solution, offering the capability to produce more precise and intricate 3D maps. Gaussian Splatting[4] is another contemporary technique. This investigation compares Neural Radiance Fields to Gaussian Splatting, and describes some of their inner workings. Our primary contribution is a method for improving the results of the 3D reconstructed models. Our results indicate that Gaussian Splatting was superior to the NeRF technique. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11364.pdf)
+
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
