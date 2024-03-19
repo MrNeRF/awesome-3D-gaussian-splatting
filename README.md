@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt
+ - Added x papers: Touch-GS, GGRt, FDGaussian
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -913,7 +913,7 @@ Text-to-3D generation represents an exciting field that has seen rapid advanceme
 [📄 Paper](https://arxiv.org/pdf/2403.09236.pdf) | [💻 Code (not yet)](https://github.com/yjhboy/Hyper3DG) 
 
 ### 9. DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling  
-**Authors**:  Haoran Li, Haolin Shi, Wenli Zhang, Wenjun Wu, Yong Liao, Lin Wang, Lik Hang Lee, Pengyuan Zhou  
+**Authors**: Haoran Li, Haolin Shi, Wenli Zhang, Wenjun Wu, Yong Liao, Lin Wang, Lik Hang Lee, Pengyuan Zhou  
 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -921,6 +921,16 @@ Text-to-3D scene generation holds immense potential for the gaming, film, and ar
 </details>
 
 [📄 Paper (not yet)]() | [🌐 Project Page](https://dreamscene-project.github.io/) 
+
+### 10. FDGaussian: Fast Gaussian Splatting from Single Image via Geometric-aware Diffusion Model  
+**Authors**: Qijun Feng, Zhen Xing, Zuxuan Wu, Yu-Gang Jiang  
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing detailed 3D objects from single-view images remains a challenging task due to the limited information available. In this paper, we introduce FDGaussian, a novel two-stage framework for single-image 3D reconstruction. Recent methods typically utilize pre-trained 2D diffusion models to generate plausible novel views from the input image, yet they encounter issues with either multi-view inconsistency or lack of geometric fidelity. To overcome these challenges, we propose an orthogonal plane decomposition mechanism to extract 3D geometric features from the 2D input, enabling the generation of consistent multi-view images. Moreover, we further accelerate the state-of-the-art Gaussian Splatting incorporating epipolar attention to fuse images from different viewpoints. We demonstrate that FDGaussian generates images with high consistency across different views and reconstructs high-quality 3D objects, both qualitatively and quantitatively.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2403.10242.pdf) | [🌐 Project Page](https://qjfeng.net/FDGaussian) 
 
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
