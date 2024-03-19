@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1917,6 +1917,15 @@ Implicit neural representation methods have shown impressive advancements in lea
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.10427.pdf)   
+
+### 16. GeoGaussian: Geometry-aware Gaussian Splatting for Scene Rendering 
+**Authors**: Yanyan Li, Chenyu Lyu, Yan Di, Guangyao Zhai, Gim Hee Lee, Federico Tombari 
+<details span>
+<summary><b>Abstract</b></summary>
+During the Gaussian Splatting optimization process, the scene's geometry can gradually deteriorate if its structure is not deliberately preserved, especially in non-textured regions such as walls, ceilings, and furniture surfaces. This degradation significantly affects the rendering quality of novel views that deviate significantly from the viewpoints in the training data. To mitigate this issue, we propose a novel approach called GeoGaussian. Based on the smoothly connected areas observed from point clouds, this method introduces a novel pipeline to initialize thin Gaussians aligned with the surfaces, where the characteristic can be transferred to new generations through a carefully designed densification strategy. Finally, the pipeline ensures that the scene's geometry and texture are maintained through constrained optimization processes with explicit geometry constraints. Benefiting from the proposed architecture, the generative ability of 3D Gaussians is enhanced, especially in structured regions. Our proposed pipeline achieves state-of-the-art performance in novel view synthesis and geometric reconstruction, as evaluated qualitatively and quantitatively on public datasets.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11324.pdf)   
 
 
 ## 2023:
