@@ -55,6 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  **March 19, 2024**:
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
+ - Added GauStudio
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -2069,6 +2070,15 @@ Radiance fields have demonstrated impressive performance in synthesizing novel v
 
   [📄 Paper](https://arxiv.org/pdf/2403.06912.pdf) | [🌐 Project Page](https://fictionarry.github.io/DNGaussian/) | [💻 Code](https://github.com/Fictionarry/DNGaussian) | [🎥 Short Presentation](https://www.youtube.com/watch?v=WKXCFNJHZ4o)
 
+### 2. Touch-GS: Visual-Tactile Supervised 3D Gaussian Splatting 
+**Authors**: Aiden Swann, Matthew Strong, Won Kyung Do, Gadiel Sznaier Camps, Mac Schwager, Monroe Kennedy III 
+<details span>
+<summary><b>Abstract</b></summary>
+In this work, we propose a novel method to supervise 3D Gaussian Splatting (3DGS) scenes using optical tactile sensors. Optical tactile sensors have become widespread in their use in robotics for manipulation and object representation; however, raw optical tactile sensor data is unsuitable to directly supervise a 3DGS scene. Our representation leverages a Gaussian Process Implicit Surface to implicitly represent the object, combining many touches into a unified representation with uncertainty. We merge this model with a monocular depth estimation network, which is aligned in a two stage process, coarsely aligning with a depth camera and then finely adjusting to match our touch data. For every training image, our method produces a corresponding fused depth and uncertainty map. Utilizing this additional information, we propose a new loss function, variance weighted depth supervised loss, for training the 3DGS scene model. We leverage the DenseTact optical tactile sensor and RealSense RGB-D camera to show that combining touch and vision in this manner leads to quantitatively and qualitatively better results than vision or touch alone in a few-view scene syntheses on opaque as well as on reflective and transparent objects.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.09875.pdf) | [🌐 Project Page](https://armlabstanford.github.io/touch-gs) 
+
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
@@ -2105,8 +2115,6 @@ We introduce the Splatter Image, an ultra-fast approach for monocular 3D object 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2312.13150.pdf) | [🌐 Project Page](https://szymanowiczs.github.io/splatter-image.html) | [💻 Code](https://github.com/szymanowiczs/splatter-image) | [🎥 Short Presentation](https://www.youtube.com/watch?v=pcKTf9SVh4g)
-
-<br>
 
 <br>
 
@@ -2191,6 +2199,7 @@ Our code will be made publicly available.
 
 ### Framework
 - [Pointrix](https://github.com/pointrix-project/pointrix) - A differentiable point-based rendering library with a focus on gaussian splatting
+- [GauStudio](https://github.com/GAP-LAB-CUHK-SZ/gaustudio) - Unified framework with different paper implementations
 
 ### Other
 - [My-exp-Gaussians](https://github.com/ingra14m/My-exp-Gaussians) - Enhancing the ability of 3D Gaussians to model complex scenes
