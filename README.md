@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -2263,6 +2263,15 @@ This paper presents a novel system designed for 3D mapping and visual relocaliza
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11367)
+
+### 3. Beyond Uncertainty: Risk-Aware Active View Acquisition for Safe Robot Navigation and 3D Scene Understanding with FisherRF  
+**Authors**: Guangyi Liu, Wen Jiang, Boshu Lei, Vivek Pandey, Kostas Daniilidis, Nader Motee 
+<details span>
+<summary><b>Abstract</b></summary>
+This work proposes a novel approach to bolster both the robot's risk assessment and safety measures while deepening its understanding of 3D scenes, which is achieved by leveraging Radiance Field (RF) models and 3D Gaussian Splatting. To further enhance these capabilities, we incorporate additional sampled views from the environment with the RF model. One of our key contributions is the introduction of Risk-aware Environment Masking (RaEM), which prioritizes crucial information by selecting the next-best-view that maximizes the expected information gain. This targeted approach aims to minimize uncertainties surrounding the robot's path and enhance the safety of its navigation. Our method offers a dual benefit: improved robot safety and increased efficiency in risk-aware 3D scene reconstruction and understanding. Extensive experiments in real-world scenarios demonstrate the effectiveness of our proposed approach, highlighting its potential to establish a robust and safety-focused framework for active robot exploration and 3D scene understanding. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11396)
 
 <br>
 
