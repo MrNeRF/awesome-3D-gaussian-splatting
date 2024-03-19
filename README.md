@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -2254,6 +2254,15 @@ In embodied vision, Instance ImageGoal Navigation (IIN) requires an agent to loc
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11625.pdf) | [🌐 Project Page](https://xiaohanlei.github.io/projects/GaussNav/) | [💻 Code (not yet)](https://xiaohanlei.github.io/projects/GaussNav/)
+
+### 2. 3DGS-ReLoc: 3D Gaussian Splatting for Map Representation and Visual ReLocalization 
+**Authors**: Peng Jiang, Gaurav Pandey, Srikanth Saripalli 
+<details span>
+<summary><b>Abstract</b></summary>
+This paper presents a novel system designed for 3D mapping and visual relocalization using 3D Gaussian Splatting. Our proposed method uses LiDAR and camera data to create accurate and visually plausible representations of the environment. By leveraging LiDAR data to initiate the training of the 3D Gaussian Splatting map, our system constructs maps that are both detailed and geometrically accurate. To mitigate excessive GPU memory usage and facilitate rapid spatial queries, we employ a combination of a 2D voxel map and a KD-tree. This preparation makes our method well-suited for visual localization tasks, enabling efficient identification of correspondences between the query image and the rendered image from the Gaussian Splatting map via normalized cross-correlation (NCC). Additionally, we refine the camera pose of the query image using feature-based matching and the Perspective-n-Point (PnP) technique. The effectiveness, adaptability, and precision of our system are demonstrated through extensive evaluation on the KITTI360 dataset. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11367)
 
 <br>
 
