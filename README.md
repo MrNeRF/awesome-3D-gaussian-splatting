@@ -22,7 +22,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Reviews](#reviews)
 - [SLAM](#slam)
 - [Sparse](#sparse)
-- [Navigation](#navigation)
+- [Navigation and Autonomous Driving](#navigation)
 - [Poses](#poses)
 - [Large-Scale](#large-scale)
 
@@ -58,7 +58,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS, Fed3DGS
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS, Fed3DGS, GaussNav, 3DGS-Calib 
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -2293,6 +2293,15 @@ This work proposes a novel approach to bolster both the robot's risk assessment 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11396)
+
+### 4. 3DGS-Calib: 3D Gaussian Splatting for Multimodal SpatioTemporal Calibration  
+**Authors**: Quentin Herau, Moussab Bennehar, Arthur Moreau, Nathan Piasco, Luis Roldao, Dzmitry Tsishkou, Cyrille Migniot, Pascal Vasseur, Cédric Demonceaux 
+<details span>
+<summary><b>Abstract</b></summary>
+Reliable multimodal sensor fusion algorithms re- quire accurate spatiotemporal calibration. Recently, targetless calibration techniques based on implicit neural representations have proven to provide precise and robust results. Nevertheless, such methods are inherently slow to train given the high compu- tational overhead caused by the large number of sampled points required for volume rendering. With the recent introduction of 3D Gaussian Splatting as a faster alternative to implicit representation methods, we propose to leverage this new ren- dering approach to achieve faster multi-sensor calibration. We introduce 3DGS-Calib, a new calibration method that relies on the speed and rendering accuracy of 3D Gaussian Splatting to achieve multimodal spatiotemporal calibration that is accurate, robust, and with a substantial speed-up compared to methods relying on implicit neural representations. We demonstrate the superiority of our proposal with experimental results on sequences from KITTI-360, a widely used driving dataset. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11577)
 
 <br>
 
