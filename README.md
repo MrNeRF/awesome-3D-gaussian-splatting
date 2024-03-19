@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -931,6 +931,16 @@ Reconstructing detailed 3D objects from single-view images remains a challenging
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2403.10242.pdf) | [🌐 Project Page](https://qjfeng.net/FDGaussian) 
+
+### 11. BAGS: Building Animatable Gaussian Splatting from a Monocular Video with Diffusion Priors  
+**Authors**: Tingyang Zhang, Qingzhe Gao, Weiyu Li, Libin Liu, Baoquan Chen  
+
+<details span>
+<summary><b>Abstract</b></summary>
+Animatable 3D reconstruction has significant applications across various fields, primarily relying on artists' handcraft creation. Recently, some studies have successfully constructed animatable 3D models from monocular videos. However, these approaches require sufficient view coverage of the object within the input video and typically necessitate significant time and computational costs for training and rendering. This limitation restricts the practical applications. In this work, we propose a method to build animatable 3D Gaussian Splatting from monocular video with diffusion priors. The 3D Gaussian representations significantly accelerate the training and rendering process, and the diffusion priors allow the method to learn 3D models with limited viewpoints. We also present the rigid regularization to enhance the utilization of the priors. We perform an extensive evaluation across various real-world videos, demonstrating its superior performance compared to the current state-of-the-art methods. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2403.11427)
 
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
