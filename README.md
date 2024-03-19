@@ -58,7 +58,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS, Fed3DGS, GaussNav, 3DGS-Calib 
+ - Added 23 papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS, Fed3DGS, GaussNav, 3DGS-Calib, and NEDS-SLAM 
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -2149,6 +2149,15 @@ Recent work has shown that 3D Gaussian-based SLAM enables high-quality reconstru
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11247.pdf)
+
+### 4. NEDS-SLAM: A Novel Neural Explicit Dense Semantic SLAM Framework using 3D Gaussian Splatting  
+**Authors**: Yiming Ji, Yang Liu, Guanghu Xie, Boyu Ma, Zongwu Xie 
+<details span>
+<summary><b>Abstract</b></summary>
+We propose NEDS-SLAM, an Explicit Dense semantic SLAM system based on 3D Gaussian representation, that enables robust 3D semantic mapping, accurate camera tracking, and high-quality rendering in real-time. In the system, we propose a Spatially Consistent Feature Fusion model to reduce the effect of erroneous estimates from pre-trained segmentation head on semantic reconstruction, achieving robust 3D semantic Gaussian mapping. Additionally, we employ a lightweight encoder-decoder to compress the high-dimensional semantic features into a compact 3D Gaussian representation, mitigating the burden of excessive memory consumption. Furthermore, we leverage the advantage of 3D Gaussian splatting, which enables efficient and differentiable novel view rendering, and propose a Virtual Camera View Pruning method to eliminate outlier GS points, thereby effectively enhancing the quality of scene representations. Our NEDS-SLAM method demonstrates competitive performance over existing dense semantic SLAM methods in terms of mapping and tracking accuracy on Replica and ScanNet datasets, while also showing excellent capabilities in 3D dense semantic mapping. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11679.pdf)
 
 ## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
