@@ -57,7 +57,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1870,6 +1870,16 @@ While neural rendering has demonstrated impressive capabilities in 3D scene reco
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11831.pdf) | [🌐 Project Page](https://lingzhezhao.github.io/BAD-Gaussians/) | [💻 Code](https://github.com/WU-CVGL/BAD-Gaussians/)  
+
+### 15. SWAG: Splatting in the Wild images with Appearance-conditioned Gaussians 
+**Authors**: Hiba Dahmani, Moussab Bennehar, Nathan Piasco, Luis Roldao, Dzmitry Tsishkou 
+<details span>
+<summary><b>Abstract</b></summary>
+Implicit neural representation methods have shown impressive advancements in learning 3D scenes from unstructured in-the-wild photo collections but are still limited by the large computational cost of volumetric rendering. More recently, 3D Gaussian Splatting emerged as a much faster alternative with superior rendering quality and training efficiency, especially for small-scale and object-centric scenarios. Nevertheless, this technique suffers from poor performance on unstructured in-the-wild data. To tackle this, we extend over 3D Gaussian Splatting to handle unstructured image collections. We achieve this by modeling appearance to seize photometric variations in the rendered images. Additionally, we introduce a new mechanism to train transient Gaussians to handle the presence of scene occluders in an unsupervised manner. Experiments on diverse photo collection scenes and multi-pass acquisition of outdoor landmarks show the effectiveness of our method over prior works achieving state-of-the-art results with improved efficiency. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.10427.pdf)   
+
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
