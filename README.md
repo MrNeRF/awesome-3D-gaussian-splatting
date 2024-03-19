@@ -24,6 +24,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Sparse](#sparse)
 - [Navigation](#navigation)
 - [Poses](#poses)
+- [Large-Scale](#large-scale)
 
 <br>
 
@@ -57,7 +58,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
  - Added GauStudio
- - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS,
+ - Added x papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS, Fed3DGS
 
  **March 17, 2024**:
  - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
@@ -1121,6 +1122,17 @@ Creating 4D fields of Gaussian Splatting from images or videos is a challenging 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11447) 
+
+### 4. Bridging 3D Gaussian and Mesh for Freeview Video Rendering 
+**Authors**: Yuting Xiao, Xuan Wang, Jiafei Li, Hongrui Cai, Yanbo Fan, Nan Xue, Minghui Yang, Yujun Shen, Shenghua Gao 
+
+<details span>
+<summary><b>Abstract</b></summary>
+This is only a preview version of GauMesh. Recently, primitive-based rendering has been proven to achieve convincing results in solving the problem of modeling and rendering the 3D dynamic scene from 2D images. Despite this, in the context of novel view synthesis, each type of primitive has its inherent defects in terms of representation ability. It is difficult to exploit the mesh to depict the fuzzy geometry. Meanwhile, the point-based splatting (e.g. the 3D Gaussian Splatting) method usually produces artifacts or blurry pixels in the area with smooth geometry and sharp textures. As a result, it is difficult, even not impossible, to represent the complex and dynamic scene with a single type of primitive. To this end, we propose a novel approach, GauMesh, to bridge the 3D Gaussian and Mesh for modeling and rendering the dynamic scenes. Given a sequence of tracked mesh as initialization, our goal is to simultaneously optimize the mesh geometry, color texture, opacity maps, a set of 3D Gaussians, and the deformation field. At a specific time, we perform α-blending on the RGB and opacity values based on the merged and re-ordered z-buffers from mesh and 3D Gaussian rasterizations. This produces the final rendering, which is supervised by the ground-truth image. Experiments demonstrate that our approach adapts the appropriate type of primitives to represent the different parts of the dynamic scene and outperforms all the baseline methods in both quantitative and qualitative comparisons without losing render speed.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11453) 
+
 
 ## 2023:
 ### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
@@ -2294,6 +2306,28 @@ This paper introduces GS-Pose, an end-to-end framework for locating and estimati
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.10683) 
+
+### 2. GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object Pose Estimation 
+**Authors**: Dingding Cai, Janne Heikkilä, Esa Rahtu 
+<details span>
+<summary><b>Abstract</b></summary>
+This paper introduces GS-Pose, an end-to-end framework for locating and estimating the 6D pose of objects. GS-Pose begins with a set of posed RGB images of a previously unseen object and builds three distinct representations stored in a database. At inference, GS-Pose operates sequentially by locating the object in the input image, estimating its initial 6D pose using a retrieval approach, and refining the pose with a render-and-compare method. The key insight is the application of the appropriate object representation at each stage of the process. In particular, for the refinement step, we utilize 3D Gaussian splatting, a novel differentiable rendering technique that offers high rendering speed and relatively low optimization time. Off-the-shelf toolchains and commodity hardware, such as mobile phones, can be used to capture new objects to be added to the database. Extensive evaluations on the LINEMOD and OnePose-LowTexture datasets demonstrate excellent performance, establishing the new state-of-the-art.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.10683) | [🌐 Project Page](https://dingdingcai.github.io/gs-pose/) | [💻 Code (not yet)](https://github.com/dingdingcai/GS-pose) | [🎥 Short Presentation](https://youtu.be/SnJazusDLM8)
+
+<br>
+
+## Large-Scale:
+## 2024:
+### 1. Fed3DGS: Scalable 3D Gaussian Splatting with Federated Learning
+**Authors**: Teppei Suzuki 
+<details span>
+<summary><b>Abstract</b></summary>
+In this work, we present Fed3DGS, a scalable 3D reconstruction framework based on 3D Gaussian splatting (3DGS) with federated learning. Existing city-scale reconstruction methods typically adopt a centralized approach, which gathers all data in a central server and reconstructs scenes. The approach hampers scalability because it places a heavy load on the server and demands extensive data storage when reconstructing scenes on a scale beyond city-scale. In pursuit of a more scalable 3D reconstruction, we propose a federated learning framework with 3DGS, which is a decentralized framework and can potentially use distributed computational resources across millions of clients. We tailor a distillation-based model update scheme for 3DGS and introduce appearance modeling for handling non-IID data in the scenario of 3D reconstruction with federated learning. We simulate our method on several large-scale benchmarks, and our method demonstrates rendered image quality comparable to centralized approaches. In addition, we also simulate our method with data collected in different seasons, demonstrating that our framework can reflect changes in the scenes and our appearance modeling captures changes due to seasonal variations. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11460) | [💻 Code](https://github.com/dingdingcai/GS-pose)
 
 ### 2. GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object Pose Estimation 
 **Authors**: Dingding Cai, Janne Heikkilä, Esa Rahtu 
