@@ -54,6 +54,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 20, 2024**:
+ - Added 4 papers: GVGEN, HUGS, RGBD GS-ICP SLAM, and High-Fidelity SLAM
+
  **March 19, 2024**:
  - Added Pointrix
  - Added 3DGS tutorial by the original authors 
@@ -953,6 +956,16 @@ Text-to-3D synthesis has recently seen intriguing advances by combining the text
 
 [📄 Paper](https://arxiv.org/pdf/2403.11273) | [🌐 Project Page](https://vlislab22.github.io/BrightDreamer/) | [💻 Code](https://github.com/lutao2021/BrightDreamer)
 
+### 13. GVGEN: Text-to-3D Generation with Volumetric Representation  
+**Authors**: Xianglong He, Junyi Chen, Sida Peng, Di Huang, Yangguang Li, Xiaoshui Huang, Chun Yuan, Wanli Ouyang, Tong He  
+
+<details span>
+<summary><b>Abstract</b></summary>
+In recent years, 3D Gaussian splatting has emerged as a powerful technique for 3D reconstruction and generation, known for its fast and high-quality rendering capabilities. To address these shortcomings, this paper introduces a novel diffusion-based framework, GVGEN, designed to efficiently generate 3D Gaussian representations from text input. We propose two innovative techniques:(1) Structured Volumetric Representation. We first arrange disorganized 3D Gaussian points as a structured form GaussianVolume. This transformation allows the capture of intricate texture details within a volume composed of a fixed number of Gaussians. To better optimize the representation of these details, we propose a unique pruning and densifying method named the Candidate Pool Strategy, enhancing detail fidelity through selective optimization. (2) Coarse-to-fine Generation Pipeline. To simplify the generation of GaussianVolume and empower the model to generate instances with detailed 3D geometry, we propose a coarse-to-fine pipeline. It initially constructs a basic geometric structure, followed by the prediction of complete Gaussian attributes. Our framework, GVGEN, demonstrates superior performance in qualitative and quantitative assessments compared to existing 3D generation methods. Simultaneously, it maintains a fast generation speed (∼7 seconds), effectively striking a balance between quality and efficiency. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2403.12957) | [🌐 Project Page](https://gvgen.github.io/) | [💻 Code (not yet)](https://github.com/GVGEN/GVGEN)
+
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
@@ -1111,7 +1124,7 @@ We consider the problem of novel view synthesis (NVS) for dynamic scenes. Recent
 Creating 4D fields of Gaussian Splatting from images or videos is a challenging task due to its under-constrained nature. While the optimization can draw photometric reference from the input videos or be regulated by generative models, directly supervising Gaussian motions remains underexplored. In this paper, we introduce a novel concept, Gaussian flow, which connects the dynamics of 3D Gaussians and pixel velocities between consecutive frames. The Gaussian flow can be efficiently obtained by splatting Gaussian dynamics into the image space. This differentiable process enables direct dynamic supervision from optical flow. Our method significantly benefits 4D dynamic content generation and 4D novel view synthesis with Gaussian Splatting, especially for contents with rich motions that are hard to be handled by existing methods. The common color drifting issue that happens in 4D generation is also resolved with improved Guassian dynamics. Superior visual quality on extensive experiments demonstrates our method's effectiveness. Quantitative and qualitative evaluations show that our method achieves state-of-the-art results on both tasks of 4D generation and 4D novel view synthesis. 
 </details>
 
-  [📄 Paper](https://drive.google.com/file/d/1_g4OBn5_ZBaLjXLUMQyN_wflhfYhpVwB/view) | [🌐 Project Page](https://zerg-overmind.github.io/GaussianFlow.github.io/) | [💻 Code (not yet)](https://github.com/Zerg-Overmind/GaussianFlow) | [🎥 Short Presentation](https://www.youtube.com/watch?v=0qRcjTw7-YU)
+  [📄 Paper](https://arxiv.org/pdf/2403.12365) | [🌐 Project Page](https://zerg-overmind.github.io/GaussianFlow.github.io/) | [💻 Code (not yet)](https://github.com/Zerg-Overmind/GaussianFlow) | [🎥 Short Presentation](https://www.youtube.com/watch?v=0qRcjTw7-YU)
 
 ### 3. Motion-aware 3D Gaussian Splatting for Efficient Dynamic Scene Reconstruction 
 **Authors**: Zhiyang Guo, Wengang Zhou, Li Li, Min Wang, Houqiang Li 
@@ -2159,6 +2172,24 @@ We propose NEDS-SLAM, an Explicit Dense semantic SLAM system based on 3D Gaussia
 
   [📄 Paper](https://arxiv.org/pdf/2403.11679.pdf)
 
+### 5. High-Fidelity SLAM Using Gaussian Splatting with Rendering-Guided Densification and Regularized Optimization
+**Authors**: Shuo Sun, Malcolm Mielle, Achim J. Lilienthal, Martin Magnusson 
+<details span>
+<summary><b>Abstract</b></summary>
+We propose a dense RGBD SLAM system based on 3D Gaussian Splatting that provides metrically accurate pose tracking and visually realistic reconstruction. To this end, we first propose a Gaussian densification strategy based on the rendering loss to map unobserved areas and refine reobserved areas. Second, we introduce extra regularization parameters to alleviate the forgetting problem in the continuous mapping problem, where parameters tend to overfit the latest frame and result in decreasing rendering quality for previous frames. Both mapping and tracking are performed with Gaussian parameters by minimizing re-rendering loss in a differentiable way. Compared to recent neural and concurrently developed gaussian splatting RGBD SLAM baselines, our method achieves state-of-the-art results on the synthetic dataset Replica and competitive results on the real-world dataset TUM. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.12535.pdf)
+
+### 6. RGBD GS-ICP SLAM  
+**Authors**: Seongbo Ha, Jiung Yeon, Hyeonwoo Yu 
+<details span>
+<summary><b>Abstract</b></summary>
+Simultaneous Localization and Mapping (SLAM) with dense representation plays a key role in robotics, Virtual Reality (VR), and Augmented Reality (AR) applications. Recent advancements in dense representation SLAM have highlighted the potential of leveraging neural scene representation and 3D Gaussian representation for high-fidelity spatial representation. In this paper, we propose a novel dense representation SLAM approach with a fusion of Generalized Iterative Closest Point (G-ICP) and 3D Gaussian Splatting (3DGS). In contrast to existing methods, we utilize a single Gaussian map for both tracking and mapping, resulting in mutual benefits. Through the exchange of covariances between tracking and mapping processes with scale alignment techniques, we minimize redundant computations and achieve an efficient system. Additionally, we enhance tracking accuracy and mapping quality through our keyframe selection methods. Experimental results demonstrate the effectiveness of our approach, showing an incredibly fast speed up to 107 FPS (for the entire system) and superior quality of the reconstructed map. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.12550.pdf)
+
 ## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
@@ -2311,6 +2342,15 @@ Reliable multimodal sensor fusion algorithms re- quire accurate spatiotemporal c
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11577)
+
+### 5. HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting  
+**Authors**: Hongyu Zhou, Jiahao Shao, Lu Xu, Dongfeng Bai, Weichao Qiu, Bingbing Liu, Yue Wang, Andreas Geiger, Yiyi Liao 
+<details span>
+<summary><b>Abstract</b></summary>
+  Holistic understanding of urban scenes based on RGB images is a challenging yet important problem. It encompasses understanding both the geometry and appearance to enable novel view synthesis, parsing semantic labels, and tracking moving objects. Despite considerable progress, existing approaches often focus on specific aspects of this task and require additional inputs such as LiDAR scans or manually annotated 3D bounding boxes. In this paper, we introduce a novel pipeline that utilizes 3D Gaussian Splatting for holistic urban scene understanding. Our main idea involves the joint optimization of geometry, appearance, semantics, and motion using a combination of static and dynamic 3D Gaussians, where moving object poses are regularized via physical constraints. Our approach offers the ability to render new viewpoints in real-time, yielding 2D and 3D semantic information with high accuracy, and reconstruct dynamic scenes, even in scenarios where 3D bounding box detection are highly noisy. Experimental results on KITTI, KITTI-360, and Virtual KITTI 2 demonstrate the effectiveness of our approach. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.12722.pdf) | [🌐 Project Page](https://xdimlab.github.io/hugs_website/) | [💻 Code (not yet)]()
 
 <br>
 
