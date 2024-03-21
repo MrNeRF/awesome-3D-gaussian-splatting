@@ -2419,7 +2419,7 @@ This paper introduces GS-Pose, an end-to-end framework for locating and estimati
 - [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
 - [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
 - [taichi-splatting: pytorch/taichi](https://github.com/uc-vision/taichi-splatting)
-- [OpenSplat: C++/CUDA](https://github.com/pierotofy/OpenSplat)
+- [OpenSplat: C++/CPU or GPU](https://github.com/pierotofy/OpenSplat)
 
 ### 2D Gaussian Splatting
 - [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
