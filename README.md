@@ -54,6 +54,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 24, 2024**:
+ - Added paper: Gaussian Frosting
+
  **March 20, 2024**:
  - Added 4 papers: GVGEN, HUGS, RGBD GS-ICP SLAM, and High-Fidelity SLAM
 
@@ -1145,6 +1148,7 @@ This is only a preview version of GauMesh. Recently, primitive-based rendering h
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11453) 
+  
 
 
 ## 2023:
@@ -1386,6 +1390,17 @@ The advent of 3D Gaussian Splatting (3DGS) has revolutionized 3D editing, offeri
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11868.pdf)
+
+### 7. Gaussian Frosting: Editable Complex Radiance Fields with Real-Time Rendering
+**Authors**: Antoine Guédon, Vincent Lepetit
+
+<details span>
+<summary><b>Abstract</b></summary>
+We propose Gaussian Frosting, a novel mesh-based representation for high-quality rendering and editing of complex 3D effects in real-time. Our approach builds on the recent 3D Gaussian Splatting framework, which optimizes a set of 3D Gaussians to approximate a radiance field from images. We propose first extracting a base mesh from Gaussians during optimization, then building and refining an adaptive layer of Gaussians with a variable thickness around the mesh to better capture the fine details and volumetric effects near the surface, such as hair or grass. We call this layer Gaussian Frosting, as it resembles a coating of frosting on a cake. The fuzzier the material, the thicker the frosting. We also introduce a parameterization of the Gaussians to enforce them to stay inside the frosting layer and automatically adjust their parameters when deforming, rescaling, editing or animating the mesh. Our representation allows for efficient rendering using Gaussian splatting, as well as editing and animation by modifying the base mesh. We demonstrate the effectiveness of our method on various synthetic and real scenes, and show that it outperforms existing surface-based approaches. We will release our code and a web-based viewer as additional contributions.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2403.14554) | [🌐 Project Page](https://anttwo.github.io/frosting/) | [💻 Code (not yet)](https://github.com/Anttwo/Frosting) | [🎥 Short Presentation](https://youtu.be/h7LeWq8sG78)
+  
 
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
