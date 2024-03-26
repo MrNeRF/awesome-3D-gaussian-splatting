@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 26, 2024**
- - Added paper: latentSplat, GS on the Move, RadSplat
+ - Added paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC
 
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
@@ -798,6 +798,15 @@ Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.02436.pdf) | [🌐 Project Page](https://keksboter.github.io/c3dgs/) | [💻 Code](https://github.com/KeKsBoTer/c3dgs) 
+
+### 2. HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression 
+**Authors**: Yihang Chen, Qianyi Wu, Jianfei Cai, Mehrtash Harandi, Weiyao Lin 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has emerged as a promising framework for novel view synthesis, boasting rapid rendering speed with high fidelity. However, the substantial Gaussians and their associated attributes necessitate effective compression techniques. Nevertheless, the sparse and unorganized nature of the point cloud of Gaussians (or anchors in our paper) presents challenges for compression. To address this, we make use of the relations between the unorganized anchors and the structured hash grid, leveraging their mutual information for context modeling, and propose a Hash-grid Assisted Context (HAC) framework for highly compact 3DGS representation. Our approach introduces a binary hash grid to establish continuous spatial consistencies, allowing us to unveil the inherent spatial relations of anchors through a carefully designed context model. To facilitate entropy coding, we utilize Gaussian distributions to accurately estimate the probability of each quantized attribute, where an adaptive quantization module is proposed to enable high-precision quantization of these attributes for improved fidelity restoration. Additionally, we incorporate an adaptive masking strategy to eliminate invalid Gaussians and anchors. Importantly, our work is the pioneer to explore context-based compression for 3DGS representation, resulting in a remarkable size reduction of over 75× compared to vanilla 3DGS, while simultaneously improving fidelity, and achieving over 11× size reduction over SOTA 3DGS compression approach Scaffold-GS.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.02436.pdf) | [🌐 Project Page](https://yihangchen-ee.github.io/project_hac/) | [💻 Code](https://github.com/YihangChen-ee/HAC) 
 
 ## 2023:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
