@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 26, 2024**
- - Added paper: latentSplat, GS on the Move, 
+ - Added paper: latentSplat, GS on the Move, RadSplat
 
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
@@ -2027,6 +2027,15 @@ High-quality scene reconstruction and novel view synthesis based on Gaussian Spl
 
   [📄 Paper](https://arxiv.org/pdf/2403.13327.pdf) | [💻 Code](https://github.com/SpectacularAI/3dgs-deblur) 
 
+### 19. RadSplat: Radiance Field-Informed Gaussian Splatting for Robust Real-Time Rendering with 900+ FPS  
+**Authors**: Michael Niemeyer, Fabian Manhardt, Marie-Julie Rakotosaona, Michael Oechsle, Daniel Duckworth, Rama Gosula, Keisuke Tateno, John Bates, Dominik Kaeser, Federico Tombari 
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in view synthesis and real-time rendering have achieved photorealistic quality at impressive rendering speeds. While Radiance Field-based methods achieve state-of-the-art quality in challenging scenarios such as in-the-wild captures and large-scale scenes, they often suffer from excessively high compute requirements linked to volumetric rendering. Gaussian Splatting-based methods, on the other hand, rely on rasterization and naturally achieve real-time rendering but suffer from brittle optimization heuristics that underperform on more challenging scenes. In this work, we present RadSplat, a lightweight method for robust real-time rendering of complex scenes. Our main contributions are threefold. First, we use radiance fields as a prior and supervision signal for optimizing point-based scene representations, leading to improved quality and more robust optimization. Next, we develop a novel pruning technique reducing the overall point count while maintaining high quality, leading to smaller and more compact scene representations with faster inference speeds. Finally, we propose a novel test-time filtering approach that further accelerates rendering and allows to scale to larger, house-sized scenes. We find that our method enables state-of-the-art synthesis of complex captures at 900+ FPS.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.13806.pdf) | [🌐 Project Page](https://m-niemeyer.github.io/radsplat/) 
+
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
@@ -2036,7 +2045,7 @@ High-quality scene reconstruction and novel view synthesis based on Gaussian Spl
 Recently, 3D Gaussian Splatting (3DGS) has demonstrated impressive novel view synthesis results, reaching high fidelity and efficiency. However, strong artifacts can be observed when changing the sampling rate, e.g., by changing focal length or camera distance. We find that the source for this phenomenon can be attributed to the lack of 3D frequency constraints and the usage of a 2D dilation filter. To address this problem, we introduce a 3D smoothing filter which constrains the size of the 3D Gaussian primitives based on the maximal sampling frequency induced by the input views, eliminating high frequency artifacts when zooming in. Moreover, replacing 2D dilation with a 2D Mip filter, which simulates a 2D box filter, effectively mitigates aliasing and dilation issues. Our comprehensive evaluation, including scenarios such as training on single-scale images and testing on multiple scales, validates the effectiveness of our approach. 
 </details>
 
-  [📄 Paper](https://drive.google.com/file/d/1Q7KgGbynzcIEyFJV1I17HgrYz6xrOwRJ/view) | [🌐 Project Page](https://niujinshuchong.github.io/mip-splatting/) | [💻 Code](https://github.com/autonomousvision/mip-splatting) 
+  [📄 Paper](https://arxiv.org/pdf/2311.16493.pdf) | [🌐 Project Page](https://niujinshuchong.github.io/mip-splatting/) | [💻 Code](https://github.com/autonomousvision/mip-splatting) 
 
 ### 2. Relightable 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing 
 **Authors**: Jian Gao, Chun Gu, Youtian Lin, Hao Zhu, Xun Cao, Li Zhang, Yao Yao 
