@@ -54,6 +54,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 26, 2024**
+ - Added paper: latentSplat
+
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
 
@@ -2375,6 +2378,15 @@ Reliable multimodal sensor fusion algorithms re- quire accurate spatiotemporal c
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.12722.pdf) | [🌐 Project Page](https://xdimlab.github.io/hugs_website/) | [💻 Code (not yet)]()
+
+### 6. latentSplat: Autoencoding Variational Gaussians for Fast Generalizable 3D Reconstruction
+**Authors**: Christopher Wewer, Kevin Raj, Eddy Ilg, Bernt Schiele, Jan Eric Lenssen
+<details span>
+<summary><b>Abstract</b></summary>
+We present latentSplat, a method to predict semantic Gaussians in a 3D latent space that can be splatted and decoded by a light-weight generative 2D architecture. Existing methods for generalizable 3D reconstruction either do not enable fast inference of high resolution novel views due to slow volume rendering, or are limited to interpolation of close input views, even in simpler settings with a single central object, where 360-degree generalization is possible. In this work, we combine a regression-based approach with a generative model, moving towards both of these capabilities within the same method, trained purely on readily available real video data. The core of our method are variational 3D Gaussians, a representation that efficiently encodes varying uncertainty within a latent space consisting of 3D feature Gaussians. From these Gaussians, specific instances can be sampled and rendered via efficient Gaussian splatting and a fast, generative decoder network. We show that latentSplat outperforms previous works in reconstruction quality and generalization, while being fast and scalable to high-resolution data.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.16292.pdf) | [🌐 Project Page](https://geometric-rl.mpi-inf.mpg.de/latentsplat/) | [💻 Code (not yet)]() 
 
 <br>
 
