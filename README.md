@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 26, 2024**
- - Added paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D
+ - Added paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS
 
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
@@ -2074,6 +2074,15 @@ In this study, we explore the challenge of efficiently representing scenes with 
 
   [📄 Paper](https://arxiv.org/pdf/2403.14166.pdf)
 
+### 21. Pixel-GS: Density Control with Pixel-aware Gradient for 3D Gaussian Splatting  
+**Authors**: Zheng Zhang, Wenbo Hu, Yixing Lao, Tong He, Hengshuang Zhao 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has demonstrated impressive novel view synthesis results while advancing real-time rendering performance. However, it relies heavily on the quality of the initial point cloud, resulting in blurring and needle-like artifacts in areas with insufficient initializing points. This is mainly attributed to the point cloud growth condition in 3DGS that only considers the average gradient magnitude of points from observable views, thereby failing to grow for large Gaussians that are observable for many viewpoints while many of them are only covered in the boundaries. To this end, we propose a novel method, named Pixel-GS, to take into account the number of pixels covered by the Gaussian in each view during the computation of the growth condition. We regard the covered pixel numbers as the weights to dynamically average the gradients from different views, such that the growth of large Gaussians can be prompted. As a result, points within the areas with insufficient initializing points can be grown more effectively, leading to a more accurate and detailed reconstruction. In addition, we propose a simple yet effective strategy to scale the gradient field according to the distance to the camera, to suppress the growth of floaters near the camera. Extensive experiments both qualitatively and quantitatively demonstrate that our method achieves state-of-the-art rendering quality while maintaining real-time rendering speed, on the challenging Mip-NeRF 360 and Tanks & Temples datasets.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.15530.pdf)
+
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
@@ -2263,6 +2272,15 @@ Simultaneous Localization and Mapping (SLAM) with dense representation plays a k
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.12550.pdf)
+
+### 7. EndoGSLAM: Real-Time Dense Reconstruction and Tracking in Endoscopic Surgeries using Gaussian Splatting  
+**Authors**: Kailing Wang, Chen Yang, Yuehao Wang, Sikuang Li, Yan Wang, Qi Dou, Xiaokang Yang, Wei Shen 
+<details span>
+<summary><b>Abstract</b></summary>
+Precise camera tracking, high-fidelity 3D tissue reconstruction, and real-time online visualization are critical for intrabody medical imaging devices such as endoscopes and capsule robots. However, existing SLAM (Simultaneous Localization and Mapping) methods often struggle to achieve both complete high-quality surgical field reconstruction and efficient computation, restricting their intraoperative applications among endoscopic surgeries. In this paper, we introduce EndoGSLAM, an efficient SLAM approach for endoscopic surgeries, which integrates streamlined Gaussian representation and differentiable rasterization to facilitate over 100 fps rendering speed during online camera tracking and tissue reconstructing. Extensive experiments show that EndoGSLAM achieves a better trade-off between intraoperative availability and reconstruction quality than traditional or neural SLAM approaches, showing tremendous potential for endoscopic surgeries
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.15124.pdf) | [🌐 Project Page](https://endogslam.loping151.com/) | [💻 Code (not yet)](https://github.com/endogslam/EndoGSLAM) |
 
 ## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
