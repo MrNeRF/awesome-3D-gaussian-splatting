@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 26, 2024**
- - Added paper: latentSplat
+ - Added paper: latentSplat, GS on the Move, 
 
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
@@ -2017,6 +2017,15 @@ The 3D Gaussian Splatting (3DGS) gained its popularity recently by combining the
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11056.pdf)   
+
+### 18. Gaussian Splatting on the Move: Blur and Rolling Shutter Compensation for Natural Camera Motion 
+**Authors**: Otto Seiskari, Jerry Ylilammi, Valtteri Kaatrasalo, Pekka Rantalankila, Matias Turkulainen, Juho Kannala, Esa Rahtu, Arno Solin 
+<details span>
+<summary><b>Abstract</b></summary>
+High-quality scene reconstruction and novel view synthesis based on Gaussian Splatting (3DGS) typically require steady, high-quality photographs, often impractical to capture with handheld cameras. We present a method that adapts to camera motion and allows high-quality scene reconstruction with handheld video data suffering from motion blur and rolling shutter distortion. Our approach is based on detailed modelling of the physical image formation process and utilizes velocities estimated using visual-inertial odometry (VIO). Camera poses are considered non-static during the exposure time of a single image frame and camera poses are further optimized in the reconstruction process. We formulate a differentiable rendering pipeline that leverages screen space approximation to efficiently incorporate rolling-shutter and motion blur effects into the 3DGS framework. Our results with both synthetic and real data demonstrate superior performance in mitigating camera motion over existing methods, thereby advancing 3DGS in naturalistic settings.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.13327.pdf) | [💻 Code](https://github.com/SpectacularAI/3dgs-deblur) 
 
 
 ## 2023:
