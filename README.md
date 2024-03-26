@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 26, 2024**
- - Added paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS, Semantic Gaussians, Gaussian in the Wild, 
+ - Added 13 paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS, Semantic Gaussians, Gaussian in the Wild, CG-SLAM, and GSDF
 
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
@@ -2102,6 +2102,15 @@ Novel view synthesis from unconstrained in-the-wild images remains a meaningful 
 
   [📄 Paper](https://arxiv.org/abs/2403.15704) | [🌐 Project Page](https://eastbeanzhang.github.io/GS-W/) | [💻 Code (not yet)](https://github.com/EastbeanZhang/Gaussian-Wild) | [🎥 Short Presentation](https://www.youtube.com/watch?v=BNIX-OmIzgo)
 
+### 23. GSDF: 3DGS Meets SDF for Improved Rendering and Reconstruction   
+**Authors**: Mulin Yu, Tao Lu, Linning Xu, Lihan Jiang, Yuanbo Xiangli, Bo Dai 
+<details span>
+<summary><b>Abstract</b></summary>
+Presenting a 3D scene from multiview images remains a core and long-standing challenge in computer vision and computer graphics. Two main requirements lie in rendering and reconstruction. Notably, SOTA rendering quality is usually achieved with neural volumetric rendering techniques, which rely on aggregated point/primitive-wise color and neglect the underlying scene geometry. Learning of neural implicit surfaces is sparked from the success of neural rendering. Current works either constrain the distribution of density fields or the shape of primitives, resulting in degraded rendering quality and flaws on the learned scene surfaces. The efficacy of such methods is limited by the inherent constraints of the chosen neural representation, which struggles to capture fine surface details, especially for larger, more intricate scenes. To address these issues, we introduce GSDF, a novel dual-branch architecture that combines the benefits of a flexible and efficient 3D Gaussian Splatting (3DGS) representation with neural Signed Distance Fields (SDF). The core idea is to leverage and enhance the strengths of each branch while alleviating their limitation through mutual guidance and joint supervision. We show on diverse scenes that our design unlocks the potential for more accurate and detailed surface reconstructions, and at the meantime benefits 3DGS rendering with structures that are more aligned with the underlying geometry. 
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2403.16964) | [🌐 Project Page](https://city-super.github.io/GSDF/) | [💻 Code (not yet)](https://github.com/city-super/GSDF) 
+
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
@@ -2299,7 +2308,16 @@ Simultaneous Localization and Mapping (SLAM) with dense representation plays a k
 Precise camera tracking, high-fidelity 3D tissue reconstruction, and real-time online visualization are critical for intrabody medical imaging devices such as endoscopes and capsule robots. However, existing SLAM (Simultaneous Localization and Mapping) methods often struggle to achieve both complete high-quality surgical field reconstruction and efficient computation, restricting their intraoperative applications among endoscopic surgeries. In this paper, we introduce EndoGSLAM, an efficient SLAM approach for endoscopic surgeries, which integrates streamlined Gaussian representation and differentiable rasterization to facilitate over 100 fps rendering speed during online camera tracking and tissue reconstructing. Extensive experiments show that EndoGSLAM achieves a better trade-off between intraoperative availability and reconstruction quality than traditional or neural SLAM approaches, showing tremendous potential for endoscopic surgeries
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.15124.pdf) | [🌐 Project Page](https://endogslam.loping151.com/) | [💻 Code (not yet)](https://github.com/endogslam/EndoGSLAM) |
+  [📄 Paper](https://arxiv.org/pdf/2403.15124.pdf) | [🌐 Project Page](https://endogslam.loping151.com/) | [💻 Code (not yet)](https://github.com/endogslam/EndoGSLAM)
+
+### 8. CG-SLAM: Efficient Dense RGB-D SLAM in a Consistent Uncertainty-aware 3D Gaussian Field  
+**Authors**: Jiarui Hu, Xianhao Chen, Boyin Feng, Guanglin Li, Liangjing Yang, Hujun Bao, Guofeng Zhang, Zhaopeng Cui 
+<details span>
+<summary><b>Abstract</b></summary>
+Recently neural radiance fields (NeRF) have been widely exploited as 3D representations for dense simultaneous localization and mapping (SLAM). Despite their notable successes in surface modeling and novel view synthesis, existing NeRF-based methods are hindered by their computationally intensive and time-consuming volume rendering pipeline. This paper presents an efficient dense RGB-D SLAM system, i.e., CG-SLAM, based on a novel uncertainty-aware 3D Gaussian field with high consistency and geometric stability. Through an in-depth analysis of Gaussian Splatting, we propose several techniques to construct a consistent and stable 3D Gaussian field suitable for tracking and mapping. Additionally, a novel depth uncertainty model is proposed to ensure the selection of valuable Gaussian primitives during optimization, thereby improving tracking efficiency and accuracy. Experiments on various datasets demonstrate that CG-SLAM achieves superior tracking and mapping performance with a notable tracking speed of up to 15 Hz. We will make our source code publicly available. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.16095) | [🌐 Project Page](https://zju3dv.github.io/cg-slam/) | [💻 Code (not yet)](https://github.com/hjr37/CG-SLAM)
 
 ## 2023:
 ### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
