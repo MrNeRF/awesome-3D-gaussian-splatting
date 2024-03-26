@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 26, 2024**
- - Added paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS
+ - Added paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS, Semantic Gaussians, Gaussian in the Wild, 
 
  **March 24, 2024**:
  - Added paper: Gaussian Frosting
@@ -1433,6 +1433,16 @@ We propose Gaussian Frosting, a novel mesh-based representation for high-quality
 
   [📄 Paper](https://arxiv.org/abs/2403.14554) | [🌐 Project Page](https://anttwo.github.io/frosting/) | [💻 Code (not yet)](https://github.com/Anttwo/Frosting) | [🎥 Short Presentation](https://youtu.be/h7LeWq8sG78)
   
+### 8. Semantic Gaussians: Open-Vocabulary Scene Understanding with 3D Gaussian Splatting 
+**Authors**: Jun Guo, Xiaojian Ma, Yue Fan, Huaping Liu, Qing Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+Open-vocabulary 3D scene understanding presents a significant challenge in computer vision, withwide-ranging applications in embodied agents and augmented reality systems. Previous approaches haveadopted Neural Radiance Fields (NeRFs) to analyze 3D scenes. In this paper, we introduce SemanticGaussians, a novel open-vocabulary scene understanding approach based on 3D Gaussian Splatting. Our keyidea is distilling pre-trained 2D semantics into 3D Gaussians. We design a versatile projection approachthat maps various 2Dsemantic features from pre-trained image encoders into a novel semantic component of 3D Gaussians, withoutthe additional training required by NeRFs. We further build a 3D semantic network that directly predictsthe semantic component from raw 3D Gaussians for fast inference. We explore several applications ofSemantic Gaussians: semantic segmentation on ScanNet-20, where our approach attains a 4.2% mIoU and 4.0%mAcc improvement over prior open-vocabulary scene understanding counterparts; object part segmentation,sceneediting, and spatial-temporal segmentation with better qualitative results over 2D and 3D baselines,highlighting its versatility and effectiveness on supporting diverse downstream tasks.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.15624) | [🌐 Project Page](https://semantic-gaussians.github.io/) | [💻 Code (not yet)]() 
+  
 
 ## 2023:
 ### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
@@ -2082,6 +2092,15 @@ In this study, we explore the challenge of efficiently representing scenes with 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.15530.pdf)
+
+### 22. Gaussian in the Wild: 3D Gaussian Splatting for Unconstrained Image Collections   
+**Authors**: Dongbin Zhang, Chuming Wang, Weitao Wang, Peihao Li, Minghan Qin, Haoqian Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+Novel view synthesis from unconstrained in-the-wild images remains a meaningful but challenging task. The photometric variation and transient occluders in those unconstrained images make it difficult to reconstruct the original scene accurately. Previous approaches tackle the problem by introducing a global appearance feature in Neural Radiance Fields (NeRF). However, in the real world, the unique appearance of each tiny point in a scene is determined by its independent intrinsic material attributes and the varying environmental impacts it receives. Inspired by this fact, we propose Gaussian in the wild (GS-W), a method that uses 3D Gaussian points to reconstruct the scene and introduces separated intrinsic and dynamic appearance feature for each point, capturing the unchanged scene appearance along with dynamic variation like illumination and weather. Additionally, an adaptive sampling strategy is presented to allow each Gaussian point to focus on the local and detailed information more effectively. We also reduce the impact of transient occluders using a 2D visibility map. More experiments have demonstrated better reconstruction quality and details of GS-W compared to previous methods, with a 1000× increase in rendering speed. 
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2403.15704) | [🌐 Project Page](https://eastbeanzhang.github.io/GS-W/) | [💻 Code (not yet)](https://github.com/EastbeanZhang/Gaussian-Wild) | [🎥 Short Presentation](https://www.youtube.com/watch?v=BNIX-OmIzgo)
 
 
 ## 2023:
