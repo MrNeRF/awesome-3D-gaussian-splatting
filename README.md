@@ -972,6 +972,16 @@ In recent years, 3D Gaussian splatting has emerged as a powerful technique for 3
 
 [📄 Paper](https://arxiv.org/pdf/2403.12957) | [🌐 Project Page](https://gvgen.github.io/) | [💻 Code (not yet)](https://github.com/GVGEN/GVGEN)
 
+### 14. SyncTweedies: A General Generative Framework Based on Synchronized Diffusions   
+**Authors**: Jaihoon Kim, Juil Koo, Kyeongmin Yeo, Minhyuk Sung  
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce a general framework for generating diverse visual content, including ambiguous images, panorama images, mesh textures, and Gaussian splat textures, by synchronizing multiple diffusion processes. We present exhaustive investigation into all possible scenarios for synchronizing multiple diffusion processes through a canonical space and analyze their characteristics across applications. In doing so, we reveal a previously unexplored case: averaging the outputs of Tweedie's formula while conducting denoising in multiple instance spaces. This case also provides the best quality with the widest applicability to downstream tasks. We name this case SyncTweedies. In our experiments generating visual content aforementioned, we demonstrate the superior quality of generation by SyncTweedies compared to other synchronization methods, optimization-based and iterative-update-based methods.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2403.14370) | [🌐 Project Page](https://synctweedies.github.io/) | [💻 Code (not yet)]()
+
 ## 2023:
 ### 1. Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
@@ -2035,6 +2045,15 @@ Recent advances in view synthesis and real-time rendering have achieved photorea
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.13806.pdf) | [🌐 Project Page](https://m-niemeyer.github.io/radsplat/) 
+
+### 20. Mini-Splatting: Representing Scenes with a Constrained Number of Gaussians  
+**Authors**: Guangchi Fang, Bing Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+In this study, we explore the challenge of efficiently representing scenes with a constrained number of Gaussians. Our analysis shifts from traditional graphics and 2D computer vision to the perspective of point clouds, highlighting the inefficient spatial distribution of Gaussian representation as a key limitation in model performance. To address this, we introduce strategies for densification including blur split and depth reinitialization, and simplification through Gaussian binarization and sampling. These techniques reorganize the spatial positions of the Gaussians, resulting in significant improvements across various datasets and benchmarks in terms of rendering quality, resource consumption, and storage compression. Our proposed Mini-Splatting method integrates seamlessly with the original rasterization pipeline, providing a strong baseline for future research in Gaussian-Splatting-based works. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.14166.pdf)
 
 
 ## 2023:
