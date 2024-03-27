@@ -2616,6 +2616,7 @@ This paper introduces GS-Pose, an end-to-end framework for locating and estimati
 
 ### Other
 - [My-exp-Gaussians](https://github.com/ingra14m/My-exp-Gaussians) - Enhancing the ability of 3D Gaussians to model complex scenes
+- [360-gaussian-splatting](https://github.com/inuex35/360-gaussian-splatting) - Generate gaussian splatting directly from 360 images
 
 
 ## Blog Posts
