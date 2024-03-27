@@ -2308,7 +2308,7 @@ Semantic understanding plays a crucial role in Dense Simultaneous Localization a
 
   [📄 Paper](https://arxiv.org/pdf/2402.03246.pdf) 
 
-### 2. SemGauss-SLAM: Dense Semantic [CVPR '24] Gaussian Splatting SLAM 
+### 2. SemGauss-SLAM: Dense Semantic Gaussian Splatting SLAM 
 **Authors**: Siting Zhu, Renjie Qin, Guangming Wang, Jiuming Liu, Hesheng Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2381,7 +2381,7 @@ In this paper, we introduce GS-SLAM that first utilizes 3D Gaussian representati
 
   [📄 Paper](https://arxiv.org/pdf/2311.11700.pdf) 
 
-### 2. SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM
+### 2. [CVPR '24] SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM
 **Authors**: Nikhil Keetha, Jay Karhade, Krishna Murthy Jatavallabhula, Gengshan Yang,
 Sebastian Scherer, Deva Ramanan, Jonathon Luiten
 
