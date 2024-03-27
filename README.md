@@ -383,9 +383,7 @@ This paper aims to tackle the problem of modeling dynamic urban street scenes fr
   [📄 Paper](https://arxiv.org/pdf/2401.01339.pdf) | [🌐 Project Page](https://zju3dv.github.io/street_gaussians/) | [💻 Code (not yet)](https://github.com/zju3dv/street_gaussians) 
 
 ## 2023:
-### 1. DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes
-CVPR '24
-  
+### 1. [CVPR '24] DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes  
 **Authors**: Xiaoyu Zhou, Zhiwei Lin, Xiaojun Shan, Yongtao Wang, Deqing Sun, Ming-Hsuan Yang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -461,9 +459,7 @@ In this paper, we present a novel method that facilitates the creation of vivid 
 
   [📄 Paper](https://arxiv.org/pdf/2402.16607.pdf) |  [🌐 Project Page](https://3d-aigc.github.io/GEA/) | [💻 Code (not yet)]()
 
-### 8. SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting
-CVPR '24
-  
+### 8. [CVPR '24] SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting  
 **Authors**: Zhijing Shao, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -505,9 +501,7 @@ We propose SplatArmor, a novel approach for recovering detailed and animatable h
 
   [📄 Paper](https://arxiv.org/pdf/2311.10812.pdf) |  [🌐 Project Page](https://jenaroh.it/splatarmor/) | [💻 Code (not yet)](https://github.com/rohitrango/splatarmor)
 
-### 3. Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling
-CVPR '24
- 
+### 3. [CVPR '24] Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling 
 **Authors**: Zhe Li, Zerong Zheng, Lizhen Wang, Yebin Liu 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -516,9 +510,7 @@ Modeling animatable human avatars from RGB videos is a long-standing and challen
 
   [📄 Paper](https://arxiv.org/pdf/2311.16096.pdf) | [🌐 Project Page](https://animatable-gaussians.github.io/) | [💻 Code (not yet)](https://github.com/lizhe00/AnimatableGaussians)
 
-### 4. GART: Gaussian Articulated Template Models
-CVPR '24
- 
+### 4. [CVPR '24] GART: Gaussian Articulated Template Models 
 **Authors**: Jiahui Lei, Yufu Wang, Georgios Pavlakos, Lingjie Liu, Kostas Daniilidis 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -545,9 +537,7 @@ Recent advances in neural rendering have improved both training and rendering ti
 
   [📄 Paper](https://arxiv.org/pdf/2311.17910.pdf) | [🌐 Project Page](https://machinelearning.apple.com/research/hugs) | [💻 Code (not yet)](https://github.com/apple/ml-hugs)
 
-### 7. Gaussian Shell Maps for Efficient 3D Human Generation
-CVPR '24
-
+### 7. [CVPR '24] Gaussian Shell Maps for Efficient 3D Human Generation
 **Authors**: Rameen Abdal, Wang Yifan, Zifan Shi, Yinghao Xu, Ryan Po, Zhengfei Kuang, Qifeng Chen, Dit-Yan Yeung, Gordon Wetzstein
 <details span>
 <summary><b>Abstract</b></summary>
@@ -566,9 +556,7 @@ Constructing vivid 3D head avatars for given subjects and realizing a series of 
 
   [📄 Paper](https://arxiv.org/pdf/2312.01632.pdf) | [🌐 Project Page](https://chiehwangs.github.io/gaussian-head-page/) | [💻 Code](https://github.com/chiehwangs/gaussian-head)
 
-### 9. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
-CVPR '24
-
+### 9. [CVPR '24] GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians
 **Authors**: Shenhan Qian, Tobias Kirschstein, Liam Schoneveld, Davide Davoli, Simon Giebenhain, Matthias Nießner
 
 <details span>
@@ -578,9 +566,7 @@ We introduce GaussianAvatars, a new method to create photorealistic head avatars
 
  [📄 Paper](https://arxiv.org/pdf/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) | [💻 Code](https://github.com/ShenhanQian/GaussianAvatars) | [🎥 Short Presentation](https://youtu.be/lVEY78RwU_I)
 
-### 10. GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
-CVPR '24
-
+### 10. [CVPR '24] GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
 **Authors**: Shunyuan Zheng, Boyao Zhou, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu
 
 <details span>
@@ -610,9 +596,7 @@ We present a new approach, termed GPS-Gaussian, for synthesizing novel views of 
 
  [📄 Paper](https://arxiv.org/pdf/2312.02902.pdf)
 
-### 13. HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting
-CVPR '24
-
+### 13. [CVPR '24] HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting
 **Authors**: Yuheng Jiang, Zhehao Shen, Penghao Wang, Zhuo Su, Yu Hong, Yingliang Zhang, Jingyi Yu, Lan Xu  
 
 <details span>
@@ -622,9 +606,7 @@ We have recently seen tremendous progress in photo-real human modeling and rende
 
  [📄 Paper](https://arxiv.org/pdf/2312.03461.pdf) | [🌐 Project Page](https://nowheretrix.github.io/HiFi4G/) | [🎥 Short Presentation](https://youtu.be/917WVr2EHh4)
 
-### 14. GaussianAvatar: Towards Realistic Human Avatar Modeling from a Single Video via Animatable 3D Gaussians
-CVPR '24
-  
+### 14. [CVPR '24] GaussianAvatar: Towards Realistic Human Avatar Modeling from a Single Video via Animatable 3D Gaussians  
 **Authors**: Liangxiao Hu, Hongwen Zhang, Yuxiang Zhang, Boyao Zhou, Boning Liu, Shengping Zhang, Liqiang Nie  
 
 <details span>
@@ -634,9 +616,7 @@ We present GaussianAvatar, an efficient approach to creating realistic human ava
 
  [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://huliangxiao.github.io/GaussianAvatar) | [💻 Code](https://github.com/huliangxiao/GaussianAvatar) | [🎥 Short Presentation](https://www.youtube.com/watch?v=a4g8Z9nCF-k&t=1s)
 
-### 15. FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS
-CVPR '24
-  
+### 15. [CVPR '24] FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS  
 **Authors**: Jun Xiang, Xuan Gao, Yudong Guo, Juyong Zhang  
 
 <details span>
@@ -666,9 +646,7 @@ The ability to animate photo-realistic head avatars reconstructed from monocular
 
  [📄 Paper](https://arxiv.org/pdf/2312.04558.pdf) | [🌐 Project Page](https://yufan1012.github.io/MonoGaussianAvatar) | [💻 Code (not yet)](https://github.com/yufan1012/MonoGaussianAvatar) | [🎥 Short Presentation](https://youtu.be/3UvBkyPc-oc?si=SbveQKBLJh5GuhIY)
 
-### 18. ASH: Animatable Gaussian Splats for Efficient and Photoreal Human Rendering
-CVPR '24
-  
+### 18. [CVPR '24] ASH: Animatable Gaussian Splats for Efficient and Photoreal Human Rendering  
 **Authors**: Haokai Pang, Heming Zhu, Adam Kortylewski, Christian Theobalt, Marc Habermann 
 
 <details span>
@@ -678,9 +656,7 @@ Real-time rendering of photorealistic and controllable human avatars stands as a
 
  [📄 Paper](https://arxiv.org/pdf/2312.05941.pdf) | [🌐 Project Page](https://vcai.mpi-inf.mpg.de/projects/ash/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://vcai.mpi-inf.mpg.de/projects/ash/videos/video_for_page.mp4)
 
-### 19. 3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting
-CVPR '24
-  
+### 19. [CVPR '24] 3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting  
 **Authors**: Zhiyin Qian, Shaofei Wang, Marko Mihajlovic, Andreas Geiger, Siyu Tang 
 
 <details span>
@@ -690,9 +666,7 @@ We introduce an approach that creates animatable human avatars from monocular vi
 
  [📄 Paper](https://arxiv.org/pdf/2312.09228.pdf) | [🌐 Project Page](https://neuralbodies.github.io/3DGS-Avatar/index.html) | [💻 Code](https://github.com/mikeqzy/3dgs-avatar-release) | [🎥 Short Presentation](https://youtu.be/FJ29U9OkmmU?si=5ua2mtpv5ei2n28Z)
 
-### 20. GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning
-CVPR '24
-  
+### 20. [CVPR '24] GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning  
 **Authors**: Ye Yuan, Xueting Li, Yangyi Huang, Shalini De Mello, Koki Nagano, Jan Kautz, Umar Iqbal 
 
 <details span>
@@ -722,9 +696,7 @@ Reconstructing the human body from single-view videos plays a pivotal role in th
 
  [📄 Paper](https://arxiv.org/pdf/2312.15258.pdf) | [🌐 Project Page](https://longxiang-ai.github.io/Human101/) | [💻 Code (not yet)](https://github.com/longxiang-ai/Human101) 
 
-### 23. Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians
-CVPR '24
-  
+### 23. [CVPR '24] Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians  
 **Authors**: Yuelang Xu, Benwang Chen, Zhe Li, Hongwen Zhang, Lizhen Wang, Zerong Zheng, Yebin Liu 
 
 <details span>
@@ -821,9 +793,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 
 ## Compression:
 ## 2024:
-### 1. Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis
-CVPR '24
- 
+### 1. [CVPR '24] Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis 
 **Authors**: Simon Niedermayr, Josef Stumpfegger, Rüdiger Westermann 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -862,9 +832,7 @@ In summary, LightGaussian achieves an averaged compression rate over 15x while b
 
   [📄 Paper](https://arxiv.org/pdf/2311.18159.pdf) | [💻 Code](https://github.com/UCDvision/compact3d)
 
-### 3. Compact 3D Gaussian Representation for Radiance Field
-CVPR '24
- 
+### 3. [CVPR '24] Compact 3D Gaussian Representation for Radiance Field 
 **Authors**: Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1037,9 +1005,7 @@ Recent progress in pre-trained diffusion models and 3D generation have spurred i
 [📄 Paper](https://arxiv.org/pdf/2403.14939) 
 
 ## 2023:
-### 1. Text-to-3D using Gaussian Splatting
-CVPR '24
-
+### 1. [CVPR '24] Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
 
 <details span>
@@ -1078,9 +1044,7 @@ In recent times, the generation of 3D assets from text prompts has shown impress
 
   [📄 Paper](https://arxiv.org/pdf/2311.11221.pdf)  
 
-### 5. LucidDreamer: Towards High-Fidelity Text-to-3D Generation via Interval Score Matching
-CVPR '24
-  
+### 5. [CVPR '24] LucidDreamer: Towards High-Fidelity Text-to-3D Generation via Interval Score Matching  
 Yixun Liang, Xin Yang, Jiantao Lin, Haodong Li, Xiaogang Xu, Yingcong Chen
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1098,9 +1062,7 @@ With the widespread usage of VR devices and contents, demands for 3D scene gener
 
   [📄 Paper](https://arxiv.org/pdf/2311.13384.pdf) | [🌐 Project Page](https://luciddreamer-cvlab.github.io/) | [💻 Code](https://github.com/anonymous-luciddreamer/LucidDreamer) 
 
-### 7. HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting
-CVPR '24
-  
+### 7. [CVPR '24] HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting  
 Xian Liu, Xiaohang Zhan, Jiaxiang Tang, Ying Shan, Gang Zeng, Dahua Lin, Xihui Liu, Ziwei Liu
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1129,9 +1091,7 @@ We propose a unified framework aimed at enhancing the diffusion priors for 3D ge
   [📄 Paper](https://arxiv.org/pdf/2312.04820.pdf) | [🌐 Project Page](https://yangxiaofeng.github.io/demo_diffusion_prior/) | [💻 Code](https://github.com/yangxiaofeng/LODS)
 
 
-### 10. Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models
-CVPR '24
- 
+### 10. [CVPR '24] Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models 
 Andreas Blattmann, Robin Rombach, Huan Ling, Tim Dockhorn, Seung Wook Kim, Sanja Fidler, Karsten Kreis
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1237,9 +1197,7 @@ We present a method that simultaneously addresses the tasks of dynamic scene nov
 
   [📄 Paper](https://dynamic3dgaussians.github.io/paper.pdf) | [🌐 Project Page](https://dynamic3dgaussians.github.io/) | [💻 Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) | [🎥 Explanation Video](https://www.youtube.com/live/hDuy1TgD8I4?si=6oGN0IYnPRxOibpg)
 
-### 2. Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
-CVPR '24
-
+### 2. [CVPR '24] Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
 **Authors**: Ziyi Yang, Xinyu Gao, Wen Zhou, Shaohui Jiao, Yuqing Zhang, Xiaogang Jin 
 
 <details span>
@@ -1249,9 +1207,7 @@ Implicit neural representation has opened up new avenues for dynamic scene recon
 
   [📄 Paper](https://arxiv.org/pdf/2309.13101.pdf) | [🌐 Project Page](https://ingra14m.github.io/Deformable-Gaussians/) | [💻 Code](https://github.com/ingra14m/Deformable-3D-Gaussians) 
 
-### 3. 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
-CVPR '24
-
+### 3. [CVPR '24] 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
 **Authors**: Guanjun Wu, Taoran Yi, Jiemin Fang, Lingxi Xie, Xiaopeng Zhang, Wei Wei, Wenyu Liu, Tian Qi, Xinggang Wang
 
 <details span>
@@ -1304,9 +1260,7 @@ Accurately and efficiently modeling dynamic scenes and motions is considered so 
 
   [📄 Paper](https://arxiv.org/pdf/2312.00112.pdf) | [🌐 Project Page](https://agelosk.github.io/dynmf/) | [💻 Code (not yet)](https://github.com/agelosk/dynmf)
 
-### 7. Control4D: Efficient 4D Portrait Editing with Text
-CVPR '24
- 
+### 7. [CVPR '24] Control4D: Efficient 4D Portrait Editing with Text 
 **Authors**: Ruizhi Shao, Jingxiang Sun, Cheng Peng, Zerong Zheng, Boyao Zhou, Hongwen Zhang, Yebin Liu  
 
 <details span>
@@ -1316,9 +1270,7 @@ We introduce Control4D, an innovative framework for editing dynamic 4D portraits
 
   [📄 Paper](https://arxiv.org/pdf/2305.20082.pdf) | [🌐 Project Page](https://control4darxiv.github.io/) | [💻 Code (not yet)]()
 
-### 8. SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes
-CVPR '24
- 
+### 8. [CVPR '24] SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes 
 **Authors**:  Yi-Hua Huang, Yang-Tian Sun, Ziyi Yang, Xiaoyang Lyu, Yan-Pei Cao, Xiaojuan Qi
 
 <details span>
@@ -1328,9 +1280,7 @@ Novel view synthesis for dynamic scenes is still a challenging problem in comput
 
   [📄 Paper](https://yihua7.github.io/SC-GS-web/materials/SC_GS_Arxiv.pdf) | [🌐 Project Page](https://yihua7.github.io/SC-GS-web/) | [💻 Code](https://github.com/yihua7/SC-GS)
 
-### 9. Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction
-CVPR '24
-
+### 9. [CVPR '24] Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction
 **Authors**: Devikalyan Das, Christopher Wewer, Raza Yunus, Eddy Ilg, Jan Eric Lenssen
 
 <details span>
@@ -1340,9 +1290,7 @@ Reconstructing dynamic objects from monocular videos is a severely underconstrai
 
   [📄 Paper](https://arxiv.org/pdf/2312.01196.pdf)
 
-### 10. Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle
-CVPR '24
-
+### 10. [CVPR '24] Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle
 **Authors**: Youtian Lin, Zuozhuo Dai, Siyu Zhu, Yao Yao 
 
 <details span>
@@ -1352,9 +1300,7 @@ We introduce Gaussian-Flow, a novel point-based approach for fast dynamic scene 
 
   [📄 Paper](https://arxiv.org/pdf/2310.08528.pdf) | [🌐 Project Page](https://nju-3dv.github.io/projects/Gaussian-Flow) | [💻 Code (not yet)]()
 
-### 11.CoGS: Controllable Gaussian Splatting
-CVPR '24
- 
+### 11.[CVPR '24] CoGS: Controllable Gaussian Splatting 
 **Authors**: Heng Yu, Joel Julin, Zoltán Á. Milacski, Koichiro Niinuma, László A. Jeni 
 
 <details span>
@@ -1374,9 +1320,7 @@ We propose a method for dynamic scene reconstruction using deformable 3D Gaussia
 
   [📄 Paper](https://arxiv.org/pdf/2312.11458.pdf) | [🌐 Project Page](https://lynl7130.github.io/gaufre/index.html) | [🎥 Short Presentation](https://youtu.be/YweWidWO8rI?si=jMssQdIXQV67kwzS)
 
-### 13. Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis
-CVPR '24
- 
+### 13. [CVPR '24] Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis 
 **Authors**: Zhan Li, Zhang Chen, Zhong Li, Yi Xu 
 
 <details span>
@@ -1406,9 +1350,7 @@ Novel view synthesis has shown rapid progress recently, with methods capable of 
 
 [📄 Paper](https://arxiv.org/pdf/2312.13308.pdf) 
 
-### 16. 3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos
-CVPR '24
- 
+### 16. [CVPR '24] 3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos 
 **Authors**: Jiakai Sun, Han Jiao, Guangyuan Li, Zhanjie Zhang, Lei Zhao, Wei Xing 
 
 <details span>
@@ -1506,9 +1448,7 @@ Open-vocabulary 3D scene understanding presents a significant challenge in compu
   
 
 ## 2023:
-### 1. GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting
-CVPR '24
- 
+### 1. [CVPR '24] GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
 **Authors**: Yiwen Chen, Zilong Chen, Chi Zhang, Feng Wang, Xiaofeng Yang, Yikai Wang, Zhongang Cai, Lei Yang, Huaping Liu, Guosheng Lin
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1519,9 +1459,7 @@ GaussianEditor enhances precision and control in editing through our proposed Ga
 
   [📄 Paper](https://arxiv.org/pdf/2311.14521.pdf) | [🌐 Project Page](https://buaacyw.github.io/gaussian-editor/) | [💻 Code](https://github.com/buaacyw/GaussianEditor) | [🎥 Short Presentation](https://youtu.be/TdZIICSFqsU?si=-U4tyOvaAPqIROYn)
 
-### 2. GaussianEditor: Editing 3D Gaussians Delicately with Text Instructions
-CVPR '24
- 
+### 2. [CVPR '24] GaussianEditor: Editing 3D Gaussians Delicately with Text Instructions 
 **Authors**: Jiemin Fang, Junjie Wang, Xiaopeng Zhang, Lingxi Xie, Qi Tian 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1558,9 +1496,7 @@ Interactive 3D segmentation in radiance fields is an appealing task since its im
 
   [📄 Paper](https://jumpat.github.io/SAGA/SAGA_paper.pdf) | [🌐 Project Page](https://jumpat.github.io/SAGA/) | [💻 Code](https://github.com/Jumpat/SegAnyGAussians)
 
-### 6. Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature Fields
-CVPR '24
-
+### 6. [CVPR '24] Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature Fields
 **Authors**: Shijie Zhou, Haoran Chang, Sicheng Jiang, Zhiwen Fan, Zehao Zhu, Dejia Xu, Pradyumna Chari, Suya You, Zhangyang Wang, Achuta Kadambi 
 
 <details span>
@@ -1584,9 +1520,7 @@ Recently, 3D Gaussian, as an explicit 3D representation method, has demonstrated
 
 ## Language Embedding:
 ## 2023:
-### 1. Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding
-CVPR '24
- 
+### 1. [CVPR '24] Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding 
 **Authors**: Jin-Chuan Shi, Miao Wang, Hao-Bin Duan, Shao-Hua Guan 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1595,9 +1529,7 @@ Open-vocabulary querying in 3D space is challenging but essential for scene unde
 
   [📄 Paper](https://arxiv.org/pdf/2311.18482.pdf) | [🌐 Project Page](https://buaavrcg.github.io/LEGaussians/) | [💻 Code (not yet)]()
 
-### 2. LangSplat: 3D Language Gaussian Splatting
-CVPR '24
- 
+### 2. [CVPR '24] LangSplat: 3D Language Gaussian Splatting 
 **Authors**: Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, Hanspeter Pfister 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1670,9 +1602,7 @@ Reconstructing and simulating elastic objects from visual observations is crucia
   [📄 Paper](https://arxiv.org/pdf/2403.10050) | [🌐 Project Page](https://slothfulxtx.github.io/TexGS/) | [💻 Code (not yet)](https://github.com/slothfulxtx/Texture-GS)
 
 ## 2023:
-### 1. PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
-CVPR '24
-
+### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
 
 <details span>
@@ -1682,9 +1612,7 @@ We introduce PhysGaussian, a new method that seamlessly integrates physically gr
 
   [📄 Paper](https://arxiv.org/pdf/2311.12198.pdf) | [🌐 Project Page](https://xpandora.github.io/PhysGaussian/) | [💻 Code](https://github.com/XPandora/PhysGaussian) | [🎥 Short Presentation](https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view)
 
-### 2. SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering
-CVPR '24
-
+### 2. [CVPR '24] SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering
 **Authors**: Antoine Guédon, Vincent Lepetit
 
 <details span>
@@ -1867,9 +1795,7 @@ Understanding how we grasp objects with our hands has important applications in 
 
   [📄 Paper](https://arxiv.org/pdf/2312.02137.pdf)
 
-### 4. Triplane Meets Gaussian Splatting: Fast and Generalizable Single-View 3D Reconstruction with Transformers
-CVPR '24
- 
+### 4. [CVPR '24] Triplane Meets Gaussian Splatting: Fast and Generalizable Single-View 3D Reconstruction with Transformers 
 **Authors**: Zi-Xin Zou, Zhipeng Yu, Yuan-Chen Guo, Yangguang Li, Ding Liang, Yan-Pei Cao, Song-Hai Zhang
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1910,9 +1836,7 @@ Differentiable rendering is a technique used in an important emerging class of v
 
   [📄 Paper](https://arxiv.org/pdf/2401.05345.pdf)
 
-### 2. FreGS: 3D Gaussian Splatting with Progressive Frequency Regularization
-CVPR '24
-\n  
+### 2. [CVPR '24] FreGS: 3D Gaussian Splatting with Progressive Frequency Regularization  
 **Authors**: Jiahui Zhang, Fangneng Zhan, Muyu Xu, Shijian Lu, Eric Xing 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1960,10 +1884,7 @@ Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scen
 
 <br>
 
-### 3. COLMAP-Free 3D Gaussian Splatting
-CVPR '24
-
- 
+### 3. [CVPR '24] COLMAP-Free 3D Gaussian Splatting 
 **Authors**: Yang Fu, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, Xiaolong Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1985,9 +1906,7 @@ We present a method named iComMa to address the 6D pose estimation problem in co
 
 ## Rendering:
 ## 2024:
-### 1. Gaussian Shadow Casting for Neural Characters
-CVPR '24
- 
+### 1. [CVPR '24] Gaussian Shadow Casting for Neural Characters 
 **Authors**: Luis Bolanos, Shih-Yang Su, Helge Rhodin
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2023,9 +1942,7 @@ Gaussian Splatting has emerged as a prominent model for constructing 3D represen
 
   [📄 Paper](arxiv.org/pdf/2402.00525.pdf) | [🎥 Short Presentation](https://youtu.be/RJQlSORNkr0)
 
-### 5. GES: Generalized Exponential Splatting for Efficient Radiance Field Rendering
-CVPR '24
- 
+### 5. [CVPR '24] GES: Generalized Exponential Splatting for Efficient Radiance Field Rendering 
 **Authors**: Abdullah Hamdi, Luke Melas-Kyriazi, Guocheng Qian, Jinjie Mai, Ruoshi Liu, Carl Vondrick, Bernard Ghanem, Andrea Vedaldi 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2062,9 +1979,7 @@ The recent advancements in 3D Gaussian splatting (3D-GS) have not only facilitat
 
   [📄 Paper](https://arxiv.org/pdf/2402.15870.pdf) 
 
-### 9. VastGaussian: Vast 3D Gaussians for Large Scene Reconstruction
-CVPR '24
- 
+### 9. [CVPR '24] VastGaussian: Vast 3D Gaussians for Large Scene Reconstruction 
 **Authors**: Jiaqi Lin, Zhihao Li, Xiao Tang, Jianzhuang Liu, Shiyong Liu, Jiayue Liu, Yangdi Lu, Xiaofei Wu, Songcen Xu, Youliang Yan, Wenming Yang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2219,9 +2134,7 @@ We present a novel differentiable point-based rendering framework for material a
 
   [📄 Paper](https://arxiv.org/pdf/2311.16043.pdf) | [🌐 Project Page](https://nju-3dv.github.io/projects/Relightable3DGaussian/) | [💻 Code](https://github.com/NJU-3DV/Relightable3DGaussian) 
 
-### 3. GS-IR: 3D Gaussian Splatting for Inverse Rendering
-CVPR '24
- 
+### 3. [CVPR '24] GS-IR: 3D Gaussian Splatting for Inverse Rendering 
 **Authors**: Zhihao Liang, Qi Zhang, Ying Feng, Ying Shan, Kui Jia 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2230,9 +2143,7 @@ We propose GS-IR, a novel inverse rendering approach based on 3D Gaussian Splatt
 
   [📄 Paper](https://arxiv.org/pdf/2311.16473.pdf) | [🌐 Project Page](https://github.com/lzhnb/GS-IR) | [💻 Code (not yet)](https://github.com/lzhnb/GS-IR) 
 
-### 4. Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering
-CVPR '24
-  
+### 4. [CVPR '24] Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering  
 **Authors**: Zhiwen Yan, Weng Fei Low, Yu Chen, Gim Hee Lee 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2241,9 +2152,7 @@ CVPR '24
 
   [📄 Paper](https://arxiv.org/pdf/2311.17089.pdf) 
 
-### 5. GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective Surfaces
-CVPR '24
- 
+### 5. [CVPR '24] GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective Surfaces 
 **Authors**: Yingwenqi Jiang, Jiadong Tu, Yuan Liu, Xifeng Gao, Xiaoxiao Long, Wenping Wang, Yuexin Ma 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2252,9 +2161,7 @@ The advent of neural 3D Gaussians has recently brought about a revolution in the
 
   [📄 Paper](https://arxiv.org/pdf/2311.17977.pdf) | [🌐 Project Page](https://asparagus15.github.io/GaussianShader.github.io/) | [💻 Code](https://github.com/Asparagus15/GaussianShader) 
 
-### 6. Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering
-CVPR '24
-  
+### 6. [CVPR '24] Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering  
 **Authors**:  Tao Lu, Mulin Yu, Linning Xu, Yuanbo Xiangli, Limin Wang, Dahua Lin, Bo Dai 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2352,9 +2259,7 @@ Semantic understanding plays a crucial role in Dense Simultaneous Localization a
 
   [📄 Paper](https://arxiv.org/pdf/2402.03246.pdf) 
 
-### 2. SemGauss-SLAM: Dense Semantic Gaussian Splatting SLAM
-CVPR '24
- 
+### 2. SemGauss-SLAM: Dense Semantic [CVPR '24] Gaussian Splatting SLAM 
 **Authors**: Siting Zhu, Renjie Qin, Guangming Wang, Jiuming Liu, Hesheng Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2418,9 +2323,7 @@ Recently neural radiance fields (NeRF) have been widely exploited as 3D represen
   [📄 Paper](https://arxiv.org/pdf/2403.16095) | [🌐 Project Page](https://zju3dv.github.io/cg-slam/) | [💻 Code (not yet)](https://github.com/hjr37/CG-SLAM)
 
 ## 2023:
-### 1. GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
-CVPR '24
-
+### 1. [CVPR '24] GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2440,9 +2343,7 @@ Dense simultaneous localization and mapping (SLAM) is pivotal for embodied scene
 
  [📄 Paper](https://arxiv.org/pdf/2312.02126.pdf) | [🌐 Project Page](https://spla-tam.github.io/) | [💻 Code](https://github.com/spla-tam/SplaTAM) | [🎥 Explanation Video](https://www.youtube.com/watch?v=35SX8DTdQLs)
 
-### 3. Gaussian Splatting SLAM
-CVPR '24
- 
+### 3. [CVPR '24] Gaussian Splatting SLAM 
 **Authors**: Hidenobu Matsuki, Riku Murai, Paul H. J. Kelly, Andrew J. Davison 
 
 <details span>
@@ -2465,9 +2366,7 @@ We show that Gaussian-SLAM can reconstruct and photorealistically render real-wo
 
  [📄 Paper](https://ivi.fnwi.uva.nl/cv/paper/GaussianSLAM.pdf) | [🌐 Project Page](https://vladimiryugay.github.io/gaussian_slam/) | [💻 Code](https://github.com/VladimirYugay/Gaussian-SLAM) | [🎥 Short Presentation](https://www.youtube.com/watch?v=RZK1o_ija7M)
 
-### 5. Photo-SLAM: Real-time Simultaneous Localization and Photorealistic Mapping for Monocular, Stereo, and RGB-D Cameras
-CVPR '24
-  
+### 5. [CVPR '24] Photo-SLAM: Real-time Simultaneous Localization and Photorealistic Mapping for Monocular, Stereo, and RGB-D Cameras  
 **Authors**: Huajian Huang, Longwei Li, Hui Cheng, Sai-Kit Yeung  
 
 <details span>
@@ -2481,9 +2380,7 @@ The integration of neural rendering and the SLAM system recently showed promisin
 
 ## Sparse:
 ## 2024:
-### 1. DNGaussian: Optimizing Sparse-View 3D Gaussian Radiance Fields with Global-Local Depth Normalization
-CVPR '24
- 
+### 1. [CVPR '24] DNGaussian: Optimizing Sparse-View 3D Gaussian Radiance Fields with Global-Local Depth Normalization 
 **Authors**: Jiahe Li, Jiawei Zhang, Xiao Bai, Jin Zheng, Xin Ning, Jun Zhou, Lin Gu 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2538,9 +2435,7 @@ Novel view synthesis from limited observations remains an important and persiste
 
   [📄 Paper](https://arxiv.org/pdf/2312.00451.pdf) | [🌐 Project Page](https://zehaozhu.github.io/FSGS/) | [💻 Code](https://github.com/VITA-Group/FSGS) 
 
-### 3. pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction
-CVPR '24
- 
+### 3. [CVPR '24] pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable 3D Reconstruction 
 **Authors**: David Charatan, Sizhe Li, Andrea Tagliasacchi, Vincent Sitzmann 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2549,9 +2444,7 @@ We introduce pixelSplat, a feed-forward model that learns to reconstruct 3D radi
 
   [📄 Paper](https://arxiv.org/pdf/2312.12337.pdf) | [🌐 Project Page](https://davidcharatan.com/pixelsplat/) | [💻 Code](https://github.com/dcharatan/pixelsplat) 
 
-### 4. Splatter Image: Ultra-Fast Single-View 3D Reconstruction
-CVPR '24
- 
+### 4. [CVPR '24] Splatter Image: Ultra-Fast Single-View 3D Reconstruction 
 **Authors**: Stanislaw Szymanowicz, Christian Rupprecht, Andrea Vedaldi 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2600,9 +2493,7 @@ Reliable multimodal sensor fusion algorithms re- quire accurate spatiotemporal c
 
   [📄 Paper](https://arxiv.org/pdf/2403.11577)
 
-### 5. HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting
-CVPR '24
-  
+### 5. [CVPR '24] HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting  
 **Authors**: Hongyu Zhou, Jiahao Shao, Lu Xu, Dongfeng Bai, Weichao Qiu, Bingbing Liu, Yue Wang, Andreas Geiger, Yiyi Liao 
 <details span>
 <summary><b>Abstract</b></summary>
