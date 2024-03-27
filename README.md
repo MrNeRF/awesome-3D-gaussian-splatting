@@ -528,7 +528,7 @@ This work addresses the problem of real-time rendering of photorealistic human b
 
   [📄 Paper](https://arxiv.org/pdf/2311.17113.pdf) 
 
-### 6. HUGS: Human Gaussian Splats 
+### 6. [CVPR '24] HUGS: Human Gaussian Splats 
 **Authors**: Muhammed Kocabas, Jen-Hao Rick Chang, James Gabriel, Oncel Tuzel, Anurag Ranjan 
 <details span>
 <summary><b>Abstract</b></summary>
