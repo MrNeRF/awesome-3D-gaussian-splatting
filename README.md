@@ -54,6 +54,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 27, 2024**
+ - Added Other Implementation: 360-gaussian-splatting
+
  **March 26, 2024**
  - Added 13 paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS, Semantic Gaussians, Gaussian in the Wild, CG-SLAM, and GSDF
 
