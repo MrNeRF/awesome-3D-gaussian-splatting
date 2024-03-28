@@ -628,7 +628,7 @@ We propose FlashAvatar, a novel and lightweight 3D animatable avatar representat
 
  [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
 
-### 16. Relightable Gaussian Codec Avatars 
+### 16. [CVPR '24] Relightable Gaussian Codec Avatars 
 **Authors**: Shunsuke Saito, Gabriel Schwartz, Tomas Simon, Junxuan Li, Giljoo Nam  
 
 <details span>
