@@ -1208,7 +1208,7 @@ This is only a preview version of GauMesh. Recently, primitive-based rendering h
 
 
 ## 2023:
-### 1. Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
+### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
 
 <details span>
@@ -2237,14 +2237,14 @@ This paper presents GIR, a 3D Gaussian Inverse Rendering method for relightable 
 
  [📄 Paper](https://arxiv.org/pdf/2312.05133) | [🌐 Project Page](https://3dgir.github.io/) | [💻 Code(not yet)]() 
 
-### 9. Gaussian Splitting Algorithm with Color and Opacity Depended on Viewing Direction 
+### 9. Gaussian Splatting with NeRF-based Color and Opacity
 **Authors**: Dawid Malarz, Weronika Smolak, Jacek Tabor, Sławomir Tadeja, Przemysław Spurek 
 <details span>
 <summary><b>Abstract</b></summary>
 Neural Radiance Fields (NeRFs) have demonstrated the remarkable potential of neural networks to capture the intricacies of 3D objects. By encoding the shape and color information within neural network weights, NeRFs excel at producing strikingly sharp novel views of 3D objects. Recently, numerous generalizations of NeRFs utilizing generative models have emerged, expanding its versatility. In contrast, Gaussian Splatting (GS) offers a similar renders quality with faster training and inference as it does not need neural networks to work. We encode information about the 3D objects in the set of Gaussian distributions that can be rendered in 3D similarly to classical meshes. Unfortunately, GS are difficult to condition since they usually require circa hundred thousand Gaussian components. To mitigate the caveats of both models, we propose a hybrid model that uses GS representation of the 3D object's shape and NeRF-based encoding of color and opacity. Our model uses Gaussian distributions with trainable positions (i.e. means of Gaussian), shape (i.e. covariance of Gaussian), color and opacity, and neural network, which takes parameters of Gaussian and viewing direction to produce changes in color and opacity. Consequently, our model better describes shadows, light reflections, and transparency of 3D objects. 
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.13729.pdf) | [🌐 Project Page]() | [💻 Code](https://github.com/gmum/ViewingDirectionGaussianSplatting) 
+ [📄 Paper](https://arxiv.org/pdf/2312.13729.pdf) | [💻 Code](https://github.com/gmum/ViewingDirectionGaussianSplatting) 
   
 <br>
 
