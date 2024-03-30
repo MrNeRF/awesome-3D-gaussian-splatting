@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 30, 2024**
- - Added x papers: Modeling uncertainty, GRM, Gamba, CoherentGS
+ - Added x papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS
 
  **March 27, 2024**
  - Added Other Implementation: 360-gaussian-splatting
@@ -2184,6 +2184,15 @@ The recent 3D Gaussian splatting (3D-GS) has shown remarkable rendering fidelity
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.17898) | [🌐 Project Page](https://city-super.github.io/octree-gs/) | [💻 Code (not yet)](https://github.com/city-super/Octree-GS) 
+
+### 25. SA-GS: Scale-Adaptive Gaussian Splatting for Training-Free Anti-Aliasing 
+**Authors**: Xiaowei Song, Jv Zheng, Shiran Yuan, Huan-ang Gao, Jingwei Zhao, Xiang He, Weihao Gu, Hao Zhao 
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we present a Scale-adaptive method for Anti-aliasing Gaussian Splatting (SA-GS). While the state-of-the-art method Mip-Splatting needs modifying the training procedure of Gaussian splatting, our method functions at test-time and is training-free. Specifically, SA-GS can be applied to any pretrained Gaussian splatting field as a plugin to significantly improve the field's anti-alising performance. The core technique is to apply 2D scale-adaptive filters to each Gaussian during test time. As pointed out by Mip-Splatting, observing Gaussians at different frequencies leads to mismatches between the Gaussian scales during training and testing. Mip-Splatting resolves this issue using 3D smoothing and 2D Mip filters, which are unfortunately not aware of testing frequency. In this work, we show that a 2D scale-adaptive filter that is informed of testing frequency can effectively match the Gaussian scale, thus making the Gaussian primitive distribution remain consistent across different testing frequencies. When scale inconsistency is eliminated, sampling rates smaller than the scene frequency result in conventional jaggedness, and we propose to integrate the projected 2D Gaussian within each pixel during testing. This integration is actually a limiting case of super-sampling, which significantly improves anti-aliasing performance over vanilla Gaussian Splatting. Through extensive experiments using various settings and both bounded and unbounded scenes, we show SA-GS performs comparably with or better than Mip-Splatting. Note that super-sampling and integration are only effective when our scale-adaptive filtering is activated. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.19615) | [🌐 Project Page](https://kevinsong729.github.io/project-pages/SA-GS/) | [💻 Code](https://github.com/zsy1987/SA-GS/) 
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
