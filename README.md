@@ -1808,7 +1808,7 @@ We have built a custom mobile multi-camera large-space dense light field capture
 
   [📄 Paper](https://arxiv.org/pdf/2403.09973.pdf)
 
-### 14.  Modeling uncertainty for Gaussian Splatting  
+### 14. Modeling uncertainty for Gaussian Splatting  
 **Authors**: Luca Savant, Diego Valsesia, Enrico Magli 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1816,6 +1816,15 @@ We present Stochastic Gaussian Splatting (SGS): the first framework for uncertai
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.18476)
+
+### 15. TOGS: Gaussian Splatting with Temporal Opacity Offset for Real-Time 4D DSA Rendering 
+**Authors**: Shuai Zhang, Huangxuan Zhao, Zhenghong Zhou, Guanjun Wu, Chuansheng Zheng, Xinggang Wang, Wenyu Liu 
+<details span>
+<summary><b>Abstract</b></summary>
+Four-dimensional Digital Subtraction Angiography (4D DSA) is a medical imaging technique that provides a series of 2D images captured at different stages and angles during the process of contrast agent filling blood vessels. It plays a significant role in the diagnosis of cerebrovascular diseases. Improving the rendering quality and speed under sparse sampling is important for observing the status and location of lesions. The current methods exhibit inadequate rendering quality in sparse views and suffer from slow rendering speed. To overcome these limitations, we propose TOGS, a Gaussian splatting method with opacity offset over time, which can effectively improve the rendering quality and speed of 4D DSA. We introduce an opacity offset table for each Gaussian to model the temporal variations in the radiance of the contrast agent. By interpolating the opacity offset table, the opacity variation of the Gaussian at different time points can be determined. This enables us to render the 2D DSA image at that specific moment. Additionally, we introduced a Smooth loss term in the loss function to mitigate overfitting issues that may arise in the model when dealing with sparse view scenarios. During the training phase, we randomly prune Gaussians, thereby reducing the storage overhead of the model. The experimental results demonstrate that compared to previous methods, this model achieves state-of-the-art reconstruction quality under the same number of training views. Additionally, it enables real-time rendering while maintaining low storage overhead.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.19586)
 
 
 ## 2023:
