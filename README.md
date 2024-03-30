@@ -54,6 +54,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **March 30, 2024**
+- Added x papers: Modeling uncertainty
+
  **March 27, 2024**
  - Added Other Implementation: 360-gaussian-splatting
  - CVPR '24 labels added
@@ -1796,14 +1799,14 @@ We have built a custom mobile multi-camera large-space dense light field capture
 
   [📄 Paper](https://arxiv.org/pdf/2403.09973.pdf)
 
-### 14. Creating Seamless 3D Maps Using Radiance Fields 
-**Authors**: Sai Tarun Sathyan, Thomas B. Kinsman 
+### 14.  Modeling uncertainty for Gaussian Splatting  
+**Authors**: Luca Savant, Diego Valsesia, Enrico Magli 
 <details span>
 <summary><b>Abstract</b></summary>
-It is desirable to create 3D object models and 3D maps from 2D input images for applications such as navigation, virtual tourism, and urban planning. The traditional methods of creating 3D maps, (such as photogrammetry), require a large number of images and odometry. Additionally, traditional methods have difficulty with reflective surfaces and specular reflections; windows and chrome in the scene can be problematic. Google Road View is a familiar application, which uses traditional methods to fuse a collection of 2D input images into the illusion of a 3D map. However, Google Road View does not create an actual 3D object model, only a collection of views. The objective of this work is to create an actual 3D object model using updated techniques. Neural Radiance Fields (NeRF[1]) has emerged as a potential solution, offering the capability to produce more precise and intricate 3D maps. Gaussian Splatting[4] is another contemporary technique. This investigation compares Neural Radiance Fields to Gaussian Splatting, and describes some of their inner workings. Our primary contribution is a method for improving the results of the 3D reconstructed models. Our results indicate that Gaussian Splatting was superior to the NeRF technique. 
+We present Stochastic Gaussian Splatting (SGS): the first framework for uncertainty estimation using Gaussian Splatting (GS). GS recently advanced the novel-view synthesis field by achieving impressive reconstruction quality at a fraction of the computational cost of Neural Radiance Fields (NeRF). However, contrary to the latter, it still lacks the ability to provide information about the confidence associated with their outputs. To address this limitation, in this paper, we introduce a Variational Inference-based approach that seamlessly integrates uncertainty prediction into the common rendering pipeline of GS. Additionally, we introduce the Area Under Sparsification Error (AUSE) as a new term in the loss function, enabling optimization of uncertainty estimation alongside image reconstruction. Experimental results on the LLFF dataset demonstrate that our method outperforms existing approaches in terms of both image rendering quality and uncertainty estimation accuracy. Overall, our framework equips practitioners with valuable insights into the reliability of synthesized views, facilitating safer decision-making in real-world applications. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.11364.pdf)
+  [📄 Paper](https://arxiv.org/pdf/2403.18476)
 
 
 ## 2023:
@@ -2594,6 +2597,15 @@ This paper introduces GS-Pose, an end-to-end framework for locating and estimati
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.10683) | [🌐 Project Page](https://dingdingcai.github.io/gs-pose/) | [💻 Code (not yet)](https://github.com/dingdingcai/GS-pose) | [🎥 Short Presentation](https://youtu.be/SnJazusDLM8)
+
+### 3. Creating Seamless 3D Maps Using Radiance Fields 
+**Authors**: Sai Tarun Sathyan, Thomas B. Kinsman 
+<details span>
+<summary><b>Abstract</b></summary>
+It is desirable to create 3D object models and 3D maps from 2D input images for applications such as navigation, virtual tourism, and urban planning. The traditional methods of creating 3D maps, (such as photogrammetry), require a large number of images and odometry. Additionally, traditional methods have difficulty with reflective surfaces and specular reflections; windows and chrome in the scene can be problematic. Google Road View is a familiar application, which uses traditional methods to fuse a collection of 2D input images into the illusion of a 3D map. However, Google Road View does not create an actual 3D object model, only a collection of views. The objective of this work is to create an actual 3D object model using updated techniques. Neural Radiance Fields (NeRF[1]) has emerged as a potential solution, offering the capability to produce more precise and intricate 3D maps. Gaussian Splatting[4] is another contemporary technique. This investigation compares Neural Radiance Fields to Gaussian Splatting, and describes some of their inner workings. Our primary contribution is a method for improving the results of the 3D reconstructed models. Our results indicate that Gaussian Splatting was superior to the NeRF technique. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.11364.pdf)
 
 <br>
 
