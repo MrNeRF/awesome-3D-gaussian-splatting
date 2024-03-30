@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 30, 2024**
-- Added x papers: Modeling uncertainty, GRM
+- Added x papers: Modeling uncertainty, GRM, Gamba
 
  **March 27, 2024**
  - Added Other Implementation: 360-gaussian-splatting
@@ -2485,6 +2485,15 @@ We introduce GRM, a large-scale reconstructor capable of recovering a 3D asset f
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.14621.pdf) | [🌐 Project Page](https://justimyhxu.github.io/projects/grm/) | [💻 Code](https://github.com/justimyhxu/grm) 
+
+### 5. Gamba: Marry Gaussian Splatting with Mamba for single view 3D reconstruction 
+**Authors**: Qiuhong Shen, Xuanyu Yi, Zike Wu, Pan Zhou, Hanwang Zhang, Shuicheng Yan, Xinchao Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+We tackle the challenge of efficiently reconstructing a 3D asset from a single image with growing demands for automated 3D content creation pipelines. Previous methods primarily rely on Score Distillation Sampling (SDS) and Neural Radiance Fields (NeRF). Despite their significant success, these approaches encounter practical limitations due to lengthy optimization and considerable memory usage. In this report, we introduce Gamba, an end-to-end amortized 3D reconstruction model from single-view images, emphasizing two main insights: (1) 3D representation: leveraging a large number of 3D Gaussians for an efficient 3D Gaussian splatting process; (2) Backbone design: introducing a Mamba-based sequential network that facilitates context-dependent reasoning and linear scalability with the sequence (token) length, accommodating a substantial number of Gaussians. Gamba incorporates significant advancements in data preprocessing, regularization design, and training methodologies. We assessed Gamba against existing optimization-based and feed-forward 3D generation approaches using the real-world scanned OmniObject3D dataset. Here, Gamba demonstrates competitive generation capabilities, both qualitatively and quantitatively, while achieving remarkable speed, approximately 0.6 second on a single NVIDIA A100 GPU. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.18795) 
 
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
