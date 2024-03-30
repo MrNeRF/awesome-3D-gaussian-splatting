@@ -473,6 +473,15 @@ We present SplattingAvatar, a hybrid 3D representation of photorealistic human a
 
   [📄 Paper](https://arxiv.org/pdf/2403.05087.pdf) |  [🌐 Project Page](https://initialneil.github.io/SplattingAvatar) | [💻 Code](https://github.com/initialneil/SplattingAvatar)| [🎥 Short Presentation](https://www.youtube.com/watch?v=IzC-fLvdntA)
 
+### 9. SplatFace: Gaussian Splat Face Reconstruction Leveraging an Optimizable Surface  
+**Authors**: Zhijing Shao, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+We present SplatFace, a novel Gaussian splatting framework designed for 3D human face reconstruction without reliance on accurate pre-determined geometry. Our method is designed to simultaneously deliver both high-quality novel view rendering and accurate 3D mesh reconstructions. We incorporate a generic 3D Morphable Model (3DMM) to provide a surface geometric structure, making it possible to reconstruct faces with a limited set of input images. We introduce a joint optimization strategy that refines both the Gaussians and the morphable surface through a synergistic non-rigid alignment process. A novel distance metric, splat-to-surface, is proposed to improve alignment by considering both the Gaussian position and covariance. The surface information is also utilized to incorporate a world-space densification process, resulting in superior reconstruction quality. Our experimental analysis demonstrates that the proposed method is competitive with both other Gaussian splatting techniques in novel view synthesis and other 3D reconstruction methods in producing 3D face meshes with high geometric precision. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.18784) 
+
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
