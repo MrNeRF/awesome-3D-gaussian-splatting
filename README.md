@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **March 30, 2024**
-- Added x papers: Modeling uncertainty
+- Added x papers: Modeling uncertainty, GRM
 
  **March 27, 2024**
  - Added Other Implementation: 360-gaussian-splatting
@@ -2476,6 +2476,15 @@ We present latentSplat, a method to predict semantic Gaussians in a 3D latent sp
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.16292.pdf) | [🌐 Project Page](https://geometric-rl.mpi-inf.mpg.de/latentsplat/) | [💻 Code (not yet)]() 
+
+### 5. GRM: Large Gaussian Reconstruction Model for Efficient 3D Reconstruction and Generation  
+**Authors**: Yinghao Xu, Zifan Shi, Wang Yifan, Hansheng Chen, Ceyuan Yang, Sida Peng, Yujun Shen, Gordon Wetzstein 
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce GRM, a large-scale reconstructor capable of recovering a 3D asset from sparse-view images in around 0.1s. GRM is a feed-forward transformer-based model that efficiently incorporates multi-view information to translate the input pixels into pixel-aligned Gaussians, which are unprojected to create a set of densely distributed 3D Gaussians representing a scene. Together, our transformer architecture and the use of 3D Gaussians unlock a scalable and efficient reconstruction framework. Extensive experimental results demonstrate the superiority of our method over alternatives regarding both reconstruction quality and efficiency. We also showcase the potential of GRM in generative tasks, i.e., text-to-3D and image-to-3D, by integrating it with existing multi-view diffusion models.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.14621.pdf) | [🌐 Project Page](https://justimyhxu.github.io/projects/grm/) | [💻 Code](https://github.com/justimyhxu/grm) 
 
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
