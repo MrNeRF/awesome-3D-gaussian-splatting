@@ -382,10 +382,33 @@ rendering on several established datasets.
 **Authors**: Yunzhi Yan, Haotong Lin, Chenxu Zhou, Weijie Wang, Haiyang Sun, Kun Zhan, Xianpeng Lang, Xiaowei Zhou, Sida Peng 
 <details span>
 <summary><b>Abstract</b></summary>
+Novel View Synthesis (NVS) for street scenes play a critical
+role in the autonomous driving simulation. The current mainstream technique to achieve it is neural rendering, such as Neural Radiance Fields
+(NeRF) and 3D Gaussian Splatting (3DGS). Although thrilling progress
+has been made, when handling street scenes, current methods struggle to
+maintain rendering quality at the viewpoint that deviates significantly
+from the training viewpoints. This issue stems from the sparse training views captured by a fixed camera on a moving vehicle. To tackle
+this problem, we propose a novel approach that enhances the capacity of
+3DGS by leveraging prior from a Diffusion Model along with complementary multi-modal data. Specifically, we first fine-tune a Diffusion Model
+by adding images from adjacent frames as condition, meanwhile exploiting depth data from LiDAR point clouds to supply additional spatial
+information. Then we apply the Diffusion Model to regularize the 3DGS
+at unseen views during training. Experimental results validate the effectiveness of our method compared with current state-of-the-art models,
+and demonstrate its advance in rendering images from broader views.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.20079.pdf) 
+
+### 2. SGD: Street View Synthesis with Gaussian Splatting and Diffusion Prior
+
+**Authors**: Zhongrui Yu, Haoran Wang, Jinze Yang, Hanzhang Wang, Zeke Xie,
+Yunfeng Cai, Jiale Cao, Zhong Ji, Mingming Sun
+<details span>
+<summary><b>Abstract</b></summary>
 This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos. Recent methods extend NeRF by incorporating tracked vehicle poses to animate vehicles, enabling photo-realistic view synthesis of dynamic urban street scenes. However, significant limitations are their slow training and rendering speed, coupled with the critical need for high precision in tracked vehicle poses. We introduce Street Gaussians, a new explicit scene representation that tackles all these limitations. Specifically, the dynamic urban street is represented as a set of point clouds equipped with semantic logits and 3D Gaussians, each associated with either a foreground vehicle or the background. To model the dynamics of foreground object vehicles, each object point cloud is optimized with optimizable tracked poses, along with a dynamic spherical harmonics model for the dynamic appearance. The explicit representation allows easy composition of object vehicles and background, which in turn allows for scene editing operations and rendering at 133 FPS (1066×1600 resolution) within half an hour of training. The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets. Experiments show that the proposed method consistently outperforms state-of-the-art methods across all datasets. Furthermore, the proposed representation delivers performance on par with that achieved using precise ground-truth poses, despite relying only on poses from an off-the-shelf tracker.
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.01339.pdf) | [🌐 Project Page](https://zju3dv.github.io/street_gaussians/) | [💻 Code (not yet)](https://github.com/zju3dv/street_gaussians) 
+
 
 ## 2023:
 ### 1. [CVPR '24] DrivingGaussian: Composite Gaussian Splatting for Surrounding Dynamic Autonomous Driving Scenes  
