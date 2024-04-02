@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **April 2, 2024**
- - Added x papers: HO, SGD, HGS, Snap-it, InstantSplat, 3DGSR, 
+ - Added x papers: HO, SGD, HGS, Snap-it, InstantSplat, 3DGSR, MM3DGS, HAHA
 
  **March 30, 2024**
  - Added 8 papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS, and GaussianCube
@@ -484,6 +484,15 @@ We present SplatFace, a novel Gaussian splatting framework designed for 3D human
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.18784) 
+
+### 10. HAHA: Highly Articulated Gaussian Human Avatars with Textured Mesh Prior   
+**Authors**: Zhijing Shao, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+We present HAHA - a novel approach for animatable human avatar generation from monocular input videos. The proposed method relies on learning the trade-off between the use of Gaussian splatting and a textured mesh for efficient and high fidelity rendering. We demonstrate its efficiency to animate and render full-body human avatars controlled via the SMPL-X parametric model. Our model learns to apply Gaussian splatting only in areas of the SMPL-X mesh where it is necessary, like hair and out-of-mesh clothing. This results in a minimal number of Gaussians being used to represent the full avatar, and reduced rendering artifacts. This allows us to handle the animation of small body parts such as fingers that are traditionally disregarded. We demonstrate the effectiveness of our approach on two open datasets: SnapshotPeople and X-Humans. Our method demonstrates on par reconstruction quality to the state-of-the-art on SnapshotPeople, while using less than a third of Gaussians. HAHA outperforms previous state-of-the-art on novel poses from X-Humans both quantitatively and qualitatively. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.01053) 
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
@@ -2421,6 +2430,15 @@ Recently neural radiance fields (NeRF) have been widely exploited as 3D represen
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.16095) | [🌐 Project Page](https://zju3dv.github.io/cg-slam/) | [💻 Code (not yet)](https://github.com/hjr37/CG-SLAM)
+
+### 8. MM3DGS SLAM: Multi-modal 3D Gaussian Splatting for SLAM Using Vision, Depth, and Inertial Measurements    
+**Authors**: Lisong C. Sun, Neel P. Bhatt, Jonathan C. Liu, Zhiwen Fan, Zhangyang Wang, Todd E. Humphreys, Ufuk Topcu 
+<details span>
+<summary><b>Abstract</b></summary>
+Simultaneous localization and mapping is essential for position tracking and scene understanding. 3D Gaussian-based map representations enable photorealistic reconstruction and real-time rendering of scenes using multiple posed cameras. We show for the first time that using 3D Gaussians for map representation with unposed camera images and inertial measurements can enable accurate SLAM. Our method, MM3DGS, addresses the limitations of prior neural radiance field-based representations by enabling faster rendering, scale awareness, and improved trajectory tracking. Our framework enables keyframe-based mapping and tracking utilizing loss functions that incorporate relative pose transformations from pre-integrated inertial measurements, depth estimates, and measures of photometric rendering quality. We also release a multi-modal dataset, UT-MM, collected from a mobile robot equipped with a camera and an inertial measurement unit. Experimental evaluation on several scenes from the dataset shows that MM3DGS achieves 3x improvement in tracking and 5% improvement in photometric rendering quality compared to the current 3DGS SLAM state-of-the-art, while allowing real-time rendering of a high-resolution dense 3D map.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.00923) | [🌐 Project Page](https://vita-group.github.io/MM3DGS-SLAM/) | [💻 Code (not yet)]()
 
 ## 2023:
 ### 1. [CVPR '24] GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
