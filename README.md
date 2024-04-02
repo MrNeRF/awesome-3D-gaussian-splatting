@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **April 2, 2024**
- - Added x papers: HO, SGD, 
+ - Added x papers: HO, SGD, HGS,
 
  **March 30, 2024**
  - Added 8 papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS, and GaussianCube
@@ -2690,6 +2690,15 @@ It is desirable to create 3D object models and 3D maps from 2D input images for 
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.11364.pdf)
+
+### 4. HGS-Mapping: Online Dense Mapping Using Hybrid Gaussian Representation in Urban Scenes 
+**Authors**: Ke Wu, Kaizhao Zhang, Zhiwei Zhang, Shanshuai Yuan, Muer Tie, Julong Wei, Zijun Xu, Jieru Zhao, Zhongxue Gan, Wenchao Ding 
+<details span>
+<summary><b>Abstract</b></summary>
+Online dense mapping of urban scenes forms a fundamental cornerstone for scene understanding and navigation of autonomous vehicles. Recent advancements in mapping methods are mainly based on NeRF, whose rendering speed is too slow to meet online requirements. 3D Gaussian Splatting (3DGS), with its rendering speed hundreds of times faster than NeRF, holds greater potential in online dense mapping. However, integrating 3DGS into a street-view dense mapping framework still faces two challenges, including incomplete reconstruction due to the absence of geometric information beyond the LiDAR coverage area and extensive computation for reconstruction in large urban scenes. To this end, we propose HGS-Mapping, an online dense mapping framework in unbounded large-scale scenes. To attain complete construction, our framework introduces Hybrid Gaussian Representation, which models different parts of the entire scene using Gaussians with distinct properties. Furthermore, we employ a hybrid Gaussian initialization mechanism and an adaptive update method to achieve high-fidelity and rapid reconstruction. To the best of our knowledge, we are the first to integrate Gaussian representation into online dense mapping of urban scenes. Our approach achieves SOTA reconstruction accuracy while only employing 66% number of Gaussians, leading to 20% faster reconstruction speed. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf)
 
 <br>
 
