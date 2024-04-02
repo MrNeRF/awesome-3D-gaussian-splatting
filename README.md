@@ -55,7 +55,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **April 2, 2024**
- - Added x papers: HO, SGD, HGS,
+ - Added x papers: HO, SGD, HGS, Snap-it, InstantSplat, 3DGSR, 
 
  **March 30, 2024**
  - Added 8 papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS, and GaussianCube
@@ -2197,6 +2197,24 @@ In this paper, we present a Scale-adaptive method for Anti-aliasing Gaussian Spl
 
   [📄 Paper](https://arxiv.org/pdf/2403.19615) | [🌐 Project Page](https://kevinsong729.github.io/project-pages/SA-GS/) | [💻 Code](https://github.com/zsy1987/SA-GS/) 
 
+### 26. Snap-it, Tap-it, Splat-it: Tactile-Informed 3D Gaussian Splatting for Reconstructing Challenging Surfaces 
+**Authors**: Mauro Comi, Alessio Tonioni, Max Yang, Jonathan Tremblay, Valts Blukis, Yijiong Lin, Nathan F. Lepora, Laurence Aitchison 
+<details span>
+<summary><b>Abstract</b></summary>
+Touch and vision go hand in hand, mutually enhancing our ability to understand the world. From a research perspective, the problem of mixing touch and vision is underexplored and presents interesting challenges. To this end, we propose Tactile-Informed 3DGS, a novel approach that incorporates touch data (local depth maps) with multi-view vision data to achieve surface reconstruction and novel view synthesis. Our method optimises 3D Gaussian primitives to accurately model the object's geometry at points of contact. By creating a framework that decreases the transmittance at touch locations, we achieve a refined surface reconstruction, ensuring a uniformly smooth depth map. Touch is particularly useful when considering non-Lambertian objects (e.g. shiny or reflective surfaces) since contemporary methods tend to fail to reconstruct with fidelity specular highlights. By combining vision and tactile sensing, we achieve more accurate geometry reconstructions with fewer images than prior methods. We conduct evaluation on objects with glossy and reflective surfaces and demonstrate the effectiveness of our approach, offering significant improvements in reconstruction quality. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.20275) 
+
+### 27. Snap-it, Tap-it, Splat-it: Tactile-Informed 3D Gaussian Splatting for Reconstructing Challenging Surfaces 
+**Authors**: Mauro Comi, Alessio Tonioni, Max Yang, Jonathan Tremblay, Valts Blukis, Yijiong Lin, Nathan F. Lepora, Laurence Aitchison 
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we present an implicit surface reconstruction method with 3D Gaussian Splatting (3DGS), namely 3DGSR, that allows for accurate 3D reconstruction with intricate details while inheriting the high efficiency and rendering quality of 3DGS. The key insight is incorporating an implicit signed distance field (SDF) within 3D Gaussians to enable them to be aligned and jointly optimized. First, we introduce a differentiable SDF-to-opacity transformation function that converts SDF values into corresponding Gaussians' opacities. This function connects the SDF and 3D Gaussians, allowing for unified optimization and enforcing surface constraints on the 3D Gaussians. During learning, optimizing the 3D Gaussians provides supervisory signals for SDF learning, enabling the reconstruction of intricate details. However, this only provides sparse supervisory signals to the SDF at locations occupied by Gaussians, which is insufficient for learning a continuous SDF. Then, to address this limitation, we incorporate volumetric rendering and align the rendered geometric attributes (depth, normal) with those derived from 3D Gaussians. This consistency regularization introduces supervisory signals to locations not covered by discrete 3D Gaussians, effectively eliminating redundant surfaces outside the Gaussian sampling range. Our extensive experimental results demonstrate that our 3DGSR method enables high-quality 3D surface reconstruction while preserving the efficiency and rendering quality of 3DGS. Besides, our method competes favorably with leading surface reconstruction techniques while offering a more efficient learning process and much better rendering qualities.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.00409.pdf) | [💻 Code (not yet)](https://github.com/CVMI-Lab/3DGSR)
+
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
@@ -2507,7 +2525,7 @@ We introduce GRM, a large-scale reconstructor capable of recovering a 3D asset f
 
   [📄 Paper](https://arxiv.org/pdf/2403.14621.pdf) | [🌐 Project Page](https://justimyhxu.github.io/projects/grm/) | [💻 Code](https://github.com/justimyhxu/grm) 
 
-### 5. Gamba: Marry Gaussian Splatting with Mamba for single view 3D reconstruction 
+### 6. Gamba: Marry Gaussian Splatting with Mamba for single view 3D reconstruction 
 **Authors**: Qiuhong Shen, Xuanyu Yi, Zike Wu, Pan Zhou, Hanwang Zhang, Shuicheng Yan, Xinchao Wang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2516,7 +2534,7 @@ We tackle the challenge of efficiently reconstructing a 3D asset from a single i
 
   [📄 Paper](https://arxiv.org/pdf/2403.18795) 
 
-### 6. CoherentGS: Sparse Novel View Synthesis with Coherent 3D Gaussians 
+### 7. CoherentGS: Sparse Novel View Synthesis with Coherent 3D Gaussians 
 **Authors**: Avinash Paliwal, Wei Ye, Jinhui Xiong, Dmytro Kotovenko, Rakesh Ranjan, Vikas Chandra, Nima Khademi Kalantari 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2525,7 +2543,7 @@ The field of 3D reconstruction from images has rapidly evolved in the past few y
 
   [📄 Paper](https://arxiv.org/pdf/2403.19495) | [🌐 Project Page](https://people.engr.tamu.edu/nimak/Papers/CoherentGS/index.html)  
 
-### 7. GaussianCube: Structuring Gaussian Splatting using Optimal Transport for 3D Generative Modeling  
+### 8. GaussianCube: Structuring Gaussian Splatting using Optimal Transport for 3D Generative Modeling  
 **Authors**: Bowen Zhang, Yiji Cheng, Jiaolong Yang, Chunyu Wang, Feng Zhao, Yansong Tang, Dong Chen, Baining Guo 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -2533,6 +2551,15 @@ The field of 3D reconstruction from images has rapidly evolved in the past few y
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.19655.pdf) | [🌐 Project Page](https://gaussiancube.github.io/) | [💻 Code](https://github.com/GaussianCube/GaussianCube)
+
+### 9. InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds   
+**Authors**: Zhiwen Fan, Wenyan Cong, Kairun Wen, Kevin Wang, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang 
+<details span>
+<summary><b>Abstract</b></summary>
+While novel view synthesis (NVS) has made substantial progress in 3D computer vision, it typically requires an initial estimation of camera intrinsics and extrinsics from dense viewpoints. This pre-processing is usually conducted via a Structure-from-Motion (SfM) pipeline, a procedure that can be slow and unreliable, particularly in sparse-view scenarios with insufficient matched features for accurate reconstruction. In this work, we integrate the strengths of point-based representations (e.g., 3D Gaussian Splatting, 3D-GS) with end-to-end dense stereo models (DUSt3R) to tackle the complex yet unresolved issues in NVS under unconstrained settings, which encompasses pose-free and sparse view challenges. Our framework, InstantSplat, unifies dense stereo priors with 3D-GS to build 3D Gaussians of large-scale scenes from sparseview & pose-free images in less than 1 minute. Specifically, InstantSplat comprises a Coarse Geometric Initialization (CGI) module that swiftly establishes a preliminary scene structure and camera parameters across all training views, utilizing globally-aligned 3D point maps derived from a pre-trained dense stereo pipeline. This is followed by the Fast 3D-Gaussian Optimization (F-3DGO) module, which jointly optimizes the 3D Gaussian attributes and the initialized poses with pose regularization. Experiments conducted on the large-scale outdoor Tanks & Temples datasets demonstrate that InstantSplat significantly improves SSIM (by 32%) while concurrently reducing Absolute Trajectory Error (ATE) by 80%. These establish InstantSplat as a viable solution for scenarios involving posefree and sparse-view conditions.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.20309.pdf) | [🌐 Project Page](https://instantsplat.github.io/) | [💻 Code (not yet)]()
 
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
