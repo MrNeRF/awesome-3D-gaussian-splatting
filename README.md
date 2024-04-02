@@ -54,8 +54,11 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **April 2, 2024**
+ - Added x papers: HO, SGD, 
+
  **March 30, 2024**
- - Added x papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS
+ - Added 8 papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS, and GaussianCube
 
  **March 27, 2024**
  - Added Other Implementation: 360-gaussian-splatting
@@ -718,7 +721,7 @@ Reconstructing the human body from single-view videos plays a pivotal role in th
 Creating high-fidelity 3D head avatars has always been a research hotspot, but there remains a great challenge under lightweight sparse view setups. In this paper, we propose Gaussian Head Avatar represented by controllable 3D Gaussians for high-fidelity head avatar modeling. We optimize the neutral 3D Gaussians and a fully learned MLP-based deformation field to capture complex expressions. The two parts benefit each other, thereby our method can model fine-grained dynamic details while ensuring expression accuracy. Furthermore, we devise a well-designed geometry-guided initialization strategy based on implicit SDF and Deep Marching Tetrahedra for the stability and convergence of the training procedure. Experiments show our approach outperforms other state-of-the-art sparse-view methods, achieving ultra high-fidelity rendering quality at 2K resolution even under exaggerated expressions. 
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.03029.pdf) | [🌐 Project Page](https://yuelangx.github.io/gaussianheadavatar/) | | [💻 Code (not yet)](https://github.com/YuelangX/Gaussian-Head-Avatar) | [🎥 Short Presentation](https://www.youtube.com/watch?v=kvrrI3EoM5g)
+ [📄 Paper](https://arxiv.org/pdf/2312.03029.pdf) | [🌐 Project Page](https://yuelangx.github.io/gaussianheadavatar/) | | [💻 Code](https://github.com/YuelangX/Gaussian-Head-Avatar) | [🎥 Short Presentation](https://www.youtube.com/watch?v=kvrrI3EoM5g)
 
 <br>
 
@@ -2522,6 +2525,15 @@ The field of 3D reconstruction from images has rapidly evolved in the past few y
 
   [📄 Paper](https://arxiv.org/pdf/2403.19495) | [🌐 Project Page](https://people.engr.tamu.edu/nimak/Papers/CoherentGS/index.html)  
 
+### 7. GaussianCube: Structuring Gaussian Splatting using Optimal Transport for 3D Generative Modeling  
+**Authors**: Bowen Zhang, Yiji Cheng, Jiaolong Yang, Chunyu Wang, Feng Zhao, Yansong Tang, Dong Chen, Baining Guo 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (GS) have achieved considerable improvement over Neural Radiance Fields in terms of 3D fitting fidelity and rendering speed. However, this unstructured representation with scattered Gaussians poses a significant challenge for generative modeling. To address the problem, we introduce GaussianCube, a structured GS representation that is both powerful and efficient for generative modeling. We achieve this by first proposing a modified densification-constrained GS fitting algorithm which can yield high-quality fitting results using a fixed number of free Gaussians, and then re-arranging the Gaussians into a predefined voxel grid via Optimal Transport. The structured grid representation allows us to use standard 3D U-Net as our backbone in diffusion generative modeling without elaborate designs. Extensive experiments conducted on ShapeNet and OmniObject3D show that our model achieves state-of-the-art generation results both qualitatively and quantitatively, underscoring the potential of GaussianCube as a powerful and versatile 3D representation. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.19655.pdf) | [🌐 Project Page](https://gaussiancube.github.io/) | [💻 Code](https://github.com/GaussianCube/GaussianCube)
+
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
@@ -2607,6 +2619,24 @@ Reliable multimodal sensor fusion algorithms re- quire accurate spatiotemporal c
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.12722.pdf) | [🌐 Project Page](https://xdimlab.github.io/hugs_website/) | [💻 Code (not yet)]()
+
+### 6. HO-Gaussian: Hybrid Optimization of 3D Gaussian Splatting for Urban Scenes  
+**Authors**: Zhuopeng Li, Yilin Zhang, Chenming Wu, Jianke Zhu, Liangjun Zhang 
+<details span>
+<summary><b>Abstract</b></summary>
+The rapid growth of 3D Gaussian Splatting (3DGS) has revolutionized neural rendering, enabling real-time production of high-quality renderings. However, the previous 3DGS-based methods have limitations in urban scenes due to reliance on initial Structure-from-Motion(SfM) points and difficulties in rendering distant, sky and low-texture areas. To overcome these challenges, we propose a hybrid optimization method named HO-Gaussian, which combines a grid-based volume with the 3DGS pipeline. HO-Gaussian eliminates the dependency on SfM point initialization, allowing for rendering of urban scenes, and incorporates the Point Densitification to enhance rendering quality in problematic regions during training. Furthermore, we introduce Gaussian Direction Encoding as an alternative for spherical harmonics in the rendering pipeline, which enables view-dependent color representation. To account for multi-camera systems, we introduce neural warping to enhance object consistency across different cameras. Experimental results on widely used autonomous driving datasets demonstrate that HO-Gaussian achieves photo-realistic rendering in real-time on multi-camera urban datasets.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.20032.pdf)
+
+### 7. SGD: Street View Synthesis with Gaussian Splatting and Diffusion Prior  
+**Authors**: Zhongrui Yu, Haoran Wang, Jinze Yang, Hanzhang Wang, Zeke Xie, Yunfeng Cai, Jiale Cao, Zhong Ji, Mingming Sun 
+<details span>
+<summary><b>Abstract</b></summary>
+Novel View Synthesis (NVS) for street scenes play a critical role in the autonomous driving simulation. The current mainstream technique to achieve it is neural rendering, such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS). Although thrilling progress has been made, when handling street scenes, current methods struggle to maintain rendering quality at the viewpoint that deviates significantly from the training viewpoints. This issue stems from the sparse training views captured by a fixed camera on a moving vehicle. To tackle this problem, we propose a novel approach that enhances the capacity of 3DGS by leveraging prior from a Diffusion Model along with complementary multi-modal data. Specifically, we first fine-tune a Diffusion Model by adding images from adjacent frames as condition, meanwhile exploiting depth data from LiDAR point clouds to supply additional spatial information. Then we apply the Diffusion Model to regularize the 3DGS at unseen views during training. Experimental results validate the effectiveness of our method compared with current state-of-the-art models, and demonstrate its advance in rendering images from broader views. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.20079.pdf)
 
 <br>
 
