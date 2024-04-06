@@ -2225,7 +2225,7 @@ Touch and vision go hand in hand, mutually enhancing our ability to understand t
 
   [📄 Paper](https://arxiv.org/pdf/2403.20275) 
 
-### 27. Snap-it, Tap-it, Splat-it: Tactile-Informed 3D Gaussian Splatting for Reconstructing Challenging Surfaces 
+### 27. 3DGSR: Implicit Surface Reconstruction with 3D Gaussian Splatting
 **Authors**: Mauro Comi, Alessio Tonioni, Max Yang, Jonathan Tremblay, Valts Blukis, Yijiong Lin, Nathan F. Lepora, Laurence Aitchison 
 <details span>
 <summary><b>Abstract</b></summary>
