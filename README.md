@@ -600,7 +600,7 @@ We introduce GaussianAvatars, a new method to create photorealistic head avatars
 We present a new approach, termed GPS-Gaussian, for synthesizing novel views of a character in a real-time manner. The proposed method enables 2K-resolution rendering under a sparse-view camera setting. Unlike the original Gaussian Splatting or neural implicit rendering methods that necessitate per-subject optimizations, we introduce Gaussian parameter maps defined on the source views and regress directly Gaussian Splatting properties for instant novel view synthesis without any fine-tuning or optimization. To this end, we train our Gaussian parameter regression module on a large amount of human scan data, jointly with a depth estimation module to lift 2D parameter maps to 3D space. The proposed framework is fully differentiable and experiments on several datasets demonstrate that our method outperforms state-of-the-art methods while achieving an exceeding rendering speed.
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.02155.pdf) | [🌐 Project Page](https://github.com/ShunyuanZheng/GPS-Gaussian) | [💻 Code](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Short Presentation](https://youtu.be/TBIekcqt0j0)
+ [📄 Paper](https://arxiv.org/pdf/2312.02155.pdf) | [🌐 Project Page]( https://shunyuanzheng.github.io/GPS-Gaussian) | [💻 Code](https://github.com/ShunyuanZheng/GPS-Gaussian) | [🎥 Short Presentation](https://youtu.be/TBIekcqt0j0)
 
 ### 11. GauHuman: Articulated Gaussian Splatting from Monocular Human Videos 
 **Authors**: Shoukang Hu Ziwei Liu  
@@ -968,7 +968,7 @@ Text-to-3D generation represents an exciting field that has seen rapid advanceme
 Text-to-3D scene generation holds immense potential for the gaming, film, and architecture sectors, increasingly capturing the attention of both academic and industry circles. Despite significant progress, current methods still struggle with maintaining high quality, consistency, and editing flexibility. In this paper, we propose DreamScene, a 3D Gaussian-based novel text-to-3D scene generation framework that leverages Formation Pattern Sampling (FPS) for core structuring, augmented with a strategic camera sampling and supported by holistic object-environment integration to overcome these hurdles. FPS, guided by the formation patterns of 3D objects, employs multi-timesteps sampling to quickly form semantically rich, high-quality representations, uses 3D Gaussian filtering for optimization stability, and leverages reconstruction techniques to generate plausible textures. The camera sampling strategy incorporates a progressive three-stage approach, specifically designed for both indoor and outdoor settings, to effectively ensure scene-wide 3D consistency. DreamScene enhances scene editing flexibility by combining objects and environments, enabling targeted adjustments. Extensive experiments showcase DreamScene's superiority over current state-of-the-art techniques, heralding its wide-ranging potential for diverse applications. 
 </details>
 
-[📄 Paper (not yet)]() | [🌐 Project Page](https://dreamscene-project.github.io/) 
+[📄 Paper](https://arxiv.org/pdf/2404.03575.pdf) | [🌐 Project Page](https://dreamscene-project.github.io/) | [💻 Code (not yet)](https://github.com/DreamScene-Project/DreamScene)
 
 ### 10. FDGaussian: Fast Gaussian Splatting from Single Image via Geometric-aware Diffusion Model  
 **Authors**: Qijun Feng, Zhen Xing, Zuxuan Wu, Yu-Gang Jiang  
@@ -1654,7 +1654,7 @@ Reconstructing and simulating elastic objects from visual observations is crucia
 3D Gaussian splatting, a novel differentiable rendering technique, has achieved state-of-the-art novel view synthesis results with high rendering speeds and relatively low training times. However, its performance on scenes commonly seen in indoor datasets is poor due to the lack of geometric constraints during optimization. We extend 3D Gaussian splatting with depth and normal cues to tackle challenging indoor datasets and showcase techniques for efficient mesh extraction, an important downstream application. Specifically, we regularize the optimization procedure with depth information, enforce local smoothness of nearby Gaussians, and use the geometry of the 3D Gaussians supervised by normal cues to achieve better alignment with the true scene geometry. We improve depth estimation and novel view synthesis results over baselines and show how this simple yet effective regularization technique can be used to directly extract meshes from the Gaussian representation yielding more physically accurate reconstructions on indoor scenes.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.17822) | [💻 Code (not yet)](https://github.com/maturk/dn-splatter)
+  [📄 Paper](https://arxiv.org/pdf/2403.17822) | [💻 Code](https://github.com/maturk/dn-splatter) | [🌐 Project Page](https://maturk.github.io/dn-splatter/)
 
 ### 7. 2D Gaussian Splatting for Geometrically Accurate Radiance Fields 
 **Authors**: Binbin Huang, Zehao Yu, Anpei Chen, Andreas Geiger, Shenghua Gao 
@@ -1984,7 +1984,7 @@ While neural rendering has led to impressive advances in scene reconstruction an
 We present a method named iComMa to address the 6D pose estimation problem in computer vision. The conventional pose estimation methods typically rely on the target's CAD model or necessitate specific network training tailored to particular object classes. Some existing methods address mesh-free 6D pose estimation by employing the inversion of a Neural Radiance Field (NeRF), aiming to overcome the aforementioned constraints. However, it still suffers from adverse initializations. By contrast, we model the pose estimation as the problem of inverting the 3D Gaussian Splatting (3DGS) with both the comparing and matching loss. In detail, a render-and-compare strategy is adopted for the precise estimation of poses. Additionally, a matching module is designed to enhance the model's robustness against adverse initializations by minimizing the distances between 2D keypoints. This framework systematically incorporates the distinctive characteristics and inherent rationale of render-and-compare and matching-based approaches. This comprehensive consideration equips the framework to effectively address a broader range of intricate and challenging scenarios, including instances with substantial angular deviations, all while maintaining a high level of prediction accuracy. Experimental results demonstrate the superior precision and robustness of our proposed jointly optimized framework when evaluated on synthetic and complex real-world data in challenging scenarios. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2312.09031.pdf) 
+  [📄 Paper](https://arxiv.org/pdf/2312.09031.pdf) | [💻 Code](https://github.com/YuanSun-XJTU/iComMa)
 
 <br>
 
@@ -2088,7 +2088,7 @@ Existing NeRF-based methods for large scene reconstruction often have limitation
 Recent efforts in using 3D Gaussians for scene reconstruction and novel view synthesis can achieve impressive results on curated benchmarks; however, images captured in real life are often blurry. In this work, we analyze the robustness of Gaussian-Splatting-based methods against various image blur, such as motion blur, defocus blur, downscaling blur, \etc. Under these degradations, Gaussian-Splatting-based methods tend to overfit and produce worse results than Neural-Radiance-Field-based methods. To address this issue, we propose Blur Agnostic Gaussian Splatting (BAGS). BAGS introduces additional 2D modeling capacities such that a 3D-consistent and high quality scene can be reconstructed despite image-wise blur. Specifically, we model blur by estimating per-pixel convolution kernels from a Blur Proposal Network (BPN). BPN is designed to consider spatial, color, and depth variations of the scene to maximize modeling capacity. Additionally, BPN also proposes a quality-assessing mask, which indicates regions where blur occur. Finally, we introduce a coarse-to-fine kernel optimization scheme; this optimization scheme is fast and avoids sub-optimal solutions due to a sparse point cloud initialization, which often occurs when we apply Structure-from-Motion on blurry images. We demonstrate that BAGS achieves photorealistic renderings under various challenging blur conditions and imaging geometry, while significantly improving upon existing approaches. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.04926.pdf) 
+  [📄 Paper](https://arxiv.org/pdf/2403.04926.pdf) | [💻 Code](https://github.com/snldmt/BAGS)  
 
 ### 12. StyleGaussian: Instant 3D Style Transfer with Gaussian Splatting 
 **Authors**: Kunhao Liu, Fangneng Zhan, Muyu Xu, Christian Theobalt, Ling Shao, Shijian Lu 
