@@ -55,6 +55,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **April 2, 2024**
+ - Surface Reconstruction
+
+ **April 2, 2024**
  - Added x papers: HO, SGD, HGS, Snap-it, InstantSplat, 3DGSR, MM3DGS, HAHA, CityGaussain, Mirror-3DGS, and Feature Splatting
 
  **March 30, 2024**
@@ -1675,6 +1678,18 @@ Scene representations using 3D Gaussian primitives have produced excellent resul
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.01223) | [🌐 Project Page](https://feature-splatting.github.io/) | [💻 Code (not yet)](https://github.com/vuer-ai/feature_splatting) 
+
+### 9. Surface Reconstruction from Gaussian Splatting via Novel Stereo Views 
+**Authors**: Ri-Zhao Qiu, Ge Yang, Weijia Zeng, Xiaolong Wang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+The Gaussian splatting for radiance field rendering method has recently emerged as an efficient approach for accurate scene representation. It optimizes the location, size, color, and shape of a cloud of 3D Gaussian elements to visually match, after projection, or splatting, a set of given images taken from various viewing directions. And yet, despite the proximity of Gaussian elements to the shape boundaries, direct surface reconstruction of objects in the scene is a challenge.
+We propose a novel approach for surface reconstruction from Gaussian splatting models. Rather than relying on the Gaussian elements' locations as a prior for surface reconstruction, we leverage the superior novel-view synthesis capabilities of 3DGS. To that end, we use the Gaussian splatting model to render pairs of stereo-calibrated novel views from which we extract depth profiles using a stereo matching method. We then combine the extracted RGB-D images into a geometrically consistent surface. The resulting reconstruction is more accurate and shows finer details when compared to other methods for surface reconstruction from Gaussian splatting models, while requiring significantly less compute time compared to other surface reconstruction methods.
+We performed extensive testing of the proposed method on in-the-wild scenes, taken by a smartphone, showcasing its superior reconstruction abilities. Additionally, we tested the proposed method on the Tanks and Temples benchmark, and it has surpassed the current leading method for surface reconstruction from Gaussian splatting models
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.01810) | [🌐 Project Page](https://gs2mesh.github.io//) | [💻 Code (not yet)]() 
 
 ## 2023:
 ### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
