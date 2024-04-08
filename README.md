@@ -49,12 +49,14 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Tutorial Videos](#tutorial-videos)
 - [Credits](#credits)
 
-
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
 
- **April 2, 2024**
+ **April 8, 2024**
+ - Added 3 papers: Robust Gaussian Splatting, SC4D, and MM-Gaussian
+
+ **April 5, 2024**
  - Added 5 papers: Surface Reconstruction, TCLC-GS, GaSpCT, OmniGS, and Per-Gaussian Embedding, 
  - Fixes
 
@@ -1060,6 +1062,17 @@ We present DreamPolisher, a novel Gaussian Splatting based method with geometric
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2403.17237) | [🌐 Project Page](https://yuanze-lin.me/DreamPolisher_page/) | [💻 Code (not yet)](https://github.com/yuanze-lin/DreamPolisher)  
+
+### 18. SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer
+ 
+**Authors**: Zijie Wu, Chaohui Yu, Yanqin Jiang, Chenjie Cao, Fan Wang, Xiang Bai 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in 2D/3D generative models enable the generation of dynamic 3D objects from a single-view video. Existing approaches utilize score distillation sampling to form the dynamic scene as dynamic NeRF or dense 3D Gaussians. However, these methods struggle to strike a balance among reference view alignment, spatio-temporal consistency, and motion fidelity under single-view conditions due to the implicit nature of NeRF or the intricate dense Gaussian motion prediction. To address these issues, this paper proposes an efficient, sparse-controlled video-to-4D framework named SC4D, that decouples motion and appearance to achieve superior video-to-4D generation. Moreover, we introduce Adaptive Gaussian (AG) initialization and Gaussian Alignment (GA) loss to mitigate shape degeneration issue, ensuring the fidelity of the learned motion and shape. Comprehensive experimental results demonstrate that our method surpasses existing methods in both quality and efficiency. In addition, facilitated by the disentangled modeling of motion and appearance of SC4D, we devise a novel application that seamlessly transfers the learned motion onto a diverse array of 4D entities according to textual descriptions. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2404.03736) | [🌐 Project Page](https://sc4d.github.io/) | [💻 Code (not yet)](https://github.com/JarrentWu1031/SC4D) | [🎥 Short Presentation](https://youtu.be/SkpTEuX4B5c?si=yvrF_iRHnMQR9TD0)
 
 
 ## 2023:
@@ -2294,6 +2307,15 @@ Photorealistic reconstruction relying on 3D Gaussian Splatting has shown promisi
 
   [📄 Paper](https://arxiv.org/pdf/2404.03202)
 
+### 30. Robust Gaussian Splatting 
+**Authors**: François Darmon, Lorenzo Porzi, Samuel Rota-Bulò, Peter Kontschieder 
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we address common error sources for 3D Gaussian Splatting (3DGS) including blur, imperfect camera poses, and color inconsistencies, with the goal of improving its robustness for practical applications like reconstructions from handheld phone captures. Our main contribution involves modeling motion blur as a Gaussian distribution over camera poses, allowing us to address both camera pose refinement and motion blur correction in a unified way. Additionally, we propose mechanisms for defocus blur compensation and for addressing color in-consistencies caused by ambient light, shadows, or due to camera-related factors like varying white balancing settings. Our proposed solutions integrate in a seamless way with the 3DGS formulation while maintaining its benefits in terms of training efficiency and rendering speed. We experimentally validate our contributions on relevant benchmark datasets including Scannet++ and Deblur-NeRF, obtaining state-of-the-art results and thus consistent improvements over relevant baselines.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.04211)
+
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
@@ -2823,6 +2845,15 @@ The advancement of real-time 3D scene reconstruction and novel view synthesis ha
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf) | [🌐 Project Page](https://dekuliutesla.github.io/citygs/) | [💻 Code (not yet)]() 
+
+### 6. MM-Gaussian: 3D Gaussian-based Multi-modal Fusion for Localization and Reconstruction in Unbounded Scenes  
+**Authors**: Chenyang Wu, Yifan Duan, Xinran Zhang, Yu Sheng, Jianmin Ji, Yanyong Zhang 
+<details span>
+<summary><b>Abstract</b></summary>
+Localization and mapping are critical tasks for various applications such as autonomous vehicles and robotics. The challenges posed by outdoor environments present particular complexities due to their unbounded characteristics. In this work, we present MM-Gaussian, a LiDAR-camera multi-modal fusion system for localization and mapping in unbounded scenes. Our approach is inspired by the recently developed 3D Gaussians, which demonstrate remarkable capabilities in achieving high rendering quality and fast rendering speed. Specifically, our system fully utilizes the geometric structure information provided by solid-state LiDAR to address the problem of inaccurate depth encountered when relying solely on visual solutions in unbounded, outdoor scenarios. Additionally, we utilize 3D Gaussian point clouds, with the assistance of pixel-level gradient descent, to fully exploit the color information in photos, thereby achieving realistic rendering effects. To further bolster the robustness of our system, we designed a relocalization module, which assists in returning to the correct trajectory in the event of a localization failure. Experiments conducted in multiple scenarios demonstrate the effectiveness of our method. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.04026) 
 
 <br>
 
