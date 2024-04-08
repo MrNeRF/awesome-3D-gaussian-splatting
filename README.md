@@ -1699,7 +1699,7 @@ Scene representations using 3D Gaussian primitives have produced excellent resul
   [📄 Paper](https://arxiv.org/pdf/2404.01223) | [🌐 Project Page](https://feature-splatting.github.io/) | [💻 Code (not yet)](https://github.com/vuer-ai/feature_splatting) 
 
 ### 9. Surface Reconstruction from Gaussian Splatting via Novel Stereo Views 
-**Authors**: Ri-Zhao Qiu, Ge Yang, Weijia Zeng, Xiaolong Wang 
+**Authors**: Yaniv Wolf, Amit Bracha, Ron Kimmel 
 
 <details span>
 <summary><b>Abstract</b></summary>
