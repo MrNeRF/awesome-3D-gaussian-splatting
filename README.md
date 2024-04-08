@@ -2892,7 +2892,7 @@ The advancement of real-time 3D scene reconstruction and novel view synthesis ha
 - [Tutorial from the authors of 3DGS](https://3dgstutorial.github.io/)
 
 ### Framework
-- [Pointrix](https://github.com/pointrix-project/pointrix) - A differentiable point-based rendering library with a focus on gaussian splatting
+- [msplat](https://github.com/pointrix-project/msplat) - A modular differential gaussian rasterization library.
 - [GauStudio](https://github.com/GAP-LAB-CUHK-SZ/gaustudio) - Unified framework with different paper implementations
 
 ### Other
