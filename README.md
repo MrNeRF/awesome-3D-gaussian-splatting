@@ -53,6 +53,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ **April 9, 2024**
+ - Added 1 paper: EgoLifter
+
  **April 8, 2024**
  - Added 3 papers: Robust Gaussian Splatting, SC4D, and MM-Gaussian
 
@@ -1525,6 +1528,16 @@ Open-vocabulary 3D scene understanding presents a significant challenge in compu
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.15624) | [🌐 Project Page](https://semantic-gaussians.github.io/) | [💻 Code (not yet)]() 
+
+### 9. EgoLifter: Open-world 3D Segmentation for Egocentric Perception 
+**Authors**: Qiao Gu, Zhaoyang Lv, Duncan Frost, Simon Green, Julian Straub, Chris Sweeney 
+
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper we present EgoLifter, a novel system that can automatically segment scenes captured from egocentric sensors into a complete decomposition of individual 3D objects. The system is specifically designed for egocentric data where scenes contain hundreds of objects captured from natural (non-scanning) motion. EgoLifter adopts 3D Gaussians as the underlying representation of 3D scenes and objects and uses segmentation masks from the Segment Anything Model (SAM) as weak supervision to learn flexible and promptable definitions of object instances free of any specific object taxonomy. To handle the challenge of dynamic objects in ego-centric videos, we design a transient prediction module that learns to filter out dynamic objects in the 3D reconstruction. The result is a fully automatic pipeline that is able to reconstruct 3D object instances as collections of 3D Gaussians that collectively compose the entire scene. We created a new benchmark on the Aria Digital Twin dataset that quantitatively demonstrates its state-of-the-art performance in open-world 3D segmentation from natural egocentric input. We run EgoLifter on various egocentric activity datasets which shows the promise of the method for 3D egocentric perception at scale. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2403.18118.pdf) | [🌐 Project Page](https://egolifter.github.io/) | [💻 Code (not yet)]() 
   
 
 ## 2023:
@@ -1607,7 +1620,7 @@ Recently, 3D Gaussian, as an explicit 3D representation method, has demonstrated
 Open-vocabulary querying in 3D space is challenging but essential for scene understanding tasks such as object localization and segmentation. Language-embedded scene representations have made progress by incorporating language features into 3D spaces. However, their efficacy heavily depends on neural networks that are resource-intensive in training and rendering. Although recent 3D Gaussians offer efficient and high-quality novel view synthesis, directly embedding language features in them leads to prohibitive memory usage and decreased performance. In this work, we introduce Language Embedded 3D Gaussians, a novel scene representation for open-vocabulary query tasks. Instead of embedding high-dimensional raw semantic features on 3D Gaussians, we propose a dedicated quantization scheme that drastically alleviates the memory requirement, and a novel embedding procedure that achieves smoother yet high accuracy query, countering the multi-view feature inconsistencies and the high-frequency inductive bias in point-based representations. Our comprehensive experiments show that our representation achieves the best visual quality and language querying accuracy across current language-embedded representations, while maintaining real-time rendering frame rates on a single desktop GPU. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.18482.pdf) | [🌐 Project Page](https://buaavrcg.github.io/LEGaussians/) | [💻 Code (not yet)]()
+  [📄 Paper](https://arxiv.org/pdf/2311.18482.pdf) | [🌐 Project Page](https://buaavrcg.github.io/LEGaussians/) | [💻 Code](https://github.com/buaavrcg/LEGaussians)
 
 ### 2. [CVPR '24] LangSplat: 3D Language Gaussian Splatting 
 **Authors**: Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, Hanspeter Pfister 
