@@ -53,6 +53,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <summary><b>Update Log:</b></summary>
 <br>
 
+ April 11, 2024
+ - Code release of latentSplat
+
  **April 9, 2024**
  - Added 1 paper: EgoLifter
 
@@ -2637,7 +2640,7 @@ We propose MVSplat, an efficient feed-forward 3D Gaussian Splatting model learne
 We present latentSplat, a method to predict semantic Gaussians in a 3D latent space that can be splatted and decoded by a light-weight generative 2D architecture. Existing methods for generalizable 3D reconstruction either do not enable fast inference of high resolution novel views due to slow volume rendering, or are limited to interpolation of close input views, even in simpler settings with a single central object, where 360-degree generalization is possible. In this work, we combine a regression-based approach with a generative model, moving towards both of these capabilities within the same method, trained purely on readily available real video data. The core of our method are variational 3D Gaussians, a representation that efficiently encodes varying uncertainty within a latent space consisting of 3D feature Gaussians. From these Gaussians, specific instances can be sampled and rendered via efficient Gaussian splatting and a fast, generative decoder network. We show that latentSplat outperforms previous works in reconstruction quality and generalization, while being fast and scalable to high-resolution data.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.16292.pdf) | [🌐 Project Page](https://geometric-rl.mpi-inf.mpg.de/latentsplat/) | [💻 Code (not yet)]() 
+  [📄 Paper](https://arxiv.org/pdf/2403.16292.pdf) | [🌐 Project Page](https://geometric-rl.mpi-inf.mpg.de/latentsplat/) | [💻 Code](https://github.com/Chrixtar/latentsplat) 
 
 ### 5. GRM: Large Gaussian Reconstruction Model for Efficient 3D Reconstruction and Generation  
 **Authors**: Yinghao Xu, Zifan Shi, Wang Yifan, Hansheng Chen, Ceyuan Yang, Sida Peng, Yujun Shen, Gordon Wetzstein 
