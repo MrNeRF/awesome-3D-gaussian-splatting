@@ -2019,7 +2019,7 @@ Differentiable rendering is a technique used in an important emerging class of v
   [📄 Paper](https://arxiv.org/pdf/2403.09143) 
   
 ## 2023:
-### 1. Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
+### 1. [CVPRW '24] Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
 **Authors**: Jaeyoung Chung, Jeongtaek Oh, Kyoung Mu Lee 
 <details span>
 <summary><b>Abstract</b></summary>
