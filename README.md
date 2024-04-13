@@ -2888,13 +2888,15 @@ Localization and mapping are critical tasks for various applications such as aut
 - [Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 
 ### Unofficial Implementations
-- [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting)
-- [Gaussian Splatting 3D](https://github.com/heheyas/gaussian_splatting_3d)
-- [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)
-- [fast: C++/CUDA](https://github.com/MrNeRF/gaussian-splatting-cuda)
-- [nerfstudio: python/CUDA](https://github.com/nerfstudio-project/gsplat)
-- [taichi-splatting: pytorch/taichi](https://github.com/uc-vision/taichi-splatting)
-- [OpenSplat: C++/CPU or GPU](https://github.com/pierotofy/OpenSplat)
+|                                                                                             | Language       | License    |
+|---------------------------------------------------------------------------------------------|----------------|------------|
+| [Taichi 3D Gaussian Splatting](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting) | taichi         | Apache-2.0 |
+| [Gaussian Splatting 3D](https://github.com/heheyas/gaussian_splatting_3d)                   | Python/CUDA    |            |
+| [3D Gaussian Splatting](https://github.com/WangFeng18/3d-gaussian-splatting)                | Python/CUDA    | MIT        |
+| [fast](https://github.com/MrNeRF/gaussian-splatting-cuda)                                   | C++/CUDA       | Inria/MPII |
+| [nerfstudio](https://github.com/nerfstudio-project/gsplat)                                  | Python/CUDA    | Apache-2.0 |
+| [taichi-splatting](https://github.com/uc-vision/taichi-splatting)                           | taichi         | Apache-2.0 |
+| [OpenSplat](https://github.com/pierotofy/OpenSplat)                                         | C++/CPU or GPU | AGPL-3.0   |
 
 ### 2D Gaussian Splatting
 - [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
