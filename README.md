@@ -2965,7 +2965,7 @@ Localization and mapping are critical tasks for various applications such as aut
 11. [Gaussian Head Avatars: A Summary](https://towardsdatascience.com/gaussian-head-avatars-a-summary-2bd17bd48500)
 12. [NeRFs vs. 3DGS](https://edwardahn.me/writing/NeRFvs3DGS/)
 13. [Howto capture images for 3DGS](https://medium.com/@heyulei/capture-images-for-gaussian-splatting-81d081bbc826)
-14. [Mathematical detials of forward and backward passes of 3DGS](https://github.com/joeyan/gaussian_splatting/blob/main/MATH.md)
+14. [Mathematical details of forward and backward passes](https://github.com/joeyan/gaussian_splatting/blob/main/MATH.md)
 
 ## Tutorial Videos
 
