@@ -2912,6 +2912,7 @@ Localization and mapping are critical tasks for various applications such as aut
 - [WebGL Viewer 3](https://github.com/BladeTransformerLLC/gauzilla)
 - [WebGPU Viewer 1](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [WebGPU Viewer 2](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
+- [WebGPU Viewer 3](https://github.com/KeKsBoTer/web-splat)
 - [Three.js](https://github.com/mkkellogg/GaussianSplats3D)
 - [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
 - [Nerfstudio Unofficial](https://github.com/yzslab/nerfstudio/tree/gaussian_splatting)
