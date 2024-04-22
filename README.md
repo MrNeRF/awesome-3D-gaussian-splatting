@@ -515,6 +515,16 @@ We present HAHA - a novel approach for animatable human avatar generation from m
 
   [📄 Paper](https://arxiv.org/pdf/2404.01053) 
 
+### 11. [CVPRW '24] Gaussian Splatting Decoder for 3D‑aware Generative Adversarial Networks   
+**Authors**: Florian Barthel, Arian Beckmann, Wieland Morgenstern, Anna Hilsmann, Peter Eisert
+ 
+<details span>
+<summary><b>Abstract</b></summary>
+NeRF-based 3D-aware Generative Adversarial Networks like EG3D or GIRAFFE have shown very high rendering quality under large representational variety. However, rendering with Neural Radiance Fields poses several challenges for most 3D applications: First, the significant computational demands of NeRF rendering preclude its use on low-power devices, such as mobiles and VR/AR headsets. Second, implicit representations based on neural networks are difficult to incorporate into explicit 3D scenes, such as VR environments or video games. 3D Gaussian Splatting (3DGS) overcomes these limitations by providing an explicit 3D representation that can be rendered efficiently at high frame rates. In this work, we present a novel approach that combines the high rendering quality of NeRF-based 3D-aware Generative Adversarial Networks with the flexibility and computational advantages of 3DGS. By training a decoder that maps implicit NeRF representations to explicit 3D Gaussian Splatting attributes, we can integrate the representational diversity and quality of 3D GANs into the ecosystem of 3D Gaussian Splatting for the first time. Additionally, our approach allows for a high resolution GAN inversion and real-time GAN editing with 3D Gaussian Splatting scenes.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2404.10625) |  [🌐 Project Page](https://florian-barthel.github.io/gaussian_decoder/index.html) | [💻 Code](https://github.com/fraunhoferhhi/gaussian_gan_decoder)
+
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
