@@ -2951,6 +2951,7 @@ Localization and mapping are critical tasks for various applications such as aut
 - [iOS & Metal viewer](https://github.com/laanlabs/metal-splats)
 - [jupyter notebook](https://github.com/shumash/gaussian-splatting/blob/mshugrina/interactive/interactive.ipynb)
 - [PyOpenGL viewer (also with official CUDA backend)](https://github.com/limacv/GaussianSplattingViewer.git)
+- [PyOpenGL viewer 2](https://github.com/dendenxu/fast-gaussian-rasterization)
 - [PlayCanvas Viewer](https://github.com/playcanvas/model-viewer)
 - [gsplat.js](https://github.com/dylanebert/gsplat.js)
 - [Splatapult](https://github.com/hyperlogic/splatapult) - 3d gaussian splatting renderer in C++ and OpenGL, works with OpenXR for tethered VR
