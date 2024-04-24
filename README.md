@@ -2360,6 +2360,15 @@ In this paper, we address common error sources for 3D Gaussian Splatting (3DGS) 
 
   [📄 Paper](https://arxiv.org/pdf/2404.04211)
 
+### 31. DeblurGS: Gaussian Splatting for Camera Motion Blur
+**Authors**: Jeongtaek Oh, Jaeyoung Chung, Dongwoo Lee, Kyoung Mu Lee 
+<details span>
+<summary><b>Abstract</b></summary>
+Although significant progress has been made in reconstructing sharp 3D scenes from motion-blurred images, a transition to realworld applications remains challenging. The primary obstacle stems from the severe blur which leads to inaccuracies in the acquisition of initial camera poses through Structure-from-Motion, a critical aspect often overlooked by previous approaches. To address this challenge, we propose DeblurGS, a method to optimize sharp 3D Gaussian Splatting from motion-blurred images, even with the noisy camera pose initialization. We restore a fine-grained sharp scene by leveraging the remarkable reconstruction capability of 3D Gaussian Splatting. Our approach estimates the 6-Degree-of-Freedom camera motion for each blurry observation and synthesizes corresponding blurry renderings for the optimization process. Furthermore, we propose Gaussian Densification Annealing strategy to prevent the generation of inaccurate Gaussians at erroneous locations during the early training stages when camera motion is still imprecise. Comprehensive experiments demonstrate that our DeblurGS achieves state-of-the-art performance in deblurring and novel view synthesis for real-world and synthetic benchmark datasets, as well as field-captured blurry smartphone videos.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.11358)
+
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
 **Authors**: Zehao Yu, Anpei Chen, Binbin Huang, Torsten Sattler, Andreas Geiger
