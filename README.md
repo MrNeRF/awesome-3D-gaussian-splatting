@@ -1745,7 +1745,11 @@ Reconstructing and simulating elastic objects from visual observations is crucia
 
   [📄 Paper](https://arxiv.org/pdf/2403.17888) | [🌐 Project Page](https://surfsplatting.github.io/) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://www.youtube.com/watch?v=oaHCtB6yiKU)
 
-#### Unofficial Implementation and Specification:
+
+#### 7.1 Unofficial Implementation and Specification
+
+**Authors**: Yunzhou Song, Zixuan Lin, Yexin Zhang
+
 [💻 Code ](https://github.com/TimSong412/2D-surfel-gaussian)
 
 
