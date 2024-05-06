@@ -1089,6 +1089,16 @@ Recent advances in 2D/3D generative models enable the generation of dynamic 3D o
 
 [📄 Paper](https://arxiv.org/pdf/2404.03736) | [🌐 Project Page](https://sc4d.github.io/) | [💻 Code (not yet)](https://github.com/JarrentWu1031/SC4D) | [🎥 Short Presentation](https://youtu.be/SkpTEuX4B5c?si=yvrF_iRHnMQR9TD0)
 
+### 19. DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos
+ 
+**Authors**: Wen-Hsuan Chu*, Lei Ke*, Katerina Fragkiadaki 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Existing VLMs can track in-the-wild 2D video objects while current generative models provide powerful visual priors for synthesizing novel views for the highly under-constrained 2D-to-3D object lifting. Building upon this exciting progress, we present DreamScene4D, the first approach that can generate three-dimensional dynamic scenes of multiple objects from monocular in-the-wild videos with large object motion across occlusions and novel viewpoints. Our key insight is to design a "decompose-then-recompose" scheme to factorize both the whole video scene and each object's 3D motion. We first decompose the video scene by using open-vocabulary mask trackers and an adapted image diffusion model to segment, track, and amodally complete the objects and background in the video. Each object track is mapped to a set of 3D Gaussians that deform and move in space and time. We also factorize the observed motion into multiple components to handle fast motion. The camera motion can be inferred by re-rendering the background to match the video frames. For the object motion, we first model the object-centric deformation of the objects by leveraging rendering losses and multi-view generative priors in an object-centric frame, then optimize object-centric to world-frame transformations by comparing the rendered outputs against the perceived pixel and optical flow. Finally, we recompose the background and objects and optimize for relative object scales using monocular depth prediction guidance. We show extensive results on the challenging DAVIS, Kubric, and self-captured videos, detail some limitations, and provide future directions. Besides 4D scene generation, our results show that DreamScene4D enables accurate 2D point motion tracking by projecting the inferred 3D trajectories to 2D, while never explicitly trained to do so. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2405.02280) | [🌐 Project Page](https://dreamscene4d.github.io/) | [💻 Code (not yet)](https://github.com/dreamscene4d/dreamscene4d) 
 
 ## 2023:
 ### 1. [CVPR '24] Text-to-3D using Gaussian Splatting
