@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS
+ - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -1082,7 +1082,6 @@ We present DreamPolisher, a novel Gaussian Splatting based method with geometric
 [📄 Paper](https://arxiv.org/pdf/2403.17237) | [🌐 Project Page](https://yuanze-lin.me/DreamPolisher_page/) | [💻 Code (not yet)](https://github.com/yuanze-lin/DreamPolisher)  
 
 ### 18. SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer
- 
 **Authors**: Zijie Wu, Chaohui Yu, Yanqin Jiang, Chenjie Cao, Fan Wang, Xiang Bai 
 
 <details span>
@@ -1091,6 +1090,17 @@ Recent advances in 2D/3D generative models enable the generation of dynamic 3D o
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2404.03736) | [🌐 Project Page](https://sc4d.github.io/) | [💻 Code (not yet)](https://github.com/JarrentWu1031/SC4D) | [🎥 Short Presentation](https://youtu.be/SkpTEuX4B5c?si=yvrF_iRHnMQR9TD0)
+
+### 19. Hash3D: Training-free Acceleration for 3D Generation 
+**Authors**: Xingyi Yang, Xinchao Wang 
+
+<details span>
+<summary><b>Abstract</b></summary>
+The evolution of 3D generative modeling has been notably propelled by the adoption of 2D diffusion models. Despite this progress, the cumbersome optimization process per se presents a critical hurdle to efficiency. In this paper, we introduce Hash3D, a universal acceleration for 3D generation without model training. Central to Hash3D is the insight that feature-map redundancy is prevalent in images rendered from camera positions and diffusion time-steps in close proximity. By effectively hashing and reusing these feature maps across neighboring timesteps and camera angles, Hash3D substantially prevents redundant calculations, thus accelerating the diffusion model's inference in 3D generation tasks. We achieve this through an adaptive grid-based hashing. Surprisingly, this feature-sharing mechanism not only speed up the generation but also enhances the smoothness and view consistency of the synthesized 3D objects. Our experiments covering 5 text-to-3D and 3 image-to-3D models, demonstrate Hash3D's versatility to speed up optimization, enhancing efficiency by 1.3 to 4 times. Additionally, Hash3D's integration with 3D Gaussian splatting largely speeds up 3D model creation, reducing text-to-3D processing to about 10 minutes and image-to-3D conversion to roughly 30 seconds.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2404.06091) | [🌐 Project Page](https://adamdad.github.io/hash3D/) | [💻 Code](https://github.com/Adamdad/hash3D) 
+
 
 ## 2023:
 ### 1. [CVPR '24] Text-to-3D using Gaussian Splatting
