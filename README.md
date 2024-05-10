@@ -3131,6 +3131,9 @@ Localization and mapping are critical tasks for various applications such as aut
 ### 2D Gaussian Splatting
 - [jupyter notebook 2D GS splatting](https://github.com/OutofAi/2D-Gaussian-Splatting)
 
+### Gaussian Style Transfer 
+- [Direct Gaussian Style Optimization (DGSO): Stylizing 3D Gaussian Splats](https://github.com/An-u-rag/stylized-gaussian-splatting) - Applying style transfer during gaussian optimization to produce stylized gaussian splats of a scene.
+
 ### Game Engines 
 - [Unity](https://github.com/aras-p/UnityGaussianSplatting)
 - [PlayCanvas](https://github.com/playcanvas/engine/tree/main/extras/splat)
