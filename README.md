@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC
+ - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC, Reinforcment Learning with GGS
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -2063,6 +2063,15 @@ Detecting anomalies in images has become a well-explored problem in both academi
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.06832) | [🌐 Project Page](https://meyerls.github.io/pegasus_web/) | [💻 Code](https://github.com/m-kruse98/SplatPose) 
+
+### 22. Reinforcement Learning with Generalizable Gaussian Splatting 
+**Authors**: Jiaxu Wang, Qiang Zhang, Jingkai Sun, Jiahang Cao, Yecheng Shao, Renjing Xu 
+<details span>
+<summary><b>Abstract</b></summary>
+An excellent representation is crucial for reinforcement learning (RL) performance, especially in vision-based reinforcement learning tasks. The quality of the environment representation directly influences the achievement of the learning task. Previous vision-based RL typically uses explicit or implicit ways to represent environments, such as images, points, voxels, and neural radiance fields. However, these representations contain several drawbacks. They cannot either describe complex local geometries or generalize well to unseen scenes, or require precise foreground masks. Moreover, these implicit neural representations are akin to a ``black box", significantly hindering interpretability. 3D Gaussian Splatting (3DGS), with its explicit scene representation and differentiable rendering nature, is considered a revolutionary change for reconstruction and representation methods. In this paper, we propose a novel Generalizable Gaussian Splatting framework to be the representation of RL tasks, called GSRL. Through validation in the RoboMimic environment, our method achieves better results than other baselines in multiple tasks, improving the performance by 10%, 44%, and 15% compared with baselines on the hardest task. This work is the first attempt to leverage generalizable 3DGS as a representation for RL. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.07950) 
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
