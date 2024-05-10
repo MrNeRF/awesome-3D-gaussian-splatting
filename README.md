@@ -2035,6 +2035,15 @@ One of the most critical factors in achieving sharp Novel View Synthesis (NVS) u
 
   [📄 Paper](https://arxiv.org/pdf/2404.06710)
 
+### 21. [CVPR '24] SplatPose & Detect: Pose-Agnostic 3D Anomaly Detection
+**Authors**: Mathis Kruse, Marco Rudolph, Dominik Woiwode, Bodo Rosenhahn 
+<details span>
+<summary><b>Abstract</b></summary>
+Detecting anomalies in images has become a well-explored problem in both academia and industry. State-of-the-art algorithms are able to detect defects in increasingly difficult settings and data modalities. However, most current methods are not suited to address 3D objects captured from differing poses. While solutions using Neural Radiance Fields (NeRFs) have been proposed, they suffer from excessive computation requirements, which hinder real-world usability. For this reason, we propose the novel 3D Gaussian splatting-based framework SplatPose which, given multi-view images of a 3D object, accurately estimates the pose of unseen views in a differentiable manner, and detects anomalies in them. We achieve state-of-the-art results in both training and inference speed, and detection performance, even when using less training data than competing methods. We thoroughly evaluate our framework using the recently proposed Pose-agnostic Anomaly Detection benchmark and its multi-pose anomaly detection (MAD) data set.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.06832) | [🌐 Project Page](https://meyerls.github.io/pegasus_web/) | [💻 Code](https://github.com/m-kruse98/SplatPose) 
+
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
