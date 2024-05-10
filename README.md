@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat 
+ - Added x paper: Z-Splat, Dual-Camera
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -1976,6 +1976,15 @@ Differentiable 3D-Gaussian splatting (GS) is emerging as a prominent technique i
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.04687)
+
+### 18. Dual-Camera Smooth Zoom on Mobile Phones 
+**Authors**: Renlong Wu, Zhilu Zhang, Yu Yang, Wangmeng Zuo 
+<details span>
+<summary><b>Abstract</b></summary>
+When zooming between dual cameras on a mobile, noticeable jumps in geometric content and image color occur in the preview, inevitably affecting the user's zoom experience. In this work, we introduce a new task, ie, dual-camera smooth zoom (DCSZ) to achieve a smooth zoom preview. The frame interpolation (FI) technique is a potential solution but struggles with ground-truth collection. To address the issue, we suggest a data factory solution where continuous virtual cameras are assembled to generate DCSZ data by rendering reconstructed 3D models of the scene. In particular, we propose a novel dual-camera smooth zoom Gaussian Splatting (ZoomGS), where a camera-specific encoding is introduced to construct a specific 3D model for each virtual camera. With the proposed data factory, we construct a synthetic dataset for DCSZ, and we utilize it to fine-tune FI models. In addition, we collect real-world dual-zoom images without ground-truth for evaluation. Extensive experiments are conducted with multiple FI methods. The results show that the fine-tuned FI models achieve a significant performance improvement over the original ones on DCSZ task. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.04908)
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
