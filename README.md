@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360
+ - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -2718,6 +2718,15 @@ Simultaneous localization and mapping is essential for position tracking and sce
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.00923) | [🌐 Project Page](https://vita-group.github.io/MM3DGS-SLAM/) | [💻 Code (not yet)]()
+
+### 9. Gaussian-LIC: Photo-realistic LiDAR-Inertial-Camera SLAM with 3D Gaussian Splatting    
+**Authors**: Xiaolei Lang, Laijian Li, Hang Zhang, Feng Xiong, Mu Xu, Yong Liu, Xingxing Zuo, Jiajun Lv 
+<details span>
+<summary><b>Abstract</b></summary>
+We present a real-time LiDAR-Inertial-Camera SLAM system with 3D Gaussian Splatting as the mapping backend. Leveraging robust pose estimates from our LiDAR-Inertial-Camera odometry, Coco-LIC, an incremental photo-realistic mapping system is proposed in this paper. We initialize 3D Gaussians from colorized LiDAR points and optimize them using differentiable rendering powered by 3D Gaussian Splatting. Meticulously designed strategies are employed to incrementally expand the Gaussian map and adaptively control its density, ensuring high-quality mapping with real-time capability. Experiments conducted in diverse scenarios demonstrate the superior performance of our method compared to existing radiance-field-based SLAM systems. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.06926)
 
 ## 2023:
 ### 1. [CVPR '24] GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
