@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC, Reinforcment Learning with GGS
+ - Added 15 papers: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC, Reinforcment Learning with GGS, GoMAvatar
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -527,6 +527,16 @@ NeRF-based 3D-aware Generative Adversarial Networks like EG3D or GIRAFFE have sh
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2404.10625) |  [🌐 Project Page](https://florian-barthel.github.io/gaussian_decoder/index.html) | [💻 Code](https://github.com/fraunhoferhhi/gaussian_gan_decoder)
+
+### 12. GoMAvatar: Efficient Animatable Human Modeling from Monocular Video Using Gaussians-on-Mesh 
+**Authors**: Jing Wen, Xiaoming Zhao, Zhongzheng Ren, Alexander G. Schwing, Shenlong Wang 
+ 
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce GoMAvatar, a novel approach for real-time, memory-efficient, high-quality animatable human modeling. GoMAvatar takes as input a single monocular video to create a digital avatar capable of re-articulation in new poses and real-time rendering from novel viewpoints, while seamlessly integrating with rasterization-based graphics pipelines. Central to our method is the Gaussians-on-Mesh representation, a hybrid 3D model combining rendering quality and speed of Gaussian splatting with geometry modeling and compatibility of deformable meshes. We assess GoMAvatar on ZJU-MoCap data and various YouTube videos. GoMAvatar matches or surpasses current monocular human modeling algorithms in rendering quality and significantly outperforms them in computational efficiency (43 FPS) while being memory-efficient (3.63 MB per subject). 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.07991) |  [🌐 Project Page](https://wenj.github.io/GoMAvatar/) | [💻 Code](https://github.com/wenj/GoMAvatar)
 
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
