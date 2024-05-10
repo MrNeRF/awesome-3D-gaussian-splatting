@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D
+ - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -2093,6 +2093,15 @@ Differentiable rendering is a technique used in an important emerging class of v
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2403.09143) 
+
+### 5. Revising Densification in Gaussian Splatting 
+**Authors**: Samuel Rota Bulò, Lorenzo Porzi, Peter Kontschieder 
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we address the limitations of Adaptive Density Control (ADC) in 3D Gaussian Splatting (3DGS), a scene representation method achieving high-quality, photorealistic results for novel view synthesis. ADC has been introduced for automatic 3D point primitive management, controlling densification and pruning, however, with certain limitations in the densification logic. Our main contribution is a more principled, pixel-error driven formulation for density control in 3DGS, leveraging an auxiliary, per-pixel error function as the criterion for densification. We further introduce a mechanism to control the total number of primitives generated per scene and correct a bias in the current opacity handling strategy of ADC during cloning operations. Our approach leads to consistent quality improvements across a variety of benchmark scenes, without sacrificing the method's efficiency. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.06109) 
   
 ## 2023:
 ### 1. [CVPRW '24] Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
