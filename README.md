@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians
+ - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -2015,6 +2015,15 @@ Within colorectal cancer diagnostics, conventional colonoscopy techniques face c
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.06128)
+
+### 20. SpikeNVS: Enhancing Novel View Synthesis from Blurry Images via Spike Camera 
+**Authors**: Gaole Dai, Zhenyu Wang, Qinwen Xu, Ming Lu, Wen Chen, Boxin Shi, Shanghang Zhang, Tiejun Huang 
+<details span>
+<summary><b>Abstract</b></summary>
+One of the most critical factors in achieving sharp Novel View Synthesis (NVS) using neural field methods like Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) is the quality of the training images. However, Conventional RGB cameras are susceptible to motion blur. In contrast, neuromorphic cameras like event and spike cameras inherently capture more comprehensive temporal information, which can provide a sharp representation of the scene as additional training data. Recent methods have explored the integration of event cameras to improve the quality of NVS. The event-RGB approaches have some limitations, such as high training costs and the inability to work effectively in the background. Instead, our study introduces a new method that uses the spike camera to overcome these limitations. By considering texture reconstruction from spike streams as ground truth, we design the Texture from Spike (TfS) loss. Since the spike camera relies on temporal integration instead of temporal differentiation used by event cameras, our proposed TfS loss maintains manageable training costs. It handles foreground objects with backgrounds simultaneously. We also provide a real-world dataset captured with our spike-RGB camera system to facilitate future research endeavors. We conduct extensive experiments using synthetic and real-world datasets to demonstrate that our design can enhance novel view synthesis across NeRF and 3DGS. 
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2404.06710)
 
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
