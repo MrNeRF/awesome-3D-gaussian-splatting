@@ -54,7 +54,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <br>
 
  **May 10, 2024**
- - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS
+ - Added x paper: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion
 
  **April 11, 2024**
  - Code release of latentSplat
@@ -1100,6 +1100,16 @@ The evolution of 3D generative modeling has been notably propelled by the adopti
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2404.06091) | [🌐 Project Page](https://adamdad.github.io/hash3D/) | [💻 Code](https://github.com/Adamdad/hash3D) 
+
+### 20. Zero-shot Point Cloud Completion Via 2D Priors 
+**Authors**: Tianxin Huang, Zhiwen Yan, Yuyang Zhao, Gim Hee Lee 
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D point cloud completion is designed to recover complete shapes from partially observed point clouds. Conventional completion methods typically depend on extensive point cloud data for training %, with their effectiveness often constrained to object categories similar to those seen during training. In contrast, we propose a zero-shot framework aimed at completing partially observed point clouds across any unseen categories. Leveraging point rendering via Gaussian Splatting, we develop techniques of Point Cloud Colorization and Zero-shot Fractal Completion that utilize 2D priors from pre-trained diffusion models to infer missing regions. Experimental results on both synthetic and real-world scanned point clouds demonstrate that our approach outperforms existing methods in completing a variety of objects without any requirement for specific training data. 
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2404.06814) 
 
 
 ## 2023:
