@@ -874,7 +874,17 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 
 ## Compression:
 ## 2024:
-### 1. [CVPR '24] Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis 
+### 1. [I3D '24] Reducing the Memory Footprint of 3D Gaussian Splatting 
+**Authors**: Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin, George Drettakis 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting provides excellent visual quality for novel view synthesis, with fast training and realtime rendering; unfortunately, the memory requirements of this method for storing and transmission are unreasonably high. We first analyze the reasons for this, identifying three main areas where storage can be reduced: the number of 3D Gaussian primitives used to represent a scene, the number of coefficients for the spherical harmonics used to represent directional radiance, and the precision required to store Gaussian
+primitive attributes. We present a solution to each of these issues. First, we propose an efficient, resolutionaware primitive pruning approach, reducing the primitive count by half. Second, we introduce an adaptive adjustment method to choose the number of coefficients used to represent directional radiance for each Gaussian primitive, and finally a codebook-based quantization method, together with a half-float representation for further memory reduction. Taken together, these three components result in a ×27 reduction in overall size on disk on the standard datasets we tested, along with a x1.7 speedup in rendering speed. We demonstrate our method on standard datasets and show how our solution results in significantly reduced download times when using the method on a mobile device (see Fig. 1).
+</details>
+
+  [📄 Paper](https://repo-sam.inria.fr/fungraph/reduced_3dgs/reduced_3DGS_i3d.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/reduced_3dgs/) | [💻 Code (not yet)](https://repo-sam.inria.fr/fungraph/reduced_3dgs/#)
+  
+### 2. [CVPR '24] Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis 
 **Authors**: Simon Niedermayr, Josef Stumpfegger, Rüdiger Westermann 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -883,7 +893,7 @@ Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat
 
   [📄 Paper](https://arxiv.org/pdf/2401.02436.pdf) | [🌐 Project Page](https://keksboter.github.io/c3dgs/) | [💻 Code](https://github.com/KeKsBoTer/c3dgs) 
 
-### 2. HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression 
+### 3. HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression 
 **Authors**: Yihang Chen, Qianyi Wu, Jianfei Cai, Mehrtash Harandi, Weiyao Lin 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1543,7 +1553,17 @@ Constructing photo-realistic Free-Viewpoint Videos (FVVs) of dynamic scenes from
 
 ## Editing:
 ## 2024:
-### 1. CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians
+### 1. Contrastive Gaussian Clustering: Weakly Supervised 3D Scene Segmentation
+**Authors**: Myrna C. Silva, Mahtab Dahaghin, Matteo Toso, Alessio Del Bue
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Contrastive Gaussian Clustering, a novel approach capable of provide segmentation masks from any viewpoint and of enabling 3D segmentation of the scene. Recent works in novel-view synthesis have shown how to model the appearance of a scene via a cloud of
+3D Gaussians, and how to generate accurate images from a given viewpoint by projecting on it the Gaussians before α blending their color. Following this example, we train a model to include also a segmentation feature vector for each Gaussian. These can then be used for 3D scene segmentation, by clustering Gaussians according to their feature vectors; and to generate 2D segmentation masks, by projecting the Gaussians on a plane and α blending over their segmentation features. Using a combination of contrastive learning and spatial regularization, our method can be trained on inconsistent 2D segmentation masks, and still learn to generate segmentation masks consistent across all views. Moreover, the resulting model is extremely accurate, improving the IoU accuracy of the predicted masks by +8% over the state of the art. Code and trained models will be released upon acceptance.
+</details
+
+ [📄 Paper](https://arxiv.org/abs/2404.12784) 
+ 
+### 2. CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians
 **Authors**: Bin Dou, Tianyu Zhang, Yongjia Ma, Zhaohui Wang, Zejian Yuan
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1553,7 +1573,7 @@ point with a shallow decoding network. Specifically, our method firstly optimize
 
  [📄 Paper](https://arxiv.org/pdf/2401.05925.pdf) | [🌐 Project Page](https://david-dou.github.io/CoSSegGaussians/) | [💻 Code (not yet)](https://DavidDou.github.io/CoSSegGaussians)
 
-### 2. TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts 
+### 3. TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts 
 **Authors**: Jingyu Zhuang, Di Kang, Yan-Pei Cao, Guanbin Li, Liang Lin, Ying Shan 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1562,7 +1582,7 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   [📄 Paper](https://arxiv.org/pdf/2401.14828.pdf) | [🌐 Project Page](https://zjy526223908.github.io/TIP-Editor/)
 
-### 3. Segment Anything in 3D Gaussians 
+### 4. Segment Anything in 3D Gaussians 
 **Authors**: Xu Hu, Yuxi Wang, Lue Fan, Junsong Fan, Junran Peng, Zhen Lei, Qing Li, Zhaoxiang Zhang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1571,7 +1591,7 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   [📄 Paper](https://browse.arxiv.org/pdf/2401.17857.pdf) 
 
-### 4. GSEdit: Efficient Text-Guided Editing of 3D Objects via Gaussian Splatting 
+### 5. GSEdit: Efficient Text-Guided Editing of 3D Objects via Gaussian Splatting 
 **Authors**: Francesco Palandra, Andrea Sanchietti, Daniele Baieri, Emanuele Rodolà 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1580,7 +1600,7 @@ We present GSEdit, a pipeline for text-guided 3D object editing based on Gaussia
 
   [📄 Paper](https://arxiv.org/pdf/2403.05154.pdf) 
 
-### 5. GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing  
+### 6. GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing  
 **Authors**: Jing Wu, Jia-Wang Bian, Xinghui Li, Guangrun Wang, Ian Reid, Philip Torr, Victor Adrian Prisacariu 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1596,7 +1616,7 @@ Experiments demonstrate that our method achieves faster editing and better visua
 
   [📄 Paper](https://arxiv.org/pdf/2403.08733.pdf) 
 
-### 6. View-Consistent 3D Editing with Gaussian Splatting  
+### 7. View-Consistent 3D Editing with Gaussian Splatting  
 **Authors**: Yuxuan Wang, Xuanyu Yi, Zike Wu, Na Zhao, Long Chen, Hanwang Zhang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1605,7 +1625,7 @@ The advent of 3D Gaussian Splatting (3DGS) has revolutionized 3D editing, offeri
 
   [📄 Paper](https://arxiv.org/pdf/2403.11868.pdf)
 
-### 7. Gaussian Frosting: Editable Complex Radiance Fields with Real-Time Rendering
+### 8. Gaussian Frosting: Editable Complex Radiance Fields with Real-Time Rendering
 **Authors**: Antoine Guédon, Vincent Lepetit
 
 <details span>
@@ -1615,7 +1635,7 @@ We propose Gaussian Frosting, a novel mesh-based representation for high-quality
 
   [📄 Paper](https://arxiv.org/pdf/2403.14554) | [🌐 Project Page](https://anttwo.github.io/frosting/) | [💻 Code (not yet)](https://github.com/Anttwo/Frosting) | [🎥 Short Presentation](https://youtu.be/h7LeWq8sG78)
   
-### 8. Semantic Gaussians: Open-Vocabulary Scene Understanding with 3D Gaussian Splatting 
+### 9. Semantic Gaussians: Open-Vocabulary Scene Understanding with 3D Gaussian Splatting 
 **Authors**: Jun Guo, Xiaojian Ma, Yue Fan, Huaping Liu, Qing Li
 
 <details span>
@@ -1625,7 +1645,7 @@ Open-vocabulary 3D scene understanding presents a significant challenge in compu
 
   [📄 Paper](https://arxiv.org/pdf/2403.15624) | [🌐 Project Page](https://semantic-gaussians.github.io/) | [💻 Code (not yet)]() 
 
-### 9. EgoLifter: Open-world 3D Segmentation for Egocentric Perception 
+### 10. EgoLifter: Open-world 3D Segmentation for Egocentric Perception 
 **Authors**: Qiao Gu, Zhaoyang Lv, Duncan Frost, Simon Green, Julian Straub, Chris Sweeney 
 
 <details span>
@@ -1635,7 +1655,7 @@ In this paper we present EgoLifter, a novel system that can automatically segmen
 
   [📄 Paper](https://arxiv.org/pdf/2403.18118.pdf) | [🌐 Project Page](https://egolifter.github.io/) | [💻 Code (not yet)]() 
   
-### 10. InFusion: Inpainting 3D Gaussians via Learning Depth Completion from Diffusion Prior 
+### 11. InFusion: Inpainting 3D Gaussians via Learning Depth Completion from Diffusion Prior 
 **Authors**: Zhiheng Liu, Hao Ouyang, Qiuyu Wang, Ka Leong Cheng, Jie Xiao, Kai Zhu, Nan Xue, Yu Liu, Yujun Shen, Yang Cao
 
 <details span>
@@ -1645,7 +1665,7 @@ In this paper we present EgoLifter, a novel system that can automatically segmen
 
   [📄 Paper](https://arxiv.org/pdf/2404.11613) | [🌐 Project Page](https://johanan528.github.io/Infusion/) | [💻 Code](https://github.com/ali-vilab/infusion) 
 
-### 11. Gaga: Group Any Gaussians via 3D-aware Memory Bank
+### 12. Gaga: Group Any Gaussians via 3D-aware Memory Bank
 **Authors**: Weijie Lyu, Xueting Li, Abhijit Kundu, Yi-Hsuan Tsai, Ming-Hsuan Yang
 
 <details span>
@@ -3046,7 +3066,16 @@ This paper introduces GS-Pose, an end-to-end framework for locating and estimati
 
 ## Large-Scale:
 ## 2024:
-### 1. Fed3DGS: Scalable 3D Gaussian Splatting with Federated Learning
+### 1. [SIGGRAPH '24] A Hierarchical 3D Gaussian Representation for Real-Time Rendering of Very Large Datasets 
+**Authors**: Bernhard Kerbl, Andreas Meuleman, Georgios Kopanas, Michael Wimmer,  Alexandre Lanvin, George Drettakis 
+<details span>
+<summary><b>Abstract</b></summary>
+Novel view synthesis has seen major advances in recent years, with 3D Gaussian splatting offering an excellent level of visual quality, fast training and real-time rendering. However, the resources needed for training and rendering inevitably limit the size of the captured scenes that can be represented with good visual quality. We introduce a hierarchy of 3D Gaussians that preserves visual quality for very large scenes, while offering an efficient Level-of-Detail (LOD) solution for efficient rendering of distant content with effective level selection and smooth transitions between levels. We introduce a divide-and-conquer approach that allows us to train very large scenes in independent chunks. We consolidate the chunks into a hierarchy that can be optimized to further improve visual quality of Gaussians merged into intermediate nodes. Very large captures typically have sparse coverage of the scene, presenting many challenges to the original 3D Gaussian splatting training method; we adapt and regularize training to account for these issues. We present a complete solution, that enables real-time rendering of very large scenes and can adapt to available resources thanks to our LOD method. We show results for captured scenes with up to tens of thousands of images with a simple and affordable rig, covering trajectories of up to several kilometers and lasting up to one hour.
+</details>
+
+  [📄 Paper (Low Resolution)](https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/hierarchical-3d-gaussians_low.pdf) | [📄 Paper (High Resolution)](https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/hierarchical-3d-gaussians_high.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/)
+  
+### 2. Fed3DGS: Scalable 3D Gaussian Splatting with Federated Learning
 **Authors**: Teppei Suzuki 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -3055,16 +3084,16 @@ In this work, we present Fed3DGS, a scalable 3D reconstruction framework based o
 
   [📄 Paper](https://arxiv.org/pdf/2403.11460) | [💻 Code](https://github.com/DensoITLab/Fed3DGS)
 
-### 2. GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object Pose Estimation 
+### 3. GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object Pose Estimation 
 **Authors**: Dingding Cai, Janne Heikkilä, Esa Rahtu 
 <details span>
 <summary><b>Abstract</b></summary>
 This paper introduces GS-Pose, an end-to-end framework for locating and estimating the 6D pose of objects. GS-Pose begins with a set of posed RGB images of a previously unseen object and builds three distinct representations stored in a database. At inference, GS-Pose operates sequentially by locating the object in the input image, estimating its initial 6D pose using a retrieval approach, and refining the pose with a render-and-compare method. The key insight is the application of the appropriate object representation at each stage of the process. In particular, for the refinement step, we utilize 3D Gaussian splatting, a novel differentiable rendering technique that offers high rendering speed and relatively low optimization time. Off-the-shelf toolchains and commodity hardware, such as mobile phones, can be used to capture new objects to be added to the database. Extensive evaluations on the LINEMOD and OnePose-LowTexture datasets demonstrate excellent performance, establishing the new state-of-the-art.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.10683) | [🌐 Project Page](https://dingdingcai.github.io/gs-pose/) | [💻 Code (not yet)](https://github.com/dingdingcai/GS-pose) | [🎥 Short Presentation](https://youtu.be/SnJazusDLM8)
+  [📄 Paper](https://arxiv.org/pdf/2403.10683) | [🌐 Project Page](https://dingdingcai.github.io/gs-pose/) | [💻 Code](https://github.com/dingdingcai/GSPose) | [🎥 Short Presentation](https://youtu.be/SnJazusDLM8)
 
-### 3. Creating Seamless 3D Maps Using Radiance Fields 
+### 4. Creating Seamless 3D Maps Using Radiance Fields 
 **Authors**: Sai Tarun Sathyan, Thomas B. Kinsman 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -3073,7 +3102,7 @@ It is desirable to create 3D object models and 3D maps from 2D input images for 
 
   [📄 Paper](https://arxiv.org/pdf/2403.11364.pdf)
 
-### 4. HGS-Mapping: Online Dense Mapping Using Hybrid Gaussian Representation in Urban Scenes 
+### 5. HGS-Mapping: Online Dense Mapping Using Hybrid Gaussian Representation in Urban Scenes 
 **Authors**: Ke Wu, Kaizhao Zhang, Zhiwei Zhang, Shanshuai Yuan, Muer Tie, Julong Wei, Zijun Xu, Jieru Zhao, Zhongxue Gan, Wenchao Ding 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -3082,7 +3111,7 @@ Online dense mapping of urban scenes forms a fundamental cornerstone for scene u
 
   [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf)
 
-### 5. CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians  
+### 6. CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians  
 **Authors**: Yang Liu, He Guan, Chuanchen Luo, Lue Fan, Junran Peng, Zhaoxiang Zhang 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -3091,7 +3120,7 @@ The advancement of real-time 3D scene reconstruction and novel view synthesis ha
 
   [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf) | [🌐 Project Page](https://dekuliutesla.github.io/citygs/) | [💻 Code (not yet)]() 
 
-### 6. MM-Gaussian: 3D Gaussian-based Multi-modal Fusion for Localization and Reconstruction in Unbounded Scenes  
+### 7. MM-Gaussian: 3D Gaussian-based Multi-modal Fusion for Localization and Reconstruction in Unbounded Scenes  
 **Authors**: Chenyang Wu, Yifan Duan, Xinran Zhang, Yu Sheng, Jianmin Ji, Yanyong Zhang 
 <details span>
 <summary><b>Abstract</b></summary>
