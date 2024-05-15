@@ -3053,7 +3053,7 @@ This paper introduces GS-Pose, an end-to-end framework for locating and estimati
 In this work, we present Fed3DGS, a scalable 3D reconstruction framework based on 3D Gaussian splatting (3DGS) with federated learning. Existing city-scale reconstruction methods typically adopt a centralized approach, which gathers all data in a central server and reconstructs scenes. The approach hampers scalability because it places a heavy load on the server and demands extensive data storage when reconstructing scenes on a scale beyond city-scale. In pursuit of a more scalable 3D reconstruction, we propose a federated learning framework with 3DGS, which is a decentralized framework and can potentially use distributed computational resources across millions of clients. We tailor a distillation-based model update scheme for 3DGS and introduce appearance modeling for handling non-IID data in the scenario of 3D reconstruction with federated learning. We simulate our method on several large-scale benchmarks, and our method demonstrates rendered image quality comparable to centralized approaches. In addition, we also simulate our method with data collected in different seasons, demonstrating that our framework can reflect changes in the scenes and our appearance modeling captures changes due to seasonal variations. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.11460) | [💻 Code](https://github.com/dingdingcai/GS-pose)
+  [📄 Paper](https://arxiv.org/pdf/2403.11460) | [💻 Code](https://github.com/DensoITLab/Fed3DGS)
 
 ### 2. GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object Pose Estimation 
 **Authors**: Dingding Cai, Janne Heikkilä, Esa Rahtu 
