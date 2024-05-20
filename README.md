@@ -2114,6 +2114,15 @@ An excellent representation is crucial for reinforcement learning (RL) performan
 
   [📄 Paper](https://arxiv.org/pdf/2404.07950) 
 
+### 23. DarkGS: Learning Neural Illumination and 3D Gaussians Relighting for Robotic Exploration in the Dark
+**Authors**: Tianyi Zhang, Kaining Huang, Weiming Zhi, Matthew Johnson-Roberson
+<details span>
+<summary><b>Abstract</b></summary>
+Humans have the remarkable ability to construct consistent mental models of an environment, even under limited or varying levels of illumination. We wish to endow robots with this same capability. In this paper, we tackle the challenge of constructing a photorealistic scene representation under poorly illuminated conditions and with a moving light source. We approach the task of modeling illumination as a learning problem, and utilize the developed illumination model to aid in scene reconstruction. We introduce an innovative framework that uses a data-driven approach, Neural Light Simulators (NeLiS), to model and calibrate the camera-light system. Furthermore, we present DarkGS, a method that applies NeLiS to create a relightable 3D Gaussian scene model capable of real-time, photorealistic rendering from novel viewpoints. We show the applicability and robustness of our proposed simulator and system in a variety of real-world environments.
+</details>
+ 
+ [📄 Paper](https://arxiv.org/pdf/2403.10814) | [💻 Code](https://github.com/tyz1030/darkgs) | [🎥 Short Presentation](https://www.linkedin.com/posts/tianyi-zhang-396b0a186_darkgs-building-3d-gaussians-with-a-torch-activity-7197672371393019905-iY2-?utm_source=share&utm_medium=member_desktop) | [🎥 Short Presentation (Bilibili)](https://www.bilibili.com/video/BV1Euu4eqEtN/?vd_source=ccc6b1a36055375ca812070948900795#reply222119730496)
+
 ## 2023:
 ### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
