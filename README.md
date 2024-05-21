@@ -2571,6 +2571,15 @@ Cinemagraph is a unique form of visual media that combines elements of still pho
 
   [📄 Paper](https://arxiv.org/pdf/2404.08966) | [🌐 Project Page](https://pokerlishao.github.io/LoopGaussian/) | [💻 Code](https://github.com/Pokerlishao/LoopGaussian) 
 
+### 34. GSCore: Efficient Radiance Field Rendering via Architectural Support for 3D Gaussian Splatting
+**Authors**: Junseo Lee, Seokwon Lee, Jungi Lee, Junyong Park, Jaewoong Sim
+<details span>
+<summary><b>Abstract</b></summary>
+This paper presents GSCore, a hardware acceleration unit that efficiently executes the rendering pipeline of 3D Gaussian Splatting with algorithmic optimizations. GSCore builds on the observations from an in-depth analysis of Gaussian-based radiance field rendering to enhance computational efficiency and bring the technique to wide adoption. In doing so, we present several optimization techniques, Gaussian shape-aware intersection test, hierarchical sorting, and subtile skipping, all of which are synergistically integrated with GSCore. We implement the hardware design of GSCore, synthesize it using a commercial 28nm technology, and evaluate the performance across a range of synthetic and real-world scenes with varying image resolutions. Our evaluation results show that GSCore achieves a 15.86× speedup on average over the mobile consumer GPU with a substantially smaller area and lower energy consumption.
+</details>
+
+  [📄 Paper](https://jaewoong.org/pubs/asplos24-gscore.pdf)
+
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
