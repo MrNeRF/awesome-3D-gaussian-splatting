@@ -3249,6 +3249,7 @@ Localization and mapping are critical tasks for various applications such as aut
 12. [NeRFs vs. 3DGS](https://edwardahn.me/writing/NeRFvs3DGS/)
 13. [Howto capture images for 3DGS](https://medium.com/@heyulei/capture-images-for-gaussian-splatting-81d081bbc826)
 14. [Mathematical details of forward and backward passes](https://github.com/joeyan/gaussian_splatting/blob/main/MATH.md)
+15. [3D in Geospatial: NeRFs, Gaussian Splatting, and Spatial Computing](https://ckoziol.com/blog/2024/radiance_methods/)
 
 ## Tutorial Videos
 
