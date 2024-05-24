@@ -2353,7 +2353,7 @@ The recent advancements in 3D Gaussian splatting (3D-GS) have not only facilitat
 Existing NeRF-based methods for large scene reconstruction often have limitations in visual quality and rendering speed. While the recent 3D Gaussian Splatting works well on small-scale and object-centric scenes, scaling it up to large scenes poses challenges due to limited video memory, long optimization time, and noticeable appearance variations. To address these challenges, we present VastGaussian, the first method for high-quality reconstruction and real-time rendering on large scenes based on 3D Gaussian Splatting. We propose a progressive partitioning strategy to divide a large scene into multiple cells, where the training cameras and point cloud are properly distributed with an airspace-aware visibility criterion. These cells are merged into a complete scene after parallel optimization. We also introduce decoupled appearance modeling into the optimization process to reduce appearance variations in the rendered images. Our approach outperforms existing NeRF-based methods and achieves state-of-the-art results on multiple large scene datasets, enabling fast optimization and high-fidelity real-time rendering. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2402.17427.pdf) | [🌐 Project Page](https://vastgaussian.github.io/) | [💻 Code (not yet)]() 
+  [📄 Paper](https://arxiv.org/pdf/2402.17427.pdf) | [🌐 Project Page](https://vastgaussian.github.io/) | [💻 Code](https://github.com/kangpeilun/VastGaussian) 
 
 ### 10. 3D Gaussian Model for Animation and Texturing
 **Authors**: Xiangzhi Eric Wang, Zackary P. T. Sin 
