@@ -1881,6 +1881,24 @@ We performed extensive testing of the proposed method on in-the-wild scenes, tak
 
   [📄 Paper](https://arxiv.org/pdf/2404.01810) | [🌐 Project Page](https://gs2mesh.github.io//) | [💻 Code (not yet)]() 
 
+
+  ### 10. RaDe-GS: Rasterizing Depth in Gaussian Splatting
+**Authors**: Baowen Zhang, Chuan Fang, Rakesh Shrestha, Yixun Liang, Xiaoxiao Long, Ping Tan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Gaussian Splatting (GS) has proven to be highly effective in novel view
+synthesis, achieving high-quality and real-time rendering. However, its potential for reconstructing detailed 3D shapes has not been fully explored.
+Existing methods often suffer from limited shape accuracy due to the discrete and unstructured nature of Gaussian splats, which complicates the
+shape extraction. While recent techniques like 2D GS have attempted to improve shape reconstruction, they often reformulate the Gaussian primitives
+in ways that reduce both rendering quality and computational efficiency. To address these problems, our work introduces a rasterized approach to
+render the depth maps and surface normal maps of general 3D Gaussian splats. Our method not only significantly enhances shape reconstruction accuracy but also maintains the computational efficiency intrinsic to Gaussian Splatting. Our approach achieves a Chamfer distance error comparable to
+NeuraLangelo[Li et al. 2023] on the DTU dataset and similar training and rendering time as traditional Gaussian Splatting on the Tanks & Temples
+dataset. Our method is a significant advancement in Gaussian Splatting and can be directly integrated into existing Gaussian Splatting-based methods.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2406.01467) | [🌐 Project Page](https://baowenz.github.io/radegs/) | [💻 Code (not yet)]() 
+
 ## 2023:
 ### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
