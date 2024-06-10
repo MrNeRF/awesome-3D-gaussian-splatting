@@ -2973,6 +2973,15 @@ While novel view synthesis (NVS) has made substantial progress in 3D computer vi
 
   [📄 Paper](https://arxiv.org/pdf/2403.20309.pdf) | [🌐 Project Page](https://instantsplat.github.io/) | [💻 Code (not yet)]() | [🎥 Explanation Video](https://www.youtube.com/live/JdfrG89iPOA?si=JhoiMxrjVIh91Ws1)
 
+### 9. Sp<sup>2</sup>360: Sparse-view 360 Scene Reconstruction using Cascaded 2D Diffusion Priors
+**Authors**: Soumava Paul, Christopher Wewer, Bernt Schiele, Jan Eric Lenssen
+<details span>
+<summary><b>Abstract</b></summary>
+We aim to tackle sparse-view reconstruction of a 360 3D scene using priors from latent diffusion models (LDM). The sparse-view setting is ill-posed and underconstrained, especially for scenes where the camera rotates 360 degrees around a point, as no visual information is available beyond some frontal views focused on the central object(s) of interest. In this work, we show that pretrained 2D diffusion models can strongly improve the reconstruction of a scene with low-cost fine-tuning. Specifically, we present SparseSplat360 (Sp2360), a method that employs a cascade of in-painting and artifact removal models to fill in missing details and clean novel views. Due to superior training and rendering speeds, we use an explicit scene representation in the form of 3D Gaussians over NeRF-based implicit representations. We propose an iterative update strategy to fuse generated pseudo novel views with existing 3D Gaussians fitted to the initial sparse inputs. As a result, we obtain a multi-view consistent scene representation with details coherent with the observed inputs. Our evaluation on the challenging Mip-NeRF360 dataset shows that our proposed 2D to 3D distillation algorithm considerably improves the performance of a regularized version of 3DGS adapted to a sparse-view setting and outperforms existing sparse-view reconstruction methods in 360 scene reconstruction. Qualitatively, our method generates entire 360 scenes from as few as 9 input views, with a high degree of foreground and background detail.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2405.16517) | [💻 Code (not yet)]()
+
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
