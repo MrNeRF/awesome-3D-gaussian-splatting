@@ -1906,6 +1906,16 @@ dataset. Our method is a significant advancement in Gaussian Splatting and can b
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2406.01467) | [🌐 Project Page](https://baowenz.github.io/radegs/) | [💻 Code (not yet)]() 
+  
+### 11. Trim 3D Gaussian Splatting for Accurate Geometry Representation
+**Authors**: Lue Fan, Yuxue Yang, Minxing Li, Hongsheng Li, Zhaoxiang Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we introduce Trim 3D Gaussian Splatting (TrimGS) to reconstruct accurate 3D geometry from images. Previous arts for geometry reconstruction from 3D Gaussians mainly focus on exploring strong geometry regularization. Instead, from a fresh perspective, we propose to obtain accurate 3D geometry of a scene by Gaussian trimming, which selectively removes the inaccurate geometry while preserving accurate structures. To achieve this, we analyze the contributions of individual 3D Gaussians and propose a contribution-based trimming strategy to remove the redundant or inaccurate Gaussians. Furthermore, our experimental and theoretical analyses reveal that a relatively small Gaussian scale is a non-negligible factor in representing and optimizing the intricate details. Therefore the proposed TrimGS maintains relatively small Gaussian scales. In addition, TrimGS is also compatible with the effective geometry regularization strategies in previous arts. When combined with the original 3DGS and the state-of-the-art 2DGS, TrimGS consistently yields more accurate geometry and higher perceptual quality.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2406.07499) | [🌐 Project Page](https://trimgs.github.io/) | [💻 Code (not yet)](https://github.com/YuxueYang1204/TrimGS) 
 
 ## 2023:
 ### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
