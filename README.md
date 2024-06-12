@@ -705,7 +705,11 @@ We present GaussianAvatar, an efficient approach to creating realistic human ava
 We propose FlashAvatar, a novel and lightweight 3D animatable avatar representation that could reconstruct a digital avatar from a short monocular video sequence in minutes and render high-fidelity photo-realistic images at 300FPS on a consumer-grade GPU. To achieve this, we maintain a uniform 3D Gaussian field embedded in the surface of a parametric face model and learn extra spatial offset to model non-surface regions and subtle facial details. While full use of geometric priors can capture high-frequency facial details and preserve exaggerated expressions, proper initialization can help reduce the number of Gaussians, thus enabling super-fast rendering speed. Extensive experimental results demonstrate that FlashAvatar outperforms existing works regarding visual quality and personalized details and is almost an order of magnitude faster in rendering speed.
 </details>
 
- [📄 Paper](https://arxiv.org/pdf/2312.02134.pdf) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
+ [📄 Paper v1](https://arxiv.org/pdf/2312.02214v1) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
+ 
+  **Updated Title**: FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding
+ [📄 Paper v2](https://arxiv.org/pdf/2312.02214v2) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code](https://github.com/USTC3DV/FlashAvatar-code)
+
 
 ### 16. [CVPR '24] Relightable Gaussian Codec Avatars 
 **Authors**: Shunsuke Saito, Gabriel Schwartz, Tomas Simon, Junxuan Li, Giljoo Nam  
