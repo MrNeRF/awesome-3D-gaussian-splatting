@@ -707,7 +707,8 @@ We propose FlashAvatar, a novel and lightweight 3D animatable avatar representat
 
  [📄 Paper v1](https://arxiv.org/pdf/2312.02214v1) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code (not yet)]()
  
-  **Updated Title**: FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding
+  ### FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding (v2)
+  
  [📄 Paper v2](https://arxiv.org/pdf/2312.02214v2) | [🌐 Project Page](https://ustc3dv.github.io/FlashAvatar/) | [💻 Code](https://github.com/USTC3DV/FlashAvatar-code)
 
 
