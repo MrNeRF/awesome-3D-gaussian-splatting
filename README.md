@@ -788,6 +788,16 @@ Creating high-fidelity 3D head avatars has always been a research hotspot, but t
 
  [📄 Paper](https://arxiv.org/pdf/2312.03029.pdf) | [🌐 Project Page](https://yuelangx.github.io/gaussianheadavatar/) | | [💻 Code](https://github.com/YuelangX/Gaussian-Head-Avatar) | [🎥 Short Presentation](https://www.youtube.com/watch?v=kvrrI3EoM5g)
 
+### 24. HumanSplat: Generalizable Single-Image Human Gaussian Splatting with Structure Priors
+**Authors**: Panwang Pan, Zhuo Su, Chenguo Lin, Zhen Fan, Yongjie Zhang, Zeming Li, Tingting Shen, Yadong Mu, Yebin Liu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Despite recent advancements in high-fidelity human reconstruction techniques, the requirements for densely captured images or time-consuming per-instance optimization significantly hinder their applications in broader scenarios. To tackle these issues, we present HumanSplat that predicts the 3D Gaussian Splatting properties of any human from a single input image in a generalizable manner. In particular, HumanSplat comprises a 2D multi-view diffusion model and a latent reconstruction transformer with human structure priors that adeptly integrate geometric priors and semantic features within a unified framework. A hierarchical loss that incorporates human semantic information is further designed to achieve high-fidelity texture modeling and better constrain the estimated multiple views. Comprehensive experiments on standard benchmarks and in-the-wild images demonstrate that HumanSplat surpasses existing state-of-the-art methods in achieving photorealistic novel-view synthesis. Project page: https://humansplat.github.io/.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2406.12459) | [🌐 Project Page](https://humansplat.github.io/) 
+
 <br>
 
 ## Classic work:
