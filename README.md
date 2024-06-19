@@ -1918,6 +1918,16 @@ In this paper, we introduce Trim 3D Gaussian Splatting (TrimGS) to reconstruct a
 
  [📄 Paper](https://arxiv.org/abs/2406.07499) | [🌐 Project Page](https://trimgs.github.io/) | [💻 Code (not yet)](https://github.com/YuxueYang1204/TrimGS) 
 
+### 12. Effective Rank Analysis and Regularization for Enhanced 3D Gaussian Splatting
+**Authors**: Junha Hyung, Susung Hong, Sungwon Hwang, Jaeseong Lee, Jaegul Choo, Jin-Hwa Kim
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D reconstruction from multi-view images is one of the fundamental challenges in computer vision and graphics. Recently, 3D Gaussian Splatting (3DGS) has emerged as a promising technique capable of real-time rendering with high-quality 3D reconstruction. This method utilizes 3D Gaussian representation and tile-based splatting techniques, bypassing the expensive neural field querying. Despite its potential, 3DGS encounters challenges, including needle-like artifacts, suboptimal geometries, and inaccurate normals, due to the Gaussians converging into anisotropic Gaussians with one dominant variance. We propose using effective rank analysis to examine the shape statistics of 3D Gaussian primitives, and identify the Gaussians indeed converge into needle-like shapes with the effective rank 1. To address this, we introduce effective rank as a regularization, which constrains the structure of the Gaussians. Our new regularization method enhances normal and geometry reconstruction while reducing needle-like artifacts. The approach can be integrated as an add-on module to other 3DGS variants, improving their quality without compromising visual fidelity.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2406.11672) | [🌐 Project Page](https://junhahyung.github.io/erankgs.github.io/) | [💻 Code (not yet)]() 
+
 ## 2023:
 ### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
