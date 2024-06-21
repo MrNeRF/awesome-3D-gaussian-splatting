@@ -1706,6 +1706,16 @@ We introduce Gaga, a framework that reconstructs and segments open-world 3D scen
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.07977.pdf) | [🌐 Project Page](https://www.gaga.gallery/) | [💻 Code](https://github.com/weijielyu/Gaga)
+
+
+### 13. [CVPR W'24] ICE-G: Image Conditional Editing of 3D Gaussian Splats
+**Authors**: Vishnu Jaganathan, Hannah Huang, Muhammad Zubair Irshad, Varun Jampani, Amit Raj, Zsolt Kira
+<details span>
+<summary><b>Abstract</b></summary>
+Recently many techniques have emerged to create high quality 3D assets and scenes. When it comes to editing of these objects, however, existing approaches are either slow, compromise on quality, or do not provide enough customization. We introduce a novel approach to quickly edit a 3D model from a single reference view. Our technique first segments the edit image, and then matches semantically corresponding regions across chosen segmented dataset views using DINO features. A color or texture change from a particular region of the edit image can then be applied to other views automatically in a semantically sensible manner. These edited views act as an updated dataset to further train and re-style the 3D scene. The end-result is therefore an edited 3D model. Our framework enables a wide variety of editing tasks such as manual local edits, correspondence based style transfer from any example image, and a combination of different styles from multiple example images. We use Gaussian Splats as our primary 3D representation due to their speed and ease of local editing, but our technique works for other methods such as NeRFs as well. We show through multiple examples that our method produces higher quality results while offering fine grained control of editing.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2406.08488) | [🌐 Project Page](https://ice-gaussian.github.io/) | [🎥 Short Presentation](https://youtu.be/dDsCwRXixp8?si=415s7-dEpM7-FPMq)
   
 ## 2023:
 ### 1. [CVPR '24] GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
