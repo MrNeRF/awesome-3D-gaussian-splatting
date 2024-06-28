@@ -1195,6 +1195,15 @@ We introduce a radiance representation that is both structured and fully explici
 
   [📄 Paper](https://arxiv.org/pdf/2403.19655.pdf) | [🌐 Project Page](https://gaussiancube.github.io/) | [💻 Code](https://github.com/GaussianCube/GaussianCube)
 
+### 24. 4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models
+**Authors**: Heng Yu, Chaoyang Wang, Peiye Zhuang, Willi Menapace, Aliaksandr Siarohin, Junli Cao, Laszlo A Jeni, Sergey Tulyakov, Hsin-Ying Lee
+<details span>
+<summary><b>Abstract</b></summary>
+Existing dynamic scene generation methods mostly rely on distilling knowledge from pre-trained 3D generative models, which are typically fine-tuned on synthetic object datasets. As a result, the generated scenes are often object-centric and lack photorealism. To address these limitations, we introduce a novel pipeline designed for photorealistic text-to-4D scene generation, discarding the dependency on multi-view generative models and instead fully utilizing video generative models trained on diverse real-world datasets. Our method begins by generating a reference video using the video generation model. We then learn the canonical 3D representation of the video using a freeze-time video, delicately generated from the reference video. To handle inconsistencies in the freeze-time video, we jointly learn a per-frame deformation to model these imperfections. We then learn the temporal deformation based on the canonical representation to capture dynamic interactions in the reference video. The pipeline facilitates the generation of dynamic scenes with enhanced photorealism and structural integrity, viewable from multiple perspectives, thereby setting a new standard in 4D scene generation.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2406.07472.pdf) | [🌐 Project Page](https://snap-research.github.io/4Real/) | [💻 Code (not yet)]() 
+
 ## 2023:
 ### 1. [CVPR '24] Text-to-3D using Gaussian Splatting
 **Authors**: Zilong Chen, Feng Wang, Huaping Liu
