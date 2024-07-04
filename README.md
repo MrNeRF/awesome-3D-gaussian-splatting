@@ -1765,7 +1765,7 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 
   [📄 Paper](https://arxiv.org/pdf/2311.16737.pdf)
 
-### 4. Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
+### 4. [ECCV'24] Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
 **Authors**: Mingqiao Ye, Martin Danelljan, Fisher Yu, Lei Ke 
 <details span>
 <summary><b>Abstract</b></summary>
