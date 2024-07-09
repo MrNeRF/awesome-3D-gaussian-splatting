@@ -963,7 +963,7 @@ Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturi
 
   [📄 Paper](https://arxiv.org/pdf/2311.13681.pdf) | [🌐 Project Page](https://maincold2.github.io/c3dgs/) | [💻 Code](https://github.com/maincold2/Compact-3DGS) 
 
-### 4. Compact 3D Scene Representation via Self-Organizing Gaussian Grids 
+### 4. [ECCV '24] Compact 3D Scene Representation via Self-Organizing Gaussian Grids 
 **Authors**: Wieland Morgenstern, Florian Barthel, Anna Hilsmann, Peter Eisert 
 <details span>
 <summary><b>Abstract</b></summary>
