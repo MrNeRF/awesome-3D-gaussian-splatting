@@ -1479,7 +1479,7 @@ Reconstructing dynamic 3D scenes from 2D images and generating diverse views ove
 
   [📄 Paper](https://arxiv.org/pdf/2310.10642.pdf) | [💻 Code](https://github.com/fudan-zvg/4d-gaussian-splatting) 
 
-### 5. An Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes 
+### 5. [ECCV '24] A Compact Dynamic 3D Gaussian Representation for Real-Time Dynamic View Synthesis
 **Authors**: Kai Katsumata, Duc Minh Vo, Hideki Nakayama 
 
 <details span>
@@ -1487,7 +1487,7 @@ Reconstructing dynamic 3D scenes from 2D images and generating diverse views ove
 In novel view synthesis of scenes from multiple input views, 3D Gaussian splatting emerges as a viable alternative to existing radiance field approaches, delivering great visual quality and real-time rendering. While successful in static scenes, the present advancement of 3D Gaussian representation, however, faces challenges in dynamic scenes in terms of memory consumption and the need for numerous observations per time step, due to the onus of storing 3D Gaussian parameters per time step. In this study, we present an efficient 3D Gaussian representation tailored for dynamic scenes in which we define positions and rotations as functions of time while leaving other time-invariant properties of the static 3D Gaussian unchanged. Notably, our representation reduces memory usage, which is consistent regardless of the input sequence length. Additionally, it mitigates the risk of overfitting observed frames by accounting for temporal changes. The optimization of our Gaussian representation based on image and flow reconstruction results in a powerful framework for dynamic scene view synthesis in both monocular and multi-view cases. We obtain the highest rendering speed of 118 frames per second (FPS) at a resolution of 1352×1014 with a single GPU, showing the practical usability and effectiveness of our proposed method in dynamic scene rendering scenarios
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2311.12897.pdf) | [💻 Code](https://github.com/raven38/EfficientDynamic3DGaussian)
+  [📄 Paper](https://arxiv.org/pdf/2311.12897.pdf) | [🌐 Project Page](https://compactdynamic3dgaussian.github.io/) | [💻 Code](https://github.com/raven38/EfficientDynamic3DGaussian)
 
 ### 6. DynMF: Neural Motion Factorization for Real-time Dynamic View Synthesis with 3D Gaussian Splatting  
 **Authors**: Agelos Kratimenos, Jiahui Lei, Kostas Daniilidis 
