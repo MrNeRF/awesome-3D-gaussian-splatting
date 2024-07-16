@@ -3320,7 +3320,7 @@ Localization and mapping are critical tasks for various applications such as aut
 
 ### Game Engines 
 - [Unity](https://github.com/aras-p/UnityGaussianSplatting)
-- [PlayCanvas](https://github.com/playcanvas/engine/tree/main/extras/splat)
+- [PlayCanvas](https://github.com/playcanvas/engine/tree/main/src/scene/gsplat)
 - [Unreal](https://github.com/xverse-engine/XV3DGS-UEPlugin)
 
 ### Viewers
