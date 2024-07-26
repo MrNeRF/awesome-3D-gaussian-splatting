@@ -3357,6 +3357,7 @@ Localization and mapping are critical tasks for various applications such as aut
 - [SuperSplat](https://github.com/playcanvas/super-splat) - Open source browser-based tool to clean/filter, reorient and compress .ply/.splat files
 - [SpectacularAI](https://github.com/SpectacularAI/point-cloud-tools) - Conversion scripts for different 3DGS conventions
 - [GSOPs](https://github.com/david-rhodes/GSOPs) - GSOPs (Gaussian Splat Operators) for SideFX Houdini. Import, edit, and export models, or generate synthetic training data
+- [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Clean and edit pointclouds from that are in colmap sparse format in a browser to improve reconstruction results
 
 ### Tutorial
 - [Tutorial from the authors of 3DGS](https://3dgstutorial.github.io/)
