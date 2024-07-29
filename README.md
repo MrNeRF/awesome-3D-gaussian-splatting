@@ -933,6 +933,16 @@ Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat
 
   [📄 Paper](https://arxiv.org/pdf/2406.01597.pdf) | [💻 Code](https://github.com/USTC-IMCL/RDO-Gaussian) 
 
+### 5. 3DGS.zip: A survey on 3D Gaussian Splatting Compression Methods
+**Authors**: Milena T. Bagdasarian, Paul Knoll, Florian Barthel, Anna Hilsmann, Peter Eisert, Wieland Morgenstern
+<details span>
+<summary><b>Abstract</b></summary>
+We present a work-in-progress survey on 3D Gaussian Splatting compression methods, focusing on their statistical performance across various benchmarks. This survey aims to facilitate comparability by summarizing key statistics of different compression approaches in a tabulated format. The datasets evaluated include TanksAndTemples, MipNeRF360, DeepBlending, and SyntheticNeRF. For each method, we report the Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), Learned Perceptual Image Patch Similarity (LPIPS), and the resultant size in megabytes (MB), as provided by the respective authors. This is an ongoing, open project, and we invite contributions from the research community as GitHub issues or pull requests. Please visit http://w-m.github.io/3dgs-compression-survey/ for more information and a sortable version of the table.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2407.09510) | [🌐 Project Page](https://w-m.github.io/3dgs-compression-survey)
+
+
 ## 2023:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
 **Authors**: Zhiwen Fan, Kevin Wang, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang 
