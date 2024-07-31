@@ -1947,17 +1947,18 @@ Scene representations using 3D Gaussian primitives have produced excellent resul
 
   [📄 Paper](https://arxiv.org/pdf/2404.01223) | [🌐 Project Page](https://feature-splatting.github.io/) | [💻 Code (not yet)](https://github.com/vuer-ai/feature_splatting) 
 
-### 9. Surface Reconstruction from Gaussian Splatting via Novel Stereo Views 
+### 9. [ECCV '24] GS2Mesh: Surface Reconstruction from Gaussian Splatting via Novel Stereo Views 
 **Authors**: Yaniv Wolf, Amit Bracha, Ron Kimmel 
 
 <details span>
 <summary><b>Abstract</b></summary>
-The Gaussian splatting for radiance field rendering method has recently emerged as an efficient approach for accurate scene representation. It optimizes the location, size, color, and shape of a cloud of 3D Gaussian elements to visually match, after projection, or splatting, a set of given images taken from various viewing directions. And yet, despite the proximity of Gaussian elements to the shape boundaries, direct surface reconstruction of objects in the scene is a challenge.
-We propose a novel approach for surface reconstruction from Gaussian splatting models. Rather than relying on the Gaussian elements' locations as a prior for surface reconstruction, we leverage the superior novel-view synthesis capabilities of 3DGS. To that end, we use the Gaussian splatting model to render pairs of stereo-calibrated novel views from which we extract depth profiles using a stereo matching method. We then combine the extracted RGB-D images into a geometrically consistent surface. The resulting reconstruction is more accurate and shows finer details when compared to other methods for surface reconstruction from Gaussian splatting models, while requiring significantly less compute time compared to other surface reconstruction methods.
-We performed extensive testing of the proposed method on in-the-wild scenes, taken by a smartphone, showcasing its superior reconstruction abilities. Additionally, we tested the proposed method on the Tanks and Temples benchmark, and it has surpassed the current leading method for surface reconstruction from Gaussian splatting models
+Recently, 3D Gaussian Splatting (3DGS) has emerged as an efficient approach for accurately representing scenes. However, despite its superior novel view synthesis capabilities, extracting the geometry of the scene directly from the Gaussian properties remains a challenge, as those are optimized based on a photometric loss. While some concurrent models have tried adding geometric constraints during the Gaussian optimization process, they still produce noisy, unrealistic surfaces.
+We propose a novel approach for bridging the gap between the noisy 3DGS representation and the smooth 3D mesh representation, by injecting real-world knowledge into the depth extraction process. Instead of extracting the geometry of the scene directly from the Gaussian properties, we instead extract the geometry through a pre-trained stereo-matching model. We render stereo-aligned pairs of images corresponding to the original training poses, feed the pairs into a stereo model to get a depth profile, and finally fuse all of the profiles together to get a single mesh.
+The resulting reconstruction is smoother, more accurate and shows more intricate details compared to other methods for surface reconstruction from Gaussian Splatting, while only requiring a small overhead on top of the fairly short 3DGS optimization process.
+We performed extensive testing of the proposed method on in-the-wild scenes, obtained using a smartphone, showcasing its superior reconstruction abilities. Additionally, we tested the method on the Tanks and Temples and DTU benchmarks, achieving state-of-the-art results.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2404.01810) | [🌐 Project Page](https://gs2mesh.github.io//) | [💻 Code (not yet)]() 
+  [📄 Paper](https://arxiv.org/pdf/2404.01810) | [🌐 Project Page](https://gs2mesh.github.io//) | [💻 Code](https://github.com/yanivw12/gs2mesh/tree/main) 
 
 
   ### 10. RaDe-GS: Rasterizing Depth in Gaussian Splatting
