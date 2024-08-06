@@ -3267,14 +3267,14 @@ Online dense mapping of urban scenes forms a fundamental cornerstone for scene u
 
   [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf)
 
-### 6. CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians  
-**Authors**: Yang Liu, He Guan, Chuanchen Luo, Lue Fan, Junran Peng, Zhaoxiang Zhang 
+### 6. [ECCV '24] CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians  
+**Authors**: Yang Liu, He Guan, Chuanchen Luo, Lue Fan, Naiyan Wang, Junran Peng, Zhaoxiang Zhang 
 <details span>
 <summary><b>Abstract</b></summary>
 The advancement of real-time 3D scene reconstruction and novel view synthesis has been significantly propelled by 3D Gaussian Splatting (3DGS). However, effectively training large-scale 3DGS and rendering it in real-time across various scales remains challenging. This paper introduces CityGaussian (CityGS), which employs a novel divide-and-conquer training approach and Level-of-Detail (LoD) strategy for efficient large-scale 3DGS training and rendering. Specifically, the global scene prior and adaptive training data selection enables efficient training and seamless fusion. Based on fused Gaussian primitives, we generate different detail levels through compression, and realize fast rendering across various scales through the proposed block-wise detail levels selection and aggregation strategy. Extensive experimental results on large-scale scenes demonstrate that our approach attains state-of-theart rendering quality, enabling consistent real-time rendering of largescale scenes across vastly different scales. 
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf) | [🌐 Project Page](https://dekuliutesla.github.io/citygs/) | [💻 Code (not yet)]() 
+  [📄 Paper](https://arxiv.org/pdf/2403.20159.pdf) | [🌐 Project Page](https://dekuliutesla.github.io/citygs/) | [💻 Code](https://github.com/DekuLiuTesla/CityGaussian) 
 
 ### 7. MM-Gaussian: 3D Gaussian-based Multi-modal Fusion for Localization and Reconstruction in Unbounded Scenes  
 **Authors**: Chenyang Wu, Yifan Duan, Xinran Zhang, Yu Sheng, Jianmin Ji, Yanyong Zhang 
