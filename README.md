@@ -1403,15 +1403,15 @@ This is only a preview version of GauMesh. Recently, primitive-based rendering h
 
   [📄 Paper](https://arxiv.org/pdf/2403.11453) 
   
-### 5. Per-Gaussian Embedding-Based Deformation for Deformable 3D Gaussian Splatting 
-**Authors**: Jeongmin Bae, Seoha Kim, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh 
+### 5. [ECCV '24] Per-Gaussian Embedding-Based Deformation for Deformable 3D Gaussian Splatting 
+**Authors**: Jeongmin Bae*, Seoha Kim*, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh 
 
 <details span>
 <summary><b>Abstract</b></summary>
-As 3D Gaussian Splatting (3DGS) provides fast and high-quality novel view synthesis, it is a natural extension to deform a canonical 3DGS to multiple frames. However, previous works fail to accurately reconstruct dynamic scenes, especially 1) static parts moving along nearby dynamic parts, and 2) some dynamic areas are blurry. We attribute the failure to the wrong design of the deformation field, which is built as a coordinate-based function. This approach is problematic because 3DGS is a mixture of multiple fields centered at the Gaussians, not just a single coordinate-based framework. To resolve this problem, we define the deformation as a function of per-Gaussian embeddings and temporal embeddings. Moreover, we decompose deformations as coarse and fine deformations to model slow and fast movements, respectively. Also, we introduce an efficient training strategy for faster convergence and higher quality. 
+As 3D Gaussian Splatting (3DGS) provides fast and high-quality novel view synthesis, it is a natural extension to deform a canonical 3DGS to multiple frames for representing a dynamic scene. However, previous works fail to accurately reconstruct complex dynamic scenes. We attribute the failure to the design of the deformation field, which is built as a coordinate-based function. This approach is problematic because 3DGS is a mixture of multiple fields centered at the Gaussians, not just a single coordinate-based framework. To resolve this problem, we define the deformation as a function of per-Gaussian embeddings and temporal embeddings. Moreover, we decompose deformations as coarse and fine deformations to model slow and fast movements, respectively. Also, we introduce a local smoothness regularization for per-Gaussian embedding to improve the details in dynamic regions.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2404.03613) | [🌐 Project Page](https://jeongminb.github.io/e-d3dgs/) | [💻 Code (not yet)](https://github.com/JeongminB/E-D3DGS) 
+  [📄 Paper](https://arxiv.org/pdf/2404.03613) | [🌐 Project Page](https://jeongminb.github.io/e-d3dgs/) | [💻 Code](https://github.com/JeongminB/E-D3DGS) 
 
 ### 6. DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos
  
