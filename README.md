@@ -951,6 +951,17 @@ We present a work-in-progress survey on 3D Gaussian Splatting compression method
 
   [📄 Paper](https://arxiv.org/abs/2407.09510) | [🌐 Project Page](https://w-m.github.io/3dgs-compression-survey)
 
+### 6. LapisGS: Layered Progressive 3D Gaussian Splatting for Adaptive Streaming
+**Authors**: Yuang Shi, Simone Gasparini, Géraldine Morin, Wei Tsang Ooi,
+<details span>
+<summary><b>Abstract</b></summary>
+The rise of Extended Reality (XR) requires efficient streaming of 3D online worlds, challenging current 3DGS representations to adapt to bandwidth-constrained environments.
+We propose LapisGS, a layered 3DGS that supports adaptive streaming and progressive rendering. Our method constructs a layered structure for cumulative representation, incorporates dynamic opacity optimization to maintain visual fidelity, and utilizes occupancy maps to efficiently manage Gaussian splats. This proposed model offers a progressive representation supporting a continuous rendering quality adapted for bandwidth-aware streaming.
+Extensive experiments validate the effectiveness of our approach in balancing visual fidelity with the compactness of the model, with up to 50.71% improvement in SSIM, 286.53% improvement in LPIPS, and 318.41% reduction in model size, and shows its potential for bandwidth-adapted 3D streaming and rendering applications.</details>
+
+  [📄 Paper](http://arxiv.org/abs/2408.14823) | [🌐 Project Page](https://yuang-ian.github.io/lapisgs/)
+
+
 
 ## 2023:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
