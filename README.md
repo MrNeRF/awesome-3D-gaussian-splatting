@@ -2273,7 +2273,7 @@ Most advances in 3D Generative Adversarial Networks (3D GANs) largely depend on 
  [📄 Paper](https://arxiv.org/abs/2406.02968) | [🌐 Project Page](https://hse1032.github.io/gsgan)
 
 ## 2023:
-### 1. FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
+### 1. [ECCV '24] FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
 <details span>
 <summary><b>Abstract</b></summary>
