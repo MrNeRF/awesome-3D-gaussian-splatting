@@ -3386,6 +3386,7 @@ Localization and mapping are critical tasks for various applications such as aut
 - [Tutorial from the authors of 3DGS](https://3dgstutorial.github.io/)
 
 ### Framework
+- [Pointrix](https://github.com/pointrix-project/pointrix) - A differentiable point-based rendering framework.
 - [msplat](https://github.com/pointrix-project/msplat) - A modular differential gaussian rasterization library.
 - [GauStudio](https://github.com/GAP-LAB-CUHK-SZ/gaustudio) - Unified framework with different paper implementations
 - [gaussian-splatting-lightning](https://github.com/yzslab/gaussian-splatting-lightning) - A 3D Gaussian Splatting framework with various derived algorithms and an interactive web viewer
