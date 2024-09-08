@@ -52,7 +52,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
-
+ **Sept 07, 2024**
+ - Added one paper:MoDGS
+ 
  **May 10, 2024**
  - Added 18 papers: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC, Reinforcment Learning with GGS, GoMAvatar, OccGaussian, LoopGaussian, Review
 
@@ -1463,6 +1465,18 @@ In this paper, we propose a 3D geometry-aware deformable Gaussian Splatting meth
 </details>
 
 [📄 Paper](https://arxiv.org/pdf/2404.06270) | [🌐 Project Page](https://npucvr.github.io/GaGS/) | [💻 Code (not yet)]() 
+
+### 8. [arxiv '2406] MoDGS: Dynamic Gaussian Splatting from Causually-captured Monocular Videos
+ 
+**Authors**: Qingming Liu*, Yuan Liu*, Jiepeng Wang, Xianqiang Lv,Peng Wang, Wenping Wang, Junhui Hou†, 
+
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we propose MoDGS, a new pipeline to render novel-view images in dynamic scenes using only casually captured monocular videos. Previous monocular dynamic NeRF or Gaussian Splatting methods strongly rely on the rapid movement of input cameras to construct multiview consistency but fail to reconstruct dynamic scenes on casually captured input videos whose cameras are static or move slowly.
+
+To address this challenging task, MoDGS adopts recent single-view depth estimation methods to guide the learning of the dynamic scene. Then, a novel 3D-aware initialization method is proposed to learn a reasonable deformation field and a new robust depth loss is proposed to guide the learning of dynamic scene geometry. Comprehensive experiments demonstrate that MoDGS is able to render high-quality novel view images of dynamic scenes from just a casually captured monocular video, which outperforms baseline methods by a significant margin.
+
+[📄 Paper](https://arxiv.org/abs/2406.00434) | [🌐 Project Page](https://modgs.github.io/) | [💻 Code (not yet)](https://github.com/MoDGS/MoDGS) 
 
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
