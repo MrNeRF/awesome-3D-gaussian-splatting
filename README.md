@@ -1479,6 +1479,17 @@ To address this challenging task, MoDGS adopts recent single-view depth estimati
 
 [📄 Paper](https://arxiv.org/abs/2406.00434) | [🌐 Project Page](https://modgs.github.io/) | [💻 Code (not yet)](https://github.com/MoDGS/MoDGS) 
 
+### 9. [ECCVW '24] Optimizing Dynamic NeRF and 3DGS with No Video Synchronization
+
+**Authors**: Seoha Kim*, Jeongmin Bae*, Youngsik Yun, HyunSeung Son, Hahyun Lee, Gun Bang, Youngjung Uh 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in 4D scene reconstruction using dynamic NeRF and 3DGS have demonstrated the ability to represent dynamic scenes from multi-view videos. However, they fail to reconstruct the dynamic scenes and struggle to fit even the training views in unsynchronized settings. It happens because they employ a single latent embedding for a frame, while the multi-view images at the same frame were actually captured at different moments. To address this limitation, we introduce time offsets for individual unsynchronized videos and jointly optimize the offsets with the field. By design, our method is applicable for various baselines, even regardless of the types of radiance fields. We conduct experiments on the common Plenoptic Video Dataset and a newly built Unsynchronized Dynamic Blender Dataset to verify the performance of our method.</details>
+
+[📄 Paper](https://openreview.net/forum?id=RQutkn4V9I)
+
+
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
@@ -1898,6 +1909,15 @@ Precisely perceiving the geometric and semantic properties of real-world 3D obje
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2401.01970.pdf) 
+
+### 5. Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
+**Authors**: Hyunjee Lee*, Youngsik Yun*, Jeongmin Bae, Seoha Kim, Youngjung Uh
+<details span>
+<summary><b>Abstract</b></summary>
+Understanding the 3D semantics of a scene is a fundamental problem for various scenarios such as embodied agents. While NeRFs and 3DGS excel at novel-view synthesis, previous methods for understanding their semantics have been limited to incomplete 3D understanding: their segmentation results are 2D masks and their supervision is anchored at 2D pixels. This paper revisits the problem set to pursue a better 3D understanding of a scene modeled by NeRFs and 3DGS as follows. 1) We directly supervise the 3D points to train the language embedding field. It achieves state-of-the-art accuracy without relying on multi-scale language embeddings. 2) We transfer the pre-trained language field to 3DGS, achieving the first real-time rendering speed without sacrificing training time or accuracy. 3) We introduce a 3D querying and evaluation protocol for assessing the reconstructed geometry and semantics together. Code, checkpoints, and annotations will be available online.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2408.07416) | [🌐 Project Page](https://hyunji12.github.io/Open3DRF/) | [💻 Code (not yet)](https://github.com/hyunji12/Open3DRF)
 
 <br>
 
