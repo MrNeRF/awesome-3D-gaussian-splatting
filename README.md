@@ -3258,7 +3258,7 @@ Novel View Synthesis (NVS) for street scenes play a critical role in the autonom
 Image-goal navigation enables a robot to reach the location where a target image was captured, using visual cues for guidance. However, current methods either rely heavily on data and computationally expensive learning-based approaches or lack efficiency in complex environments due to insufficient exploration strategies. To address these limitations, we propose Bayesian Embodied Image-goal Navigation Using Gaussian Splatting, a novel method that formulates ImageNav as an optimal control problem within a model predictive control framework. BEINGS leverages 3D Gaussian Splatting as a scene prior to predict future observations, enabling efficient, real-time navigation decisions grounded in the robot’s sensory experiences. By integrating Bayesian updates, our method dynamically refines the robot's strategy without requiring extensive prior experience or data. Our algorithm is validated through extensive simulations and physical experiments, showcasing its potential for embodied robot systems in visually complex scenarios. 
 </details>
 
- [📄 Paper]([https://arxiv.org/pdf/2312.13150.pdf](https://arxiv.org/abs/2409.10216)) | [🌐 Project Page](https://www.mwg.ink/BEINGS-web) | [💻 Code](https://github.com/guaMass/BEINGS) 
+ [📄 Paper](https://arxiv.org/abs/2409.10216) | [🌐 Project Page](https://www.mwg.ink/BEINGS-web) | [💻 Code](https://github.com/guaMass/BEINGS) 
 
 <br>
 
