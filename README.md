@@ -1800,7 +1800,7 @@ Recently many techniques have emerged to create high quality 3D assets and scene
 
   [📄 Paper](https://arxiv.org/pdf/2406.08488) | [🌐 Project Page](https://ice-gaussian.github.io/) | [🎥 Short Presentation](https://youtu.be/dDsCwRXixp8?si=415s7-dEpM7-FPMq)
 
-### 14. Gradient-Driven 3D Segmentation and Affordance Transfer in Gaussian Splatting
+### 14. Gradient-Driven 3D Segmentation and Affordance Transfer in Gaussian Splatting Using 2D Masks
 **Authors**: Joji Joseph, Bharadwaj Amrutur, Shalabh Bhatnagar
 <details span>
 <summary><b>Abstract</b></summary>
