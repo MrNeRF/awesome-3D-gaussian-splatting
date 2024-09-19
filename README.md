@@ -1807,7 +1807,7 @@ Recently many techniques have emerged to create high quality 3D assets and scene
 In this paper, we introduce a novel voting-based method that extends 2D segmentation models to 3D Gaussian splats. Our approach leverages masked gradients, where gradients are filtered by input 2D masks, and these gradients are used as votes to achieve accurate segmentation. As a byproduct, we found that inference-time gradients can also be used to prune Gaussians, resulting in up to 21% compression. Additionally, we explore few-shot affordance transfer, allowing annotations from 2D images to be effectively transferred onto 3D Gaussian splats. The robust yet straightforward mathematical formulation underlying this approach makes it a highly effective tool for numerous downstream applications, such as augmented reality (AR), object editing, and robotics.
 </details>
 
-[📄 Preprint](https://arxiv.org/abs/2409.11681) | [🌐 Project Page](https://jojijoseph.github.io/3dgs-segmentation/) | [💻 Code](https://github.com/JojiJoseph/3dgs-gradient-segmentation)
+[📄 Preprint](https://arxiv.org/abs/2409.11681) | [🌐 Project Page](https://jojijoseph.github.io/3dgs-segmentation/) | [💻 Code (Segmentation)](https://github.com/JojiJoseph/3dgs-gradient-segmentation)
   
 ## 2023:
 ### 1. [CVPR '24] GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
