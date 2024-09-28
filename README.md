@@ -1881,8 +1881,17 @@ Recently, 3D Gaussian, as an explicit 3D representation method, has demonstrated
 <br>
 
 ## Language Embedding:
-## 2023:
-### 1. [CVPR '24] Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding 
+## 2024:
+### 1. [IROS '24] Language-Embedded Gaussian Splats (LEGS): Incrementally Building Room-Scale Representations with a Mobile Robot
+**Authors**: Justin Yu, Kush Hari, Kishore Srinivas, Karim El-Refai, Adam Rashid, Chung Min Kim, Justin Kerr, Richard Cheng, Muhammad Zubair Irshad, Ashwin Balakrishna, Thomas Kollar, Ken Goldberg
+<details span>
+<summary><b>Abstract</b></summary>
+Building semantic 3D maps is valuable for searching for objects of interest in offices, warehouses, stores, and homes. We present a mapping system that incrementally builds a Language-Embedded Gaussian Splat (LEGS): a detailed 3D scene representation that encodes both appearance and semantics in a unified representation. LEGS is trained online as a robot traverses its environment to enable localization of open-vocabulary object queries. We evaluate LEGS on 4 room-scale scenes where we query for objects in the scene to assess how LEGS can capture semantic meaning. We compare LEGS to LERF and find that while both systems have comparable object query success rates, LEGS trains over 3.5x faster than LERF. Results suggest that a multi-camera setup and incremental bundle adjustment can boost visual reconstruction quality in constrained robot trajectories, and suggest LEGS can localize open-vocabulary and long-tail object queries with up to 66% accuracy.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2409.18108) | [🌐 Project Page](https://berkeleyautomation.github.io/LEGS/)
+
+### 2. [CVPR '24] Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding 
 **Authors**: Jin-Chuan Shi, Miao Wang, Hao-Bin Duan, Shao-Hua Guan 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1891,7 +1900,7 @@ Open-vocabulary querying in 3D space is challenging but essential for scene unde
 
   [📄 Paper](https://arxiv.org/pdf/2311.18482.pdf) | [🌐 Project Page](https://buaavrcg.github.io/LEGaussians/) | [💻 Code](https://github.com/buaavrcg/LEGaussians)
 
-### 2. [CVPR '24] Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature Fields
+### 3. [CVPR '24] Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature Fields
 **Authors**: Shijie Zhou, Haoran Chang, Sicheng Jiang, Zhiwen Fan, Zehao Zhu, Dejia Xu, Pradyumna Chari, Suya You, Zhangyang Wang, Achuta Kadambi 
 
 <details span>
@@ -1901,7 +1910,7 @@ Open-vocabulary querying in 3D space is challenging but essential for scene unde
 
   [📄 Paper](https://arxiv.org/pdf/2312.03203.pdf) | [🌐 Project Page](https://feature-3dgs.github.io/) | [💻 Code](https://github.com/ShijieZhou-UCLA/feature-3dgs) | [🎥 Short Presentation](https://www.youtube.com/watch?v=h4zmQsCV_Qw)
 
-### 3. [CVPR '24] LangSplat: 3D Language Gaussian Splatting 
+### 4. [CVPR '24] LangSplat: 3D Language Gaussian Splatting 
 **Authors**: Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, Hanspeter Pfister 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1910,7 +1919,7 @@ Human lives in a 3D world and commonly uses natural language to interact with a 
 
   [📄 Paper](https://arxiv.org/pdf/2312.16084.pdf) | [🌐 Project Page](https://langsplat.github.io/) | [💻 Code](https://github.com/minghanqin/LangSplat) | [🎥 Short Presentation](https://www.youtube.com/watch?v=XMlyjsei-Es)
 
-### 4. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding 
+### 5. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding 
 **Authors**: Xingxing Zuo, Pouya Samangouei, Yunwen Zhou, Yan Di, Mingyang Li 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1919,7 +1928,7 @@ Precisely perceiving the geometric and semantic properties of real-world 3D obje
 
   [📄 Paper](https://arxiv.org/pdf/2401.01970.pdf) 
 
-### 5. Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
+### 6. Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
 **Authors**: Hyunjee Lee*, Youngsik Yun*, Jeongmin Bae, Seoha Kim, Youngjung Uh
 <details span>
 <summary><b>Abstract</b></summary>
