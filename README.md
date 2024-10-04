@@ -7,7 +7,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Seminal Paper introducing 3D Gaussian Splatting](#seminal-paper-introducing-3d-gaussian-splatting)
 <br>
 
-- [3D Object Detection](3D-Object-Detection)
+- [3D Object Detection](#3D-Object-Detection)
 - [Autonomous Driving](#autonomous-driving)
 - [Avatars](#avatars)
 - [Classic work](#classic-work)
