@@ -3035,7 +3035,6 @@ We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconstruction sys
 
   [📄 Paper](https://arxiv.org/abs/2404.19706) | [🌐 Project Page](https://gapszju.github.io/RTG-SLAM/) | [💻 Code](https://github.com/MisEty/RTG-SLAM)
 
-
 ### 12. LoopSplat: Loop Closure by Registering 3D Gaussian Splats
 **Authors**: Liyuan Zhu, Yue Li, Erik Sandström, Shengyu Huang, Konrad Schindler, Iro Armeni
 <details span>
@@ -3043,7 +3042,8 @@ We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconstruction sys
 Simultaneous Localization and Mapping (SLAM) based on 3D Gaussian Splats (3DGS) has recently shown promise towards more accurate, dense 3D scene maps. However, existing 3DGS-based methods fail to address the global consistency of the scene via loop closure and/or global bundle adjustment. To this end, we propose LoopSplat, which takes RGB-D images as input and performs dense mapping with 3DGS submaps and frame-to-model tracking. LoopSplat triggers loop closure online and computes relative loop edge constraints between submaps directly via 3DGS registration, leading to improvements in efficiency and accuracy over traditional global-to-local point cloud registration. It uses a robust pose graph optimization formulation and rigidly aligns the submaps to achieve global consistency. Evaluation on the synthetic Replica and real-world TUM-RGBD, ScanNet, and ScanNet++ datasets demonstrates competitive or superior tracking, mapping, and rendering compared to existing methods for dense RGB-D SLAM.
 </details>
 
-[📄 Paper](https://arxiv.org/abs/2408.10154) | [🌐 Project Page](https://loopsplat.github.io/) | [💻 Code](https://github.com/GradientSpaces/LoopSplat)
+  [📄 Paper](https://arxiv.org/abs/2408.10154) | [🌐 Project Page](https://loopsplat.github.io/) | [💻 Code](https://github.com/GradientSpaces/LoopSplat)
+
 ## 2023:
 ### 1. [CVPR '24] GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
