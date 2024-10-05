@@ -7,6 +7,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 - [Seminal Paper introducing 3D Gaussian Splatting](#seminal-paper-introducing-3d-gaussian-splatting)
 <br>
 
+- [3D Object Detection](#3D-Object-Detection)
 - [Autonomous Driving](#autonomous-driving)
 - [Avatars](#avatars)
 - [Classic work](#classic-work)
@@ -396,6 +397,18 @@ rendering on several established datasets.
 
 <br>
 
+## 3D Object Detection
+## 2024
+### 1. 3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused Sampling for 3D Object Detection
+**Authors**: Yang Cao, Yuanliang Jv, Dan Xu
+<details span>
+<summary><b>Abstract</b></summary>
+Neural Radiance Fields (NeRF) are widely used for novel-view synthesis and have been adapted for 3D Object Detection (3DOD), offering a promising approach to 3D object detection through view-synthesis representation. However, NeRF faces inherent limitations: (i) It has limited representational capacity for 3DOD due to its implicit nature, and (ii) it suffers from slow rendering speeds. Recently, 3D Gaussian Splatting (3DGS) has emerged as an explicit 3D representation that addresses these limitations with faster rendering capabilities. Inspired by these advantages, this paper introduces 3DGS into 3DOD for the first time, identifying two main challenges: (i) Ambiguous spatial distribution of Gaussian blobs – 3DGS primarily relies on 2D pixel-level supervision, resulting in unclear 3D spatial distribution of Gaussian blobs and poor differentiation between objects and background, which hinders 3DOD; (ii) Excessive background blobs – 2D images often include numerous background pixels, leading to densely reconstructed 3DGS with many noisy Gaussian blobs representing the background, negatively affecting detection. To tackle the challenge (i), we leverage the fact that 3DGS reconstruction is derived from 2D images, and propose an elegant and efficient solution by incorporating 2D Boundary Guidance to significantly enhance the spatial distribution of Gaussian blobs, resulting in clearer differentiation between objects and their background (see Fig. 1). To address the challenge (ii), we propose a Box-Focused Sampling strategy using 2D boxes to generate object probability distribution in 3D spaces, allowing effective probabilistic sampling in 3D to retain more object blobs and reduce noisy background blobs. Benefiting from the proposed Boundary Guidance and Box-Focused Sampling, our final method, 3DGS-DET, achieves significant improvements (+5.6 on mAP@0.25, +3.7 on mAP@0.5) over our basic pipeline version, without introducing any additional learnable parameters. Furthermore, 3DGS-DET significantly outperforms the state-of-the-art NeRF-based method, NeRF-Det, achieving improvements of +6.6 on mAP@0.25 and +8.1 on mAP@0.5 for the ScanNet dataset, and impressive +31.5 on mAP@0.25 for the ARKITScenes dataset. Codes and models are publicly available at: https://github.com/yangcaoai/3DGS-DET.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2410.01647) | [💻 Code (not yet)](https://github.com/yangcaoai/3DGS-DET) 
+
+  
 ## Autonomous Driving:
 ## 2024:
 ### 1. Street Gaussians for Modeling Dynamic Urban Scenes  
