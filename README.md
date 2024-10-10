@@ -1932,7 +1932,18 @@ Human lives in a 3D world and commonly uses natural language to interact with a 
 
   [📄 Paper](https://arxiv.org/pdf/2312.16084.pdf) | [🌐 Project Page](https://langsplat.github.io/) | [💻 Code](https://github.com/minghanqin/LangSplat) | [🎥 Short Presentation](https://www.youtube.com/watch?v=XMlyjsei-Es)
 
-### 5. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding 
+### 5. SplaTraj: Camera Trajectory Generation with Semantic Gaussian Splatting 
+**Authors**: Xinyi Liu, Tianyi Zhang, Matthew Johnson-Roberson, Weiming Zhi 
+<details span>
+<summary><b>Abstract</b></summary>
+Many recent developments for robots to represent environments have focused on photorealistic reconstructions. This paper particularly focuses on generating sequences of images from the photorealistic Gaussian Splatting models, that match instructions that are given by user-inputted language. We contribute a novel framework, SplaTraj, which formulates the generation of images within photorealistic environment representations as a continuous-time trajectory optimization problem. Costs are designed so that a camera following the trajectory poses will smoothly traverse through the environment and render the specified spatial information in a photogenic manner. This is achieved by querying a photorealistic representation with language embedding to isolate regions that correspond to the user-specified inputs. These regions are then projected to the camera's view as it moves over time and a cost is constructed. We can then apply gradient-based optimization and differentiate through the rendering to optimize the trajectory for the defined cost. The resulting trajectory moves to photogenically view each of the specified objects. We empirically evaluate our approach on a suite of environments and instructions, and demonstrate the quality of generated image sequences.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2410.06014) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/PUXNBfpeZkg)
+
+
+
+### 6. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding 
 **Authors**: Xingxing Zuo, Pouya Samangouei, Yunwen Zhou, Yan Di, Mingyang Li 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1941,7 +1952,7 @@ Precisely perceiving the geometric and semantic properties of real-world 3D obje
 
   [📄 Paper](https://arxiv.org/pdf/2401.01970.pdf) 
 
-### 6. Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
+### 7. Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
 **Authors**: Hyunjee Lee*, Youngsik Yun*, Jeongmin Bae, Seoha Kim, Youngjung Uh
 <details span>
 <summary><b>Abstract</b></summary>
