@@ -1941,8 +1941,6 @@ Many recent developments for robots to represent environments have focused on ph
 
   [📄 Paper](https://arxiv.org/abs/2410.06014) | [💻 Code (not yet)]() | [🎥 Short Presentation](https://youtu.be/PUXNBfpeZkg)
 
-
-
 ### 6. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding 
 **Authors**: Xingxing Zuo, Pouya Samangouei, Yunwen Zhou, Yan Di, Mingyang Li 
 <details span>
