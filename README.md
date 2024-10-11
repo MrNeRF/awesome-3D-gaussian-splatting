@@ -2354,7 +2354,7 @@ Most advances in 3D Generative Adversarial Networks (3D GANs) largely depend on 
 We propose a framework for active next best view and touch selection for robotic manipulators using 3D Gaussian Splatting (3DGS). 3DGS is emerging as a useful explicit 3D scene representation for robotics, as it has the ability to represent scenes in a both photorealistic and geometrically accurate manner. However, in real-world, online robotic scenes where the number of views is limited given efficiency requirements, random view selection for 3DGS becomes impractical as views are often overlapping and redundant. We address this issue by proposing an end-to-end online training and active view selection pipeline, which enhances the performance of 3DGS in few-view robotics settings. We first elevate the performance of few-shot 3DGS with a novel semantic depth alignment method using Segment Anything Model 2 (SAM2) that we supplement with Pearson depth and surface normal loss to improve color and depth reconstruction of real-world scenes. We then extend FisherRF, a next-best-view selection method for 3DGS, to select views and touch poses based on depth uncertainty. We perform online view selection on a real robot system during live 3DGS training. We motivate our improvements to few-shot GS scenes, and extend depth-based FisherRF to them, where we demonstrate both qualitative and quantitative improvements on challenging robot scenes.
 </details>
 
-  [📄 Paper](https://arxiv.org/pdf/2401.16663.pdf) | [🌐 Project Page](https://armlabstanford.github.io/next-best-sense) 
+  [📄 Paper](https://arxiv.org/pdf/2401.16663.pdf) | [🌐 Project Page](https://armlabstanford.github.io/next-best-sense) | [💻 Code](https://github.com/armlabstanford/NextBestSense)
 
 
 ## 2023:
