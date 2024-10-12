@@ -1502,6 +1502,17 @@ Recent advancements in 4D scene reconstruction using dynamic NeRF and 3DGS have 
 
 [📄 Paper](https://openreview.net/forum?id=RQutkn4V9I)
 
+### 10. [NeurIPS '24] MotionGS: Exploring Explicit Motion Guidance for Deformable 3D Gaussian Splatting
+ 
+**Authors**: Ruijie Zhu*, Yanzhe Liang*, Hanzhi Chang, Jiacheng Deng, Jiahao Lu, Wenfei Yang, Tianzhu Zhang, Yongdong Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Dynamic scene reconstruction is a long-term challenge in the field of 3D vision. Recently, the emergence of 3D Gaussian Splatting has provided new insights into this problem. Although subsequent efforts rapidly extend static 3D Gaussian to dynamic scenes, they often lack explicit constraints on object motion, leading to optimization difficulties and performance degradation. To address the above issues, we propose a novel deformable 3D Gaussian splatting framework called MotionGS, which explores explicit motion priors to guide the deformation of 3D Gaussians. Specifically, we first introduce an optical flow decoupling module that decouples optical flow into camera flow and motion flow, corresponding to camera movement and object motion respectively. Then the motion flow can effectively constrain the deformation of 3D Gaussians, thus simulating the motion of dynamic objects. Additionally, a camera pose refinement module is proposed to alternately optimize 3D Gaussians and camera poses, mitigating the impact of inaccurate camera poses. Extensive experiments in the monocular dynamic scenes validate that MotionGS surpasses state-of-the-art methods and exhibits significant superiority in both qualitative and quantitative results.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2410.07707) | [🌐 Project Page](https://ruijiezhu94.github.io/MotionGS_page) | [💻 Code (not yet)](https://github.com/RuijieZhu94/MotionGS) 
+
 
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
