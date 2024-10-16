@@ -53,6 +53,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **Oct 16, 2024**
+ - Added one paper:DGD
+ 
  **Sept 07, 2024**
  - Added one paper:MoDGS
  
@@ -1512,6 +1515,16 @@ Dynamic scene reconstruction is a long-term challenge in the field of 3D vision.
 </details>
 
 [📄 Paper](https://arxiv.org/abs/2410.07707) | [🌐 Project Page](https://ruijiezhu94.github.io/MotionGS_page) | [💻 Code (not yet)](https://github.com/RuijieZhu94/MotionGS) 
+
+### 11. [ECCV '24] DGD: Dynamic 3D Gaussians Distillation
+**Authors**:  Isaac Labe*, Noam Issachar*, Itai Lang, Sagie Benaim
+
+<details span>
+<summary><b>Abstract</b></summary>
+We tackle the task of learning dynamic 3D semantic radiance fields given a single monocular video as input. Our learned semantic radiance field captures per-point semantics as well as color and geometric properties for a dynamic 3D scene, enabling the generation of novel views and their corresponding semantics. This enables the segmentation and tracking of a diverse set of 3D semantic entities, specified using a simple and intuitive interface that includes a user click or a text prompt. To this end, we present DGD, a unified 3D representation for both the appearance and semantics of a dynamic 3D scene, building upon the recently proposed dynamic 3D Gaussians representation. Our representation is optimized over time with both color and semantic information. Key to our method is the joint optimization of the appearance and semantic attributes, which jointly affect the geometric properties of the scene. We evaluate our approach in its ability to enable dense semantic 3D object tracking and demonstrate high-quality results that are fast to render, for a diverse set of scenes.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2405.19321) | [🌐 Project Page](https://isaaclabe.github.io/DGD-Website/) | [💻 Code](https://github.com/Isaaclabe/DGD-Dynamic-3D-Gaussians-Distillation) | [🎥 Short Presentation](https://www.youtube.com/watch?v=GzX2GJn9OKs)
 
 
 ## 2023:
