@@ -595,7 +595,24 @@ In this paper, we present a method to reconstruct the world and multiple dynamic
 
   [📄 Paper](https://arxiv.org/abs/2404.14410) |  [🌐 Project Page](https://snuvclab.github.io/gtu/) | [💻 Code](https://github.com/snuvclab/gtu/)
 
-  
+### 15. [NeurIPS '24] Generalizable and Animatable Gaussian Head Avatar
+**Authors**: Xuangeng Chu, Tatsuya Harada
+ 
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we propose Generalizable and Animatable Gaussian head Avatar (GAGAvatar) for one-shot animatable head avatar reconstruction.
+Existing methods rely on neural radiance fields, leading to heavy rendering consumption and low reenactment speeds.
+To address these limitations, we generate the parameters of 3D Gaussians from a single image in a single forward pass.
+The key innovation of our work is the proposed dual-lifting method, which produces high-fidelity 3D Gaussians that capture identity and facial details.
+Additionally, we leverage global image features and the 3D morphable model to construct 3D Gaussians for controlling expressions.
+After training, our model can reconstruct unseen identities without specific optimizations and perform reenactment rendering at real-time speeds.
+Experiments show that our method exhibits superior performance compared to previous methods in terms of reconstruction quality and expression accuracy.
+We believe our method can establish new benchmarks for future research and advance applications of digital avatars.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2410.07971) |  [🌐 Project Page](https://xg-chu.site/project_gagavatar/) | [💻 Code](https://github.com/xg-chu/GAGAvatar)
+
+
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
