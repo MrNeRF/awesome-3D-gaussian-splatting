@@ -1552,6 +1552,16 @@ We tackle the task of learning dynamic 3D semantic radiance fields given a singl
 
   [📄 Paper](https://arxiv.org/pdf/2405.19321) | [🌐 Project Page](https://isaaclabe.github.io/DGD-Website/) | [💻 Code](https://github.com/Isaaclabe/DGD-Dynamic-3D-Gaussians-Distillation) | [🎥 Short Presentation](https://www.youtube.com/watch?v=GzX2GJn9OKs)
 
+### 12. [NeurIPS '24] Fully Explicit Dynamic Gaussian Splatting
+ 
+**Authors**: Junoh Lee, Changyeon Won, HyunJun Jung, Inhwan Bae, Hae-Gon Jeon
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting has shown fast and high-quality rendering results in static scenes by leveraging dense 3D prior and explicit representations. Unfortunately, the benefits of the prior and representation do not involve novel view synthesis for dynamic motions. Ironically, this is because the main barrier is the reliance on them, which requires increasing training and rendering times to account for dynamic motions. In this paper, we design a \Edited{Explicit 4D Gaussian Splatting(Ex4DGS)}. Our key idea is to firstly separate static and dynamic Gaussians during training, and to explicitly sample positions and rotations of the dynamic Gaussians at sparse timestamps. The sampled positions and rotations are then interpolated to represent both spatially and temporally continuous motions of objects in dynamic scenes as well as reducing computational cost. Additionally, we introduce a progressive training scheme and a point-backtracking technique that improves Ex4DGS's convergence. We initially train Ex4DGS using short timestamps and progressively extend timestamps, which makes it work well with a few point clouds. The point-backtracking is used to quantify the cumulative error of each Gaussian over time, enabling the detection and removal of erroneous Gaussians in dynamic scenes. Comprehensive experiments on various scenes demonstrate the state-of-the-art rendering quality from our method, achieving fast rendering of 62 fps on a single 2080Ti GPU.
+</details>
+
+[📄 Paper](http://arxiv.org/abs/2410.15629) | [🌐 Project Page](https://leejunoh.com/Ex4DGS/) | [💻 Code (not yet)](https://github.com/juno181/Ex4DGS) 
 
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
