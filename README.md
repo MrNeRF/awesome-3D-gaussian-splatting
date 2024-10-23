@@ -2426,6 +2426,15 @@ We propose a framework for active next best view and touch selection for robotic
   [📄 Paper](https://arxiv.org/pdf/2401.16663.pdf) | [🌐 Project Page](https://armlabstanford.github.io/next-best-sense) | [💻 Code](https://github.com/armlabstanford/NextBestSense)
 
 
+### 26. Radiance Fields for Robotic Teleoperation
+**Authors**: Maximum Wilder-Smith, Vaishakh Patil, Marco Hutter 
+<details span>
+<summary><b>Abstract</b></summary>
+Radiance field methods such as Neural Radiance Fields (NeRFs) or 3D Gaussian Splatting (3DGS), have revolutionized graphics and novel view synthesis. Their ability to synthesize new viewpoints with photo-realistic quality, as well as capture complex volumetric and specular scenes, makes them an ideal visualization for robotic teleoperation setups. Direct camera teleoperation provides high-fidelity operation at the cost of maneuverability, while reconstruction-based approaches offer controllable scenes with lower fidelity. With this in mind, we propose replacing the traditional reconstruction-visualization components of the robotic teleoperation pipeline with online Radiance Fields, offering highly maneuverable scenes with photorealistic quality. As such, there are three main contributions to state of the art: (1) online training of Radiance Fields using live data from multiple cameras, (2) support for a variety of radiance methods including NeRF and 3DGS, (3) visualization suite for these methods including a virtual reality scene. To enable seamless integration with existing setups, these components were tested with multiple robots in multiple configurations and were displayed using traditional tools as well as the VR headset. The results across methods and robots were compared quantitatively to a baseline of mesh reconstruction, and a user study was conducted to compare the different visualization methods.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2407.20194) | [🌐 Project Page](https://leggedrobotics.github.io/rffr.github.io/) | [💻 Code](https://github.com/leggedrobotics/radiance_field_ros)
+
 ## 2023:
 ### 1. [ECCV '24] FisherRF: Active View Selection and Uncertainty Quantification for Radiance Fields using Fisher Information  
 **Authors**: Wen Jiang, Boshu Lei, Kostas Daniilidis 
