@@ -53,6 +53,10 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
+ **Oct 24, 2024**
+ - Added 2 papers: IGS, V^3
+ 
  **Oct 16, 2024**
  - Added one paper:DGD
  
@@ -622,6 +626,16 @@ Volumetric video represents a transformative advancement in visual media, enabli
 
  [📄 Paper](https://arxiv.org/pdf/2409.08353) | [🌐 Project Page](https://nowheretrix.github.io/DualGS/) | [🎥 Short Presentation](https://www.youtube.com/watch?v=vwDE8xr78Bg) | [💻 Dataset](https://github.com/xyi1023/DualGS_Dataset)
 
+### 17. [SIGGRAPH Asia'24] V^3: Viewing Volumetric Videos on Mobiles via Streamable 2D Dynamic Gaussians
+**Authors**: Penghao Wang, Zhirui Zhang, Liao Wang, Kaixin Yao, Siyuan Xie, Jingyi Yu, Minye Wu, Lan Xu 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Experiencing high-fidelity volumetric video as seamlessly as 2D videos is a long-held dream. However, current dynamic 3DGS methods, despite their high rendering quality, face challenges in streaming on mobile devices due to computational and bandwidth constraints. In this paper, we introduce V^3 (Viewing Volumetric Videos), a novel approach that enables high-quality mobile rendering through the streaming of dynamic Gaussians. Our key innovation is to view dynamic 3DGS as 2D videos, facilitating the use of hardware video codecs. Additionally, we propose a two-stage training strategy to reduce storage requirements with rapid training speed. The first stage employs hash encoding and shallow MLP to learn motion, then reduces the number of Gaussians through pruning to meet the streaming requirements, while the second stage fine tunes other Gaussian attributes using residual entropy loss and temporal loss to improve temporal continuity. This strategy, which disentangles motion and appearance, maintains high rendering quality with compact storage requirements. Meanwhile, we designed a multi-platform player to decode and render 2D Gaussian videos. Extensive experiments demonstrate the effectiveness of V^3, outperforming other methods by enabling high-quality rendering and streaming on common devices, which is unseen before. As the first to stream dynamic Gaussians on mobile devices, our companion player offers users an unprecedented volumetric video experience, including smooth scrolling and instant sharing. Our project page with source code is available at this https URL. 
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2409.13648) | [🌐 Project Page](https://authoritywang.github.io/v3/) | [🎥 Short Presentation](https://youtu.be/Z5La9AporRU?si=iJ-m_mvUSxQN4Bwm) 
+
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
@@ -1014,7 +1028,13 @@ Extensive experiments validate the effectiveness of our approach in balancing vi
 
   [📄 Paper](http://arxiv.org/abs/2408.14823) | [🌐 Project Page](https://yuang-ian.github.io/lapisgs/)
 
+### 7. Implicit Gaussian Splatting with Efficient Multi-Level Tri-Plane Representation
+**Authors**: Minye Wu, Tinne Tuytelaars
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in photo-realistic novel view synthesis have been significantly driven by Gaussian Splatting (3DGS). Nevertheless, the explicit nature of 3DGS data entails considerable storage requirements, highlighting a pressing need for more efficient data representations. To address this, we present Implicit Gaussian Splatting (IGS), an innovative hybrid model that integrates explicit point clouds with implicit feature embeddings through a multi-level tri-plane architecture. This architecture features 2D feature grids at various resolutions across different levels, facilitating continuous spatial domain representation and enhancing spatial correlations among Gaussian primitives. Building upon this foundation, we introduce a level-based progressive training scheme, which incorporates explicit spatial regularization. This method capitalizes on spatial correlations to enhance both the rendering quality and the compactness of the IGS representation. Furthermore, we propose a novel compression pipeline tailored for both point clouds and 2D feature grids, considering the entropy variations across different levels. Extensive experimental evaluations demonstrate that our algorithm can deliver high-quality rendering using only a few MBs, effectively balancing storage efficiency and rendering fidelity, and yielding results that are competitive with the state-of-the-art.</details>
 
+  [📄 Paper](https://arxiv.org/abs/2408.10041) | [💻 Code](https://github.com/wuminye/ImplicitGS) 
 
 ## 2023:
 ### 1. LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS 
