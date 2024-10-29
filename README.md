@@ -3026,7 +3026,19 @@ While AI-generated text and 2D images continue to expand its territory, 3D gener
 
   [📄 Paper](https://arxiv.org/pdf/2402.07181.pdf)
 
-### 4. How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey 
+### 4. Neural Fields in Robotics: A Survey
+**Authors**: Muhammad Zubair Irshad, Mauro Comi, Yen-Chen Lin, Nick Heppert, Abhinav Valada, Zsolt Kira, Rares Ambrus, Johnathan Trembley
+<details span>
+<summary><b>Abstract</b></summary>
+Neural Fields have emerged as a transformative approach for 3D scene representation in computer vision and robotics, enabling accurate inference of geometry, 3D semantics, and dynamics from posed 2D data. Leveraging differentiable rendering, Neural Fields encompass both continuous implicit and explicit neural representations enabling high-fidelity 3D reconstruction, integration of multi-modal sensor data, and generation of novel viewpoints.
+This survey explores their applications in robotics, emphasizing their potential to enhance perception, planning, and control. Their compactness, memory efficiency, and differentiability, along with seamless integration with foundation and generative models, make them ideal for real-time applications, improving robot adaptability and decision-making. This paper provides a thorough review of Neural Fields in robotics, categorizing applications across various domains and evaluating their strengths and limitations, based on over 200 papers.
+First, we present four key Neural Fields frameworks: Occupancy Networks, Signed Distance Fields, Neural Radiance Fields, and Gaussian Splatting. Second, we detail Neural Fields' applications in five major robotics domains: pose estimation, manipulation, navigation, physics, and autonomous driving, highlighting key works and discussing takeaways and open challenges. Finally, we outline the current limitations of Neural Fields in robotics and propose promising directions for future research.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2410.20220)
+
+
+### 5. How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey 
 **Authors**: Fabio Tosi, Youmin Zhang, Ziren Gong, Erik Sandström, Stefano Mattoccia, Martin R. Oswald, Matteo Poggi 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -3035,7 +3047,7 @@ Over the past two decades, research in the field of Simultaneous Localization an
 
   [📄 Paper](https://arxiv.org/pdf/2402.13255.pdf)
 
-### 5. Recent Advances in 3D Gaussian Splatting  
+### 6. Recent Advances in 3D Gaussian Splatting  
 **Authors**: Tong Wu, Yu-Jie Yuan, Ling-Xiao Zhang, Jie Yang, Yan-Pei Cao, Ling-Qi Yan, Lin Gao 
 <details span>
 <summary><b>Abstract</b></summary>
@@ -3044,7 +3056,7 @@ The emergence of 3D Gaussian Splatting (3DGS) has greatly accelerated the render
 
   [📄 Paper](https://arxiv.org/pdf/2403.11134)
 
-### 6. Gaussian Splatting: 3D Reconstruction and Novel View Synthesis, a Review  
+### 7. Gaussian Splatting: 3D Reconstruction and Novel View Synthesis, a Review  
 **Authors**: Anurag Dalal, Daniel Hagen, Kjell G. Robbersmyr, Kristian Muri Knausgård 
 <details span>
 <summary><b>Abstract</b></summary>
