@@ -2192,6 +2192,18 @@ Recently, 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconst
 
  [📄 Paper](https://arxiv.org/pdf/2411.00771) | [🌐 Project Page](https://dekuliutesla.github.io/CityGaussianV2/) | [💻 Code (Coming Soon)](https://github.com/DekuLiuTesla/CityGaussian) 
 
+### 14. [CoRL '24] Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision
+**Authors**: Alberta Longhini, Marcel Büsching, Bardienus Pieter Duisterhof, Jens Lundell, Jeffrey Ichnowski, Mårten Björkman, Danica Kragic 
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recently, 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconstruction, manifesting efficient and high-fidelity novel view synthesis. However, accurately We introduce Cloth-Splatting, a method for estimating 3D states of cloth from RGB images through a prediction-update framework. Cloth-Splatting leverages an action-conditioned dynamics model for predicting future states and uses 3D Gaussian Splatting to update the predicted states. Our key insight is that coupling a 3D mesh-based representation with Gaussian Splatting allows us to define a differentiable map between the cloth's state space and the image space. This enables the use of gradient-based optimization techniques to refine inaccurate state estimates using only RGB supervision. Our experiments demonstrate that Cloth-Splatting not only improves state estimation accuracy over current baselines but also reduces convergence time by ~85%.
+</details>
+
+ [📄 Paper](https://openreview.net/forum?id=WmWbswjTsi) | [🌐 Project Page](https://kth-rpl.github.io/cloth-splatting/) | [💻 Code](https://github.com/KTH-RPL/cloth-splatting) 
+
+
+
 ## 2023:
 ### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
 **Authors**: Tianyi Xie, Zeshun Zong, Yuxin Qiu, Xuan Li, Yutao Feng, Yin Yang, Chenfanfu Jiang
