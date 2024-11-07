@@ -3190,7 +3190,7 @@ We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconstruction sys
 
   [📄 Paper](https://arxiv.org/abs/2404.19706) | [🌐 Project Page](https://gapszju.github.io/RTG-SLAM/) | [💻 Code](https://github.com/MisEty/RTG-SLAM)
 
-### 12. LoopSplat: Loop Closure by Registering 3D Gaussian Splats
+### 12. [3DV '25] LoopSplat: Loop Closure by Registering 3D Gaussian Splats
 **Authors**: Liyuan Zhu, Yue Li, Erik Sandström, Shengyu Huang, Konrad Schindler, Iro Armeni
 <details span>
 <summary><b>Abstract</b></summary>
