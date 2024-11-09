@@ -1583,6 +1583,16 @@ We tackle the task of learning dynamic 3D semantic radiance fields given a singl
 
 [📄 Paper](http://arxiv.org/abs/2410.15629) | [🌐 Project Page](https://leejunoh.com/Ex4DGS/) | [💻 Code](https://github.com/juno181/Ex4DGS) 
 
+### 13. [3DV '25] EgoGaussian: Dynamic Scene Understanding from Egocentric Video with 3D Gaussian Splatting
+**Authors**: Daiwei Zhang, Gengyan Li, Jiajie Li, Mickaël Bressieux, Otmar Hilliges, Marc Pollefeys, Luc Van Gool, Xi Wang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Human activities are inherently complex, often involving numerous object interactions. To better understand these activities, it is crucial to model their interactions with the environment captured through dynamic changes. The recent availability of affordable head-mounted cameras and egocentric data offers a more accessible and efficient means to understand human-object interactions in 3D environments. However, most existing methods for human activity modeling neglect the dynamic interactions with objects, resulting in only static representations. The few existing solutions often require inputs from multiple sources, including multi-camera setups, depth-sensing cameras, or kinesthetic sensors. To this end, we introduce EgoGaussian, the first method capable of simultaneously reconstructing 3D scenes and dynamically tracking 3D object motion from RGB egocentric input alone. We leverage the uniquely discrete nature of Gaussian Splatting and segment dynamic interactions from the background, with both having explicit representations. Our approach employs a clip-level online learning pipeline that leverages the dynamic nature of human activities, allowing us to reconstruct the temporal evolution of the scene in chronological order and track rigid object motion. EgoGaussian shows significant improvements in terms of both dynamic object and background reconstruction quality compared to the state-of-the-art. We also qualitatively demonstrate the high quality of the reconstructed models.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2406.19811) | [🌐 Project Page](https://zdwww.github.io/egogs.github.io/) | [💻 Code (not yet)](https://github.com/zdwww/EgoGaussian) | [🎥 Short Presentation](https://youtu.be/nsZrmM7CJB0?si=IJnfWH_Vf_UW2JoF)
+
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
