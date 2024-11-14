@@ -3209,6 +3209,15 @@ Simultaneous Localization and Mapping (SLAM) based on 3D Gaussian Splats (3DGS) 
 
   [📄 Paper](https://arxiv.org/abs/2408.10154) | [🌐 Project Page](https://loopsplat.github.io/) | [💻 Code](https://github.com/GradientSpaces/LoopSplat)
 
+### 13. MBA-SLAM: Motion Blur Aware Dense Visual SLAM with Radiance Fields Representation
+**Authors**: Peng Wang, Lingzhe Zhao, Yin Zhang, Shiyu Zhao, Peidong Liu
+<details span>
+<summary><b>Abstract</b></summary>
+Emerging 3D scene representations, such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS), have demonstrated their effectiveness in Simultaneous Localization and Mapping (SLAM) for photo-realistic rendering, particularly when using high-quality video sequences as input. However, existing methods struggle with motion-blurred frames, which are common in real-world scenarios like low-light or long-exposure conditions. This often results in a significant reduction in both camera localization accuracy and map reconstruction quality. To address this challenge, we propose a dense visual SLAM pipeline (i.e. MBA-SLAM) to handle severe motion-blurred inputs. Our approach integrates an efficient motion blur-aware tracker with either neural radiance fields or Gaussian Splatting based mapper. By accurately modeling the physical image formation process of motion-blurred images, our method simultaneously learns 3D scene representation and estimates the cameras' local trajectory during exposure time, enabling proactive compensation for motion blur caused by camera movement. In our experiments, we demonstrate that MBA-SLAM surpasses previous state-of-the-art methods in both camera localization and map reconstruction, showcasing superior performance across a range of datasets, including synthetic and real datasets featuring sharp images as well as those affected by motion blur, highlighting the versatility and robustness of our approach.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2411.08279) | [🌐 Project Page](https://wangpeng000.github.io/MBA-SLAM/) | [💻 Code (not yet)](https://github.com/WU-CVGL/MBA-SLAM)
+
 ## 2023:
 ### 1. [CVPR '24] GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
