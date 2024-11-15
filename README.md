@@ -1593,7 +1593,7 @@ Human activities are inherently complex, often involving numerous object interac
 
 [📄 Paper](https://arxiv.org/abs/2406.19811) | [🌐 Project Page](https://zdwww.github.io/egogs.github.io/) | [💻 Code (not yet)](https://github.com/zdwww/EgoGaussian) | [🎥 Short Presentation](https://youtu.be/nsZrmM7CJB0?si=IJnfWH_Vf_UW2JoF)
 
-### 13. 3DGS-CD: 3D Gaussian Splatting-based Change Detection for Physical Object Rearrangement
+### 14. 3DGS-CD: 3D Gaussian Splatting-based Change Detection for Physical Object Rearrangement
 **Authors**: Ziqi Lu, Jianbo Ye, John Leonard
 
 <details span>
