@@ -1601,7 +1601,7 @@ Human activities are inherently complex, often involving numerous object interac
 We present 3DGS-CD, the first 3D Gaussian Splatting (3DGS)-based method for detecting physical object rearrangements in 3D scenes. Our approach estimates 3D object-level changes by comparing two sets of unaligned images taken at different times. Leveraging 3DGS's novel view rendering and EfficientSAM's zero-shot segmentation capabilities, we detect 2D object-level changes, which are then associated and fused across views to estimate 3D changes. Our method can detect changes in cluttered environments using sparse post-change images within as little as 18s, using as few as a single new image. It does not rely on depth input, user instructions, object classes, or object models -- An object is recognized simply if it has been re-arranged. Our approach is evaluated on both public and self-collected real-world datasets, achieving up to 14% higher accuracy and three orders of magnitude faster performance compared to the state-of-the-art radiance-field-based change detection method. This significant performance boost enables a broad range of downstream applications, where we highlight three key use cases: object reconstruction, robot workspace reset, and 3DGS model update. Our code and data will be made available at https://github.com/520xyxyzq/3DGS-CD.
 </details>
 
-[📄 Paper](https://arxiv.org/pdf/2411.03706) | [💻 Code (not yet)](https://github.com/520xyxyzq/3DGS-CD) | [🎥 Twitter](https://x.com/520xyxyzq/status/1855484131817173481)
+[📄 Paper](https://arxiv.org/pdf/2411.03706) | [💻 Code (not yet)](https://github.com/520xyxyzq/3DGS-CD)
 
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
