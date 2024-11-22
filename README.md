@@ -3228,6 +3228,15 @@ Emerging 3D scene representations, such as Neural Radiance Fields (NeRF) and 3D 
 
   [📄 Paper](https://arxiv.org/abs/2411.08279) | [🌐 Project Page](https://wangpeng000.github.io/MBA-SLAM/) | [💻 Code (not yet)](https://github.com/WU-CVGL/MBA-SLAM)
 
+### 14. DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment
+**Authors**: Mangyu Kong, Jaewon Lee, Seongwon Lee, Euntai Kim
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Dynamic Gaussian Splatting SLAM (DGS-SLAM), the first dynamic SLAM framework built on the foundation of Gaussian Splatting. While recent advancements in dense SLAM have leveraged Gaussian Splatting to enhance scene representation, most approaches assume a static environment, making them vulnerable to photometric and geometric inconsistencies caused by dynamic objects. To address these challenges, we integrate Gaussian Splatting SLAM with a robust filtering process to handle dynamic objects throughout the entire pipeline, including Gaussian insertion and keyframe selection. Within this framework, to further improve the accuracy of dynamic object removal, we introduce a robust mask generation method that enforces photometric consistency across keyframes, reducing noise from inaccurate segmentation and artifacts such as shadows. Additionally, we propose the loop-aware window selection mechanism, which utilizes unique keyframe IDs of 3D Gaussians to detect loops between the current and past frames, facilitating joint optimization of the current camera poses and the Gaussian map. DGS-SLAM achieves state-of-the-art performance in both camera tracking and novel view synthesis on various dynamic SLAM benchmarks, proving its effectiveness in handling real-world dynamic scenes.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2411.10722) | [💻 Code (not yet)](https://github.com/kmk97/DGS-SLAM) | [🎥 Short Presentation](https://youtu.be/Mq3qZTTcN3E?feature=shared)
+
 ## 2023:
 ### 1. [CVPR '24] GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 **Authors**: Chi Yan, Delin Qu, Dong Wang, Dan Xu, Zhigang Wang, Bin Zhao, Xuelong Li
