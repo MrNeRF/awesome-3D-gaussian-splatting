@@ -1920,7 +1920,16 @@ Recently many techniques have emerged to create high quality 3D assets and scene
 In this paper, we introduce a novel voting-based method that extends 2D segmentation models to 3D Gaussian splats. Our approach leverages masked gradients, where gradients are filtered by input 2D masks, and these gradients are used as votes to achieve accurate segmentation. As a byproduct, we found that inference-time gradients can also be used to prune Gaussians, resulting in up to 21% compression. Additionally, we explore few-shot affordance transfer, allowing annotations from 2D images to be effectively transferred onto 3D Gaussian splats. The robust yet straightforward mathematical formulation underlying this approach makes it a highly effective tool for numerous downstream applications, such as augmented reality (AR), object editing, and robotics.
 </details>
 
-[📄 Preprint](https://arxiv.org/abs/2409.11681) | [🌐 Project Page](https://jojijoseph.github.io/3dgs-segmentation/) | [💻 Code (Segmentation)](https://github.com/JojiJoseph/3dgs-gradient-segmentation)
+[📄 Preprint](https://arxiv.org/abs/2409.11681) | [🌐 Project Page](https://jojijoseph.github.io/3dgs-segmentation/) | [💻 Code ](https://github.com/JojiJoseph/3dgs-gradient-segmentation)
+
+### 15. Gradient-Weighted Feature Back-Projection: A Fast Alternative to Feature Distillation in 3D Gaussian Splatting
+**Authors**: Joji Joseph, Bharadwaj Amrutur, Shalabh Bhatnagar
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce a training-free method for feature field rendering in Gaussian splatting. Our approach back-projects 2D features into pre-trained 3D Gaussians, using a weighted sum based on each Gaussian's influence in the final rendering. While most training-based feature field rendering methods excel at 2D segmentation but perform poorly at 3D segmentation without post-processing, our method achieves high-quality results in both 2D and 3D segmentation. Experimental results demonstrate that our approach is fast, scalable, and offers performance comparable to training-based methods.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2411.15193) | [🌐 Project Page](https://jojijoseph.github.io/3dgs-backprojection/) | [💻 Code (Segmentation)](https://github.com/JojiJoseph/3dgs-gradient-backprojection)
   
 ## 2023:
 ### 1. [CVPR '24] GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
