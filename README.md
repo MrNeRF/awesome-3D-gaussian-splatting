@@ -2954,6 +2954,14 @@ This paper presents GSCore, a hardware acceleration unit that efficiently execut
 
   [📄 Paper](https://jaewoong.org/pubs/asplos24-gscore.pdf) | [🎥 Short Presentation](https://youtu.be/TByYGw837IU?si=7zBe0yqpsJUoVbIV)
 
+### 35. T-3DGS: Removing Transient Objects for 3D Scene Reconstruction   
+**Authors**: Vadim Pryadilshchikov, Alexander Markin, Artem Komarichev, Ruslan Rakhimov, Peter Wonka, Evgeny Burnaev 
+<details span>
+<summary><b>Abstract</b></summary>
+We propose a novel framework to remove transient objects from input videos for 3D scene reconstruction using Gaussian Splatting. Our framework consists of the following steps. In the first step, we propose an unsupervised training strategy for a classification network to distinguish between transient objects and static scene parts based on their different training behavior inside the 3D Gaussian Splatting reconstruction. In the second step, we improve the boundary quality and stability of the detected transients by combining our results from the first step with an off-the-shelf segmentation method. We also propose a simple and effective strategy to track objects in the input video forward and backward in time. Our results show an improvement over the current state of the art in existing sparsely captured datasets and significant improvements in a newly proposed densely captured (video) dataset.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2412.00155) | [🌐 Project Page](https://transient-3dgs.github.io/) | [💻 Code](https://github.com/Vadim200116/T-3DGS)
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
