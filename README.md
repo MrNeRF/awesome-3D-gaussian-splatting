@@ -2072,6 +2072,17 @@ Gaussian Splatting is a widely adopted approach for 3D scene representation that
 <br>
 
 ## Mesh Extraction and Physics: 
+## 2025:
+### 1. SplatSDF: Boosting Neural Implicit SDF via Gaussian Splatting Fusion
+**Authors**: Runfa Blark Li, Keito Suzuki, Bang Du, Ki Myung Brian Lee, Nikolay Atanasov, Truong Nguyen
+
+<details span>
+<summary><b>Abstract</b></summary>
+A signed distance function (SDF) is a useful representation for continuous-space geometry and many related operations, including rendering, collision checking, and mesh generation. Hence, reconstructing SDF from image observations accurately and efficiently is a fundamental problem. Recently, neural implicit SDF (SDF-NeRF) techniques, trained using volumetric rendering, have gained a lot of attention. Compared to earlier truncated SDF (TSDF) fusion algorithms that rely on depth maps and voxelize continuous space, SDF-NeRF enables continuous-space SDF reconstruction with better geometric and photometric accuracy. However, the accuracy and convergence speed of scene-level SDF reconstruction require further improvements for many applications. With the advent of 3D Gaussian Splatting (3DGS) as an explicit representation with excellent rendering quality and speed, several works have focused on improving SDF-NeRF by introducing consistency losses on depth and surface normals between 3DGS and SDF-NeRF. However, loss-level connections alone lead to incremental improvements. We propose a novel neural implicit SDF called “SplatSDF” to fuse 3DGS and SDF-NeRF at an architecture level with significant boosts to geometric and photometric accuracy and convergence speed. Our SplatSDF relies on 3DGS as input only during training, and keeps the same complexity and efficiency as the original SDF-NeRF during inference. Our method outperforms state-of-the-art SDF-NeRF models on geometric and photometric evaluation by the time of submission.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2411.15468.pdf) | [🌐 Project Page](https://blarklee.github.io/splatsdf/) | [💻 Code](https://github.com/BlarkLee/SplatSDF_official)
+
 ## 2024:
 ### 1. Gaussian Splashing: Dynamic Fluid Synthesis with Gaussian Splatting 
 **Authors**: Yutao Feng, Xiang Feng, Yintong Shang, Ying Jiang, Chang Yu, Zeshun Zong, Tianjia Shao, Hongzhi Wu, Kun Zhou, Chenfanfu Jiang, Yin Yang 
