@@ -2059,6 +2059,16 @@ Understanding the 3D semantics of a scene is a fundamental problem for various s
 
   [📄 Paper](https://arxiv.org/abs/2408.07416) | [🌐 Project Page](https://hyunji12.github.io/Open3DRF/) | [💻 Code (not yet)](https://github.com/hyunji12/Open3DRF)
 
+### 8. Occam's LGS: A Simple Approach for Language Gaussian Splatting
+**Authors**: Jiahuan (Joanna) Cheng, Jan-Nico Zaech, Luc Van Gool, Danda Pani Paudel
+<details span>
+<summary><b>Abstract</b></summary>
+Gaussian Splatting is a widely adopted approach for 3D scene representation that offers efficient, high-quality 3D reconstruction and rendering. A major reason for the success of 3DGS is its simplicity of representing a scene with a set of Gaussians, which makes it easy to interpret and adapt. To enhance scene understanding beyond the visual representation, approaches have been developed that extend 3D Gaussian Splatting with semantic vision-language features, especially allowing for open-set tasks. In this setting, the language features of 3D Gaussian Splatting are often aggregated from multiple 2D views. Existing works address this aggregation problem using cumbersome techniques that lead to high computational cost and training time.
+ In this work, we show that the sophisticated techniques for language-grounded 3D Gaussian Splatting are simply unnecessary. Instead, we apply Occam's razor to the task at hand and perform weighted multi-view feature aggregation using the weights derived from the standard rendering process, followed by a simple heuristic-based noisy Gaussian filtration. Doing so offers us state-of-the-art results with a speed-up of two orders of magnitude. We showcase our results in two commonly used benchmark datasets: LERF and 3D-OVS. Our simple approach allows us to perform reasoning directly in the language features, without any compression whatsoever. Such modeling in turn offers easy scene manipulation, unlike the existing methods -- which we illustrate using an application of object insertion in the scene. Furthermore, we provide a thorough discussion regarding the significance of our contributions within the context of the current literature.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2412.01807) | [🌐 Project Page](https://insait-institute.github.io/OccamLGS/) | [💻 Code (not yet)](https://github.com/insait-institute/OccamLGS)
+
 <br>
 
 ## Mesh Extraction and Physics: 
