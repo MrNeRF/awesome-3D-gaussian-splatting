@@ -980,7 +980,7 @@ representation. This method uses the Radial Basis Function (RBF) neural network.
 primitive attributes. We present a solution to each of these issues. First, we propose an efficient, resolutionaware primitive pruning approach, reducing the primitive count by half. Second, we introduce an adaptive adjustment method to choose the number of coefficients used to represent directional radiance for each Gaussian primitive, and finally a codebook-based quantization method, together with a half-float representation for further memory reduction. Taken together, these three components result in a ×27 reduction in overall size on disk on the standard datasets we tested, along with a x1.7 speedup in rendering speed. We demonstrate our method on standard datasets and show how our solution results in significantly reduced download times when using the method on a mobile device (see Fig. 1).
 </details>
 
-  [📄 Paper](https://repo-sam.inria.fr/fungraph/reduced_3dgs/reduced_3DGS_i3d.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/reduced_3dgs/) | [💻 Code (not yet)](https://repo-sam.inria.fr/fungraph/reduced_3dgs/#)
+  [📄 Paper](https://repo-sam.inria.fr/fungraph/reduced_3dgs/reduced_3DGS_i3d.pdf) | [🌐 Project Page](https://repo-sam.inria.fr/fungraph/reduced_3dgs/) | [💻 Code](https://repo-sam.inria.fr/fungraph/reduced_3dgs/#)
   
 ### 2. [CVPR '24] Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis 
 **Authors**: Simon Niedermayr, Josef Stumpfegger, Rüdiger Westermann 
