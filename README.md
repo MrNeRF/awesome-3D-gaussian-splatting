@@ -3145,6 +3145,15 @@ Image-based 3D reconstruction is a challenging task that involves inferring the 
 
   [📄 Paper](https://arxiv.org/pdf/2405.03417)
 
+### 8. Advancing Extended Reality with 3D Gaussian Splatting: Innovations and Prospects  
+**Authors**: Shi Qiu, Binzhu Xie, Qixuan Liu, Pheng-Ann Heng 
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has attracted significant attention for its potential to revolutionize 3D representation, rendering, and interaction. Despite the rapid growth of 3DGS research, its direct application to Extended Reality (XR) remains underexplored. Although many studies recognize the potential of 3DGS for XR, few have explicitly focused on or demonstrated its effectiveness within XR environments. In this paper, we aim to synthesize innovations in 3DGS that show specific potential for advancing XR research and development. We conduct a comprehensive review of publicly available 3DGS papers, with a focus on those referencing XR-related concepts. Additionally, we perform an in-depth analysis of innovations explicitly relevant to XR and propose a taxonomy to highlight their significance. Building on these insights, we propose several prospective XR research areas where 3DGS can make promising contributions, yet remain rarely touched. By investigating the intersection of 3DGS and XR, this paper provides a roadmap to push the boundaries of XR using cutting-edge 3DGS techniques. 
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2412.06257)
+
 <br>
 
 ## SLAM:
