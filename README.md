@@ -404,8 +404,8 @@ rendering on several established datasets.
 
 <br>
 
-## 3D Object Detection
-## 2024
+## 3D Object Detection:
+## 2024:
 ### 1. 3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused Sampling for 3D Object Detection
 **Authors**: Yang Cao, Yuanliang Jv, Dan Xu
 <details span>
