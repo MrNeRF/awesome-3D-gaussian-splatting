@@ -1,0 +1,10 @@
+arxiv==2.1.3
+certifi==2024.8.30
+charset-normalizer==3.4.0
+feedparser==6.0.11
+idna==3.10
+pytz==2024.2
+PyYAML==6.0.2
+requests==2.32.3
+sgmllib3k==1.0.0
+urllib3==2.2.3
