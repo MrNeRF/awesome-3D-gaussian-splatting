@@ -625,7 +625,7 @@ We believe our method can establish new benchmarks for future research and advan
 
   [📄 Paper](https://arxiv.org/abs/2410.07971) |  [🌐 Project Page](https://xg-chu.site/project_gagavatar/) | [💻 Code](https://github.com/xg-chu/GAGAvatar)
 
-### 16. [SIGGRAPH Asia'24] DualGS: Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos
+### 16. [SIGGRAPH Asia '24] DualGS: Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos
 **Authors**: Yuheng Jiang, Zhehao Shen, Yu Hong, Chengcheng Guo, Yize Wu, Yingliang Zhang, Jingyi Yu, Lan Xu  
 
 <details span>
@@ -1766,7 +1766,7 @@ Accurate 3D tracking in highly deformable scenes with occlusions and shadows can
 
   [📄 Paper](https://arxiv.org/pdf/2312.00583) | [🌐 Project Page](https://md-splatting.github.io/) | [💻 Code (not yet)](https://github.com/momentum-robotics-lab/md-splatting) 
 
-### 15. [ECCV'24] SWinGS: Sliding Windows for Dynamic 3D Gaussian Splatting 
+### 15. [ECCV '24] SWinGS: Sliding Windows for Dynamic 3D Gaussian Splatting 
 **Authors**: Richard Shaw, Michal Nazarczuk, Jifei Song, Arthur Moreau, Sibi Catley-Chandar, Helisa Dhamo, Eduardo Perez-Pellitero 
 
 <details span>
@@ -1913,7 +1913,7 @@ We introduce Gaga, a framework that reconstructs and segments open-world 3D scen
   [📄 Paper](https://arxiv.org/pdf/2404.07977.pdf) | [🌐 Project Page](https://www.gaga.gallery/) | [💻 Code](https://github.com/weijielyu/Gaga)
 
 
-### 13. [CVPR W'24] ICE-G: Image Conditional Editing of 3D Gaussian Splats
+### 13. [CVPRW '24] ICE-G: Image Conditional Editing of 3D Gaussian Splats
 **Authors**: Vishnu Jaganathan, Hannah Huang, Muhammad Zubair Irshad, Varun Jampani, Amit Raj, Zsolt Kira
 <details span>
 <summary><b>Abstract</b></summary>
@@ -1961,7 +1961,7 @@ We propose Point'n Move, a method that achieves interactive scene object manipul
 
   [📄 Paper](https://arxiv.org/pdf/2311.16737.pdf)
 
-### 4. [ECCV'24] Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
+### 4. [ECCV '24] Gaussian Grouping: Segment and Edit Anything in 3D Scenes 
 **Authors**: Mingqiao Ye, Martin Danelljan, Fisher Yu, Lei Ke 
 <details span>
 <summary><b>Abstract</b></summary>
