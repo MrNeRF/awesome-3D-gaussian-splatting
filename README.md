@@ -635,7 +635,7 @@ Volumetric video represents a transformative advancement in visual media, enabli
 
  [📄 Paper](https://arxiv.org/pdf/2409.08353) | [🌐 Project Page](https://nowheretrix.github.io/DualGS/) | [🎥 Short Presentation](https://www.youtube.com/watch?v=vwDE8xr78Bg) | [💻 Dataset](https://github.com/xyi1023/DualGS_Dataset)
 
-### 17. [SIGGRAPH Asia'24] V^3: Viewing Volumetric Videos on Mobiles via Streamable 2D Dynamic Gaussians
+### 17. [SIGGRAPH Asia '24] V^3: Viewing Volumetric Videos on Mobiles via Streamable 2D Dynamic Gaussians
 **Authors**: Penghao Wang, Zhirui Zhang, Liao Wang, Kaixin Yao, Siyuan Xie, Jingyi Yu, Minye Wu, Lan Xu 
 
 <details span>
