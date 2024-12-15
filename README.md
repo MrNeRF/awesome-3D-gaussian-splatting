@@ -3425,6 +3425,16 @@ We aim to tackle sparse-view reconstruction of a 360 3D scene using priors from 
 
   [📄 Paper](https://arxiv.org/pdf/2405.16517) | [💻 Code (not yet)]()
 
+### 10. [ECCV '24] SplatFields: Neural Gaussian Splats for Sparse 3D and 4D Reconstruction
+**Authors**: Marko Mihajlovic, Sergey Prokudin, Siyu Tang, Robert Maier, Federica Bogo, Tony Tung, Edmond Boyer
+<details span>
+<summary><b>Abstract</b></summary>
+Digitizing 3D static scenes and 4D dynamic events from multi-view images has long been a challenge in computer vision and graphics. Recently, 3D Gaussian Splatting (3DGS) has emerged as a practical and scalable reconstruction method, gaining popularity due to its impressive reconstruction quality, real-time rendering capabilities, and compatibility with widely used visualization tools. However, the method requires a substantial number of input views to achieve high-quality scene reconstruction, introducing a significant practical bottleneck. This challenge is especially severe in capturing dynamic scenes, where deploying an extensive camera array can be prohibitively costly. In this work, we identify the lack of spatial autocorrelation of splat features as one of the factors contributing to the suboptimal performance of the 3DGS technique in sparse reconstruction settings. To address the issue, we propose an optimization strategy that effectively regularizes splat features by modeling them as the outputs of a corresponding implicit neural field. This results in a consistent enhancement of reconstruction quality across various scenarios. Our approach effectively handles static and dynamic cases, as demonstrated by extensive testing across different setups and scene complexities.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2409.11211.pdf) | [🌐 Project Page](https://markomih.github.io/SplatFields/) | [💻 Code](https://github.com/markomih/SplatFields)
+
+
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
