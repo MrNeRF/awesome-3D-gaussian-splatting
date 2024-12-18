@@ -3425,6 +3425,15 @@ We aim to tackle sparse-view reconstruction of a 360 3D scene using priors from 
 
   [📄 Paper](https://arxiv.org/pdf/2405.16517) | [💻 Code (not yet)]()
 
+### [AAAI '25] 10. TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers
+**Authors**: Chuanrui Zhang, Yingshuang Zou, Zhuoling Li, Minmin Yi, Haoqian Wang
+<details span>
+<summary><b>Abstract</b></summary>
+Compared with previous 3D reconstruction methods like Nerf, recent Generalizable 3D Gaussian Splatting (G-3DGS) methods demonstrate impressive efficiency even in the sparse-view setting. However, the promising reconstruction performance of existing G-3DGS methods relies heavily on accurate multi-view feature matching, which is quite challenging. Especially for the scenes that have many non-overlapping areas between various views and contain numerous similar regions, the matching performance of existing methods is poor and the reconstruction precision is limited. To address this problem, we develop a strategy that utilizes a predicted depth confidence map to guide accurate local feature matching. In addition, we propose to utilize the knowledge of existing monocular depth estimation models as prior to boost the depth estimation precision in non-overlapping areas between views. Combining the proposed strategies, we present a novel G-3DGS method named TranSplat, which obtains the best performance on both the RealEstate10K and ACID benchmarks while maintaining competitive speed and presenting strong cross-dataset generalization ability.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2408.13770) | [🌐 Project Page](https://xingyoujun.github.io/transplat/) | [💻 Code](https://github.com/xingyoujun/transplat)
+
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
 **Authors**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi 
