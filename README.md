@@ -645,6 +645,49 @@ Experiencing high-fidelity volumetric video as seamlessly as 2D videos is a long
 
  [📄 Paper](https://arxiv.org/abs/2409.13648) | [🌐 Project Page](https://authoritywang.github.io/v3/) | [🎥 Short Presentation](https://youtu.be/Z5La9AporRU?si=iJ-m_mvUSxQN4Bwm) 
 
+ ### 18. [3DV '25] HeadAP: Few-shot 3D Head Avatar via Generalizable GAussian Priors
+**Authors**: Xiaozheng Zheng, Chao Wen, Zhaohu Li, Weiyi Zhang, Zhuo Su, Xu Chang, Yang Zhao, Zheng Lv, Xiaoyuan Zhang, Yongjie Zhang, Guidong Wang, Lan Xu,
+
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we present a novel 3D head avatar creation approach capable of generalizing from few-shot in-the-wild data with high-fidelity and animatable robustness. Given the underconstrained nature of this problem, incorporating prior knowledge is essential. Therefore, we propose a framework comprising prior learning and avatar creation phases. The prior learning phase leverages 3D head priors derived from a large-scale multi-view dynamic dataset, and the avatar creation phase applies these priors for few-shot personalization. Our approach effectively captures these priors by utilizing a Gaussian Splatting-based auto-decoder network with part-based dynamic modeling. Our method employs identity-shared encoding with personalized latent codes for individual identities to learn the attributes of Gaussian primitives. During the avatar creation phase, we achieve fast head avatar personalization by leveraging inversion and fine-tuning strategies. Extensive experiments demonstrate that our model effectively exploits head priors and successfully generalizes them to few-shot personalization, achieving photo-realistic rendering quality, multi-view consistency, and stable animation.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2408.06019) | [🌐 Project Page](https://headgap.github.io/)
+
+
+### 19. GASP: Gaussian Avatars with Synthetic Priors
+**Authors**: Jack Saunders, Charlie Hewitt, Yanan Jian, Marek Kowalski, Tadas Baltrušaitis, Yiye Chen, Darren Cosker, Virginia Estellers, Nicholas Gyde, Vinay Namboodiri, Benjamin Lundell
+
+<details span>
+<summary><b>Abstract</b></summary>
+Gaussian Splatting has changed the game for real-time photo-realistic rendering. One of the most popular applications of Gaussian Splatting is to create animatable avatars, known as Gaussian Avatars. Recent works have pushed the boundaries of quality and rendering efficiency but suffer from two main limitations. Either they require expensive multi-camera rigs to produce avatars with free-view rendering, or they can be trained with a single camera but only rendered at high quality from this fixed viewpoint. An ideal model would be trained using a short monocular video or image from available hardware, such as a webcam, and rendered from any view.
+
+To this end, we propose GASP: Gaussian Avatars with Synthetic Priors. To overcome the limitations of existing datasets, we exploit the pixel-perfect nature of synthetic data to train a Gaussian Avatar prior. By fitting this prior model to a single photo or video and fine-tuning it, we get a high-quality Gaussian Avatar, which supports 360-degree rendering. Our prior is only required for fitting, not inference, enabling real-time application. Through our method, we obtain high-quality, animatable Avatars from limited data which can be animated and rendered at 70fps on commercial hardware.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2412.07739) | [🌐 Project Page](https://microsoft.github.io/GASP/) | [🎥 Short Presentation](https://www.youtube.com/watch?v=3oWB7-UJUYE)
+
+### 20. GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view Diffusion
+**Authors**: Jiapeng Tang, Davide Davoli, Tobias Kirschstein, Liam Schoneveld, Matthias Nießner
+
+<details span>
+<summary><b>Abstract</b></summary>
+We propose a novel approach for reconstructing animatable 3D Gaussian avatars from monocular videos captured by commodity devices like smartphones. Photorealistic 3D head avatar reconstruction from such recordings is challenging due to limited observations, which leaves unobserved regions under-constrained and can lead to artifacts in novel views. To address this problem, we introduce a multi-view head diffusion model, leveraging its priors to fill in missing regions and ensure view consistency in Gaussian splatting renderings. To enable precise viewpoint control, we use normal maps rendered from FLAME-based head reconstruction, which provides pixel-aligned inductive biases. We also condition the diffusion model on VAE features extracted from the input image to preserve details of facial identity and appearance. For Gaussian avatar reconstruction, we distill multi-view diffusion priors by using iteratively denoised images as pseudo-ground truths, effectively mitigating over-saturation issues. To further improve photorealism, we apply latent upsampling to refine the denoised latent before decoding it into an image. We evaluate our method on the NeRSemble dataset, showing that GAF outperforms the previous state-of-the-art methods in novel view synthesis and novel expression animation. Furthermore, we demonstrate higher-fidelity avatar reconstructions from monocular videos captured on commodity devices.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2412.10209) | [🌐 Project Page](https://tangjiapeng.github.io/projects/GAF/) | [🎥 Short Presentation](https://www.youtube.com/embed/QuIYTljvhygE)
+
+### 21. CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View Diffusion Models
+**Authors**: Felix Taubner, Ruihang Zhang, Mathieu Tuli, David B. Lindell
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing photorealistic and dynamic portrait avatars from images is essential to many applications including advertising, visual effects, and virtual reality. Depending on the application, avatar reconstruction involves different capture setups and constraints − for example, visual effects studios use camera arrays to capture hundreds of reference images, while content creators may seek to animate a single portrait image downloaded from the internet. As such, there is a large and heterogeneous ecosystem of methods for avatar reconstruction. Techniques based on multi-view stereo or neural rendering achieve the highest quality results, but require hundreds of reference images. Recent generative models produce convincing avatars from a single reference image, but visual fidelity yet lags behind multi-view techniques. Here, we present CAP4D: an approach that uses a morphable multi-view diffusion model to reconstruct photoreal 4D (dynamic 3D) portrait avatars from any number of reference images (i.e., one to 100) and animate and render them in real time. Our approach demonstrates state-of-the-art performance for single-, few-, and multi-image 4D portrait avatar reconstruction, and takes steps to bridge the gap in visual fidelity between single-image and multi-view reconstruction techniques.
+</details>
+
+ [📄 Paper](https://arxiv.org/abs/2412.12093) | [🌐 Project Page](https://felixtaubner.github.io/cap4d/)
+
 ## 2023:
 ### 1. Drivable 3D Gaussian Avatars 
 **Authors**:  Wojciech Zielonka, Timur Bagautdinov, Shunsuke Saito, Michael Zollhöfer, Justus Thies, Javier Romero
