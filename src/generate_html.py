@@ -4,129 +4,241 @@ def generate_html(entries: list[dict[str, any]]) -> None:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>awesome-paper-list</title>
+    <title>awesome-3D-gaussian-splatting</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .filter-container {{
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
+        :root {{
+            --primary-color: #1772d0;
+            --hover-color: #f09228;
+            --bg-color: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --text-color: #1f2937;
         }}
-        .search-box {{
-            width: 100%;
-            padding: 8px 12px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
+
+        body {{
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }}
-        .filter-selects {{
+
+        .container {{
+            max-width: 1200px;
+            margin: 0 auto;
+        }}
+
+        h1 {{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }}
+
+        .filters {{
             display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
         }}
+
+        .search-box {{
+            flex: 1;
+            min-width: 300px;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }}
+
+        .search-box:focus {{
+            border-color: var(--primary-color);
+        }}
+
         .filter-select {{
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            min-width: 150px;
+            outline: none;
+            cursor: pointer;
         }}
+
+        .papers-grid {{
+            display: grid;
+            gap: 2rem;
+        }}
+
+        .paper-card {{
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }}
+
+        .paper-card:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }}
+
+        .paper-title {{
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0 0 0.5rem 0;
+        }}
+
+        .paper-year {{
+            color: var(--primary-color);
+            font-weight: 600;
+        }}
+
+        .paper-authors {{
+            color: #4b5563;
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }}
+
+        .paper-links {{
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }}
+
+        .paper-link {{
+            color: var(--primary-color);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.95rem;
+        }}
+
+        .paper-link:hover {{
+            color: var(--hover-color);
+        }}
+
+        .paper-abstract {{
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #4b5563;
+            display: none;
+        }}
+
+        .paper-abstract.show {{
+            display: block;
+        }}
+
+        .abstract-toggle {{
+            background: none;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }}
+
+        .abstract-toggle:hover {{
+            background: #f3f4f6;
+        }}
+
         .paper-row {{
             display: none;
         }}
+
         .paper-row.visible {{
-            display: table-row;
+            display: block;
         }}
+
         @media (max-width: 768px) {{
-            .filter-selects {{
+            .filters {{
                 flex-direction: column;
+            }}
+            .search-box {{
+                min-width: auto;
             }}
         }}
     </style>
 </head>
 <body>
-<table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr style="padding:0px">
-    <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-                <h1>awesome-paper-list</h1>
-            </td>
-        </tr>
-        </tbody></table>
+    <div class="container">
+        <h1>awesome-paper-list</h1>
         
-        <div class="filter-container">
+        <div class="filters">
             <input type="text" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
-            <div class="filter-selects">
-                <select id="yearFilter" class="filter-select">
-                    <option value="all">All Years</option>
-                    {generate_year_options(entries)}
-                </select>
-                <select id="categoryFilter" class="filter-select">
-                    <option value="all">All Categories</option>
-                    {generate_category_options(entries)}
-                </select>
-            </div>
+            <select id="yearFilter" class="filter-select">
+                <option value="all">All Years</option>
+                {generate_year_options(entries)}
+            </select>
+            <select id="categoryFilter" class="filter-select">
+                <option value="all">All Categories</option>
+                {generate_category_options(entries)}
+            </select>
         </div>
 
-        <table id="papers-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        {generate_paper_rows(entries)}
-        </tbody></table>
+        <div class="papers-grid">
+            {generate_paper_cards(entries)}
+        </div>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-            <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                    This page was inspired by this <a href="https://github.com/jonbarron/jonbarron_website">template</a> created by <a href="https://jonbarron.info/">Jon Barron</a>.
-                </p>
-            </td>
-        </tr>
-        </tbody></table>
-    </td>
-</tr>
-</table>
+    </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {{
-    const searchInput = document.getElementById('searchInput');
-    const yearFilter = document.getElementById('yearFilter');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const paperRows = document.querySelectorAll('.paper-row');
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {{
+        const searchInput = document.getElementById('searchInput');
+        const yearFilter = document.getElementById('yearFilter');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const paperCards = document.querySelectorAll('.paper-row');
 
-    function filterPapers() {{
-        const searchTerm = searchInput.value.toLowerCase();
-        const selectedYear = yearFilter.value;
-        const selectedCategory = categoryFilter.value;
-
-        paperRows.forEach(row => {{
-            const title = row.getAttribute('data-title').toLowerCase();
-            const authors = row.getAttribute('data-authors').toLowerCase();
-            const year = row.getAttribute('data-year');
-            const category = row.getAttribute('data-category');
-
-            const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
-            const matchesYear = selectedYear === 'all' || year === selectedYear;
-            const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
-
-            if (matchesSearch && matchesYear && matchesCategory) {{
-                row.classList.add('visible');
-            }} else {{
-                row.classList.remove('visible');
-            }}
+        // Handle abstract toggles
+        document.querySelectorAll('.abstract-toggle').forEach(button => {{
+            button.addEventListener('click', () => {{
+                const abstract = button.nextElementSibling;
+                abstract.classList.toggle('show');
+                button.textContent = abstract.classList.contains('show') ? 'Hide Abstract' : 'Show Abstract';
+            }});
         }});
-    }}
 
-    searchInput.addEventListener('input', filterPapers);
-    yearFilter.addEventListener('change', filterPapers);
-    categoryFilter.addEventListener('change', filterPapers);
+        function filterPapers() {{
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedYear = yearFilter.value;
+            const selectedCategory = categoryFilter.value;
 
-    // Show all papers initially
-    paperRows.forEach(row => row.classList.add('visible'));
-}});
-</script>
+            paperCards.forEach(card => {{
+                const title = card.getAttribute('data-title').toLowerCase();
+                const authors = card.getAttribute('data-authors').toLowerCase();
+                const year = card.getAttribute('data-year');
+                const category = card.getAttribute('data-category');
+
+                const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
+                const matchesYear = selectedYear === 'all' || year === selectedYear;
+                const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
+
+                if (matchesSearch && matchesYear && matchesCategory) {{
+                    card.classList.add('visible');
+                }} else {{
+                    card.classList.remove('visible');
+                }}
+            }});
+        }}
+
+        searchInput.addEventListener('input', filterPapers);
+        yearFilter.addEventListener('change', filterPapers);
+        categoryFilter.addEventListener('change', filterPapers);
+
+        // Show all papers initially
+        paperCards.forEach(card => card.classList.add('visible'));
+    }});
+    </script>
 </body>
 </html>
 """
@@ -141,66 +253,49 @@ def generate_category_options(entries):
     categories = sorted(set(entry['category'] for entry in entries if entry['category']))
     return '\n'.join(f'<option value="{category}">{category}</option>' for category in categories)
 
-def generate_paper_rows(entries):
-    rows = ''
+def generate_paper_cards(entries):
+    cards = ''
     for entry in entries:
-        image_row = ''
-        if entry['thumbnail_image'] and entry['thumbnail_video']:
-            image_source = 'assets/' + entry['id'] + '.jpg'
-            video_source = 'assets/' + entry['id'] + '.mp4'
-            image_row = f"""
-                <tr class="paper-row" data-title="{entry['title']}" data-authors="{entry['authors']}" data-year="{entry['year']}" data-category="{entry.get('category', '')}">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <div class="two" id='{entry['id']}_video'>
-                                <video width=100% height=100% muted autoplay loop>
-                                    <source src="{video_source}" type="video/mp4"> Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <img id='{entry['id']}_image' src='{image_source}' width="160">
-                        </div>
-                        <script type="text/javascript">
-                            function {entry['id']}_start() {{
-                                document.getElementById('{entry['id']}_image').style.opacity = "0";
-                                document.getElementById('{entry['id']}_video').style.opacity = "1";
-                            }}
-                
-                            function {entry['id']}_stop() {{
-                                document.getElementById('{entry['id']}_video').style.opacity = "0";
-                                document.getElementById('{entry['id']}_image').style.opacity = "1";
-                            }}
-                            {entry['id']}_stop()
-                        </script>
-                    </td>"""
-        else:
-            image_source = 'assets/' + entry['id'] + '.jpg' if entry['thumbnail_image'] else 'assets/no_img_ph.jpg'
-            image_row = f"""
-                <tr class="paper-row" data-title="{entry['title']}" data-authors="{entry['authors']}" data-year="{entry['year']}" data-category="{entry.get('category', '')}">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src='{image_source}' width="160">
-                        </div>
-                    </td>"""
-
         links = []
         if entry['project_page']:
-            links.append(f"<a href='{entry['project_page']}'>project page</a>")
+            links.append(f"""<a href="{entry['project_page']}" class="paper-link" target="_blank">
+                            <i class="fas fa-globe"></i> Project Page
+                          </a>""")
         if entry['paper']:
-            links.append(f"<a href='{entry['paper']}'>paper</a>")
+            links.append(f"""<a href="{entry['paper']}" class="paper-link" target="_blank">
+                            <i class="fas fa-file-alt"></i> Paper
+                          </a>""")
         if entry['code']:
-            links.append(f"<a href='{entry['code']}'>code</a>")
+            links.append(f"""<a href="{entry['code']}" class="paper-link" target="_blank">
+                            <i class="fas fa-code"></i> Code
+                          </a>""")
         if entry['video']:
-            links.append(f"<a href='{entry['video']}'>video</a>")
-        links = ' / '.join(links)
+            links.append(f"""<a href="{entry['video']}" class="paper-link" target="_blank">
+                            <i class="fas fa-video"></i> Video
+                          </a>""")
+        
+        abstract_html = f"""
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="paper-abstract">
+                {entry.get('abstract', 'No abstract available.')}
+            </div>
+        """ if entry.get('abstract') else ""
 
-        row = image_row + f"""
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                        <span class="papertitle">{entry['title']}</span> &mdash; {entry['year']}
-                        <p style="margin:0">{entry['authors']}</p>
-                        {links}
-                    </td>
-                </tr>
+        card = f"""
+            <div class="paper-row" data-title="{entry['title']}" data-authors="{entry['authors']}" 
+                 data-year="{entry['year']}" data-category="{entry.get('category', '')}">
+                <div class="paper-card">
+                    <h2 class="paper-title">
+                        {entry['title']} <span class="paper-year">({entry['year']})</span>
+                    </h2>
+                    <p class="paper-authors">{entry['authors']}</p>
+                    <div class="paper-links">
+                        {' '.join(links)}
+                    </div>
+                    {abstract_html}
+                </div>
+            </div>
         """
-        rows += row
+        cards += card
 
-    return rows
+    return cards
