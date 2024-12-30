@@ -2326,6 +2326,26 @@ A signed distance function (SDF) is a useful representation for continuous-space
 
   [📄 Paper](https://arxiv.org/pdf/2411.15468.pdf) | [🌐 Project Page](https://blarklee.github.io/splatsdf/) | [💻 Code](https://github.com/BlarkLee/SplatSDF_official)
 
+### 16. [3DV '25] AGS-Mesh: Adaptive Gaussian Splatting and Meshing with Geometric Priors for Indoor Room Reconstruction Using Smartphones
+**Authors**: Xuqian Ren, Matias Turkulainen, Jiepeng Wang, Otto Seiskari, Iaroslav Melekhov, Juho Kannala, Esa Rahtu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Geometric priors are often used to enhance 3D reconstruction. With many smartphones featuring low-resolution depth sensors and the prevalence of off-the-shelf monocular geometry estimators, incorporating geometric priors as regularization signals has become common in 3D vision tasks. However, the accuracy of depth estimates from mobile devices is typically poor for highly detailed geometry, and monocular estimators often suffer from poor multi-view consistency and precision. In this work, we propose an approach for joint surface depth and normal refinement of Gaussian Splatting methods for accurate 3D reconstruction of indoor scenes. We develop supervision strategies that adaptively filters low-quality depth and normal estimates by comparing the consistency of the priors during optimization. We mitigate regularization in regions where prior estimates have high uncertainty or ambiguities. Our filtering strategy and optimization design demonstrate significant improvements in both mesh estimation and novel-view synthesis for both 3D and 2D Gaussian Splatting-based methods on challenging indoor room datasets. Furthermore, we explore the use of alternative meshing strategies for finer geometry extraction. We develop a scale-aware meshing strategy inspired by TSDF and octree-based isosurface extraction, which recovers finer details from Gaussian models compared to other commonly used open-source meshing tools. Our code is released in https://xuqianren.github.io/ags_mesh_website/.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2411.19271) | [🌐 Project Page](https://xuqianren.github.io/ags_mesh_website/) | [💻 Code](https://github.com/XuqianRen/AGS_Mesh) 
+
+### 17. GausSurf: Geometry-Guided 3D Gaussian Splatting for Surface Reconstruction
+**Authors**: Jiepeng Wang, Yuan Liu, Peng Wang, Cheng Lin, Junhui Hou, Xin Li, Taku Komura, Wenping Wang
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting has achieved impressive performance in novel view synthesis with real-time rendering capabilities. However, reconstructing high-quality surfaces with fine details using 3D Gaussians remains a challenging task. In this work, we introduce GausSurf, a novel approach to high-quality surface reconstruction by employing geometry guidance from multi-view consistency in texture-rich areas and normal priors in texture-less areas of a scene. We observe that a scene can be mainly divided into two primary regions: 1) texture-rich and 2) texture-less areas. To enforce multi-view consistency at texture-rich areas, we enhance the reconstruction quality by incorporating a traditional patch-match based Multi-View Stereo (MVS) approach to guide the geometry optimization in an iterative scheme. This scheme allows for mutual reinforcement between the optimization of Gaussians and patch-match refinement, which significantly improves the reconstruction results and accelerates the training process. Meanwhile, for the texture-less areas, we leverage normal priors from a pre-trained normal estimation model to guide optimization. Extensive experiments on the DTU and Tanks and Temples datasets demonstrate that our method surpasses state-of-the-art methods in terms of reconstruction quality and computation time.
+</details>
+
+ [📄 Paper](https://arxiv.org/pdf/2411.19454) | [🌐 Project Page](https://jiepengwang.github.io/GausSurf/) | [💻 Code](https://github.com/jiepengwang/GausSurf) 
+
 
 ## 2023:
 ### 1. [CVPR '24] PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics
@@ -3065,6 +3085,15 @@ We propose a novel framework to remove transient objects from input videos for 3
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2412.00155) | [🌐 Project Page](https://transient-3dgs.github.io/) | [💻 Code](https://github.com/Vadim200116/T-3DGS)
+
+### 36. SuperGaussians: Enhancing Gaussian Splatting Using Primitives with Spatially Varying Colors  
+**Authors**: Rui Xu, Wenyue Chen, Jiepeng Wang, Yuan Liu, Peng Wang, Lin Gao, Shiqing Xin, Taku Komura, Xin Li, Wenping Wang
+<details span>
+<summary><b>Abstract</b></summary>
+Gaussian Splattings demonstrate impressive results in multi-view reconstruction based on Gaussian explicit representations. However, the current Gaussian primitives only have a single view-dependent color and an opacity to represent the appearance and geometry of the scene, resulting in a non-compact representation. In this paper, we introduce a new method called SuperGaussians that utilizes spatially varying colors and opacity in a single Gaussian primitive to improve its representation ability. We have implemented bilinear interpolation, movable kernels, and even tiny neural networks as spatially varying functions. Quantitative and qualitative experimental results demonstrate that all three functions outperform the baseline, with the best movable kernels achieving superior novel view synthesis performance on multiple datasets, highlighting the strong potential of spatially varying functions.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2411.18966) | [🌐 Project Page](https://ruixu.me/html/SuperGaussians/index.html) | [💻 Code](https://github.com/Xrvitd/SuperGaussians)
 
 ## 2023:
 ### 1. Mip-Splatting Alias-free 3D Gaussian Splatting 
