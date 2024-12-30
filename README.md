@@ -1615,6 +1615,16 @@ We present 3DGS-CD, the first 3D Gaussian Splatting (3DGS)-based method for dete
 
 [📄 Paper](https://arxiv.org/pdf/2411.03706) | [💻 Code (not yet)](https://github.com/520xyxyzq/3DGS-CD)
 
+### 15. DynSUP: Dynamic Gaussian Splatting from An Unposed Image Pair
+**Authors**: Weihang Li, Weirong Chen, Shenhan Qian, Jiajie Chen, Daniel Cremers, Haoang Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in 3D Gaussian Splatting have shown promising results. Existing methods typically assume static scenes and/or multiple images with prior poses. Dynamics, sparse views, and unknown poses significantly increase the problem complexity due to insufficient geometric constraints. To overcome this challenge, we propose a method that can use only two images without prior poses to fit Gaussians in dynamic environments. To achieve this, we introduce two technical contributions. First, we propose an object-level two-view bundle adjustment. This strategy decomposes dynamic scenes into piece-wise rigid components, and jointly estimates the camera pose and motions of dynamic objects. Second, we design an SE(3) field-driven Gaussian training method. It enables fine-grained motion modeling through learnable per-Gaussian transformations. Our method leads to high-fidelity novel view synthesis of dynamic scenes while accurately preserving temporal consistency and object motion. Experiments on both synthetic and real-world datasets demonstrate that our method significantly outperforms state-of-the-art approaches designed for the cases of static environments, multiple images, and/or known poses. Our project page is available at https://colin-de.github.io/DynSUP/.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2412.00851) | [🌐 Project Page](https://colin-de.github.io/DynSUP/) | [💻 Code (not yet)]()
+
 ## 2023:
 ### 1. [3DV '24] Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis
 **Authors**: Jonathon Luiten, Georgios Kopanas, Bastian Leibe, Deva Ramanan
@@ -1933,6 +1943,24 @@ In this paper, we introduce a novel voting-based method that extends 2D segmenta
 </details>
 
 [📄 Paper](https://arxiv.org/abs/2409.11681) | [🌐 Project Page](https://jojijoseph.github.io/3dgs-segmentation/) | [💻 Code](https://github.com/JojiJoseph/3dgs-gradient-segmentation)
+
+### 15. Segment Any 4D Gaussians
+**Authors**: Shengxiang Ji, Guanjun Wu, Jiemin Fang, Jiazhong Cen, Taoran Yi, Wenyu Liu, Qi Tian, Xinggang Wang
+<details span>
+<summary><b>Abstract</b></summary>
+Modeling, understanding, and reconstructing the real world are crucial in XR/VR. Recently, 3D Gaussian Splatting (3D-GS) methods have shown remarkable success in modeling and understanding 3D scenes. Similarly, various 4D representations have demonstrated the ability to capture the dynamics of the 4D world. However, there is a dearth of research focusing on segmentation within 4D representations. In this paper, we propose Segment Any 4D Gaussians (SA4D), one of the first frameworks to segment anything in the 4D digital world based on 4D Gaussians. In SA4D, an efficient temporal identity feature field is introduced to handle Gaussian drifting, with the potential to learn precise identity features from noisy and sparse input. Additionally, a 4D segmentation refinement process is proposed to remove artifacts. Our SA4D achieves precise, high-quality segmentation within seconds in 4D Gaussians and shows the ability to remove, recolor, compose, and render high-quality anything masks. More demos are available at: https://jsxzs.github.io/sa4d/.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2407.04504) | [🌐 Project Page](https://jsxzs.github.io/sa4d/) | [💻 Code](https://github.com/jsxzs/SA4D)
+
+### 16. SADG: Segment Any Dynamic Gaussians Without Object Trackers
+**Authors**: Yun-Jin Li, Mariia Gladkova, Yan Xia, Daniel Cremers
+<details span>
+<summary><b>Abstract</b></summary>
+Understanding dynamic 3D scenes is fundamental for various applications, including extended reality (XR) and autonomous driving. Effectively integrating semantic information into 3D reconstruction enables holistic representation that opens opportunities for immersive and interactive applications. We introduce SADG, Segment Any Dynamic Gaussian Without Object Trackers, a novel approach that combines dynamic Gaussian Splatting representation and semantic information without reliance on object IDs. In contrast to existing works, we do not rely on supervision based on object identities to enable consistent segmentation of dynamic 3D objects. To this end, we propose to learn semantically-aware features by leveraging masks generated from the Segment Anything Model (SAM) and utilizing our novel contrastive learning objective based on hard pixel mining. The learned Gaussian features can be effectively clustered without further post-processing. This enables fast computation for further object-level editing, such as object removal, composition, and style transfer by manipulating the Gaussians in the scene. We further extend several dynamic novel-view datasets with segmentation benchmarks to enable testing of learned feature fields from unseen viewpoints. We evaluate SADG on proposed benchmarks and demonstrate the superior performance of our approach in segmenting objects within dynamic scenes along with its effectiveness for further downstream editing tasks.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2411.19290) | [🌐 Project Page](https://yunjinli.github.io/project-sadg/) | [💻 Code](https://github.com/yunjinli/SADG-SegmentAnyDynamicGaussian)
   
 ## 2023:
 ### 1. [CVPR '24] GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting 
@@ -3425,6 +3453,7 @@ We aim to tackle sparse-view reconstruction of a 360 3D scene using priors from 
 
   [📄 Paper](https://arxiv.org/pdf/2405.16517) | [💻 Code (not yet)]()
 
+
 ### [AAAI '25] 10. TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers
 **Authors**: Chuanrui Zhang, Yingshuang Zou, Zhuoling Li, Minmin Yi, Haoqian Wang
 <details span>
@@ -3433,6 +3462,16 @@ Compared with previous 3D reconstruction methods like Nerf, recent Generalizable
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2408.13770) | [🌐 Project Page](https://xingyoujun.github.io/transplat/) | [💻 Code](https://github.com/xingyoujun/transplat)
+
+### 11. [ECCV '24] SplatFields: Neural Gaussian Splats for Sparse 3D and 4D Reconstruction
+**Authors**: Marko Mihajlovic, Sergey Prokudin, Siyu Tang, Robert Maier, Federica Bogo, Tony Tung, Edmond Boyer
+<details span>
+<summary><b>Abstract</b></summary>
+Digitizing 3D static scenes and 4D dynamic events from multi-view images has long been a challenge in computer vision and graphics. Recently, 3D Gaussian Splatting (3DGS) has emerged as a practical and scalable reconstruction method, gaining popularity due to its impressive reconstruction quality, real-time rendering capabilities, and compatibility with widely used visualization tools. However, the method requires a substantial number of input views to achieve high-quality scene reconstruction, introducing a significant practical bottleneck. This challenge is especially severe in capturing dynamic scenes, where deploying an extensive camera array can be prohibitively costly. In this work, we identify the lack of spatial autocorrelation of splat features as one of the factors contributing to the suboptimal performance of the 3DGS technique in sparse reconstruction settings. To address the issue, we propose an optimization strategy that effectively regularizes splat features by modeling them as the outputs of a corresponding implicit neural field. This results in a consistent enhancement of reconstruction quality across various scenarios. Our approach effectively handles static and dynamic cases, as demonstrated by extensive testing across different setups and scene complexities.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2409.11211.pdf) | [🌐 Project Page](https://markomih.github.io/SplatFields/) | [💻 Code](https://github.com/markomih/SplatFields)
+
 
 ## 2023:
 ### 1. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting   
