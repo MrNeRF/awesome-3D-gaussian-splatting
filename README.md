@@ -2133,7 +2133,7 @@ Precisely perceiving the geometric and semantic properties of real-world 3D obje
 
   [📄 Paper](https://arxiv.org/pdf/2401.01970.pdf) 
 
-### 7. Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
+### 7. [AAAI '25] Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
 **Authors**: Hyunjee Lee*, Youngsik Yun*, Jeongmin Bae, Seoha Kim, Youngjung Uh
 <details span>
 <summary><b>Abstract</b></summary>
