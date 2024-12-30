@@ -10,3 +10,4 @@ requests==2.32.3
 sgmllib3k==1.0.0
 tkinterweb==3.24.7
 urllib3==2.2.3
+pandas
