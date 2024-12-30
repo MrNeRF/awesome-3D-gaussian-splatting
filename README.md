@@ -1,4 +1,9 @@
-# Awesome 3D Gaussian Splatting Resources 
+# Awesome 3D Gaussian Splatting
+
+🚧 **Under Construction** 🚧  
+The list is currently undergoing an overhaul to fix markdown issues with GitHub (it cannot render full length).  
+A prototype is available here: [https://mrnerf.github.io/awesome-3D-gaussian-splatting/](https://mrnerf.github.io/awesome-3D-gaussian-splatting/)
+
 
 A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
