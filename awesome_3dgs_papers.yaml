@@ -1,7 +1,7 @@
 - id: kerblgaussian
   title: Gaussian Splatting for Real-Time Radiance Field Rendering
   authors: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
-  year: null
+  year: 2023
   abstract: Radiance Field methods have recently revolutionized novel-view synthesis
     of scenes captured with multiple photos or videos. However, achieving high visual
     quality still requires neural networks that are costly to train and render, while

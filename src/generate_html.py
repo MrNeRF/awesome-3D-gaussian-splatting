@@ -395,8 +395,12 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
             </div>
         """ if entry.get('abstract') else ""
 
-        year_display = next((tag.split()[-1] for tag in entry['tags'] 
-                           if tag.startswith('Year ')), 'N/A')
+        # Use the year field directly, fallback to tag if not present
+        year_display = entry.get('year')
+        if not year_display:
+            # Fallback to year tag if direct year field is not available
+            year_display = next((tag.split()[-1] for tag in entry['tags'] 
+                               if tag.startswith('Year ')), 'N/A')
 
         # Generate card HTML with thumbnail
         card = f"""
