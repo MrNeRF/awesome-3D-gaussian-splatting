@@ -2,16 +2,10 @@ import json
 from typing import List, Dict, Any
 
 def generate_html(entries: List[Dict[str, Any]]) -> None:
-    """Generate HTML page with paper list"""
-    # Add tags to entries
-    entries = add_tags_to_entries(entries)
-    
-    # Get all unique tags
+    """Generate HTML page with paper list using tags and card layout"""
+    # Get all unique tags and years
     all_tags = sorted(set(tag for entry in entries for tag in entry['tags']))
-    
-    # Generate the dynamic content first
     year_options = generate_year_options(entries)
-    category_options = generate_category_options(entries)
     tag_filters = generate_tag_filters(all_tags)
     paper_cards = generate_paper_cards(entries)
     
@@ -20,7 +14,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 <head>
     <meta charset="UTF-8">
     <title>awesome-paper-list</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {{
@@ -33,7 +26,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
         }}
 
         body {{
-            font-family: 'Lato', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 20px;
             background-color: var(--bg-color);
@@ -44,12 +37,14 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
         .container {{
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }}
 
         h1 {{
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 2rem;
+            color: var(--text-color);
         }}
 
         /* Search and Filter Styles */
@@ -57,10 +52,12 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             display: flex;
             gap: 1rem;
             margin-bottom: 2rem;
+            flex-wrap: wrap;
         }}
 
         .search-box {{
             flex: 1;
+            min-width: 200px;
             padding: 0.75rem 1rem;
             border: 1px solid var(--border-color);
             border-radius: 0.5rem;
@@ -72,6 +69,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             border: 1px solid var(--border-color);
             border-radius: 0.5rem;
             min-width: 150px;
+            background-color: white;
         }}
 
         /* Tag Styles */
@@ -79,24 +77,22 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin: 1rem 0 2rem 0;
-            padding: 1rem;
-            background: #f9fafb;
-            border-radius: 0.5rem;
+            margin-bottom: 2rem;
         }}
 
         .tag-filter {{
-            background: white;
-            border: 1px solid var(--border-color);
+            background: #f3f4f6;
+            border: none;
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             cursor: pointer;
             font-size: 0.9rem;
             transition: all 0.2s;
+            color: var(--text-color);
         }}
 
         .tag-filter:hover {{
-            background: #f3f4f6;
+            background: #e5e7eb;
         }}
 
         .tag-filter.active {{
@@ -128,6 +124,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             font-size: 1.25rem;
             font-weight: 600;
             margin: 0 0 1rem 0;
+            color: var(--text-color);
         }}
 
         .paper-authors {{
@@ -154,7 +151,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
-            margin: 1rem 0;
+            margin-top: 1rem;
         }}
 
         .paper-link {{
@@ -167,6 +164,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             background: #f3f4f6;
             border-radius: 0.5rem;
             transition: all 0.2s;
+            font-size: 0.9rem;
         }}
 
         .paper-link:hover {{
@@ -181,6 +179,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             border-radius: 0.5rem;
             cursor: pointer;
             margin-top: 1rem;
+            color: var(--text-color);
         }}
 
         .paper-abstract {{
@@ -209,11 +208,8 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             .filters {{
                 flex-direction: column;
             }}
-            .container {{
-                padding: 0 1rem;
-            }}
-            .paper-card {{
-                padding: 1rem;
+            .search-box {{
+                width: 100%;
             }}
         }}
     </style>
@@ -227,10 +223,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             <select id="yearFilter" class="filter-select">
                 <option value="all">All Years</option>
                 {year_options}
-            </select>
-            <select id="categoryFilter" class="filter-select">
-                <option value="all">All Categories</option>
-                {category_options}
             </select>
         </div>
 
@@ -247,7 +239,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     document.addEventListener('DOMContentLoaded', function() {{
         const searchInput = document.getElementById('searchInput');
         const yearFilter = document.getElementById('yearFilter');
-        const categoryFilter = document.getElementById('categoryFilter');
         const paperCards = document.querySelectorAll('.paper-row');
         const tagFilters = document.querySelectorAll('.tag-filter');
         
@@ -280,22 +271,18 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
         function filterPapers() {{
             const searchTerm = searchInput.value.toLowerCase();
             const selectedYear = yearFilter.value;
-            const selectedCategory = categoryFilter.value;
 
             paperCards.forEach(card => {{
                 const title = card.getAttribute('data-title').toLowerCase();
                 const authors = card.getAttribute('data-authors').toLowerCase();
-                const year = card.getAttribute('data-year');
-                const category = card.getAttribute('data-category');
                 const tags = JSON.parse(card.getAttribute('data-tags'));
 
                 const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
-                const matchesYear = selectedYear === 'all' || year === selectedYear;
-                const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
+                const matchesYear = selectedYear === 'all' || tags.includes(selectedYear);
                 const matchesTags = selectedTags.size === 0 || 
                     [...selectedTags].every(tag => tags.includes(tag));
 
-                if (matchesSearch && matchesYear && matchesCategory && matchesTags) {{
+                if (matchesSearch && matchesYear && matchesTags) {{
                     card.classList.add('visible');
                 }} else {{
                     card.classList.remove('visible');
@@ -305,7 +292,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
         searchInput.addEventListener('input', filterPapers);
         yearFilter.addEventListener('change', filterPapers);
-        categoryFilter.addEventListener('change', filterPapers);
 
         // Show all papers initially
         paperCards.forEach(card => card.classList.add('visible'));
@@ -317,44 +303,19 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     with open('index.html', 'w') as file:
         file.write(html)
 
-def add_tags_to_entries(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Add tags to entries based on their properties"""
-    for entry in entries:
-        entry['tags'] = set()
-        
-        # Add tags based on available features
-        if entry.get('code'):
-            entry['tags'].add('Has Code')
-        if entry.get('video'):
-            entry['tags'].add('Has Video')
-        if entry.get('project_page'):
-            entry['tags'].add('Has Project')
-            
-        # Add category as a tag if it exists
-        if entry.get('category'):
-            entry['tags'].add(entry['category'])
-            
-        # Add year as a tag
-        if entry.get('year'):
-            entry['tags'].add(f"Year {entry['year']}")
-            
-        # Convert set to list for JSON serialization
-        entry['tags'] = list(sorted(entry['tags']))
-    return entries
-
 def generate_year_options(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML options for year filter"""
-    years = sorted(set(entry['year'] for entry in entries if entry.get('year')), reverse=True)
-    return '\n'.join(f'<option value="{year}">{year}</option>' for year in years)
-
-def generate_category_options(entries: List[Dict[str, Any]]) -> str:
-    """Generate HTML options for category filter"""
-    categories = sorted(set(entry.get('category') for entry in entries if entry.get('category')))
-    return '\n'.join(f'<option value="{category}">{category}</option>' for category in categories)
+    years = sorted({tag.split()[-1] for entry in entries 
+                   for tag in entry['tags'] if tag.startswith('Year ')}, 
+                  reverse=True)
+    return '\n'.join(f'<option value="Year {year}">Year {year}</option>' for year in years)
 
 def generate_tag_filters(tags: List[str]) -> str:
     """Generate HTML for tag filters"""
-    return '\n'.join(f'<div class="tag-filter" data-tag="{tag}">{tag}</div>' for tag in sorted(tags))
+    # Exclude year tags from the tag filters as they're handled by the dropdown
+    filtered_tags = [tag for tag in sorted(tags) if not tag.startswith('Year ')]
+    return '\n'.join(f'<div class="tag-filter" data-tag="{tag}">{tag}</div>' 
+                     for tag in filtered_tags)
 
 def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML for paper cards"""
@@ -379,8 +340,9 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
                             <i class="fas fa-video"></i> Video
                           </a>""")
         
-        # Generate tags HTML
-        tags_html = '\n'.join(f'<span class="paper-tag">{tag}</span>' for tag in entry['tags'])
+        # Generate tags HTML (excluding year tags from display)
+        display_tags = [tag for tag in entry['tags'] if not tag.startswith('Year ')]
+        tags_html = '\n'.join(f'<span class="paper-tag">{tag}</span>' for tag in display_tags)
         
         # Generate abstract HTML if available
         abstract_html = f"""
@@ -390,17 +352,18 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
             </div>
         """ if entry.get('abstract') else ""
 
+        year_display = next((tag.split()[-1] for tag in entry['tags'] 
+                           if tag.startswith('Year ')), 'N/A')
+
         # Generate card HTML
         card = f"""
             <div class="paper-row" 
                  data-title="{entry['title']}" 
-                 data-authors="{entry['authors']}" 
-                 data-year="{entry.get('year', '')}" 
-                 data-category="{entry.get('category', '')}"
+                 data-authors="{entry['authors']}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
                     <h2 class="paper-title">
-                        {entry['title']} <span class="paper-year">({entry.get('year', 'N/A')})</span>
+                        {entry['title']} <span class="paper-year">({year_display})</span>
                     </h2>
                     <p class="paper-authors">{entry['authors']}</p>
                     <div class="paper-tags">
