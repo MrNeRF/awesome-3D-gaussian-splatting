@@ -176,7 +176,7 @@
   year: '2024'
   abstract: Creating controllable 3D human portraits from casual smartphone videos is highly desirable due to their immense value in AR/VR applications. The recent development of 3D Gaussian Splatting (3DGS) has shown improvements in rendering quality and training efficiency. However, it still remains a challenge to accurately model and disentangle head movements and facial expressions from a single-view capture to achieve high-quality renderings. In this paper, we introduce Rig3DGS to address this challenge. We represent the entire scene, including the dynamic subject, using a set of 3D Gaussians in a canonical space. Using a set of control signals, such as head pose and expressions, we transform them to the 3D space with learned deformations to generate the desired rendering. Our key innovation is a carefully designed deformation method which is guided by a learnable prior derived from a 3D morphable model. This approach is highly efficient in training and effective in controlling facial
     expressions, head positions, and view synthesis across various captures. We demonstrate the effectiveness of our learned deformation through extensive quantitative and qualitative experiments.
-  project_page: http://shahrukhathar.github.io/2024/02/05/Rig3DGS.html
+  project_page: https://shahrukhathar.github.io/2024/02/05/Rig3DGS.html
   paper: https://arxiv.org/pdf/2402.03723.pdf
   code: null
   video: null
@@ -1072,7 +1072,7 @@
   title: '3DGS.zip: A survey on 3D Gaussian Splatting Compression Methods'
   authors: Milena T. Bagdasarian, Paul Knoll, Florian Barthel, Anna Hilsmann, Peter Eisert, Wieland Morgenstern
   year: '2024'
-  abstract: We present a work-in-progress survey on 3D Gaussian Splatting compression methods, focusing on their statistical performance across various benchmarks. This survey aims to facilitate comparability by summarizing key statistics of different compression approaches in a tabulated format. The datasets evaluated include TanksAndTemples, MipNeRF360, DeepBlending, and SyntheticNeRF. For each method, we report the Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), Learned Perceptual Image Patch Similarity (LPIPS), and the resultant size in megabytes (MB), as provided by the respective authors. This is an ongoing, open project, and we invite contributions from the research community as GitHub issues or pull requests. Please visit http://w-m.github.io/3dgs-compression-survey/ for more information and a sortable version of the table.
+  abstract: We present a work-in-progress survey on 3D Gaussian Splatting compression methods, focusing on their statistical performance across various benchmarks. This survey aims to facilitate comparability by summarizing key statistics of different compression approaches in a tabulated format. The datasets evaluated include TanksAndTemples, MipNeRF360, DeepBlending, and SyntheticNeRF. For each method, we report the Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), Learned Perceptual Image Patch Similarity (LPIPS), and the resultant size in megabytes (MB), as provided by the respective authors. This is an ongoing, open project, and we invite contributions from the research community as GitHub issues or pull requests. Please visit https://w-m.github.io/3dgs-compression-survey/ for more information and a sortable version of the table.
   project_page: https://w-m.github.io/3dgs-compression-survey
   paper: https://arxiv.org/pdf/2407.09510
   code: null
@@ -1090,7 +1090,7 @@
   year: '2024'
   abstract: The rise of Extended Reality (XR) requires efficient streaming of 3D online worlds, challenging current 3DGS representations to adapt to bandwidth-constrained environments. We propose LapisGS, a layered 3DGS that supports adaptive streaming and progressive rendering. Our method constructs a layered structure for cumulative representation, incorporates dynamic opacity optimization to maintain visual fidelity, and utilizes occupancy maps to efficiently manage Gaussian splats. This proposed model offers a progressive representation supporting a continuous rendering quality adapted for bandwidth-aware streaming. Extensive experiments validate the effectiveness of our approach in balancing visual fidelity with the compactness of the model, with up to 50.71% improvement in SSIM, 286.53% improvement in LPIPS, and 318.41% reduction in model size, and shows its potential for bandwidth-adapted 3D streaming and rendering applications.
   project_page: https://yuang-ian.github.io/lapisgs/
-  paper: http://arxiv.org/pdf/2408.14823
+  paper: https://arxiv.org/pdf/2408.14823
   code: null
   video: null
   thumbnail_image: false
@@ -1099,23 +1099,6 @@
   - Compression
   - Has Paper
   - Has Project
-  - Year 2024
-- id: wu2024implicit
-  title: Implicit Gaussian Splatting with Efficient Multi-Level Tri-Plane Representation
-  authors: Minye Wu, Tinne Tuytelaars
-  year: '2024'
-  abstract: Recent advancements in photo-realistic novel view synthesis have been significantly driven by Gaussian Splatting (3DGS). Nevertheless, the explicit nature of 3DGS data entails considerable storage requirements, highlighting a pressing need for more efficient data representations. To address this, we present Implicit Gaussian Splatting (IGS), an innovative hybrid model that integrates explicit point clouds with implicit feature embeddings through a multi-level tri-plane architecture. This architecture features 2D feature grids at various resolutions across different levels, facilitating continuous spatial domain representation and enhancing spatial correlations among Gaussian primitives. Building upon this foundation, we introduce a level-based progressive training scheme, which incorporates explicit spatial regularization. This method capitalizes on spatial correlations to enhance both the rendering quality and the compactness of the IGS representation. Furthermore, we propose
-    a novel compression pipeline tailored for both point clouds and 2D feature grids, considering the entropy variations across different levels. Extensive experimental evaluations demonstrate that our algorithm can deliver high-quality rendering using only a few MBs, effectively balancing storage efficiency and rendering fidelity, and yielding results that are competitive with the state-of-the-art.
-  project_page: null
-  paper: https://arxiv.org/pdf/2408.10041
-  code: https://github.com/wuminye/ImplicitGS
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Compression
-  - Has Code
-  - Has Paper
   - Year 2024
 - id: fan2023lightgaussian
   title: 'LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS'
@@ -2000,7 +1983,7 @@
   year: '2024'
   abstract: Recent advancements in 4D scene reconstruction using dynamic NeRF and 3DGS have demonstrated the ability to represent dynamic scenes from multi-view videos. However, they fail to reconstruct the dynamic scenes and struggle to fit even the training views in unsynchronized settings. It happens because they employ a single latent embedding for a frame, while the multi-view images at the same frame were actually captured at different moments. To address this limitation, we introduce time offsets for individual unsynchronized videos and jointly optimize the offsets with the field. By design, our method is applicable for various baselines, even regardless of the types of radiance fields. We conduct experiments on the common Plenoptic Video Dataset and a newly built Unsynchronized Dynamic Blender Dataset to verify the performance of our method.
   project_page: null
-  paper: https://openreview.net/forum?id=RQutkn4V9I
+  paper: https://openreview.net/pdf?id=RQutkn4V9I
   code: null
   video: null
   thumbnail_image: false
@@ -2053,7 +2036,7 @@
   abstract: 3D Gaussian Splatting has shown fast and high-quality rendering results in static scenes by leveraging dense 3D prior and explicit representations. Unfortunately, the benefits of the prior and representation do not involve novel view synthesis for dynamic motions. Ironically, this is because the main barrier is the reliance on them, which requires increasing training and rendering times to account for dynamic motions. In this paper, we design a \Edited{Explicit 4D Gaussian Splatting(Ex4DGS)}. Our key idea is to firstly separate static and dynamic Gaussians during training, and to explicitly sample positions and rotations of the dynamic Gaussians at sparse timestamps. The sampled positions and rotations are then interpolated to represent both spatially and temporally continuous motions of objects in dynamic scenes as well as reducing computational cost. Additionally, we introduce a progressive training scheme and a point-backtracking technique that improves Ex4DGS's convergence.
     We initially train Ex4DGS using short timestamps and progressively extend timestamps, which makes it work well with a few point clouds. The point-backtracking is used to quantify the cumulative error of each Gaussian over time, enabling the detection and removal of erroneous Gaussians in dynamic scenes. Comprehensive experiments on various scenes demonstrate the state-of-the-art rendering quality from our method, achieving fast rendering of 62 fps on a single 2080Ti GPU.
   project_page: https://leejunoh.com/Ex4DGS/
-  paper: http://arxiv.org/pdf/2410.15629
+  paper: https://arxiv.org/pdf/2410.15629
   code: https://github.com/juno181/Ex4DGS
   video: null
   thumbnail_image: false
@@ -2454,7 +2437,7 @@
   abstract: 3D Gaussian Splatting has emerged as an alternative 3D representation of Neural Radiance Fields (NeRFs), benefiting from its high-quality rendering results and real-time rendering speed. Considering the 3D Gaussian representation remains unparsed, it is necessary first to execute object segmentation within this domain. Subsequently, scene editing and collision detection can be performed, proving vital to a multitude of applications, such as virtual reality (VR), augmented reality (AR), game/movie production, etc. In this paper, we propose a novel approach to achieve object segmentation in 3D Gaussian via an interactive procedure without any training process and learned parameters. We refer to the proposed method as SA-GS, for Segment Anything in 3D Gaussians. Given a set of clicked points in a single input view, SA-GS can generalize SAM to achieve 3D consistent segmentation via the proposed multi-view mask generation and view-wise label assignment methods. We also propose a cross-view
     label-voting approach to assign labels from different views. In addition, in order to address the boundary roughness issue of segmented objects resulting from the non-negligible spatial sizes of 3D Gaussian located at the boundary, SA-GS incorporates the simple but effective Gaussian Decomposition scheme. Extensive experiments demonstrate that SA-GS achieves high-quality 3D segmentation results, which can also be easily applied for scene editing and collision detection tasks.
   project_page: null
-  paper: https://browse.arxiv.org/pdf/2401.17857.pdf
+  paper: https://arxiv.org/pdf/2401.17857.pdf
   code: null
   video: null
   thumbnail_image: false
@@ -2939,7 +2922,7 @@
   year: '2024'
   abstract: We demonstrate the feasibility of integrating physics-based animations of solids and fluids with 3D Gaussian Splatting (3DGS) to create novel effects in virtual scenes reconstructed using 3DGS. Leveraging the coherence of the Gaussian splatting and position-based dynamics (PBD) in the underlying representation, we manage rendering, view synthesis, and the dynamics of solids and fluids in a cohesive manner. Similar to Gaussian shader, we enhance each Gaussian kernel with an added normal, aligning the kernel's orientation with the surface normal to refine the PBD simulation. This approach effectively eliminates spiky noises that arise from rotational deformation in solids. It also allows us to integrate physically based rendering to augment the dynamic surface reflections on fluids. Consequently, our framework is capable of realistically reproducing surface highlights on dynamic fluids and facilitating interactions between scene objects and fluids from new views.
   project_page: https://amysteriouscat.github.io/GaussianSplashing/
-  paper: https://browse.arxiv.org/pdf/2401.15318.pdf
+  paper: https://arxiv.org/pdf/2401.15318.pdf
   code: null
   video: https://www.youtube.com/watch?v=KgaR1ni-Egg&t
   thumbnail_image: false
@@ -3056,22 +3039,6 @@
   - Has Video
   - Mesh Extraction and Physics
   - Year 2024
-- id: song2024unofficial
-  title: Unofficial Implementation and Specification
-  authors: Yunzhou Song, Zixuan Lin, Yexin Zhang
-  year: '2024'
-  abstract: 3D Gaussian Splatting (3DGS) has recently revolutionized radiance field reconstruction, achieving high quality novel view synthesis and fast rendering speed without baking. However, 3DGS fails to accurately represent surfaces due to the multi-view inconsistent nature of 3D Gaussians. We present 2D Gaussian Splatting (2DGS), a novel approach to model and reconstruct geometrically accurate radiance fields from multi-view images. Our key idea is to collapse the 3D volume into a set of 2D oriented planar Gaussian disks. Unlike 3D Gaussians, 2D Gaussians provide view-consistent geometry while modeling surfaces intrinsically. To accurately recover thin surfaces and achieve stable optimization, we introduce a perspective-accurate 2D splatting process utilizing ray-splat intersection and rasterization. Additionally, we incorporate depth distortion and normal consistency terms to further enhance the quality of the reconstructions. We demonstrate that our differentiable renderer allows
-    for noise-free and detailed geometry reconstruction while maintaining competitive appearance quality, fast training speed, and real-time rendering.
-  project_page: null
-  paper: null
-  code: https://github.com/TimSong412/2D-surfel-gaussian
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Code
-  - Mesh Extraction and Physics
-  - Year 2024
 - id: qiu2024feature
   title: 'Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing'
   authors: Ri-Zhao Qiu, Ge Yang, Weijia Zeng, Xiaolong Wang
@@ -3184,7 +3151,7 @@
   year: '2024'
   abstract: Recently, 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconstruction, manifesting efficient and high-fidelity novel view synthesis. However, accurately We introduce Cloth-Splatting, a method for estimating 3D states of cloth from RGB images through a prediction-update framework. Cloth-Splatting leverages an action-conditioned dynamics model for predicting future states and uses 3D Gaussian Splatting to update the predicted states. Our key insight is that coupling a 3D mesh-based representation with Gaussian Splatting allows us to define a differentiable map between the cloth's state space and the image space. This enables the use of gradient-based optimization techniques to refine inaccurate state estimates using only RGB supervision. Our experiments demonstrate that Cloth-Splatting not only improves state estimation accuracy over current baselines but also reduces convergence time by ~85%.
   project_page: https://kth-rpl.github.io/cloth-splatting/
-  paper: https://openreview.net/forum?id=WmWbswjTsi
+  paper: https://openreview.net/pdf?id=WmWbswjTsi
   code: https://github.com/KTH-RPL/cloth-splatting
   video: null
   thumbnail_image: false
@@ -4011,7 +3978,7 @@
   abstract: 3D Gaussian Splatting has garnered extensive attention and application in real-time neural rendering. Concurrently, concerns have been raised about the limitations of this technology in aspects such as point cloud storage, performance , and robustness in sparse viewpoints , leading to various improvements. However, there has been a notable lack of attention to the projection errors introduced by the local affine approximation inherent in the splatting itself, and the consequential impact of these errors on the quality of photo-realistic rendering. This paper addresses the projection error function of 3D Gaussian Splatting, commencing with the residual error from the first-order Taylor expansion of the projection function ϕ. The analysis establishes a correlation between the error and the Gaussian mean position. Subsequently, leveraging function optimization theory, this paper analyzes the function's minima to provide an optimal projection strategy for Gaussian Splatting referred
     to Optimal Gaussian Splatting. Experimental validation further confirms that this projection methodology reduces artifacts, resulting in a more convincingly realistic rendering.
   project_page: null
-  paper: https://browse.arxiv.org/pdf/2402.00752.pdf
+  paper: https://arxiv.org/pdf/2402.00752.pdf
   code: null
   video: null
   thumbnail_image: false
@@ -4027,7 +3994,7 @@
   abstract: 3D Gaussian Splatting (3D-GS) has recently attracted great attention with real-time and photo-realistic renderings. This technique typically takes perspective images as input and optimizes a set of 3D elliptical Gaussians by splatting them onto the image planes, resulting in 2D Gaussians. However, applying 3D-GS to panoramic inputs presents challenges in effectively modeling the projection onto the spherical surface of 360∘ images using 2D Gaussians. In practical applications, input panoramas are often sparse, leading to unreliable initialization of 3D Gaussians and subsequent degradation of 3D-GS quality. In addition, due to the under-constrained geometry of texture-less planes (e.g., walls and floors), 3D-GS struggles to model these flat regions with elliptical Gaussians, resulting in significant floaters in novel views. To address these issues, we propose 360-GS, a novel 360∘ Gaussian splatting for a limited set of panoramic inputs. Instead of splatting 3D Gaussians directly
     onto the spherical surface, 360-GS projects them onto the tangent plane of the unit sphere and then maps them to the spherical projections. This adaptation enables the representation of the projection using Gaussians. We guide the optimization of 360-GS by exploiting layout priors within panoramas, which are simple to obtain and contain strong structural information about the indoor scene. Our experimental results demonstrate that 360-GS allows panoramic rendering and outperforms state-of-the-art methods with fewer artifacts in novel view synthesis, thus providing immersive roaming in indoor scenarios.
   project_page: null
-  paper: https://browse.arxiv.org/pdf/2402.00763.pdf
+  paper: https://arxiv.org/pdf/2402.00763.pdf
   code: null
   video: null
   thumbnail_image: false
@@ -4043,7 +4010,7 @@
   abstract: Gaussian Splatting has emerged as a prominent model for constructing 3D representations from images across diverse domains. However, the efficiency of the 3D Gaussian Splatting rendering pipeline relies on several simplifications. Notably, reducing Gaussian to 2D splats with a single view-space depth introduces popping and blending artifacts during view rotation. Addressing this issue requires accurate per-pixel depth computation, yet a full per-pixel sort proves excessively costly compared to a global sort operation. In this paper, we present a novel hierarchical rasterization approach that systematically resorts and culls splats with minimal processing overhead. Our software rasterizer effectively eliminates popping artifacts and view inconsistencies, as demonstrated through both quantitative and qualitative measurements. Simultaneously, our method mitigates the potential for cheating view-dependent effects with popping, ensuring a more authentic representation. Despite the
     elimination of cheating, our approach achieves comparable quantitative results for test images, while increasing the consistency for novel view synthesis in motion. Due to its design, our hierarchical approach is only 4% slower on average than the original Gaussian Splatting. Notably, enforcing consistency enables a reduction in the number of Gaussians by approximately half with nearly identical quality and view-consistency. Consequently, rendering performance is nearly doubled, making our approach 1.6x faster than the original Gaussian Splatting, with a 50% reduction in memory requirements.
   project_page: https://r4dl.github.io/StopThePop/
-  paper: arxiv.org/pdf/2402.00525.pdf
+  paper: https://arxiv.org/pdf/2402.00525.pdf
   code: https://github.com/r4dl/StopThePop
   video: https://youtu.be/EmcXtHYhigk
   thumbnail_image: false
@@ -4072,22 +4039,6 @@
   - Has Paper
   - Has Project
   - Has Video
-  - Rendering
-  - Year 2024
-- id: jo2024identifying
-  title: Identifying Unnecessary 3D Gaussians using Clustering for Fast Rendering of 3D Gaussian Splatting
-  authors: Joongho Jo, Hyeongwon Kim, Jongsun Park
-  year: '2024'
-  abstract: 3D Gaussian splatting (3D-GS) is a new rendering approach that outperforms the neural radiance field (NeRF) in terms of both speed and image quality. 3D-GS represents 3D scenes by utilizing millions of 3D Gaussians and projects these Gaussians onto the 2D image plane for rendering. However, during the rendering process, a substantial number of unnecessary 3D Gaussians exist for the current view direction, resulting in significant computation costs associated with their identification. In this paper, we propose a computational reduction technique that quickly identifies unnecessary 3D Gaussians in real-time for rendering the current view without compromising image quality. This is accomplished through the offline clustering of 3D Gaussians that are close in distance, followed by the projection of these clusters onto a 2D image plane during runtime. Additionally, we analyze the bottleneck associated with the proposed technique when executed on GPUs and propose an efficient hardware
-    architecture that seamlessly supports the proposed scheme. For the Mip-NeRF360 dataset, the proposed technique excludes 63% of 3D Gaussians on average before the 2D image projection, which reduces the overall rendering computation by almost 38.3% without sacrificing peak-signal-to-noise-ratio (PSNR). The proposed accelerator also achieves a speedup of 10.7x compared to a GPU.
-  project_page: null
-  paper: https://arxiv.org/pdf/2402.13827.pdf
-  code: null
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Paper
   - Rendering
   - Year 2024
 - id: cheng2024gaussianpro
@@ -5155,7 +5106,7 @@
   abstract: We present the first application of 3D Gaussian Splatting to incremental 3D reconstruction using a single moving monocular or RGB-D camera. Our Simultaneous Localisation and Mapping (SLAM) method, which runs live at 3fps, utilises Gaussians as the only 3D representation, unifying the required representation for accurate, efficient tracking, mapping, and high-quality rendering. Several innovations are required to continuously reconstruct 3D scenes with high fidelity from a live camera. First, to move beyond the original 3DGS algorithm, which requires accurate poses from an offline Structure from Motion (SfM) system, we formulate camera tracking for 3DGS using direct optimisation against the 3D Gaussians, and show that this enables fast and robust tracking with a wide basin of convergence. Second, by utilising the explicit nature of the Gaussians, we introduce geometric verification and regularisation to handle the ambiguities occurring in incremental 3D dense reconstruction. Finally,
     we introduce a full SLAM system which not only achieves state-of-the-art results in novel view synthesis and trajectory estimation, but also reconstruction of tiny and even transparent objects.
   project_page: https://rmurai.co.uk/projects/GaussianSplattingSLAM/
-  paper: https://www.imperial.ac.uk/media/imperial-college/research-centres-and-groups/dyson-robotics-lab/hide-et-al_GaussianSplattingSLAM_Dec2023.pdf
+  paper: https://arxiv.org/pdf/2312.06741.pdf
   code: https://github.com/muskie82/MonoGS
   video: https://youtu.be/x604ghp9R_Q?si=fPtz4kgBKFfcnQf3
   thumbnail_image: false

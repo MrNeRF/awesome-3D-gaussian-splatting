@@ -9,13 +9,64 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     tag_filters = generate_tag_filters(all_tags)
     paper_cards = generate_paper_cards(entries)
     
+    thumbnail_css = """
+        /* Paper Card with Thumbnail Layout */
+        .paper-card {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .paper-thumbnail {
+            flex: 0 0 200px;  /* Fixed width, don't grow or shrink */
+            height: 283px;   /* Maintain aspect ratio (1.414, like A4) */
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background-color: #f3f4f6;
+            position: relative;
+        }
+
+        .paper-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        .paper-thumbnail img:hover {
+            transform: scale(1.05);
+        }
+
+        .paper-content {
+            flex: 1;
+            min-width: 0; /* Prevent content from overflowing */
+        }
+
+        @media (max-width: 768px) {
+            .paper-card {
+                flex-direction: column;
+            }
+            
+            .paper-thumbnail {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 1rem;
+            }
+            
+            .paper-thumbnail img {
+                object-fit: contain;
+            }
+        }
+    """
+    
     html = f"""<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>awesome-paper-list</title>
+    <title>Awesome 3D Gaussian Splatting Paper List</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Original styles */
         :root {{
             --primary-color: #1772d0;
             --hover-color: #f09228;
@@ -318,9 +369,18 @@ def generate_tag_filters(tags: List[str]) -> str:
                      for tag in filtered_tags)
 
 def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
-    """Generate HTML for paper cards"""
+    """Generate HTML for paper cards with thumbnails"""
     cards = []
     for entry in entries:
+        # Generate thumbnail HTML
+        thumbnail_html = f"""
+            <div class="paper-thumbnail">
+                <img src="{entry.get('thumbnail', '/api/placeholder/300/424')}" 
+                     alt="Paper thumbnail" 
+                     loading="lazy"/>
+            </div>
+        """
+        
         # Generate links
         links = []
         if entry.get('project_page'):
@@ -355,24 +415,27 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
         year_display = next((tag.split()[-1] for tag in entry['tags'] 
                            if tag.startswith('Year ')), 'N/A')
 
-        # Generate card HTML
+        # Generate card HTML with thumbnail
         card = f"""
             <div class="paper-row" 
                  data-title="{entry['title']}" 
                  data-authors="{entry['authors']}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
-                    <h2 class="paper-title">
-                        {entry['title']} <span class="paper-year">({year_display})</span>
-                    </h2>
-                    <p class="paper-authors">{entry['authors']}</p>
-                    <div class="paper-tags">
-                        {tags_html}
+                    {thumbnail_html}
+                    <div class="paper-content">
+                        <h2 class="paper-title">
+                            {entry['title']} <span class="paper-year">({year_display})</span>
+                        </h2>
+                        <p class="paper-authors">{entry['authors']}</p>
+                        <div class="paper-tags">
+                            {tags_html}
+                        </div>
+                        <div class="paper-links">
+                            {' '.join(links)}
+                        </div>
+                        {abstract_html}
                     </div>
-                    <div class="paper-links">
-                        {' '.join(links)}
-                    </div>
-                    {abstract_html}
                 </div>
             </div>
         """
