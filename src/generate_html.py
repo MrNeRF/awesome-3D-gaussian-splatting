@@ -259,7 +259,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 </head>
 <body>
     <div class="container">
-        <h1>awesome-paper-list</h1>
+        <h1>Awesome-3D-Gaussian-Splatting-Paper-List</h1>
         
         <div class="filters">
             <input type="text" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
