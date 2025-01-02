@@ -9,56 +9,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     tag_filters = generate_tag_filters(all_tags)
     paper_cards = generate_paper_cards(entries)
     
-    thumbnail_css = """
-        /* Paper Card with Thumbnail Layout */
-        .paper-card {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .paper-thumbnail {
-            flex: 0 0 200px;  /* Fixed width, don't grow or shrink */
-            height: 283px;   /* Maintain aspect ratio (1.414, like A4) */
-            border-radius: 0.5rem;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            background-color: #f3f4f6;
-            position: relative;
-        }
-
-        .paper-thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.2s;
-        }
-
-        .paper-thumbnail img:hover {
-            transform: scale(1.05);
-        }
-
-        .paper-content {
-            flex: 1;
-            min-width: 0; /* Prevent content from overflowing */
-        }
-
-        @media (max-width: 768px) {
-            .paper-card {
-                flex-direction: column;
-            }
-            
-            .paper-thumbnail {
-                width: 100%;
-                height: 200px;
-                margin-bottom: 1rem;
-            }
-            
-            .paper-thumbnail img {
-                object-fit: contain;
-            }
-        }
-    """
-    
     html = f"""<!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -164,11 +114,40 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             padding: 2rem;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            gap: 1.5rem;
         }}
 
         .paper-card:hover {{
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }}
+
+        /* Thumbnail styles */
+        .paper-thumbnail {{
+            flex: 0 0 200px;
+            height: 283px;   /* Maintain aspect ratio (1.414, like A4) */
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background-color: #f3f4f6;
+            position: relative;
+        }}
+
+        .paper-thumbnail img {{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }}
+
+        .paper-thumbnail img:hover {{
+            transform: scale(1.05);
+        }}
+
+        .paper-content {{
+            flex: 1;
+            min-width: 0; /* Prevent content from overflowing */
         }}
 
         .paper-title {{
@@ -261,6 +240,19 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             }}
             .search-box {{
                 width: 100%;
+            }}
+            .paper-card {{
+                flex-direction: column;
+            }}
+            
+            .paper-thumbnail {{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 1rem;
+            }}
+            
+            .paper-thumbnail img {{
+                object-fit: contain;
             }}
         }}
     </style>
@@ -369,18 +361,9 @@ def generate_tag_filters(tags: List[str]) -> str:
                      for tag in filtered_tags)
 
 def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
-    """Generate HTML for paper cards with thumbnails"""
+    """Generate HTML for paper cards"""
     cards = []
     for entry in entries:
-        # Generate thumbnail HTML
-        thumbnail_html = f"""
-            <div class="paper-thumbnail">
-                <img src="{entry.get('thumbnail', '/api/placeholder/300/424')}" 
-                     alt="Paper thumbnail" 
-                     loading="lazy"/>
-            </div>
-        """
-        
         # Generate links
         links = []
         if entry.get('project_page'):
@@ -422,7 +405,12 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
                  data-authors="{entry['authors']}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
-                    {thumbnail_html}
+                    <div class="paper-thumbnail">
+                        <img src="{entry.get('thumbnail', 'assets/thumbnails/' + entry['id'] + '.jpg')}" 
+                             onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
+                             alt="Paper thumbnail for {entry['title']}" 
+                             loading="lazy"/>
+                    </div>
                     <div class="paper-content">
                         <h2 class="paper-title">
                             {entry['title']} <span class="paper-year">({year_display})</span>
