@@ -116,11 +116,28 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             gap: 1.5rem;
+            position: relative;
         }}
 
         .paper-card:hover {{
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }}
+
+        .paper-number {{
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            background-color: var(--primary-color);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            z-index: 1;
         }}
 
         /* Thumbnail styles */
@@ -311,6 +328,14 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             }});
         }});
 
+        function updatePaperNumbers() {{
+            let number = 1;
+            document.querySelectorAll('.paper-row.visible').forEach(card => {{
+                const numberElement = card.querySelector('.paper-number');
+                numberElement.textContent = number++;
+            }});
+        }}
+
         function filterPapers() {{
             const searchTerm = searchInput.value.toLowerCase();
             const selectedYear = yearFilter.value;
@@ -332,13 +357,16 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
                     card.classList.remove('visible');
                 }}
             }});
+            
+            updatePaperNumbers();
         }}
 
         searchInput.addEventListener('input', filterPapers);
         yearFilter.addEventListener('change', filterPapers);
 
-        // Show all papers initially
+        // Show all papers initially and set initial numbers
         paperCards.forEach(card => card.classList.add('visible'));
+        updatePaperNumbers();
     }});
     </script>
 </body>
@@ -398,7 +426,7 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
 
         year = entry.get('year', 'N/A')
 
-        # Generate card HTML with thumbnail
+        # Generate card HTML with thumbnail and number
         card = f"""
             <div class="paper-row" 
                  data-title="{entry['title']}" 
@@ -406,6 +434,7 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
                  data-year="{year}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="{entry.get('thumbnail', 'assets/thumbnails/' + entry['id'] + '.jpg')}" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"

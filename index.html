@@ -105,11 +105,28 @@
             transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             gap: 1.5rem;
+            position: relative;
         }
 
         .paper-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .paper-number {
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            background-color: var(--primary-color);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            z-index: 1;
         }
 
         /* Thumbnail styles */
@@ -322,6 +339,7 @@
                  data-year="2023"
                  data-tags='["Classic Work", "Code", "Dynamic", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kerblgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -369,6 +387,7 @@
                  data-year="2024"
                  data-tags='["Object Detection"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/cao20243dgsdet.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -405,6 +424,7 @@
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yan2024street.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -447,6 +467,7 @@
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Lidar", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhao2024tclcgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -487,6 +508,7 @@
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2024omnire.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -529,6 +551,7 @@
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hess2024splatad.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -568,6 +591,7 @@
                  data-year="2023"
                  data-tags='["Autonomous Driving", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhou2023drivinggaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -607,6 +631,7 @@
                  data-year="2023"
                  data-tags='["Autonomous Driving", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhou2023hugs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -649,6 +674,7 @@
                  data-year="2024"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024gaussianbody.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -685,6 +711,7 @@
                  data-year="2024"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhao2024psavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -721,6 +748,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/rivero2024rig3dgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -760,6 +788,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhou2024headstudio.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -805,6 +834,7 @@
                  data-year="2024"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/stanishevskii2024implicitdeepfake.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -841,6 +871,7 @@
                  data-year="2024"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/luo2024gaussianhair.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -877,6 +908,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024gva.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -916,6 +948,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shao2024splattingavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -961,6 +994,7 @@
                  data-year="2024"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shao2024splatface.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -997,6 +1031,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shao2024haha.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1036,6 +1071,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/barthel2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1081,6 +1117,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Monocular", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wen2024gomavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1124,6 +1161,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ye2024occgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1166,6 +1204,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lee2024guess.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1211,6 +1250,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chu2024generalizable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1256,6 +1296,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang2024dualgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1298,6 +1339,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024v3.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1343,6 +1385,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/saunders2024gasp.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1385,6 +1428,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/tang2024gaf.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1427,6 +1471,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/taubner2024cap4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1466,6 +1511,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zielonka2023drivable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1508,6 +1554,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jena2023splatarmor.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1550,6 +1597,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2023animatable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1595,6 +1643,7 @@
                  data-year="2023"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lei2023gart.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1637,6 +1686,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/moreau2023human.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1679,6 +1729,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kocabas2023hugs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1721,6 +1772,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/abdal2023gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1763,6 +1815,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2023gaussianhead.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1805,6 +1858,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/qian2023gaussianavatars.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1850,6 +1904,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zheng2023gpsgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1895,6 +1950,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hu2023gauhuman.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1940,6 +1996,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/dhamo2023headgas.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -1979,6 +2036,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang2023hifi4g.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2021,6 +2079,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hu2023gaussianavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2066,6 +2125,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xiang2023flashavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2108,6 +2168,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Relight", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/saito2023relightable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2154,6 +2215,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Monocular", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2023monogaussianavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2200,6 +2262,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/pang2023ash.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2245,6 +2308,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/qian20233dgsavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2290,6 +2354,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Meshing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yuan2023gavatar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2333,6 +2398,7 @@
                  data-year="2023"
                  data-tags='["Avatar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jung2023deformable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2369,6 +2435,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2023human101.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2411,6 +2478,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xu2023gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2456,6 +2524,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/pan2023humansplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2498,6 +2567,7 @@
                  data-year="2023"
                  data-tags='["Classic Work"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/f2023a.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2532,6 +2602,7 @@
                  data-year="2023"
                  data-tags='["Classic Work", "Code", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/keselman2023approximate.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2577,6 +2648,7 @@
                  data-year="2023"
                  data-tags='["Classic Work", "Code"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/u2023unbiased.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2616,6 +2688,7 @@
                  data-year="2023"
                  data-tags='["Classic Work"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/man2023generating.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2652,6 +2725,7 @@
                  data-year="2024"
                  data-tags='["Code", "Compression", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/papantonakis2024reducing.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2697,6 +2771,7 @@
                  data-year="2024"
                  data-tags='["Code", "Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/niedermayr2024compressed.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2739,6 +2814,7 @@
                  data-year="2024"
                  data-tags='["Code", "Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2024hac.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2781,6 +2857,7 @@
                  data-year="2024"
                  data-tags='["Code", "Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024endtoend.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2823,6 +2900,7 @@
                  data-year="2024"
                  data-tags='["Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/t20243dgszip.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2862,6 +2940,7 @@
                  data-year="2024"
                  data-tags='["Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shi2024lapisgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2901,6 +2980,7 @@
                  data-year="2023"
                  data-tags='["Code", "Compression", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fan2023lightgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2946,6 +3026,7 @@
                  data-year="2023"
                  data-tags='["Code", "Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/navaneet2023compact3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -2988,6 +3069,7 @@
                  data-year="2023"
                  data-tags='["Code", "Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chan2023compact.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3030,6 +3112,7 @@
                  data-year="2023"
                  data-tags='["Code", "Compression", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/morgenstern2023compact.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3075,6 +3158,7 @@
                  data-year="2024"
                  data-tags='["Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xu2024agg.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3117,6 +3201,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/pan2024fast.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3162,6 +3247,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2024gaussianobject.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3207,6 +3293,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2024large.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3249,6 +3336,7 @@
                  data-year="2024"
                  data-tags='["Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhou2024gala3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3288,6 +3376,7 @@
                  data-year="2024"
                  data-tags='["Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/melaskyriazi2024im3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3327,6 +3416,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024controllable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3369,6 +3459,7 @@
                  data-year="2024"
                  data-tags='["Diffusion"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/di2024hyper3dgtextto3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3405,6 +3496,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024dreamscene.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3447,6 +3539,7 @@
                  data-year="2024"
                  data-tags='["Diffusion"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/feng2024fdgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3483,6 +3576,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Dynamic", "Monocular"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024bags.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3524,6 +3618,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang2024brightdreamer.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3569,6 +3664,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/he2024gvgen.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3611,6 +3707,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kim2024synctweedies.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3653,6 +3750,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zeng2024stag4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3698,6 +3796,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xu2024comp4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3743,6 +3842,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lin2024dreampolisher.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3788,6 +3888,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu2024sc4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3833,6 +3934,7 @@
                  data-year="2024"
                  data-tags='["Acceleration", "Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2024hash3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3876,6 +3978,7 @@
                  data-year="2024"
                  data-tags='["Diffusion", "Point Cloud"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang2024zeroshot.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3913,6 +4016,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhou2024dreamscene360.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3958,6 +4062,7 @@
                  data-year="2024"
                  data-tags='["Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shriram2024realmdreamer.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -3997,6 +4102,7 @@
                  data-year="2024"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024gaussiancube.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4042,6 +4148,7 @@
                  data-year="2024"
                  data-tags='["Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu20244real.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4081,6 +4188,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2023textto3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4126,6 +4234,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/tang2023dreamgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4171,6 +4280,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yi12023gaussiandreamer.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4213,6 +4323,7 @@
                  data-year="2023"
                  data-tags='["Diffusion"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2023gaussiandiffusion.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4249,6 +4360,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liang2023luciddreamer.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4288,6 +4400,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project", "World Generation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chung2023luciddreamer.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4331,6 +4444,7 @@
                  data-year="2023"
                  data-tags='["Avatar", "Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2023humangaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4377,6 +4491,7 @@
                  data-year="2023"
                  data-tags='["Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/vilesov2023cg3d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4419,6 +4534,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2023learn.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4461,6 +4577,7 @@
                  data-year="2023"
                  data-tags='["Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/blattmann2023align.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4500,6 +4617,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ren2023dreamgaussian4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4542,6 +4660,7 @@
                  data-year="2023"
                  data-tags='["Code", "Diffusion", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yin20234dgen.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4587,6 +4706,7 @@
                  data-year="2023"
                  data-tags='["Diffusion", "Project", "World Generation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ouyang2023text2immersion.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4627,6 +4747,7 @@
                  data-year="2023"
                  data-tags='["Diffusion", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2023repaint123.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4666,6 +4787,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/duan20244d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4711,6 +4833,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/gao2024gaussianflow.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4753,6 +4876,7 @@
                  data-year="2024"
                  data-tags='["Dynamic"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/guo2024motionaware.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4789,6 +4913,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Dynamic", "Meshing"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xiao2024bridging.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4827,6 +4952,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/bae2024pergaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4869,6 +4995,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Monocular", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chu2024dreamscene4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4912,6 +5039,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lu20243d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4951,6 +5079,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Monocular", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024modgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -4991,6 +5120,7 @@
                  data-year="2024"
                  data-tags='["Dynamic"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kim2024optimizing.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5027,6 +5157,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhu2024motiongs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5069,6 +5200,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/labe2024dgd.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5114,6 +5246,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lee2024fully.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5156,6 +5289,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024egogaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5201,6 +5335,7 @@
                  data-year="2024"
                  data-tags='["Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lu20243dgscd.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5237,6 +5372,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Poses", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024dynsup.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5277,6 +5413,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/luiten2023dynamic.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5322,6 +5459,7 @@
                  data-year="2023"
                  data-tags='["Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2023deformable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5363,6 +5501,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu20234d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5408,6 +5547,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2023realtime.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5453,6 +5593,7 @@
                  data-year="2023"
                  data-tags='["Code", "Compression", "Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/katsumata2023a.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5496,6 +5637,7 @@
                  data-year="2023"
                  data-tags='["Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kratimenos2023dynmf.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5538,6 +5680,7 @@
                  data-year="2023"
                  data-tags='["Dynamic", "Editing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shao2023control4d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5578,6 +5721,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang2023scgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5623,6 +5767,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Monocular", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/das2023neural.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5669,6 +5814,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lin2023gaussianflow.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5711,6 +5857,7 @@
                  data-year="2023"
                  data-tags='["Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu2023cogs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5750,6 +5897,7 @@
                  data-year="2023"
                  data-tags='["Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liang2023gaufre.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5792,6 +5940,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2023spacetime.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5837,6 +5986,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/p2023mdsplatting.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5879,6 +6029,7 @@
                  data-year="2023"
                  data-tags='["Dynamic"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shaw2023swings.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5915,6 +6066,7 @@
                  data-year="2023"
                  data-tags='["Code", "Dynamic", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/sun20233dgstream.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5957,6 +6109,7 @@
                  data-year="2024"
                  data-tags='["Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/c2024contrastive.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -5993,6 +6146,7 @@
                  data-year="2024"
                  data-tags='["Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/dou2024cosseggaussians.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6032,6 +6186,7 @@
                  data-year="2024"
                  data-tags='["Code", "Editing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhuang2024tipeditor.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6077,6 +6232,7 @@
                  data-year="2024"
                  data-tags='["Code", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hu2024segment.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6116,6 +6272,7 @@
                  data-year="2024"
                  data-tags='["Editing"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/palandra2024gsedit.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6152,6 +6309,7 @@
                  data-year="2024"
                  data-tags='["Code", "Editing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu2024gaussctrl.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6197,6 +6355,7 @@
                  data-year="2024"
                  data-tags='["Editing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024viewconsistent.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6236,6 +6395,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Editing", "Meshing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/guédon2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6283,6 +6443,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/guo2024semantic.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6326,6 +6487,7 @@
                  data-year="2024"
                  data-tags='["Code", "Project", "Segmentation", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/gu2024egolifter.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6371,6 +6533,7 @@
                  data-year="2024"
                  data-tags='["Code", "Editing", "Inpainting", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024infusion.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6414,6 +6577,7 @@
                  data-year="2024"
                  data-tags='["Editing", "Project", "Segmentation", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lyu2024gaga.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6457,6 +6621,7 @@
                  data-year="2024"
                  data-tags='["Editing", "Has Paper", "Has Project", "Has Video", "Year 2024"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jaganathan2024iceg.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6500,6 +6665,7 @@
                  data-year="2024"
                  data-tags='["Code", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/joseph2024gradientdriven.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6542,6 +6708,7 @@
                  data-year="2024"
                  data-tags='["Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ji2024segment.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6581,6 +6748,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Project", "Segmentation", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024sadg.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6624,6 +6792,7 @@
                  data-year="2023"
                  data-tags='["Code", "Editing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2023gaussianeditor.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6669,6 +6838,7 @@
                  data-year="2023"
                  data-tags='["Editing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fang2023gaussianeditor.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6711,6 +6881,7 @@
                  data-year="2023"
                  data-tags='["Editing"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang2023pointn.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6747,6 +6918,7 @@
                  data-year="2023"
                  data-tags='["Code", "Editing", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ye2023gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6790,6 +6962,7 @@
                  data-year="2023"
                  data-tags='["Code", "Editing", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/cen2023segment.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6833,6 +7006,7 @@
                  data-year="2023"
                  data-tags='["Code", "Editing", "Inpainting", "Language Embedding", "Project", "Segmentation", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhou2023feature.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6881,6 +7055,7 @@
                  data-year="2023"
                  data-tags='["Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lan20232dguided.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6917,6 +7092,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Robotics", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu2024languageembedded.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -6961,6 +7137,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shi2024language.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7004,6 +7181,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Segmentation", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/qin2024langsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7050,6 +7228,7 @@
                  data-year="2024"
                  data-tags='["Language Embedding", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024splatraj.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7090,6 +7269,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zuo2024fmgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7133,6 +7313,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lee2024rethinking.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7176,6 +7357,7 @@
                  data-year="2024"
                  data-tags='["Acceleration", "Language Embedding", "Project", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/joanna2024occams.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7217,6 +7399,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Physics", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/feng2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7261,6 +7444,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Meshing"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/waczyńska2024games.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7301,6 +7485,7 @@
                  data-year="2024"
                  data-tags='["Dynamic", "Meshing"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/gao2024meshbased.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7338,6 +7523,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Physics", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhong2024reconstruction.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7381,6 +7567,7 @@
                  data-year="2024"
                  data-tags='["Code", "Editing", "Project", "Texturing", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xu2024texturegs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7427,6 +7614,7 @@
                  data-year="2024"
                  data-tags='["Code", "Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/turkulainen2024dnsplatter.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7469,6 +7657,7 @@
                  data-year="2024"
                  data-tags='["2DGS", "Code", "Meshing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang20242d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7515,6 +7704,7 @@
                  data-year="2024"
                  data-tags='["Code", "Editing", "Language Embedding", "Physics", "Project", "Segmentation", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/qiu2024feature.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7563,6 +7753,7 @@
                  data-year="2024"
                  data-tags='["2DGS", "Code", "Meshing", "Project", "Stereo", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wolf2024gs2mesh.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7610,6 +7801,7 @@
                  data-year="2024"
                  data-tags='["Code", "Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024gs2mesh.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7652,6 +7844,7 @@
                  data-year="2024"
                  data-tags='["2DGS", "Code", "Densification", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fan2024trim.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7695,6 +7888,7 @@
                  data-year="2024"
                  data-tags='["Densification", "Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hyung2024effective.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7735,6 +7929,7 @@
                  data-year="2024"
                  data-tags='["Code", "Large-Scale", "Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024citygaussianv2.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7778,6 +7973,7 @@
                  data-year="2024"
                  data-tags='["Code", "Meshing", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/longhini2024clothsplatting.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7821,6 +8017,7 @@
                  data-year="2024"
                  data-tags='["Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/blark2024splatsdf.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7860,6 +8057,7 @@
                  data-year="2024"
                  data-tags='["Code", "Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ren2024agsmesh.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7902,6 +8100,7 @@
                  data-year="2024"
                  data-tags='["Meshing", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024gaussurf.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7941,6 +8140,7 @@
                  data-year="2023"
                  data-tags='["Code", "Physics", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xie2023physgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -7986,6 +8186,7 @@
                  data-year="2023"
                  data-tags='["Code", "Meshing", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/guédon2023sugar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8031,6 +8232,7 @@
                  data-year="2023"
                  data-tags='["Meshing"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2023neusg.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8067,6 +8269,7 @@
                  data-year="2024"
                  data-tags='["Code", "Medicine"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhu2024endogs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8106,6 +8309,7 @@
                  data-year="2024"
                  data-tags='["Code", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024endogaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8147,6 +8351,7 @@
                  data-year="2024"
                  data-tags='["Code", "Large-Scale", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xiong2024gauuscene.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8189,6 +8394,7 @@
                  data-year="2024"
                  data-tags='["Large-Scale", "Lidar"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hong2024livgaussmap.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8226,6 +8432,7 @@
                  data-year="2024"
                  data-tags='["Meshing", "Physics", "Virtual Reality"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang2024vrgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8266,6 +8473,7 @@
                  data-year="2024"
                  data-tags='["Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2024splatnav.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8302,6 +8510,7 @@
                  data-year="2024"
                  data-tags='["Medicine"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/cai2024radiative.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8338,6 +8547,7 @@
                  data-year="2024"
                  data-tags='["Code", "Dynamic", "Project", "Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lu2024manigaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8381,6 +8591,7 @@
                  data-year="2024"
                  data-tags='["2DGS", "Code", "Compression", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024gaussianimage.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8424,6 +8635,7 @@
                  data-year="2024"
                  data-tags='["Code", "Language Embedding", "Project", "Robotics", "Segmentation"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zheng2024gaussiangrasper.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8468,6 +8680,7 @@
                  data-year="2024"
                  data-tags='["Project", "Virtual Reality"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu2024densoft.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8507,6 +8720,7 @@
                  data-year="2024"
                  data-tags='["Uncertainty"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/savant2024modeling.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8543,6 +8757,7 @@
                  data-year="2024"
                  data-tags='["Code", "Medicine"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024togs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8582,6 +8797,7 @@
                  data-year="2024"
                  data-tags='["Medicine"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/nikolakakis2024gaspct.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8618,6 +8834,7 @@
                  data-year="2024"
                  data-tags='["Code", "Misc", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu2024dualcamera.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8661,6 +8878,7 @@
                  data-year="2024"
                  data-tags='["Code", "Medicine", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/bonilla2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8703,6 +8921,7 @@
                  data-year="2024"
                  data-tags='["Deblurring", "Misc"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/dai2024spikenvs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8740,6 +8959,7 @@
                  data-year="2024"
                  data-tags='["Code", "Misc", "Poses"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kruse2024splatpose.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8780,6 +9000,7 @@
                  data-year="2024"
                  data-tags='["Misc", "Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024reinforcement.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8817,6 +9038,7 @@
                  data-year="2024"
                  data-tags='["Code", "Misc", "Robotics", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024darkgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8860,6 +9082,7 @@
                  data-year="2024"
                  data-tags='["Code", "GAN", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hyun2024adversarial.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8902,6 +9125,7 @@
                  data-year="2024"
                  data-tags='["Code", "Misc", "Project", "Robotics", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/strong2024next.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8948,6 +9172,7 @@
                  data-year="2024"
                  data-tags='["Code", "Misc", "Project", "Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wildersmith2024radiance.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -8991,6 +9216,7 @@
                  data-year="2023"
                  data-tags='["Code", "Misc", "Project", "Uncertainty"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang2023fisherrf.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9034,6 +9260,7 @@
                  data-year="2023"
                  data-tags='["Autonomous Driving", "Code", "Misc", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2023periodic.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9077,6 +9304,7 @@
                  data-year="2023"
                  data-tags='["Code", "Misc", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/pokhariya2023manus.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9119,6 +9347,7 @@
                  data-year="2023"
                  data-tags='["Code", "Misc", "Project", "Transformer"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zou2023triplane.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9162,6 +9391,7 @@
                  data-year="2023"
                  data-tags='["Misc"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ye2023mathematical.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9198,6 +9428,7 @@
                  data-year="2023"
                  data-tags='["Code", "Misc", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/meyer2023pegasus.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9240,6 +9471,7 @@
                  data-year="2024"
                  data-tags='["Acceleration", "Code", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/durvasula2024distwar.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9280,6 +9512,7 @@
                  data-year="2024"
                  data-tags='["Densification"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024fregs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9316,6 +9549,7 @@
                  data-year="2024"
                  data-tags='["Code", "Densification", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jung2024raings.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9359,6 +9593,7 @@
                  data-year="2024"
                  data-tags='["Densification"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/feng2024a.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9395,6 +9630,7 @@
                  data-year="2024"
                  data-tags='["Densification"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/rota2024revising.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9431,6 +9667,7 @@
                  data-year="2023"
                  data-tags='["Code", "Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chung2023depthregularized.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9473,6 +9710,7 @@
                  data-year="2023"
                  data-tags='["Acceleration", "Code", "Densification", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/girish2023eagles.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9516,6 +9754,7 @@
                  data-year="2023"
                  data-tags='["Code", "Poses", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fu2023colmapfree.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9561,6 +9800,7 @@
                  data-year="2023"
                  data-tags='["Poses"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/sun2023icomma.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9599,6 +9839,7 @@
                  data-year="2024"
                  data-tags='["Avatar", "Code", "Relight", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/bolanos2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9642,6 +9883,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Perspective-correct", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang2024optimal.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9689,6 +9931,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["360 degree", "Code", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang2024360gs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9729,6 +9972,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Perspective-correct", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/radl2024stopthepop.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9775,6 +10019,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hamdi2024ges.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9820,6 +10065,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Densification", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/cheng2024gaussianpro.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9862,6 +10108,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yang2024specgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9904,6 +10151,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Large-Scale"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lin2024vastgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9944,6 +10192,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Deblurring", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/peng2024bags.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -9986,6 +10235,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Style Transfer"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024stylegaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10028,6 +10278,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Style Transfer"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/saroha2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10064,6 +10315,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Deblurring", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhao2024badgaussians.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10107,6 +10359,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["In the Wild", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/dahmani2024swag.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10144,6 +10397,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Densification", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024geogaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10187,6 +10441,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Antialiasing", "Code", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liang2024analyticsplatting.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10230,6 +10485,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Deblurring", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/seiskari2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10276,6 +10532,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Densification", "Misc", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/niemeyer2024radsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10317,6 +10574,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Densification", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fang2024minisplatting.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10357,6 +10615,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Densification", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024pixelgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10400,6 +10659,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "In the Wild", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10446,6 +10706,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Meshing", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu2024gsdf.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10489,6 +10750,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Large-Scale", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ren2024octreegs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10532,6 +10794,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Antialiasing", "Code", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/song2024sags.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10575,6 +10838,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/comi2024snapit.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10614,6 +10878,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Meshing", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/comi20243dgsr.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10651,6 +10916,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/meng2024mirror3dgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10690,6 +10956,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["360 degree", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/meng2024omnigs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10730,6 +10997,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Deblurring", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/darmon2024robust.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10767,6 +11035,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Deblurring", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/oh2024deblurgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10804,6 +11073,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Rendering", "Style Transfer"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang2024stylizedgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10841,6 +11111,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Physics", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024loopgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10884,6 +11155,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Acceleration", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lee2024gscore.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10923,6 +11195,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/pryadilshchikov2024t3dgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -10965,6 +11238,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Rendering", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xu2024supergaussians.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11010,6 +11284,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Antialiasing", "Code", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu2023mipsplatting.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11053,6 +11328,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "Ray Tracing", "Relight", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/gao2023relightable.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11097,6 +11373,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "Relight", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liang2023gsir.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11140,6 +11417,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Antialiasing", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yan2023multiscale.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11177,6 +11455,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "Relight", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang2023gaussianshader.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11220,6 +11499,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Densification", "Project", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lu2023scaffoldgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11263,6 +11543,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Deblurring", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lee2023deblurring.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11305,6 +11586,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Project", "Relight", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shi2023gir.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11345,6 +11627,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Rendering"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/malarz2023gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11384,6 +11667,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Avatar", "Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/bai2024progress.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11421,6 +11705,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2024a.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11457,6 +11742,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fei20243d.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11493,6 +11779,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review", "Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zubair2024neural.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11530,6 +11817,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/tosi2024how.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11566,6 +11854,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu2024recent.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11602,6 +11891,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/dalal2024gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11638,6 +11928,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Review"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/qiu2024advancing.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11674,6 +11965,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024sgsslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11716,6 +12008,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhu2024semgaussslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11752,6 +12045,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Has Paper", "SLAM", "Year 2024"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/deng2024compact.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11789,6 +12083,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Has Paper", "SLAM", "Year 2024"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ji2024nedsslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11826,6 +12121,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/sun2024highfidelity.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11862,6 +12158,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/ha2024rgbd.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11904,6 +12201,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Medicine", "Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024endogslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11950,6 +12248,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/hu2024cgslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -11992,6 +12291,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/c2024mm3dgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12037,6 +12337,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Project", "SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lang2024gaussianlic.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12076,6 +12377,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/peng2024rtgslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12118,6 +12420,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhu2024loopsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12160,6 +12463,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Project", "SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wang2024mbaslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12199,6 +12503,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kong2024dgsslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12238,6 +12543,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "SLAM"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yan2023gsslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12280,6 +12586,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/keetha2023splatam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12325,6 +12632,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/matsuki2023gaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12370,6 +12678,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yugay2023gaussianslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12415,6 +12724,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "SLAM", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/huang2023photoslam.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12460,6 +12770,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Sparse", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024dngaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12505,6 +12816,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Rendering", "Robotics", "Sparse", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/swann2024touchgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12552,6 +12864,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Feed-Forward", "Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/chen2024mvsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12595,6 +12908,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Feed-Forward", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wewer2024latentsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12636,6 +12950,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xu2024grm.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12675,6 +12990,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Feed-Forward", "Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/shen2024gamba.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12718,6 +13034,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Sparse", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/paliwal2024coherentgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12763,6 +13080,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Sparse", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/fan2024instantsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12808,6 +13126,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/paul2024spsup2sup360.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12847,6 +13166,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Feed-Forward", "Project", "Sparse", "Transformer"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhang202425.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12891,6 +13211,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/mihajlovic2024splatfields.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12933,6 +13254,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["360 degree", "Code", "Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/xiong2023sparsegs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -12976,6 +13298,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Project", "Sparse", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhu2023fsgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13021,6 +13344,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Feed-Forward", "Project", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/charatan2023pixelsplat.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13064,6 +13388,7 @@ and an Optimal Projection Strategy
                  data-year="2023"
                  data-tags='["Code", "Feed-Forward", "Project", "Sparse", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/szymanowicz2023splatter.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13110,6 +13435,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Code", "Project", "Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/lei2024gaussnav.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13153,6 +13479,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Poses"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/jiang20243dgsreloc.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13189,6 +13516,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Robotics", "Uncertainty"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024beyond.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13227,6 +13555,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Misc", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/herau20243dgscalib.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13269,6 +13598,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Densification", "Misc"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024hogaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13306,6 +13636,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Diffusion", "Lidar", "Sparse"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/yu2024sgd.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13344,6 +13675,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Autonomous Driving", "Code", "Project", "Robotics"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/meng2024beings.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13387,6 +13719,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Poses", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/li2024ggrt.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13429,6 +13762,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Poses", "Project"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024gsloc.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13468,6 +13802,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Large-Scale", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/kerbl2024a.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13513,6 +13848,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Distributed", "Large-Scale"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/suzuki2024fed3dgs.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13552,6 +13888,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Poses"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/cai2024gspose.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13594,6 +13931,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Misc"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/tarun2024creating.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13630,6 +13968,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Has Paper", "Large-Scale", "Year 2024"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu2024hgsmapping.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13667,6 +14006,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Has Code", "Has Paper", "Has Project", "Large-Scale", "Year 2024"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/liu2024citygaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13710,6 +14050,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Poses"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/wu2024mmgaussian.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13746,6 +14087,7 @@ and an Optimal Projection Strategy
                  data-year="2024"
                  data-tags='["Code", "Distributed", "Large-Scale", "Project", "Video"]'>
                 <div class="paper-card">
+                    <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img src="assets/thumbnails/zhao2024on.jpg" 
                              onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
@@ -13821,6 +14163,14 @@ and an Optimal Projection Strategy
             });
         });
 
+        function updatePaperNumbers() {
+            let number = 1;
+            document.querySelectorAll('.paper-row.visible').forEach(card => {
+                const numberElement = card.querySelector('.paper-number');
+                numberElement.textContent = number++;
+            });
+        }
+
         function filterPapers() {
             const searchTerm = searchInput.value.toLowerCase();
             const selectedYear = yearFilter.value;
@@ -13842,13 +14192,16 @@ and an Optimal Projection Strategy
                     card.classList.remove('visible');
                 }
             });
+            
+            updatePaperNumbers();
         }
 
         searchInput.addEventListener('input', filterPapers);
         yearFilter.addEventListener('change', filterPapers);
 
-        // Show all papers initially
+        // Show all papers initially and set initial numbers
         paperCards.forEach(card => card.classList.add('visible'));
+        updatePaperNumbers();
     });
     </script>
 </body>
