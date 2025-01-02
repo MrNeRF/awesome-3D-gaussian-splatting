@@ -318,10 +318,11 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             paperCards.forEach(card => {{
                 const title = card.getAttribute('data-title').toLowerCase();
                 const authors = card.getAttribute('data-authors').toLowerCase();
+                const year = card.getAttribute('data-year');
                 const tags = JSON.parse(card.getAttribute('data-tags'));
 
                 const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
-                const matchesYear = selectedYear === 'all' || tags.includes(selectedYear);
+                const matchesYear = selectedYear === 'all' || year === selectedYear;
                 const matchesTags = selectedTags.size === 0 || 
                     [...selectedTags].every(tag => tags.includes(tag));
 
@@ -348,10 +349,10 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
 def generate_year_options(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML options for year filter"""
-    years = sorted({tag.split()[-1] for entry in entries 
-                   for tag in entry['tags'] if tag.startswith('Year ')}, 
+    # Get years and convert all to strings for consistent sorting
+    years = sorted({str(entry.get('year', '')) for entry in entries if entry.get('year')}, 
                   reverse=True)
-    return '\n'.join(f'<option value="Year {year}">Year {year}</option>' for year in years)
+    return '\n'.join(f'<option value="{year}">{year}</option>' for year in years)
 
 def generate_tag_filters(tags: List[str]) -> str:
     """Generate HTML for tag filters"""
@@ -395,18 +396,14 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
             </div>
         """ if entry.get('abstract') else ""
 
-        # Use the year field directly, fallback to tag if not present
-        year_display = entry.get('year')
-        if not year_display:
-            # Fallback to year tag if direct year field is not available
-            year_display = next((tag.split()[-1] for tag in entry['tags'] 
-                               if tag.startswith('Year ')), 'N/A')
+        year = entry.get('year', 'N/A')
 
         # Generate card HTML with thumbnail
         card = f"""
             <div class="paper-row" 
                  data-title="{entry['title']}" 
                  data-authors="{entry['authors']}"
+                 data-year="{year}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
                     <div class="paper-thumbnail">
@@ -417,7 +414,7 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
                     </div>
                     <div class="paper-content">
                         <h2 class="paper-title">
-                            {entry['title']} <span class="paper-year">({year_display})</span>
+                            {entry['title']} <span class="paper-year">({year})</span>
                         </h2>
                         <p class="paper-authors">{entry['authors']}</p>
                         <div class="paper-tags">
