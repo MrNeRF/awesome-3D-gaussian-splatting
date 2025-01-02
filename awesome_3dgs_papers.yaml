@@ -29,6 +29,7 @@
   tags:
   - Classic Work
   - Code
+  - Dynamic
   - Project
   - Rendering
   - Video
@@ -139,12 +140,13 @@
   project_page: null
   paper: https://arxiv.org/pdf/2404.02410.pdf
   code: null
-  video: null
+  video: https://www.youtube.com/watch?v=CEo6mZ6FGg0
   thumbnail_image: false
   thumbnail_video: false
   tags:
   - Autonomous Driving
   - Lidar
+  - Video
   thumbnail: assets/thumbnails/zhao2024tclcgs.jpg
 - id: chen2024omnire
   title: 'OmniRe: Omni Urban Scene Reconstruction'
@@ -386,15 +388,14 @@
   project_page: https://zhenglinzhou.github.io/HeadStudio-ProjectPage/
   paper: https://arxiv.org/pdf/2402.06149.pdf
   code: https://github.com/ZhenglinZhou/HeadStudio/
-  video: null
+  video: https://zhenglinzhou.github.io/HeadStudio-ProjectPage/videos/demo_arxiv.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhou2024headstudio.jpg
 - id: stanishevskii2024implicitdeepfake
   title: 'ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation
@@ -423,15 +424,12 @@
     deepfake-based avatars.
   project_page: null
   paper: https://arxiv.org/pdf/2402.06390.pdf
-  code: https://github.com/quereste/implicit-deepfake
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Year 2024
+  - Avatar
   thumbnail: assets/thumbnails/stanishevskii2024implicitdeepfake.jpg
 - id: luo2024gaussianhair
   title: 'GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians'
@@ -467,9 +465,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Year 2024
+  - Avatar
   thumbnail: assets/thumbnails/luo2024gaussianhair.jpg
 - id: liu2024gva
   title: 'GVA: Reconstructing Vivid 3D Gaussian Avatars from Monocular Videos'
@@ -499,10 +495,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Project
   thumbnail: assets/thumbnails/liu2024gva.jpg
 - id: shao2024splattingavatar
   title: 'SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian
@@ -533,12 +527,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/shao2024splattingavatar.jpg
 - id: shao2024splatface
   title: 'SplatFace: Gaussian Splat Face Reconstruction Leveraging an Optimizable
@@ -567,7 +559,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Ray Tracing
+  - Avatar
   thumbnail: assets/thumbnails/shao2024splatface.jpg
 - id: shao2024haha
   title: 'HAHA: Highly Articulated Gaussian Human Avatars with Textured Mesh Prior'
@@ -590,14 +582,13 @@
     novel poses from X-Humans both quantitatively and qualitatively.'
   project_page: null
   paper: https://arxiv.org/pdf/2404.01053
-  code: null
+  code: https://github.com/david-svitov/HAHA
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Year 2024
+  - Avatar
+  - Code
   thumbnail: assets/thumbnails/shao2024haha.jpg
 - id: barthel2024gaussian
   title: Gaussian Splatting Decoder for 3D‑aware Generative Adversarial Networks
@@ -623,15 +614,14 @@
   project_page: https://florian-barthel.github.io/gaussian_decoder/index.html
   paper: https://arxiv.org/pdf/2404.10625
   code: https://github.com/fraunhoferhhi/gaussian_gan_decoder
-  video: null
+  video: https://florian-barthel.github.io/gaussian_decoder/videos/latent.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/barthel2024gaussian.jpg
 - id: wen2024gomavatar
   title: 'GoMAvatar: Efficient Animatable Human Modeling from Monocular Video Using
@@ -657,11 +647,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Code
+  - Monocular
+  - Project
   thumbnail: assets/thumbnails/wen2024gomavatar.jpg
 - id: ye2024occgaussian
   title: 'OccGaussian: 3D Gaussian Splatting for Occluded Human Rendering'
@@ -685,16 +674,16 @@
     demonstrate that our method achieves comparable or even superior performance compared
     to the state-of-the-art method. And we improving training and inference speeds
     by 250x and 800x, respectively.
-  project_page: null
+  project_page: https://wenj.github.io/GoMAvatar/
   paper: https://arxiv.org/pdf/2404.07991
-  code: null
+  code: https://github.com/wenj/GoMAvatar
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/ye2024occgaussian.jpg
 - id: lee2024guess
   title: 'Guess The Unseen: Dynamic 3D Scene Reconstruction from Partial 2D Glimpses'
@@ -720,15 +709,14 @@
   project_page: https://snuvclab.github.io/gtu/
   paper: https://arxiv.org/pdf/2404.14410
   code: https://github.com/snuvclab/gtu/
-  video: null
+  video: https://youtu.be/l9c_rd4hmFI
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/lee2024guess.jpg
 - id: chu2024generalizable
   title: Generalizable and Animatable Gaussian Head Avatar
@@ -751,15 +739,14 @@
   project_page: https://xg-chu.site/project_gagavatar/
   paper: https://arxiv.org/pdf/2410.07971
   code: https://github.com/xg-chu/GAGAvatar
-  video: null
+  video: https://youtu.be/9244ZgOl4Xk
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/chu2024generalizable.jpg
 - id: jiang2024dualgs
   title: 'DualGS: Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric
@@ -790,17 +777,14 @@
     and feel the rhythm of the notes at the performers' fingertips.
   project_page: https://nowheretrix.github.io/DualGS/
   paper: https://arxiv.org/pdf/2409.08353
-  code: https://github.com/xyi1023/DualGS_Dataset
+  code: null
   video: https://www.youtube.com/watch?v=vwDE8xr78Bg
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Avatar
+  - Project
+  - Video
   thumbnail: assets/thumbnails/jiang2024dualgs.jpg
 - id: wang2024v3
   title: 'V^3: Viewing Volumetric Videos on Mobiles via Streamable 2D Dynamic Gaussians'
@@ -829,49 +813,16 @@
     is available at this https URL.
   project_page: https://authoritywang.github.io/v3/
   paper: https://arxiv.org/pdf/2409.13648
-  code: null
+  code: https://github.com/AuthorityWang/VideoGS
   video: https://youtu.be/Z5La9AporRU?si=iJ-m_mvUSxQN4Bwm
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/wang2024v3.jpg
-- id: zheng2024v3
-  title: 'V^3: Viewing Volumetric Videos on Mobiles via Streamable 2D Dynamic Gaussians'
-  authors: Xiaozheng Zheng, Chao Wen, Zhaohu Li, Weiyi Zhang, Zhuo Su, Xu Chang, Yang
-    Zhao, Zheng Lv, Xiaoyuan Zhang, Yongjie Zhang, Guidong Wang, Lan Xu,
-  year: '2024'
-  abstract: In this paper, we present a novel 3D head avatar creation approach capable
-    of generalizing from few-shot in-the-wild data with high-fidelity and animatable
-    robustness. Given the underconstrained nature of this problem, incorporating prior
-    knowledge is essential. Therefore, we propose a framework comprising prior learning
-    and avatar creation phases. The prior learning phase leverages 3D head priors
-    derived from a large-scale multi-view dynamic dataset, and the avatar creation
-    phase applies these priors for few-shot personalization. Our approach effectively
-    captures these priors by utilizing a Gaussian Splatting-based auto-decoder network
-    with part-based dynamic modeling. Our method employs identity-shared encoding
-    with personalized latent codes for individual identities to learn the attributes
-    of Gaussian primitives. During the avatar creation phase, we achieve fast head
-    avatar personalization by leveraging inversion and fine-tuning strategies. Extensive
-    experiments demonstrate that our model effectively exploits head priors and successfully
-    generalizes them to few-shot personalization, achieving photo-realistic rendering
-    quality, multi-view consistency, and stable animation.
-  project_page: https://headgap.github.io/
-  paper: https://arxiv.org/pdf/2408.06019
-  code: null
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Year 2024
-  thumbnail: assets/thumbnails/zheng2024v3.jpg
 - id: saunders2024gasp
   title: 'GASP: Gaussian Avatars with Synthetic Priors'
   authors: Jack Saunders, Charlie Hewitt, Yanan Jian, Marek Kowalski, Tadas Baltrušaitis,
@@ -901,11 +852,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Avatar
+  - Project
+  - Video
   thumbnail: assets/thumbnails/saunders2024gasp.jpg
 - id: tang2024gaf
   title: 'GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view
@@ -938,11 +887,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Avatar
+  - Project
+  - Video
   thumbnail: assets/thumbnails/tang2024gaf.jpg
 - id: taubner2024cap4d
   title: 'CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View
@@ -973,10 +920,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Avatar
+  - Project
   thumbnail: assets/thumbnails/taubner2024cap4d.jpg
 - id: zielonka2023drivable
   title: Drivable 3D Gaussian Avatars
@@ -1004,11 +949,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zielonka2023drivable.jpg
 - id: jena2023splatarmor
   title: 'SplatArmor: Articulated Gaussian splatting for animatable humans from monocular
@@ -1038,11 +981,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/jena2023splatarmor.jpg
 - id: li2023animatable
   title: 'Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity
@@ -1067,15 +1008,14 @@
   project_page: https://animatable-gaussians.github.io/
   paper: https://arxiv.org/pdf/2311.16096.pdf
   code: https://github.com/lizhe00/AnimatableGaussians
-  video: null
+  video: https://www.youtube.com/watch?v=kOmZxD0HxZI
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/li2023animatable.jpg
 - id: lei2023gart
   title: 'GART: Gaussian Articulated Template Models'
@@ -1097,12 +1037,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
   thumbnail: assets/thumbnails/lei2023gart.jpg
 - id: moreau2023human
   title: 'Human Gaussian Splatting: Real-time Rendering of Animatable Avatars'
@@ -1131,11 +1066,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Project
+  - Video
   thumbnail: assets/thumbnails/moreau2023human.jpg
 - id: kocabas2023hugs
   title: 'HUGS: Human Gaussian Splats'
@@ -1166,11 +1099,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/kocabas2023hugs.jpg
 - id: abdal2023gaussian
   title: Gaussian Shell Maps for Efficient 3D Human Generation
@@ -1204,11 +1135,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/abdal2023gaussian.jpg
 - id: wang2023gaussianhead
   title: 'GaussianHead: High-fidelity Head Avatars with Learnable Gaussian Derivation'
@@ -1235,11 +1164,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/wang2023gaussianhead.jpg
 - id: qian2023gaussianavatars
   title: 'GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians'
@@ -1267,12 +1194,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/qian2023gaussianavatars.jpg
 - id: zheng2023gpsgaussian
   title: 'GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time
@@ -1298,12 +1223,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zheng2023gpsgaussian.jpg
 - id: hu2023gauhuman
   title: 'GauHuman: Articulated Gaussian Splatting from Monocular Human Videos'
@@ -1330,12 +1253,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/hu2023gauhuman.jpg
 - id: dhamo2023headgas
   title: 'HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting'
@@ -1356,13 +1277,12 @@
   project_page: null
   paper: https://arxiv.org/pdf/2312.02902.pdf
   code: null
-  video: null
+  video: https://www.youtube.com/watch?v=fetxolufsgQ
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Year 2023
+  - Avatar
+  - Video
   thumbnail: assets/thumbnails/dhamo2023headgas.jpg
 - id: jiang2023hifi4g
   title: 'HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting'
@@ -1387,17 +1307,14 @@
     in terms of optimization speed, rendering quality, and storage overhead.
   project_page: https://nowheretrix.github.io/HiFi4G/
   paper: https://arxiv.org/pdf/2312.03461.pdf
-  code: https://github.com/moqiyinlun/HiFi4G_Dataset
+  code: null
   video: https://youtu.be/917WVr2EHh4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Project
+  - Video
   thumbnail: assets/thumbnails/jiang2023hifi4g.jpg
 - id: hu2023gaussianavatar
   title: 'GaussianAvatar: Towards Realistic Human Avatar Modeling from a Single Video
@@ -1425,12 +1342,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/hu2023gaussianavatar.jpg
 - id: xiang2023flashavatar
   title: 'FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding'
@@ -1454,11 +1369,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/xiang2023flashavatar.jpg
 - id: saito2023relightable
   title: Relightable Gaussian Codec Avatars
@@ -1485,15 +1398,16 @@
     and fidelity of our avatars.
   project_page: https://shunsukesaito.github.io/rgca/
   paper: https://arxiv.org/pdf/2312.03704.pdf
-  code: null
-  video: null
+  code: https://github.com/facebookresearch/goliath
+  video: https://shunsukesaito.github.io/rgca/static/videos/full_video.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Relight
+  - Video
   thumbnail: assets/thumbnails/saito2023relightable.jpg
 - id: chen2023monogaussianavatar
   title: 'MonoGaussianAvatar: Monocular Gaussian Point-based Head Avatar'
@@ -1526,12 +1440,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Monocular
+  - Project
+  - Video
   thumbnail: assets/thumbnails/chen2023monogaussianavatar.jpg
 - id: pang2023ash
   title: 'ASH: Animatable Gaussian Splats for Efficient and Photoreal Human Rendering'
@@ -1554,16 +1467,15 @@
     or even better results than offline methods.
   project_page: https://vcai.mpi-inf.mpg.de/projects/ash/
   paper: https://arxiv.org/pdf/2312.05941.pdf
-  code: null
+  code: https://github.com/kv2000/ASH
   video: https://vcai.mpi-inf.mpg.de/projects/ash/videos/video_for_page.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/pang2023ash.jpg
 - id: qian20233dgsavatar
   title: '3DGS-Avatar: Animatable Avatars via Deformable 3D Gaussian Splatting'
@@ -1592,12 +1504,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/qian20233dgsavatar.jpg
 - id: yuan2023gavatar
   title: 'GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning'
@@ -1629,11 +1539,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Meshing
+  - Project
+  - Video
   thumbnail: assets/thumbnails/yuan2023gavatar.jpg
 - id: jung2023deformable
   title: Deformable 3D Gaussian Splatting for Animatable Human Avatars
@@ -1666,9 +1575,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Year 2023
+  - Avatar
   thumbnail: assets/thumbnails/jung2023deformable.jpg
 - id: li2023human101
   title: 'Human101: Training 100+FPS Human Gaussians in 100s from 1 View'
@@ -1696,11 +1603,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/li2023human101.jpg
 - id: xu2023gaussian
   title: 'Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians'
@@ -1726,12 +1631,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/xu2023gaussian.jpg
 - id: pan2023humansplat
   title: 'HumanSplat: Generalizable Single-Image Human Gaussian Splatting with Structure
@@ -1754,15 +1657,14 @@
     Project page: https://humansplat.github.io/.'
   project_page: https://humansplat.github.io/
   paper: https://arxiv.org/pdf/2406.12459
-  code: null
+  code: https://github.com/humansplat/humansplat
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Avatars
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Avatar
+  - Code
+  - Project
   thumbnail: assets/thumbnails/pan2023humansplat.jpg
 - id: f2023a
   title: A Generalization of Algebraic Surface Drawing
@@ -1780,15 +1682,13 @@
     electron density maps of molecular structures, but it can be used for other artistically
     interesting shapes.'
   project_page: null
-  paper: https://dl.acm.org/doi/pdf/10.1145/357306.357310
+  paper: null
   code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Classic work
-  - Has Paper
-  - Year 2023
+  - Classic Work
   thumbnail: assets/thumbnails/f2023a.jpg
 - id: keselman2023approximate
   title: Approximate Differentiable Rendering with Algebraic Surfaces
@@ -1815,12 +1715,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Classic work
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Classic Work
+  - Code
+  - Project
+  - Video
   thumbnail: assets/thumbnails/keselman2023approximate.jpg
 - id: u2023unbiased
   title: Unbiased Gradient Estimation for Differentiable Surface Splatting via Poisson
@@ -1847,10 +1745,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Classic work
-  - Has Code
-  - Has Paper
-  - Year 2023
+  - Classic Work
+  - Code
   thumbnail: assets/thumbnails/u2023unbiased.jpg
 - id: man2023generating
   title: Generating and Real-Time Rendering of Clouds
@@ -1875,9 +1771,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Classic work
-  - Has Paper
-  - Year 2023
+  - Classic Work
   thumbnail: assets/thumbnails/man2023generating.jpg
 - id: papantonakis2024reducing
   title: Reducing the Memory Footprint of 3D Gaussian Splatting
@@ -1903,16 +1797,15 @@
     on a mobile device (see Fig. 1).'
   project_page: https://repo-sam.inria.fr/fungraph/reduced_3dgs/
   paper: https://repo-sam.inria.fr/fungraph/reduced_3dgs/reduced_3DGS_i3d.pdf
-  code: https://repo-sam.inria.fr/fungraph/reduced_3dgs/#
-  video: null
+  code: https://repo-sam.inria.fr/fungraph/reduced_3dgs
+  video: https://www.youtube.com/watch?v=EnKE-d7eMds&t=48s
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/papantonakis2024reducing.jpg
 - id: niedermayr2024compressed
   title: Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis
@@ -1938,11 +1831,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/niedermayr2024compressed.jpg
 - id: chen2024hac
   title: 'HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression'
@@ -1974,11 +1865,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/chen2024hac.jpg
 - id: wang2024endtoend
   title: End-to-End Rate-Distortion Optimized 3D Gaussian Representation
@@ -2006,11 +1895,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/wang2024endtoend.jpg
 - id: t20243dgszip
   title: '3DGS.zip: A survey on 3D Gaussian Splatting Compression Methods'
@@ -2036,9 +1923,7 @@
   thumbnail_video: false
   tags:
   - Compression
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/t20243dgszip.jpg
 - id: shi2024lapisgs
   title: 'LapisGS: Layered Progressive 3D Gaussian Splatting for Adaptive Streaming'
@@ -2064,9 +1949,7 @@
   thumbnail_video: false
   tags:
   - Compression
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/shi2024lapisgs.jpg
 - id: fan2023lightgaussian
   title: 'LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and
@@ -2094,16 +1977,14 @@
   project_page: https://lightgaussian.github.io/
   paper: https://arxiv.org/pdf/2311.17245.pdf
   code: https://github.com/VITA-Group/LightGaussian
-  video: https://youtu.be/470hul75bSM?si=EKm-UaBaTs9qJH6K
+  video: https://www.youtube.com/watch?v=470hul75bSM
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/fan2023lightgaussian.jpg
 - id: navaneet2023compact3d
   title: 'Compact3D: Compressing Gaussian Splat Radiance Field Models with Vector
@@ -2124,17 +2005,16 @@
     larger than the standard benchmarks. We show that our simple yet effective method
     can reduce the storage cost for the original 3D Gaussian Splatting method by a
     factor of almost 20× with a very small drop in the quality of rendered images.
-  project_page: null
+  project_page: https://ucdvision.github.io/compact3d/
   paper: https://arxiv.org/pdf/2311.18159.pdf
   code: https://github.com/UCDvision/compact3d
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/navaneet2023compact3d.jpg
 - id: chan2023compact
   title: Compact 3D Gaussian Representation for Radiance Field
@@ -2169,11 +2049,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/chan2023compact.jpg
 - id: morgenstern2023compact
   title: Compact 3D Scene Representation via Self-Organizing Gaussian Grids
@@ -2200,15 +2078,14 @@
   project_page: https://fraunhoferhhi.github.io/Self-Organizing-Gaussians/
   paper: https://arxiv.org/pdf/2312.13299.pdf
   code: https://github.com/fraunhoferhhi/Self-Organizing-Gaussians
-  video: null
+  video: https://www.youtube.com/watch?v=nb5U9xfx7-w
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Compression
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/morgenstern2023compact.jpg
 - id: xu2024agg
   title: 'AGG: Amortized Generative 3D Gaussians for Single Image to 3D'
@@ -2239,10 +2116,8 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/xu2024agg.jpg
 - id: pan2024fast
   title: Fast Dynamic 3D Object Generation from a Single-view Video
@@ -2269,12 +2144,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/pan2024fast.jpg
 - id: yang2024gaussianobject
   title: 'GaussianObject: Just Taking Four Images to Get A High-Quality 3D Object
@@ -2307,19 +2180,30 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/yang2024gaussianobject.jpg
 - id: yang2024large
   title: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation
   authors: Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng
     Zhang, Wei Shen, Qi Tian
   year: '2024'
-  abstract: null
+  abstract: '3D content creation has achieved significant progress in terms of both
+    quality and speed. Although current feed-forward models can produce 3D objects
+    in seconds, their resolution is constrained by the intensive computation required
+    during training. In this paper, we introduce Large Multi-View Gaussian Model (LGM),
+    a novel framework designed to generate high-resolution 3D models from text prompts
+    or single-view images. Our key insights are two-fold: 1) 3D Representation: We
+    propose multi-view Gaussian features as an efficient yet powerful representation,
+    which can then be fused together for differentiable rendering. 2) 3D Backbone:
+    We present an asymmetric U-Net as a high-throughput backbone operating on multi-view
+    images, which can be produced from text or single-view image input by leveraging
+    multi-view diffusion models. Extensive experiments demonstrate the high fidelity
+    and efficiency of our approach. Notably, we maintain the fast speed to generate
+    3D objects within 5 seconds while boosting the training resolution to 512, thereby
+    achieving high-resolution 3D content generation. '
   project_page: https://me.kiui.moe/lgm/
   paper: https://arxiv.org/pdf/2402.05054.pdf
   code: https://github.com/3DTopia/LGM
@@ -2327,11 +2211,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/yang2024large.jpg
 - id: zhou2024gala3d
   title: 'GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative
@@ -2352,19 +2234,16 @@
     ensuring the high fidelity of object-level entities within the scene.
   project_page: https://gala3d.github.io/
   paper: https://arxiv.org/pdf/2402.07207.pdf
-  code: https://github.com/VDIGPKU/GALA3D
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/zhou2024gala3d.jpg
 - id: melaskyriazi2024im3d
-  title: 'IM-3D: Iterative Multiview Diffusion and Reconstruction for High-Quality
+  title: ' IM-3D: Iterative Multiview Diffusion and Reconstruction for High-Quality
     3D Generation'
   authors: Luke Melas-Kyriazi, Iro Laina, Christian Rupprecht, Natalia Neverova, Andrea
     Vedaldi, Oran Gafni, Filippos Kokkinos
@@ -2382,7 +2261,7 @@
     of the 2D generator network 10-100x, resulting in a much more efficient pipeline,
     better quality, fewer geometric inconsistencies, and higher yield of usable 3D
     assets.
-  project_page: null
+  project_page: https://lukemelas.github.io/IM-3D/
   paper: https://arxiv.org/pdf/2402.08682.pdf
   code: null
   video: null
@@ -2390,8 +2269,7 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/melaskyriazi2024im3d.jpg
 - id: li2024controllable
   title: Controllable Text-to-3D Generation via Surface-Aligned Gaussian Splatting
@@ -2424,11 +2302,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/li2024controllable.jpg
 - id: di2024hyper3dgtextto3d
   title: Hyper-3DG:Text-to-3D Gaussian Generation via Hypergraph
@@ -2453,15 +2329,12 @@
     overhead for the underlying framework.
   project_page: null
   paper: https://arxiv.org/pdf/2403.09236.pdf
-  code: https://github.com/yjhboy/Hyper3DG
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Year 2024
   thumbnail: assets/thumbnails/di2024hyper3dgtextto3d.jpg
 - id: li2024dreamscene
   title: 'DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation
@@ -2493,11 +2366,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/li2024dreamscene.jpg
 - id: feng2024fdgaussian
   title: 'FDGaussian: Fast Gaussian Splatting from Single Image via Geometric-aware
@@ -2516,7 +2387,7 @@
     to fuse images from different viewpoints. We demonstrate that FDGaussian generates
     images with high consistency across different views and reconstructs high-quality
     3D objects, both qualitatively and quantitatively.
-  project_page: https://qjfeng.net/FDGaussian
+  project_page: null
   paper: https://arxiv.org/pdf/2403.10242.pdf
   code: null
   video: null
@@ -2524,9 +2395,6 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Year 2024
   thumbnail: assets/thumbnails/feng2024fdgaussian.jpg
 - id: zhang2024bags
   title: 'BAGS: Building Animatable Gaussian Splatting from a Monocular Video with
@@ -2548,14 +2416,15 @@
     the current state-of-the-art methods.
   project_page: null
   paper: https://arxiv.org/pdf/2403.11427
-  code: null
+  code: https://github.com/Michaelszj/bags
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Paper
-  - Year 2024
+  - Dynamic
+  - Monocular
   thumbnail: assets/thumbnails/zhang2024bags.jpg
 - id: jiang2024brightdreamer
   title: 'BrightDreamer: Generic 3D Gaussian Generative Framework for Fast Text-to-3D
@@ -2585,15 +2454,14 @@
   project_page: https://vlislab22.github.io/BrightDreamer/
   paper: https://arxiv.org/pdf/2403.11273
   code: https://github.com/lutao2021/BrightDreamer
-  video: null
+  video: https://vlislab22.github.io/BrightDreamer/videos/gui_demo.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/jiang2024brightdreamer.jpg
 - id: he2024gvgen
   title: 'GVGEN: Text-to-3D Generation with Volumetric Representation'
@@ -2625,11 +2493,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/he2024gvgen.jpg
 - id: kim2024synctweedies
   title: 'SyncTweedies: A General Generative Framework Based on Synchronized Diffusions'
@@ -2649,15 +2515,14 @@
     methods.'
   project_page: https://synctweedies.github.io/
   paper: https://arxiv.org/pdf/2403.14370
-  code: null
+  code: https://github.com/KAIST-Visual-AI-Group/SyncTweedies
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/kim2024synctweedies.jpg
 - id: zeng2024stag4d
   title: 'STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians'
@@ -2692,12 +2557,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zeng2024stag4d.jpg
 - id: xu2024comp4d
   title: 'Comp4D: LLM-Guided Compositional 4D Scene Generation'
@@ -2726,12 +2589,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/xu2024comp4d.jpg
 - id: lin2024dreampolisher
   title: 'DreamPolisher: Towards High-Quality Text-to-3D Generation via Geometric
@@ -2754,15 +2615,14 @@
   project_page: https://yuanze-lin.me/DreamPolisher_page/
   paper: https://arxiv.org/pdf/2403.17237
   code: https://github.com/yuanze-lin/DreamPolisher
-  video: null
+  video: https://youtu.be/YJkFMIV2OyQ
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/lin2024dreampolisher.jpg
 - id: wu2024sc4d
   title: 'SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer'
@@ -2790,12 +2650,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/wu2024sc4d.jpg
 - id: yang2024hash3d
   title: 'Hash3D: Training-free Acceleration for 3D Generation'
@@ -2824,11 +2682,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Acceleration
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/yang2024hash3d.jpg
 - id: huang2024zeroshot
   title: Zero-shot Point Cloud Completion Via 2D Priors
@@ -2853,8 +2710,7 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Year 2024
+  - Point Cloud
   thumbnail: assets/thumbnails/huang2024zeroshot.jpg
 - id: zhou2024dreamscene360
   title: 'DreamScene360: Unconstrained Text-to-3D Scene Generation with Panoramic
@@ -2885,12 +2741,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhou2024dreamscene360.jpg
 - id: shriram2024realmdreamer
   title: 'RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth
@@ -2917,9 +2771,7 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/shriram2024realmdreamer.jpg
 - id: zhang2024gaussiancube
   title: 'GaussianCube: A Structured and Explicit Radiance Representation for 3D Generative
@@ -2949,15 +2801,14 @@
   project_page: https://gaussiancube.github.io/
   paper: https://arxiv.org/pdf/2403.19655.pdf
   code: https://github.com/GaussianCube/GaussianCube
-  video: null
+  video: https://youtu.be/3uo4Oud4cxI
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhang2024gaussiancube.jpg
 - id: yu20244real
   title: '4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models'
@@ -2987,9 +2838,7 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/yu20244real.jpg
 - id: chen2023textto3d
   title: Text-to-3D using Gaussian Splatting
@@ -3018,12 +2867,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/chen2023textto3d.jpg
 - id: tang2023dreamgaussian
   title: 'DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation'
@@ -3052,12 +2899,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/tang2023dreamgaussian.jpg
 - id: yi12023gaussiandreamer
   title: 'GaussianDreamer: Fast Generation from Text to 3D Gaussian Splatting with
@@ -3085,11 +2930,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/yi12023gaussiandreamer.jpg
 - id: li2023gaussiandiffusion
   title: 'GaussianDiffusion: 3D Gaussian Splatting for Denoising Diffusion Probabilistic
@@ -3125,8 +2968,6 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Year 2023
   thumbnail: assets/thumbnails/li2023gaussiandiffusion.jpg
 - id: liang2023luciddreamer
   title: 'LucidDreamer: Towards High-Fidelity Text-to-3D Generation via Interval Score
@@ -3153,10 +2994,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Year 2023
   thumbnail: assets/thumbnails/liang2023luciddreamer.jpg
 - id: chung2023luciddreamer
   title: 'LucidDreamer: Domain-free Generation of 3D Gaussian Splatting Scenes'
@@ -3181,16 +3020,15 @@
     methods, with no constraint on domain of the target scene.'
   project_page: https://luciddreamer-cvlab.github.io/
   paper: https://arxiv.org/pdf/2311.13384.pdf
-  code: https://github.com/anonymous-luciddreamer/LucidDreamer
+  code: https://github.com/luciddreamer-cvlab/LucidDreamer?tab=readme-ov-file
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
+  - World Generation
   thumbnail: assets/thumbnails/chung2023luciddreamer.jpg
 - id: liu2023humangaussian
   title: 'HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting'
@@ -3221,12 +3059,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Avatar
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/liu2023humangaussian.jpg
 - id: vilesov2023cg3d
   title: 'CG3D: Compositional Generation for Text-to-3D'
@@ -3254,10 +3091,8 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/vilesov2023cg3d.jpg
 - id: yang2023learn
   title: Learn to Optimize Denoising Scores for 3D Generation - A Unified and Improved
@@ -3288,11 +3123,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/yang2023learn.jpg
 - id: blattmann2023align
   title: 'Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed
@@ -3330,9 +3163,7 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/blattmann2023align.jpg
 - id: ren2023dreamgaussian4d
   title: 'DreamGaussian4D: Generative 4D Gaussian Splatting'
@@ -3355,11 +3186,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/ren2023dreamgaussian4d.jpg
 - id: yin20234dgen
   title: '4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency'
@@ -3391,12 +3220,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/yin20234dgen.jpg
 - id: ouyang2023text2immersion
   title: 'Text2Immersion: Generative Immersive Scene with 3D Gaussian'
@@ -3422,9 +3249,8 @@
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
+  - World Generation
   thumbnail: assets/thumbnails/ouyang2023text2immersion.jpg
 - id: zhang2023repaint123
   title: 'Repaint123: Fast and High-quality One Image to 3D Generation with Progressive
@@ -3448,16 +3274,13 @@
     with multi-view consistency and fine textures in 2 minutes from scratch.
   project_page: https://pku-yuangroup.github.io/repaint123/
   paper: https://arxiv.org/pdf/2312.13271.pdf
-  code: https://github.com/PKU-YuanGroup/repaint123
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
   - Diffusion
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/zhang2023repaint123.jpg
 - id: duan20244d
   title: '4D Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic
@@ -3483,16 +3306,17 @@
     an RTX 4090 GPU. Rigorous evaluations on scenes with diverse motions showcase
     the superior efficiency and effectiveness of 4DGS, which consistently outperforms
     existing methods both quantitatively and qualitatively.
-  project_page: null
+  project_page: https://weify627.github.io/4drotorgs/
   paper: https://arxiv.org/pdf/2402.03307.pdf
-  code: null
-  video: null
+  code: https://github.com/weify627/4D-Rotor-Gaussians
+  video: https://youtu.be/18zPuhQ3sSs
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Year 2024
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/duan20244d.jpg
 - id: gao2024gaussianflow
   title: 'GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation'
@@ -3516,20 +3340,17 @@
     of 4D generation and 4D novel view synthesis.
   project_page: https://zerg-overmind.github.io/GaussianFlow.github.io/
   paper: https://arxiv.org/pdf/2403.12365
-  code: https://github.com/Zerg-Overmind/GaussianFlow
+  code: null
   video: https://www.youtube.com/watch?v=0qRcjTw7-YU
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/gao2024gaussianflow.jpg
 - id: guo2024motionaware
-  title: Motion-aware 3D Gaussian Splatting for Efficient Dynamic Scene Reconstruction
+  title: null
   authors: Zhiyang Guo, Wengang Zhou, Li Li, Min Wang, Houqiang Li
   year: '2024'
   abstract: 3D Gaussian Splatting (3DGS) has become an emerging tool for dynamic scene
@@ -3553,9 +3374,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Year 2024
+  - Dynamic
   thumbnail: assets/thumbnails/guo2024motionaware.jpg
 - id: xiao2024bridging
   title: Bridging 3D Gaussian and Mesh for Freeview Video Rendering
@@ -3588,9 +3407,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Year 2024
+  - Avatar
+  - Dynamic
+  - Meshing
   thumbnail: assets/thumbnails/xiao2024bridging.jpg
 - id: bae2024pergaussian
   title: Per-Gaussian Embedding-Based Deformation for Deformable 3D Gaussian Splatting
@@ -3615,11 +3434,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Code
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/bae2024pergaussian.jpg
 - id: chu2024dreamscene4d
   title: 'DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos'
@@ -3655,11 +3472,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Code
+  - Dynamic
+  - Monocular
+  - Project
   thumbnail: assets/thumbnails/chu2024dreamscene4d.jpg
 - id: lu20243d
   title: 3D Geometry-aware Deformable Gaussian Splatting for Dynamic View Synthesis
@@ -3688,10 +3504,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/lu20243d.jpg
 - id: liu2024modgs
   title: 'MoDGS: Dynamic Gaussian Splatting from Causually-captured Monocular Videos'
@@ -3712,16 +3526,14 @@
     baseline methods by a significant margin.
   project_page: https://modgs.github.io/
   paper: https://arxiv.org/pdf/2406.00434
-  code: https://github.com/MoDGS/MoDGS
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Dynamic
+  - Monocular
+  - Project
   thumbnail: assets/thumbnails/liu2024modgs.jpg
 - id: kim2024optimizing
   title: Optimizing Dynamic NeRF and 3DGS with No Video Synchronization
@@ -3746,9 +3558,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Year 2024
+  - Dynamic
   thumbnail: assets/thumbnails/kim2024optimizing.jpg
 - id: zhu2024motiongs
   title: 'MotionGS: Exploring Explicit Motion Guidance for Deformable 3D Gaussian
@@ -3774,16 +3584,14 @@
     and quantitative results.
   project_page: https://ruijiezhu94.github.io/MotionGS_page
   paper: https://arxiv.org/pdf/2410.07707
-  code: https://github.com/RuijieZhu94/MotionGS
-  video: null
+  code: null
+  video: https://youtu.be/25DgViuuKFI
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhu2024motiongs.jpg
 - id: labe2024dgd
   title: 'DGD: Dynamic 3D Gaussians Distillation'
@@ -3810,12 +3618,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/labe2024dgd.jpg
 - id: lee2024fully
   title: Fully Explicit Dynamic Gaussian Splatting
@@ -3846,11 +3652,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Code
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/lee2024fully.jpg
 - id: zhang2024egogaussian
   title: 'EgoGaussian: Dynamic Scene Understanding from Egocentric Video with 3D Gaussian
@@ -3884,12 +3688,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhang2024egogaussian.jpg
 - id: lu20243dgscd
   title: '3DGS-CD: 3D Gaussian Splatting-based Change Detection for Physical Object
@@ -3914,15 +3716,12 @@
     at https://github.com/520xyxyzq/3DGS-CD.'
   project_page: null
   paper: https://arxiv.org/pdf/2411.03706
-  code: https://github.com/520xyxyzq/3DGS-CD
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Year 2024
+  - Robotics
   thumbnail: assets/thumbnails/lu20243dgscd.jpg
 - id: li2024dynsup
   title: 'DynSUP: Dynamic Gaussian Splatting from An Unposed Image Pair'
@@ -3951,10 +3750,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Dynamic
+  - Poses
+  - Project
   thumbnail: assets/thumbnails/li2024dynsup.jpg
 - id: luiten2023dynamic
   title: 'Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis'
@@ -3981,12 +3779,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/luiten2023dynamic.jpg
 - id: yang2023deformable
   title: Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction
@@ -4015,11 +3811,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Project
   thumbnail: assets/thumbnails/yang2023deformable.jpg
 - id: wu20234d
   title: 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
@@ -4039,15 +3832,14 @@
   project_page: https://guanjunwu.github.io/4dgs/
   paper: https://arxiv.org/pdf/2310.08528.pdf
   code: https://github.com/hustvl/4DGaussians
-  video: null
+  video: https://youtu.be/_wRbq8KnaVg
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/wu20234d.jpg
 - id: yang2023realtime
   title: Real-time Photorealistic Dynamic Scene Representation and Rendering with
@@ -4073,17 +3865,17 @@
     for capturing complex dynamic scene motions. Experiments across various benchmarks,
     including monocular and multi-view scenarios, demonstrate our 4DGS model''s superior
     visual quality and efficiency.'
-  project_page: null
+  project_page: https://fudan-zvg.github.io/4d-gaussian-splatting/
   paper: https://arxiv.org/pdf/2310.10642.pdf
   code: https://github.com/fudan-zvg/4d-gaussian-splatting
-  video: null
+  video: https://youtu.be/3cXC9e4CujM
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/yang2023realtime.jpg
 - id: katsumata2023a
   title: A Compact Dynamic 3D Gaussian Representation for Real-Time Dynamic View Synthesis
@@ -4113,11 +3905,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Compression
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/katsumata2023a.jpg
 - id: kratimenos2023dynmf
   title: 'DynMF: Neural Motion Factorization for Real-time Dynamic View Synthesis
@@ -4146,16 +3937,14 @@
     scenarios.
   project_page: https://agelosk.github.io/dynmf/
   paper: https://arxiv.org/pdf/2312.00112.pdf
-  code: https://github.com/agelosk/dynmf
-  video: null
+  code: null
+  video: https://agelosk.github.io/dynmf/img/presentation.mp4#t=0.8
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/kratimenos2023dynmf.jpg
 - id: shao2023control4d
   title: 'Control4D: Efficient 4D Portrait Editing with Text'
@@ -4181,10 +3970,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Dynamic
+  - Editing
+  - Project
   thumbnail: assets/thumbnails/shao2023control4d.jpg
 - id: huang2023scgs
   title: 'SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes'
@@ -4216,18 +4004,17 @@
   project_page: https://yihua7.github.io/SC-GS-web/
   paper: https://yihua7.github.io/SC-GS-web/materials/SC_GS_Arxiv.pdf
   code: https://github.com/yihua7/SC-GS
-  video: null
+  video: https://www.youtube.com/watch?v=CYQYX_0xi5E
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/huang2023scgs.jpg
 - id: das2023neural
-  title: Neural Parametric Gaussians for Monocular Non-Rigid Object Reconstruction
+  title: null
   authors: Devikalyan Das, Christopher Wewer, Raza Yunus, Eddy Ilg, Jan Eric Lenssen
   year: '2023'
   abstract: 'Reconstructing dynamic objects from monocular videos is a severely underconstrained
@@ -4247,16 +4034,18 @@
     deforming objects, maintaining 3D consistency across novel views. We demonstrate
     that NPGs achieve superior results compared to previous works, especially in challenging
     scenarios with few multi-view cues.'
-  project_page: null
+  project_page: https://geometric-rl.mpi-inf.mpg.de/npg/
   paper: https://arxiv.org/pdf/2312.01196.pdf
-  code: null
-  video: null
+  code: https://github.com/DevikalyanDas/npgs
+  video: https://youtu.be/ModbrI0GORU
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Year 2023
+  - Code
+  - Dynamic
+  - Monocular
+  - Project
+  - Video
   thumbnail: assets/thumbnails/das2023neural.jpg
 - id: lin2023gaussianflow
   title: 'Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle'
@@ -4282,15 +4071,14 @@
     rendering quality.
   project_page: https://nju-3dv.github.io/projects/Gaussian-Flow
   paper: https://arxiv.org/pdf/2310.08528.pdf
-  code: null
+  code: https://github.com/NJU-3DV/Gaussian-Flow
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/lin2023gaussianflow.jpg
 - id: yu2023cogs
   title: 'CoGS: Controllable Gaussian Splatting'
@@ -4317,10 +4105,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/yu2023cogs.jpg
 - id: liang2023gaufre
   title: 'GauFRe: Gaussian Deformation Fields for Real-time Dynamic Novel View Synthesis'
@@ -4347,11 +4133,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/liang2023gaufre.jpg
 - id: li2023spacetime
   title: Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis
@@ -4380,12 +4164,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
+  - Video
   thumbnail: assets/thumbnails/li2023spacetime.jpg
 - id: p2023mdsplatting
   title: 'MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable
@@ -4419,11 +4201,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/p2023mdsplatting.jpg
 - id: shaw2023swings
   title: 'SWinGS: Sliding Windows for Dynamic 3D Gaussian Splatting'
@@ -4457,9 +4237,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Paper
-  - Year 2023
+  - Dynamic
   thumbnail: assets/thumbnails/shaw2023swings.jpg
 - id: sun20233dgstream
   title: '3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of
@@ -4488,11 +4266,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Dynamics and Deformation
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Code
+  - Dynamic
+  - Project
   thumbnail: assets/thumbnails/sun20233dgstream.jpg
 - id: c2024contrastive
   title: 'Contrastive Gaussian Clustering: Weakly Supervised 3D Scene Segmentation'
@@ -4520,9 +4296,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Paper
-  - Year 2024
+  - Segmentation
   thumbnail: assets/thumbnails/c2024contrastive.jpg
 - id: dou2024cosseggaussians
   title: 'CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians'
@@ -4552,16 +4326,13 @@
     to NeRF-based segmentation.'
   project_page: https://david-dou.github.io/CoSSegGaussians/
   paper: https://arxiv.org/pdf/2401.05925.pdf
-  code: https://david-dou.github.io/CoSSegGaussians/
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/dou2024cosseggaussians.jpg
 - id: zhuang2024tipeditor
   title: 'TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts'
@@ -4586,15 +4357,15 @@
     quality, and the alignment to the prompts, qualitatively and quantitatively.
   project_page: https://zjy526223908.github.io/TIP-Editor/
   paper: https://arxiv.org/pdf/2401.14828.pdf
-  code: null
-  video: null
+  code: https://github.com/zjy526223908/TIP-Editor
+  video: https://zjy526223908.github.io/TIP-Editor/static/videos/TIP_editor_video_short.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhuang2024tipeditor.jpg
 - id: hu2024segment
   title: Segment Anything in 3D Gaussians
@@ -4622,14 +4393,13 @@
     detection tasks.
   project_page: null
   paper: https://arxiv.org/pdf/2401.17857.pdf
-  code: null
+  code: https://github.com/XuHu0529/SAGS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Paper
-  - Year 2024
+  - Code
+  - Segmentation
   thumbnail: assets/thumbnails/hu2024segment.jpg
 - id: palandra2024gsedit
   title: 'GSEdit: Efficient Text-Guided Editing of 3D Objects via Gaussian Splatting'
@@ -4658,8 +4428,6 @@
   thumbnail_video: false
   tags:
   - Editing
-  - Has Paper
-  - Year 2024
   thumbnail: assets/thumbnails/palandra2024gsedit.jpg
 - id: wu2024gaussctrl
   title: 'GaussCtrl: Multi-View Consistent Text-Driven 3D Gaussian Splatting Editing'
@@ -4680,16 +4448,17 @@
     views through self and cross-view attention between images'' latent representations.
     Experiments demonstrate that our method achieves faster editing and better visual
     results than previous state-of-the-art methods.'
-  project_page: null
+  project_page: https://gaussctrl.active.vision/
   paper: https://arxiv.org/pdf/2403.08733.pdf
-  code: null
-  video: null
+  code: https://github.com/ActiveVisionLab/gaussctrl
+  video: https://gaussctrl.active.vision/assets/teaser_vid.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Paper
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/wu2024gaussctrl.jpg
 - id: wang2024viewconsistent
   title: View-Consistent 3D Editing with Gaussian Splatting
@@ -4709,7 +4478,7 @@
     inconsistencies in edited images. By incorporating these consistency modules into
     an iterative pattern, VcEdit proficiently resolves the issue of multi-view inconsistency,
     facilitating high-quality 3DGS editing across a diverse range of scenes.'
-  project_page: null
+  project_page: https://vcedit.github.io/
   paper: https://arxiv.org/pdf/2403.11868.pdf
   code: null
   video: null
@@ -4717,8 +4486,7 @@
   thumbnail_video: false
   tags:
   - Editing
-  - Has Paper
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/wang2024viewconsistent.jpg
 - id: guédon2024gaussian
   title: 'Gaussian Frosting: Editable Complex Radiance Fields with Real-Time Rendering'
@@ -4747,12 +4515,12 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
+  - Dynamic
   - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Meshing
+  - Project
+  - Video
   thumbnail: assets/thumbnails/guédon2024gaussian.jpg
 - id: guo2024semantic
   title: 'Semantic Gaussians: Open-Vocabulary Scene Understanding with 3D Gaussian
@@ -4776,15 +4544,15 @@
     its versatility and effectiveness on supporting diverse downstream tasks.'
   project_page: https://semantic-gaussians.github.io/
   paper: https://arxiv.org/pdf/2403.15624
-  code: null
+  code: https://github.com/sharinka0715/semantic-gaussians
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Code
+  - Language Embedding
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/guo2024semantic.jpg
 - id: gu2024egolifter
   title: 'EgoLifter: Open-world 3D Segmentation for Egocentric Perception'
@@ -4808,15 +4576,15 @@
     method for 3D egocentric perception at scale.
   project_page: https://egolifter.github.io/
   paper: https://arxiv.org/pdf/2403.18118.pdf
-  code: null
-  video: null
+  code: https://github.com/facebookresearch/egolifter
+  video: https://www.youtube.com/watch?v=dWuZyeiOXyM&feature=youtu.be
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Code
+  - Project
+  - Segmentation
+  - Video
   thumbnail: assets/thumbnails/gu2024egolifter.jpg
 - id: liu2024infusion
   title: 'InFusion: Inpainting 3D Gaussians via Learning Depth Completion from Diffusion
@@ -4846,11 +4614,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Inpainting
+  - Project
   thumbnail: assets/thumbnails/liu2024infusion.jpg
 - id: lyu2024gaga
   title: 'Gaga: Group Any Gaussians via 3D-aware Memory Bank'
@@ -4871,16 +4638,15 @@
     such as scene understanding and manipulation.
   project_page: https://www.gaga.gallery/
   paper: https://arxiv.org/pdf/2404.07977.pdf
-  code: https://github.com/weijielyu/Gaga
-  video: null
+  code: null
+  video: https://www.youtube.com/watch?v=rqs5BuVFOok
   thumbnail_image: false
   thumbnail_video: false
   tags:
   - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Segmentation
+  - Video
   thumbnail: assets/thumbnails/lyu2024gaga.jpg
 - id: jaganathan2024iceg
   title: 'ICE-G: Image Conditional Editing of 3D Gaussian Splats'
@@ -4938,11 +4704,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Code
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/joseph2024gradientdriven.jpg
 - id: ji2024segment
   title: Segment Any 4D Gaussians
@@ -4964,16 +4728,13 @@
     masks. More demos are available at: https://jsxzs.github.io/sa4d/.'
   project_page: https://jsxzs.github.io/sa4d/
   paper: https://arxiv.org/pdf/2407.04504
-  code: https://github.com/jsxzs/SA4D
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/ji2024segment.jpg
 - id: li2024sadg
   title: 'SADG: Segment Any Dynamic Gaussians Without Object Trackers'
@@ -5000,16 +4761,15 @@
     tasks.
   project_page: https://yunjinli.github.io/project-sadg/
   paper: https://arxiv.org/pdf/2411.19290
-  code: https://github.com/yunjinli/SADG-SegmentAnyDynamicGaussian
-  video: null
+  code: null
+  video: https://yunjinli.github.io/project-sadg/static/videos/split-cookie-2x4x.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2024
+  - Dynamic
+  - Project
+  - Segmentation
+  - Video
   thumbnail: assets/thumbnails/li2024sadg.jpg
 - id: chen2023gaussianeditor
   title: 'GaussianEditor: Swift and Controllable 3D Editing with Gaussian Splatting'
@@ -5039,12 +4799,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/chen2023gaussianeditor.jpg
 - id: fang2023gaussianeditor
   title: 'GaussianEditor: Editing 3D Gaussians Delicately with Text Instructions'
@@ -5072,10 +4830,8 @@
   thumbnail_video: false
   tags:
   - Editing
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Project
+  - Video
   thumbnail: assets/thumbnails/fang2023gaussianeditor.jpg
 - id: huang2023pointn
   title: 'Point''n Move: Interactive Scene Object Manipulation on Gaussian Splatting
@@ -5102,8 +4858,6 @@
   thumbnail_video: false
   tags:
   - Editing
-  - Has Paper
-  - Year 2023
   thumbnail: assets/thumbnails/huang2023pointn.jpg
 - id: ye2023gaussian
   title: 'Gaussian Grouping: Segment and Edit Anything in 3D Scenes'
@@ -5124,17 +4878,17 @@
     efficiency. Based on Gaussian Grouping, we further propose a local Gaussian Editing
     scheme, which shows efficacy in versatile scene editing applications, including
     3D object removal, inpainting, colorization and scene recomposition.
-  project_page: null
+  project_page: https://ymq2017.github.io/gaussian-grouping/
   paper: https://arxiv.org/pdf/2312.00732.pdf
   code: https://github.com/lkeab/gaussian-grouping
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Code
-  - Has Paper
-  - Year 2023
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/ye2023gaussian.jpg
 - id: cen2023segment
   title: Segment Any 3D Gaussians
@@ -5163,11 +4917,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Year 2023
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/cen2023segment.jpg
 - id: zhou2023feature
   title: 'Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature
@@ -5205,12 +4958,13 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
+  - Code
   - Editing
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2023
+  - Inpainting
+  - Language Embedding
+  - Project
+  - Segmentation
+  - Video
   thumbnail: assets/thumbnails/zhou2023feature.jpg
 - id: lan20232dguided
   title: 2D-Guided 3D Gaussian Segmentation
@@ -5237,9 +4991,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Editing
-  - Has Paper
-  - Year 2023
+  - Segmentation
   thumbnail: assets/thumbnails/lan20232dguided.jpg
 - id: yu2024languageembedded
   title: 'Language-Embedded Gaussian Splats (LEGS): Incrementally Building Room-Scale
@@ -5262,15 +5014,16 @@
     and long-tail object queries with up to 66% accuracy.'
   project_page: https://berkeleyautomation.github.io/LEGS/
   paper: https://arxiv.org/pdf/2409.18108
-  code: null
+  code: https://github.com/BerkeleyAutomation/L3GS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Code
   - Language Embedding
-  - Year 2024
+  - Project
+  - Robotics
+  - Segmentation
   thumbnail: assets/thumbnails/yu2024languageembedded.jpg
 - id: shi2024language
   title: Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding
@@ -5299,55 +5052,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Language Embedding
-  - Year 2024
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/shi2024language.jpg
-- id: zhou2024feature
-  title: 'Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature
-    Fields'
-  authors: Shijie Zhou, Haoran Chang, Sicheng Jiang, Zhiwen Fan, Zehao Zhu, Dejia
-    Xu, Pradyumna Chari, Suya You, Zhangyang Wang, Achuta Kadambi
-  year: '2024'
-  abstract: '3D scene representations have gained immense popularity in recent years.
-    Methods that use Neural Radiance fields are versatile for traditional tasks such
-    as novel view synthesis. In recent times, some work has emerged that aims to extend
-    the functionality of NeRF beyond view synthesis, for semantically aware tasks
-    such as editing and segmentation using 3D feature field distillation from 2D foundation
-    models. However, these methods have two major limitations: (a) they are limited
-    by the rendering speed of NeRF pipelines, and (b) implicitly represented feature
-    fields suffer from continuity artifacts reducing feature quality. Recently, 3D
-    Gaussian Splatting has shown state-of-the-art performance on real-time radiance
-    field rendering. In this work, we go one step further: in addition to radiance
-    field rendering, we enable 3D Gaussian splatting on arbitrary-dimension semantic
-    features via 2D foundation model distillation. This translation is not straightforward:
-    naively incorporating feature fields in the 3DGS framework encounters significant
-    challenges, notably the disparities in spatial resolution and channel consistency
-    between RGB images and feature maps. We propose architectural and training changes
-    to efficiently avert this problem. Our proposed method is general, and our experiments
-    showcase novel view semantic segmentation, language-guided editing and segment
-    anything through learning feature fields from state-of-the-art 2D foundation models
-    such as SAM and CLIP-LSeg. Across experiments, our distillation method is able
-    to provide comparable or better results, while being significantly faster to both
-    train and render. Additionally, to the best of our knowledge, we are the first
-    method to enable point and bounding-box prompting for radiance field manipulation,
-    by leveraging the SAM model.'
-  project_page: https://feature-3dgs.github.io/
-  paper: https://arxiv.org/pdf/2312.03203.pdf
-  code: https://github.com/ShijieZhou-UCLA/feature-3dgs
-  video: https://www.youtube.com/watch?v=h4zmQsCV_Qw
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Language Embedding
-  - Year 2024
-  thumbnail: assets/thumbnails/zhou2024feature.jpg
 - id: qin2024langsplat
   title: 'LangSplat: 3D Language Gaussian Splatting'
   authors: Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, Hanspeter Pfister
@@ -5380,12 +5089,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
   - Language Embedding
-  - Year 2024
+  - Project
+  - Segmentation
+  - Video
   thumbnail: assets/thumbnails/qin2024langsplat.jpg
 - id: liu2024splatraj
   title: 'SplaTraj: Camera Trajectory Generation with Semantic Gaussian Splatting'
@@ -5414,10 +5122,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Video
   - Language Embedding
-  - Year 2024
+  - Rendering
+  - Video
   thumbnail: assets/thumbnails/liu2024splatraj.jpg
 - id: zuo2024fmgs
   title: 'FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene
@@ -5441,16 +5148,17 @@
     851× faster for inference. This research explores the intersection of vision,
     language, and 3D scene representation, paving the way for enhanced scene understanding
     in uncontrolled real-world environments.
-  project_page: null
+  project_page: https://xingxingzuo.github.io/fmgs/
   paper: https://arxiv.org/pdf/2401.01970.pdf
-  code: null
+  code: https://github.com/google-research/foundation-model-embedded-3dgs
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
   - Language Embedding
-  - Year 2024
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/zuo2024fmgs.jpg
 - id: lee2024rethinking
   title: Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
@@ -5475,11 +5183,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Language Embedding
-  - Year 2024
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/lee2024rethinking.jpg
 - id: joanna2024occams
   title: 'Occam''s LGS: A Simple Approach for Language Gaussian Splatting'
@@ -5508,16 +5215,15 @@
     of our contributions within the context of the current literature.'
   project_page: https://insait-institute.github.io/OccamLGS/
   paper: https://arxiv.org/pdf/2412.01807
-  code: https://github.com/insait-institute/OccamLGS
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Acceleration
   - Language Embedding
-  - Year 2024
+  - Project
+  - Segmentation
   thumbnail: assets/thumbnails/joanna2024occams.jpg
 - id: feng2024gaussian
   title: 'Gaussian Splashing: Dynamic Fluid Synthesis with Gaussian Splatting'
@@ -5544,11 +5250,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Dynamic
+  - Physics
+  - Project
+  - Rendering
+  - Video
   thumbnail: assets/thumbnails/feng2024gaussian.jpg
 - id: waczyńska2024games
   title: 'GaMeS: Mesh-Based Adapting and Modification of Gaussian Splatting'
@@ -5579,10 +5285,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Dynamic
+  - Meshing
   thumbnail: assets/thumbnails/waczyńska2024games.jpg
 - id: gao2024meshbased
   title: Mesh-based Gaussian Splatting for Real-time Large-scale Deformation
@@ -5620,9 +5325,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Dynamic
+  - Meshing
   thumbnail: assets/thumbnails/gao2024meshbased.jpg
 - id: zhong2024reconstruction
   title: Reconstruction and Simulation of Elastic Objects with Spring-Mass 3D Gaussians
@@ -5649,11 +5353,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Dynamic
+  - Physics
+  - Project
   thumbnail: assets/thumbnails/zhong2024reconstruction.jpg
 - id: xu2024texturegs
   title: 'Texture-GS: Disentangling the Geometry and Texture for 3D Gaussian Splatting
@@ -5678,15 +5381,15 @@
   project_page: https://slothfulxtx.github.io/TexGS/
   paper: https://arxiv.org/pdf/2403.10050
   code: https://github.com/slothfulxtx/Texture-GS
-  video: null
+  video: https://www.youtube.com/watch?v=mn_vi4a_fu4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Editing
+  - Project
+  - Texturing
+  - Video
   thumbnail: assets/thumbnails/xu2024texturegs.jpg
 - id: turkulainen2024dnsplatter
   title: 'DN-Splatter: Depth and Normal Priors for Gaussian Splatting and Meshing'
@@ -5713,11 +5416,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/turkulainen2024dnsplatter.jpg
 - id: huang20242d
   title: 2D Gaussian Splatting for Geometrically Accurate Radiance Fields
@@ -5744,12 +5445,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Mesh Extraction and Physics
-  - Year 2024
+  - 2DGS
+  - Code
+  - Meshing
+  - Project
+  - Video
   thumbnail: assets/thumbnails/huang20242d.jpg
 - id: qiu2024feature
   title: 'Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing'
@@ -5772,15 +5472,17 @@
   project_page: https://feature-splatting.github.io/
   paper: https://arxiv.org/pdf/2404.01223
   code: https://github.com/vuer-ai/feature_splatting
-  video: null
+  video: https://feature-splatting.github.io/resources/teaser_overview.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Editing
+  - Language Embedding
+  - Physics
+  - Project
+  - Segmentation
+  - Video
   thumbnail: assets/thumbnails/qiu2024feature.jpg
 - id: wolf2024gs2mesh
   title: 'GS2Mesh: Surface Reconstruction from Gaussian Splatting via Novel Stereo
@@ -5809,20 +5511,20 @@
     Temples and DTU benchmarks, achieving state-of-the-art results.
   project_page: https://gs2mesh.github.io//
   paper: https://arxiv.org/pdf/2404.01810
-  code: https://github.com/yanivw12/gs2mesh/tree/main
-  video: null
+  code: https://github.com/yanivw12/gs2mesh
+  video: https://youtu.be/cjtmLDD8YZk
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - 2DGS
+  - Code
+  - Meshing
+  - Project
+  - Stereo
+  - Video
   thumbnail: assets/thumbnails/wolf2024gs2mesh.jpg
 - id: zhang2024gs2mesh
-  title: 'GS2Mesh: Surface Reconstruction from Gaussian Splatting via Novel Stereo
-    Views'
+  title: ' RaDe-GS: Rasterizing Depth in Gaussian Splatting '
   authors: Baowen Zhang, Chuan Fang, Rakesh Shrestha, Yixun Liang, Xiaoxiao Long,
     Ping Tan
   year: '2024'
@@ -5844,15 +5546,14 @@
     Gaussian Splatting-based methods.
   project_page: https://baowenz.github.io/radegs/
   paper: https://arxiv.org/pdf/2406.01467
-  code: null
+  code: https://github.com/BaowenZ/RaDe-GS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/zhang2024gs2mesh.jpg
 - id: fan2024trim
   title: Trim 3D Gaussian Splatting for Accurate Geometry Representation
@@ -5879,11 +5580,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - 2DGS
+  - Code
+  - Densification
+  - Project
   thumbnail: assets/thumbnails/fan2024trim.jpg
 - id: hyung2024effective
   title: Effective Rank Analysis and Regularization for Enhanced 3D Gaussian Splatting
@@ -5911,10 +5611,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Densification
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/hyung2024effective.jpg
 - id: liu2024citygaussianv2
   title: 'CityGaussianV2: Efficient and Geometrically Accurate Reconstruction for
@@ -5944,11 +5643,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Large-Scale
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/liu2024citygaussianv2.jpg
 - id: longhini2024clothsplatting
   title: 'Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision'
@@ -5974,11 +5672,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Meshing
+  - Project
+  - Rendering
   thumbnail: assets/thumbnails/longhini2024clothsplatting.jpg
 - id: blark2024splatsdf
   title: 'SplatSDF: Boosting Neural Implicit SDF via Gaussian Splatting Fusion'
@@ -6006,16 +5703,13 @@
     and photometric evaluation by the time of submission.
   project_page: https://blarklee.github.io/splatsdf/
   paper: https://arxiv.org/pdf/2411.15468.pdf
-  code: https://github.com/BlarkLee/SplatSDF_official
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/blark2024splatsdf.jpg
 - id: ren2024agsmesh
   title: 'AGS-Mesh: Adaptive Gaussian Splatting and Meshing with Geometric Priors
@@ -6048,11 +5742,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Code
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/ren2024agsmesh.jpg
 - id: wang2024gaussurf
   title: 'GausSurf: Geometry-Guided 3D Gaussian Splatting for Surface Reconstruction'
@@ -6078,16 +5770,13 @@
     and computation time.'
   project_page: https://jiepengwang.github.io/GausSurf/
   paper: https://arxiv.org/pdf/2411.19454
-  code: https://github.com/jiepengwang/GausSurf
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Mesh Extraction and Physics
-  - Year 2024
+  - Meshing
+  - Project
   thumbnail: assets/thumbnails/wang2024gaussurf.jpg
 - id: xie2023physgaussian
   title: 'PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics'
@@ -6111,16 +5800,14 @@
   project_page: https://xpandora.github.io/PhysGaussian/
   paper: https://arxiv.org/pdf/2311.12198.pdf
   code: https://github.com/XPandora/PhysGaussian
-  video: https://drive.google.com/file/d/1eh7vxRxer7gfvPhs8jDE56oRjayBc9oe/view
+  video: https://www.youtube.com/watch?v=V96GfcMUH2Q
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Mesh Extraction and Physics
-  - Year 2023
+  - Code
+  - Physics
+  - Project
+  - Video
   thumbnail: assets/thumbnails/xie2023physgaussian.jpg
 - id: guédon2023sugar
   title: 'SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction
@@ -6153,12 +5840,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Mesh Extraction and Physics
-  - Year 2023
+  - Code
+  - Meshing
+  - Project
+  - Video
   thumbnail: assets/thumbnails/guédon2023sugar.jpg
 - id: chen2023neusg
   title: 'NeuSG: Neural Implicit Surface Reconstruction with 3D Gaussian Splatting
@@ -6191,78 +5876,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Mesh Extraction and Physics
-  - Year 2023
+  - Meshing
   thumbnail: assets/thumbnails/chen2023neusg.jpg
-- id: minh2024characterizing
-  title: Characterizing Satellite Geometry via Accelerated 3D Gaussian Splatting
-  authors: Van Minh Nguyen, Emma Sandidge, Trupti Mahendrakar, Ryan T. White
-  year: '2024'
-  abstract: The accelerating deployment of spacecraft in orbit have generated interest
-    in on-orbit servicing (OOS), inspection of spacecraft, and active debris removal
-    (ADR). Such missions require precise rendezvous and proximity operations in the
-    vicinity of non-cooperative, possible unknown, resident space objects. Safety
-    concerns with manned missions and lag times with ground-based control necessitate
-    complete autonomy. This requires robust characterization of the target's geometry.
-    In this article, we present an approach for mapping geometries of satellites on
-    orbit based on 3D Gaussian Splatting that can run on computing resources available
-    on current spaceflight hardware. We demonstrate model training and 3D rendering
-    performance on a hardware-in-the-loop satellite mock-up under several realistic
-    lighting and motion conditions. Our model is shown to be capable of training on-board
-    and rendering higher quality novel views of an unknown satellite nearly 2 orders
-    of magnitude faster than previous NeRF-based algorithms. Such on-board capabilities
-    are critical to enable downstream machine intelligence tasks necessary for autonomous
-    guidance, navigation, and control tasks.
-  project_page: null
-  paper: https://arxiv.org/pdf/2401.02588.pdf
-  code: null
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Paper
-  - Misc
-  - Year 2024
-  thumbnail: assets/thumbnails/minh2024characterizing.jpg
-- id: franke2024trips
-  title: 'TRIPS: Trilinear Point Splatting for Real-Time Radiance Field Rendering'
-  authors: Linus Franke, Darius Rückert, Laura Fink, Marc Stamminger
-  year: '2024'
-  abstract: Point-based radiance field rendering has demonstrated impressive results
-    for novel view synthesis, offering a compelling blend of rendering quality and
-    computational efficiency. However, also latest approaches in this domain are not
-    without their shortcomings. 3D Gaussian Splatting [Kerbl and Kopanas et al. 2023]
-    struggles when tasked with rendering highly detailed scenes, due to blurring and
-    cloudy artifacts. On the other hand, ADOP [Rückert et al. 2022] can accommodate
-    crisper images, but the neural reconstruction network decreases performance, it
-    grapples with temporal instability and it is unable to effectively address large
-    gaps in the point cloud. In this paper, we present TRIPS (Trilinear Point Splatting),
-    an approach that combines ideas from both Gaussian Splatting and ADOP. The fundamental
-    concept behind our novel technique involves rasterizing points into a screen-space
-    image pyramid, with the selection of the pyramid layer determined by the projected
-    point size. This approach allows rendering arbitrarily large points using a single
-    trilinear write. A lightweight neural network is then used to reconstruct a hole-free
-    image including detail beyond splat resolution. Importantly, our render pipeline
-    is entirely differentiable, allowing for automatic optimization of both point
-    sizes and positions. Our evaluation demonstrate that TRIPS surpasses existing
-    state-of-the-art methods in terms of rendering quality while maintaining a real-time
-    frame rate of 60 frames per second on readily available hardware. This performance
-    extends to challenging scenarios, such as scenes featuring intricate geometry,
-    expansive landscapes, and auto-exposed footage.
-  project_page: https://lfranke.github.io/trips/
-  paper: https://arxiv.org/pdf/2401.06003.pdf
-  code: https://github.com/lfranke/trips
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Misc
-  - Year 2024
-  thumbnail: assets/thumbnails/franke2024trips.jpg
 - id: zhu2024endogs
   title: 'EndoGS: Deformable Endoscopic Tissues Reconstruction with Gaussian Splatting'
   authors: Lingting Zhu, Zhao Wang, Jiahao Cui, Zhenchao Jin, Guying Lin, Lequan Yu
@@ -6288,10 +5903,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Code
+  - Medicine
   thumbnail: assets/thumbnails/zhu2024endogs.jpg
 - id: liu2024endogaussian
   title: 'EndoGaussian: Gaussian Splatting for Deformable Surgical Scene Reconstruction'
@@ -6317,16 +5930,13 @@
     surgery applications.
   project_page: https://yifliu3.github.io/EndoGaussian/
   paper: https://arxiv.org/pdf/2401.12561.pdf
-  code: https://github.com/yifliu3/EndoGaussian
+  code: https://github.com/CUHK-AIM-Group/EndoGaussian
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Misc
-  - Year 2024
+  - Code
+  - Project
   thumbnail: assets/thumbnails/liu2024endogaussian.jpg
 - id: xiong2024gauuscene
   title: 'GauU-Scene: A Scene Reconstruction Benchmark on Large Scale 3D Reconstruction
@@ -6344,16 +5954,16 @@
     analysis across various novel viewpoints. We also juxtapose these results with
     those derived from our accurate point cloud dataset, highlighting significant
     differences that underscore the importance of combine multi-modal information
-  project_page: null
+  project_page: https://saliteta.github.io/CUHKSZ_SMBU/
   paper: https://arxiv.org/pdf/2401.14032.pdf
-  code: null
+  code: https://github.com/saliteta/lidar_SfM_alignment
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Code
+  - Large-Scale
+  - Project
   thumbnail: assets/thumbnails/xiong2024gauuscene.jpg
 - id: hong2024livgaussmap
   title: 'LIV-GaussMap: LiDAR-Inertial-Visual Fusion for Real-time 3D Radiance Field
@@ -6380,15 +5990,13 @@
     domains.
   project_page: null
   paper: https://arxiv.org/pdf/2401.14857.pdf
-  code: https://github.com/sheng00125/LIV-GaussMap
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Large-Scale
+  - Lidar
   thumbnail: assets/thumbnails/hong2024livgaussmap.jpg
 - id: jiang2024vrgs
   title: 'VR-GS: A Physical Dynamics-Aware Interactive Gaussian Splatting System in
@@ -6420,10 +6028,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
-  - Misc
-  - Year 2024
+  - Meshing
+  - Physics
+  - Virtual Reality
   thumbnail: assets/thumbnails/jiang2024vrgs.jpg
 - id: chen2024splatnav
   title: 'Splat-Nav: Safe Real-Time Robot Navigation in Gaussian Splatting Maps'
@@ -6454,9 +6061,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Robotics
   thumbnail: assets/thumbnails/chen2024splatnav.jpg
 - id: cai2024radiative
   title: Radiative Gaussian Splatting for Efficient X-ray Novel View Synthesis
@@ -6485,9 +6090,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Medicine
   thumbnail: assets/thumbnails/cai2024radiative.jpg
 - id: lu2024manigaussian
   title: 'ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation'
@@ -6515,11 +6118,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Misc
-  - Year 2024
+  - Code
+  - Dynamic
+  - Project
+  - Robotics
   thumbnail: assets/thumbnails/lu2024manigaussian.jpg
 - id: zhang2024gaussianimage
   title: 'GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian
@@ -6544,16 +6146,17 @@
     INRs such as COIN and COIN++, while facilitating decoding speeds of approximately
     1000 FPS. Additionally, preliminary proof of concept shows that our codec surpasses
     COIN and COIN++ in performance when using partial bits-back coding.
-  project_page: null
+  project_page: https://xingtongge.github.io/GaussianImage-page/
   paper: https://arxiv.org/pdf/2403.08551
-  code: null
+  code: https://github.com/Xinjie-Q/GaussianImage
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - 2DGS
+  - Code
+  - Compression
+  - Project
   thumbnail: assets/thumbnails/zhang2024gaussianimage.jpg
 - id: zheng2024gaussiangrasper
   title: 'GaussianGrasper: 3D Language Gaussian Splatting for Open-vocabulary Robotic
@@ -6581,17 +6184,18 @@
     we demonstrate that GaussianGrasper enables robots to accurately query and grasp
     objects with language instructions, providing a new solution for language-guided
     manipulation tasks.
-  project_page: null
+  project_page: https://mrsecant.github.io/GaussianGrasper/
   paper: https://arxiv.org/pdf/2403.09637
   code: https://github.com/MrSecant/GaussianGrasper
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Code
+  - Language Embedding
+  - Project
+  - Robotics
+  - Segmentation
   thumbnail: assets/thumbnails/zheng2024gaussiangrasper.jpg
 - id: yu2024densoft
   title: 'Den-SOFT: Dense Space-Oriented Light Field DataseT for 6-DOF Immersive Experience'
@@ -6617,16 +6221,15 @@
     3DGS results into the Unity engine, demonstrating the potential of utilizing our
     datasets to enhance the realism of virtual reality (VR) and create feasible interactive
     spaces.
-  project_page: null
+  project_page: https://metaverse-ai-lab-thu.github.io/Den-SOFT/
   paper: https://arxiv.org/pdf/2403.09973.pdf
   code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Project
+  - Virtual Reality
   thumbnail: assets/thumbnails/yu2024densoft.jpg
 - id: savant2024modeling
   title: Modeling uncertainty for Gaussian Splatting
@@ -6654,9 +6257,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Uncertainty
   thumbnail: assets/thumbnails/savant2024modeling.jpg
 - id: zhang2024togs
   title: 'TOGS: Gaussian Splatting with Temporal Opacity Offset for Real-Time 4D DSA
@@ -6686,14 +6287,13 @@
     maintaining low storage overhead.
   project_page: null
   paper: https://arxiv.org/pdf/2403.19586
-  code: null
+  code: https://github.com/hustvl/TOGS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Code
+  - Medicine
   thumbnail: assets/thumbnails/zhang2024togs.jpg
 - id: nikolakakis2024gaspct
   title: 'GaSpCT: Gaussian Splatting for Novel CT Projection View Synthesis'
@@ -6726,43 +6326,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Medicine
   thumbnail: assets/thumbnails/nikolakakis2024gaspct.jpg
-- id: qu2024zsplat
-  title: 'Z-Splat: Z-Axis Gaussian Splatting for Camera-Sonar Fusion'
-  authors: Ziyuan Qu, Omkar Vengurlekar, Mohamad Qadri, Kevin Zhang, Michael Kaess,
-    Christopher Metzler, Suren Jayasuriya, Adithya Pediredla
-  year: '2024'
-  abstract: Differentiable 3D-Gaussian splatting (GS) is emerging as a prominent technique
-    in computer vision and graphics for reconstructing 3D scenes. GS represents a
-    scene as a set of 3D Gaussians with varying opacities and employs a computationally
-    efficient splatting operation along with analytical derivatives to compute the
-    3D Gaussian parameters given scene images captured from various viewpoints. Unfortunately,
-    capturing surround view (360∘ viewpoint) images is impossible or impractical in
-    many real-world imaging scenarios, including underwater imaging, rooms inside
-    a building, and autonomous navigation. In these restricted baseline imaging scenarios,
-    the GS algorithm suffers from a well-known 'missing cone' problem, which results
-    in poor reconstruction along the depth axis. In this manuscript, we demonstrate
-    that using transient data (from sonars) allows us to address the missing cone
-    problem by sampling high-frequency data along the depth axis. We extend the Gaussian
-    splatting algorithms for two commonly used sonars and propose fusion algorithms
-    that simultaneously utilize RGB camera data and sonar data. Through simulations,
-    emulations, and hardware experiments across various imaging scenarios, we show
-    that the proposed fusion algorithms lead to significantly better novel view synthesis
-    (5 dB improvement in PSNR) and 3D geometry reconstruction (60% lower Chamfer distance).
-  project_page: null
-  paper: https://arxiv.org/pdf/2404.04687
-  code: null
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Paper
-  - Misc
-  - Year 2024
-  thumbnail: assets/thumbnails/qu2024zsplat.jpg
 - id: wu2024dualcamera
   title: Dual-Camera Smooth Zoom on Mobile Phones
   authors: Renlong Wu, Zhilu Zhang, Yu Yang, Wangmeng Zuo
@@ -6782,16 +6347,17 @@
     experiments are conducted with multiple FI methods. The results show that the
     fine-tuned FI models achieve a significant performance improvement over the original
     ones on DCSZ task.
-  project_page: null
+  project_page: https://dualcamerasmoothzoom.github.io/
   paper: https://arxiv.org/pdf/2404.04908
-  code: null
+  code: https://github.com/ZcsrenlongZ/ZoomGS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
   - Misc
-  - Year 2024
+  - Project
+  - Rendering
   thumbnail: assets/thumbnails/wu2024dualcamera.jpg
 - id: bonilla2024gaussian
   title: 'Gaussian Pancakes: Geometrically-Regularized 3D Gaussian Splatting for Realistic
@@ -6816,16 +6382,16 @@
     training times, making it a practical tool for real-time applications. Hence,
     this holds promise for achieving clinical translation for better detection and
     diagnosis of colorectal cancer.
-  project_page: null
+  project_page: https://papers.miccai.org/miccai-2024/349-Paper2298.html
   paper: https://arxiv.org/pdf/2404.06128
-  code: null
+  code: https://github.com/smbonilla/GaussianPancakes
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Misc
-  - Year 2024
+  - Code
+  - Medicine
+  - Project
   thumbnail: assets/thumbnails/bonilla2024gaussian.jpg
 - id: dai2024spikenvs
   title: 'SpikeNVS: Enhancing Novel View Synthesis from Blurry Images via Spike Camera'
@@ -6857,9 +6423,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Deblurring
   - Misc
-  - Year 2024
   thumbnail: assets/thumbnails/dai2024spikenvs.jpg
 - id: kruse2024splatpose
   title: 'SplatPose & Detect: Pose-Agnostic 3D Anomaly Detection'
@@ -6885,10 +6450,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
+  - Code
   - Misc
-  - Year 2024
+  - Poses
   thumbnail: assets/thumbnails/kruse2024splatpose.jpg
 - id: wang2024reinforcement
   title: Reinforcement Learning with Generalizable Gaussian Splatting
@@ -6919,9 +6483,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - Misc
-  - Year 2024
+  - Robotics
   thumbnail: assets/thumbnails/wang2024reinforcement.jpg
 - id: zhang2024darkgs
   title: 'DarkGS: Learning Neural Illumination and 3D Gaussians Relighting for Robotic
@@ -6947,11 +6510,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Video
+  - Code
   - Misc
-  - Year 2024
+  - Robotics
+  - Video
   thumbnail: assets/thumbnails/zhang2024darkgs.jpg
 - id: hyun2024adversarial
   title: Adversarial Generation of Hierarchical Gaussians for 3d Generative Model
@@ -6978,15 +6540,14 @@
     to state-of-the-art 3D consistent GANs with comparable 3D generation capability.
   project_page: https://hse1032.github.io/gsgan
   paper: https://arxiv.org/pdf/2406.02968
-  code: null
+  code: https://github.com/hse1032/GSGAN
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
-  - Misc
-  - Year 2024
+  - Code
+  - GAN
+  - Project
   thumbnail: assets/thumbnails/hyun2024adversarial.jpg
 - id: strong2024next
   title: 'Next Best Sense: Guiding Vision and Touch with FisherRF for 3D Gaussian
@@ -7014,15 +6575,15 @@
   project_page: https://armlabstanford.github.io/next-best-sense
   paper: https://arxiv.org/pdf/2401.16663.pdf
   code: https://github.com/armlabstanford/NextBestSense
-  video: null
+  video: https://www.youtube.com/watch?v=NHgb_16-Plg
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Misc
-  - Year 2024
+  - Project
+  - Robotics
+  - Video
   thumbnail: assets/thumbnails/strong2024next.jpg
 - id: wildersmith2024radiance
   title: Radiance Fields for Robotic Teleoperation
@@ -7053,11 +6614,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Misc
-  - Year 2024
+  - Project
+  - Robotics
   thumbnail: assets/thumbnails/wildersmith2024radiance.jpg
 - id: jiang2023fisherrf
   title: 'FisherRF: Active View Selection and Uncertainty Quantification for Radiance
@@ -7086,11 +6646,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Misc
-  - Year 2023
+  - Project
+  - Uncertainty
   thumbnail: assets/thumbnails/jiang2023fisherrf.jpg
 - id: chen2023periodic
   title: 'Periodic Vibration Gaussian: Dynamic Urban Scene Reconstruction and Real-time
@@ -7121,11 +6680,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Autonomous Driving
+  - Code
   - Misc
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/chen2023periodic.jpg
 - id: pokhariya2023manus
   title: 'MANUS: Markerless Hand-Object Grasp Capture using Articulated 3D Gaussians'
@@ -7147,16 +6705,16 @@
     scenes, 3 subjects, and comprising over 7M frames. In addition to extensive qualitative
     results, we also show that our method outperforms others on a quantitative contact
     evaluation method that uses paint transfer from the object to the hand.
-  project_page: null
+  project_page: https://ivl.cs.brown.edu/research/manus.html
   paper: https://arxiv.org/pdf/2312.02137.pdf
-  code: null
+  code: https://github.com/brown-ivl/manus
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
   - Misc
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/pokhariya2023manus.jpg
 - id: zou2023triplane
   title: 'Triplane Meets Gaussian Splatting: Fast and Generalizable Single-View 3D
@@ -7193,11 +6751,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Misc
-  - Year 2023
+  - Project
+  - Transformer
   thumbnail: assets/thumbnails/zou2023triplane.jpg
 - id: ye2023mathematical
   title: Mathematical Supplement for the gsplat Library
@@ -7216,9 +6773,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - Misc
-  - Year 2023
   thumbnail: assets/thumbnails/ye2023mathematical.jpg
 - id: meyer2023pegasus
   title: 'PEGASUS: Physically Enhanced Gaussian Splatting Simulation System for 6DOF
@@ -7250,11 +6805,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Misc
-  - Year 2023
+  - Project
   thumbnail: assets/thumbnails/meyer2023pegasus.jpg
 - id: durvasula2024distwar
   title: 'DISTWAR: Fast Differentiable Rendering on Raster-based Rendering Pipelines'
@@ -7287,14 +6840,14 @@
     of 2.44x on average (up to 5.7x).'
   project_page: null
   paper: https://arxiv.org/pdf/2401.05345.pdf
-  code: null
+  code: https://github.com/Accelsnow/gaussian-splatting-distwar
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Regularization and Optimization
-  - Year 2024
+  - Acceleration
+  - Code
+  - Rendering
   thumbnail: assets/thumbnails/durvasula2024distwar.jpg
 - id: zhang2024fregs
   title: 'FreGS: 3D Gaussian Splatting with Progressive Frequency Regularization'
@@ -7321,9 +6874,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Regularization and Optimization
-  - Year 2024
+  - Densification
   thumbnail: assets/thumbnails/zhang2024fregs.jpg
 - id: jung2024raings
   title: 'RAIN-GS: Relaxing Accurate Initialization Constraint for 3D Gaussian Splatting'
@@ -7344,16 +6895,15 @@
     largely improving the performance in all settings.
   project_page: https://ku-cvlab.github.io/RAIN-GS/
   paper: https://arxiv.org/pdf/2403.09413
-  code: https://github.com/KU-CVLAB/RAIN-GS
+  code: https://github.com/cvlab-kaist/RAIN-GS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Regularization and Optimization
-  - Year 2024
+  - Code
+  - Densification
+  - Project
+  - Rendering
   thumbnail: assets/thumbnails/jung2024raings.jpg
 - id: feng2024a
   title: A New Split Algorithm for 3D Gaussian Splatting
@@ -7382,9 +6932,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Regularization and Optimization
-  - Year 2024
+  - Densification
   thumbnail: assets/thumbnails/feng2024a.jpg
 - id: rota2024revising
   title: Revising Densification in Gaussian Splatting
@@ -7408,9 +6956,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Regularization and Optimization
-  - Year 2024
+  - Densification
   thumbnail: assets/thumbnails/rota2024revising.jpg
 - id: chung2023depthregularized
   title: Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images
@@ -7435,11 +6981,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Regularization and Optimization
-  - Year 2023
+  - Code
+  - Project
+  - Sparse
   thumbnail: assets/thumbnails/chung2023depthregularized.jpg
 - id: girish2023eagles
   title: 'EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS'
@@ -7468,11 +7012,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Regularization and Optimization
-  - Year 2023
+  - Acceleration
+  - Code
+  - Densification
+  - Project
   thumbnail: assets/thumbnails/girish2023eagles.jpg
 - id: fu2023colmapfree
   title: COLMAP-Free 3D Gaussian Splatting
@@ -7494,16 +7037,15 @@
     view synthesis and camera pose estimation under large motion changes.
   project_page: https://oasisyang.github.io/colmap-free-3dgs/
   paper: https://arxiv.org/pdf/2312.07504.pdf
-  code: null
+  code: https://github.com/NVlabs/CF-3DGS
   video: https://youtu.be/IJtnx4keJvg
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Regularization and Optimization
-  - Year 2023
+  - Code
+  - Poses
+  - Project
+  - Video
   thumbnail: assets/thumbnails/fu2023colmapfree.jpg
 - id: sun2023icomma
   title: 'iComMa: Inverting 3D Gaussians Splatting for Camera Pose Estimation via
@@ -7536,10 +7078,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Regularization and Optimization
-  - Year 2023
+  - Poses
   thumbnail: assets/thumbnails/sun2023icomma.jpg
 - id: bolanos2024gaussian
   title: Gaussian Shadow Casting for Neural Characters
@@ -7563,44 +7102,51 @@
     in novel environments, increasing their applicability.
   project_page: null
   paper: https://arxiv.org/pdf/2401.06116.pdf
-  code: null
+  code: https://github.com/LuisBolanos17/GaussianShadowCasting
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Avatar
+  - Code
+  - Relight
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/bolanos2024gaussian.jpg
 - id: huang2024optimal
-  title: Optimal Projection for 3D Gaussian Splatting
+  title: 'On the Error Analysis of 3D Gaussian Splatting
+
+    and an Optimal Projection Strategy
+
+    '
   authors: Letian Huang, Jiayang Bai, Jie Guo, Yanwen Guo
   year: '2024'
-  abstract: 3D Gaussian Splatting has garnered extensive attention and application
+  abstract: '3D Gaussian Splatting has garnered extensive attention and application
     in real-time neural rendering. Concurrently, concerns have been raised about the
-    limitations of this technology in aspects such as point cloud storage, performance
-    , and robustness in sparse viewpoints , leading to various improvements. However,
-    there has been a notable lack of attention to the projection errors introduced
-    by the local affine approximation inherent in the splatting itself, and the consequential
-    impact of these errors on the quality of photo-realistic rendering. This paper
-    addresses the projection error function of 3D Gaussian Splatting, commencing with
-    the residual error from the first-order Taylor expansion of the projection function
-    ϕ. The analysis establishes a correlation between the error and the Gaussian mean
-    position. Subsequently, leveraging function optimization theory, this paper analyzes
-    the function's minima to provide an optimal projection strategy for Gaussian Splatting
-    referred to Optimal Gaussian Splatting. Experimental validation further confirms
+    limitations of this technology in aspects such as point cloud storage, performance,
+    and robustness in sparse viewpoints, leading to various improvements. However,
+    there has been a notable lack of attention to the fundamental problem of projection
+    errors introduced by the local affine approximation inherent in the splatting
+    itself, and the consequential impact of these errors on the quality of photo-realistic
+    rendering. This paper addresses the projection error function of 3D Gaussian Splatting,
+    commencing with the residual error from the first-order Taylor expansion of the
+    projection function. The analysis establishes a correlation between the error
+    and the Gaussian mean position. Subsequently, leveraging function optimization
+    theory, this paper analyzes the function''s minima to provide an optimal projection
+    strategy for Gaussian Splatting referred to Optimal Gaussian Splatting, which
+    can accommodate a variety of camera models. Experimental validation further confirms
     that this projection methodology reduces artifacts, resulting in a more convincingly
-    realistic rendering.
-  project_page: null
+    realistic rendering. '
+  project_page: https://letianhuang.github.io/op43dgs/
   paper: https://arxiv.org/pdf/2402.00752.pdf
-  code: null
+  code: https://github.com/LetianHuang/op43dgs
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Perspective-correct
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/huang2024optimal.jpg
 - id: huang2024360gs
   title: '360-GS: Layout-guided Panoramic Gaussian Splatting For Indoor Roaming'
@@ -7628,14 +7174,14 @@
     roaming in indoor scenarios.
   project_page: null
   paper: https://arxiv.org/pdf/2402.00763.pdf
-  code: null
+  code: https://github.com/LeoDarcy/360GS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - 360 degree
+  - Code
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/huang2024360gs.jpg
 - id: radl2024stopthepop
   title: 'StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering'
@@ -7669,12 +7215,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Perspective-correct
+  - Project
   - Rendering
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/radl2024stopthepop.jpg
 - id: hamdi2024ges
   title: 'GES: Generalized Exponential Splatting for Efficient Radiance Field Rendering'
@@ -7705,12 +7250,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Project
   - Rendering
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/hamdi2024ges.jpg
 - id: cheng2024gaussianpro
   title: 'GaussianPro: 3D Gaussian Splatting with Progressive Propagation'
@@ -7740,11 +7283,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Rendering
-  - Year 2024
+  - Code
+  - Densification
+  - Project
   thumbnail: assets/thumbnails/cheng2024gaussianpro.jpg
 - id: yang2024specgaussian
   title: 'Spec-Gaussian: Anisotropic View-Dependent Appearance for 3D Gaussian Splatting'
@@ -7767,16 +7308,16 @@
     improved the ability of 3D-GS to model scenes with specular and anisotropic components
     without increasing the number of 3D Gaussians. This improvement extends the applicability
     of 3D GS to handle intricate scenarios with specular and anisotropic surfaces.
-  project_page: null
+  project_page: https://ingra14m.github.io/Spec-Gaussian-website/
   paper: https://arxiv.org/pdf/2402.15870.pdf
-  code: null
+  code: https://github.com/ingra14m/Specular-Gaussians
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/yang2024specgaussian.jpg
 - id: lin2024vastgaussian
   title: 'VastGaussian: Vast 3D Gaussians for Large Scene Reconstruction'
@@ -7804,44 +7345,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Rendering
-  - Year 2024
+  - Large-Scale
   thumbnail: assets/thumbnails/lin2024vastgaussian.jpg
-- id: eric20243d
-  title: 3D Gaussian Model for Animation and Texturing
-  authors: Xiangzhi Eric Wang, Zackary P. T. Sin
-  year: '2024'
-  abstract: 3D Gaussian Splatting has made a marked impact on neural rendering by
-    achieving impressive fidelity and performance. Despite this achievement, however,
-    it is not readily applicable to developing interactive applications. Real-time
-    applications like XR apps and games require functions such as animation, UV-mapping,
-    and model editing simultaneously manipulated through the usage of a 3D model.
-    We propose a modeling that is analogous to typical 3D models, which we call 3D
-    Gaussian Model (3DGM); it provides a manipulatable proxy for novel animation and
-    texture transfer. By binding the 3D Gaussians in texture space and re-projecting
-    them back to world space through implicit shell mapping, we show how our 3D modeling
-    can serve as a valid rendering methodology for interactive applications. It is
-    further noted that recently, 3D mesh reconstruction works have been able to produce
-    high-quality mesh for rendering. Our work, on the other hand, only requires an
-    approximated geometry for rendering an object in high fidelity. Applicationwise,
-    we will show that our proxy-based 3DGM is capable of driving novel animation without
-    animated training data and texture transferring via UV mapping of the 3D Gaussians.
-    We believe the result indicates the potential of our work for enabling interactive
-    applications for 3D Gaussian Splatting.
-  project_page: null
-  paper: https://arxiv.org/pdf/2402.19441.pdf
-  code: null
-  video: null
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Paper
-  - Rendering
-  - Year 2024
-  thumbnail: assets/thumbnails/eric20243d.jpg
 - id: peng2024bags
   title: 'BAGS: Blur Agnostic Gaussian Splatting through Multi-Scale Kernel Modeling'
   authors: Cheng Peng, Yutao Tang, Yifan Zhou, Nengyu Wang, Xijun Liu, Deming Li,
@@ -7865,17 +7370,16 @@
     which often occurs when we apply Structure-from-Motion on blurry images. We demonstrate
     that BAGS achieves photorealistic renderings under various challenging blur conditions
     and imaging geometry, while significantly improving upon existing approaches.
-  project_page: null
+  project_page: https://nwang43jhu.github.io/BAGS/
   paper: https://arxiv.org/pdf/2403.04926.pdf
   code: https://github.com/snldmt/BAGS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Rendering
-  - Year 2024
+  - Code
+  - Deblurring
+  - Project
   thumbnail: assets/thumbnails/peng2024bags.jpg
 - id: liu2024stylegaussian
   title: 'StyleGaussian: Instant 3D Style Transfer with Gaussian Splatting'
@@ -7906,11 +7410,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Rendering
-  - Year 2024
+  - Code
+  - Project
+  - Style Transfer
   thumbnail: assets/thumbnails/liu2024stylegaussian.jpg
 - id: saroha2024gaussian
   title: Gaussian Splatting in Style
@@ -7939,9 +7441,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Rendering
-  - Year 2024
+  - Style Transfer
   thumbnail: assets/thumbnails/saroha2024gaussian.jpg
 - id: zhao2024badgaussians
   title: 'BAD-Gaussians: Bundle Adjusted Deblur Gaussian Splatting'
@@ -7973,11 +7473,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Deblurring
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/zhao2024badgaussians.jpg
 - id: dahmani2024swag
   title: 'SWAG: Splatting in the Wild images with Appearance-conditioned Gaussians'
@@ -8003,9 +7502,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - In the Wild
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/dahmani2024swag.jpg
 - id: li2024geogaussian
   title: 'GeoGaussian: Geometry-aware Gaussian Splatting for Scene Rendering'
@@ -8026,16 +7524,17 @@
     especially in structured regions. Our proposed pipeline achieves state-of-the-art
     performance in novel view synthesis and geometric reconstruction, as evaluated
     qualitatively and quantitatively on public datasets.
-  project_page: null
+  project_page: https://yanyan-li.github.io/project/gs/geogaussian
   paper: https://arxiv.org/pdf/2403.11324.pdf
-  code: null
+  code: https://github.com/yanyan-li/GeoGaussian
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Densification
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/li2024geogaussian.jpg
 - id: liang2024analyticsplatting
   title: 'Analytic-Splatting: Anti-Aliased 3D Gaussian Splatting via Analytic Integration'
@@ -8060,16 +7559,17 @@
     rendering, making Analytic-Splatting sensitive to the changes in pixel footprint
     at different resolutions. Experiments on various datasets validate that our approach
     has better anti-aliasing capability that gives more details and better fidelity.
-  project_page: null
+  project_page: https://lzhnb.github.io/project-pages/analytic-splatting/
   paper: https://arxiv.org/pdf/2403.11056.pdf
-  code: null
+  code: https://github.com/lzhnb/Analytic-Splatting
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Antialiasing
+  - Code
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/liang2024analyticsplatting.jpg
 - id: seiskari2024gaussian
   title: 'Gaussian Splatting on the Move: Blur and Rolling Shutter Compensation for
@@ -8093,15 +7593,15 @@
   project_page: https://spectacularai.github.io/3dgs-deblur/
   paper: https://arxiv.org/pdf/2403.13327.pdf
   code: https://github.com/SpectacularAI/3dgs-deblur
-  video: null
+  video: https://www.youtube.com/watch?v=GwhNerXMLd4&feature=youtu.be
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Deblurring
+  - Project
   - Rendering
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/seiskari2024gaussian.jpg
 - id: niemeyer2024radsplat
   title: 'RadSplat: Radiance Field-Informed Gaussian Splatting for Robust Real-Time
@@ -8134,10 +7634,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Densification
+  - Misc
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/niemeyer2024radsplat.jpg
 - id: fang2024minisplatting
   title: 'Mini-Splatting: Representing Scenes with a Constrained Number of Gaussians'
@@ -8157,14 +7657,14 @@
     works.
   project_page: null
   paper: https://arxiv.org/pdf/2403.14166.pdf
-  code: null
+  code: https://github.com/fatPeter/mini-splatting
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Densification
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/fang2024minisplatting.jpg
 - id: zhang2024pixelgs
   title: 'Pixel-GS: Density Control with Pixel-aware Gradient for 3D Gaussian Splatting'
@@ -8189,16 +7689,17 @@
     both qualitatively and quantitatively demonstrate that our method achieves state-of-the-art
     rendering quality while maintaining real-time rendering speed, on the challenging
     Mip-NeRF 360 and Tanks & Temples datasets.
-  project_page: null
+  project_page: https://pixelgs.github.io/
   paper: https://arxiv.org/pdf/2403.15530.pdf
-  code: null
+  code: https://github.com/zhengzhang01/Pixel-GS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Densification
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/zhang2024pixelgs.jpg
 - id: zhang2024gaussian
   title: 'Gaussian in the Wild: 3D Gaussian Splatting for Unconstrained Image Collections'
@@ -8228,12 +7729,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - In the Wild
+  - Project
   - Rendering
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/zhang2024gaussian.jpg
 - id: yu2024gsdf
   title: 'GSDF: 3DGS Meets SDF for Improved Rendering and Reconstruction'
@@ -8264,11 +7764,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Meshing
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/yu2024gsdf.jpg
 - id: ren2024octreegs
   title: 'Octree-GS: Towards Consistent Real-time Rendering with LOD-Structured 3D
@@ -8296,11 +7795,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Large-Scale
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/ren2024octreegs.jpg
 - id: song2024sags
   title: 'SA-GS: Scale-Adaptive Gaussian Splatting for Training-Free Anti-Aliasing'
@@ -8335,11 +7833,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Antialiasing
+  - Code
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/song2024sags.jpg
 - id: comi2024snapit
   title: 'Snap-it, Tap-it, Splat-it: Tactile-Informed 3D Gaussian Splatting for Reconstructing
@@ -8362,16 +7859,15 @@
     with fewer images than prior methods. We conduct evaluation on objects with glossy
     and reflective surfaces and demonstrate the effectiveness of our approach, offering
     significant improvements in reconstruction quality.
-  project_page: null
+  project_page: https://maxyang27896.github.io/publication/gaussian_splat/
   paper: https://arxiv.org/pdf/2403.20275
   code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/comi2024snapit.jpg
 - id: comi20243dgsr
   title: '3DGSR: Implicit Surface Reconstruction with 3D Gaussian Splatting'
@@ -8401,15 +7897,13 @@
     a more efficient learning process and much better rendering qualities.
   project_page: null
   paper: https://arxiv.org/pdf/2404.00409.pdf
-  code: https://github.com/CVMI-Lab/3DGSR
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
+  - Meshing
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/comi20243dgsr.jpg
 - id: meng2024mirror3dgs
   title: 'Mirror-3DGS: Incorporating Mirror Reflections into 3D Gaussian Splatting'
@@ -8432,16 +7926,15 @@
     scenes, showcase our method's ability to render novel views with enhanced fidelity
     in real-time, surpassing the state-of-the-art Mirror-NeRF specifically within
     the challenging mirror regions.
-  project_page: null
+  project_page: https://mirror-gaussian.github.io/
   paper: https://arxiv.org/pdf/2404.01168.pdf
   code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/meng2024mirror3dgs.jpg
 - id: meng2024omnigs
   title: 'OmniGS: Omnidirectional Gaussian Splatting for Fast Radiance Field Reconstruction
@@ -8464,16 +7957,16 @@
     state-of-the-art reconstruction quality and high rendering speed using omnidirectional
     images. To benefit the research community, the code will be made publicly available
     once the paper is published.
-  project_page: null
+  project_page: https://liquorleaf.github.io/research/OmniGS/
   paper: https://arxiv.org/pdf/2404.03202
   code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - 360 degree
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/meng2024omnigs.jpg
 - id: darmon2024robust
   title: Robust Gaussian Splatting
@@ -8499,9 +7992,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Deblurring
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/darmon2024robust.jpg
 - id: oh2024deblurgs
   title: 'DeblurGS: Gaussian Splatting for Camera Motion Blur'
@@ -8530,9 +8022,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Deblurring
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/oh2024deblurgs.jpg
 - id: zhang2024stylizedgs
   title: 'StylizedGS: Controllable Stylization for 3D Gaussian Splatting'
@@ -8568,9 +8059,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - Rendering
-  - Year 2024
+  - Style Transfer
   thumbnail: assets/thumbnails/zhang2024stylizedgs.jpg
 - id: li2024loopgaussian
   title: 'LoopGaussian: Creating 3D Cinemagraph with Multi-view Images via Eulerian
@@ -8603,11 +8093,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Physics
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/li2024loopgaussian.jpg
 - id: lee2024gscore
   title: 'GSCore: Efficient Radiance Field Rendering via Architectural Support for
@@ -8633,10 +8122,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Video
+  - Acceleration
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/lee2024gscore.jpg
 - id: pryadilshchikov2024t3dgs
   title: 'T-3DGS: Removing Transient Objects for 3D Scene Reconstruction'
@@ -8662,11 +8149,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - Rendering
-  - Year 2024
   thumbnail: assets/thumbnails/pryadilshchikov2024t3dgs.jpg
 - id: xu2024supergaussians
   title: 'SuperGaussians: Enhancing Gaussian Splatting Using Primitives with Spatially
@@ -8688,15 +8173,14 @@
   project_page: https://ruixu.me/html/SuperGaussians/index.html
   paper: https://arxiv.org/pdf/2411.18966
   code: https://github.com/Xrvitd/SuperGaussians
-  video: null
+  video: https://www.youtube.com/watch?v=K0liSjZGnIY&feature=youtu.be
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - Rendering
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/xu2024supergaussians.jpg
 - id: yu2023mipsplatting
   title: Mip-Splatting Alias-free 3D Gaussian Splatting
@@ -8721,11 +8205,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Antialiasing
+  - Code
+  - Project
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/yu2023mipsplatting.jpg
 - id: gao2023relightable
   title: 'Relightable 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition
@@ -8756,11 +8239,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
+  - Ray Tracing
+  - Relight
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/gao2023relightable.jpg
 - id: liang2023gsir
   title: 'GS-IR: 3D Gaussian Splatting for Inverse Rendering'
@@ -8790,11 +8273,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
+  - Relight
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/liang2023gsir.jpg
 - id: yan2023multiscale
   title: Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering
@@ -8821,9 +8303,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Antialiasing
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/yan2023multiscale.jpg
 - id: jiang2023gaussianshader
   title: 'GaussianShader: 3D Gaussian Splatting with Shading Functions for Reflective
@@ -8855,11 +8336,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
+  - Relight
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/jiang2023gaussianshader.jpg
 - id: lu2023scaffoldgs
   title: 'Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering'
@@ -8888,11 +8368,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Densification
+  - Project
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/lu2023scaffoldgs.jpg
 - id: lee2023deblurring
   title: Deblurring 3D Gaussian Splatting
@@ -8925,11 +8404,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Rendering
-  - Year 2023
+  - Code
+  - Deblurring
+  - Project
   thumbnail: assets/thumbnails/lee2023deblurring.jpg
 - id: shi2023gir
   title: 'GIR: 3D Gaussian Inverse Rendering for Relightable Scene Factorization'
@@ -8960,10 +8437,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Project
+  - Relight
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/shi2023gir.jpg
 - id: malarz2023gaussian
   title: Gaussian Splatting with NeRF-based Color and Opacity
@@ -8994,10 +8470,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
+  - Code
   - Rendering
-  - Year 2023
   thumbnail: assets/thumbnails/malarz2023gaussian.jpg
 - id: bai2024progress
   title: 'Progress and Prospects in 3D Generative AI: A Technical Overview including
@@ -9029,9 +8503,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Avatar
+  - Review
   thumbnail: assets/thumbnails/bai2024progress.jpg
 - id: chen2024a
   title: A Survey on 3D Gaussian Splatting
@@ -9066,9 +8539,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
   thumbnail: assets/thumbnails/chen2024a.jpg
 - id: fei20243d
   title: '3D Gaussian as a New Vision Era: A Survey'
@@ -9094,9 +8565,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
   thumbnail: assets/thumbnails/fei20243d.jpg
 - id: zubair2024neural
   title: 'Neural Fields in Robotics: A Survey'
@@ -9129,9 +8598,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
+  - Robotics
   thumbnail: assets/thumbnails/zubair2024neural.jpg
 - id: tosi2024how
   title: 'How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey'
@@ -9156,9 +8624,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
   thumbnail: assets/thumbnails/tosi2024how.jpg
 - id: wu2024recent
   title: Recent Advances in 3D Gaussian Splatting
@@ -9188,9 +8654,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
   thumbnail: assets/thumbnails/wu2024recent.jpg
 - id: dalal2024gaussian
   title: 'Gaussian Splatting: 3D Reconstruction and Novel View Synthesis, a Review'
@@ -9214,9 +8678,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
   thumbnail: assets/thumbnails/dalal2024gaussian.jpg
 - id: qiu2024advancing
   title: 'Advancing Extended Reality with 3D Gaussian Splatting: Innovations and Prospects'
@@ -9243,9 +8705,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Reviews
-  - Year 2024
+  - Review
   thumbnail: assets/thumbnails/qiu2024advancing.jpg
 - id: li2024sgsslam
   title: 'SGS-SLAM: Semantic Gaussian Splatting For Neural Dense SLAM'
@@ -9265,14 +8725,14 @@
     outperforming existing methods meanwhile preserving real-time rendering ability.
   project_page: null
   paper: https://arxiv.org/pdf/2402.03246.pdf
-  code: null
-  video: null
+  code: https://github.com/ShuhongLL/SGS-SLAM
+  video: https://www.youtube.com/watch?v=y83yw1E-oUo
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
   - SLAM
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/li2024sgsslam.jpg
 - id: zhu2024semgaussslam
   title: 'SemGauss-SLAM: Dense Semantic Gaussian Splatting SLAM'
@@ -9300,9 +8760,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/zhu2024semgaussslam.jpg
 - id: deng2024compact
   title: Compact 3D Gaussian Splatting For Dense Visual SLAM
@@ -9387,9 +8845,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/sun2024highfidelity.jpg
 - id: ha2024rgbd
   title: RGBD GS-ICP SLAM
@@ -9412,15 +8868,13 @@
   project_page: null
   paper: https://arxiv.org/pdf/2403.12550.pdf
   code: https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM
-  video: https://youtu.be/e-bHh_uMMxE?si=bU4_Su4J91WQ2MEX
+  video: https://www.youtube.com/watch?v=e-bHh_uMMxE
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Video
+  - Code
   - SLAM
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/ha2024rgbd.jpg
 - id: wang2024endogslam
   title: 'EndoGSLAM: Real-Time Dense Reconstruction and Tracking in Endoscopic Surgeries
@@ -9443,15 +8897,15 @@
   project_page: https://endogslam.loping151.com/
   paper: https://arxiv.org/pdf/2403.15124.pdf
   code: https://github.com/endogslam/EndoGSLAM
-  video: null
+  video: https://loping151.github.io/endogslam/static/video/3_1.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Medicine
+  - Project
   - SLAM
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/wang2024endogslam.jpg
 - id: hu2024cgslam
   title: 'CG-SLAM: Efficient Dense RGB-D SLAM in a Consistent Uncertainty-aware 3D
@@ -9475,16 +8929,14 @@
     code publicly available.
   project_page: https://zju3dv.github.io/cg-slam/
   paper: https://arxiv.org/pdf/2403.16095
-  code: https://github.com/hjr37/CG-SLAM
-  video: null
+  code: null
+  video: https://raw.githubusercontent.com/hjr37/open_access_assets/main/cg-slam/video/cg-slam-show.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Project
   - SLAM
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/hu2024cgslam.jpg
 - id: c2024mm3dgs
   title: 'MM3DGS SLAM: Multi-modal 3D Gaussian Splatting for SLAM Using Vision, Depth,
@@ -9510,15 +8962,15 @@
     dense 3D map.
   project_page: https://vita-group.github.io/MM3DGS-SLAM/
   paper: https://arxiv.org/pdf/2404.00923
-  code: null
-  video: null
+  code: https://github.com/VITA-Group/MM3DGS-SLAM
+  video: https://www.youtube.com/watch?v=drf6UxehChE&feature=youtu.be
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - SLAM
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/c2024mm3dgs.jpg
 - id: lang2024gaussianlic
   title: 'Gaussian-LIC: Photo-realistic LiDAR-Inertial-Camera SLAM with 3D Gaussian
@@ -9535,16 +8987,15 @@
     adaptively control its density, ensuring high-quality mapping with real-time capability.
     Experiments conducted in diverse scenarios demonstrate the superior performance
     of our method compared to existing radiance-field-based SLAM systems.
-  project_page: null
+  project_page: https://xingxingzuo.github.io/gaussian_lic/
   paper: https://arxiv.org/pdf/2404.06926
   code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Project
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/lang2024gaussianlic.jpg
 - id: peng2024rtgslam
   title: 'RTG-SLAM: Real-time 3D Reconstruction at Scale using Gaussian Splatting'
@@ -9578,11 +9029,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/peng2024rtgslam.jpg
 - id: zhu2024loopsplat
   title: 'LoopSplat: Loop Closure by Registering 3D Gaussian Splats'
@@ -9609,11 +9058,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/zhu2024loopsplat.jpg
 - id: wang2024mbaslam
   title: 'MBA-SLAM: Motion Blur Aware Dense Visual SLAM with Radiance Fields Representation'
@@ -9639,16 +9086,13 @@
     affected by motion blur, highlighting the versatility and robustness of our approach.
   project_page: https://wangpeng000.github.io/MBA-SLAM/
   paper: https://arxiv.org/pdf/2411.08279
-  code: https://github.com/WU-CVGL/MBA-SLAM
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Project
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/wang2024mbaslam.jpg
 - id: kong2024dgsslam
   title: 'DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment'
@@ -9672,16 +9116,13 @@
     SLAM benchmarks, proving its effectiveness in handling real-world dynamic scenes.
   project_page: null
   paper: https://arxiv.org/pdf/2411.10722
-  code: https://github.com/kmk97/DGS-SLAM
+  code: null
   video: https://youtu.be/Mq3qZTTcN3E?feature=shared
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Video
   - SLAM
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/kong2024dgsslam.jpg
 - id: yan2023gsslam
   title: 'GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting'
@@ -9702,16 +9143,16 @@
     in runtime reduction and robust estimation. Our method achieves competitive performance
     compared with existing state-of-the-art real-time methods on the Replica, TUM-RGBD
     datasets. The source code will be released upon acceptance.
-  project_page: null
+  project_page: https://gs-slam.github.io/
   paper: https://arxiv.org/pdf/2311.11700.pdf
-  code: null
+  code: https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Project
   - SLAM
-  - Year 2023
   thumbnail: assets/thumbnails/yan2023gsslam.jpg
 - id: keetha2023splatam
   title: 'SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM'
@@ -9738,12 +9179,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Project
   - SLAM
-  - Year 2023
+  - Video
   thumbnail: assets/thumbnails/keetha2023splatam.jpg
 - id: matsuki2023gaussian
   title: Gaussian Splatting SLAM
@@ -9771,12 +9210,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Project
   - SLAM
-  - Year 2023
+  - Video
   thumbnail: assets/thumbnails/matsuki2023gaussian.jpg
 - id: yugay2023gaussianslam
   title: 'Gaussian-SLAM: Photo-realistic Dense SLAM with Gaussian Splatting'
@@ -9804,12 +9241,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Project
   - SLAM
-  - Year 2023
+  - Video
   thumbnail: assets/thumbnails/yugay2023gaussianslam.jpg
 - id: huang2023photoslam
   title: 'Photo-SLAM: Real-time Simultaneous Localization and Photorealistic Mapping
@@ -9835,15 +9270,14 @@
   project_page: https://huajianup.github.io/research/Photo-SLAM/
   paper: https://arxiv.org/pdf/2311.16728.pdf
   code: https://github.com/HuajianUP/Photo-SLAM
-  video: null
+  video: https://www.youtube.com/watch?v=WKXCFNJHZ4o
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - SLAM
-  - Year 2023
+  - Video
   thumbnail: assets/thumbnails/huang2023photoslam.jpg
 - id: li2024dngaussian
   title: 'DNGaussian: Optimizing Sparse-View 3D Gaussian Radiance Fields with Global-Local
@@ -9874,12 +9308,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Project
   - Sparse
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/li2024dngaussian.jpg
 - id: swann2024touchgs
   title: 'Touch-GS: Visual-Tactile Supervised 3D Gaussian Splatting'
@@ -9904,15 +9336,17 @@
     on reflective and transparent objects.
   project_page: https://armlabstanford.github.io/touch-gs
   paper: https://arxiv.org/pdf/2403.09875.pdf
-  code: null
-  video: null
+  code: https://github.com/armlabstanford/Touch-GS
+  video: https://www.youtube.com/watch?v=FqejaTEt7aU
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
+  - Rendering
+  - Robotics
   - Sparse
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/swann2024touchgs.jpg
 - id: chen2024mvsplat
   title: 'MVSplat: Efficient 3D Gaussian Splatting from Sparse Multi-View Images'
@@ -9940,11 +9374,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Feed-Forward
+  - Project
   - Sparse
-  - Year 2024
   thumbnail: assets/thumbnails/chen2024mvsplat.jpg
 - id: wewer2024latentsplat
   title: 'latentSplat: Autoencoding Variational Gaussians for Fast Generalizable 3D
@@ -9972,11 +9405,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Feed-Forward
   - Sparse
-  - Year 2024
   thumbnail: assets/thumbnails/wewer2024latentsplat.jpg
 - id: xu2024grm
   title: 'GRM: Large Gaussian Reconstruction Model for Efficient 3D Reconstruction
@@ -9996,16 +9426,13 @@
     by integrating it with existing multi-view diffusion models.
   project_page: https://justimyhxu.github.io/projects/grm/
   paper: https://arxiv.org/pdf/2403.14621.pdf
-  code: https://github.com/justimyhxu/grm
+  code: null
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Project
   - Sparse
-  - Year 2024
   thumbnail: assets/thumbnails/xu2024grm.jpg
 - id: shen2024gamba
   title: 'Gamba: Marry Gaussian Splatting with Mamba for single view 3D reconstruction'
@@ -10029,16 +9456,17 @@
     Gamba demonstrates competitive generation capabilities, both qualitatively and
     quantitatively, while achieving remarkable speed, approximately 0.6 second on
     a single NVIDIA A100 GPU.'
-  project_page: null
+  project_page: https://florinshen.github.io/gamba-project/
   paper: https://arxiv.org/pdf/2403.18795
-  code: null
+  code: https://github.com/SkyworkAI/Gamba
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
+  - Feed-Forward
+  - Project
   - Sparse
-  - Year 2024
   thumbnail: assets/thumbnails/shen2024gamba.jpg
 - id: paliwal2024coherentgs
   title: 'CoherentGS: Sparse Novel View Synthesis with Coherent 3D Gaussians'
@@ -10065,15 +9493,15 @@
     sparse-view NeRF-based approaches on a variety of scenes.
   project_page: https://people.engr.tamu.edu/nimak/Papers/CoherentGS/index.html
   paper: https://arxiv.org/pdf/2403.19495
-  code: null
-  video: null
+  code: https://github.com/avinashpaliwal/CoherentGS
+  video: https://www.youtube.com/watch?v=qiWdD3tOHKM
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - Sparse
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/paliwal2024coherentgs.jpg
 - id: fan2024instantsplat
   title: 'InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds'
@@ -10108,12 +9536,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Project
   - Sparse
-  - Year 2024
+  - Video
   thumbnail: assets/thumbnails/fan2024instantsplat.jpg
 - id: paul2024spsup2sup360
   title: 'Sp<sup>2</sup>360: Sparse-view 360 Scene Reconstruction using Cascaded 2D
@@ -10141,14 +9567,13 @@
     foreground and background detail.
   project_page: null
   paper: https://arxiv.org/pdf/2405.16517
-  code: null
+  code: https://github.com/mvp18/sp2-360
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
+  - Code
   - Sparse
-  - Year 2024
   thumbnail: assets/thumbnails/paul2024spsup2sup360.jpg
 - id: zhang202425
   title: '''25] 10. TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View
@@ -10177,11 +9602,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Feed-Forward
+  - Project
   - Sparse
-  - Year 2024
+  - Transformer
   thumbnail: assets/thumbnails/zhang202425.jpg
 - id: mihajlovic2024splatfields
   title: 'SplatFields: Neural Gaussian Splats for Sparse 3D and 4D Reconstruction'
@@ -10211,11 +9636,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - Sparse
-  - Year 2024
   thumbnail: assets/thumbnails/mihajlovic2024splatfields.jpg
 - id: xiong2023sparsegs
   title: 'SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting'
@@ -10239,15 +9662,15 @@
     and inference cost.
   project_page: https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/
   paper: https://arxiv.org/pdf/2312.00206.pdf
-  code: null
+  code: https://github.com/ForMyCat/SparseGS
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - 360 degree
+  - Code
+  - Project
   - Sparse
-  - Year 2023
   thumbnail: assets/thumbnails/xiong2023sparsegs.jpg
 - id: zhu2023fsgs
   title: 'FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting'
@@ -10272,15 +9695,14 @@
   project_page: https://zehaozhu.github.io/FSGS/
   paper: https://arxiv.org/pdf/2312.00451.pdf
   code: https://github.com/VITA-Group/FSGS
-  video: null
+  video: https://www.youtube.com/watch?v=CarJgsx3DQY
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Project
   - Sparse
-  - Year 2023
+  - Video
   thumbnail: assets/thumbnails/zhu2023fsgs.jpg
 - id: charatan2023pixelsplat
   title: 'pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable Generalizable
@@ -10306,11 +9728,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Feed-Forward
+  - Project
   - Sparse
-  - Year 2023
   thumbnail: assets/thumbnails/charatan2023pixelsplat.jpg
 - id: szymanowicz2023splatter
   title: 'Splatter Image: Ultra-Fast Single-View 3D Reconstruction'
@@ -10339,12 +9760,11 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
+  - Code
+  - Feed-Forward
+  - Project
   - Sparse
-  - Year 2023
+  - Video
   thumbnail: assets/thumbnails/szymanowicz2023splatter.jpg
 - id: lei2024gaussnav
   title: 'GaussNav: Gaussian Splatting for Visual Navigation'
@@ -10371,11 +9791,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Navigation
-  - Year 2024
+  - Autonomous Driving
+  - Code
+  - Project
+  - Robotics
   thumbnail: assets/thumbnails/lei2024gaussnav.jpg
 - id: jiang20243dgsreloc
   title: '3DGS-ReLoc: 3D Gaussian Splatting for Map Representation and Visual ReLocalization'
@@ -10401,9 +9820,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Navigation
-  - Year 2024
+  - Poses
   thumbnail: assets/thumbnails/jiang20243dgsreloc.jpg
 - id: liu2024beyond
   title: 'Beyond Uncertainty: Risk-Aware Active View Acquisition for Safe Robot Navigation
@@ -10432,9 +9849,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Navigation
-  - Year 2024
+  - Autonomous Driving
+  - Robotics
+  - Uncertainty
   thumbnail: assets/thumbnails/liu2024beyond.jpg
 - id: herau20243dgscalib
   title: '3DGS-Calib: 3D Gaussian Splatting for Multimodal SpatioTemporal Calibration'
@@ -10454,16 +9871,16 @@
     with a substantial speed-up compared to methods relying on implicit neural representations.
     We demonstrate the superiority of our proposal with experimental results on sequences
     from KITTI-360, a widely used driving dataset.
-  project_page: null
+  project_page: https://qherau.github.io/3DGS-Calib/
   paper: https://arxiv.org/pdf/2403.11577
   code: null
-  video: null
+  video: https://www.youtube.com/watch?v=9_RE_4xkRcM
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Navigation
-  - Year 2024
+  - Misc
+  - Project
+  - Video
   thumbnail: assets/thumbnails/herau20243dgscalib.jpg
 - id: li2024hogaussian
   title: 'HO-Gaussian: Hybrid Optimization of 3D Gaussian Splatting for Urban Scenes'
@@ -10491,9 +9908,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Navigation
-  - Year 2024
+  - Densification
+  - Misc
   thumbnail: assets/thumbnails/li2024hogaussian.jpg
 - id: yu2024sgd
   title: 'SGD: Street View Synthesis with Gaussian Splatting and Diffusion Prior'
@@ -10522,9 +9938,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Navigation
-  - Year 2024
+  - Diffusion
+  - Lidar
+  - Sparse
   thumbnail: assets/thumbnails/yu2024sgd.jpg
 - id: meng2024beings
   title: 'BEINGS: Bayesian Embodied Image-goal Navigation with Gaussian Splatting'
@@ -10550,11 +9966,10 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Navigation
-  - Year 2024
+  - Autonomous Driving
+  - Code
+  - Project
+  - Robotics
   thumbnail: assets/thumbnails/meng2024beings.jpg
 - id: li2024ggrt
   title: 'GGRt: Towards Generalizable 3D Gaussians without Pose Priors in Real-Time'
@@ -10584,48 +9999,15 @@
     experiences.
   project_page: https://3d-aigc.github.io/GGRt/
   paper: https://arxiv.org/pdf/2403.10147
-  code: null
+  code: https://github.com/lifuguan/GGRt_official
   video: null
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Code
   - Poses
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/li2024ggrt.jpg
-- id: cai2024gspose
-  title: 'GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object
-    Pose Estimation'
-  authors: Dingding Cai, Janne Heikkilä, Esa Rahtu
-  year: '2024'
-  abstract: This paper introduces GS-Pose, an end-to-end framework for locating and
-    estimating the 6D pose of objects. GS-Pose begins with a set of posed RGB images
-    of a previously unseen object and builds three distinct representations stored
-    in a database. At inference, GS-Pose operates sequentially by locating the object
-    in the input image, estimating its initial 6D pose using a retrieval approach,
-    and refining the pose with a render-and-compare method. The key insight is the
-    application of the appropriate object representation at each stage of the process.
-    In particular, for the refinement step, we utilize 3D Gaussian splatting, a novel
-    differentiable rendering technique that offers high rendering speed and relatively
-    low optimization time. Off-the-shelf toolchains and commodity hardware, such as
-    mobile phones, can be used to capture new objects to be added to the database.
-    Extensive evaluations on the LINEMOD and OnePose-LowTexture datasets demonstrate
-    excellent performance, establishing the new state-of-the-art.
-  project_page: https://dingdingcai.github.io/gs-pose/
-  paper: https://arxiv.org/pdf/2403.10683
-  code: https://github.com/dingdingcai/GS-pose
-  video: https://youtu.be/SnJazusDLM8
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Poses
-  - Year 2024
-  thumbnail: assets/thumbnails/cai2024gspose.jpg
 - id: liu2024gsloc
   title: 'GSLoc: Efficient Camera Pose Refinement via 3D Gaussian Splatting'
   authors: Changkun Liu, Shuai Chen, Yash Bhalgat, Siyan Hu, Ming Cheng, Zirui Wang,
@@ -10652,10 +10034,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
   - Poses
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/liu2024gsloc.jpg
 - id: kerbl2024a
   title: A Hierarchical 3D Gaussian Representation for Real-Time Rendering of Very
@@ -10683,15 +10063,15 @@
     lasting up to one hour.
   project_page: https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/
   paper: https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/hierarchical-3d-gaussians_low.pdf
-  code: null
-  video: null
+  code: https://github.com/graphdeco-inria/hierarchical-3d-gaussians
+  video: https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/content/videos/small_city.mp4
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Has Project
+  - Code
   - Large-Scale
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/kerbl2024a.jpg
 - id: suzuki2024fed3dgs
   title: 'Fed3DGS: Scalable 3D Gaussian Splatting with Federated Learning'
@@ -10720,10 +10100,8 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
+  - Distributed
   - Large-Scale
-  - Year 2024
   thumbnail: assets/thumbnails/suzuki2024fed3dgs.jpg
 - id: cai2024gspose
   title: 'GS-Pose: Cascaded Framework for Generalizable Segmentation-based 6D Object
@@ -10750,12 +10128,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Large-Scale
-  - Year 2024
+  - Poses
   thumbnail: assets/thumbnails/cai2024gspose.jpg
 - id: tarun2024creating
   title: Creating Seamless 3D Maps Using Radiance Fields
@@ -10784,9 +10157,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Large-Scale
-  - Year 2024
+  - Misc
   thumbnail: assets/thumbnails/tarun2024creating.jpg
 - id: wu2024hgsmapping
   title: 'HGS-Mapping: Online Dense Mapping Using Hybrid Gaussian Representation in
@@ -10881,9 +10252,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
-  - Large-Scale
-  - Year 2024
+  - Poses
   thumbnail: assets/thumbnails/wu2024mmgaussian.jpg
 - id: zhao2024on
   title: On Scaling Up 3D Gaussian Splatting Training
@@ -10910,13 +10279,13 @@
   project_page: https://daohanlu.github.io/scaling-up-3dgs/
   paper: https://arxiv.org/pdf/2406.18533
   code: https://github.com/nyu-systems/Grendel-GS
-  video: null
+  video: https://youtu.be/WaYfY3GTs6U
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
+  - Distributed
   - Large-Scale
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/zhao2024on.jpg
