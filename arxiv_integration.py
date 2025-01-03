@@ -26,8 +26,11 @@ class ArxivIntegration:
         
         # Extract ID from path
         path = parsed.path
-        if 'abs' in path:
+        if 'abs' in path or 'pdf' in path:
             arxiv_id = path.split('/')[-1]
+            # Remove .pdf extension if present
+            if arxiv_id.endswith('.pdf'):
+                arxiv_id = arxiv_id[:-4]
         else:
             # If it's already an ID format (YYMM.NNNNN)
             arxiv_id = path.strip('/')
