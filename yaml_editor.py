@@ -75,6 +75,27 @@ class ThumbnailGenerator:
             logger.error(f"Error creating thumbnail for {paper_id}: {str(e)}")
             return False
 
+def format_entry(entry):
+    """Format a single YAML entry consistently"""
+    # Convert null values to empty strings
+    for key in ['project_page', 'code', 'video']:
+        if entry.get(key) is None:
+            entry[key] = ''
+    
+    # Ensure abstract is a single line
+    if 'abstract' in entry:
+        entry['abstract'] = ' '.join(entry['abstract'].split())
+    
+    # Ensure year is a string
+    if 'year' in entry:
+        entry['year'] = str(entry['year'])
+    
+    # Ensure tags are properly formatted
+    if 'tags' in entry:
+        entry['tags'] = sorted(tag.strip() for tag in entry['tags'] if tag)
+    
+    return entry
+
 class ArxivAddDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -144,6 +165,9 @@ class ArxivAddDialog(QDialog):
             entry = self.arxiv.get_paper(url_or_id)
             
             if entry:
+                # Format the entry before adding
+                entry = format_entry(entry)
+                
                 # Ask for confirmation
                 msg = QMessageBox()
                 msg.setIcon(QMessageBox.Icon.Question)

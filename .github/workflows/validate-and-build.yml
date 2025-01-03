@@ -59,10 +59,16 @@ jobs:
             if not entry.get('tags'):
                 errors.append(f"Entry {entry['id']}: No tags provided")
             else:
+                # Check for invalid tags
                 invalid_tags = [tag for tag in entry['tags'] 
                               if not tag.startswith('Year ') and tag not in allowed_tags]
                 if invalid_tags:
                     errors.append(f"Entry {entry['id']}: Invalid tags: {invalid_tags}")
+                
+                # Check for at least one non-Year tag
+                non_year_tags = [tag for tag in entry['tags'] if not tag.startswith('Year ')]
+                if not non_year_tags:
+                    errors.append(f"Entry {entry['id']}: Must have at least one non-Year tag")
 
             # Check if paper URL is accessible
             if entry.get('paper'):

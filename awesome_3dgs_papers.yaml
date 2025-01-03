@@ -10361,3 +10361,40 @@
   - Densification
   - Rendering
   thumbnail: assets/thumbnails/gao2025easysplat.jpg
+- id: yang20244d
+  title: '4D Gaussian Splatting: Modeling Dynamic Scenes with Native 4D Primitives'
+  authors: Zeyu Yang, Zijie Pan, Xiatian Zhu, Li Zhang, Yu-Gang Jiang, Philip H. S.
+    Torr
+  year: '2024'
+  abstract: Dynamic 3D scene representation and novel view synthesis from captured
+    videos are crucial for enabling immersive experiences required by AR/VR and metaverse
+    applications. However, this task is challenging due to the complexity of unconstrained
+    real-world scenes and their temporal dynamics. In this paper, we frame dynamic
+    scenes as a spatio-temporal 4D volume learning problem, offering a native explicit
+    reformulation with minimal assumptions about motion, which serves as a versatile
+    dynamic scene learning framework. Specifically, we represent a target dynamic
+    scene using a collection of 4D Gaussian primitives with explicit geometry and
+    appearance features, dubbed as 4D Gaussian splatting (4DGS). This approach can
+    capture relevant information in space and time by fitting the underlying spatio-temporal
+    volume. Modeling the spacetime as a whole with 4D Gaussians parameterized by anisotropic
+    ellipses that can rotate arbitrarily in space and time, our model can naturally
+    learn view-dependent and time-evolved appearance with 4D spherindrical harmonics.
+    Notably, our 4DGS model is the first solution that supports real-time rendering
+    of high-resolution, photorealistic novel views for complex dynamic scenes. To
+    enhance efficiency, we derive several compact variants that effectively reduce
+    memory footprint and mitigate the risk of overfitting. Extensive experiments validate
+    the superiority of 4DGS in terms of visual quality and efficiency across a range
+    of dynamic scene-related tasks (e.g., novel view synthesis, 4D generation, scene
+    understanding) and scenarios (e.g., single object, indoor scenes, driving environments,
+    synthetic and real data).
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.20720v1.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Compression
+  - Dynamic
+  - Large-Scale
+  thumbnail: assets/thumbnails/yang20244d.jpg
