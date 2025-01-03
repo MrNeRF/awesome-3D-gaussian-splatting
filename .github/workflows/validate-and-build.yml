@@ -9,6 +9,9 @@ on:
 jobs:
   validate-and-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed for pushing changes
+      pull-requests: write  # Needed for commenting on PRs
     
     steps:
     - uses: actions/checkout@v3
@@ -88,6 +91,15 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        # Fetch all history for all tags and branches
+        git fetch origin
+        # Switch to the target branch
+        git checkout ${{ github.head_ref }}
         git add index.html
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update index.html")
-        git push
+        # Only commit and push if there are changes
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update index.html"
+          git push origin ${{ github.head_ref }}
+        fi
