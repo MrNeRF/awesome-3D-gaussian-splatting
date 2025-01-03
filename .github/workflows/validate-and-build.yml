@@ -9,6 +9,9 @@ on:
 jobs:
   validate-and-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed for pushing changes
+      pull-requests: write  # Needed for commenting on PRs
     
     steps:
     - uses: actions/checkout@v3
@@ -64,15 +67,17 @@ jobs:
             # Check if paper URL is accessible
             if entry.get('paper'):
                 try:
-                    response = requests.head(entry['paper'], timeout=10)
-                    if response.status_code != 200:
+                    response = requests.head(entry['paper'], timeout=10, allow_redirects=True)
+                    # Accept 200 (OK) and all redirect status codes
+                    valid_status_codes = {200, 301, 302, 303, 307, 308}
+                    if response.status_code not in valid_status_codes:
                         errors.append(f"Entry {entry['id']}: Paper URL returns {response.status_code}")
                 except Exception as e:
                     errors.append(f"Entry {entry['id']}: Could not access paper URL: {str(e)}")
 
         if errors:
             print("Validation errors found:")
-            for error in errors
+            for error in errors:
                 print(error)
             sys.exit(1)
         EOF
@@ -86,6 +91,15 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        # Fetch all history for all tags and branches
+        git fetch origin
+        # Switch to the target branch
+        git checkout ${{ github.head_ref }}
         git add index.html
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update index.html")
-        git push
+        # Only commit and push if there are changes
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update index.html"
+          git push origin ${{ github.head_ref }}
+        fi
