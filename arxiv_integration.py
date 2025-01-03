@@ -100,44 +100,54 @@ class ArxivIntegration:
             if any(existing['id'] == entry['id'] for existing in data):
                 print(f"Paper with ID {entry['id']} already exists")
                 return False
+
+            # Clean and format fields
+            def clean_and_quote(text: str) -> str:
+                if not text:
+                    return 'null'
+                text = text.replace('\n', ' ').strip()
+                # Remove any existing quotes
+                text = text.strip("'\"")
+                # Add single quotes if needed
+                if any(char in text for char in ':[]{},\n'):
+                    text = f"'{text}'"
+                return text
+
+            # Format optional fields
+            def format_optional_field(value) -> str:
+                if value is None or value == '':
+                    return 'null'
+                return value
+
+            # Format the new entry with explicit newlines and indentation
+            new_entry = [
+                f"- id: {entry['id']}",
+                f"  title: {clean_and_quote(entry['title'])}",
+                f"  authors: {clean_and_quote(entry['authors'])}",
+                f"  year: '{entry['year']}'",
+                f"  abstract: {clean_and_quote(entry.get('abstract', ''))}",
+                f"  project_page: {format_optional_field(entry.get('project_page'))}",
+                f"  paper: {entry['paper']}",
+                f"  code: {format_optional_field(entry.get('code'))}",
+                f"  video: {format_optional_field(entry.get('video'))}",
+                f"  thumbnail_image: false",
+                f"  thumbnail_video: false",
+                f"  tags:"
+            ]
             
-            # Clean the abstract text
-            abstract = entry['abstract'].replace('\n', ' ').strip()
-            if ':' in abstract:
-                abstract = f"'{abstract}'"
+            # Add tags with single space indentation to match existing format
+            for tag in entry.get('tags', []):
+                new_entry.append(f"  - {tag}")  # Changed from 4 spaces to 2 spaces
                 
-            # Clean and quote the title if it contains colons
-            title = entry['title'].replace('\n', ' ').strip()
-            if ':' in title:
-                title = f"'{title}'"
+            # Add thumbnail
+            new_entry.append(f"  thumbnail: assets/thumbnails/{entry['id']}.jpg")
             
-            # Clean the authors
-            authors = entry['authors'].replace('\n', ' ').strip()
-            
-            # Format optional fields - use empty string for None values in YAML
-            project_page = entry.get('project_page', '')
-            code = entry.get('code', '')
-            video = entry.get('video', '')
-            
-            # Format the new entry manually to match existing style
-            new_entry = f"""- id: {entry['id']}
-    title: {title}
-    authors: {authors}
-    year: '{entry['year']}'
-    abstract: {abstract}
-    project_page: {project_page if project_page is not None else ''}
-    paper: {entry['paper']}
-    code: {code if code is not None else ''}
-    video: {video if video is not None else ''}
-    thumbnail_image: false
-    thumbnail_video: false
-    tags:
-    {chr(10).join('  - ' + tag for tag in entry['tags'])}
-    thumbnail: assets/thumbnails/{entry['id']}.jpg"""
+            # Join all lines with newlines
+            final_entry = '\n'.join(new_entry)
 
             # Append the new entry to the file
             with open(filename, 'a', encoding='utf-8') as file:
-                file.write('\n' + new_entry + '\n')
+                file.write('\n' + final_entry + '\n')
             
             return True
             
