@@ -10,8 +10,8 @@ jobs:
   validate-and-build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Needed for pushing changes
-      pull-requests: write  # Needed for commenting on PRs
+      contents: write
+      pull-requests: write
     
     steps:
     - uses: actions/checkout@v3
@@ -51,11 +51,11 @@ jobs:
 
         errors = []
         for entry in entries:
-            # Check if paper URL exists
+            # Required fields validation
             if not entry.get('paper'):
                 errors.append(f"Entry {entry['id']}: Missing paper URL")
 
-            # Validate tags
+            # Tags validation
             if not entry.get('tags'):
                 errors.append(f"Entry {entry['id']}: No tags provided")
             else:
@@ -70,16 +70,32 @@ jobs:
                 if not non_year_tags:
                     errors.append(f"Entry {entry['id']}: Must have at least one non-Year tag")
 
-            # Check if paper URL is accessible
-            if entry.get('paper'):
-                try:
-                    response = requests.head(entry['paper'], timeout=10, allow_redirects=True)
-                    # Accept 200 (OK) and all redirect status codes
-                    valid_status_codes = {200, 301, 302, 303, 307, 308}
-                    if response.status_code not in valid_status_codes:
-                        errors.append(f"Entry {entry['id']}: Paper URL returns {response.status_code}")
-                except Exception as e:
-                    errors.append(f"Entry {entry['id']}: Could not access paper URL: {str(e)}")
+            # URL validation for all URL fields
+            url_fields = {
+                'paper': True,  # Required
+                'project_page': False,  # Optional
+                'code': False,  # Optional
+                'video': False  # Optional
+            }
+
+            for field, required in url_fields.items():
+                value = entry.get(field)
+                
+                # Skip validation for None or empty string in optional fields
+                if not required and (value is None or value == ''):
+                    continue
+                
+                # Validate required fields or non-empty optional fields
+                if value:
+                    try:
+                        response = requests.head(value, timeout=10, allow_redirects=True)
+                        valid_status_codes = {200, 301, 302, 303, 307, 308}
+                        if response.status_code not in valid_status_codes:
+                            errors.append(f"Entry {entry['id']}: {field} URL returns {response.status_code}")
+                    except Exception as e:
+                        errors.append(f"Entry {entry['id']}: Could not access {field} URL: {str(e)}")
+                elif required:
+                    errors.append(f"Entry {entry['id']}: Required {field} URL is missing or empty")
 
         if errors:
             print("Validation errors found:")
@@ -97,12 +113,9 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        # Fetch all history for all tags and branches
         git fetch origin
-        # Switch to the target branch
         git checkout ${{ github.head_ref }}
         git add index.html
-        # Only commit and push if there are changes
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else

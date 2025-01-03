@@ -64,17 +64,17 @@ class ArxivIntegration:
             # Format authors
             authors = ', '.join([author.name for author in paper.authors])
             
-            # Create entry with empty strings for optional fields
+            # Create entry using None for empty fields
             entry = {
                 "id": paper_id,
                 "title": paper.title,
                 "authors": authors,
                 "year": str(year),
                 "abstract": paper.summary,
-                "project_page": "",
+                "project_page": None,
                 "paper": f"https://arxiv.org/pdf/{arxiv_id}.pdf",
-                "code": "",
-                "video": "",
+                "code": None,
+                "video": None,
                 "tags": [f"Year {year}"]
             }
             
@@ -114,26 +114,26 @@ class ArxivIntegration:
             # Clean the authors
             authors = entry['authors'].replace('\n', ' ').strip()
             
-            # Handle optional fields - use empty string instead of 'null'
-            project_page = entry.get('project_page')
-            code = entry.get('code')
-            video = entry.get('video')
+            # Format optional fields - use empty string for None values in YAML
+            project_page = entry.get('project_page', '')
+            code = entry.get('code', '')
+            video = entry.get('video', '')
             
             # Format the new entry manually to match existing style
             new_entry = f"""- id: {entry['id']}
-  title: {title}
-  authors: {authors}
-  year: '{entry['year']}'
-  abstract: {abstract}
-  project_page: {project_page if project_page else ''}
-  paper: {entry['paper']}
-  code: {code if code else ''}
-  video: {video if video else ''}
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-{chr(10).join('  - ' + tag for tag in entry['tags'])}
-  thumbnail: assets/thumbnails/{entry['id']}.jpg"""
+    title: {title}
+    authors: {authors}
+    year: '{entry['year']}'
+    abstract: {abstract}
+    project_page: {project_page if project_page is not None else ''}
+    paper: {entry['paper']}
+    code: {code if code is not None else ''}
+    video: {video if video is not None else ''}
+    thumbnail_image: false
+    thumbnail_video: false
+    tags:
+    {chr(10).join('  - ' + tag for tag in entry['tags'])}
+    thumbnail: assets/thumbnails/{entry['id']}.jpg"""
 
             # Append the new entry to the file
             with open(filename, 'a', encoding='utf-8') as file:
