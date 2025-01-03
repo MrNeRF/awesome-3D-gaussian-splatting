@@ -64,8 +64,10 @@ jobs:
             # Check if paper URL is accessible
             if entry.get('paper'):
                 try:
-                    response = requests.head(entry['paper'], timeout=10)
-                    if response.status_code != 200:
+                    response = requests.head(entry['paper'], timeout=10, allow_redirects=True)
+                    # Accept 200 (OK) and all redirect status codes
+                    valid_status_codes = {200, 301, 302, 303, 307, 308}
+                    if response.status_code not in valid_status_codes:
                         errors.append(f"Entry {entry['id']}: Paper URL returns {response.status_code}")
                 except Exception as e:
                     errors.append(f"Entry {entry['id']}: Could not access paper URL: {str(e)}")
