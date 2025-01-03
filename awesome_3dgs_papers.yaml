@@ -68,10 +68,10 @@
     on mAP@0.25 and +8.1 on mAP@0.5 for the ScanNet dataset, and impressive +31.5
     on mAP@0.25 for the ARKITScenes dataset. Codes and models are publicly available
     at: https://github.com/yangcaoai/3DGS-DET.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2410.01647
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -104,7 +104,7 @@
   project_page: https://zju3dv.github.io/street_gaussians/
   paper: https://arxiv.org/pdf/2401.01339.pdf
   code: https://github.com/zju3dv/street_gaussians
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -137,9 +137,9 @@
     method demonstrates fast training and achieves real-time RGB and depth rendering
     at 90 FPS in resolution of 1920x1280 (Waymo), and 120 FPS in resolution of 1600x900
     (nuScenes) in urban scenarios.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.02410.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=CEo6mZ6FGg0
   thumbnail_image: false
   thumbnail_video: false
@@ -174,7 +174,7 @@
   project_page: https://ziyc.github.io/omnire/
   paper: https://arxiv.org/pdf/2408.16760
   code: https://github.com/ziyc/drivestudio
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -207,8 +207,8 @@
     rendering speed over NeRF-based methods by an order of magnitude.
   project_page: https://research.zenseact.com/publications/splatad/
   paper: https://arxiv.org/pdf/2411.16816
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -233,8 +233,8 @@
     surround-view synthesis with high-fidelity and multi-camera consistency.
   project_page: https://pkuvdig.github.io/DrivingGaussian/
   paper: https://arxiv.org/pdf/2312.07920.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -263,7 +263,7 @@
   project_page: https://xdimlab.github.io/hugs_website/
   paper: https://arxiv.org/pdf/2403.12722.pdf
   code: https://github.com/hyzhou404/HUGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -290,10 +290,10 @@
     regressed point clouds. The experiments validate that our method can achieve state-of-the-art
     photorealistic novel-view rendering results with high-quality details for dynamic
     clothed human bodies, along with explicit geometry reconstruction.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.09720.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -326,10 +326,10 @@
     modeling, thus enabling the creation of high-fidelity avatars. We show that PSAvatar
     can reconstruct high-fidelity head avatars of a variety of subjects and the avatars
     can be animated in real-time (≥ 25 fps at a resolution of 512 × 512 ).
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.12900.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -356,8 +356,8 @@
     through extensive quantitative and qualitative experiments.
   project_page: https://shahrukhathar.github.io/2024/02/05/Rig3DGS.html
   paper: https://arxiv.org/pdf/2402.03723.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -422,10 +422,10 @@
     algorithm to modify all training images separately and then train NeRF and GS
     on modified faces. Such relatively simple strategies can produce plausible 3D
     deepfake-based avatars.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.06390.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -458,10 +458,10 @@
     conventional CG pipeline workflows. Complementing these advancements, we have
     compiled an extensive dataset of real human hair, each with meticulously detailed
     strand geometry, to propel further research in this field.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.10483.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -490,8 +490,8 @@
     hand pose.
   project_page: https://3d-aigc.github.io/GEA/
   paper: https://arxiv.org/pdf/2402.16607.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -552,10 +552,10 @@
     demonstrates that the proposed method is competitive with both other Gaussian
     splatting techniques in novel view synthesis and other 3D reconstruction methods
     in producing 3D face meshes with high geometric precision.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.18784
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -580,10 +580,10 @@
     reconstruction quality to the state-of-the-art on SnapshotPeople, while using
     less than a third of Gaussians. HAHA outperforms previous state-of-the-art on
     novel poses from X-Humans both quantitatively and qualitatively.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.01053
   code: https://github.com/david-svitov/HAHA
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -643,7 +643,7 @@
   project_page: https://wenj.github.io/GoMAvatar/
   paper: https://arxiv.org/pdf/2404.07991
   code: https://github.com/wenj/GoMAvatar
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -677,7 +677,7 @@
   project_page: https://wenj.github.io/GoMAvatar/
   paper: https://arxiv.org/pdf/2404.07991
   code: https://github.com/wenj/GoMAvatar
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -777,7 +777,7 @@
     and feel the rhythm of the notes at the performers' fingertips.
   project_page: https://nowheretrix.github.io/DualGS/
   paper: https://arxiv.org/pdf/2409.08353
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=vwDE8xr78Bg
   thumbnail_image: false
   thumbnail_video: false
@@ -847,7 +847,7 @@
     on commercial hardware.'
   project_page: https://microsoft.github.io/GASP/
   paper: https://arxiv.org/pdf/2412.07739
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=3oWB7-UJUYE
   thumbnail_image: false
   thumbnail_video: false
@@ -882,7 +882,7 @@
     from monocular videos captured on commodity devices.
   project_page: https://tangjiapeng.github.io/projects/GAF/
   paper: https://arxiv.org/pdf/2412.10209
-  code: ''
+  code: '': null
   video: https://www.youtube.com/embed/QuIYTljvhygE
   thumbnail_image: false
   thumbnail_video: false
@@ -915,8 +915,8 @@
     techniques.'
   project_page: https://felixtaubner.github.io/cap4d/
   paper: https://arxiv.org/pdf/2412.12093
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -944,7 +944,7 @@
     training and test data.'
   project_page: https://zielon.github.io/d3ga/
   paper: https://arxiv.org/pdf/2311.08581.pdf
-  code: ''
+  code: '': null
   video: https://youtu.be/C4IT1gnkaF0?si=zUJLm8adM68pVvR8
   thumbnail_image: false
   thumbnail_video: false
@@ -977,7 +977,7 @@
   project_page: https://jenaroh.it/splatarmor/
   paper: https://arxiv.org/pdf/2311.10812.pdf
   code: https://github.com/rohitrango/splatarmor
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1061,7 +1061,7 @@
     THuman4 dataset while being able to render in real-time (80 fps for 512x512 resolution).
   project_page: https://perezpellitero.github.io/projects/hugs/index.html
   paper: https://arxiv.org/pdf/2311.17113.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=R3CHg46SIfo
   thumbnail_image: false
   thumbnail_video: false
@@ -1095,7 +1095,7 @@
   project_page: https://machinelearning.apple.com/research/hugs
   paper: https://arxiv.org/pdf/2311.17910.pdf
   code: https://github.com/apple/ml-hugs
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1131,7 +1131,7 @@
   project_page: https://rameenabdal.github.io/GaussianShellMaps/
   paper: https://arxiv.org/pdf/2311.17857
   code: https://github.com/computational-imaging/GSM
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1160,7 +1160,7 @@
   project_page: https://chiehwangs.github.io/gaussian-head-page/
   paper: https://arxiv.org/pdf/2312.01632.pdf
   code: https://github.com/chiehwangs/gaussian-head
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1274,9 +1274,9 @@
     and opacity values. We demonstrate that HeadGaS delivers state-of-the-art results
     in real-time inference frame rates, which surpasses baselines by up to ~2dB, while
     accelerating rendering speed by over x10.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.02902.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=fetxolufsgQ
   thumbnail_image: false
   thumbnail_video: false
@@ -1307,7 +1307,7 @@
     in terms of optimization speed, rendering quality, and storage overhead.
   project_page: https://nowheretrix.github.io/HiFi4G/
   paper: https://arxiv.org/pdf/2312.03461.pdf
-  code: ''
+  code: '': null
   video: https://youtu.be/917WVr2EHh4
   thumbnail_image: false
   thumbnail_video: false
@@ -1365,7 +1365,7 @@
   project_page: https://ustc3dv.github.io/FlashAvatar/
   paper: https://arxiv.org/pdf/2312.02214v2
   code: https://github.com/USTC3DV/FlashAvatar-code
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1534,7 +1534,7 @@
     geometry quality, and achieves extremely fast rendering (100 fps) at 1K resolution.
   project_page: https://nvlabs.github.io/GAvatar/
   paper: https://arxiv.org/pdf/2312.11461.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=PbCF1HzrKrs
   thumbnail_image: false
   thumbnail_video: false
@@ -1568,10 +1568,10 @@
     efficiently even on consumer hardware. We provide experimental evidence to show
     that ParDy-Human outperforms state-of-the-art methods on ZJU-MoCap and THUman4.0
     datasets both quantitatively and visually.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.15059.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1599,7 +1599,7 @@
   project_page: https://longxiang-ai.github.io/Human101/
   paper: https://arxiv.org/pdf/2312.15258.pdf
   code: https://github.com/longxiang-ai/Human101
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1658,7 +1658,7 @@
   project_page: https://humansplat.github.io/
   paper: https://arxiv.org/pdf/2406.12459
   code: https://github.com/humansplat/humansplat
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1714,10 +1714,10 @@
     cloud obtained from a real-time SLAM system. Finally, employing our framework
     in a neural rendering setting optimizes both the point cloud and network parameters,
     highlighting the framework’s ability to enhance data driven approaches.
-  project_page: ''
+  project_page: '': null
   paper: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136930276.pdf
   code: https://github.com/muellerju/unbiased-differentiable-splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1740,10 +1740,10 @@
     values. The main contribution of this paper is to propose a method, that transforms
     the original cloud map to the inner representation. This method uses the Radial
     Basis Function (RBF) neural network.
-  project_page: ''
+  project_page: '': null
   paper: https://old.cescg.org/CESCG-2006/papers/Prague-Man-Petr.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1803,7 +1803,7 @@
   project_page: https://keksboter.github.io/c3dgs/
   paper: https://arxiv.org/pdf/2401.02436.pdf
   code: https://github.com/KeKsBoTer/c3dgs
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1833,7 +1833,7 @@
   project_page: https://rdogaussian.github.io/
   paper: https://arxiv.org/pdf/2406.01597.pdf
   code: https://github.com/USTC-IMCL/RDO-Gaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1859,8 +1859,8 @@
     for more information and a sortable version of the table.
   project_page: https://w-m.github.io/3dgs-compression-survey
   paper: https://arxiv.org/pdf/2407.09510
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1885,8 +1885,8 @@
     and rendering applications.
   project_page: https://yuang-ian.github.io/lapisgs/
   paper: https://arxiv.org/pdf/2408.14823
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1950,7 +1950,7 @@
   project_page: https://ucdvision.github.io/compact3d/
   paper: https://arxiv.org/pdf/2311.18159.pdf
   code: https://github.com/UCDvision/compact3d
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -1987,7 +1987,7 @@
   project_page: https://maincold2.github.io/c3dgs/
   paper: https://arxiv.org/pdf/2311.13681.pdf
   code: https://github.com/maincold2/Compact-3DGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2052,7 +2052,7 @@
     while being several orders of magnitude faster.
   project_page: https://ir1d.github.io/AGG/
   paper: https://arxiv.org/pdf/2401.04099.pdf
-  code: ''
+  code: '': null
   video: https://youtu.be/jkwmp2UH0Ug?si=lBXjme-d9bVrXTNf
   thumbnail_image: false
   thumbnail_video: false
@@ -2149,7 +2149,7 @@
   project_page: https://me.kiui.moe/lgm/
   paper: https://arxiv.org/pdf/2402.05054.pdf
   code: https://github.com/3DTopia/LGM
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2176,8 +2176,8 @@
     ensuring the high fidelity of object-level entities within the scene.
   project_page: https://gala3d.github.io/
   paper: https://arxiv.org/pdf/2402.07207.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2205,8 +2205,8 @@
     assets.
   project_page: https://lukemelas.github.io/IM-3D/
   paper: https://arxiv.org/pdf/2402.08682.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2240,7 +2240,7 @@
   project_page: https://lizhiqi49.github.io/MVControl/
   paper: https://lizhiqi49.github.io/MVControl/assets/paper.pdf
   code: https://github.com/WU-CVGL/MVControl-threestudio
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2269,10 +2269,10 @@
     degradation. Extensive experimentation has shown that our proposed method significantly
     enhances the quality of 3D generation while incurring no additional computational
     overhead for the underlying framework.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.09236.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2304,7 +2304,7 @@
   project_page: https://dreamscene-project.github.io/
   paper: https://arxiv.org/pdf/2404.03575.pdf
   code: https://github.com/DreamScene-Project/DreamScene
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2329,10 +2329,10 @@
     to fuse images from different viewpoints. We demonstrate that FDGaussian generates
     images with high consistency across different views and reconstructs high-quality
     3D objects, both qualitatively and quantitatively.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.10242.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2356,10 +2356,10 @@
     to enhance the utilization of the priors. We perform an extensive evaluation across
     various real-world videos, demonstrating its superior performance compared to
     the current state-of-the-art methods.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11427
   code: https://github.com/Michaelszj/bags
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2431,7 +2431,7 @@
   project_page: https://gvgen.github.io/
   paper: https://arxiv.org/pdf/2403.12957
   code: https://github.com/GVGEN/GVGEN
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2458,7 +2458,7 @@
   project_page: https://synctweedies.github.io/
   paper: https://arxiv.org/pdf/2403.14370
   code: https://github.com/KAIST-Visual-AI-Group/SyncTweedies
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2620,7 +2620,7 @@
   project_page: https://adamdad.github.io/hash3D/
   paper: https://arxiv.org/pdf/2404.06091
   code: https://github.com/Adamdad/hash3D
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2644,10 +2644,10 @@
     results on both synthetic and real-world scanned point clouds demonstrate that
     our approach outperforms existing methods in completing a variety of objects without
     any requirement for specific training data.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.06814
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2707,8 +2707,8 @@
     objects. Its generality additionally allows 3D synthesis from a single image
   project_page: https://realmdreamer.github.io/
   paper: https://arxiv.org/pdf/2404.07199
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2774,8 +2774,8 @@
     thereby setting a new standard in 4D scene generation.
   project_page: https://snap-research.github.io/4Real/
   paper: https://arxiv.org/pdf/2406.07472.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2868,7 +2868,7 @@
   project_page: https://taoranyi.com/gaussiandreamer/
   paper: https://arxiv.org/pdf/2310.08529.pdf
   code: https://github.com/hustvl/GaussianDreamer
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2902,10 +2902,10 @@
     technique to enhance the quality and stability of 3D appearance. To our knowledge,
     our approach represents the first comprehensive utilization of Gaussian splatting
     across the entire spectrum of 3D content generation processes.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2311.11221.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2929,10 +2929,10 @@
     over-smoothing. Furthermore, we incorporate 3D Gaussian Splatting into our text-to-3D
     generation pipeline. Extensive experiments show that our model largely outperforms
     the state-of-the-art in quality and training efficiency.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2311.11284.pdf
   code: https://github.com/EnVision-Research/LucidDreamer
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -2963,7 +2963,7 @@
   project_page: https://luciddreamer-cvlab.github.io/
   paper: https://arxiv.org/pdf/2311.13384.pdf
   code: https://github.com/luciddreamer-cvlab/LucidDreamer?tab=readme-ov-file
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3027,7 +3027,7 @@
     accuracy.'
   project_page: https://asvilesov.github.io/CG3D/
   paper: https://arxiv.org/pdf/2311.17907.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=FMAVeolsE7s
   thumbnail_image: false
   thumbnail_video: false
@@ -3061,7 +3061,7 @@
   project_page: https://yangxiaofeng.github.io/demo_diffusion_prior/
   paper: https://arxiv.org/pdf/2312.04820.pdf
   code: https://github.com/yangxiaofeng/LODS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3099,8 +3099,8 @@
     but also ensures a faster runtime in comparison to previous state-of-the-art techniques.
   project_page: https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/
   paper: https://arxiv.org/pdf/2304.08818.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3124,7 +3124,7 @@
   project_page: https://jiawei-ren.github.io/projects/dreamgaussian4d/
   paper: https://arxiv.org/pdf/2312.17142.pdf
   code: https://github.com/jiawei-ren/dreamgaussian4d
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3185,8 +3185,8 @@
     towards text-driven 3D scene generation.
   project_page: https://ken-ouyang.github.io/text2immersion/index.html
   paper: https://arxiv.org/pdf/2312.09242.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3216,8 +3216,8 @@
     with multi-view consistency and fine textures in 2 minutes from scratch.
   project_page: https://pku-yuangroup.github.io/repaint123/
   paper: https://arxiv.org/pdf/2312.13271.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3282,7 +3282,7 @@
     of 4D generation and 4D novel view synthesis.
   project_page: https://zerg-overmind.github.io/GaussianFlow.github.io/
   paper: https://arxiv.org/pdf/2403.12365
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=0qRcjTw7-YU
   thumbnail_image: false
   thumbnail_video: false
@@ -3309,10 +3309,10 @@
     auxiliary module is proposed. We conduct extensive experiments on both multi-view
     and monocular scenes to verify the merits of our work. Compared with the baselines,
     our method shows significant superiority in both rendering quality and efficiency.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11447
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3342,10 +3342,10 @@
     approach adapts the appropriate type of primitives to represent the different
     parts of the dynamic scene and outperforms all the baseline methods in both quantitative
     and qualitative comparisons without losing render speed.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11453
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3372,7 +3372,7 @@
   project_page: https://jeongminb.github.io/e-d3dgs/
   paper: https://arxiv.org/pdf/2404.03613
   code: https://github.com/JeongminB/E-D3DGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3410,7 +3410,7 @@
   project_page: https://dreamscene4d.github.io/
   paper: https://arxiv.org/pdf/2405.02280
   code: https://github.com/dreamscene4d/dreamscene4d
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3441,8 +3441,8 @@
     of our solution, which achieves new state-of-the-art performance.
   project_page: https://npucvr.github.io/GaGS/
   paper: https://arxiv.org/pdf/2404.06270
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3468,8 +3468,8 @@
     baseline methods by a significant margin.
   project_page: https://modgs.github.io/
   paper: https://arxiv.org/pdf/2406.00434
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3493,10 +3493,10 @@
     even regardless of the types of radiance fields. We conduct experiments on the
     common Plenoptic Video Dataset and a newly built Unsynchronized Dynamic Blender
     Dataset to verify the performance of our method.
-  project_page: ''
+  project_page: '': null
   paper: https://openreview.net/pdf?id=RQutkn4V9I
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3526,7 +3526,7 @@
     and quantitative results.
   project_page: https://ruijiezhu94.github.io/MotionGS_page
   paper: https://arxiv.org/pdf/2410.07707
-  code: ''
+  code: '': null
   video: https://youtu.be/25DgViuuKFI
   thumbnail_image: false
   thumbnail_video: false
@@ -3590,7 +3590,7 @@
   project_page: https://leejunoh.com/Ex4DGS/
   paper: https://arxiv.org/pdf/2410.15629
   code: https://github.com/juno181/Ex4DGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3656,10 +3656,10 @@
     applications, where we highlight three key use cases: object reconstruction, robot
     workspace reset, and 3DGS model update. Our code and data will be made available
     at https://github.com/520xyxyzq/3DGS-CD.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2411.03706
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3687,8 +3687,8 @@
     multiple images, and/or known poses. Our project page is available at https://colin-de.github.io/DynSUP/.
   project_page: https://colin-de.github.io/DynSUP/
   paper: https://arxiv.org/pdf/2412.00851
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3749,7 +3749,7 @@
   project_page: https://ingra14m.github.io/Deformable-Gaussians/
   paper: https://arxiv.org/pdf/2309.13101.pdf
   code: https://github.com/ingra14m/Deformable-3D-Gaussians
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3843,7 +3843,7 @@
   project_page: https://compactdynamic3dgaussian.github.io/
   paper: https://arxiv.org/pdf/2311.12897.pdf
   code: https://github.com/raven38/EfficientDynamic3DGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -3879,7 +3879,7 @@
     scenarios.
   project_page: https://agelosk.github.io/dynmf/
   paper: https://arxiv.org/pdf/2312.00112.pdf
-  code: ''
+  code: '': null
   video: https://agelosk.github.io/dynmf/img/presentation.mp4#t=0.8
   thumbnail_image: false
   thumbnail_video: false
@@ -3907,8 +3907,8 @@
     rendering, and spatial-temporal consistency in 4D portrait editing.
   project_page: https://control4darxiv.github.io/
   paper: https://arxiv.org/pdf/2305.20082.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4014,7 +4014,7 @@
   project_page: https://nju-3dv.github.io/projects/Gaussian-Flow
   paper: https://arxiv.org/pdf/2310.08528.pdf
   code: https://github.com/NJU-3DV/Gaussian-Flow
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4042,8 +4042,8 @@
     neural representations in terms of visual fidelity.
   project_page: https://cogs2023.github.io/
   paper: https://arxiv.org/pdf/2312.05664.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4070,7 +4070,7 @@
     and rendering.
   project_page: https://lynl7130.github.io/gaufre/index.html
   paper: https://arxiv.org/pdf/2312.11458.pdf
-  code: ''
+  code: '': null
   video: https://youtu.be/YweWidWO8rI?si=jMssQdIXQV67kwzS
   thumbnail_image: false
   thumbnail_video: false
@@ -4139,7 +4139,7 @@
   project_page: https://md-splatting.github.io/
   paper: https://arxiv.org/pdf/2312.00583
   code: https://github.com/momentum-robotics-lab/md-splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4172,10 +4172,10 @@
     novel views. As a result, our method produces high-quality renderings of general
     dynamic scenes with competitive quantitative performance, which can be viewed
     in real-time in our dynamic interactive viewer.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.13308.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4204,7 +4204,7 @@
   project_page: https://sjojok.github.io/3dgstream/
   paper: https://arxiv.org/pdf/2403.01444.pdf
   code: https://github.com/SJoJoK/3DGStream
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4231,10 +4231,10 @@
     the resulting model is extremely accurate, improving the IoU accuracy of the predicted
     masks by +8% over the state of the art. Code and trained models will be released
     upon acceptance.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.12784
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4268,8 +4268,8 @@
     to NeRF-based segmentation.'
   project_page: https://david-dou.github.io/CoSSegGaussians/
   paper: https://arxiv.org/pdf/2401.05925.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4333,10 +4333,10 @@
     scheme. Extensive experiments demonstrate that SA-GS achieves high-quality 3D
     segmentation results, which can also be easily applied for scene editing and collision
     detection tasks.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.17857.pdf
   code: https://github.com/XuHu0529/SAGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4362,10 +4362,10 @@
     our edits are both precise and accurate. Our comprehensive evaluation demonstrates
     that GSEdit effectively alters object shape and appearance following the given
     textual instructions while preserving their coherence and detail.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.05154.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4422,8 +4422,8 @@
     facilitating high-quality 3DGS editing across a diverse range of scenes.'
   project_page: https://vcedit.github.io/
   paper: https://arxiv.org/pdf/2403.11868.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4487,7 +4487,7 @@
   project_page: https://semantic-gaussians.github.io/
   paper: https://arxiv.org/pdf/2403.15624
   code: https://github.com/sharinka0715/semantic-gaussians
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4552,7 +4552,7 @@
   project_page: https://johanan528.github.io/Infusion/
   paper: https://arxiv.org/pdf/2404.11613
   code: https://github.com/ali-vilab/infusion
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4580,7 +4580,7 @@
     such as scene understanding and manipulation.
   project_page: https://www.gaga.gallery/
   paper: https://arxiv.org/pdf/2404.07977.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=rqs5BuVFOok
   thumbnail_image: false
   thumbnail_video: false
@@ -4613,7 +4613,7 @@
     results while offering fine grained control of editing.
   project_page: https://ice-gaussian.github.io/
   paper: https://arxiv.org/pdf/2406.08488
-  code: ''
+  code: '': null
   video: https://youtu.be/dDsCwRXixp8?si=415s7-dEpM7-FPMq
   thumbnail_image: false
   thumbnail_video: false
@@ -4640,7 +4640,7 @@
   project_page: https://jojijoseph.github.io/3dgs-segmentation/
   paper: https://arxiv.org/pdf/2409.11681
   code: https://github.com/JojiJoseph/3dgs-gradient-segmentation
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4668,8 +4668,8 @@
     masks. More demos are available at: https://jsxzs.github.io/sa4d/.'
   project_page: https://jsxzs.github.io/sa4d/
   paper: https://arxiv.org/pdf/2407.04504
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4701,7 +4701,7 @@
     tasks.
   project_page: https://yunjinli.github.io/project-sadg/
   paper: https://arxiv.org/pdf/2411.19290
-  code: ''
+  code: '': null
   video: https://yunjinli.github.io/project-sadg/static/videos/split-cookie-2x4x.mp4
   thumbnail_image: false
   thumbnail_video: false
@@ -4764,7 +4764,7 @@
     Instruct-NeRF2NeRF (45 minutes -- 2 hours)
   project_page: https://gaussianeditor.github.io/
   paper: https://arxiv.org/pdf/2311.16037.pdf
-  code: ''
+  code: '': null
   video: https://youtu.be/KWtALsigR3k?si=h6-A44brd5rm3_CM
   thumbnail_image: false
   thumbnail_video: false
@@ -4790,10 +4790,10 @@
     method by performing editing on both forward-facing and 360 scenes. We also compare
     our method against existing scene object removal methods, showing superior quality
     despite being more capable and having a speed advantage.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2311.16737.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4821,7 +4821,7 @@
   project_page: https://ymq2017.github.io/gaussian-grouping/
   paper: https://arxiv.org/pdf/2312.00732.pdf
   code: https://github.com/lkeab/gaussian-grouping
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4853,7 +4853,7 @@
   project_page: https://jumpat.github.io/SAGA/
   paper: https://jumpat.github.io/SAGA/SAGA_paper.pdf
   code: https://github.com/Jumpat/SegAnyGAussians
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4924,10 +4924,10 @@
     filtering refine the segmentation results. Experiments show that our concise method
     can achieve comparable performances on mIOU and mAcc for multi-object segmentation
     as previous single-object segmentation methods.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.16047.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4955,7 +4955,7 @@
   project_page: https://berkeleyautomation.github.io/LEGS/
   paper: https://arxiv.org/pdf/2409.18108
   code: https://github.com/BerkeleyAutomation/L3GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -4988,7 +4988,7 @@
   project_page: https://buaavrcg.github.io/LEGaussians/
   paper: https://arxiv.org/pdf/2311.18482.pdf
   code: https://github.com/buaavrcg/LEGaussians
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5055,9 +5055,9 @@
     trajectory moves to photogenically view each of the specified objects. We empirically
     evaluate our approach on a suite of environments and instructions, and demonstrate
     the quality of generated image sequences.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2410.06014
-  code: ''
+  code: '': null
   video: https://youtu.be/PUXNBfpeZkg
   thumbnail_image: false
   thumbnail_video: false
@@ -5091,7 +5091,7 @@
   project_page: https://xingxingzuo.github.io/fmgs/
   paper: https://arxiv.org/pdf/2401.01970.pdf
   code: https://github.com/google-research/foundation-model-embedded-3dgs
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5119,7 +5119,7 @@
   project_page: https://hyunji12.github.io/Open3DRF/
   paper: https://arxiv.org/pdf/2408.07416
   code: https://github.com/hyunji12/Open3DRF
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5155,8 +5155,8 @@
     of our contributions within the context of the current literature.'
   project_page: https://insait-institute.github.io/OccamLGS/
   paper: https://arxiv.org/pdf/2412.01807
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5185,7 +5185,7 @@
     from new views.
   project_page: https://amysteriouscat.github.io/GaussianSplashing/
   paper: https://arxiv.org/pdf/2401.15318.pdf
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=KgaR1ni-Egg&t
   thumbnail_image: false
   thumbnail_video: false
@@ -5218,10 +5218,10 @@
     animation. As a result, we obtain high-quality renders in the real-time generation
     of high-quality views. Furthermore, we demonstrate that in the absence of a predefined
     mesh, it is possible to fine-tune the initial mesh during the learning process.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.01459.pdf
   code: https://github.com/waczjoan/gaussian-mesh-splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5258,10 +5258,10 @@
     that our approach achieves high-quality reconstruction and effective deformation,
     while maintaining the promising rendering results at a high frame rate(65 FPS
     on average).'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.04796.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5289,7 +5289,7 @@
   project_page: https://zlicheng.com/spring_gaus/
   paper: https://arxiv.org/pdf/2403.09434
   code: https://github.com/Colmar-zlicheng/Spring-Gaus
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5352,7 +5352,7 @@
   project_page: https://maturk.github.io/dn-splatter/
   paper: https://arxiv.org/pdf/2403.17822
   code: https://github.com/maturk/dn-splatter
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5487,7 +5487,7 @@
   project_page: https://baowenz.github.io/radegs/
   paper: https://arxiv.org/pdf/2406.01467
   code: https://github.com/BaowenZ/RaDe-GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5516,7 +5516,7 @@
   project_page: https://trimgs.github.io/
   paper: https://arxiv.org/pdf/2406.07499
   code: https://github.com/YuxueYang1204/TrimGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5546,8 +5546,8 @@
     3DGS variants, improving their quality without compromising visual fidelity.
   project_page: https://junhahyung.github.io/erankgs.github.io/
   paper: https://arxiv.org/pdf/2406.11672
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5579,7 +5579,7 @@
   project_page: https://dekuliutesla.github.io/CityGaussianV2/
   paper: https://arxiv.org/pdf/2411.00771
   code: https://github.com/DekuLiuTesla/CityGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5608,7 +5608,7 @@
   project_page: https://kth-rpl.github.io/cloth-splatting/
   paper: https://openreview.net/pdf?id=WmWbswjTsi
   code: https://github.com/KTH-RPL/cloth-splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5643,8 +5643,8 @@
     and photometric evaluation by the time of submission.
   project_page: https://blarklee.github.io/splatsdf/
   paper: https://arxiv.org/pdf/2411.15468.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5678,7 +5678,7 @@
   project_page: https://xuqianren.github.io/ags_mesh_website/
   paper: https://arxiv.org/pdf/2411.19271
   code: https://github.com/XuqianRen/AGS_Mesh
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5710,8 +5710,8 @@
     and computation time.'
   project_page: https://jiepengwang.github.io/GausSurf/
   paper: https://arxiv.org/pdf/2411.19454
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5809,10 +5809,10 @@
     our approach benefits from both representations and generates complete surfaces
     with intricate details. Experiments on Tanks and Temples verify the effectiveness
     of our proposed method.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.00846.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5836,10 +5836,10 @@
     tissues from a single-viewpoint video, estimated depth maps, and labeled tool
     masks. Experiments on DaVinci robotic surgery videos demonstrate that EndoGS achieves
     superior rendering quality.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.11535.pdf
   code: https://github.com/HKU-MedAI/EndoGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5871,7 +5871,7 @@
   project_page: https://yifliu3.github.io/EndoGaussian/
   paper: https://arxiv.org/pdf/2401.12561.pdf
   code: https://github.com/CUHK-AIM-Group/EndoGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5897,7 +5897,7 @@
   project_page: https://saliteta.github.io/CUHKSZ_SMBU/
   paper: https://arxiv.org/pdf/2401.14032.pdf
   code: https://github.com/saliteta/lidar_SfM_alignment
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5928,10 +5928,10 @@
     generating real-time photorealistic scenes potentially for digital twins and virtual
     reality while also holding potential applicability in real-time SLAM and robotics
     domains.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.14857.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5963,8 +5963,8 @@
     experience.
   project_page: https://yingjiang96.github.io/VR-GS/
   paper: https://arxiv.org/pdf/2401.16663.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -5994,10 +5994,10 @@
     in both simulation and hardware, where we show re-planning at 5 Hz and pose estimation
     at 20 Hz, an order of magnitude faster than Neural Radiance Field (NeRF)-based
     navigation methods, thereby enabling real-time navigation.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.02751.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6023,10 +6023,10 @@
     outperforms state-of-the-art methods by 6.5 dB while enjoying less than 15% training
     time and over 73x inference speed. The application on sparse-view CT reconstruction
     also reveals the practical values of our method.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.04116.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6054,7 +6054,7 @@
   project_page: https://guanxinglu.github.io/ManiGaussian/
   paper: https://arxiv.org/pdf/2403.08321.pdf
   code: https://github.com/GuanxingLu/ManiGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6089,7 +6089,7 @@
   project_page: https://xingtongge.github.io/GaussianImage-page/
   paper: https://arxiv.org/pdf/2403.08551
   code: https://github.com/Xinjie-Q/GaussianImage
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6127,7 +6127,7 @@
   project_page: https://mrsecant.github.io/GaussianGrasper/
   paper: https://arxiv.org/pdf/2403.09637
   code: https://github.com/MrSecant/GaussianGrasper
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6163,8 +6163,8 @@
     spaces.
   project_page: https://metaverse-ai-lab-thu.github.io/Den-SOFT/
   paper: https://arxiv.org/pdf/2403.09973.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6190,10 +6190,10 @@
     accuracy. Overall, our framework equips practitioners with valuable insights into
     the reliability of synthesized views, facilitating safer decision-making in real-world
     applications.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.18476
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6225,10 +6225,10 @@
     methods, this model achieves state-of-the-art reconstruction quality under the
     same number of training views. Additionally, it enables real-time rendering while
     maintaining low storage overhead.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.19586
   code: https://github.com/hustvl/TOGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6259,10 +6259,10 @@
     for sparse-view CT image reconstruction. Finally, the memory requirements of the
     Gaussian Splatting representations are reduced by 17% compared to the equivalent
     voxel grid image representations.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.03126
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6290,7 +6290,7 @@
   project_page: https://dualcamerasmoothzoom.github.io/
   paper: https://arxiv.org/pdf/2404.04908
   code: https://github.com/ZcsrenlongZ/ZoomGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6325,7 +6325,7 @@
   project_page: https://papers.miccai.org/miccai-2024/349-Paper2298.html
   paper: https://arxiv.org/pdf/2404.06128
   code: https://github.com/smbonilla/GaussianPancakes
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6356,10 +6356,10 @@
     camera system to facilitate future research endeavors. We conduct extensive experiments
     using synthetic and real-world datasets to demonstrate that our design can enhance
     novel view synthesis across NeRF and 3DGS.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.06710
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6383,10 +6383,10 @@
     even when using less training data than competing methods. We thoroughly evaluate
     our framework using the recently proposed Pose-agnostic Anomaly Detection benchmark
     and its multi-pose anomaly detection (MAD) data set.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.06832
   code: https://github.com/m-kruse98/SplatPose
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6416,10 +6416,10 @@
     the performance by 10%, 44%, and 15% compared with baselines on the hardest task.
     This work is the first attempt to leverage generalizable 3DGS as a representation
     for RL.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.07950
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6443,7 +6443,7 @@
     a relightable 3D Gaussian scene model capable of real-time, photorealistic rendering
     from novel viewpoints. We show the applicability and robustness of our proposed
     simulator and system in a variety of real-world environments.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.10814
   code: https://github.com/tyz1030/darkgs
   video: https://www.linkedin.com/posts/tianyi-zhang-396b0a186_darkgs-building-3d-gaussians-with-a-torch-activity-7197672371393019905-iY2-?utm_source=share&utm_medium=member_desktop
@@ -6481,7 +6481,7 @@
   project_page: https://hse1032.github.io/gsgan
   paper: https://arxiv.org/pdf/2406.02968
   code: https://github.com/hse1032/GSGAN
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6550,7 +6550,7 @@
   project_page: https://leggedrobotics.github.io/rffr.github.io/
   paper: https://arxiv.org/pdf/2407.20194
   code: https://github.com/leggedrobotics/radiance_field_ros
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6582,7 +6582,7 @@
   project_page: https://jiangwenpl.github.io/FisherRF/
   paper: https://arxiv.org/pdf/2311.17874.pdf
   code: https://github.com/JiangWenPL/FisherRF
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6616,7 +6616,7 @@
   project_page: https://fudan-zvg.github.io/PVG/
   paper: https://arxiv.org/pdf/2311.18561.pdf
   code: https://github.com/fudan-zvg/PVG
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6648,7 +6648,7 @@
   project_page: https://ivl.cs.brown.edu/research/manus.html
   paper: https://arxiv.org/pdf/2312.02137.pdf
   code: https://github.com/brown-ivl/manus
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6687,7 +6687,7 @@
   project_page: https://zouzx.github.io/TriplaneGaussian/
   paper: https://arxiv.org/pdf/2312.09147.pdf
   code: https://github.com/VAST-AI-Research/TriplaneGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6706,10 +6706,10 @@
     in the forward and backward passes of differentiable Gaussian splatting. To facilitate
     practical usage and development, we provide a user friendly Python API that exposes
     each component of the forward and backward passes in rasterization of [gsplat](https://github.com/nerfstudio-project/gsplat).
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.02121.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6741,7 +6741,7 @@
   project_page: https://meyerls.github.io/pegasus_web/
   paper: https://arxiv.org/pdf/2401.02281.pdf
   code: https://github.com/meyerls/PEGASUS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6778,10 +6778,10 @@
     DISTWAR using existing warp-level primitives. We evaluate DISTWAR on widely used
     raster-based differentiable rendering workloads. We demonstrate significant speedups
     of 2.44x on average (up to 5.7x).'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.05345.pdf
   code: https://github.com/Accelsnow/gaussian-splatting-distwar
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6807,10 +6807,10 @@
     over multiple widely adopted benchmarks (e.g., Mip-NeRF360, Tanks-and-Temples
     and Deep Blending) show that FreGS achieves superior novel view synthesis and
     outperforms the state-of-the-art consistently.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.06908.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6836,7 +6836,7 @@
   project_page: https://ku-cvlab.github.io/RAIN-GS/
   paper: https://arxiv.org/pdf/2403.09413
   code: https://github.com/cvlab-kaist/RAIN-GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6865,10 +6865,10 @@
     surface, and thus more suitable for explicit editing, point cloud extraction and
     other tasks. Meanwhile, our 3D Gaussian splitting approach has a very simple closed-form
     solution, making it readily applicable to any 3D Gaussian model.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.09143
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6889,10 +6889,10 @@
     per scene and correct a bias in the current opacity handling strategy of ADC during
     cloning operations. Our approach leads to consistent quality improvements across
     a variety of benchmark scenes, without sacrificing the method's efficiency.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.06109
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6917,7 +6917,7 @@
   project_page: https://robot0321.github.io/DepthRegGS/index.html
   paper: https://arxiv.org/pdf/2311.13398.pdf
   code: https://github.com/robot0321/DepthRegularizedGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -6948,7 +6948,7 @@
   project_page: https://efficientgaussian.github.io/
   paper: https://arxiv.org/pdf/2312.04564.pdf
   code: https://github.com/Sharath-girish/efficientgaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7011,10 +7011,10 @@
     a high level of prediction accuracy. Experimental results demonstrate the superior
     precision and robustness of our proposed jointly optimized framework when evaluated
     on synthetic and complex real-world data in challenging scenarios.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.09031.pdf
   code: https://github.com/YuanSun-XJTU/iComMa
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7040,10 +7040,10 @@
     have fewer shadow artifacts and relighting in novel scenes is more realistic compared
     to the state-of-the-art methods, providing new ways to pose neural characters
     in novel environments, increasing their applicability.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.06116.pdf
   code: https://github.com/LuisBolanos17/GaussianShadowCasting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7079,7 +7079,7 @@
   project_page: https://letianhuang.github.io/op43dgs/
   paper: https://arxiv.org/pdf/2402.00752.pdf
   code: https://github.com/LetianHuang/op43dgs
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7112,10 +7112,10 @@
     results demonstrate that 360-GS allows panoramic rendering and outperforms state-of-the-art
     methods with fewer artifacts in novel view synthesis, thus providing immersive
     roaming in indoor scenarios.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.00763.pdf
   code: https://github.com/LeoDarcy/360GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7219,7 +7219,7 @@
   project_page: https://kcheng1021.github.io/gaussianpro.github.io/
   paper: https://arxiv.org/pdf/2402.14650.pdf
   code: https://github.com/kcheng1021/GaussianPro
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7251,7 +7251,7 @@
   project_page: https://ingra14m.github.io/Spec-Gaussian-website/
   paper: https://arxiv.org/pdf/2402.15870.pdf
   code: https://github.com/ingra14m/Specular-Gaussians
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7281,7 +7281,7 @@
   project_page: https://vastgaussian.github.io/
   paper: https://arxiv.org/pdf/2402.17427.pdf
   code: https://github.com/kangpeilun/VastGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7313,7 +7313,7 @@
   project_page: https://nwang43jhu.github.io/BAGS/
   paper: https://arxiv.org/pdf/2403.04926.pdf
   code: https://github.com/snldmt/BAGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7346,7 +7346,7 @@
   project_page: https://kunhao-liu.github.io/StyleGaussian/
   paper: https://arxiv.org/pdf/2403.07807.pdf
   code: https://github.com/Kunhao-Liu/StyleGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7374,10 +7374,10 @@
     applications. Through our experiments, we show our methods achieve state-of-the-art
     performance with superior visual quality on various indoor and outdoor real-world
     data.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.08498
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7409,7 +7409,7 @@
   project_page: https://lingzhezhao.github.io/BAD-Gaussians/
   paper: https://arxiv.org/pdf/2403.11831.pdf
   code: https://github.com/WU-CVGL/BAD-Gaussians/
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7435,10 +7435,10 @@
     in an unsupervised manner. Experiments on diverse photo collection scenes and
     multi-pass acquisition of outdoor landmarks show the effectiveness of our method
     over prior works achieving state-of-the-art results with improved efficiency.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.10427.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7467,7 +7467,7 @@
   project_page: https://yanyan-li.github.io/project/gs/geogaussian
   paper: https://arxiv.org/pdf/2403.11324.pdf
   code: https://github.com/yanyan-li/GeoGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7502,7 +7502,7 @@
   project_page: https://lzhnb.github.io/project-pages/analytic-splatting/
   paper: https://arxiv.org/pdf/2403.11056.pdf
   code: https://github.com/lzhnb/Analytic-Splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7569,8 +7569,8 @@
     at 900+ FPS.
   project_page: https://m-niemeyer.github.io/radsplat/
   paper: https://arxiv.org/pdf/2403.13806.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7595,10 +7595,10 @@
     proposed Mini-Splatting method integrates seamlessly with the original rasterization
     pipeline, providing a strong baseline for future research in Gaussian-Splatting-based
     works.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.14166.pdf
   code: https://github.com/fatPeter/mini-splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7632,7 +7632,7 @@
   project_page: https://pixelgs.github.io/
   paper: https://arxiv.org/pdf/2403.15530.pdf
   code: https://github.com/zhengzhang01/Pixel-GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7700,7 +7700,7 @@
   project_page: https://city-super.github.io/GSDF/
   paper: https://arxiv.org/pdf/2403.16964
   code: https://github.com/city-super/GSDF
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7731,7 +7731,7 @@
   project_page: https://city-super.github.io/octree-gs/
   paper: https://arxiv.org/pdf/2403.17898
   code: https://github.com/city-super/Octree-GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7769,7 +7769,7 @@
   project_page: https://kevinsong729.github.io/project-pages/SA-GS/
   paper: https://arxiv.org/pdf/2403.19615
   code: https://github.com/zsy1987/SA-GS/
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7801,8 +7801,8 @@
     significant improvements in reconstruction quality.
   project_page: https://maxyang27896.github.io/publication/gaussian_splat/
   paper: https://arxiv.org/pdf/2403.20275
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7835,10 +7835,10 @@
     while preserving the efficiency and rendering quality of 3DGS. Besides, our method
     competes favorably with leading surface reconstruction techniques while offering
     a more efficient learning process and much better rendering qualities.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.00409.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7868,8 +7868,8 @@
     the challenging mirror regions.
   project_page: https://mirror-gaussian.github.io/
   paper: https://arxiv.org/pdf/2404.01168.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7899,8 +7899,8 @@
     once the paper is published.
   project_page: https://liquorleaf.github.io/research/OmniGS/
   paper: https://arxiv.org/pdf/2404.03202
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7925,10 +7925,10 @@
     and rendering speed. We experimentally validate our contributions on relevant
     benchmark datasets including Scannet++ and Deblur-NeRF, obtaining state-of-the-art
     results and thus consistent improvements over relevant baselines.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.04211
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7955,10 +7955,10 @@
     demonstrate that our DeblurGS achieves state-of-the-art performance in deblurring
     and novel view synthesis for real-world and synthetic benchmark datasets, as well
     as field-captured blurry smartphone videos.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.11358
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -7992,10 +7992,10 @@
     and geometric consistency with flexible controls. Extensive experiments across
     various scenes and styles demonstrate the effectiveness and efficiency of our
     method concerning both stylization quality and inference FPS.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.05220
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8029,7 +8029,7 @@
   project_page: https://pokerlishao.github.io/LoopGaussian/
   paper: https://arxiv.org/pdf/2404.08966
   code: https://github.com/Pokerlishao/LoopGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8055,9 +8055,9 @@
     image resolutions. Our evaluation results show that GSCore achieves a 15.86× speedup
     on average over the mobile consumer GPU with a substantially smaller area and
     lower energy consumption.
-  project_page: ''
+  project_page: '': null
   paper: https://jaewoong.org/pubs/asplos24-gscore.pdf
-  code: ''
+  code: '': null
   video: https://youtu.be/TByYGw837IU?si=7zBe0yqpsJUoVbIV
   thumbnail_image: false
   thumbnail_video: false
@@ -8085,7 +8085,7 @@
   project_page: https://transient-3dgs.github.io/
   paper: https://arxiv.org/pdf/2412.00155
   code: https://github.com/Vadim200116/T-3DGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8141,7 +8141,7 @@
   project_page: https://niujinshuchong.github.io/mip-splatting/
   paper: https://arxiv.org/pdf/2311.16493.pdf
   code: https://github.com/autonomousvision/mip-splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8175,7 +8175,7 @@
   project_page: https://nju-3dv.github.io/projects/Relightable3DGaussian/
   paper: https://arxiv.org/pdf/2311.16043.pdf
   code: https://github.com/NJU-3DV/Relightable3DGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8209,7 +8209,7 @@
   project_page: https://github.com/lzhnb/GS-IR
   paper: https://arxiv.org/pdf/2311.16473.pdf
   code: https://github.com/lzhnb/GS-IR
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8236,10 +8236,10 @@
     With similar training time, our algorithm can achieve 13\%-66\% PSNR and 160\%-2400\%
     rendering speed improvement at 4×-128× scale rendering on Mip-NeRF360 dataset
     compared to the single scale 3D Gaussian splatting.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2311.17089.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8272,7 +8272,7 @@
   project_page: https://asparagus15.github.io/GaussianShader.github.io/
   paper: https://arxiv.org/pdf/2311.17977.pdf
   code: https://github.com/Asparagus15/GaussianShader
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8304,7 +8304,7 @@
   project_page: https://city-super.github.io/scaffold-gs/
   paper: https://arxiv.org/pdf/2312.00109.pdf
   code: https://github.com/city-super/Scaffold-GS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8340,7 +8340,7 @@
   project_page: https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/
   paper: https://arxiv.org/pdf/2401.00834.pdf
   code: https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8372,8 +8372,8 @@
     and reconstruction.'
   project_page: https://3dgir.github.io/
   paper: https://arxiv.org/pdf/2312.05133
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8403,10 +8403,10 @@
     network, which takes parameters of Gaussian and viewing direction to produce changes
     in color and opacity. Consequently, our model better describes shadows, light
     reflections, and transparency of 3D objects.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2312.13729.pdf
   code: https://github.com/gmum/ViewingDirectionGaussianSplatting
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8436,10 +8436,10 @@
     the AI generated object models in 3D, followed by the generated 3D human models,
     and finally, the generated 3D human motions, culminating in a conclusive summary
     and a vision for the future.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.02620.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8472,10 +8472,10 @@
     domain. Through this survey, we aim to provide a valuable resource for both newcomers
     and seasoned researchers, fostering further exploration and advancement in applicable
     and explicit radiance field representation.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2401.03890.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8498,10 +8498,10 @@
     with 3D Gaussian Splatting, serve as a valuable reference for seminal works in
     the field, and inspire future research directions, as discussed in our concluding
     section.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.07181.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8531,10 +8531,10 @@
     key works and discussing takeaways and open challenges. Finally, we outline the
     current limitations of Neural Fields in robotics and propose promising directions
     for future research.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2410.20220
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8557,10 +8557,10 @@
     fields. It sheds light on the background, evolutionary path, inherent strengths
     and limitations, and serves as a fundamental reference to highlight the dynamic
     progress and specific challenges.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.13255.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8587,10 +8587,10 @@
     of this technique. This survey aims to help beginners get into this field quickly
     and provide experienced researchers with a comprehensive overview, which can stimulate
     the future development of the 3D Gaussian Splatting representation.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11134
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8611,10 +8611,10 @@
     numerous opportunities for enhancing 3D reconstruction methods, a comprehensive
     examination of algorithms appears essential. Consequently, this study offers a
     thorough overview of the latest advancements in Gaussian Splatting.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2405.03417
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8638,10 +8638,10 @@
     areas where 3DGS can make promising contributions, yet remain rarely touched.
     By investigating the intersection of 3DGS and XR, this paper provides a roadmap
     to push the boundaries of XR using cutting-edge 3DGS techniques.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2412.06257
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8663,7 +8663,7 @@
     quality. Extensive experiments demonstrate that SGS-SLAM delivers state-of-the-art
     performance in camera pose estimation, map reconstruction, and semantic segmentation,
     outperforming existing methods meanwhile preserving real-time rendering ability.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2402.03246.pdf
   code: https://github.com/ShuhongLL/SGS-SLAM
   video: https://www.youtube.com/watch?v=y83yw1E-oUo
@@ -8693,10 +8693,10 @@
     terms of mapping and tracking accuracy on Replica and ScanNet datasets, while
     also showing excellent capabilities in novel-view semantic synthesis and 3D semantic
     mapping.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.07494.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8720,10 +8720,10 @@
     is achieved by a global bundle adjustment method with reprojection loss. Extensive
     experiments demonstrate that our method achieves faster training and rendering
     speed while maintaining the state-of-the-art (SOTA) quality of the scene representation.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11247.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8749,10 +8749,10 @@
     over existing dense semantic SLAM methods in terms of mapping and tracking accuracy
     on Replica and ScanNet datasets, while also showing excellent capabilities in
     3D dense semantic mapping.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11679.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8774,10 +8774,10 @@
     way. Compared to recent neural and concurrently developed gaussian splatting RGBD
     SLAM baselines, our method achieves state-of-the-art results on the synthetic
     dataset Replica and competitive results on the real-world dataset TUM.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.12535.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8801,7 +8801,7 @@
     through our keyframe selection methods. Experimental results demonstrate the effectiveness
     of our approach, showing an incredibly fast speed up to 107 FPS (for the entire
     system) and superior quality of the reconstructed map.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.12550.pdf
   code: https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM
   video: https://www.youtube.com/watch?v=e-bHh_uMMxE
@@ -8865,7 +8865,7 @@
     code publicly available.
   project_page: https://zju3dv.github.io/cg-slam/
   paper: https://arxiv.org/pdf/2403.16095
-  code: ''
+  code: '': null
   video: https://raw.githubusercontent.com/hjr37/open_access_assets/main/cg-slam/video/cg-slam-show.mp4
   thumbnail_image: false
   thumbnail_video: false
@@ -8925,8 +8925,8 @@
     of our method compared to existing radiance-field-based SLAM systems.
   project_page: https://xingxingzuo.github.io/gaussian_lic/
   paper: https://arxiv.org/pdf/2404.06926
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8961,7 +8961,7 @@
   project_page: https://gapszju.github.io/RTG-SLAM/
   paper: https://arxiv.org/pdf/2404.19706
   code: https://github.com/MisEty/RTG-SLAM
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -8990,7 +8990,7 @@
   project_page: https://loopsplat.github.io/
   paper: https://arxiv.org/pdf/2408.10154
   code: https://github.com/GradientSpaces/LoopSplat
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9022,8 +9022,8 @@
     affected by motion blur, highlighting the versatility and robustness of our approach.
   project_page: https://wangpeng000.github.io/MBA-SLAM/
   paper: https://arxiv.org/pdf/2411.08279
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9050,9 +9050,9 @@
     the current camera poses and the Gaussian map. DGS-SLAM achieves state-of-the-art
     performance in both camera tracking and novel view synthesis on various dynamic
     SLAM benchmarks, proving its effectiveness in handling real-world dynamic scenes.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2411.10722
-  code: ''
+  code: '': null
   video: https://youtu.be/Mq3qZTTcN3E?feature=shared
   thumbnail_image: false
   thumbnail_video: false
@@ -9082,7 +9082,7 @@
   project_page: https://gs-slam.github.io/
   paper: https://arxiv.org/pdf/2311.11700.pdf
   code: https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9306,7 +9306,7 @@
   project_page: https://donydchen.github.io/mvsplat/
   paper: https://arxiv.org/pdf/2403.14627
   code: https://github.com/donydchen/mvsplat
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9337,7 +9337,7 @@
   project_page: https://geometric-rl.mpi-inf.mpg.de/latentsplat/
   paper: https://arxiv.org/pdf/2403.16292.pdf
   code: https://github.com/Chrixtar/latentsplat
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9362,8 +9362,8 @@
     by integrating it with existing multi-view diffusion models.
   project_page: https://justimyhxu.github.io/projects/grm/
   paper: https://arxiv.org/pdf/2403.14621.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9395,7 +9395,7 @@
   project_page: https://florinshen.github.io/gamba-project/
   paper: https://arxiv.org/pdf/2403.18795
   code: https://github.com/SkyworkAI/Gamba
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9501,10 +9501,10 @@
     reconstruction methods in 360 scene reconstruction. Qualitatively, our method
     generates entire 360 scenes from as few as 9 input views, with a high degree of
     foreground and background detail.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2405.16517
   code: https://github.com/mvp18/sp2-360
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9534,7 +9534,7 @@
   project_page: https://xingyoujun.github.io/transplat/
   paper: https://arxiv.org/pdf/2408.13770
   code: https://github.com/xingyoujun/transplat
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9568,7 +9568,7 @@
   project_page: https://markomih.github.io/SplatFields/
   paper: https://arxiv.org/pdf/2409.11211.pdf
   code: https://github.com/markomih/SplatFields
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9599,7 +9599,7 @@
   project_page: https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/
   paper: https://arxiv.org/pdf/2312.00206.pdf
   code: https://github.com/ForMyCat/SparseGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9660,7 +9660,7 @@
   project_page: https://davidcharatan.com/pixelsplat/
   paper: https://arxiv.org/pdf/2312.12337.pdf
   code: https://github.com/dcharatan/pixelsplat
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9723,7 +9723,7 @@
   project_page: https://xiaohanlei.github.io/projects/GaussNav/
   paper: https://arxiv.org/pdf/2403.11625.pdf
   code: https://github.com/XiaohanLei/GaussNav
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9749,10 +9749,10 @@
     the camera pose of the query image using feature-based matching and the Perspective-n-Point
     (PnP) technique. The effectiveness, adaptability, and precision of our system
     are demonstrated through extensive evaluation on the KITTI360 dataset.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11367
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9778,10 +9778,10 @@
     effectiveness of our proposed approach, highlighting its potential to establish
     a robust and safety-focused framework for active robot exploration and 3D scene
     understanding.'
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11396
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9809,7 +9809,7 @@
     from KITTI-360, a widely used driving dataset.
   project_page: https://qherau.github.io/3DGS-Calib/
   paper: https://arxiv.org/pdf/2403.11577
-  code: ''
+  code: '': null
   video: https://www.youtube.com/watch?v=9_RE_4xkRcM
   thumbnail_image: false
   thumbnail_video: false
@@ -9837,10 +9837,10 @@
     cameras. Experimental results on widely used autonomous driving datasets demonstrate
     that HO-Gaussian achieves photo-realistic rendering in real-time on multi-camera
     urban datasets.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.20032.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9867,10 +9867,10 @@
     at unseen views during training. Experimental results validate the effectiveness
     of our method compared with current state-of-the-art models, and demonstrate its
     advance in rendering images from broader views.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.20079.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9898,7 +9898,7 @@
   project_page: https://www.mwg.ink/BEINGS-web
   paper: https://arxiv.org/pdf/2409.10216
   code: https://github.com/guaMass/BEINGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9936,7 +9936,7 @@
   project_page: https://3d-aigc.github.io/GGRt/
   paper: https://arxiv.org/pdf/2403.10147
   code: https://github.com/lifuguan/GGRt_official
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -9965,8 +9965,8 @@
     datasets.
   project_page: https://gsloc.active.vision/
   paper: https://arxiv.org/pdf/2408.11085
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10029,10 +10029,10 @@
     method with data collected in different seasons, demonstrating that our framework
     can reflect changes in the scenes and our appearance modeling captures changes
     due to seasonal variations.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11460
   code: https://github.com/DensoITLab/Fed3DGS
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10086,10 +10086,10 @@
     workings. Our primary contribution is a method for improving the results of the
     3D reconstructed models. Our results indicate that Gaussian Splatting was superior
     to the NeRF technique.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.11364.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10119,10 +10119,10 @@
     dense mapping of urban scenes. Our approach achieves SOTA reconstruction accuracy
     while only employing 66% number of Gaussians, leading to 20% faster reconstruction
     speed.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2403.20159.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10149,7 +10149,7 @@
   project_page: https://dekuliutesla.github.io/citygs/
   paper: https://arxiv.org/pdf/2404.01133
   code: https://github.com/DekuLiuTesla/CityGaussian
-  video: ''
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10177,10 +10177,10 @@
     robustness of our system, we designed a relocalization module, which assists in
     returning to the correct trajectory in the event of a localization failure. Experiments
     conducted in multiple scenarios demonstrate the effectiveness of our method.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2404.04026
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10248,9 +10248,9 @@
     EPE by 0.422m and Acc5 by 28.02%. Beyond reconstruction, we showcase four additional
     applications of our model, illustrating the potential of self-supervised learning
     for broader dynamic scene understanding.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2501.00602.pdf
-  code: ''
+  code: '': null
   video: https://jiawei-yang.github.io/STORM/
   thumbnail_image: false
   thumbnail_video: false
@@ -10286,10 +10286,10 @@
     synthesize novel views of driving videos with high fidelity and 3D consistency,
     decompose static and dynamic elements in a self-supervised manner, and enhance
     perception and planning tasks for autonomous driving.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2501.00601.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
@@ -10316,10 +10316,10 @@
     the limitation on initialization and optimization, leading to an efficient and
     accurate 3DGS modeling. Extensive experiments demonstrate that EasySplat outperforms
     the current state-of-the-art (SOTA) in handling novel view synthesis.
-  project_page: ''
+  project_page: '': null
   paper: https://arxiv.org/pdf/2501.01003.pdf
-  code: ''
-  video: ''
+  code: '': null
+  video: '': null
   thumbnail_image: false
   thumbnail_video: false
   tags:
