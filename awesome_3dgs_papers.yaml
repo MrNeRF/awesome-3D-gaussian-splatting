@@ -1813,9 +1813,9 @@
   thumbnail: assets/thumbnails/niedermayr2024compressed.jpg
 - id: chen2024hac
   title: 'HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression'
-  authors: Yihang Chen, Qianyi Wu, Jianfei Cai, Mehrtash Harandi, Weiyao Lin
+  authors: Yihang Chen, Qianyi Wu, Weiyao Lin, Mehrtash Harandi, Jianfei Cai
   year: '2024'
-  abstract: 3D Gaussian Splatting (3DGS) has emerged as a promising framework for
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a promising framework for
     novel view synthesis, boasting rapid rendering speed with high fidelity. However,
     the substantial Gaussians and their associated attributes necessitate effective
     compression techniques. Nevertheless, the sparse and unorganized nature of the
@@ -1832,10 +1832,10 @@
     Additionally, we incorporate an adaptive masking strategy to eliminate invalid
     Gaussians and anchors. Importantly, our work is the pioneer to explore context-based
     compression for 3DGS representation, resulting in a remarkable size reduction
-    of over 75× compared to vanilla 3DGS, while simultaneously improving fidelity,
-    and achieving over 11× size reduction over SOTA 3DGS compression approach Scaffold-GS.
+    of over 75x compared to vanilla 3DGS, while simultaneously improving fidelity,
+    and achieving over 11x size reduction over SOTA 3DGS compression approach Scaffold-GS.'
   project_page: https://yihangchen-ee.github.io/project_hac/
-  paper: https://arxiv.org/pdf/2401.02436.pdf
+  paper: https://arxiv.org/pdf/2403.14530.pdf
   code: https://github.com/YihangChen-ee/HAC
   video: ''
   thumbnail_image: false
