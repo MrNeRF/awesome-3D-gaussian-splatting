@@ -44,6 +44,68 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             line-height: 1.5;
         }}
 
+        /* Donation box styles */
+        .donate-box {{
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }}
+
+        .donate-box h3 {{
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }}
+
+        .donate-box p {{
+            margin: 0.5rem 0 1rem;
+            color: #4b5563;
+        }}
+
+        .bitcoin-info {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }}
+
+        .bitcoin-label {{
+            font-weight: 600;
+            color: #4b5563;
+        }}
+
+        .bitcoin-address {{
+            background: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            border: 1px solid var(--border-color);
+            font-family: monospace;
+            font-size: 0.9rem;
+        }}
+
+        .copy-button {{
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s;
+        }}
+
+        .copy-button:hover {{
+            background-color: var(--hover-color);
+        }}
+
         .container {{
             max-width: 1200px;
             margin: 0 auto;
@@ -300,8 +362,23 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 </head>
 <body>
     <div class="container">
-        <h1>Awesome-3D-Gaussian-Splatting-Paper-List</h1>
+        <h1>MrNeRF's Awesome-3D-Gaussian-Splatting-Paper-List</h1>
         
+        <div class="donate-box">
+            <h3>Support This Project</h3>
+            <p>If you find this resource helpful, consider supporting its development and maintenance.</p>
+            <div class="bitcoin-info">
+                <span class="bitcoin-label">Bitcoin:</span>
+                <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
+                <button class="copy-button" onclick="copyBitcoinAddress()">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+                <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
+                    <i class="fas fa-heart"></i> Sponsor
+                </a>
+            </div>
+        </div>
+
         <div class="filter-info">
             <h3>Filter Options</h3>
             <p><strong>Search:</strong> Enter paper title or author names</p>
@@ -327,6 +404,18 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     </div>
 
     <script>
+    function copyBitcoinAddress() {{
+        const address = document.querySelector('.bitcoin-address').textContent;
+        navigator.clipboard.writeText(address).then(() => {{
+            const button = document.querySelector('.copy-button');
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {{
+                button.innerHTML = originalText;
+            }}, 2000);
+        }});
+    }}
+
     document.addEventListener('DOMContentLoaded', function() {{
         // Initialize lazy loading
         const lazyLoadInstance = new LazyLoad({{
@@ -376,7 +465,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
                 const tag = tagFilter.getAttribute('data-tag');
                 
                 if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {{
-                    // First click: Add to include
+                 // First click: Add to include
                     tagFilter.classList.add('include');
                     includeTags.add(tag);
                 }} else if (tagFilter.classList.contains('include')) {{
