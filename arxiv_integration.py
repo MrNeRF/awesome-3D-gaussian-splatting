@@ -91,31 +91,53 @@ class ArxivIntegration:
 
     def append_to_yaml(self, entry: Dict[str, Any], filename: str = "awesome_3dgs_papers.yaml") -> bool:
         """
-        Append a new entry to the YAML file.
-        
-        Args:
-            entry (Dict[str, Any]): Paper entry to append
-            filename (str): Path to the YAML file
-            
-        Returns:
-            bool: True if successful, False otherwise
+        Append a new entry to the YAML file while preserving formatting.
         """
         try:
-            # Read existing data
+            # Read existing file content as text
             with open(filename, 'r', encoding='utf-8') as file:
-                data = yaml.safe_load(file)
+                content = file.read()
             
-            # Check if paper with same ID already exists
+            # Load data for duplicate checking
+            data = yaml.safe_load(content)
+            
+            # Check for duplicates
             if any(existing['id'] == entry['id'] for existing in data):
                 print(f"Paper with ID {entry['id']} already exists")
                 return False
             
-            # Append new entry
-            data.append(entry)
+            # Clean the abstract text
+            abstract = entry['abstract'].replace('\n', ' ').strip()
+            if ':' in abstract:
+                abstract = f"'{abstract}'"
+                
+            # Clean and quote the title if it contains colons
+            title = entry['title'].replace('\n', ' ').strip()
+            if ':' in title:
+                title = f"'{title}'"
             
-            # Write back to file
-            with open(filename, 'w', encoding='utf-8') as file:
-                yaml.dump(data, file, sort_keys=False, allow_unicode=True, width=1000)
+            # Clean the authors
+            authors = entry['authors'].replace('\n', ' ').strip()
+            
+            # Format the new entry manually to match existing style
+            new_entry = f"""- id: {entry['id']}
+  title: {title}
+  authors: {authors}
+  year: '{entry['year']}'
+  abstract: {abstract}
+  project_page: {entry.get('project_page', 'null')}
+  paper: {entry['paper']}
+  code: {entry.get('code', 'null')}
+  video: {entry.get('video', 'null')}
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+{chr(10).join('  - ' + tag for tag in entry['tags'])}
+  thumbnail: assets/thumbnails/{entry['id']}.jpg"""
+
+            # Append the new entry to the file
+            with open(filename, 'a', encoding='utf-8') as file:
+                file.write('\n' + new_entry + '\n')
             
             return True
             

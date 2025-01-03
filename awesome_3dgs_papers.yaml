@@ -10279,3 +10279,42 @@
   - Project
   - Video
   thumbnail: assets/thumbnails/zhao2024on.jpg
+- id: yang2024storm
+  title: 'STORM: Spatio-Temporal Reconstruction Model for Large-Scale Outdoor Scenes'
+  authors: Jiawei Yang, Jiahui Huang, Yuxiao Chen, Yan Wang, Boyi Li, Yurong You,
+    Apoorva Sharma, Maximilian Igl, Peter Karkus, Danfei Xu, Boris Ivanovic, Yue Wang,
+    Marco Pavone
+  year: '2024'
+  abstract: We present STORM, a spatio-temporal reconstruction model designed for
+    reconstructing dynamic outdoor scenes from sparse observations. Existing dynamic
+    reconstruction methods often rely on per-scene optimization, dense observations
+    across space and time, and strong motion supervision, resulting in lengthy optimization
+    times, limited generalization to novel views or scenes, and degenerated quality
+    caused by noisy pseudo-labels for dynamics. To address these challenges, STORM
+    leverages a data-driven Transformer architecture that directly infers dynamic
+    3D scene representations--parameterized by 3D Gaussians and their velocities--in
+    a single forward pass. Our key design is to aggregate 3D Gaussians from all frames
+    using self-supervised scene flows, transforming them to the target timestep to
+    enable complete (i.e., "amodal") reconstructions from arbitrary viewpoints at
+    any moment in time. As an emergent property, STORM automatically captures dynamic
+    instances and generates high-quality masks using only reconstruction losses. Extensive
+    experiments on public datasets show that STORM achieves precise dynamic scene
+    reconstruction, surpassing state-of-the-art per-scene optimization methods (+4.3
+    to 6.6 PSNR) and existing feed-forward approaches (+2.1 to 4.7 PSNR) in dynamic
+    regions. STORM reconstructs large-scale outdoor scenes in 200ms, supports real-time
+    rendering, and outperforms competitors in scene flow estimation, improving 3D
+    EPE by 0.422m and Acc5 by 28.02%. Beyond reconstruction, we showcase four additional
+    applications of our model, illustrating the potential of self-supervised learning
+    for broader dynamic scene understanding.
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.00602.pdf
+  code: null
+  video: https://jiawei-yang.github.io/STORM/
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Autonomous Driving
+  - Dynamic
+  - Large-Scale
+  - Video
+  thumbnail: assets/thumbnails/yang2024storm.jpg

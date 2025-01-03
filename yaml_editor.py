@@ -2,11 +2,78 @@ import sys
 import yaml
 import webbrowser
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
-                           QHBoxLayout, QLabel, QLineEdit, QTextEdit, QPushButton,
-                           QScrollArea, QFrame, QMessageBox, QGridLayout, QListWidget, QDialog)
-from PyQt6.QtCore import Qt, QTimer
+                           QHBoxLayout, QLabel, QLineEdit, QPushButton,
+                           QMessageBox, QDialog, QTextEdit, QScrollArea, QListWidget,
+                           QGridLayout, )
+from pathlib import Path
+import requests
+from pdf2image import convert_from_bytes
+from PIL import Image
+import logging
+import arxiv
 from arxiv_integration import ArxivIntegration
+from PyQt6.QtCore import Qt, QTimer
 
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+class ThumbnailGenerator:
+    def __init__(self, output_dir: str = "assets/thumbnails"):
+        """Initialize thumbnail generator with fixed dimensions"""
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.THUMB_WIDTH = 300
+        self.THUMB_HEIGHT = 424  # Roughly A4 proportion
+
+    def download_pdf(self, url: str) -> bytes:
+        """Download PDF with proper headers"""
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
+            'Accept': 'application/pdf,*/*'
+        }
+        
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        return response.content
+
+    def create_thumbnail(self, pdf_content: bytes, paper_id: str) -> bool:
+        """Create fixed-size thumbnail from PDF content"""
+        try:
+            images = convert_from_bytes(
+                pdf_content,
+                first_page=1,
+                last_page=1,
+                size=(self.THUMB_WIDTH, self.THUMB_HEIGHT)
+            )
+            
+            if not images:
+                return False
+            
+            # Create white background
+            background = Image.new('RGB', (self.THUMB_WIDTH, self.THUMB_HEIGHT), 'white')
+            
+            # Paste the PDF image onto background
+            thumb = images[0]
+            thumb.thumbnail((self.THUMB_WIDTH, self.THUMB_HEIGHT), Image.Resampling.LANCZOS)
+            
+            # Center the thumbnail
+            offset = ((self.THUMB_WIDTH - thumb.width) // 2,
+                     (self.THUMB_HEIGHT - thumb.height) // 2)
+            background.paste(thumb, offset)
+            
+            # Save thumbnail
+            thumb_path = self.output_dir / f"{paper_id}.jpg"
+            background.save(thumb_path, "JPEG", quality=85, optimize=True)
+            logger.info(f"Created thumbnail for {paper_id}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error creating thumbnail for {paper_id}: {str(e)}")
+            return False
 
 class ArxivAddDialog(QDialog):
     def __init__(self, parent=None):
@@ -14,6 +81,8 @@ class ArxivAddDialog(QDialog):
         self.setWindowTitle("Add from arXiv")
         self.setup_ui()
         self.arxiv = ArxivIntegration()
+        self.thumbnail_generator = ThumbnailGenerator()
+        self.client = arxiv.Client()
         
     def setup_ui(self):
         layout = QVBoxLayout(self)
@@ -37,6 +106,31 @@ class ArxivAddDialog(QDialog):
         self.status_label = QLabel("")
         layout.addWidget(self.status_label)
         
+    def generate_thumbnail(self, entry):
+        """Generate thumbnail for the newly added paper"""
+        if not entry.get('paper'):
+            logger.warning(f"No PDF URL for {entry['id']}")
+            return False
+            
+        try:
+            self.status_label.setText("Generating thumbnail...")
+            QApplication.processEvents()  # Update UI
+            
+            pdf_content = self.thumbnail_generator.download_pdf(entry['paper'])
+            success = self.thumbnail_generator.create_thumbnail(pdf_content, entry['id'])
+            
+            if success:
+                self.status_label.setText("Thumbnail generated successfully")
+            else:
+                self.status_label.setText("Failed to generate thumbnail")
+                
+            return success
+            
+        except Exception as e:
+            logger.error(f"Error generating thumbnail: {str(e)}")
+            self.status_label.setText(f"Error generating thumbnail: {str(e)}")
+            return False
+    
     def add_paper(self):
         url_or_id = self.url_input.text().strip()
         if not url_or_id:
@@ -59,17 +153,27 @@ class ArxivAddDialog(QDialog):
                 
                 if msg.exec() == QMessageBox.StandardButton.Yes:
                     if self.arxiv.append_to_yaml(entry):
-                        QMessageBox.information(self, "Success", "Paper added successfully!")
+                        # Generate thumbnail after successful paper addition
+                        thumbnail_success = self.generate_thumbnail(entry)
+                        
+                        if thumbnail_success:
+                            QMessageBox.information(self, "Success", 
+                                "Paper added successfully and thumbnail generated!")
+                        else:
+                            QMessageBox.warning(self, "Partial Success", 
+                                "Paper added but failed to generate thumbnail.")
+                        
                         self.accept()  # Close dialog
                     else:
-                        QMessageBox.warning(self, "Error", "Failed to add paper. It might already exist.")
+                        QMessageBox.warning(self, "Error", 
+                            "Failed to add paper. It might already exist.")
             else:
                 self.status_label.setText("Could not find paper with given ID")
                 
         except Exception as e:
             self.status_label.setText(f"Error: {str(e)}")
         finally:
-            self.add_button.setEnabled(True) 
+            self.add_button.setEnabled(True)
 
 
 class TagButton(QPushButton):
@@ -167,10 +271,12 @@ class YAMLEditor(QMainWindow):
             self.save_indicator.setStyleSheet("color: #f44336; font-weight: bold;")
         
         # Clear the indicator after 1.5 seconds
-        QTimer.singleShot(1500, lambda: (
-            self.save_indicator.setText(""),
-            self.save_indicator.setStyleSheet("")
-        ))
+        QTimer.singleShot(1500, lambda: self.clear_save_indicator())
+
+    def clear_save_indicator(self):
+        """Clear the save indicator"""
+        self.save_indicator.setText("")
+        self.save_indicator.setStyleSheet("")
 
     def setup_ui(self):
         central_widget = QWidget()
@@ -496,7 +602,7 @@ class YAMLEditor(QMainWindow):
             self.show_current_entry()
 
     def delete_current_entry(self):
-        """Delete the current entry after confirmation"""
+        """Delete the current entry and its thumbnail after confirmation"""
         entry = self.data[self.current_index]
         title = entry.get('title', 'this entry')
         
@@ -509,11 +615,16 @@ class YAMLEditor(QMainWindow):
         msg.setDefaultButton(QMessageBox.StandardButton.No)
         
         if msg.exec() == QMessageBox.StandardButton.Yes:
-            # Delete the entry
-            del self.data[self.current_index]
-            
-            # Save the changes
             try:
+                # Delete thumbnail if it exists
+                thumbnail_path = Path(f"assets/thumbnails/{entry['id']}.jpg")
+                if thumbnail_path.exists():
+                    thumbnail_path.unlink()
+                
+                # Delete the entry
+                del self.data[self.current_index]
+                
+                # Save the changes
                 with open("awesome_3dgs_papers.yaml", 'w', encoding='utf-8') as file:
                     yaml.dump(self.data, file, sort_keys=False, allow_unicode=True)
                 self.show_save_feedback(True)
