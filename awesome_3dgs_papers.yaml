@@ -10355,3 +10355,33 @@
   - Dynamic
   - Feed-Forward
   thumbnail: assets/thumbnails/mao2024dreamdrive.jpg
+- id: gao2025easysplat
+  title: 'EasySplat: View-Adaptive Learning makes 3D Gaussian Splatting Easy'
+  authors: Ao Gao, Luosong Guo, Tao Chen, Zhao Wang, Ying Tai, Jian Yang, Zhenyu Zhang
+  year: '2025'
+  abstract: 3D Gaussian Splatting (3DGS) techniques have achieved satisfactory 3D
+    scene representation. Despite their impressive performance, they confront challenges
+    due to the limitation of structure-from-motion (SfM) methods on acquiring accurate
+    scene initialization, or the inefficiency of densification strategy. In this paper,
+    we introduce a novel framework EasySplat to achieve high-quality 3DGS modeling.
+    Instead of using SfM for scene initialization, we employ a novel method to release
+    the power of large-scale pointmap approaches. Specifically, we propose an efficient
+    grouping strategy based on view similarity, and use robust pointmap priors to
+    obtain high-quality point clouds and camera poses for 3D scene initialization.
+    After obtaining a reliable scene structure, we propose a novel densification approach
+    that adaptively splits Gaussian primitives based on the average shape of neighboring
+    Gaussian ellipsoids, utilizing KNN scheme. In this way, the proposed method tackles
+    the limitation on initialization and optimization, leading to an efficient and
+    accurate 3DGS modeling. Extensive experiments demonstrate that EasySplat outperforms
+    the current state-of-the-art (SOTA) in handling novel view synthesis.
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.01003.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Acceleration
+  - Densification
+  - Rendering
+  thumbnail: assets/thumbnails/gao2025easysplat.jpg
