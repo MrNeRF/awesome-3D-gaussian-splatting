@@ -1833,8 +1833,7 @@
     Gaussians and anchors. Importantly, our work is the pioneer to explore context-based
     compression for 3DGS representation, resulting in a remarkable size reduction
     of over 75x compared to vanilla 3DGS, while simultaneously improving fidelity,
-    and achieving over 11x size reduction over SOTA 3DGS compression approach
-    Scaffold-GS. Our code is available here: https://github.com/YihangChen-ee/HAC'
+    and achieving over 11x size reduction over SOTA 3DGS compression approach Scaffold-GS.'
   project_page: https://yihangchen-ee.github.io/project_hac/
   paper: https://arxiv.org/pdf/2403.14530.pdf
   code: https://github.com/YihangChen-ee/HAC
