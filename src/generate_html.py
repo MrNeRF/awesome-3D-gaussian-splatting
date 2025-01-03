@@ -373,6 +373,9 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
                 <button class="copy-button" onclick="copyBitcoinAddress()">
                     <i class="fas fa-copy"></i> Copy
                 </button>
+                <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
+                    <i class="fas fa-heart"></i> Sponsor
+                </a>
             </div>
         </div>
 
