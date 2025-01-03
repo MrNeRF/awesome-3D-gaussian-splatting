@@ -2,7 +2,7 @@ import json
 from typing import List, Dict, Any
 
 def generate_html(entries: List[Dict[str, Any]]) -> None:
-    """Generate HTML page with paper list using tags and card layout"""
+    """Generate optimized HTML page while preserving design"""
     # Get all unique tags and years
     all_tags = sorted(set(tag for entry in entries for tag in entry['tags']))
     year_options = generate_year_options(entries)
@@ -13,10 +13,20 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Awesome 3D Gaussian Splatting Paper List</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Add vanilla-lazyload -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
+    
     <style>
-        /* Original styles */
+        /* Original styles preserved */
         :root {{
             --primary-color: #1772d0;
             --hover-color: #f09228;
@@ -113,7 +123,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             border-radius: 0.75rem;
             padding: 2rem;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
             display: flex;
             gap: 1.5rem;
             position: relative;
@@ -251,6 +261,23 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             display: block;
         }}
 
+        /* Performance optimizations that preserve design */
+        .paper-thumbnail img.lazy:not(.loaded) {{
+            opacity: 0;
+        }}
+        
+        .paper-thumbnail img.lazy.loaded {{
+            opacity: 1;
+            transition: opacity 0.3s ease-in;
+        }}
+
+        @media (prefers-reduced-motion: reduce) {{
+            .paper-card,
+            .paper-thumbnail img {{
+                transition: none;
+            }}
+        }}
+
         @media (max-width: 768px) {{
             .filters {{
                 flex-direction: column;
@@ -297,6 +324,19 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {{
+        // Initialize lazy loading
+        const lazyLoadInstance = new LazyLoad({{
+            elements_selector: ".lazy",
+            callback_error: (img) => {{
+                if (img.dataset.fallback) {{
+                    img.src = img.dataset.fallback;
+                }}
+            }},
+            callback_loaded: (img) => {{
+                img.classList.add('loaded');
+            }}
+        }});
+
         const searchInput = document.getElementById('searchInput');
         const yearFilter = document.getElementById('yearFilter');
         const paperCards = document.querySelectorAll('.paper-row');
@@ -308,12 +348,24 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
         document.querySelectorAll('.abstract-toggle').forEach(button => {{
             button.addEventListener('click', () => {{
                 const abstract = button.nextElementSibling;
-                abstract.classList.toggle('show');
-                button.textContent = abstract.classList.contains('show') ? 'Hide Abstract' : 'Show Abstract';
+                const isShown = abstract.classList.toggle('show');
+                button.textContent = isShown ? 'Hide Abstract' : 'Show Abstract';
             }});
         }});
 
-        // Handle tag filtering
+        // Handle tag filtering with debounce
+        const debounce = (fn, delay) => {{
+            let timeoutId;
+            return (...args) => {{
+                if (timeoutId) {{
+                    clearTimeout(timeoutId);
+                }}
+                timeoutId = setTimeout(() => {{
+                    fn.apply(null, args);
+                }}, delay);
+            }};
+        }};
+
         tagFilters.forEach(tagFilter => {{
             tagFilter.addEventListener('click', () => {{
                 const tag = tagFilter.getAttribute('data-tag');
@@ -336,7 +388,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             }});
         }}
 
-        function filterPapers() {{
+        const filterPapers = debounce(() => {{
             const searchTerm = searchInput.value.toLowerCase();
             const selectedYear = yearFilter.value;
 
@@ -359,7 +411,8 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             }});
             
             updatePaperNumbers();
-        }}
+            lazyLoadInstance.update();
+        }}, 150);
 
         searchInput.addEventListener('input', filterPapers);
         yearFilter.addEventListener('change', filterPapers);
@@ -377,42 +430,40 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
 def generate_year_options(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML options for year filter"""
-    # Get years and convert all to strings for consistent sorting
     years = sorted({str(entry.get('year', '')) for entry in entries if entry.get('year')}, 
                   reverse=True)
     return '\n'.join(f'<option value="{year}">{year}</option>' for year in years)
 
 def generate_tag_filters(tags: List[str]) -> str:
     """Generate HTML for tag filters"""
-    # Exclude year tags from the tag filters as they're handled by the dropdown
     filtered_tags = [tag for tag in sorted(tags) if not tag.startswith('Year ')]
     return '\n'.join(f'<div class="tag-filter" data-tag="{tag}">{tag}</div>' 
                      for tag in filtered_tags)
 
 def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
-    """Generate HTML for paper cards"""
+    """Generate HTML for paper cards with optimized loading while preserving design"""
     cards = []
     for entry in entries:
-        # Generate links
+        # Generate links with security attributes
         links = []
         if entry.get('project_page'):
-            links.append(f"""<a href="{entry['project_page']}" class="paper-link" target="_blank">
+            links.append(f"""<a href="{entry['project_page']}" class="paper-link" target="_blank" rel="noopener">
                             <i class="fas fa-globe"></i> Project Page
                           </a>""")
         if entry.get('paper'):
-            links.append(f"""<a href="{entry['paper']}" class="paper-link" target="_blank">
+            links.append(f"""<a href="{entry['paper']}" class="paper-link" target="_blank" rel="noopener">
                             <i class="fas fa-file-alt"></i> Paper
                           </a>""")
         if entry.get('code'):
-            links.append(f"""<a href="{entry['code']}" class="paper-link" target="_blank">
+            links.append(f"""<a href="{entry['code']}" class="paper-link" target="_blank" rel="noopener">
                             <i class="fas fa-code"></i> Code
                           </a>""")
         if entry.get('video'):
-            links.append(f"""<a href="{entry['video']}" class="paper-link" target="_blank">
+            links.append(f"""<a href="{entry['video']}" class="paper-link" target="_blank" rel="noopener">
                             <i class="fas fa-video"></i> Video
                           </a>""")
         
-        # Generate tags HTML (excluding year tags from display)
+        # Generate tags HTML (excluding year tags)
         display_tags = [tag for tag in entry['tags'] if not tag.startswith('Year ')]
         tags_html = '\n'.join(f'<span class="paper-tag">{tag}</span>' for tag in display_tags)
         
@@ -425,8 +476,12 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
         """ if entry.get('abstract') else ""
 
         year = entry.get('year', 'N/A')
+        
+        # Prepare thumbnail URL with fallback
+        thumbnail_url = entry.get('thumbnail', f'assets/thumbnails/{entry["id"]}.jpg')
+        fallback_url = 'https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'
 
-        # Generate card HTML with thumbnail and number
+        # Generate card HTML with optimized loading while preserving design
         card = f"""
             <div class="paper-row" 
                  data-title="{entry['title']}" 
@@ -436,9 +491,10 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
                 <div class="paper-card">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
-                        <img src="{entry.get('thumbnail', 'assets/thumbnails/' + entry['id'] + '.jpg')}" 
-                             onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'"
-                             alt="Paper thumbnail for {entry['title']}" 
+                        <img data-src="{thumbnail_url}"
+                             data-fallback="{fallback_url}"
+                             alt="Paper thumbnail for {entry['title']}"
+                             class="lazy"
                              loading="lazy"/>
                     </div>
                     <div class="paper-content">
