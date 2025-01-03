@@ -72,7 +72,7 @@ jobs:
 
         if errors:
             print("Validation errors found:")
-            for error in errors
+            for error in errors:
                 print(error)
             sys.exit(1)
         EOF
