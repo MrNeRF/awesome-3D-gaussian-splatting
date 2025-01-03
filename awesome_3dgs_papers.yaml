@@ -1666,30 +1666,6 @@
   - Code
   - Project
   thumbnail: assets/thumbnails/pan2023humansplat.jpg
-- id: f2023a
-  title: A Generalization of Algebraic Surface Drawing
-  authors: James F. Blinn
-  year: '2023'
-  abstract: 'The mathematical description of three-dimensional surfaces usually falls
-    into one of two classifications: parametric and implicit. An implicit surface
-    is defined to be all points which satisfy some equation F (x, y, z) = 0. This
-    form is ideally suited for image space shaded picture drawing; the pixel coordinates
-    are substituted for x and y, and the equation is solved for z. Algorithms for
-    drawing such objects have been developed primarily for first- and second-order
-    polynomial functions, a subcategory known as algebraic surfaces. This paper presents
-    a new algorithm applicable to other functional forms, in particular to the summation
-    of several Gaussian density distributions. The algorithm was created to model
-    electron density maps of molecular structures, but it can be used for other artistically
-    interesting shapes.'
-  project_page: ''
-  paper: null
-  code: ''
-  video: ''
-  thumbnail_image: false
-  thumbnail_video: false
-  tags:
-  - Classic Work
-  thumbnail: assets/thumbnails/f2023a.jpg
 - id: keselman2023approximate
   title: Approximate Differentiable Rendering with Algebraic Surfaces
   authors: Leonid Keselman and Martial Hebert
