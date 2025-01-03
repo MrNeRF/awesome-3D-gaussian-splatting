@@ -1,0 +1,91 @@
+name: Validate YAML and Generate HTML
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'awesome_3dgs_papers.yaml'
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml requests
+
+    - name: Validate YAML entries
+      run: |
+        python - <<EOF
+        import yaml
+        import sys
+        import requests
+
+        # Load allowed tags from yaml_editor.py
+        allowed_tags = [
+          "2DGS", "360 degree", "Acceleration", "Antialiasing", "Autonomous Driving", 
+          "Avatar", "Classic Work", "Code", "Compression", "Deblurring", "Densification",
+          "Diffusion", "Distributed", "Dynamic", "Editing", "Event Camera", "Feed-Forward", 
+          "GAN", "Inpainting", "In the Wild", "Language Embedding", "Large-Scale", "Lidar", 
+          "Medicine", "Meshing", "Misc", "Monocular", "Perspective-correct", "Object Detection", 
+          "Optimization", "Physics", "Point Cloud", "Poses", "Project", "Ray Tracing", 
+          "Rendering", "Relight", "Review", "Robotics", "Segmentation", "SLAM", "Sparse", 
+          "Stereo", "Style Transfer", "Texturing", "Transformer", "Uncertainty", "Video", 
+          "Virtual Reality", "World Generation"
+        ]
+
+        with open("awesome_3dgs_papers.yaml", 'r') as file:
+            entries = yaml.safe_load(file)
+
+        errors = []
+        for entry in entries:
+            # Check if paper URL exists
+            if not entry.get('paper'):
+                errors.append(f"Entry {entry['id']}: Missing paper URL")
+
+            # Validate tags
+            if not entry.get('tags'):
+                errors.append(f"Entry {entry['id']}: No tags provided")
+            else:
+                invalid_tags = [tag for tag in entry['tags'] 
+                              if not tag.startswith('Year ') and tag not in allowed_tags]
+                if invalid_tags:
+                    errors.append(f"Entry {entry['id']}: Invalid tags: {invalid_tags}")
+
+            # Check if paper URL is accessible
+            if entry.get('paper'):
+                try:
+                    response = requests.head(entry['paper'], timeout=10)
+                    if response.status_code != 200:
+                        errors.append(f"Entry {entry['id']}: Paper URL returns {response.status_code}")
+                except Exception as e:
+                    errors.append(f"Entry {entry['id']}: Could not access paper URL: {str(e)}")
+
+        if errors:
+            print("Validation errors found:")
+            for error in errors
+                print(error)
+            sys.exit(1)
+        EOF
+
+    - name: Generate HTML
+      run: python src/generate_all.py
+
+    - name: Commit and push if changed
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add index.html
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update index.html")
+        git push
