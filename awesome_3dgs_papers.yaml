@@ -4677,10 +4677,8 @@
   thumbnail_video: false
   tags:
   - Editing
-  - Has Paper
-  - Has Project
-  - Has Video
-  - Year 2024
+  - Project
+  - Video
   thumbnail: assets/thumbnails/jaganathan2024iceg.jpg
 - id: joseph2024gradientdriven
   title: Gradient-Driven 3D Segmentation and Affordance Transfer in Gaussian Splatting
@@ -8787,9 +8785,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/deng2024compact.jpg
 - id: ji2024nedsslam
   title: 'NEDS-SLAM: A Novel Neural Explicit Dense Semantic SLAM Framework using 3D
@@ -8818,9 +8814,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - SLAM
-  - Year 2024
   thumbnail: assets/thumbnails/ji2024nedsslam.jpg
 - id: sun2024highfidelity
   title: High-Fidelity SLAM Using Gaussian Splatting with Rendering-Guided Densification
@@ -10190,9 +10184,7 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Paper
   - Large-Scale
-  - Year 2024
   thumbnail: assets/thumbnails/wu2024hgsmapping.jpg
 - id: liu2024citygaussian
   title: 'CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians'
@@ -10219,11 +10211,9 @@
   thumbnail_image: false
   thumbnail_video: false
   tags:
-  - Has Code
-  - Has Paper
-  - Has Project
+  - Code
   - Large-Scale
-  - Year 2024
+  - Project
   thumbnail: assets/thumbnails/liu2024citygaussian.jpg
 - id: wu2024mmgaussian
   title: 'MM-Gaussian: 3D Gaussian-based Multi-modal Fusion for Localization and Reconstruction
