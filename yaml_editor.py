@@ -7,6 +7,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PyQt6.QtCore import Qt, QTimer
 from arxiv_integration import ArxivIntegration
 
+
 class ArxivAddDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -70,6 +71,7 @@ class ArxivAddDialog(QDialog):
         finally:
             self.add_button.setEnabled(True) 
 
+
 class TagButton(QPushButton):
     def __init__(self, text, active=False):
         super().__init__(text)
@@ -92,6 +94,7 @@ class TagButton(QPushButton):
         """)
         self.setMinimumHeight(30)
 
+
 class URLWidget(QWidget):
     def __init__(self, label_text):
         super().__init__()
@@ -107,6 +110,7 @@ class URLWidget(QWidget):
         layout.addWidget(self.url_input)
         layout.addWidget(self.open_button)
 
+
 class YAMLEditor(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -118,6 +122,7 @@ class YAMLEditor(QMainWindow):
         self.url_widgets = {}
         self.tag_buttons = {}
         self.original_entry_state = None
+        self.search_results = []  # Store search result indices
         
         # Available tags
         self.available_tags = [
@@ -375,6 +380,12 @@ class YAMLEditor(QMainWindow):
         self.current_tags_list.clear()
         self.current_tags_list.addItems(sorted(current_tags))
 
+    def clear_search_results(self):
+        """Clear search results and status bar message"""
+        self.search_results = []
+        self.statusBar().clearMessage()
+        self.search_input.clear()
+
     def show_current_entry(self):
         """Display the current entry"""
         entry = self.data[self.current_index]
@@ -415,6 +426,50 @@ class YAMLEditor(QMainWindow):
         self.current_tags_list.clear()
         self.current_tags_list.addItems(sorted(current_tags))
 
+    def search_entry(self):
+        """Search for entries by title, authors, or tags with navigation between results"""
+        search_term = self.search_input.text().lower()
+        if not search_term:
+            return
+
+        # Find all matching indices
+        self.search_results = []
+        for i, entry in enumerate(self.data):
+            # Safely get values, converting None to empty string
+            title = entry.get('title', '') or ''
+            authors = entry.get('authors', '') or ''
+            tags = entry.get('tags', [])
+            
+            # Case insensitive search in title, authors, and tags
+            title_match = search_term in title.lower()
+            authors_match = search_term in authors.lower()
+            tags_match = any(search_term in (tag or '').lower() for tag in tags)
+            
+            if title_match or authors_match or tags_match:
+                self.search_results.append(i)
+        
+        if not self.search_results:
+            QMessageBox.information(self, "Search Results", "No matches found.")
+            return
+            
+        # If current index is in results, move to next result
+        if self.current_index in self.search_results:
+            current_pos = self.search_results.index(self.current_index)
+            next_pos = (current_pos + 1) % len(self.search_results)
+            self.current_index = self.search_results[next_pos]
+        else:
+            # Start with first result
+            self.current_index = self.search_results[0]
+            
+        self.show_current_entry()
+        
+        # Show result count in status bar
+        current_result = self.search_results.index(self.current_index) + 1
+        self.statusBar().showMessage(
+            f"Showing result {current_result} of {len(self.search_results)}. "
+            "Press Enter to see next result."
+        )
+
     def open_url(self, field):
         """Open URL in browser"""
         url = self.url_widgets[field].url_input.text()
@@ -427,26 +482,17 @@ class YAMLEditor(QMainWindow):
             page = int(self.page_input.text())
             if 1 <= page <= len(self.data):
                 self.current_index = page - 1
+                self.clear_search_results()
                 self.show_current_entry()
             self.page_input.clear()
         except ValueError:
             pass
 
-    def search_entry(self):
-        """Search for entry by title or authors"""
-        search_term = self.search_input.text().lower()
-        for i, entry in enumerate(self.data):
-            if (search_term in entry['title'].lower() or 
-                search_term in entry['authors'].lower()):
-                self.current_index = i
-                self.show_current_entry()
-                break
-        self.search_input.clear()
-
     def prev_entry(self):
         """Go to previous entry"""
         if self.current_index > 0:
             self.current_index -= 1
+            self.clear_search_results()
             self.show_current_entry()
 
     def delete_current_entry(self):
@@ -490,6 +536,7 @@ class YAMLEditor(QMainWindow):
         """Go to next entry"""
         if self.current_index < len(self.data) - 1:
             self.current_index += 1
+            self.clear_search_results()
             self.show_current_entry()
            
     def add_arxiv_button(self):
@@ -508,7 +555,6 @@ class YAMLEditor(QMainWindow):
             # Go to last entry
             self.current_index = len(self.data) - 1
             self.show_current_entry()
-
 
 def main():
     app = QApplication(sys.argv)
