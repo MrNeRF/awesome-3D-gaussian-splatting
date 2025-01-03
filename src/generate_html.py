@@ -26,7 +26,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
     
     <style>
-        /* Original styles preserved */
         :root {{
             --primary-color: #1772d0;
             --hover-color: #f09228;
@@ -56,6 +55,26 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             font-size: 2.5rem;
             margin-bottom: 2rem;
             color: var(--text-color);
+        }}
+
+        /* Instructions box */
+        .filter-info {{
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+        }}
+
+        .filter-info h3 {{
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }}
+
+        .filter-info p {{
+            margin: 0.5rem 0;
+            color: #4b5563;
         }}
 
         /* Search and Filter Styles */
@@ -106,8 +125,13 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             background: #e5e7eb;
         }}
 
-        .tag-filter.active {{
+        .tag-filter.include {{
             background: var(--primary-color);
+            color: white;
+        }}
+
+        .tag-filter.exclude {{
+            background: #dc2626;
             color: white;
         }}
 
@@ -150,10 +174,10 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             z-index: 1;
         }}
 
-        /* Thumbnail styles */
+        /* Paper content styles remain unchanged */
         .paper-thumbnail {{
             flex: 0 0 200px;
-            height: 283px;   /* Maintain aspect ratio (1.414, like A4) */
+            height: 283px;
             border-radius: 0.5rem;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -174,7 +198,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
         .paper-content {{
             flex: 1;
-            min-width: 0; /* Prevent content from overflowing */
+            min-width: 0;
         }}
 
         .paper-title {{
@@ -229,16 +253,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
             color: var(--hover-color);
         }}
 
-        .abstract-toggle {{
-            background: none;
-            border: 1px solid var(--border-color);
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            color: var(--text-color);
-        }}
-
         .paper-abstract {{
             margin-top: 1rem;
             display: none;
@@ -259,23 +273,6 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
         .paper-row.visible {{
             display: block;
-        }}
-
-        /* Performance optimizations that preserve design */
-        .paper-thumbnail img.lazy:not(.loaded) {{
-            opacity: 0;
-        }}
-        
-        .paper-thumbnail img.lazy.loaded {{
-            opacity: 1;
-            transition: opacity 0.3s ease-in;
-        }}
-
-        @media (prefers-reduced-motion: reduce) {{
-            .paper-card,
-            .paper-thumbnail img {{
-                transition: none;
-            }}
         }}
 
         @media (max-width: 768px) {{
@@ -305,6 +302,13 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
     <div class="container">
         <h1>Awesome-3D-Gaussian-Splatting-Paper-List</h1>
         
+        <div class="filter-info">
+            <h3>Filter Options</h3>
+            <p><strong>Search:</strong> Enter paper title or author names</p>
+            <p><strong>Year:</strong> Filter by publication year</p>
+            <p><strong>Tags:</strong> Click once to include (blue), twice to exclude (red), third time to remove filter</p>
+        </div>
+
         <div class="filters">
             <input type="text" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
             <select id="yearFilter" class="filter-select">
@@ -342,7 +346,8 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
         const paperCards = document.querySelectorAll('.paper-row');
         const tagFilters = document.querySelectorAll('.tag-filter');
         
-        let selectedTags = new Set();
+        let includeTags = new Set();
+        let excludeTags = new Set();
 
         // Handle abstract toggles
         document.querySelectorAll('.abstract-toggle').forEach(button => {{
@@ -369,13 +374,23 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
         tagFilters.forEach(tagFilter => {{
             tagFilter.addEventListener('click', () => {{
                 const tag = tagFilter.getAttribute('data-tag');
-                if (selectedTags.has(tag)) {{
-                    selectedTags.delete(tag);
-                    tagFilter.classList.remove('active');
+                
+                if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {{
+                    // First click: Add to include
+                    tagFilter.classList.add('include');
+                    includeTags.add(tag);
+                }} else if (tagFilter.classList.contains('include')) {{
+                    // Second click: Switch to exclude
+                    tagFilter.classList.remove('include');
+                    tagFilter.classList.add('exclude');
+                    includeTags.delete(tag);
+                    excludeTags.add(tag);
                 }} else {{
-                    selectedTags.add(tag);
-                    tagFilter.classList.add('active');
+                    // Third click: Back to neutral
+                    tagFilter.classList.remove('exclude');
+                    excludeTags.delete(tag);
                 }}
+                
                 filterPapers();
             }});
         }});
@@ -400,10 +415,12 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 
                 const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
                 const matchesYear = selectedYear === 'all' || year === selectedYear;
-                const matchesTags = selectedTags.size === 0 || 
-                    [...selectedTags].every(tag => tags.includes(tag));
+                const matchesIncludeTags = includeTags.size === 0 || 
+                    [...includeTags].every(tag => tags.includes(tag));
+                const matchesExcludeTags = excludeTags.size === 0 ||
+                    ![...excludeTags].some(tag => tags.includes(tag));
 
-                if (matchesSearch && matchesYear && matchesTags) {{
+                if (matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags) {{
                     card.classList.add('visible');
                 }} else {{
                     card.classList.remove('visible');

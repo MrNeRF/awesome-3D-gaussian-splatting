@@ -15,7 +15,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
     
     <style>
-        /* Original styles preserved */
         :root {
             --primary-color: #1772d0;
             --hover-color: #f09228;
@@ -45,6 +44,26 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
             color: var(--text-color);
+        }
+
+        /* Instructions box */
+        .filter-info {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-info h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .filter-info p {
+            margin: 0.5rem 0;
+            color: #4b5563;
         }
 
         /* Search and Filter Styles */
@@ -95,8 +114,13 @@
             background: #e5e7eb;
         }
 
-        .tag-filter.active {
+        .tag-filter.include {
             background: var(--primary-color);
+            color: white;
+        }
+
+        .tag-filter.exclude {
+            background: #dc2626;
             color: white;
         }
 
@@ -139,10 +163,10 @@
             z-index: 1;
         }
 
-        /* Thumbnail styles */
+        /* Paper content styles remain unchanged */
         .paper-thumbnail {
             flex: 0 0 200px;
-            height: 283px;   /* Maintain aspect ratio (1.414, like A4) */
+            height: 283px;
             border-radius: 0.5rem;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -163,7 +187,7 @@
 
         .paper-content {
             flex: 1;
-            min-width: 0; /* Prevent content from overflowing */
+            min-width: 0;
         }
 
         .paper-title {
@@ -218,16 +242,6 @@
             color: var(--hover-color);
         }
 
-        .abstract-toggle {
-            background: none;
-            border: 1px solid var(--border-color);
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            color: var(--text-color);
-        }
-
         .paper-abstract {
             margin-top: 1rem;
             display: none;
@@ -248,23 +262,6 @@
 
         .paper-row.visible {
             display: block;
-        }
-
-        /* Performance optimizations that preserve design */
-        .paper-thumbnail img.lazy:not(.loaded) {
-            opacity: 0;
-        }
-        
-        .paper-thumbnail img.lazy.loaded {
-            opacity: 1;
-            transition: opacity 0.3s ease-in;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .paper-card,
-            .paper-thumbnail img {
-                transition: none;
-            }
         }
 
         @media (max-width: 768px) {
@@ -294,6 +291,13 @@
     <div class="container">
         <h1>Awesome-3D-Gaussian-Splatting-Paper-List</h1>
         
+        <div class="filter-info">
+            <h3>Filter Options</h3>
+            <p><strong>Search:</strong> Enter paper title or author names</p>
+            <p><strong>Year:</strong> Filter by publication year</p>
+            <p><strong>Tags:</strong> Click once to include (blue), twice to exclude (red), third time to remove filter</p>
+        </div>
+
         <div class="filters">
             <input type="text" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
             <select id="yearFilter" class="filter-select">
@@ -321,10 +325,6 @@
 <div class="tag-filter" data-tag="Editing">Editing</div>
 <div class="tag-filter" data-tag="Feed-Forward">Feed-Forward</div>
 <div class="tag-filter" data-tag="GAN">GAN</div>
-<div class="tag-filter" data-tag="Has Code">Has Code</div>
-<div class="tag-filter" data-tag="Has Paper">Has Paper</div>
-<div class="tag-filter" data-tag="Has Project">Has Project</div>
-<div class="tag-filter" data-tag="Has Video">Has Video</div>
 <div class="tag-filter" data-tag="In the Wild">In the Wild</div>
 <div class="tag-filter" data-tag="Inpainting">Inpainting</div>
 <div class="tag-filter" data-tag="Language Embedding">Language Embedding</div>
@@ -6793,7 +6793,7 @@
                  data-title="ICE-G: Image Conditional Editing of 3D Gaussian Splats" 
                  data-authors="Vishnu Jaganathan, Hannah Huang, Muhammad Zubair Irshad, Varun Jampani, Amit Raj, Zsolt Kira"
                  data-year="2024"
-                 data-tags='["Editing", "Has Paper", "Has Project", "Has Video", "Year 2024"]'>
+                 data-tags='["Editing", "Project", "Video"]'>
                 <div class="paper-card">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
@@ -6810,9 +6810,8 @@
                         <p class="paper-authors">Vishnu Jaganathan, Hannah Huang, Muhammad Zubair Irshad, Varun Jampani, Amit Raj, Zsolt Kira</p>
                         <div class="paper-tags">
                             <span class="paper-tag">Editing</span>
-<span class="paper-tag">Has Paper</span>
-<span class="paper-tag">Has Project</span>
-<span class="paper-tag">Has Video</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span>
                         </div>
                         <div class="paper-links">
                             <a href="https://ice-gaussian.github.io/" class="paper-link" target="_blank" rel="noopener">
@@ -12346,7 +12345,7 @@ and an Optimal Projection Strategy
                  data-title="Compact 3D Gaussian Splatting For Dense Visual SLAM" 
                  data-authors="Tianchen Deng, Yaohui Chen, Leyan Zhang, Jianfei Yang, Shenghai Yuan, Danwei Wang, Weidong Chen"
                  data-year="2024"
-                 data-tags='["Has Paper", "SLAM", "Year 2024"]'>
+                 data-tags='["SLAM"]'>
                 <div class="paper-card">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
@@ -12362,8 +12361,7 @@ and an Optimal Projection Strategy
                         </h2>
                         <p class="paper-authors">Tianchen Deng, Yaohui Chen, Leyan Zhang, Jianfei Yang, Shenghai Yuan, Danwei Wang, Weidong Chen</p>
                         <div class="paper-tags">
-                            <span class="paper-tag">Has Paper</span>
-<span class="paper-tag">SLAM</span>
+                            <span class="paper-tag">SLAM</span>
                         </div>
                         <div class="paper-links">
                             <a href="https://arxiv.org/pdf/2403.11247.pdf" class="paper-link" target="_blank" rel="noopener">
@@ -12385,7 +12383,7 @@ and an Optimal Projection Strategy
                  data-title="NEDS-SLAM: A Novel Neural Explicit Dense Semantic SLAM Framework using 3D Gaussian Splatting" 
                  data-authors="Yiming Ji, Yang Liu, Guanghu Xie, Boyu Ma, Zongwu Xie"
                  data-year="2024"
-                 data-tags='["Has Paper", "SLAM", "Year 2024"]'>
+                 data-tags='["SLAM"]'>
                 <div class="paper-card">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
@@ -12401,8 +12399,7 @@ and an Optimal Projection Strategy
                         </h2>
                         <p class="paper-authors">Yiming Ji, Yang Liu, Guanghu Xie, Boyu Ma, Zongwu Xie</p>
                         <div class="paper-tags">
-                            <span class="paper-tag">Has Paper</span>
-<span class="paper-tag">SLAM</span>
+                            <span class="paper-tag">SLAM</span>
                         </div>
                         <div class="paper-links">
                             <a href="https://arxiv.org/pdf/2403.11679.pdf" class="paper-link" target="_blank" rel="noopener">
@@ -14314,7 +14311,7 @@ and an Optimal Projection Strategy
                  data-title="HGS-Mapping: Online Dense Mapping Using Hybrid Gaussian Representation in Urban Scenes" 
                  data-authors="Ke Wu, Kaizhao Zhang, Zhiwei Zhang, Shanshuai Yuan, Muer Tie, Julong Wei, Zijun Xu, Jieru Zhao, Zhongxue Gan, Wenchao Ding"
                  data-year="2024"
-                 data-tags='["Has Paper", "Large-Scale", "Year 2024"]'>
+                 data-tags='["Large-Scale"]'>
                 <div class="paper-card">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
@@ -14330,8 +14327,7 @@ and an Optimal Projection Strategy
                         </h2>
                         <p class="paper-authors">Ke Wu, Kaizhao Zhang, Zhiwei Zhang, Shanshuai Yuan, Muer Tie, Julong Wei, Zijun Xu, Jieru Zhao, Zhongxue Gan, Wenchao Ding</p>
                         <div class="paper-tags">
-                            <span class="paper-tag">Has Paper</span>
-<span class="paper-tag">Large-Scale</span>
+                            <span class="paper-tag">Large-Scale</span>
                         </div>
                         <div class="paper-links">
                             <a href="https://arxiv.org/pdf/2403.20159.pdf" class="paper-link" target="_blank" rel="noopener">
@@ -14353,7 +14349,7 @@ and an Optimal Projection Strategy
                  data-title="CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians" 
                  data-authors="Yang Liu, He Guan, Chuanchen Luo, Lue Fan, Naiyan Wang, Junran Peng, Zhaoxiang Zhang"
                  data-year="2024"
-                 data-tags='["Has Code", "Has Paper", "Has Project", "Large-Scale", "Year 2024"]'>
+                 data-tags='["Code", "Large-Scale", "Project"]'>
                 <div class="paper-card">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
@@ -14369,10 +14365,9 @@ and an Optimal Projection Strategy
                         </h2>
                         <p class="paper-authors">Yang Liu, He Guan, Chuanchen Luo, Lue Fan, Naiyan Wang, Junran Peng, Zhaoxiang Zhang</p>
                         <div class="paper-tags">
-                            <span class="paper-tag">Has Code</span>
-<span class="paper-tag">Has Paper</span>
-<span class="paper-tag">Has Project</span>
+                            <span class="paper-tag">Code</span>
 <span class="paper-tag">Large-Scale</span>
+<span class="paper-tag">Project</span>
                         </div>
                         <div class="paper-links">
                             <a href="https://dekuliutesla.github.io/citygs/" class="paper-link" target="_blank" rel="noopener">
@@ -14502,7 +14497,8 @@ and an Optimal Projection Strategy
         const paperCards = document.querySelectorAll('.paper-row');
         const tagFilters = document.querySelectorAll('.tag-filter');
         
-        let selectedTags = new Set();
+        let includeTags = new Set();
+        let excludeTags = new Set();
 
         // Handle abstract toggles
         document.querySelectorAll('.abstract-toggle').forEach(button => {
@@ -14529,13 +14525,23 @@ and an Optimal Projection Strategy
         tagFilters.forEach(tagFilter => {
             tagFilter.addEventListener('click', () => {
                 const tag = tagFilter.getAttribute('data-tag');
-                if (selectedTags.has(tag)) {
-                    selectedTags.delete(tag);
-                    tagFilter.classList.remove('active');
+                
+                if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {
+                    // First click: Add to include
+                    tagFilter.classList.add('include');
+                    includeTags.add(tag);
+                } else if (tagFilter.classList.contains('include')) {
+                    // Second click: Switch to exclude
+                    tagFilter.classList.remove('include');
+                    tagFilter.classList.add('exclude');
+                    includeTags.delete(tag);
+                    excludeTags.add(tag);
                 } else {
-                    selectedTags.add(tag);
-                    tagFilter.classList.add('active');
+                    // Third click: Back to neutral
+                    tagFilter.classList.remove('exclude');
+                    excludeTags.delete(tag);
                 }
+                
                 filterPapers();
             });
         });
@@ -14560,10 +14566,12 @@ and an Optimal Projection Strategy
 
                 const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
                 const matchesYear = selectedYear === 'all' || year === selectedYear;
-                const matchesTags = selectedTags.size === 0 || 
-                    [...selectedTags].every(tag => tags.includes(tag));
+                const matchesIncludeTags = includeTags.size === 0 || 
+                    [...includeTags].every(tag => tags.includes(tag));
+                const matchesExcludeTags = excludeTags.size === 0 ||
+                    ![...excludeTags].some(tag => tags.includes(tag));
 
-                if (matchesSearch && matchesYear && matchesTags) {
+                if (matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags) {
                     card.classList.add('visible');
                 } else {
                     card.classList.remove('visible');
