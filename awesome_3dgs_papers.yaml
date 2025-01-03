@@ -10318,3 +10318,40 @@
   - Large-Scale
   - Video
   thumbnail: assets/thumbnails/yang2024storm.jpg
+- id: mao2024dreamdrive
+  title: 'DreamDrive: Generative 4D Scene Modeling from Street View Images'
+  authors: Jiageng Mao, Boyi Li, Boris Ivanovic, Yuxiao Chen, Yan Wang, Yurong You,
+    Chaowei Xiao, Danfei Xu, Marco Pavone, Yue Wang
+  year: '2024'
+  abstract: Synthesizing photo-realistic visual observations from an ego vehicle's
+    driving trajectory is a critical step towards scalable training of self-driving
+    models. Reconstruction-based methods create 3D scenes from driving logs and synthesize
+    geometry-consistent driving videos through neural rendering, but their dependence
+    on costly object annotations limits their ability to generalize to in-the-wild
+    driving scenarios. On the other hand, generative models can synthesize action-conditioned
+    driving videos in a more generalizable way but often struggle with maintaining
+    3D visual consistency. In this paper, we present DreamDrive, a 4D spatial-temporal
+    scene generation approach that combines the merits of generation and reconstruction,
+    to synthesize generalizable 4D driving scenes and dynamic driving videos with
+    3D consistency. Specifically, we leverage the generative power of video diffusion
+    models to synthesize a sequence of visual references and further elevate them
+    to 4D with a novel hybrid Gaussian representation. Given a driving trajectory,
+    we then render 3D-consistent driving videos via Gaussian splatting. The use of
+    generative priors allows our method to produce high-quality 4D scenes from in-the-wild
+    driving data, while neural rendering ensures 3D-consistent video generation from
+    the 4D scenes. Extensive experiments on nuScenes and street view images demonstrate
+    that DreamDrive can generate controllable and generalizable 4D driving scenes,
+    synthesize novel views of driving videos with high fidelity and 3D consistency,
+    decompose static and dynamic elements in a self-supervised manner, and enhance
+    perception and planning tasks for autonomous driving.
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.00601.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Autonomous Driving
+  - Dynamic
+  - Feed-Forward
+  thumbnail: assets/thumbnails/mao2024dreamdrive.jpg

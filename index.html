@@ -14474,6 +14474,89 @@ and an Optimal Projection Strategy
                 </div>
             </div>
         
+
+            <div class="paper-row" 
+                 data-title="STORM: Spatio-Temporal Reconstruction Model for Large-Scale Outdoor Scenes" 
+                 data-authors="Jiawei Yang, Jiahui Huang, Yuxiao Chen, Yan Wang, Boyi Li, Yurong You, Apoorva Sharma, Maximilian Igl, Peter Karkus, Danfei Xu, Boris Ivanovic, Yue Wang, Marco Pavone"
+                 data-year="2024"
+                 data-tags='["Autonomous Driving", "Dynamic", "Large-Scale", "Video"]'>
+                <div class="paper-card">
+                    <div class="paper-number"></div>
+                    <div class="paper-thumbnail">
+                        <img data-src="assets/thumbnails/yang2024storm.jpg"
+                             data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
+                             alt="Paper thumbnail for STORM: Spatio-Temporal Reconstruction Model for Large-Scale Outdoor Scenes"
+                             class="lazy"
+                             loading="lazy"/>
+                    </div>
+                    <div class="paper-content">
+                        <h2 class="paper-title">
+                            STORM: Spatio-Temporal Reconstruction Model for Large-Scale Outdoor Scenes <span class="paper-year">(2024)</span>
+                        </h2>
+                        <p class="paper-authors">Jiawei Yang, Jiahui Huang, Yuxiao Chen, Yan Wang, Boyi Li, Yurong You, Apoorva Sharma, Maximilian Igl, Peter Karkus, Danfei Xu, Boris Ivanovic, Yue Wang, Marco Pavone</p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Autonomous Driving</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Large-Scale</span>
+<span class="paper-tag">Video</span>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2501.00602.pdf" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-file-alt"></i> Paper
+                          </a> <a href="https://jiawei-yang.github.io/STORM/" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-video"></i> Video
+                          </a>
+                        </div>
+                        
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="paper-abstract">
+                We present STORM, a spatio-temporal reconstruction model designed for reconstructing dynamic outdoor scenes from sparse observations. Existing dynamic reconstruction methods often rely on per-scene optimization, dense observations across space and time, and strong motion supervision, resulting in lengthy optimization times, limited generalization to novel views or scenes, and degenerated quality caused by noisy pseudo-labels for dynamics. To address these challenges, STORM leverages a data-driven Transformer architecture that directly infers dynamic 3D scene representations--parameterized by 3D Gaussians and their velocities--in a single forward pass. Our key design is to aggregate 3D Gaussians from all frames using self-supervised scene flows, transforming them to the target timestep to enable complete (i.e., "amodal") reconstructions from arbitrary viewpoints at any moment in time. As an emergent property, STORM automatically captures dynamic instances and generates high-quality masks using only reconstruction losses. Extensive experiments on public datasets show that STORM achieves precise dynamic scene reconstruction, surpassing state-of-the-art per-scene optimization methods (+4.3 to 6.6 PSNR) and existing feed-forward approaches (+2.1 to 4.7 PSNR) in dynamic regions. STORM reconstructs large-scale outdoor scenes in 200ms, supports real-time rendering, and outperforms competitors in scene flow estimation, improving 3D EPE by 0.422m and Acc5 by 28.02%. Beyond reconstruction, we showcase four additional applications of our model, illustrating the potential of self-supervised learning for broader dynamic scene understanding.
+            </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="paper-row" 
+                 data-title="DreamDrive: Generative 4D Scene Modeling from Street View Images" 
+                 data-authors="Jiageng Mao, Boyi Li, Boris Ivanovic, Yuxiao Chen, Yan Wang, Yurong You, Chaowei Xiao, Danfei Xu, Marco Pavone, Yue Wang"
+                 data-year="2024"
+                 data-tags='["Autonomous Driving", "Dynamic", "Feed-Forward"]'>
+                <div class="paper-card">
+                    <div class="paper-number"></div>
+                    <div class="paper-thumbnail">
+                        <img data-src="assets/thumbnails/mao2024dreamdrive.jpg"
+                             data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
+                             alt="Paper thumbnail for DreamDrive: Generative 4D Scene Modeling from Street View Images"
+                             class="lazy"
+                             loading="lazy"/>
+                    </div>
+                    <div class="paper-content">
+                        <h2 class="paper-title">
+                            DreamDrive: Generative 4D Scene Modeling from Street View Images <span class="paper-year">(2024)</span>
+                        </h2>
+                        <p class="paper-authors">Jiageng Mao, Boyi Li, Boris Ivanovic, Yuxiao Chen, Yan Wang, Yurong You, Chaowei Xiao, Danfei Xu, Marco Pavone, Yue Wang</p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Autonomous Driving</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Feed-Forward</span>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2501.00601.pdf" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-file-alt"></i> Paper
+                          </a>
+                        </div>
+                        
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="paper-abstract">
+                Synthesizing photo-realistic visual observations from an ego vehicle's driving trajectory is a critical step towards scalable training of self-driving models. Reconstruction-based methods create 3D scenes from driving logs and synthesize geometry-consistent driving videos through neural rendering, but their dependence on costly object annotations limits their ability to generalize to in-the-wild driving scenarios. On the other hand, generative models can synthesize action-conditioned driving videos in a more generalizable way but often struggle with maintaining 3D visual consistency. In this paper, we present DreamDrive, a 4D spatial-temporal scene generation approach that combines the merits of generation and reconstruction, to synthesize generalizable 4D driving scenes and dynamic driving videos with 3D consistency. Specifically, we leverage the generative power of video diffusion models to synthesize a sequence of visual references and further elevate them to 4D with a novel hybrid Gaussian representation. Given a driving trajectory, we then render 3D-consistent driving videos via Gaussian splatting. The use of generative priors allows our method to produce high-quality 4D scenes from in-the-wild driving data, while neural rendering ensures 3D-consistent video generation from the 4D scenes. Extensive experiments on nuScenes and street view images demonstrate that DreamDrive can generate controllable and generalizable 4D driving scenes, synthesize novel views of driving videos with high fidelity and 3D consistency, decompose static and dynamic elements in a self-supervised manner, and enhance perception and planning tasks for autonomous driving.
+            </div>
+        
+                    </div>
+                </div>
+            </div>
+        
         </div>
     </div>
 
