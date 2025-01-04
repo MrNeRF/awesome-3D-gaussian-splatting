@@ -159,13 +159,21 @@ jobs:
                 'video': False
             }
 
+            # Load full YAML to get entry numbers
+            with open("awesome_3dgs_papers.yaml", 'r') as file:
+                all_entries = yaml.safe_load(file)
+            
+            # Create index lookup
+            entry_indices = {entry['id']: idx + 1 for idx, entry in enumerate(all_entries)}
+
             for entry in entries:
                 # Basic validation
                 if not entry.get('id'):
                     errors.append("Entry missing ID")
                     continue
 
-                print(f"\nValidating entry: {entry['id']}")
+                entry_num = entry_indices.get(entry['id'], '?')
+                print(f"\nValidating entry #{entry_num}: {entry['id']}")
 
                 # Tags validation
                 tags = entry.get('tags', [])
