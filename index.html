@@ -14728,6 +14728,52 @@ and an Optimal Projection Strategy
                 </div>
             </div>
         
+
+            <div class="paper-row" 
+                 data-title="Representing Long Volumetric Video with Temporal Gaussian Hierarchy" 
+                 data-authors="Zhen Xu, Yinghao Xu, Zhiyuan Yu, Sida Peng, Jiaming Sun, Hujun Bao, Xiaowei Zhou"
+                 data-year="2024"
+                 data-tags='["Acceleration", "Dynamic", "Project", "Video"]'>
+                <div class="paper-card">
+                    <div class="paper-number"></div>
+                    <div class="paper-thumbnail">
+                        <img data-src="assets/thumbnails/xu2024representing.jpg"
+                             data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
+                             alt="Paper thumbnail for Representing Long Volumetric Video with Temporal Gaussian Hierarchy"
+                             class="lazy"
+                             loading="lazy"/>
+                    </div>
+                    <div class="paper-content">
+                        <h2 class="paper-title">
+                            Representing Long Volumetric Video with Temporal Gaussian Hierarchy <span class="paper-year">(2024)</span>
+                        </h2>
+                        <p class="paper-authors">Zhen Xu, Yinghao Xu, Zhiyuan Yu, Sida Peng, Jiaming Sun, Hujun Bao, Xiaowei Zhou</p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://zju3dv.github.io/longvolcap/" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-globe"></i> Project Page
+                          </a> <a href="https://arxiv.org/pdf/2412.09608.pdf" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-file-alt"></i> Paper
+                          </a> <a href="https://www.youtube.com/watch?v=y7e0YRNNmXw&feature=youtu.be" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-video"></i> Video
+                          </a>
+                        </div>
+                        
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="paper-abstract">
+                This paper aims to address the challenge of reconstructing long volumetric videos from multi-view RGB videos. Recent dynamic view synthesis methods leverage powerful 4D representations, like feature grids or point cloud sequences, to achieve high-quality rendering results. However, they are typically limited to short (1~2s) video clips and often suffer from large memory footprints when dealing with longer videos. To solve this issue, we propose a novel 4D representation, named Temporal Gaussian Hierarchy, to compactly model long volumetric videos. Our key observation is that there are generally various degrees of temporal redundancy in dynamic scenes, which consist of areas changing at different speeds. Motivated by this, our approach builds a multi-level hierarchy of 4D Gaussian primitives, where each level separately describes scene regions with different degrees of content change, and adaptively shares Gaussian primitives to represent unchanged scene content over different temporal segments, thus effectively reducing the number of Gaussian primitives. In addition, the tree-like structure of the Gaussian hierarchy allows us to efficiently represent the scene at a particular moment with a subset of Gaussian primitives, leading to nearly constant GPU memory usage during the training or rendering regardless of the video length. Extensive experimental results demonstrate the superiority of our method over alternative methods in terms of training cost, rendering speed, and storage usage. To our knowledge, this work is the first approach capable of efficiently handling minutes of volumetric video data while maintaining state-of-the-art rendering quality. Our project page is available at: https://zju3dv.github.io/longvolcap.
+
+            </div>
+        
+                    </div>
+                </div>
+            </div>
+        
         </div>
     </div>
 
