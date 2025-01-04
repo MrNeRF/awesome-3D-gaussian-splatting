@@ -77,10 +77,10 @@ class ThumbnailGenerator:
 
 def format_entry(entry):
     """Format a single YAML entry consistently"""
-    # Convert null values to empty strings
+    # Keep None values as None - they'll be rendered as empty strings in YAML
     for key in ['project_page', 'code', 'video']:
-        if entry.get(key) is None:
-            entry[key] = ''
+        if entry.get(key) == '':  # Convert empty strings to None
+            entry[key] = None
     
     # Ensure abstract is a single line
     if 'abstract' in entry:
@@ -233,6 +233,11 @@ class URLWidget(QWidget):
         self.label.setMinimumWidth(100)
         self.url_input = QLineEdit()
         self.open_button = QPushButton("Open")
+        
+        def set_text(value):
+            self.url_input.setText("" if value is None else str(value))
+        
+        self.set_text = set_text
         
         layout.addWidget(self.label)
         layout.addWidget(self.url_input)
