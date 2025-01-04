@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyyaml requests
+        pip install pyyaml requests urllib3
 
     - name: Validate YAML entries
       run: |
@@ -32,8 +32,29 @@ jobs:
         import yaml
         import sys
         import requests
+        import time
+        from urllib3.util.retry import Retry
+        from requests.adapters import HTTPAdapter
 
-        # Load allowed tags from yaml_editor.py
+        # Configure requests for better reliability
+        session = requests.Session()
+        retries = Retry(
+            total=3,  # number of retries
+            backoff_factor=1,  # wait 1, 2, 4 seconds between retries
+            status_forcelist=[408, 429, 500, 502, 503, 504],  # retry on these status codes
+            allowed_methods=["HEAD", "GET"]  # allow retries for these methods
+        )
+        adapter = HTTPAdapter(max_retries=retries)
+        session.mount('http://', adapter)
+        session.mount('https://', adapter)
+
+        # Custom headers to mimic browser
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+        }
+
+        # Load allowed tags
         allowed_tags = [
           "2DGS", "360 degree", "Acceleration", "Antialiasing", "Autonomous Driving", 
           "Avatar", "Classic Work", "Code", "Compression", "Deblurring", "Densification",
@@ -46,62 +67,93 @@ jobs:
           "Virtual Reality", "World Generation"
         ]
 
+        def validate_url(url, required=False):
+            """Validate URL with fallback to GET if HEAD fails"""
+            if not url:
+                return None if not required else "URL is missing or empty"
+                
+            try:
+                # First try HEAD request
+                response = session.head(
+                    url, 
+                    headers=headers,
+                    timeout=30,  # increased timeout
+                    allow_redirects=True
+                )
+                
+                # If HEAD fails, try GET
+                if response.status_code in [405, 400, 403]:
+                    response = session.get(
+                        url,
+                        headers=headers,
+                        timeout=30,
+                        allow_redirects=True,
+                        stream=True  # Don't download entire content
+                    )
+                    response.close()  # Close connection immediately
+                
+                valid_codes = {200, 301, 302, 303, 307, 308}
+                if response.status_code not in valid_codes:
+                    return f"URL returns {response.status_code}"
+                    
+                return None
+                    
+            except requests.Timeout:
+                return "URL timed out"
+            except requests.RequestException as e:
+                return f"Error accessing URL: {str(e)}"
+            except Exception as e:
+                return f"Unexpected error: {str(e)}"
+
+        # Load and validate YAML
         with open("awesome_3dgs_papers.yaml", 'r') as file:
             entries = yaml.safe_load(file)
 
         errors = []
+        url_fields = {
+            'paper': True,      # Required
+            'project_page': False,  # Optional
+            'code': False,      # Optional
+            'video': False      # Optional
+        }
+
         for entry in entries:
-            # Required fields validation
-            if not entry.get('paper'):
-                errors.append(f"Entry {entry['id']}: Missing paper URL")
+            # Basic validation
+            if not entry.get('id'):
+                errors.append("Entry missing ID")
+                continue
 
             # Tags validation
-            if not entry.get('tags'):
+            tags = entry.get('tags', [])
+            if not tags:
                 errors.append(f"Entry {entry['id']}: No tags provided")
             else:
-                # Check for invalid tags
-                invalid_tags = [tag for tag in entry['tags'] 
+                invalid_tags = [tag for tag in tags 
                               if not tag.startswith('Year ') and tag not in allowed_tags]
                 if invalid_tags:
                     errors.append(f"Entry {entry['id']}: Invalid tags: {invalid_tags}")
                 
-                # Check for at least one non-Year tag
-                non_year_tags = [tag for tag in entry['tags'] if not tag.startswith('Year ')]
+                non_year_tags = [tag for tag in tags if not tag.startswith('Year ')]
                 if not non_year_tags:
                     errors.append(f"Entry {entry['id']}: Must have at least one non-Year tag")
 
-            # URL validation for all URL fields
-            url_fields = {
-                'paper': True,  # Required
-                'project_page': False,  # Optional
-                'code': False,  # Optional
-                'video': False  # Optional
-            }
-
+            # URL validation
             for field, required in url_fields.items():
                 value = entry.get(field)
-                
-                # Skip validation for None or empty string in optional fields
-                if not required and (value is None or value == ''):
-                    continue
-                
-                # Validate required fields or non-empty optional fields
-                if value:
-                    try:
-                        response = requests.head(value, timeout=10, allow_redirects=True)
-                        valid_status_codes = {200, 301, 302, 303, 307, 308}
-                        if response.status_code not in valid_status_codes:
-                            errors.append(f"Entry {entry['id']}: {field} URL returns {response.status_code}")
-                    except Exception as e:
-                        errors.append(f"Entry {entry['id']}: Could not access {field} URL: {str(e)}")
-                elif required:
-                    errors.append(f"Entry {entry['id']}: Required {field} URL is missing or empty")
+                if value or required:
+                    error = validate_url(value, required)
+                    if error:
+                        errors.append(f"Entry {entry['id']}: {field} {error}")
+                    # Add delay between requests to avoid rate limiting
+                    time.sleep(1)
 
         if errors:
             print("Validation errors found:")
             for error in errors:
                 print(error)
             sys.exit(1)
+        else:
+            print("✅ All validations passed!")
         EOF
 
     - name: Generate HTML
