@@ -1,7 +1,9 @@
 import json
+import yaml
+import sys
 from typing import List, Dict, Any
 
-def generate_html(entries: List[Dict[str, Any]]) -> None:
+def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
     """Generate optimized HTML page while preserving design"""
     # Get all unique tags and years
     all_tags = sorted(set(tag for entry in entries for tag in entry['tags']))
@@ -531,7 +533,7 @@ def generate_html(entries: List[Dict[str, Any]]) -> None:
 </body>
 </html>"""
     
-    with open('index.html', 'w') as file:
+    with open(output_file, 'w') as file:
         file.write(html)
 
 def generate_year_options(entries: List[Dict[str, Any]]) -> str:
@@ -622,3 +624,22 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
         cards.append(card)
     
     return '\n'.join(cards)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python generate_html.py <input_yaml> <output_html>")
+        sys.exit(1)
+        
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+    
+    try:
+        with open(input_file) as stream:
+            entries = yaml.safe_load(stream)
+            
+        generate_html(entries, output_file)
+        print(f"Successfully generated {output_file}")
+        
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        sys.exit(1)

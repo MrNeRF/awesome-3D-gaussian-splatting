@@ -10442,3 +10442,43 @@
   - Project
   - Video
   thumbnail: assets/thumbnails/mallick2024taming.jpg
+- id: xu2024representing
+  title: Representing Long Volumetric Video with Temporal Gaussian Hierarchy
+  authors: Zhen Xu, Yinghao Xu, Zhiyuan Yu, Sida Peng, Jiaming Sun, Hujun Bao, Xiaowei
+    Zhou
+  year: '2024'
+  abstract: 'This paper aims to address the challenge of reconstructing long volumetric
+    videos from multi-view RGB videos. Recent dynamic view synthesis methods leverage
+    powerful 4D representations, like feature grids or point cloud sequences, to achieve
+    high-quality rendering results. However, they are typically limited to short (1~2s)
+    video clips and often suffer from large memory footprints when dealing with longer
+    videos. To solve this issue, we propose a novel 4D representation, named Temporal
+    Gaussian Hierarchy, to compactly model long volumetric videos. Our key observation
+    is that there are generally various degrees of temporal redundancy in dynamic
+    scenes, which consist of areas changing at different speeds. Motivated by this,
+    our approach builds a multi-level hierarchy of 4D Gaussian primitives, where each
+    level separately describes scene regions with different degrees of content change,
+    and adaptively shares Gaussian primitives to represent unchanged scene content
+    over different temporal segments, thus effectively reducing the number of Gaussian
+    primitives. In addition, the tree-like structure of the Gaussian hierarchy allows
+    us to efficiently represent the scene at a particular moment with a subset of
+    Gaussian primitives, leading to nearly constant GPU memory usage during the training
+    or rendering regardless of the video length. Extensive experimental results demonstrate
+    the superiority of our method over alternative methods in terms of training cost,
+    rendering speed, and storage usage. To our knowledge, this work is the first approach
+    capable of efficiently handling minutes of volumetric video data while maintaining
+    state-of-the-art rendering quality. Our project page is available at: https://zju3dv.github.io/longvolcap.
+
+    '
+  project_page: https://zju3dv.github.io/longvolcap/
+  paper: https://arxiv.org/pdf/2412.09608.pdf
+  code: null
+  video: https://www.youtube.com/watch?v=y7e0YRNNmXw&feature=youtu.be
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Acceleration
+  - Dynamic
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/xu2024representing.jpg

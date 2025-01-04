@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 4. Run the YAML editor:
 ```bash
-python yaml_editor.py
+python src/yaml_editor.py
 ```
 
 5. Use the editor to:
