@@ -2936,50 +2936,6 @@
         
 
             <div class="paper-row" 
-                 data-title="HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression" 
-                 data-authors="Yihang Chen, Qianyi Wu, Jianfei Cai, Mehrtash Harandi, Weiyao Lin"
-                 data-year="2024"
-                 data-tags='["Code", "Compression", "Project"]'>
-                <div class="paper-card">
-                    <div class="paper-number"></div>
-                    <div class="paper-thumbnail">
-                        <img data-src="assets/thumbnails/chen2024hac.jpg"
-                             data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
-                             alt="Paper thumbnail for HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression"
-                             class="lazy"
-                             loading="lazy"/>
-                    </div>
-                    <div class="paper-content">
-                        <h2 class="paper-title">
-                            HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression <span class="paper-year">(2024)</span>
-                        </h2>
-                        <p class="paper-authors">Yihang Chen, Qianyi Wu, Jianfei Cai, Mehrtash Harandi, Weiyao Lin</p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">Code</span>
-<span class="paper-tag">Compression</span>
-<span class="paper-tag">Project</span>
-                        </div>
-                        <div class="paper-links">
-                            <a href="https://yihangchen-ee.github.io/project_hac/" class="paper-link" target="_blank" rel="noopener">
-                            <i class="fas fa-globe"></i> Project Page
-                          </a> <a href="https://arxiv.org/pdf/2401.02436.pdf" class="paper-link" target="_blank" rel="noopener">
-                            <i class="fas fa-file-alt"></i> Paper
-                          </a> <a href="https://github.com/YihangChen-ee/HAC" class="paper-link" target="_blank" rel="noopener">
-                            <i class="fas fa-code"></i> Code
-                          </a>
-                        </div>
-                        
-            <button class="abstract-toggle">Show Abstract</button>
-            <div class="paper-abstract">
-                3D Gaussian Splatting (3DGS) has emerged as a promising framework for novel view synthesis, boasting rapid rendering speed with high fidelity. However, the substantial Gaussians and their associated attributes necessitate effective compression techniques. Nevertheless, the sparse and unorganized nature of the point cloud of Gaussians (or anchors in our paper) presents challenges for compression. To address this, we make use of the relations between the unorganized anchors and the structured hash grid, leveraging their mutual information for context modeling, and propose a Hash-grid Assisted Context (HAC) framework for highly compact 3DGS representation. Our approach introduces a binary hash grid to establish continuous spatial consistencies, allowing us to unveil the inherent spatial relations of anchors through a carefully designed context model. To facilitate entropy coding, we utilize Gaussian distributions to accurately estimate the probability of each quantized attribute, where an adaptive quantization module is proposed to enable high-precision quantization of these attributes for improved fidelity restoration. Additionally, we incorporate an adaptive masking strategy to eliminate invalid Gaussians and anchors. Importantly, our work is the pioneer to explore context-based compression for 3DGS representation, resulting in a remarkable size reduction of over 75× compared to vanilla 3DGS, while simultaneously improving fidelity, and achieving over 11× size reduction over SOTA 3DGS compression approach Scaffold-GS.
-            </div>
-        
-                    </div>
-                </div>
-            </div>
-        
-
-            <div class="paper-row" 
                  data-title="End-to-End Rate-Distortion Optimized 3D Gaussian Representation" 
                  data-authors="Henan Wang, Hanxin Zhu, Tianyu He, Runsen Feng, Jiajun Deng, Jiang Bian, Zhibo Chen"
                  data-year="2024"
@@ -14673,6 +14629,50 @@ and an Optimal Projection Strategy
             <button class="abstract-toggle">Show Abstract</button>
             <div class="paper-abstract">
                 Dynamic 3D scene representation and novel view synthesis from captured videos are crucial for enabling immersive experiences required by AR/VR and metaverse applications. However, this task is challenging due to the complexity of unconstrained real-world scenes and their temporal dynamics. In this paper, we frame dynamic scenes as a spatio-temporal 4D volume learning problem, offering a native explicit reformulation with minimal assumptions about motion, which serves as a versatile dynamic scene learning framework. Specifically, we represent a target dynamic scene using a collection of 4D Gaussian primitives with explicit geometry and appearance features, dubbed as 4D Gaussian splatting (4DGS). This approach can capture relevant information in space and time by fitting the underlying spatio-temporal volume. Modeling the spacetime as a whole with 4D Gaussians parameterized by anisotropic ellipses that can rotate arbitrarily in space and time, our model can naturally learn view-dependent and time-evolved appearance with 4D spherindrical harmonics. Notably, our 4DGS model is the first solution that supports real-time rendering of high-resolution, photorealistic novel views for complex dynamic scenes. To enhance efficiency, we derive several compact variants that effectively reduce memory footprint and mitigate the risk of overfitting. Extensive experiments validate the superiority of 4DGS in terms of visual quality and efficiency across a range of dynamic scene-related tasks (e.g., novel view synthesis, 4D generation, scene understanding) and scenarios (e.g., single object, indoor scenes, driving environments, synthetic and real data).
+            </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="paper-row" 
+                 data-title="HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression" 
+                 data-authors="Yihang Chen, Qianyi Wu, Weiyao Lin, Mehrtash Harandi, Jianfei Cai"
+                 data-year="2024"
+                 data-tags='["Code", "Compression", "Project"]'>
+                <div class="paper-card">
+                    <div class="paper-number"></div>
+                    <div class="paper-thumbnail">
+                        <img data-src="assets/thumbnails/chen2024hac.jpg"
+                             data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
+                             alt="Paper thumbnail for HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression"
+                             class="lazy"
+                             loading="lazy"/>
+                    </div>
+                    <div class="paper-content">
+                        <h2 class="paper-title">
+                            HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression <span class="paper-year">(2024)</span>
+                        </h2>
+                        <p class="paper-authors">Yihang Chen, Qianyi Wu, Weiyao Lin, Mehrtash Harandi, Jianfei Cai</p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Code</span>
+<span class="paper-tag">Compression</span>
+<span class="paper-tag">Project</span>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://yihangchen-ee.github.io/project_hac/" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-globe"></i> Project Page
+                          </a> <a href="https://arxiv.org/pdf/2403.14530.pdf" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-file-alt"></i> Paper
+                          </a> <a href="https://github.com/YihangChen-ee/HAC" class="paper-link" target="_blank" rel="noopener">
+                            <i class="fas fa-code"></i> Code
+                          </a>
+                        </div>
+                        
+            <button class="abstract-toggle">Show Abstract</button>
+            <div class="paper-abstract">
+                3D Gaussian Splatting (3DGS) has emerged as a promising framework for novel view synthesis, boasting rapid rendering speed with high fidelity. However, the substantial Gaussians and their associated attributes necessitate effective compression techniques. Nevertheless, the sparse and unorganized nature of the point cloud of Gaussians (or anchors in our paper) presents challenges for compression. To address this, we make use of the relations between the unorganized anchors and the structured hash grid, leveraging their mutual information for context modeling, and propose a Hash-grid Assisted Context (HAC) framework for highly compact 3DGS representation. Our approach introduces a binary hash grid to establish continuous spatial consistencies, allowing us to unveil the inherent spatial relations of anchors through a carefully designed context model. To facilitate entropy coding, we utilize Gaussian distributions to accurately estimate the probability of each quantized attribute, where an adaptive quantization module is proposed to enable high-precision quantization of these attributes for improved fidelity restoration. Additionally, we incorporate an adaptive masking strategy to eliminate invalid Gaussians and anchors. Importantly, our work is the pioneer to explore context-based compression for 3DGS representation, resulting in a remarkable size reduction of over $75\times$ compared to vanilla 3DGS, while simultaneously improving fidelity, and achieving over $11\times$ size reduction over SOTA 3DGS compression approach Scaffold-GS. Our code is available here: https://github.com/YihangChen-ee/HAC
             </div>
         
                     </div>
