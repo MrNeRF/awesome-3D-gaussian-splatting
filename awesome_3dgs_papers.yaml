@@ -10550,3 +10550,36 @@
   tags:
   - Acceleration
   thumbnail: assets/thumbnails/gui2024balanced.jpg
+- id: gao2024cosurfgscollaborative
+  title: CoSurfGS:Collaborative 3D Surface Gaussian Splatting with Distributed Learning
+    for Large Scene Reconstruction
+  authors: Yuanyuan Gao, Yalun Dai, Hao Li, Weicai Ye, Junyi Chen, Danpeng Chen, Dingwen
+    Zhang, Tong He, Guofeng Zhang, Junwei Han
+  year: '2024'
+  abstract: '3D Gaussian Splatting (3DGS) has demonstrated impressive performance
+    in scene reconstruction. However, most existing GS-based surface reconstruction
+    methods focus on 3D objects or limited scenes. Directly applying these methods
+    to large-scale scene reconstruction will pose challenges such as high memory costs,
+    excessive time consumption, and lack of geometric detail, which makes it difficult
+    to implement in practical applications. To address these issues, we propose a
+    multi-agent collaborative fast 3DGS surface reconstruction framework based on
+    distributed learning for large-scale surface reconstruction. Specifically, we
+    develop local model compression (LMC) and model aggregation schemes (MAS) to achieve
+    high-quality surface representation of large scenes while reducing GPU memory
+    consumption. Extensive experiments on Urban3d, MegaNeRF, and BlendedMVS demonstrate
+    that our proposed method can achieve fast and scalable high-fidelity surface reconstruction
+    and photorealistic rendering. Our project page is available at \url{https://gyy456.github.io/CoSurfGS}.
+
+    '
+  project_page: https://gyy456.github.io/CoSurfGS/
+  paper: https://arxiv.org/pdf/2412.17612.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Distributed
+  - Large-Scale
+  - Meshing
+  - Project
+  thumbnail: assets/thumbnails/gao2024cosurfgscollaborative.jpg
