@@ -459,7 +459,9 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                     params.set('exclude', Array.from(excludeTags).join(','));
                 }}
                 
-                const newURL = params.toString() ? `?${{params.toString()}}` : window.location.pathname;
+                // Get the base URL without query parameters
+                const baseURL = window.location.href.split('?')[0];
+                const newURL = params.toString() ? `${{baseURL}}?${{params.toString()}}` : baseURL;
                 history.pushState({{ filters: params.toString() }}, '', newURL);
             }}
 
