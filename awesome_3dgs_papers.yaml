@@ -10482,3 +10482,38 @@
   - Project
   - Video
   thumbnail: assets/thumbnails/xu2024representing.jpg
+- id: jambon2024interactive
+  title: Interactive Scene Authoring with Specialized Generative Primitives
+  authors: Clément Jambon, Changwoon Choi, Dongsu Zhang, Olga Sorkine-Hornung, Young
+    Min Kim
+  year: '2024'
+  abstract: 'Generating high-quality 3D digital assets often requires expert knowledge
+    of complex design tools. We introduce Specialized Generative Primitives, a generative
+    framework that allows non-expert users to author high-quality 3D scenes in a seamless,
+    lightweight, and controllable manner. Each primitive is an efficient generative
+    model that captures the distribution of a single exemplar from the real world.
+    With our framework, users capture a video of an environment, which we turn into
+    a high-quality and explicit appearance model thanks to 3D Gaussian Splatting.
+    Users then select regions of interest guided by semantically-aware features. To
+    create a generative primitive, we adapt Generative Cellular Automata to single-exemplar
+    training and controllable generation. We decouple the generative task from the
+    appearance model by operating on sparse voxels and we recover a high-quality output
+    with a subsequent sparse patch consistency step. Each primitive can be trained
+    within 10 minutes and used to author new scenes interactively in a fully compositional
+    manner. We showcase interactive sessions where various primitives are extracted
+    from real-world scenes and controlled to create 3D assets and scenes in a few
+    minutes. We also demonstrate additional capabilities of our primitives: handling
+    various 3D representations to control generation, transferring appearances, and
+    editing geometries.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.16253.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Editing
+  - World Generation
+  thumbnail: assets/thumbnails/jambon2024interactive.jpg
