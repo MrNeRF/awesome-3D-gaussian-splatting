@@ -10583,3 +10583,72 @@
   - Meshing
   - Project
   thumbnail: assets/thumbnails/gao2024cosurfgscollaborative.jpg
+- id: lyu2024facelift
+  title: 'FaceLift: Single Image to 3D Head with View Generation and GS-LRM'
+  authors: Weijie Lyu, Yi Zhou, Ming-Hsuan Yang, Zhixin Shu
+  year: '2024'
+  abstract: 'We present FaceLift, a feed-forward approach for rapid, high-quality,
+    360-degree head reconstruction from a single image. Our pipeline begins by employing
+    a multi-view latent diffusion model that generates consistent side and back views
+    of the head from a single facial input. These generated views then serve as input
+    to a GS-LRM reconstructor, which produces a comprehensive 3D representation using
+    Gaussian splats. To train our system, we develop a dataset of multi-view renderings
+    using synthetic 3D human head as-sets. The diffusion-based multi-view generator
+    is trained exclusively on synthetic head images, while the GS-LRM reconstructor
+    undergoes initial training on Objaverse followed by fine-tuning on synthetic head
+    data. FaceLift excels at preserving identity and maintaining view consistency
+    across views. Despite being trained solely on synthetic data, FaceLift demonstrates
+    remarkable generalization to real-world images. Through extensive qualitative
+    and quantitative evaluations, we show that FaceLift outperforms state-of-the-art
+    methods in 3D head reconstruction, highlighting its practical applicability and
+    robust performance on real-world images. In addition to single image reconstruction,
+    FaceLift supports video inputs for 4D novel view synthesis and seamlessly integrates
+    with 2D reanimation techniques to enable 3D facial animation. Project page: https://weijielyu.github.io/FaceLift.
+
+    '
+  project_page: https://www.wlyu.me/FaceLift/
+  paper: https://arxiv.org/pdf/2412.17812.pdf
+  code: null
+  video: https://huggingface.co/wlyu/FaceLift/resolve/main/videos/website_video.mp4
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Avatar
+  - Feed-Forward
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/lyu2024facelift.jpg
+- id: shao2024gausim
+  title: 'GauSim: Registering Elastic Objects into Digital World by Gaussian Simulator'
+  authors: Yidi Shao, Mu Huang, Chen Change Loy, Bo Dai
+  year: '2024'
+  abstract: 'In this work, we introduce GauSim, a novel neural network-based simulator
+    designed to capture the dynamic behaviors of real-world elastic objects represented
+    through Gaussian kernels. Unlike traditional methods that treat kernels as particles
+    within particle-based simulations, we leverage continuum mechanics, modeling each
+    kernel as a continuous piece of matter to account for realistic deformations without
+    idealized assumptions. To improve computational efficiency and fidelity, we employ
+    a hierarchical structure that organizes kernels into Center of Mass Systems (CMS)
+    with explicit formulations, enabling a coarse-to-fine simulation approach. This
+    structure significantly reduces computational overhead while preserving detailed
+    dynamics. In addition, GauSim incorporates explicit physics constraints, such
+    as mass and momentum conservation, ensuring interpretable results and robust,
+    physically plausible simulations. To validate our approach, we present a new dataset,
+    READY, containing multi-view videos of real-world elastic deformations. Experimental
+    results demonstrate that GauSim achieves superior performance compared to existing
+    physics-driven baselines, offering a practical and accurate solution for simulating
+    complex dynamic behaviors. Code and model will be released. Project page: https://www.mmlab-ntu.com/project/gausim/index.html
+    .
+
+    '
+  project_page: https://www.mmlab-ntu.com/project/gausim/index.html
+  paper: https://arxiv.org/pdf/2412.17804.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Dynamic
+  - Physics
+  - Project
+  thumbnail: assets/thumbnails/shao2024gausim.jpg
