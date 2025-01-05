@@ -132,18 +132,21 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             color: #4b5563;
         }}
 
-        /* Filters Bar to avoid overlap */
         .filters {{
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-bottom: 2rem;
             align-items: center;
+            justify-content: space-between; /* Distribute space so they don't overlap */
         }}
+
         .search-wrapper {{
             position: relative;
-            flex: 1 1 200px; /* flexible width, min 200px */
+            flex: 1 1 auto; /* Let the search bar grow/shrink */
+            min-width: 300px;
         }}
+
         .search-box {{
             width: 100%;
             padding: 0.75rem 1rem;
@@ -151,6 +154,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             border-radius: 0.5rem;
             font-size: 1rem;
         }}
+
         .clear-search-btn {{
             position: absolute;
             right: 10px;
@@ -162,10 +166,10 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             color: #9ca3af;
             font-size: 1.2rem;
         }}
+
         .clear-search-btn:hover {{
             color: #dc2626;
         }}
-
         .filter-select {{
             padding: 0.75rem 1rem;
             border: 1px solid var(--border-color);
@@ -543,14 +547,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
 
         @media (max-width: 768px) {{
             .filters {{
-                flex-direction: column;
-            }}
-            .search-wrapper {{
-                margin-right: 0;
-            }}
-            .selection-controls {{
-                flex-direction: column;
-                align-items: stretch;
+                flex-direction: column; /* Stack vertically on small screens */
             }}
         }}
     </style>
