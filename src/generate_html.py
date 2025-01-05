@@ -262,8 +262,15 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
         }}
 
         .preview-content {{
+            cursor: pointer;
             flex: 1;
             min-width: 0;
+            padding: 0.5rem;
+        }}
+
+        .preview-content:hover {{
+            background-color: #f3f4f6;
+            border-radius: 0.375rem;
         }}
 
         .preview-title {{
@@ -799,51 +806,92 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 updateURL();
             }}
 
-            function togglePaperSelection(paperId, checkbox) {{
-                if (!isSelectionMode) return;
+        function togglePaperSelection(paperId, checkbox) {{
+            if (!isSelectionMode) return;
+            
+            const paperCard = checkbox.closest('.paper-card');
+            const paperRow = paperCard.closest('.paper-row');
+            
+            if (checkbox.checked) {{
+                selectedPapers.add(paperId);
+                paperCard.classList.add('selected');
                 
-                const paperCard = checkbox.closest('.paper-card');
-                const paperRow = paperCard.closest('.paper-row');
-                
-                if (checkbox.checked) {{
-                    selectedPapers.add(paperId);
-                    paperCard.classList.add('selected');
+                // Only add to preview if paper is currently visible
+                if (paperRow.classList.contains('visible')) {{
+                    const title = paperRow.getAttribute('data-title');
+                    const authors = paperRow.getAttribute('data-authors');
+                    const year = paperRow.getAttribute('data-year');
                     
-                    // Only add to preview if paper is currently visible
-                    if (paperRow.classList.contains('visible')) {{
-                        const title = paperRow.getAttribute('data-title');
-                        const authors = paperRow.getAttribute('data-authors');
-                        const year = paperRow.getAttribute('data-year');
-                        
-                        const previewItem = document.createElement('div');
-                        previewItem.className = 'preview-item';
-                        previewItem.setAttribute('data-paper-id', paperId);
-                        previewItem.innerHTML = `
-                            <div class="preview-content">
-                                <div class="preview-title">${{title}} (${{year}})</div>
-                                <div class="preview-authors">${{authors}}</div>
-                            </div>
-                            <button class="preview-remove" onclick="removeFromSelection('${{paperId}}')">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        `;
-                        document.getElementById('selectionPreview').appendChild(previewItem);
-                    }}
-                }} else {{
-                    selectedPapers.delete(paperId);
-                    paperCard.classList.remove('selected');
+                    // Preview item creation with click handler
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'preview-item';
+                    previewItem.setAttribute('data-paper-id', paperId);
+                    previewItem.innerHTML = `
+                        <div class="preview-content" style="cursor: pointer;" onclick="scrollToPaper('${{paperId}}')">
+                            <div class="preview-title">${{title}} (${{year}})</div>
+                            <div class="preview-authors">${{authors}}</div>
+                        </div>
+                        <button class="preview-remove" onclick="event.stopPropagation(); removeFromSelection('${{paperId}}')">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    `;
                     
-                    // Remove from preview
-                    const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
-                    if (previewItem) {{
-                        previewItem.remove();
-                    }}
+                    // Add click handler to the preview item itself
+                    previewItem.querySelector('.preview-content').addEventListener('click', (e) => {{
+                        e.stopPropagation();
+                        scrollToPaper(paperId);
+                    }});
+                    
+                    document.getElementById('selectionPreview').appendChild(previewItem);
                 }}
-                
-                updateSelectionCount();
-                updateURL();
+            }} else {{
+                removeFromSelection(paperId);
+            }}
+            
+            updateSelectionCount();
+            updateURL();
         }}
 
+        function scrollToPaper(paperId) {{
+            const paperRow = document.querySelector(`.paper-row[data-id="${{paperId}}"]`);
+            if (paperRow) {{
+                paperRow.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+                
+                // Add a highlight effect
+                const paperCard = paperRow.querySelector('.paper-card');
+                if (paperCard) {{
+                    paperCard.style.transition = 'background-color 0.3s ease';
+                    paperCard.style.backgroundColor = '#f0f9ff';
+                    setTimeout(() => {{
+                        paperCard.style.backgroundColor = '';
+                    }}, 1500);
+                }}
+            }}
+        }}
+
+        function removeFromSelection(paperId) {{
+            const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
+            if (checkbox) {{
+                checkbox.checked = false;
+            }}
+            
+            const paperCard = document.querySelector(`.paper-row[data-id="${{paperId}}"] .paper-card`);
+            if (paperCard) {{
+                paperCard.classList.remove('selected');
+            }}
+            
+            selectedPapers.delete(paperId);
+            
+            const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
+            if (previewItem) {{
+                previewItem.remove();
+            }}
+            
+            updateSelectionCount();
+            updateURL();
+        }}
+
+        
         function updatePreview(action, paperData) {{
             const previewContainer = document.getElementById('selectionPreview');
             
