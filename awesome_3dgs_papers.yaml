@@ -10568,9 +10568,7 @@
     high-quality surface representation of large scenes while reducing GPU memory
     consumption. Extensive experiments on Urban3d, MegaNeRF, and BlendedMVS demonstrate
     that our proposed method can achieve fast and scalable high-fidelity surface reconstruction
-    and photorealistic rendering. Our project page is available at \url{https://gyy456.github.io/CoSurfGS}.
-
-    '
+    and photorealistic rendering.'
   project_page: https://gyy456.github.io/CoSurfGS/
   paper: https://arxiv.org/pdf/2412.17612.pdf
   code: null
@@ -10603,9 +10601,7 @@
     methods in 3D head reconstruction, highlighting its practical applicability and
     robust performance on real-world images. In addition to single image reconstruction,
     FaceLift supports video inputs for 4D novel view synthesis and seamlessly integrates
-    with 2D reanimation techniques to enable 3D facial animation. Project page: https://weijielyu.github.io/FaceLift.
-
-    '
+    with 2D reanimation techniques to enable 3D facial animation.'
   project_page: https://www.wlyu.me/FaceLift/
   paper: https://arxiv.org/pdf/2412.17812.pdf
   code: null
@@ -10637,10 +10633,7 @@
     READY, containing multi-view videos of real-world elastic deformations. Experimental
     results demonstrate that GauSim achieves superior performance compared to existing
     physics-driven baselines, offering a practical and accurate solution for simulating
-    complex dynamic behaviors. Code and model will be released. Project page: https://www.mmlab-ntu.com/project/gausim/index.html
-    .
-
-    '
+    complex dynamic behaviors. Code and model will be released.'
   project_page: https://www.mmlab-ntu.com/project/gausim/index.html
   paper: https://arxiv.org/pdf/2412.17804.pdf
   code: null
