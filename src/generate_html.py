@@ -138,16 +138,37 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             flex-wrap: wrap;
         }}
 
-        .selection-checkbox {{
+       .selection-checkbox {{
             display: none;
             position: absolute;
             top: 1rem;
             right: 1rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
             z-index: 2;
+            cursor: pointer;
             opacity: 1;
+            appearance: none;
+            -webkit-appearance: none;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }}
+
+        .selection-checkbox:checked {{
+            background: #10b981;
+            border-color: #10b981;
+        }}
+
+        .selection-checkbox:checked::before {{
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2rem;
         }}
 
         .selection-mode .selection-checkbox {{
@@ -821,49 +842,69 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 
                 updateSelectionCount();
                 updateURL();
-            }}
+        }}
 
-            function updatePreview(action, paperData) {{
-                const previewContainer = document.getElementById('selectionPreview');
+        function updatePreview(action, paperData) {{
+            const previewContainer = document.getElementById('selectionPreview');
+            
+            if (action === 'add') {{
+                const title = paperData.getAttribute('data-title');
+                const authors = paperData.getAttribute('data-authors');
+                const year = paperData.getAttribute('data-year');
+                const paperId = paperData.getAttribute('data-id');
                 
-                if (action === 'add') {{
-                    const title = paperData.getAttribute('data-title');
-                    const authors = paperData.getAttribute('data-authors');
-                    const year = paperData.getAttribute('data-year');
-                    const paperId = paperData.getAttribute('data-id');
-                    
-                    const previewItem = document.createElement('div');
-                    previewItem.className = 'preview-item';
-                    previewItem.setAttribute('data-paper-id', paperId);
-                    previewItem.innerHTML = `
-                        <div class="preview-content">
-                            <div class="preview-title">${{title}} (${{year}})</div>
-                            <div class="preview-authors">${{authors}}</div>
-                        </div>
-                        <button class="preview-remove" onclick="removeFromSelection('${{paperId}}')">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    `;
-                    previewContainer.appendChild(previewItem);
-                }} else if (action === 'remove') {{
-                    const itemToRemove = previewContainer.querySelector(`[data-paper-id="${{paperData}}"]`);
-                    if (itemToRemove) {{
-                        itemToRemove.remove();
-                    }}
+                const previewItem = document.createElement('div');
+                previewItem.className = 'preview-item';
+                previewItem.setAttribute('data-paper-id', paperId);
+                previewItem.innerHTML = `
+                    <div class="preview-content">
+                        <div class="preview-title">${{title}} (${{year}})</div>
+                        <div class="preview-authors">${{authors}}</div>
+                    </div>
+                    <button class="preview-remove" onclick="removeFromSelection('${{paperId}}')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                previewContainer.appendChild(previewItem);
+            }} else if (action === 'remove') {{
+                const itemToRemove = previewContainer.querySelector(`[data-paper-id="${{paperData}}"]`);
+                if (itemToRemove) {{
+                    itemToRemove.remove();
                 }}
             }}
+        }}
 
-            function removeFromSelection(paperId) {{
-                const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
-                if (checkbox) {{
-                    checkbox.checked = false;
-                    togglePaperSelection(paperId, checkbox);
+        function removeFromSelection(paperId) {{
+            const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
+            if (checkbox) {{
+                checkbox.checked = false;
+                selectedPapers.delete(paperId);
+                
+                // Remove selection highlight
+                const paperCard = checkbox.closest('.paper-card');
+                if (paperCard) {{
+                    paperCard.classList.remove('selected');
                 }}
+                
+                // Remove from preview
+                const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
+                if (previewItem) {{
+                    previewItem.remove();
+                }}
+                
+                updateSelectionCount();
+                updateURL();
             }}
+        }}
 
-            // Add click handler for paper cards
-            document.querySelectorAll('.paper-card').forEach(card => {{
-                card.addEventListener('click', (event) => {{
+        function handleCheckboxClick(event, paperId, checkbox) {{
+            event.stopPropagation(); // Prevent card click event
+            togglePaperSelection(paperId, checkbox);
+        }}
+
+        // Add click handler for paper cards
+        document.querySelectorAll('.paper-card').forEach(card => {{
+            card.addEventListener('click', (event) => {{
                     if (!isSelectionMode || 
                         event.target.classList.contains('paper-link') || 
                         event.target.closest('.paper-link') ||
@@ -887,10 +928,13 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 }}
                 
                 const shareUrl = new URL(window.location.href);
-                shareUrl.searchParams.set('selected', Array.from(selectedPapers).join(','));
+                // Add $ prefix to IDs to make them more visible in the URL
+                const selectedIds = Array.from(selectedPapers).map(id => `$${{id}}`);
+                shareUrl.searchParams.set('selected', selectedIds.join(','));
                 document.getElementById('shareUrl').value = shareUrl.toString();
                 document.getElementById('shareModal').classList.add('show');
             }}
+
 
             function hideShareModal() {{
                 document.getElementById('shareModal').classList.remove('show');
@@ -912,7 +956,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             }}
 
             // Read URL parameters and apply filters
-            function applyURLParams() {{
+           function applyURLParams() {{
                 const params = new URLSearchParams(window.location.search);
                 
                 const searchTerm = params.get('search');
@@ -951,20 +995,29 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 if (selectedParam) {{
                     const paperIds = selectedParam.split(',');
                     if (paperIds.length > 0) {{
-                        toggleSelectionMode();
+                        toggleSelectionMode(); // Enable selection mode
                         paperIds.forEach(id => {{
-                            const paperRow = document.querySelector(`.paper-row[data-id="${id}"]`);
+                            // Clean the ID (remove potential $ symbols)
+                            const cleanId = id.replace('$', '');
+                            const paperRow = document.querySelector(`.paper-row[data-id="${{cleanId}}"]`);
                             if (paperRow) {{
                                 const checkbox = paperRow.querySelector('.selection-checkbox');
                                 if (checkbox) {{
                                     checkbox.checked = true;
-                                    selectedPapers.add(id);
+                                    selectedPapers.add(cleanId);
                                     paperRow.querySelector('.paper-card').classList.add('selected');
                                     updatePreview('add', paperRow);
                                 }}
                             }}
                         }});
                         updateSelectionCount();
+                        
+                        // Scroll selected papers into view
+                        const firstPaperId = paperIds[0].replace('$', '');
+                        const firstPaper = document.querySelector(`.paper-row[data-id="${{firstPaperId}}"]`);
+                        if (firstPaper) {{
+                            firstPaper.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+                        }}
                     }}
                 }}
                 
@@ -1182,7 +1235,9 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
                  data-year="{year}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
-                    <input type="checkbox" class="selection-checkbox" onclick="togglePaperSelection('{entry['id']}', this)">
+                    <input type="checkbox" 
+                           class="selection-checkbox" 
+                           onclick="handleCheckboxClick(event, '{entry['id']}', this)">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img data-src="{thumbnail_url}"
