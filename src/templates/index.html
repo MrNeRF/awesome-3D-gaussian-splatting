@@ -1,4 +1,3 @@
-<!-- templates/index.html -->
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -14,9 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Site CSS -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        ${styles}
+    </style>
 
     <!-- Lazy load -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
@@ -35,9 +34,6 @@
                 <button class="copy-button" onclick="copyBitcoinAddress()">
                     <i class="fas fa-copy"></i> Copy
                 </button>
-                <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
-                    <i class="fas fa-heart"></i> Sponsor
-                </a>
             </div>
         </div>
 
@@ -96,7 +92,7 @@
             </div>
             <select id="yearFilter" class="filter-select">
                 <option value="all">All Years</option>
-                {{year_options}}
+                ${year_options}
             </select>
             <button class="control-button secondary" onclick="toggleSelectionMode()">
                 <i class="fas fa-check-square"></i> Selection Mode
@@ -105,21 +101,18 @@
 
         <!-- Tag Filters -->
         <div class="tag-filters" id="tagFilters">
-            {{tag_filters}}
+            ${tag_filters}
         </div>
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            {{paper_cards}}
+            ${paper_cards}
         </div>
     </div>
 
     <!-- JavaScript -->
-    <script src="js/state.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/selection.js"></script>
-    <script src="js/sharing.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        ${scripts}
+    </script>
 </body>
 </html>
