@@ -404,7 +404,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             {paper_cards}
         </div>
     </div>
-        <script>
+<script>
         function copyBitcoinAddress() {{
             const address = document.querySelector('.bitcoin-address').textContent;
             navigator.clipboard.writeText(address).then(() => {{
@@ -458,11 +458,13 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 if (excludeTags.size > 0) {{
                     params.set('exclude', Array.from(excludeTags).join(','));
                 }}
-                
-                // Get the base URL without query parameters
-                const baseURL = window.location.href.split('?')[0];
-                const newURL = params.toString() ? `${{baseURL}}?${{params.toString()}}` : baseURL;
-                history.pushState({{ filters: params.toString() }}, '', newURL);
+
+                const newSearch = params.toString() ? `?${{params.toString()}}` : '';
+                window.history.replaceState(
+                    {{ filters: params.toString() }},
+                    '',
+                    `${{window.location.pathname}}${{newSearch}}`
+                );
             }}
 
             // Function to read URL parameters and apply filters
@@ -588,8 +590,8 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 }});
                 
                 updatePaperNumbers();
-                updateURL();
                 lazyLoadInstance.update();
+                updateURL();
             }}, 150);
 
             function updatePaperNumbers() {{
@@ -600,12 +602,22 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 }});
             }}
 
-            searchInput.addEventListener('input', filterPapers);
-            yearFilter.addEventListener('change', filterPapers);
+            // Event listeners for filter changes
+            searchInput.addEventListener('input', () => {{
+                filterPapers();
+                updateURL();
+            }});
+            
+            yearFilter.addEventListener('change', () => {{
+                filterPapers();
+                updateURL();
+            }});
 
+            // Show all papers initially and set initial numbers
             paperCards.forEach(card => card.classList.add('visible'));
             updatePaperNumbers();
             
+            // Apply any URL parameters on page load
             applyURLParams();
         }});
     </script>
