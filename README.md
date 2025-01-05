@@ -13,6 +13,7 @@
 - [Viewers & Game Engine Support](#viewers--game-engine-support)
 - [Tools & Utilities](#tools--utilities)
 - [Learning Resources](#learning-resources)
+- [Sponsors](#sponsors)
 
 ## Papers & Documentation
 
@@ -93,3 +94,10 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Unity Integration Guide](https://youtu.be/5_GaPYBHqOo)
 - [Two-Minute Explanation](https://youtu.be/HVv_IQKlafQ)
 - [Jupyter Tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM)
+
+
+## Sponsors
+
+A big thank you to our sponsors for their generous support:
+
+- [Yehe Liu](https://x.com/YeheLiu)
