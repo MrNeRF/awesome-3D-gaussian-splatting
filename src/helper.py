@@ -1,5 +1,10 @@
 from typing import List, Dict, Any
-import json
+from paper_schema import Paper
+from pathlib import Path
+from paper_generator import PaperCardGenerator
+
+# Initialize card generator with templates directory
+card_generator = PaperCardGenerator(Path(__file__).parent / 'templates')
 
 def generate_year_options(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML for year filter options."""
@@ -13,64 +18,21 @@ def generate_tag_filters(entries: List[Dict[str, Any]]) -> str:
     return "\n".join(f'<div class="tag-filter" data-tag="{t}">{t}</div>' for t in filtered_tags)
 
 def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
-    """Generate HTML for paper cards."""
-    paper_cards = []
+    """Generate HTML for paper cards using the Paper model and card generator."""
+    # Convert dictionary entries to Paper objects with validation
+    papers = []
     for entry in entries:
-        # Generate links
-        links = []
-        if entry.get("project_page"):
-            links.append(f'<a href="{entry["project_page"]}" class="paper-link" target="_blank" rel="noopener">'
-                        '<i class="fas fa-globe"></i> Project Page</a>')
-        if entry.get("paper"):
-            links.append(f'<a href="{entry["paper"]}" class="paper-link" target="_blank" rel="noopener">'
-                        '<i class="fas fa-file-alt"></i> Paper</a>')
-        if entry.get("code"):
-            links.append(f'<a href="{entry["code"]}" class="paper-link" target="_blank" rel="noopener">'
-                        '<i class="fas fa-code"></i> Code</a>')
-        if entry.get("video"):
-            links.append(f'<a href="{entry["video"]}" class="paper-link" target="_blank" rel="noopener">'
-                        '<i class="fas fa-video"></i> Video</a>')
-
-        # Generate tags
-        display_tags = [t for t in entry["tags"] if not t.startswith("Year ")]
-        tags_html = "\n".join(f'<span class="paper-tag">{t}</span>' for t in display_tags)
-
-        # Generate abstract section
-        abstract_html = ""
-        if entry.get("abstract"):
-            abstract_html = (
-                f'<button class="abstract-toggle">Show Abstract</button>\n'
-                f'<div class="paper-abstract">{entry["abstract"]}</div>'
-            )
-
-        year = entry.get("year", "N/A")
-        thumb_url = entry.get("thumbnail", f"assets/thumbnails/{entry['id']}.jpg")
-        fallback_url = "https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
-
-        # Build card HTML
-        card = (
-            f'<div class="paper-row" data-id="{entry["id"]}" '
-            f'data-title="{entry["title"]}" '
-            f'data-authors="{entry["authors"]}" '
-            f'data-year="{year}" '
-            f'data-tags=\'{json.dumps(entry["tags"])}\'>\n'
-            '  <div class="paper-card">\n'
-            f'    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, \'{entry["id"]}\', this)">\n'
-            '    <div class="paper-number"></div>\n'
-            '    <div class="paper-thumbnail">\n'
-            f'      <img data-src="{thumb_url}" data-fallback="{fallback_url}" '
-            f'alt="Paper thumbnail for {entry["title"]}" class="lazy" loading="lazy"/>\n'
-            '    </div>\n'
-            '    <div class="paper-content">\n'
-            f'      <h2 class="paper-title">{entry["title"]} <span class="paper-year">({year})</span></h2>\n'
-            f'      <p class="paper-authors">{entry["authors"]}</p>\n'
-            f'      <div class="paper-tags">{tags_html}</div>\n'
-            f'      <div class="paper-links">{" ".join(links)}</div>\n'
-            f'      {abstract_html}\n'
-            '    </div>\n'
-            '  </div>\n'
-            '</div>'
-        )
-        paper_cards.append(card)
+        try:
+            paper = Paper.from_dict(entry)
+            papers.append(paper)
+        except ValueError as e:
+            paper_id = entry.get('id', 'Unknown ID')
+            title = entry.get('title', 'Unknown Title')
+            print(f"Warning: Invalid paper entry '{paper_id}' ({title}): {e}")
+            continue
     
-    return "\n".join(paper_cards)
+    # Sort papers by year (newest first) and then by title
+    #papers.sort(key=lambda p: (-p.year, p.title))
+    
+    # Generate HTML using the card generator
+    return card_generator.generate_cards(papers)

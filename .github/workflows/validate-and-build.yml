@@ -38,7 +38,7 @@ jobs:
 
     - name: Generate HTML
       run: |
-        python src/generate_html.py awesome_3dgs_papers.yaml index.html
+        python src/generate.py awesome_3dgs_papers.yaml index.html
 
     - name: Commit and push if changed
       env:
