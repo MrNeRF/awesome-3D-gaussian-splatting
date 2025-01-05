@@ -121,6 +121,142 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             color: var(--text-color);
         }}
 
+        /* Selection Mode Styles */
+        .selection-controls {{
+            display: none;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+        }}
+
+        .selection-mode .selection-controls {{
+            display: flex;
+            flex-wrap: wrap;
+        }}
+
+        .selection-checkbox {{
+            display: none;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+            z-index: 2;
+            opacity: 1;
+        }}
+
+        .selection-mode .selection-checkbox {{
+            display: block !important;
+            pointer-events: auto !important;
+        }}
+
+        .paper-card.selected {{
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 0 0 1px var(--primary-color);
+        }}
+
+        .control-button {{
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }}
+
+        .control-button.primary {{
+            background-color: var(--primary-color);
+            color: white;
+        }}
+
+        .control-button.secondary {{
+            background-color: #f3f4f6;
+            color: var(--text-color);
+        }}
+
+        .control-button:hover {{
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }}
+
+        .selection-counter {{
+            padding: 0.5rem 1rem;
+            background-color: #f3f4f6;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }}
+
+        /* Share Modal Styles */
+        .share-modal {{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }}
+
+        .share-modal.show {{
+            display: flex;
+        }}
+
+        .share-modal-content {{
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            max-width: 600px;
+            width: 90%;
+            position: relative;
+        }}
+
+        .share-modal-header {{
+            margin-bottom: 1.5rem;
+        }}
+
+        .share-modal-header h2 {{
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }}
+
+        .share-url-container {{
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }}
+
+        .share-url-input {{
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+        }}
+
+        .share-modal-close {{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #6b7280;
+        }}
+
         /* Instructions box */
         .filter-info {{
             background-color: #f8fafc;
@@ -238,7 +374,6 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             z-index: 1;
         }}
 
-        /* Paper content styles remain unchanged */
         .paper-thumbnail {{
             flex: 0 0 200px;
             height: 283px;
@@ -359,6 +494,15 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             .paper-thumbnail img {{
                 object-fit: contain;
             }}
+            
+            .selection-controls {{
+                flex-direction: column;
+                align-items: stretch;
+            }}
+
+            .share-url-container {{
+                flex-direction: column;
+            }}
         }}
     </style>
 </head>
@@ -386,6 +530,37 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             <p><strong>Search:</strong> Enter paper title or author names</p>
             <p><strong>Year:</strong> Filter by publication year</p>
             <p><strong>Tags:</strong> Click once to include (blue), twice to exclude (red), third time to remove filter</p>
+            <p><strong>Selection:</strong> Use selection mode to pick and share specific papers</p>
+        </div>
+
+        <!-- Selection Controls -->
+        <div class="selection-controls">
+            <button class="control-button secondary" onclick="toggleSelectionMode()">
+                <i class="fas fa-times"></i> Exit Selection Mode
+            </button>
+            <div class="selection-counter">0 papers selected</div>
+            <button class="control-button secondary" onclick="clearSelection()">
+                <i class="fas fa-trash"></i> Clear Selection
+            </button>
+            <button class="control-button primary" onclick="showShareModal()">
+                <i class="fas fa-share"></i> Share Selection
+            </button>
+        </div>
+
+        <!-- Share Modal -->
+        <div class="share-modal" id="shareModal">
+            <div class="share-modal-content">
+                <button class="share-modal-close" onclick="hideShareModal()">&times;</button>
+                <div class="share-modal-header">
+                    <h2>Share Selected Papers</h2>
+                </div>
+                <div class="share-url-container">
+                    <input type="text" class="share-url-input" id="shareUrl" readonly>
+                    <button class="control-button primary" onclick="copyShareLink()">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </div>
+            </div>
         </div>
 
         <div class="filters">
@@ -394,6 +569,9 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 <option value="all">All Years</option>
                 {year_options}
             </select>
+            <button class="control-button secondary" onclick="toggleSelectionMode()">
+                <i class="fas fa-check-square"></i> Selection Mode
+            </button>
         </div>
 
         <div class="tag-filters" id="tagFilters">
@@ -436,6 +614,8 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             const paperCards = document.querySelectorAll('.paper-row');
             const tagFilters = document.querySelectorAll('.tag-filter');
             
+            let selectedPapers = new Set();
+            let isSelectionMode = false;
             let includeTags = new Set();
             let excludeTags = new Set();
 
@@ -459,6 +639,10 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                     params.set('exclude', Array.from(excludeTags).join(','));
                 }}
 
+                if (selectedPapers.size > 0) {{
+                    params.set('selected', Array.from(selectedPapers).join(','));
+                }}
+
                 const newSearch = params.toString() ? `?${{params.toString()}}` : '';
                 window.history.replaceState(
                     {{ filters: params.toString() }},
@@ -467,7 +651,113 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 );
             }}
 
-            // Function to read URL parameters and apply filters
+            function toggleSelectionMode() {{
+                isSelectionMode = !isSelectionMode;
+                document.body.classList.toggle('selection-mode', isSelectionMode);
+                
+                // Update selection controls visibility
+                const controls = document.querySelector('.selection-controls');
+                controls.style.display = isSelectionMode ? 'flex' : 'none';
+                
+                // Update all selection mode buttons
+                const selectionButtons = document.querySelectorAll('[onclick="toggleSelectionMode()"]');
+                selectionButtons.forEach(button => {{
+                    button.innerHTML = isSelectionMode ? 
+                        '<i class="fas fa-times"></i> Exit Selection Mode' : 
+                        '<i class="fas fa-check-square"></i> Selection Mode';
+                }});
+
+                if (!isSelectionMode) {{
+                    clearSelection();
+                }}
+            }}
+
+            function updateSelectionCount() {{
+                const counter = document.querySelector('.selection-counter');
+                counter.textContent = `${{selectedPapers.size}} paper${{selectedPapers.size === 1 ? '' : 's'}} selected`;
+            }}
+
+            function clearSelection() {{
+                selectedPapers.clear();
+                document.querySelectorAll('.paper-card').forEach(card => {{
+                    card.classList.remove('selected');
+                    const checkbox = card.querySelector('.selection-checkbox');
+                    if (checkbox) {{
+                        checkbox.checked = false;
+                    }}
+                }});
+                updateSelectionCount();
+                updateURL();
+            }}
+
+            function togglePaperSelection(paperId, checkbox) {{
+                if (!isSelectionMode) return;
+                
+                const paperCard = checkbox.closest('.paper-card');
+                
+                if (checkbox.checked) {{
+                    selectedPapers.add(paperId);
+                    paperCard.classList.add('selected');
+                }} else {{
+                    selectedPapers.delete(paperId);
+                    paperCard.classList.remove('selected');
+                }}
+                
+                updateSelectionCount();
+                updateURL();
+            }}
+
+            // Add click handler for paper cards
+            document.querySelectorAll('.paper-card').forEach(card => {{
+                card.addEventListener('click', (event) => {{
+                    if (!isSelectionMode || 
+                        event.target.classList.contains('paper-link') || 
+                        event.target.closest('.paper-link') ||
+                        event.target.classList.contains('abstract-toggle')) {{
+                        return;
+                    }}
+                    
+                    const checkbox = card.querySelector('.selection-checkbox');
+                    if (checkbox && event.target !== checkbox) {{
+                        checkbox.checked = !checkbox.checked;
+                        const paperId = card.parentElement.getAttribute('data-id');
+                        togglePaperSelection(paperId, checkbox);
+                    }}
+                }});
+            }});
+
+            function showShareModal() {{
+                if (selectedPapers.size === 0) {{
+                    alert('Please select at least one paper to share.');
+                    return;
+                }}
+                
+                const shareUrl = new URL(window.location.href);
+                shareUrl.searchParams.set('selected', Array.from(selectedPapers).join(','));
+                document.getElementById('shareUrl').value = shareUrl.toString();
+                document.getElementById('shareModal').classList.add('show');
+            }}
+
+            function hideShareModal() {{
+                document.getElementById('shareModal').classList.remove('show');
+            }}
+
+            async function copyShareLink() {{
+                const shareUrl = document.getElementById('shareUrl');
+                try {{
+                    await navigator.clipboard.writeText(shareUrl.value);
+                    const copyButton = document.querySelector('.share-url-container .control-button');
+                    const originalText = copyButton.innerHTML;
+                    copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                    setTimeout(() => {{
+                        copyButton.innerHTML = originalText;
+                    }}, 2000);
+                }} catch (err) {{
+                    alert('Failed to copy link. Please copy it manually.');
+                }}
+            }}
+
+            // Read URL parameters and apply filters
             function applyURLParams() {{
                 const params = new URLSearchParams(window.location.search);
                 
@@ -502,6 +792,26 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                         }}
                     }});
                 }}
+
+                const selectedParam = params.get('selected');
+                if (selectedParam) {{
+                    const paperIds = selectedParam.split(',');
+                    if (paperIds.length > 0) {{
+                        toggleSelectionMode();
+                        paperIds.forEach(id => {{
+                            const paperCard = document.querySelector(`.paper-row[data-id="${{id}}"]`);
+                            if (paperCard) {{
+                                const checkbox = paperCard.querySelector('.selection-checkbox');
+                                if (checkbox) {{
+                                    checkbox.checked = true;
+                                    selectedPapers.add(id);
+                                    paperCard.querySelector('.paper-card').classList.add('selected');
+                                }}
+                            }}
+                        }});
+                        updateSelectionCount();
+                    }}
+                }}
                 
                 if (params.toString()) {{
                     filterPapers();
@@ -514,6 +824,8 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 yearFilter.value = 'all';
                 includeTags.clear();
                 excludeTags.clear();
+                clearSelection();
+                
                 tagFilters.forEach(tag => {{
                     tag.classList.remove('include', 'exclude');
                 }});
@@ -619,6 +931,14 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             
             // Apply any URL parameters on page load
             applyURLParams();
+
+            // Expose functions to window for button onclick handlers
+            window.toggleSelectionMode = toggleSelectionMode;
+            window.clearSelection = clearSelection;
+            window.showShareModal = showShareModal;
+            window.hideShareModal = hideShareModal;
+            window.copyShareLink = copyShareLink;
+            window.copyBitcoinAddress = copyBitcoinAddress;
         }});
     </script>
 </body>
@@ -683,11 +1003,13 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
         # Generate card HTML with optimized loading while preserving design
         card = f"""
             <div class="paper-row" 
+                 data-id="${entry['id']}"
                  data-title="{entry['title']}" 
                  data-authors="{entry['authors']}"
                  data-year="{year}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
+                    <input type="checkbox" class="selection-checkbox" onclick="togglePaperSelection('${entry['id']}', this)">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img data-src="{thumbnail_url}"
