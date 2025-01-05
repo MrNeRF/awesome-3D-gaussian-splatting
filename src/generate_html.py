@@ -195,6 +195,86 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             color: var(--text-color);
         }}
 
+        .selection-preview {{
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 300px;
+            max-height: 80vh;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+        }}
+
+        .selection-mode .selection-preview {{
+            display: flex;
+        }}
+
+        .preview-header {{
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: bold;
+            background: #f8fafc;
+            border-radius: 0.75rem 0.75rem 0 0;
+        }}
+
+        .preview-container {{
+            padding: 1rem;
+            overflow-y: auto;
+            max-height: calc(80vh - 60px);
+        }}
+
+        .preview-item {{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            background: white;
+        }}
+
+        .preview-content {{
+            flex: 1;
+            min-width: 0;
+        }}
+
+        .preview-title {{
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }}
+
+        .preview-authors {{
+            font-size: 0.8rem;
+            color: #4b5563;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }}
+
+        .preview-remove {{
+            background: none;
+            border: none;
+            color: #6b7280;
+            cursor: pointer;
+            padding: 0.25rem;
+            margin-left: 0.5rem;
+            border-radius: 0.25rem;
+        }}
+
+        .preview-remove:hover {{
+            color: #dc2626;
+            background: #f3f4f6;
+        }}
+
         /* Share Modal Styles */
         .share-modal {{
             display: none;
@@ -547,6 +627,15 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             </button>
         </div>
 
+        <!-- Selection Preview -->
+        <div class="selection-preview">
+            <div class="preview-header">
+                Selected Papers
+            </div>
+            <div class="preview-container" id="selectionPreview">
+            </div>
+        </div>
+
         <!-- Share Modal -->
         <div class="share-modal" id="shareModal">
             <div class="share-modal-content">
@@ -651,15 +740,13 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 );
             }}
 
-            function toggleSelectionMode() {{
+           function toggleSelectionMode() {{
                 isSelectionMode = !isSelectionMode;
                 document.body.classList.toggle('selection-mode', isSelectionMode);
                 
-                // Update selection controls visibility
                 const controls = document.querySelector('.selection-controls');
                 controls.style.display = isSelectionMode ? 'flex' : 'none';
                 
-                // Update all selection mode buttons
                 const selectionButtons = document.querySelectorAll('[onclick="toggleSelectionMode()"]');
                 selectionButtons.forEach(button => {{
                     button.innerHTML = isSelectionMode ? 
@@ -686,6 +773,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                         checkbox.checked = false;
                     }}
                 }});
+                document.getElementById('selectionPreview').innerHTML = '';
                 updateSelectionCount();
                 updateURL();
             }}
@@ -694,17 +782,83 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 if (!isSelectionMode) return;
                 
                 const paperCard = checkbox.closest('.paper-card');
+                const paperRow = paperCard.closest('.paper-row');
                 
                 if (checkbox.checked) {{
                     selectedPapers.add(paperId);
                     paperCard.classList.add('selected');
+                    
+                    // Only add to preview if paper is currently visible
+                    if (paperRow.classList.contains('visible')) {{
+                        const title = paperRow.getAttribute('data-title');
+                        const authors = paperRow.getAttribute('data-authors');
+                        const year = paperRow.getAttribute('data-year');
+                        
+                        const previewItem = document.createElement('div');
+                        previewItem.className = 'preview-item';
+                        previewItem.setAttribute('data-paper-id', paperId);
+                        previewItem.innerHTML = `
+                            <div class="preview-content">
+                                <div class="preview-title">${{title}} (${{year}})</div>
+                                <div class="preview-authors">${{authors}}</div>
+                            </div>
+                            <button class="preview-remove" onclick="removeFromSelection('${{paperId}}')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        `;
+                        document.getElementById('selectionPreview').appendChild(previewItem);
+                    }}
                 }} else {{
                     selectedPapers.delete(paperId);
                     paperCard.classList.remove('selected');
+                    
+                    // Remove from preview
+                    const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
+                    if (previewItem) {{
+                        previewItem.remove();
+                    }}
                 }}
                 
                 updateSelectionCount();
                 updateURL();
+            }}
+
+            function updatePreview(action, paperData) {{
+                const previewContainer = document.getElementById('selectionPreview');
+                
+                if (action === 'add') {{
+                    const title = paperData.getAttribute('data-title');
+                    const authors = paperData.getAttribute('data-authors');
+                    const year = paperData.getAttribute('data-year');
+                    const paperId = paperData.getAttribute('data-id');
+                    
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'preview-item';
+                    previewItem.setAttribute('data-paper-id', paperId);
+                    previewItem.innerHTML = `
+                        <div class="preview-content">
+                            <div class="preview-title">${{title}} (${{year}})</div>
+                            <div class="preview-authors">${{authors}}</div>
+                        </div>
+                        <button class="preview-remove" onclick="removeFromSelection('${{paperId}}')">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    `;
+                    previewContainer.appendChild(previewItem);
+                }} else if (action === 'remove') {{
+                    const itemToRemove = previewContainer.querySelector(`[data-paper-id="${{paperData}}"]`);
+                    if (itemToRemove) {{
+                        itemToRemove.remove();
+                    }}
+                }}
+            }}
+
+            function removeFromSelection(paperId) {{
+                const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
+                if (checkbox) {{
+                    checkbox.checked = false;
+                    togglePaperSelection(paperId, checkbox);
+                }}
             }}
 
             // Add click handler for paper cards
@@ -799,13 +953,14 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                     if (paperIds.length > 0) {{
                         toggleSelectionMode();
                         paperIds.forEach(id => {{
-                            const paperCard = document.querySelector(`.paper-row[data-id="${{id}}"]`);
-                            if (paperCard) {{
-                                const checkbox = paperCard.querySelector('.selection-checkbox');
+                            const paperRow = document.querySelector(`.paper-row[data-id="${id}"]`);
+                            if (paperRow) {{
+                                const checkbox = paperRow.querySelector('.selection-checkbox');
                                 if (checkbox) {{
                                     checkbox.checked = true;
                                     selectedPapers.add(id);
-                                    paperCard.querySelector('.paper-card').classList.add('selected');
+                                    paperRow.querySelector('.paper-card').classList.add('selected');
+                                    updatePreview('add', paperRow);
                                 }}
                             }}
                         }});
@@ -894,10 +1049,27 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                     const matchesExcludeTags = excludeTags.size === 0 ||
                         ![...excludeTags].some(tag => tags.includes(tag));
 
-                    if (matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags) {{
-                        card.classList.add('visible');
-                    }} else {{
-                        card.classList.remove('visible');
+                    const visible = matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags;
+                    card.classList.toggle('visible', visible);
+                    
+                    // Handle selection state preservation during filtering
+                    if (!visible && isSelectionMode) {{
+                        const checkbox = card.querySelector('.selection-checkbox');
+                        if (checkbox && checkbox.checked) {{
+                            // Keep the paper selected but update preview visibility
+                            const previewItem = document.querySelector(`.preview-item[data-paper-id="${{card.getAttribute('data-id')}}"]`);
+                            if (previewItem) {{
+                                previewItem.style.display = 'none';
+                            }}
+                        }}
+                    }} else if (visible && isSelectionMode) {{
+                        const checkbox = card.querySelector('.selection-checkbox');
+                        if (checkbox && checkbox.checked) {{
+                            const previewItem = document.querySelector(`.preview-item[data-paper-id="${{card.getAttribute('data-id')}}"]`);
+                            if (previewItem) {{
+                                previewItem.style.display = 'flex';
+                            }}
+                        }}
                     }}
                 }});
                 
@@ -905,6 +1077,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                 lazyLoadInstance.update();
                 updateURL();
             }}, 150);
+
 
             function updatePaperNumbers() {{
                 let number = 1;
@@ -1003,13 +1176,13 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
         # Generate card HTML with optimized loading while preserving design
         card = f"""
             <div class="paper-row" 
-                 data-id="${entry['id']}"
+                 data-id="{entry['id']}"
                  data-title="{entry['title']}" 
                  data-authors="{entry['authors']}"
                  data-year="{year}"
                  data-tags='{json.dumps(entry["tags"])}'>
                 <div class="paper-card">
-                    <input type="checkbox" class="selection-checkbox" onclick="togglePaperSelection('${entry['id']}', this)">
+                    <input type="checkbox" class="selection-checkbox" onclick="togglePaperSelection('{entry['id']}', this)">
                     <div class="paper-number"></div>
                     <div class="paper-thumbnail">
                         <img data-src="{thumbnail_url}"
