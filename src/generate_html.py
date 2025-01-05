@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
     """Generate optimized HTML page while preserving design"""
     # Get all unique tags and years
-    all_tags = sorted(set(tag for entry in entries for tag in entry['tags']))
+    all_tags = sorted(set(tag for entry in entries for tag in entry["tags"]))
     year_options = generate_year_options(entries)
     tag_filters = generate_tag_filters(all_tags)
     paper_cards = generate_paper_cards(entries)
@@ -138,7 +138,7 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             flex-wrap: wrap;
         }}
 
-       .selection-checkbox {{
+        .selection-checkbox {{
             display: none;
             position: absolute;
             top: 1rem;
@@ -699,7 +699,35 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             {paper_cards}
         </div>
     </div>
-<script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {{
+        // Initialize lazy loading
+        const lazyLoadInstance = new LazyLoad({{
+            elements_selector: ".lazy",
+            callback_error: (img) => {{
+                if (img.dataset.fallback) {{
+                    img.src = img.dataset.fallback;
+                }}
+            }},
+            callback_loaded: (img) => {{
+                img.classList.add('loaded');
+            }}
+        }});
+
+        // Grab references
+        const searchInput = document.getElementById('searchInput');
+        const yearFilter = document.getElementById('yearFilter');
+        const paperCards = document.querySelectorAll('.paper-row');
+        const tagFilters = document.querySelectorAll('.tag-filter');
+        
+        // State
+        let selectedPapers = new Set();
+        let isSelectionMode = false;
+        let includeTags = new Set();
+        let excludeTags = new Set();
+
+        // Copy Bitcoin Address
         function copyBitcoinAddress() {{
             const address = document.querySelector('.bitcoin-address').textContent;
             navigator.clipboard.writeText(address).then(() => {{
@@ -712,100 +740,69 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             }});
         }}
 
-        document.addEventListener('DOMContentLoaded', function() {{
-            // Initialize lazy loading
-            const lazyLoadInstance = new LazyLoad({{
-                elements_selector: ".lazy",
-                callback_error: (img) => {{
-                    if (img.dataset.fallback) {{
-                        img.src = img.dataset.fallback;
-                    }}
-                }},
-                callback_loaded: (img) => {{
-                    img.classList.add('loaded');
-                }}
-            }});
-
-            const searchInput = document.getElementById('searchInput');
-            const yearFilter = document.getElementById('yearFilter');
-            const paperCards = document.querySelectorAll('.paper-row');
-            const tagFilters = document.querySelectorAll('.tag-filter');
+        // Update the address bar to reflect current filters & selection
+        function updateURL() {{
+            const params = new URLSearchParams();
             
-            let selectedPapers = new Set();
-            let isSelectionMode = false;
-            let includeTags = new Set();
-            let excludeTags = new Set();
-
-            // Function to update URL with current filter state
-            function updateURL() {{
-                const params = new URLSearchParams();
-                
-                if (searchInput.value) {{
-                    params.set('search', searchInput.value);
-                }}
-                
-                if (yearFilter.value !== 'all') {{
-                    params.set('year', yearFilter.value);
-                }}
-                
-                if (includeTags.size > 0) {{
-                    params.set('include', Array.from(includeTags).join(','));
-                }}
-                
-                if (excludeTags.size > 0) {{
-                    params.set('exclude', Array.from(excludeTags).join(','));
-                }}
-
-                if (selectedPapers.size > 0) {{
-                    params.set('selected', Array.from(selectedPapers).join(','));
-                }}
-
-                const newSearch = params.toString() ? `?${{params.toString()}}` : '';
-                window.history.replaceState(
-                    {{ filters: params.toString() }},
-                    '',
-                    `${{window.location.pathname}}${{newSearch}}`
-                );
+            if (searchInput.value) {{
+                params.set('search', searchInput.value);
+            }}
+            
+            if (yearFilter.value !== 'all') {{
+                params.set('year', yearFilter.value);
+            }}
+            
+            if (includeTags.size > 0) {{
+                params.set('include', Array.from(includeTags).join(','));
+            }}
+            
+            if (excludeTags.size > 0) {{
+                params.set('exclude', Array.from(excludeTags).join(','));
             }}
 
-           function toggleSelectionMode() {{
-                isSelectionMode = !isSelectionMode;
-                document.body.classList.toggle('selection-mode', isSelectionMode);
-                
-                const controls = document.querySelector('.selection-controls');
-                controls.style.display = isSelectionMode ? 'flex' : 'none';
-                
-                const selectionButtons = document.querySelectorAll('[onclick="toggleSelectionMode()"]');
-                selectionButtons.forEach(button => {{
-                    button.innerHTML = isSelectionMode ? 
-                        '<i class="fas fa-times"></i> Exit Selection Mode' : 
-                        '<i class="fas fa-check-square"></i> Selection Mode';
-                }});
+            if (selectedPapers.size > 0) {{
+                params.set('selected', Array.from(selectedPapers).join(','));
+            }}
 
-                if (!isSelectionMode) {{
-                    clearSelection();
+            const newSearch = params.toString() ? `?${{params.toString()}}` : '';
+            window.history.replaceState(
+                {{ filters: params.toString() }},
+                '',
+                `${{window.location.pathname}}${{newSearch}}`
+            );
+        }}
+
+        // Remove a paper from selection
+        function removeFromSelection(paperId) {{
+            const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
+            if (checkbox) {{
+                checkbox.checked = false;
+                selectedPapers.delete(paperId);
+
+                // Remove selection highlight
+                const paperCard = checkbox.closest('.paper-card');
+                if (paperCard) {{
+                    paperCard.classList.remove('selected');
                 }}
-            }}
 
-            function updateSelectionCount() {{
-                const counter = document.querySelector('.selection-counter');
-                counter.textContent = `${{selectedPapers.size}} paper${{selectedPapers.size === 1 ? '' : 's'}} selected`;
-            }}
+                // Remove from preview
+                const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
+                if (previewItem) {{
+                    previewItem.remove();
+                }}
 
-            function clearSelection() {{
-                selectedPapers.clear();
-                document.querySelectorAll('.paper-card').forEach(card => {{
-                    card.classList.remove('selected');
-                    const checkbox = card.querySelector('.selection-checkbox');
-                    if (checkbox) {{
-                        checkbox.checked = false;
-                    }}
-                }});
-                document.getElementById('selectionPreview').innerHTML = '';
                 updateSelectionCount();
                 updateURL();
             }}
+        }}
 
+        // Update the "X papers selected" label
+        function updateSelectionCount() {{
+            const counter = document.querySelector('.selection-counter');
+            counter.textContent = `${{selectedPapers.size}} paper${{selectedPapers.size === 1 ? '' : 's'}} selected`;
+        }}
+
+        // Toggle or set a paper's selection state
         function togglePaperSelection(paperId, checkbox) {{
             if (!isSelectionMode) return;
             
@@ -815,14 +812,14 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             if (checkbox.checked) {{
                 selectedPapers.add(paperId);
                 paperCard.classList.add('selected');
-                
+
                 // Only add to preview if paper is currently visible
                 if (paperRow.classList.contains('visible')) {{
                     const title = paperRow.getAttribute('data-title');
                     const authors = paperRow.getAttribute('data-authors');
                     const year = paperRow.getAttribute('data-year');
                     
-                    // Preview item creation with click handler
+                    // Create the preview item
                     const previewItem = document.createElement('div');
                     previewItem.className = 'preview-item';
                     previewItem.setAttribute('data-paper-id', paperId);
@@ -831,16 +828,11 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
                             <div class="preview-title">${{title}} (${{year}})</div>
                             <div class="preview-authors">${{authors}}</div>
                         </div>
+                        <!-- The crucial fix: event.stopPropagation() -->
                         <button class="preview-remove" onclick="event.stopPropagation(); removeFromSelection('${{paperId}}')">
                             <i class="fas fa-times"></i>
                         </button>
                     `;
-                    
-                    // Add click handler to the preview item itself
-                    previewItem.querySelector('.preview-content').addEventListener('click', (e) => {{
-                        e.stopPropagation();
-                        scrollToPaper(paperId);
-                    }});
                     
                     document.getElementById('selectionPreview').appendChild(previewItem);
                 }}
@@ -852,12 +844,13 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             updateURL();
         }}
 
+        // Scroll to a specific paper card
         function scrollToPaper(paperId) {{
             const paperRow = document.querySelector(`.paper-row[data-id="${{paperId}}"]`);
             if (paperRow) {{
                 paperRow.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
                 
-                // Add a highlight effect
+                // Optional highlight
                 const paperCard = paperRow.querySelector('.paper-card');
                 if (paperCard) {{
                     paperCard.style.transition = 'background-color 0.3s ease';
@@ -869,369 +862,324 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             }}
         }}
 
-        function removeFromSelection(paperId) {{
-            const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
-            if (checkbox) {{
-                checkbox.checked = false;
-            }}
-            
-            const paperCard = document.querySelector(`.paper-row[data-id="${{paperId}}"] .paper-card`);
-            if (paperCard) {{
-                paperCard.classList.remove('selected');
-            }}
-            
-            selectedPapers.delete(paperId);
-            
-            const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
-            if (previewItem) {{
-                previewItem.remove();
-            }}
-            
+        // Clear the entire selection
+        function clearSelection() {{
+            selectedPapers.clear();
+            document.querySelectorAll('.paper-card').forEach(card => {{
+                card.classList.remove('selected');
+                const checkbox = card.querySelector('.selection-checkbox');
+                if (checkbox) {{
+                    checkbox.checked = false;
+                }}
+            }});
+            document.getElementById('selectionPreview').innerHTML = '';
             updateSelectionCount();
             updateURL();
         }}
 
-        
-        function updatePreview(action, paperData) {{
-            const previewContainer = document.getElementById('selectionPreview');
+        // Enable or disable selection mode
+        function toggleSelectionMode() {{
+            isSelectionMode = !isSelectionMode;
+            document.body.classList.toggle('selection-mode', isSelectionMode);
             
-            if (action === 'add') {{
-                const title = paperData.getAttribute('data-title');
-                const authors = paperData.getAttribute('data-authors');
-                const year = paperData.getAttribute('data-year');
-                const paperId = paperData.getAttribute('data-id');
-                
-                const previewItem = document.createElement('div');
-                previewItem.className = 'preview-item';
-                previewItem.setAttribute('data-paper-id', paperId);
-                previewItem.innerHTML = `
-                    <div class="preview-content">
-                        <div class="preview-title">${{title}} (${{year}})</div>
-                        <div class="preview-authors">${{authors}}</div>
-                    </div>
-                    <button class="preview-remove" onclick="removeFromSelection('${{paperId}}')">
-                        <i class="fas fa-times"></i>
-                    </button>
-                `;
-                previewContainer.appendChild(previewItem);
-            }} else if (action === 'remove') {{
-                const itemToRemove = previewContainer.querySelector(`[data-paper-id="${{paperData}}"]`);
-                if (itemToRemove) {{
-                    itemToRemove.remove();
-                }}
-            }}
-        }}
-
-        function removeFromSelection(paperId) {{
-            const checkbox = document.querySelector(`.paper-row[data-id="${{paperId}}"] .selection-checkbox`);
-            if (checkbox) {{
-                checkbox.checked = false;
-                selectedPapers.delete(paperId);
-                
-                // Remove selection highlight
-                const paperCard = checkbox.closest('.paper-card');
-                if (paperCard) {{
-                    paperCard.classList.remove('selected');
-                }}
-                
-                // Remove from preview
-                const previewItem = document.querySelector(`.preview-item[data-paper-id="${{paperId}}"]`);
-                if (previewItem) {{
-                    previewItem.remove();
-                }}
-                
-                updateSelectionCount();
-                updateURL();
-            }}
-        }}
-
-        function handleCheckboxClick(event, paperId, checkbox) {{
-            event.stopPropagation(); // Prevent card click event
-            togglePaperSelection(paperId, checkbox);
-        }}
-
-        // Add click handler for paper cards
-        document.querySelectorAll('.paper-card').forEach(card => {{
-            card.addEventListener('click', (event) => {{
-                    if (!isSelectionMode || 
-                        event.target.classList.contains('paper-link') || 
-                        event.target.closest('.paper-link') ||
-                        event.target.classList.contains('abstract-toggle')) {{
-                        return;
-                    }}
-                    
-                    const checkbox = card.querySelector('.selection-checkbox');
-                    if (checkbox && event.target !== checkbox) {{
-                        checkbox.checked = !checkbox.checked;
-                        const paperId = card.parentElement.getAttribute('data-id');
-                        togglePaperSelection(paperId, checkbox);
-                    }}
-                }});
+            const controls = document.querySelector('.selection-controls');
+            controls.style.display = isSelectionMode ? 'flex' : 'none';
+            
+            const selectionButtons = document.querySelectorAll('[onclick="toggleSelectionMode()"]');
+            selectionButtons.forEach(button => {{
+                button.innerHTML = isSelectionMode 
+                    ? '<i class="fas fa-times"></i> Exit Selection Mode'
+                    : '<i class="fas fa-check-square"></i> Selection Mode';
             }});
 
-            function showShareModal() {{
-                if (selectedPapers.size === 0) {{
-                    alert('Please select at least one paper to share.');
+            if (!isSelectionMode) {{
+                clearSelection();
+            }}
+        }}
+
+        // Modal to share selection
+        function showShareModal() {{
+            if (selectedPapers.size === 0) {{
+                alert('Please select at least one paper to share.');
+                return;
+            }}
+            
+            const shareUrl = new URL(window.location.href);
+            // Add a '$' to each ID (optional for styling)
+            const selectedIds = Array.from(selectedPapers).map(id => `$${{id}}`);
+            shareUrl.searchParams.set('selected', selectedIds.join(','));
+            document.getElementById('shareUrl').value = shareUrl.toString();
+            document.getElementById('shareModal').classList.add('show');
+        }}
+
+        function hideShareModal() {{
+            document.getElementById('shareModal').classList.remove('show');
+        }}
+
+        async function copyShareLink() {{
+            const shareUrl = document.getElementById('shareUrl');
+            try {{
+                await navigator.clipboard.writeText(shareUrl.value);
+                const copyButton = document.querySelector('.share-url-container .control-button');
+                const originalText = copyButton.innerHTML;
+                copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {{
+                    copyButton.innerHTML = originalText;
+                }}, 2000);
+            }} catch (err) {{
+                alert('Failed to copy link. Please copy it manually.');
+            }}
+        }}
+
+        // Handle filter changes (search, year, tags) + apply them to the papers
+        const debounce = (fn, delay) => {{
+            let timeoutId;
+            return (...args) => {{
+                if (timeoutId) {{
+                    clearTimeout(timeoutId);
+                }}
+                timeoutId = setTimeout(() => {{
+                    fn.apply(null, args);
+                }}, delay);
+            }};
+        }};
+
+        // Tag filter clicks
+        tagFilters.forEach(tagFilter => {{
+            tagFilter.addEventListener('click', () => {{
+                const tag = tagFilter.getAttribute('data-tag');
+                
+                if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {{
+                    tagFilter.classList.add('include');
+                    includeTags.add(tag);
+                }} else if (tagFilter.classList.contains('include')) {{
+                    tagFilter.classList.remove('include');
+                    tagFilter.classList.add('exclude');
+                    includeTags.delete(tag);
+                    excludeTags.add(tag);
+                }} else {{
+                    tagFilter.classList.remove('exclude');
+                    excludeTags.delete(tag);
+                }}
+                
+                filterPapers();
+                updateURL();
+            }});
+        }});
+
+        // Filter logic
+        const filterPapers = debounce(() => {{
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedYear = yearFilter.value;
+
+            paperCards.forEach(card => {{
+                const title = card.getAttribute('data-title').toLowerCase();
+                const authors = card.getAttribute('data-authors').toLowerCase();
+                const year = card.getAttribute('data-year');
+                const tags = JSON.parse(card.getAttribute('data-tags'));
+
+                const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
+                const matchesYear = selectedYear === 'all' || year === selectedYear;
+                const matchesIncludeTags = includeTags.size === 0 
+                    || [...includeTags].every(tag => tags.includes(tag));
+                const matchesExcludeTags = excludeTags.size === 0
+                    || ![...excludeTags].some(tag => tags.includes(tag));
+
+                const visible = matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags;
+                card.classList.toggle('visible', visible);
+                
+                // If filtered out (not visible) but is selected, keep it selected but hide in preview
+                if (!visible && isSelectionMode) {{
+                    const checkbox = card.querySelector('.selection-checkbox');
+                    if (checkbox && checkbox.checked) {{
+                        const previewItem = document.querySelector(`.preview-item[data-paper-id="${{card.getAttribute('data-id')}}"]`);
+                        if (previewItem) {{
+                            previewItem.style.display = 'none';
+                        }}
+                    }}
+                }} else if (visible && isSelectionMode) {{
+                    const checkbox = card.querySelector('.selection-checkbox');
+                    if (checkbox && checkbox.checked) {{
+                        const previewItem = document.querySelector(`.preview-item[data-paper-id="${{card.getAttribute('data-id')}}"]`);
+                        if (previewItem) {{
+                            previewItem.style.display = 'flex';
+                        }}
+                    }}
+                }}
+            }});
+            
+            updatePaperNumbers();
+            lazyLoadInstance.update();
+            updateURL();
+        }}, 150);
+
+        // Assign incremental numbers to visible papers
+        function updatePaperNumbers() {{
+            let number = 1;
+            document.querySelectorAll('.paper-row.visible').forEach(card => {{
+                const numberElement = card.querySelector('.paper-number');
+                numberElement.textContent = number++;
+            }});
+        }}
+
+        // Attach events
+        searchInput.addEventListener('input', () => {{
+            filterPapers();
+            updateURL();
+        }});
+        
+        yearFilter.addEventListener('change', () => {{
+            filterPapers();
+            updateURL();
+        }});
+
+        // Handle abstract toggles
+        document.querySelectorAll('.abstract-toggle').forEach(button => {{
+            button.addEventListener('click', () => {{
+                const abstract = button.nextElementSibling;
+                const isShown = abstract.classList.toggle('show');
+                button.textContent = isShown ? 'Hide Abstract' : 'Show Abstract';
+            }});
+        }});
+
+        // Make each paper card toggle the checkbox on click, if in selection mode
+        document.querySelectorAll('.paper-card').forEach(card => {{
+            card.addEventListener('click', (event) => {{
+                if (
+                    !isSelectionMode ||
+                    event.target.classList.contains('paper-link') || 
+                    event.target.closest('.paper-link') ||
+                    event.target.classList.contains('abstract-toggle')
+                ) {{
                     return;
                 }}
                 
-                const shareUrl = new URL(window.location.href);
-                // Add $ prefix to IDs to make them more visible in the URL
-                const selectedIds = Array.from(selectedPapers).map(id => `$${{id}}`);
-                shareUrl.searchParams.set('selected', selectedIds.join(','));
-                document.getElementById('shareUrl').value = shareUrl.toString();
-                document.getElementById('shareModal').classList.add('show');
-            }}
-
-
-            function hideShareModal() {{
-                document.getElementById('shareModal').classList.remove('show');
-            }}
-
-            async function copyShareLink() {{
-                const shareUrl = document.getElementById('shareUrl');
-                try {{
-                    await navigator.clipboard.writeText(shareUrl.value);
-                    const copyButton = document.querySelector('.share-url-container .control-button');
-                    const originalText = copyButton.innerHTML;
-                    copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                    setTimeout(() => {{
-                        copyButton.innerHTML = originalText;
-                    }}, 2000);
-                }} catch (err) {{
-                    alert('Failed to copy link. Please copy it manually.');
+                const checkbox = card.querySelector('.selection-checkbox');
+                if (checkbox && event.target !== checkbox) {{
+                    checkbox.checked = !checkbox.checked;
+                    const paperId = card.parentElement.getAttribute('data-id');
+                    togglePaperSelection(paperId, checkbox);
                 }}
-            }}
-
-            // Read URL parameters and apply filters
-           function applyURLParams() {{
-                const params = new URLSearchParams(window.location.search);
-                
-                const searchTerm = params.get('search');
-                if (searchTerm) {{
-                    searchInput.value = searchTerm;
-                }}
-                
-                const year = params.get('year');
-                if (year) {{
-                    yearFilter.value = year;
-                }}
-                
-                const includeTagsParam = params.get('include');
-                if (includeTagsParam) {{
-                    includeTags = new Set(includeTagsParam.split(','));
-                    includeTags.forEach(tag => {{
-                        const tagButton = document.querySelector(`.tag-filter[data-tag="${{tag}}"]`);
-                        if (tagButton) {{
-                            tagButton.classList.add('include');
-                        }}
-                    }});
-                }}
-                
-                const excludeTagsParam = params.get('exclude');
-                if (excludeTagsParam) {{
-                    excludeTags = new Set(excludeTagsParam.split(','));
-                    excludeTags.forEach(tag => {{
-                        const tagButton = document.querySelector(`.tag-filter[data-tag="${{tag}}"]`);
-                        if (tagButton) {{
-                            tagButton.classList.add('exclude');
-                        }}
-                    }});
-                }}
-
-                const selectedParam = params.get('selected');
-                if (selectedParam) {{
-                    const paperIds = selectedParam.split(',');
-                    if (paperIds.length > 0) {{
-                        toggleSelectionMode(); // Enable selection mode
-                        paperIds.forEach(id => {{
-                            // Clean the ID (remove potential $ symbols)
-                            const cleanId = id.replace('$', '');
-                            const paperRow = document.querySelector(`.paper-row[data-id="${{cleanId}}"]`);
-                            if (paperRow) {{
-                                const checkbox = paperRow.querySelector('.selection-checkbox');
-                                if (checkbox) {{
-                                    checkbox.checked = true;
-                                    selectedPapers.add(cleanId);
-                                    paperRow.querySelector('.paper-card').classList.add('selected');
-                                    updatePreview('add', paperRow);
-                                }}
-                            }}
-                        }});
-                        updateSelectionCount();
-                        
-                        // Scroll selected papers into view
-                        const firstPaperId = paperIds[0].replace('$', '');
-                        const firstPaper = document.querySelector(`.paper-row[data-id="${{firstPaperId}}"]`);
-                        if (firstPaper) {{
-                            firstPaper.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
-                        }}
-                    }}
-                }}
-                
-                if (params.toString()) {{
-                    filterPapers();
-                }}
-            }}
-
-            // Handle browser back/forward buttons
-            window.addEventListener('popstate', (event) => {{
-                searchInput.value = '';
-                yearFilter.value = 'all';
-                includeTags.clear();
-                excludeTags.clear();
-                clearSelection();
-                
-                tagFilters.forEach(tag => {{
-                    tag.classList.remove('include', 'exclude');
-                }});
-                
-                applyURLParams();
             }});
-
-            // Handle abstract toggles
-            document.querySelectorAll('.abstract-toggle').forEach(button => {{
-                button.addEventListener('click', () => {{
-                    const abstract = button.nextElementSibling;
-                    const isShown = abstract.classList.toggle('show');
-                    button.textContent = isShown ? 'Hide Abstract' : 'Show Abstract';
-                }});
-            }});
-
-            // Handle tag filtering with debounce
-            const debounce = (fn, delay) => {{
-                let timeoutId;
-                return (...args) => {{
-                    if (timeoutId) {{
-                        clearTimeout(timeoutId);
-                    }}
-                    timeoutId = setTimeout(() => {{
-                        fn.apply(null, args);
-                    }}, delay);
-                }};
-            }};
-
-            tagFilters.forEach(tagFilter => {{
-                tagFilter.addEventListener('click', () => {{
-                    const tag = tagFilter.getAttribute('data-tag');
-                    
-                    if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {{
-                        tagFilter.classList.add('include');
-                        includeTags.add(tag);
-                    }} else if (tagFilter.classList.contains('include')) {{
-                        tagFilter.classList.remove('include');
-                        tagFilter.classList.add('exclude');
-                        includeTags.delete(tag);
-                        excludeTags.add(tag);
-                    }} else {{
-                        tagFilter.classList.remove('exclude');
-                        excludeTags.delete(tag);
-                    }}
-                    
-                    filterPapers();
-                    updateURL();
-                }});
-            }});
-
-            const filterPapers = debounce(() => {{
-                const searchTerm = searchInput.value.toLowerCase();
-                const selectedYear = yearFilter.value;
-
-                paperCards.forEach(card => {{
-                    const title = card.getAttribute('data-title').toLowerCase();
-                    const authors = card.getAttribute('data-authors').toLowerCase();
-                    const year = card.getAttribute('data-year');
-                    const tags = JSON.parse(card.getAttribute('data-tags'));
-
-                    const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
-                    const matchesYear = selectedYear === 'all' || year === selectedYear;
-                    const matchesIncludeTags = includeTags.size === 0 || 
-                        [...includeTags].every(tag => tags.includes(tag));
-                    const matchesExcludeTags = excludeTags.size === 0 ||
-                        ![...excludeTags].some(tag => tags.includes(tag));
-
-                    const visible = matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags;
-                    card.classList.toggle('visible', visible);
-                    
-                    // Handle selection state preservation during filtering
-                    if (!visible && isSelectionMode) {{
-                        const checkbox = card.querySelector('.selection-checkbox');
-                        if (checkbox && checkbox.checked) {{
-                            // Keep the paper selected but update preview visibility
-                            const previewItem = document.querySelector(`.preview-item[data-paper-id="${{card.getAttribute('data-id')}}"]`);
-                            if (previewItem) {{
-                                previewItem.style.display = 'none';
-                            }}
-                        }}
-                    }} else if (visible && isSelectionMode) {{
-                        const checkbox = card.querySelector('.selection-checkbox');
-                        if (checkbox && checkbox.checked) {{
-                            const previewItem = document.querySelector(`.preview-item[data-paper-id="${{card.getAttribute('data-id')}}"]`);
-                            if (previewItem) {{
-                                previewItem.style.display = 'flex';
-                            }}
-                        }}
-                    }}
-                }});
-                
-                updatePaperNumbers();
-                lazyLoadInstance.update();
-                updateURL();
-            }}, 150);
-
-
-            function updatePaperNumbers() {{
-                let number = 1;
-                document.querySelectorAll('.paper-row.visible').forEach(card => {{
-                    const numberElement = card.querySelector('.paper-number');
-                    numberElement.textContent = number++;
-                }});
-            }}
-
-            // Event listeners for filter changes
-            searchInput.addEventListener('input', () => {{
-                filterPapers();
-                updateURL();
-            }});
-            
-            yearFilter.addEventListener('change', () => {{
-                filterPapers();
-                updateURL();
-            }});
-
-            // Show all papers initially and set initial numbers
-            paperCards.forEach(card => card.classList.add('visible'));
-            updatePaperNumbers();
-            
-            // Apply any URL parameters on page load
-            applyURLParams();
-
-            // Expose functions to window for button onclick handlers
-            window.toggleSelectionMode = toggleSelectionMode;
-            window.clearSelection = clearSelection;
-            window.showShareModal = showShareModal;
-            window.hideShareModal = hideShareModal;
-            window.copyShareLink = copyShareLink;
-            window.copyBitcoinAddress = copyBitcoinAddress;
         }});
+
+        // Read URL parameters (on page load or refresh) and apply them
+        function applyURLParams() {{
+            const params = new URLSearchParams(window.location.search);
+            
+            const searchTerm = params.get('search');
+            if (searchTerm) {{
+                searchInput.value = searchTerm;
+            }}
+            
+            const year = params.get('year');
+            if (year) {{
+                yearFilter.value = year;
+            }}
+            
+            const includeTagsParam = params.get('include');
+            if (includeTagsParam) {{
+                includeTags = new Set(includeTagsParam.split(','));
+                includeTags.forEach(tag => {{
+                    const tagButton = document.querySelector(`.tag-filter[data-tag="${{tag}}"]`);
+                    if (tagButton) {{
+                        tagButton.classList.add('include');
+                    }}
+                }});
+            }}
+            
+            const excludeTagsParam = params.get('exclude');
+            if (excludeTagsParam) {{
+                excludeTags = new Set(excludeTagsParam.split(','));
+                excludeTags.forEach(tag => {{
+                    const tagButton = document.querySelector(`.tag-filter[data-tag="${{tag}}"]`);
+                    if (tagButton) {{
+                        tagButton.classList.add('exclude');
+                    }}
+                }});
+            }}
+
+            const selectedParam = params.get('selected');
+            if (selectedParam) {{
+                const paperIds = selectedParam.split(',');
+                if (paperIds.length > 0) {{
+                    toggleSelectionMode(); // Enter selection mode
+                    paperIds.forEach(id => {{
+                        // Clean out any '$' prefix
+                        const cleanId = id.replace('$','');
+                        const paperRow = document.querySelector(`.paper-row[data-id="${{cleanId}}"]`);
+                        if (paperRow) {{
+                            const checkbox = paperRow.querySelector('.selection-checkbox');
+                            if (checkbox) {{
+                                // Mark it checked and call togglePaperSelection
+                                checkbox.checked = true;
+                                togglePaperSelection(cleanId, checkbox);
+                            }}
+                        }}
+                    }});
+                    // Scroll to the first selected paper
+                    const firstPaperId = paperIds[0].replace('$','');
+                    const firstPaper = document.querySelector(`.paper-row[data-id="${{firstPaperId}}"]`);
+                    if (firstPaper) {{
+                        firstPaper.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+                    }}
+                }}
+            }}
+            
+            if (params.toString()) {{
+                filterPapers();
+            }}
+        }}
+
+        // Listen to browser back/forward to re-apply filters
+        window.addEventListener('popstate', () => {{
+            searchInput.value = '';
+            yearFilter.value = 'all';
+            includeTags.clear();
+            excludeTags.clear();
+            clearSelection();
+            
+            tagFilters.forEach(tag => {{
+                tag.classList.remove('include', 'exclude');
+            }});
+            
+            applyURLParams();
+        }});
+
+        // Reveal all papers and set their initial numbering
+        paperCards.forEach(card => card.classList.add('visible'));
+        updatePaperNumbers();
+        
+        // Apply existing URL params if any
+        applyURLParams();
+
+        // Expose a few needed functions to window scope
+        window.copyBitcoinAddress = copyBitcoinAddress;
+        window.toggleSelectionMode = toggleSelectionMode;
+        window.clearSelection = clearSelection;
+        window.removeFromSelection = removeFromSelection;
+        window.showShareModal = showShareModal;
+        window.hideShareModal = hideShareModal;
+        window.copyShareLink = copyShareLink;
+        window.scrollToPaper = scrollToPaper;
+        window.togglePaperSelection = togglePaperSelection;
+    }});
     </script>
 </body>
 </html>"""
-    
-    with open(output_file, 'w') as file:
+
+    with open(output_file, 'w', encoding='utf-8') as file:
         file.write(html)
 
 def generate_year_options(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML options for year filter"""
-    years = sorted({str(entry.get('year', '')) for entry in entries if entry.get('year')}, 
-                  reverse=True)
+    years = sorted({str(entry.get('year', '')) for entry in entries if entry.get('year')}, reverse=True)
     return '\n'.join(f'<option value="{year}">{year}</option>' for year in years)
 
 def generate_tag_filters(tags: List[str]) -> str:
     """Generate HTML for tag filters"""
     filtered_tags = [tag for tag in sorted(tags) if not tag.startswith('Year ')]
-    return '\n'.join(f'<div class="tag-filter" data-tag="{tag}">{tag}</div>' 
-                     for tag in filtered_tags)
+    return '\n'.join(f'<div class="tag-filter" data-tag="{tag}">{tag}</div>' for tag in filtered_tags)
 
 def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
     """Generate HTML for paper cards with optimized loading while preserving design"""
@@ -1274,7 +1222,7 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
         thumbnail_url = entry.get('thumbnail', f'assets/thumbnails/{entry["id"]}.jpg')
         fallback_url = 'https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg'
 
-        # Generate card HTML with optimized loading while preserving design
+        # Generate card HTML
         card = f"""
             <div class="paper-row" 
                  data-id="{entry['id']}"
@@ -1314,6 +1262,10 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
     
     return '\n'.join(cards)
 
+def handleCheckboxClick(event, paper_id, checkbox):
+    """Placeholder for the inline JS function call."""
+    pass
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python generate_html.py <input_yaml> <output_html>")
@@ -1323,12 +1275,10 @@ if __name__ == "__main__":
     output_file = sys.argv[2]
     
     try:
-        with open(input_file) as stream:
+        with open(input_file, 'r', encoding='utf-8') as stream:
             entries = yaml.safe_load(stream)
-            
         generate_html(entries, output_file)
         print(f"Successfully generated {output_file}")
-        
     except Exception as e:
         print(f"Error: {str(e)}")
         sys.exit(1)
