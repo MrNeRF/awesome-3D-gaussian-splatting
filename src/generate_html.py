@@ -404,131 +404,208 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
             {paper_cards}
         </div>
     </div>
-
-    <script>
-    function copyBitcoinAddress() {{
-        const address = document.querySelector('.bitcoin-address').textContent;
-        navigator.clipboard.writeText(address).then(() => {{
-            const button = document.querySelector('.copy-button');
-            const originalText = button.innerHTML;
-            button.innerHTML = '<i class="fas fa-check"></i> Copied!';
-            setTimeout(() => {{
-                button.innerHTML = originalText;
-            }}, 2000);
-        }});
-    }}
-
-    document.addEventListener('DOMContentLoaded', function() {{
-        // Initialize lazy loading
-        const lazyLoadInstance = new LazyLoad({{
-            elements_selector: ".lazy",
-            callback_error: (img) => {{
-                if (img.dataset.fallback) {{
-                    img.src = img.dataset.fallback;
-                }}
-            }},
-            callback_loaded: (img) => {{
-                img.classList.add('loaded');
-            }}
-        }});
-
-        const searchInput = document.getElementById('searchInput');
-        const yearFilter = document.getElementById('yearFilter');
-        const paperCards = document.querySelectorAll('.paper-row');
-        const tagFilters = document.querySelectorAll('.tag-filter');
-        
-        let includeTags = new Set();
-        let excludeTags = new Set();
-
-        // Handle abstract toggles
-        document.querySelectorAll('.abstract-toggle').forEach(button => {{
-            button.addEventListener('click', () => {{
-                const abstract = button.nextElementSibling;
-                const isShown = abstract.classList.toggle('show');
-                button.textContent = isShown ? 'Hide Abstract' : 'Show Abstract';
-            }});
-        }});
-
-        // Handle tag filtering with debounce
-        const debounce = (fn, delay) => {{
-            let timeoutId;
-            return (...args) => {{
-                if (timeoutId) {{
-                    clearTimeout(timeoutId);
-                }}
-                timeoutId = setTimeout(() => {{
-                    fn.apply(null, args);
-                }}, delay);
-            }};
-        }};
-
-        tagFilters.forEach(tagFilter => {{
-            tagFilter.addEventListener('click', () => {{
-                const tag = tagFilter.getAttribute('data-tag');
-                
-                if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {{
-                 // First click: Add to include
-                    tagFilter.classList.add('include');
-                    includeTags.add(tag);
-                }} else if (tagFilter.classList.contains('include')) {{
-                    // Second click: Switch to exclude
-                    tagFilter.classList.remove('include');
-                    tagFilter.classList.add('exclude');
-                    includeTags.delete(tag);
-                    excludeTags.add(tag);
-                }} else {{
-                    // Third click: Back to neutral
-                    tagFilter.classList.remove('exclude');
-                    excludeTags.delete(tag);
-                }}
-                
-                filterPapers();
-            }});
-        }});
-
-        function updatePaperNumbers() {{
-            let number = 1;
-            document.querySelectorAll('.paper-row.visible').forEach(card => {{
-                const numberElement = card.querySelector('.paper-number');
-                numberElement.textContent = number++;
+        <script>
+        function copyBitcoinAddress() {{
+            const address = document.querySelector('.bitcoin-address').textContent;
+            navigator.clipboard.writeText(address).then(() => {{
+                const button = document.querySelector('.copy-button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {{
+                    button.innerHTML = originalText;
+                }}, 2000);
             }});
         }}
 
-        const filterPapers = debounce(() => {{
-            const searchTerm = searchInput.value.toLowerCase();
-            const selectedYear = yearFilter.value;
-
-            paperCards.forEach(card => {{
-                const title = card.getAttribute('data-title').toLowerCase();
-                const authors = card.getAttribute('data-authors').toLowerCase();
-                const year = card.getAttribute('data-year');
-                const tags = JSON.parse(card.getAttribute('data-tags'));
-
-                const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
-                const matchesYear = selectedYear === 'all' || year === selectedYear;
-                const matchesIncludeTags = includeTags.size === 0 || 
-                    [...includeTags].every(tag => tags.includes(tag));
-                const matchesExcludeTags = excludeTags.size === 0 ||
-                    ![...excludeTags].some(tag => tags.includes(tag));
-
-                if (matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags) {{
-                    card.classList.add('visible');
-                }} else {{
-                    card.classList.remove('visible');
+        document.addEventListener('DOMContentLoaded', function() {{
+            // Initialize lazy loading
+            const lazyLoadInstance = new LazyLoad({{
+                elements_selector: ".lazy",
+                callback_error: (img) => {{
+                    if (img.dataset.fallback) {{
+                        img.src = img.dataset.fallback;
+                    }}
+                }},
+                callback_loaded: (img) => {{
+                    img.classList.add('loaded');
                 }}
             }});
+
+            const searchInput = document.getElementById('searchInput');
+            const yearFilter = document.getElementById('yearFilter');
+            const paperCards = document.querySelectorAll('.paper-row');
+            const tagFilters = document.querySelectorAll('.tag-filter');
             
+            let includeTags = new Set();
+            let excludeTags = new Set();
+
+            // Function to update URL with current filter state
+            function updateURL() {{
+                const params = new URLSearchParams();
+                
+                if (searchInput.value) {{
+                    params.set('search', searchInput.value);
+                }}
+                
+                if (yearFilter.value !== 'all') {{
+                    params.set('year', yearFilter.value);
+                }}
+                
+                if (includeTags.size > 0) {{
+                    params.set('include', Array.from(includeTags).join(','));
+                }}
+                
+                if (excludeTags.size > 0) {{
+                    params.set('exclude', Array.from(excludeTags).join(','));
+                }}
+                
+                const newURL = params.toString() ? `?${{params.toString()}}` : window.location.pathname;
+                history.pushState({{ filters: params.toString() }}, '', newURL);
+            }}
+
+            // Function to read URL parameters and apply filters
+            function applyURLParams() {{
+                const params = new URLSearchParams(window.location.search);
+                
+                const searchTerm = params.get('search');
+                if (searchTerm) {{
+                    searchInput.value = searchTerm;
+                }}
+                
+                const year = params.get('year');
+                if (year) {{
+                    yearFilter.value = year;
+                }}
+                
+                const includeTagsParam = params.get('include');
+                if (includeTagsParam) {{
+                    includeTags = new Set(includeTagsParam.split(','));
+                    includeTags.forEach(tag => {{
+                        const tagButton = document.querySelector(`.tag-filter[data-tag="${{tag}}"]`);
+                        if (tagButton) {{
+                            tagButton.classList.add('include');
+                        }}
+                    }});
+                }}
+                
+                const excludeTagsParam = params.get('exclude');
+                if (excludeTagsParam) {{
+                    excludeTags = new Set(excludeTagsParam.split(','));
+                    excludeTags.forEach(tag => {{
+                        const tagButton = document.querySelector(`.tag-filter[data-tag="${{tag}}"]`);
+                        if (tagButton) {{
+                            tagButton.classList.add('exclude');
+                        }}
+                    }});
+                }}
+                
+                if (params.toString()) {{
+                    filterPapers();
+                }}
+            }}
+
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', (event) => {{
+                searchInput.value = '';
+                yearFilter.value = 'all';
+                includeTags.clear();
+                excludeTags.clear();
+                tagFilters.forEach(tag => {{
+                    tag.classList.remove('include', 'exclude');
+                }});
+                
+                applyURLParams();
+            }});
+
+            // Handle abstract toggles
+            document.querySelectorAll('.abstract-toggle').forEach(button => {{
+                button.addEventListener('click', () => {{
+                    const abstract = button.nextElementSibling;
+                    const isShown = abstract.classList.toggle('show');
+                    button.textContent = isShown ? 'Hide Abstract' : 'Show Abstract';
+                }});
+            }});
+
+            // Handle tag filtering with debounce
+            const debounce = (fn, delay) => {{
+                let timeoutId;
+                return (...args) => {{
+                    if (timeoutId) {{
+                        clearTimeout(timeoutId);
+                    }}
+                    timeoutId = setTimeout(() => {{
+                        fn.apply(null, args);
+                    }}, delay);
+                }};
+            }};
+
+            tagFilters.forEach(tagFilter => {{
+                tagFilter.addEventListener('click', () => {{
+                    const tag = tagFilter.getAttribute('data-tag');
+                    
+                    if (!tagFilter.classList.contains('include') && !tagFilter.classList.contains('exclude')) {{
+                        tagFilter.classList.add('include');
+                        includeTags.add(tag);
+                    }} else if (tagFilter.classList.contains('include')) {{
+                        tagFilter.classList.remove('include');
+                        tagFilter.classList.add('exclude');
+                        includeTags.delete(tag);
+                        excludeTags.add(tag);
+                    }} else {{
+                        tagFilter.classList.remove('exclude');
+                        excludeTags.delete(tag);
+                    }}
+                    
+                    filterPapers();
+                    updateURL();
+                }});
+            }});
+
+            const filterPapers = debounce(() => {{
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedYear = yearFilter.value;
+
+                paperCards.forEach(card => {{
+                    const title = card.getAttribute('data-title').toLowerCase();
+                    const authors = card.getAttribute('data-authors').toLowerCase();
+                    const year = card.getAttribute('data-year');
+                    const tags = JSON.parse(card.getAttribute('data-tags'));
+
+                    const matchesSearch = title.includes(searchTerm) || authors.includes(searchTerm);
+                    const matchesYear = selectedYear === 'all' || year === selectedYear;
+                    const matchesIncludeTags = includeTags.size === 0 || 
+                        [...includeTags].every(tag => tags.includes(tag));
+                    const matchesExcludeTags = excludeTags.size === 0 ||
+                        ![...excludeTags].some(tag => tags.includes(tag));
+
+                    if (matchesSearch && matchesYear && matchesIncludeTags && matchesExcludeTags) {{
+                        card.classList.add('visible');
+                    }} else {{
+                        card.classList.remove('visible');
+                    }}
+                }});
+                
+                updatePaperNumbers();
+                updateURL();
+                lazyLoadInstance.update();
+            }}, 150);
+
+            function updatePaperNumbers() {{
+                let number = 1;
+                document.querySelectorAll('.paper-row.visible').forEach(card => {{
+                    const numberElement = card.querySelector('.paper-number');
+                    numberElement.textContent = number++;
+                }});
+            }}
+
+            searchInput.addEventListener('input', filterPapers);
+            yearFilter.addEventListener('change', filterPapers);
+
+            paperCards.forEach(card => card.classList.add('visible'));
             updatePaperNumbers();
-            lazyLoadInstance.update();
-        }}, 150);
-
-        searchInput.addEventListener('input', filterPapers);
-        yearFilter.addEventListener('change', filterPapers);
-
-        // Show all papers initially and set initial numbers
-        paperCards.forEach(card => card.classList.add('visible'));
-        updatePaperNumbers();
-    }});
+            
+            applyURLParams();
+        }});
     </script>
 </body>
 </html>"""
