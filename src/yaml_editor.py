@@ -49,8 +49,10 @@ class YAMLEditor(QMainWindow):
 
     def load_yaml(self):
         try:
+            print("Loading YAML file")  # Debug print
             with open("awesome_3dgs_papers.yaml", 'r', encoding='utf-8') as file:
                 self.data = yaml.safe_load(file)
+            print(f"Loaded {len(self.data)} entries")  # Debug print
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to load YAML file: {str(e)}")
             sys.exit(1)
@@ -415,13 +417,31 @@ class YAMLEditor(QMainWindow):
         self.arxiv_button = QPushButton("Add from arXiv")
         self.arxiv_button.clicked.connect(self.show_arxiv_dialog)
         self.nav_layout.addWidget(self.arxiv_button)
+        
+    def refresh_ui(self):
+        """Force a complete UI refresh"""
+        print("Starting refresh_ui")  # Debug print
+        old_len = len(self.data)  # Store old length
+        self.load_yaml()
+        new_len = len(self.data)  # New length
+        print(f"Data length before: {old_len}, after: {new_len}")  # Debug print
+        self.show_current_entry()
+        self.clear_search_results()
+        self.entry_counter.setText(f"Entry {self.current_index + 1} of {len(self.data)}")
+        QApplication.processEvents()  # Force Qt to process pending events
+        print("Finished refresh_ui")  # Debug print
 
     def show_arxiv_dialog(self):
+        print("Opening arXiv dialog")
         dialog = ArxivAddDialog(self)
-        if dialog.exec() == QDialog.accepted:
-            self.load_yaml()
-            self.current_index = len(self.data) - 1
-            self.show_current_entry()
+        result = dialog.exec()
+        print(f"Dialog result: {result}")
+        if result == 1:
+            print("Dialog accepted, about to refresh")
+            self.refresh_ui()  # First refresh to get new data
+            self.current_index = len(self.data) - 1  # Then set to last entry
+            self.show_current_entry()  # Show the new entry
+            print(f"Refresh complete, showing entry {self.current_index + 1} of {len(self.data)}")
 
 def main():
     app = QApplication(sys.argv)

@@ -68,7 +68,7 @@ class ArxivAddDialog(QDialog):
         url_or_id = self.url_input.text().strip()
         if not url_or_id:
             self.status_label.setText("Please enter an arXiv URL or ID")
-            return
+            return False
             
         self.status_label.setText("Fetching paper information...")
         self.add_button.setEnabled(False)
@@ -94,7 +94,8 @@ class ArxivAddDialog(QDialog):
                             QMessageBox.warning(self, "Partial Success", 
                                 "Paper added but failed to generate thumbnail.")
                         
-                        self.accept()  # Close dialog
+                        self.accept()  # Close dialog with accept status
+                        return True
                     else:
                         QMessageBox.warning(self, "Error", 
                             "Failed to add paper. It might already exist.")
@@ -105,3 +106,5 @@ class ArxivAddDialog(QDialog):
             self.status_label.setText(f"Error: {str(e)}")
         finally:
             self.add_button.setEnabled(True)
+        return False
+        
