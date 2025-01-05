@@ -1,0 +1,75 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .selection-preview {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-wrapper {
+        width: 100%;
+    }
+
+    .paper-card {
+        flex-direction: column;
+    }
+
+    .paper-thumbnail {
+        width: 100%;
+        height: 200px;
+        flex: none;
+    }
+
+    .bitcoin-info {
+        flex-direction: column;
+    }
+
+    .selection-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .share-modal-content {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .share-url-container {
+        flex-direction: column;
+    }
+
+    .paper-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .paper-card {
+        padding: 1rem;
+    }
+
+    .tag-filters {
+        gap: 0.25rem;
+    }
+
+    .tag-filter {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+}

@@ -1,0 +1,199 @@
+/* css/base.css */
+:root {
+    --primary-color: #1772d0;
+    --hover-color: #f09228;
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --text-color: #1f2937;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+/* Donation Box */
+.donate-box {
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.donate-box h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.donate-box p {
+    margin: 0.5rem 0 1rem;
+    color: #4b5563;
+}
+
+.bitcoin-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.bitcoin-label {
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.bitcoin-address {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-color);
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.copy-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Filter Info */
+.filter-info {
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.filter-info p {
+    margin: 0.5rem 0;
+    color: #4b5563;
+}
+
+/* Search and Filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    max-width: calc(100% - 20px); /* Prevent overflow */
+}
+
+.search-box {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-right: 2.5rem; /* Make room for the clear button */
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    z-index: 1; /* Ensure button stays above input */
+    line-height: 1;
+}
+
+.clear-search-btn:hover {
+    color: #dc2626;
+}
+
+.filter-select {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+/* Tag Filters */
+.tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tag-filter {
+    background: #f3f4f6;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    color: var(--text-color);
+}
+
+.tag-filter:hover {
+    background: #e5e7eb;
+}
+
+.tag-filter.include {
+    background: var(--primary-color);
+    color: white;
+}
+
+.tag-filter.exclude {
+    background: #dc2626;
+    color: white;
+}
