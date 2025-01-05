@@ -10517,3 +10517,36 @@
   - Editing
   - World Generation
   thumbnail: assets/thumbnails/jambon2024interactive.jpg
+- id: gui2024balanced
+  title: 'Balanced 3DGS: Gaussian-wise Parallelism Rendering with Fine-Grained Tiling'
+  authors: Hao Gui, Lin Hu, Rui Chen, Mingxiao Huang, Yuxin Yin, Jin Yang, Yong Wu
+  year: '2024'
+  abstract: '3D Gaussian Splatting (3DGS) is increasingly attracting attention in
+    both academia and industry owing to its superior visual quality and rendering
+    speed. However, training a 3DGS model remains a time-intensive task, especially
+    in load imbalance scenarios where workload diversity among pixels and Gaussian
+    spheres causes poor renderCUDA kernel performance. We introduce Balanced 3DGS,
+    a Gaussian-wise parallelism rendering with fine-grained tiling approach in 3DGS
+    training process, perfectly solving load-imbalance issues. First, we innovatively
+    introduce the inter-block dynamic workload distribution technique to map workloads
+    to Streaming Multiprocessor(SM) resources within a single GPU dynamically, which
+    constitutes the foundation of load balancing. Second, we are the first to propose
+    the Gaussian-wise parallel rendering technique to significantly reduce workload
+    divergence inside a warp, which serves as a critical component in addressing load
+    imbalance. Based on the above two methods, we further creatively put forward the
+    fine-grained combined load balancing technique to uniformly distribute workload
+    across all SMs, which boosts the forward renderCUDA kernel performance by up to
+    7.52x. Besides, we present a self-adaptive render kernel selection strategy during
+    the 3DGS training process based on different load-balance situations, which effectively
+    improves training efficiency.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.17378.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Acceleration
+  thumbnail: assets/thumbnails/gui2024balanced.jpg
