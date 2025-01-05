@@ -140,16 +140,19 @@ h1 {
 
 .search-wrapper {
     position: relative;
-    flex: 1 1 auto;
-    min-width: 300px;
+    flex: 1;
+    min-width: 200px;
+    max-width: calc(100% - 20px); /* Prevent overflow */
 }
 
 .search-box {
     width: 100%;
     padding: 0.75rem 1rem;
+    padding-right: 2.5rem; /* Make room for the clear button */
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .clear-search-btn {
@@ -162,6 +165,9 @@ h1 {
     cursor: pointer;
     color: #9ca3af;
     font-size: 1.2rem;
+    padding: 0.25rem;
+    z-index: 1; /* Ensure button stays above input */
+    line-height: 1;
 }
 
 .clear-search-btn:hover {
