@@ -1233,6 +1233,41 @@
   thumbnail: assets/thumbnails/li2024recap.jpg
   publication_date: '2024-12-10T14:15:32+00:00'
   date_source: arxiv
+- id: guédon2024matcha
+  title: 'MAtCha Gaussians: Atlas of Charts for High-Quality Geometry and Photorealism
+    From Sparse Views'
+  authors: Antoine Guédon, Tomoki Ichikawa, Kohei Yamashita, Ko Nishino
+  year: '2024'
+  abstract: 'We present a novel appearance model that simultaneously realizes explicit
+    high-quality 3D surface mesh recovery and photorealistic novel view synthesis
+    from sparse view samples. Our key idea is to model the underlying scene geometry
+    Mesh as an Atlas of Charts which we render with 2D Gaussian surfels (MAtCha Gaussians).
+    MAtCha distills high-frequency scene surface details from an off-the-shelf monocular
+    depth estimator and refines it through Gaussian surfel rendering. The Gaussian
+    surfels are attached to the charts on the fly, satisfying photorealism of neural
+    volumetric rendering and crisp geometry of a mesh model, i.e., two seemingly contradicting
+    goals in a single model. At the core of MAtCha lies a novel neural deformation
+    model and a structure loss that preserve the fine surface details distilled from
+    learned monocular depths while addressing their fundamental scale ambiguities.
+    Results of extensive experimental validation demonstrate MAtCha''s state-of-the-art
+    quality of surface reconstruction and photorealism on-par with top contenders
+    but with dramatic reduction in the number of input views and computational time.
+    We believe MAtCha will serve as a foundational tool for any visual application
+    in vision, graphics, and robotics that require explicit geometry in addition to
+    photorealism. Our project page is the following: https://anttwo.github.io/matcha/
+
+    '
+  project_page: https://anttwo.github.io/matcha/
+  paper: https://arxiv.org/pdf/2412.06767.pdf
+  code: null
+  video: null
+  tags:
+  - Meshing
+  - Project
+  - Sparse
+  thumbnail: assets/thumbnails/guédon2024matcha.jpg
+  publication_date: '2024-12-09T18:55:23+00:00'
+  date_source: arxiv
 - id: qiu2024advancing
   title: 'Advancing Extended Reality with 3D Gaussian Splatting: Innovations and Prospects'
   authors: Shi Qiu, Binzhu Xie, Qixuan Liu, Pheng-Ann Heng
