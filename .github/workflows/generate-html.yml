@@ -15,13 +15,12 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
     
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: ${{ github.event.pull_request.head.ref }}
-        repository: ${{ github.event.pull_request.head.repo.full_name }}
-        token: ${{ secrets.GITHUB_TOKEN }}
+        ref: main
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -37,18 +36,40 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Commit changes
-      if: github.event_name == 'pull_request'
+    - name: Create Update Branch and Commit Changes
       run: |
+        # Configure git
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        
+        # Create or update the branch
+        git checkout -B update-html
+        
+        # Stage and commit changes
         git add index.html
-        git diff --staged --quiet || (git commit -m "Auto-generate index.html" && git push)
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Commit and force push to update-html branch
+        git commit -m "Auto-generate index.html"
+        git push -f origin update-html
 
-    - name: Direct Push to Main
-      if: github.event_name == 'push'
+    - name: Create Pull Request
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add index.html
-        git diff --staged --quiet || (git commit -m "Auto-generate index.html" && git push)
+        # Check if PR already exists
+        pr_exists=$(gh pr list --head update-html --base main --json number --jq 'length')
+        
+        if [ "$pr_exists" = "0" ]; then
+          # Create PR if it doesn't exist
+          gh pr create \
+            --title "Update generated HTML" \
+            --body "This is an automatically maintained PR that keeps the generated HTML in sync with YAML changes." \
+            --base main \
+            --head update-html || echo "Failed to create PR, may already exist"
+        else
+          echo "PR already exists, skipping creation"
+        fi
