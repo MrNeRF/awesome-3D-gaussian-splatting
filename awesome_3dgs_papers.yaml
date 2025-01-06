@@ -2073,6 +2073,42 @@
   - Video
   thumbnail: assets/thumbnails/wang2024v3.jpg
   publication_date: '2024-09-20T16:54:27+00:00'
+- id: chelani2024edgegaussians
+  title: EdgeGaussians -- 3D Edge Mapping via Gaussian Splatting
+  authors: Kunal Chelani, Assia Benbihi, Torsten Sattler, Fredrik Kahl
+  year: '2024'
+  abstract: 'With their meaningful geometry and their omnipresence in the 3D world,
+    edges are extremely useful primitives in computer vision. 3D edges comprise of
+    lines and curves, and methods to reconstruct them use either multi-view images
+    or point clouds as input. State-of-the-art image-based methods first learn a 3D
+    edge point cloud then fit 3D edges to it. The edge point cloud is obtained by
+    learning a 3D neural implicit edge field from which the 3D edge points are sampled
+    on a specific level set (0 or 1). However, such methods present two important
+    drawbacks: i) it is not realistic to sample points on exact level sets due to
+    float imprecision and training inaccuracies. Instead, they are sampled within
+    a range of levels so the points do not lie accurately on the 3D edges and require
+    further processing. ii) Such implicit representations are computationally expensive
+    and require long training times. In this paper, we address these two limitations
+    and propose a 3D edge mapping that is simpler, more efficient, and preserves accuracy.
+    Our method learns explicitly the 3D edge points and their edge direction hence
+    bypassing the need for point sampling. It casts a 3D edge point as the center
+    of a 3D Gaussian and the edge direction as the principal axis of the Gaussian.
+    Such a representation has the advantage of being not only geometrically meaningful
+    but also compatible with the efficient training optimization defined in Gaussian
+    Splatting. Results show that the proposed method produces edges as accurate and
+    complete as the state-of-the-art while being an order of magnitude faster.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2409.12886.pdf
+  code: https://github.com/kunalchelani/EdgeGaussians
+  video: null
+  tags:
+  - Code
+  - Rendering
+  thumbnail: assets/thumbnails/chelani2024edgegaussians.jpg
+  publication_date: '2024-09-19T16:28:45+00:00'
+  date_source: arxiv
 - id: joseph2024gradientdriven
   title: Gradient-Driven 3D Segmentation and Affordance Transfer in Gaussian Splatting
     Using 2D Masks
