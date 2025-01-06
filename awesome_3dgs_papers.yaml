@@ -1067,6 +1067,46 @@
   - Video
   thumbnail: assets/thumbnails/xu2024representing.jpg
   publication_date: '2024-12-12T18:59:34+00:00'
+- id: li2024simavatar
+  title: 'SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing'
+  authors: Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles
+    Macklin, Jan Kautz, Umar Iqbal
+  year: '2024'
+  abstract: 'We introduce SimAvatar, a framework designed to generate simulation-ready
+    clothed 3D human avatars from a text prompt. Current text-driven human avatar
+    generation methods either model hair, clothing, and the human body using a unified
+    geometry or produce hair and garments that are not easily adaptable for simulation
+    within existing simulation pipelines. The primary challenge lies in representing
+    the hair and garment geometry in a way that allows leveraging established prior
+    knowledge from foundational image diffusion models (e.g., Stable Diffusion) while
+    being simulation-ready using either physics or neural simulators. To address this
+    task, we propose a two-stage framework that combines the flexibility of 3D Gaussians
+    with simulation-ready hair strands and garment meshes. Specifically, we first
+    employ three text-conditioned 3D generative models to generate garment mesh, body
+    shape and hair strands from the given text prompt. To leverage prior knowledge
+    from foundational diffusion models, we attach 3D Gaussians to the body mesh, garment
+    mesh, as well as hair strands and learn the avatar appearance through optimization.
+    To drive the avatar given a pose sequence, we first apply physics simulators onto
+    the garment meshes and hair strands. We then transfer the motion onto 3D Gaussians
+    through carefully designed mechanisms for each body part. As a result, our synthesized
+    avatars have vivid texture and realistic dynamic motion. To the best of our knowledge,
+    our method is the first to produce highly realistic, fully simulation-ready 3D
+    avatars, surpassing the capabilities of current approaches.
+
+    '
+  project_page: https://nvlabs.github.io/SimAvatar/
+  paper: https://arxiv.org/pdf/2412.09545.pdf
+  code: null
+  video: https://www.youtube.com/watch?v=qEwBY7LBW2Y
+  tags:
+  - Avatar
+  - Diffusion
+  - Language Embedding
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/li2024simavatar.jpg
+  publication_date: '2024-12-12T18:35:26+00:00'
+  date_source: arxiv
 - id: gomel2024diffusionbased
   title: Diffusion-Based Attention Warping for Consistent 3D Scene Editing
   authors: Eyal Gomel, Lior Wolf
