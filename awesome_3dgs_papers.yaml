@@ -1067,6 +1067,33 @@
   - Video
   thumbnail: assets/thumbnails/xu2024representing.jpg
   publication_date: '2024-12-12T18:59:34+00:00'
+- id: gomel2024diffusionbased
+  title: Diffusion-Based Attention Warping for Consistent 3D Scene Editing
+  authors: Eyal Gomel, Lior Wolf
+  year: '2024'
+  abstract: 'We present a novel method for 3D scene editing using diffusion models,
+    designed to ensure view consistency and realism across perspectives. Our approach
+    leverages attention features extracted from a single reference image to define
+    the intended edits. These features are warped across multiple views by aligning
+    them with scene geometry derived from Gaussian splatting depth estimates. Injecting
+    these warped features into other viewpoints enables coherent propagation of edits,
+    achieving high fidelity and spatial alignment in 3D space. Extensive evaluations
+    demonstrate the effectiveness of our method in generating versatile edits of 3D
+    scenes, significantly advancing the capabilities of scene manipulation compared
+    to the existing methods. Project page: \url{https://attention-warp.github.io}
+
+    '
+  project_page: https://attention-warp.github.io/
+  paper: https://arxiv.org/pdf/2412.07984.pdf
+  code: null
+  video: null
+  tags:
+  - Diffusion
+  - Project
+  - Style Transfer
+  thumbnail: assets/thumbnails/gomel2024diffusionbased.jpg
+  publication_date: '2024-12-10T23:57:18+00:00'
+  date_source: arxiv
 - id: saunders2024gasp
   title: 'GASP: Gaussian Avatars with Synthetic Priors'
   authors: Jack Saunders, Charlie Hewitt, Yanan Jian, Marek Kowalski, Tadas Baltrušaitis,
