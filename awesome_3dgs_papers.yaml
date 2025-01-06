@@ -11234,32 +11234,34 @@
   - Project
   thumbnail: assets/thumbnails/blattmann2023align.jpg
   publication_date: '2023-04-18T08:30:32+00:00'
-- id: kheradmand20243d
-  title: 3D Gaussian Splatting as Markov Chain Monte Carlo
-  authors: Shakiba Kheradmand, Daniel Rebain, Gopal Sharma, Weiwei Sun, Jeff Tseng, Hossam Isack, Abhishek Kar, Andrea Tagliasacchi, Kwang Moo Yi
+- id: moenne-loccoz20243d
+  title: '3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes'
+  authors: Nicolas Moenne-Loccoz, Ashkan Mirzaei, Or Perel, Riccardo de Lutio, Janick Martinez Esturo, Gavriel State, Sanja Fidler, Nicholas Sharp, Zan Gojcic
   year: '2024'
   abstract: >
-    While 3D Gaussian Splatting has recently become popular for neural rendering,
-    current methods rely on carefully engineered cloning and splitting strategies
-    for placing Gaussians, which can lead to poor-quality renderings, and reliance
-    on a good initialization. In this work, we rethink the set of 3D Gaussians as a
-    random sample drawn from an underlying probability distribution describing the
-    physical representation of the scene-in other words, Markov Chain Monte Carlo
-    (MCMC) samples. Under this view, we show that the 3D Gaussian updates can be
-    converted as Stochastic Gradient Langevin Dynamics (SGLD) updates by simply
-    introducing noise. We then rewrite the densification and pruning strategies in
-    3D Gaussian Splatting as simply a deterministic state transition of MCMC
-    samples, removing these heuristics from the framework. To do so, we revise the
-    'cloning' of Gaussians into a relocalization scheme that approximately preserves
-    sample probability. To encourage efficient use of Gaussians, we introduce a
-    regularizer that promotes the removal of unused Gaussians. On various standard
-    evaluation scenes, we show that our method provides improved rendering quality,
-    easy control over the number of Gaussians, and robustness to initialization.
-  project_page: https://ubc-vision.github.io/3dgs-mcmc/
-  paper: https://arxiv.org/pdf/2404.09591.pdf
-  code: https://github.com/MrNeRF/awesome-3d-gaussian-splatting
-  video: null
+    Particle-based representations of radiance fields such as 3D Gaussian Splatting
+    have found great success for reconstructing and re-rendering of complex scenes.
+    Most existing methods render particles via rasterization, projecting them to
+    screen space tiles for processing in a sorted order. This work instead considers
+    ray tracing the particles, building a bounding volume hierarchy and casting a
+    ray for each pixel using high-performance GPU ray tracing hardware. To
+    efficiently handle large numbers of semi-transparent particles, we describe a
+    specialized rendering algorithm which encapsulates particles with bounding
+    meshes to leverage fast ray-triangle intersections, and shades batches of
+    intersections in depth-order. The benefits of ray tracing are well-known in
+    computer graphics: processing incoherent rays for secondary lighting effects
+    such as shadows and reflections, rendering from highly-distorted cameras common
+    in robotics, stochastically sampling rays, and more. With our renderer, this
+    flexibility comes at little cost compared to rasterization. Experiments
+    demonstrate the speed and accuracy of our approach, as well as several
+    applications in computer graphics and vision. We further propose related
+    improvements to the basic Gaussian representation, including a simple use of
+    generalized kernel functions which significantly reduces particle hit counts.
+  project_page: https://gaussiantracer.github.io/	
+  paper: https://arxiv.org/pdf/2407.07090.pdf
+  code: null
+  video: https://gaussiantracer.github.io/res/3dgrt_supplementary_video.mp4
   tags:
-  - Densification
+  - Ray Tracing
   - Year 2024
-  thumbnail: assets/thumbnails/kheradmand20243d.jpg
+  thumbnail: assets/thumbnails/moenne-loccoz20243d.jpg
