@@ -9,11 +9,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.BOT_PAT }}  # Use PAT instead of GITHUB_TOKEN
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -31,7 +31,7 @@ jobs:
 
     - name: Commit and push if changed
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config --local user.email "bot@users.noreply.github.com"
+        git config --local user.name "Repository Bot"
         git add index.html
         git diff --staged --quiet || (git commit -m "Update index.html" && git push)
