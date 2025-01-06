@@ -8,26 +8,32 @@ class PaperCardGenerator:
     """Generates HTML for paper cards using templates."""
     
     def __init__(self, templates_dir: Path):
-        """Initialize the generator with templates."""
         self.template = TemplateEngine(templates_dir / 'paper_card.html')
         self.fallback_url = "https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
 
     def _generate_link(self, url: str, icon: str, text: str) -> str:
         """Generate HTML for a paper link with icon."""
+        if not url:  # Skip if URL is None, empty string, or whitespace
+            return ""
         return (f'<a href="{url}" class="paper-link" target="_blank" rel="noopener">'
                 f'<i class="fas fa-{icon}"></i> {text}</a>')
 
     def _generate_links(self, paper: Paper) -> str:
         """Generate HTML for all paper links."""
         links = []
-        if paper.project_page:
+        # Helper function to validate non-empty and meaningful URLs
+        def is_valid_url(url):
+            return bool(url and url.strip() and url.startswith(('http://', 'https://')))
+
+        if is_valid_url(paper.project_page):
             links.append(self._generate_link(paper.project_page, "globe", "Project Page"))
-        if paper.paper:
+        if is_valid_url(paper.paper):
             links.append(self._generate_link(paper.paper, "file-alt", "Paper"))
-        if paper.code:
+        if is_valid_url(paper.code):
             links.append(self._generate_link(paper.code, "code", "Code"))
-        if paper.video:
+        if is_valid_url(paper.video):
             links.append(self._generate_link(paper.video, "video", "Video"))
+        
         return " ".join(links)
 
     def _generate_tags(self, paper: Paper) -> str:
