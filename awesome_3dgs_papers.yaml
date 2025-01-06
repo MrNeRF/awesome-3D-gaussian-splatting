@@ -723,6 +723,44 @@
   thumbnail: assets/thumbnails/lu2024turbogs.jpg
   publication_date: '2024-12-18T06:46:40+00:00'
   date_source: arxiv
+- id: sun2024realtime
+  title: Real-time Free-view Human Rendering from Sparse-view RGB Videos using Double
+    Unprojected Textures
+  authors: Guoxing Sun, Rishabh Dabral, Heming Zhu, Pascal Fua, Christian Theobalt,
+    Marc Habermann
+  year: '2024'
+  abstract: 'Real-time free-view human rendering from sparse-view RGB inputs is a
+    challenging task due to the sensor scarcity and the tight time budget. To ensure
+    efficiency, recent methods leverage 2D CNNs operating in texture space to learn
+    rendering primitives. However, they either jointly learn geometry and appearance,
+    or completely ignore sparse image information for geometry estimation, significantly
+    harming visual quality and robustness to unseen body poses. To address these issues,
+    we present Double Unprojected Textures, which at the core disentangles coarse
+    geometric deformation estimation from appearance synthesis, enabling robust and
+    photorealistic 4K rendering in real-time. Specifically, we first introduce a novel
+    image-conditioned template deformation network, which estimates the coarse deformation
+    of the human template from a first unprojected texture. This updated geometry
+    is then used to apply a second and more accurate texture unprojection. The resulting
+    texture map has fewer artifacts and better alignment with input views, which benefits
+    our learning of finer-level geometry and appearance represented by Gaussian splats.
+    We validate the effectiveness and efficiency of the proposed method in quantitative
+    and qualitative experiments, which significantly surpasses other state-of-the-art
+    methods.
+
+    '
+  project_page: https://vcai.mpi-inf.mpg.de/projects/DUT/
+  paper: https://arxiv.org/pdf/2412.13183v1.pdf
+  code: null
+  video: https://vcai.mpi-inf.mpg.de/projects/DUT/videos/main_video.mp4
+  tags:
+  - Avatar
+  - Project
+  - Sparse
+  - Texturing
+  - Video
+  thumbnail: assets/thumbnails/sun2024realtime.jpg
+  publication_date: '2024-12-17T18:57:38+00:00'
+  date_source: arxiv
 - id: weiss2024gaussian
   title: 'Gaussian Billboards: Expressive 2D Gaussian Splatting with Textures'
   authors: Sebastian Weiss, Derek Bradley
