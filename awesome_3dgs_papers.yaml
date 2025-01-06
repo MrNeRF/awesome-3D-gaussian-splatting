@@ -1202,6 +1202,37 @@
   - Video
   thumbnail: assets/thumbnails/saunders2024gasp.jpg
   publication_date: '2024-12-10T18:36:21+00:00'
+- id: li2024recap
+  title: 'ReCap: Better Gaussian Relighting with Cross-Environment Captures'
+  authors: Jingzhi Li, Zongwei Wu, Eduard Zamfir, Radu Timofte
+  year: '2024'
+  abstract: 'Accurate 3D objects relighting in diverse unseen environments is crucial
+    for realistic virtual object placement. Due to the albedo-lighting ambiguity,
+    existing methods often fall short in producing faithful relights. Without proper
+    constraints, observed training views can be explained by numerous combinations
+    of lighting and material attributes, lacking physical correspondence with the
+    actual environment maps used for relighting. In this work, we present ReCap, treating
+    cross-environment captures as multi-task target to provide the missing supervision
+    that cuts through the entanglement. Specifically, ReCap jointly optimizes multiple
+    lighting representations that share a common set of material attributes. This
+    naturally harmonizes a coherent set of lighting representations around the mutual
+    material attributes, exploiting commonalities and differences across varied object
+    appearances. Such coherence enables physically sound lighting reconstruction and
+    robust material estimation - both essential for accurate relighting. Together
+    with a streamlined shading function and effective post-processing, ReCap outperforms
+    the leading competitor by 3.4 dB in PSNR on an expanded relighting benchmark.
+
+    '
+  project_page: https://jingzhi.github.io/ReCap/
+  paper: https://arxiv.org/pdf/2412.07534.pdf
+  code: null
+  video: null
+  tags:
+  - Project
+  - Relight
+  thumbnail: assets/thumbnails/li2024recap.jpg
+  publication_date: '2024-12-10T14:15:32+00:00'
+  date_source: arxiv
 - id: qiu2024advancing
   title: 'Advancing Extended Reality with 3D Gaussian Splatting: Innovations and Prospects'
   authors: Shi Qiu, Binzhu Xie, Qixuan Liu, Pheng-Ann Heng
