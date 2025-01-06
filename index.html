@@ -1321,6 +1321,67 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="liang2024wonderland" data-title="Wonderland: Navigating 3D Scenes from a Single Image" data-authors="Hanwen Liang, Junli Cao, Vidit Goel, Guocheng Qian, Sergei Korolev, Demetri Terzopoulos, Konstantinos N. Plataniotis, Sergey Tulyakov, Jian Ren" data-year="2024" data-tags='["Feed-Forward", "Project", "Sparse", "World Generation"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'liang2024wonderland', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/liang2024wonderland.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for Wonderland: Navigating 3D Scenes from a Single Image" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Wonderland: Navigating 3D Scenes from a Single Image <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Hanwen Liang, Junli Cao, Vidit Goel, Guocheng Qian, Sergei Korolev, Demetri Terzopoulos, Konstantinos N. Plataniotis, Sergey Tulyakov, Jian Ren</p>
+      <div class="paper-tags"><span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Sparse</span>
+<span class="paper-tag">World Generation</span></div>
+      <div class="paper-links"><a href="https://snap-research.github.io/wonderland/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.12091v1.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">This paper addresses a challenging question: How can we efficiently create high-quality, wide-scope 3D scenes from a single arbitrary image? Existing methods face several constraints, such as requiring multi-view data, time-consuming per-scene optimization, low visual quality in backgrounds, and distorted reconstructions in unseen areas. We propose a novel pipeline to overcome these limitations. Specifically, we introduce a large-scale reconstruction model that uses latents from a video diffusion model to predict 3D Gaussian Splattings for the scenes in a feed-forward manner. The video diffusion model is designed to create videos precisely following specified camera trajectories, allowing it to generate compressed video latents that contain multi-view information while maintaining 3D consistency. We train the 3D reconstruction model to operate on the video latent space with a progressive training strategy, enabling the efficient generation of high-quality, wide-scope, and generic 3D scenes. Extensive evaluations across various datasets demonstrate that our model significantly outperforms existing methods for single-view 3D scene generation, particularly with out-of-domain images. For the first time, we demonstrate that a 3D reconstruction model can be effectively built upon the latent space of a diffusion model to realize efficient 3D scene generation.
+</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="huang2024deformable" data-title="Deformable Radial Kernel Splatting" data-authors="Yi-Hua Huang, Ming-Xian Lin, Yang-Tian Sun, Ziyi Yang, Xiaoyang Lyu, Yan-Pei Cao, Xiaojuan Qi" data-year="2024" data-tags='["Optimization", "Project", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'huang2024deformable', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/huang2024deformable.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for Deformable Radial Kernel Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Deformable Radial Kernel Splatting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yi-Hua Huang, Ming-Xian Lin, Yang-Tian Sun, Ziyi Yang, Xiaoyang Lyu, Yan-Pei Cao, Xiaojuan Qi</p>
+      <div class="paper-tags"><span class="paper-tag">Optimization</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://yihua7.github.io/DRK-web/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.11752v1.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">Recently, Gaussian splatting has emerged as a robust technique for representing 3D scenes, enabling real-time rasterization and high-fidelity rendering. However, Gaussians' inherent radial symmetry and smoothness constraints limit their ability to represent complex shapes, often requiring thousands of primitives to approximate detailed geometry. We introduce Deformable Radial Kernel (DRK), which extends Gaussian splatting into a more general and flexible framework. Through learnable radial bases with adjustable angles and scales, DRK efficiently models diverse shape primitives while enabling precise control over edge sharpness and boundary curvature. iven DRK's planar nature, we further develop accurate ray-primitive intersection computation for depth sorting and introduce efficient kernel culling strategies for improved rasterization efficiency. Extensive experiments demonstrate that DRK outperforms existing methods in both representation efficiency and rendering quality, achieving state-of-the-art performance while dramatically reducing primitive count.
+</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="liang2024supergseg" data-title="SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians" data-authors="Siyun Liang, Sen Wang, Kunyi Li, Michael Niemeyer, Stefano Gasperini, Nassir Navab, Federico Tombari" data-year="2024" data-tags='["Language Embedding", "Project", "Segmentation"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'liang2024supergseg', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/liang2024supergseg.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Siyun Liang, Sen Wang, Kunyi Li, Michael Niemeyer, Stefano Gasperini, Nassir Navab, Federico Tombari</p>
+      <div class="paper-tags"><span class="paper-tag">Language Embedding</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Segmentation</span></div>
+      <div class="paper-links"><a href="https://supergseg.github.io/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.10231.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting has recently gained traction for its efficient training and real-time rendering. While the vanilla Gaussian Splatting representation is mainly designed for view synthesis, more recent works investigated how to extend it with scene understanding and language features. However, existing methods lack a detailed comprehension of scenes, limiting their ability to segment and interpret complex structures. To this end, We introduce SuperGSeg, a novel approach that fosters cohesive, context-aware scene representation by disentangling segmentation and language field distillation. SuperGSeg first employs neural Gaussians to learn instance and hierarchical segmentation features from multi-view images with the aid of off-the-shelf 2D masks. These features are then leveraged to create a sparse set of what we call Super-Gaussians. Super-Gaussians facilitate the distillation of 2D language features into 3D space. Through Super-Gaussians, our method enables high-dimensional language feature rendering without extreme increases in GPU memory. Extensive experiments demonstrate that SuperGSeg outperforms prior works on both open-vocabulary object localization and semantic segmentation tasks.
+</div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="tang2024gaf" data-title="GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view Diffusion" data-authors="Jiapeng Tang, Davide Davoli, Tobias Kirschstein, Liam Schoneveld, Matthias Nießner" data-year="2024" data-tags='["Avatar", "Project", "Video"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'tang2024gaf', this)">
@@ -1337,6 +1398,26 @@ h1 {
       <div class="paper-links"><a href="https://tangjiapeng.github.io/projects/GAF/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.10209" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://www.youtube.com/embed/QuIYTljvhygE" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
       <button class="abstract-toggle">Show Abstract</button>
 <div class="paper-abstract">We propose a novel approach for reconstructing animatable 3D Gaussian avatars from monocular videos captured by commodity devices like smartphones. Photorealistic 3D head avatar reconstruction from such recordings is challenging due to limited observations, which leaves unobserved regions under-constrained and can lead to artifacts in novel views. To address this problem, we introduce a multi-view head diffusion model, leveraging its priors to fill in missing regions and ensure view consistency in Gaussian splatting renderings. To enable precise viewpoint control, we use normal maps rendered from FLAME-based head reconstruction, which provides pixel-aligned inductive biases. We also condition the diffusion model on VAE features extracted from the input image to preserve details of facial identity and appearance. For Gaussian avatar reconstruction, we distill multi-view diffusion priors by using iteratively denoised images as pseudo-ground truths, effectively mitigating over-saturation issues. To further improve photorealism, we apply latent upsampling to refine the denoised latent before decoding it into an image. We evaluate our method on the NeRSemble dataset, showing that GAF outperforms the previous state-of-the-art methods in novel view synthesis and novel expression animation. Furthermore, we demonstrate higher-fidelity avatar reconstructions from monocular videos captured on commodity devices.</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="park2024splinegs" data-title="SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video" data-authors="Jongmin Park, Minh-Quan Viet Bui, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh, Munchurl Kim" data-year="2024" data-tags='["Dynamic", "Monocular", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'park2024splinegs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/park2024splinegs.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Jongmin Park, Minh-Quan Viet Bui, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh, Munchurl Kim</p>
+      <div class="paper-tags"><span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Monocular</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://kaist-viclab.github.io/splinegs-site/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.09982v1.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">Synthesizing novel views from in-the-wild monocular videos is challenging due to scene dynamics and the lack of multi-view cues. To address this, we propose SplineGS, a COLMAP-free dynamic 3D Gaussian Splatting (3DGS) framework for high-quality reconstruction and fast rendering from monocular videos. At its core is a novel Motion-Adaptive Spline (MAS) method, which represents continuous dynamic 3D Gaussian trajectories using cubic Hermite splines with a small number of control points. For MAS, we introduce a Motion-Adaptive Control points Pruning (MACP) method to model the deformation of each dynamic 3D Gaussian across varying motions, progressively pruning control points while maintaining dynamic modeling integrity. Additionally, we present a joint optimization strategy for camera parameter estimation and 3D Gaussian attributes, leveraging photometric and geometric consistency. This eliminates the need for Structure-from-Motion preprocessing and enhances SplineGS's robustness in real-world conditions. Experiments show that SplineGS significantly outperforms state-of-the-art methods in novel view synthesis quality for dynamic scenes from monocular videos, achieving thousands times faster rendering speed.
+</div>
     </div>
   </div>
 </div>
@@ -1357,6 +1438,48 @@ h1 {
       <div class="paper-links"><a href="https://zju3dv.github.io/longvolcap/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.09608.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://www.youtube.com/watch?v=y7e0YRNNmXw&feature=youtu.be" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
       <button class="abstract-toggle">Show Abstract</button>
 <div class="paper-abstract">This paper aims to address the challenge of reconstructing long volumetric videos from multi-view RGB videos. Recent dynamic view synthesis methods leverage powerful 4D representations, like feature grids or point cloud sequences, to achieve high-quality rendering results. However, they are typically limited to short (1~2s) video clips and often suffer from large memory footprints when dealing with longer videos. To solve this issue, we propose a novel 4D representation, named Temporal Gaussian Hierarchy, to compactly model long volumetric videos. Our key observation is that there are generally various degrees of temporal redundancy in dynamic scenes, which consist of areas changing at different speeds. Motivated by this, our approach builds a multi-level hierarchy of 4D Gaussian primitives, where each level separately describes scene regions with different degrees of content change, and adaptively shares Gaussian primitives to represent unchanged scene content over different temporal segments, thus effectively reducing the number of Gaussian primitives. In addition, the tree-like structure of the Gaussian hierarchy allows us to efficiently represent the scene at a particular moment with a subset of Gaussian primitives, leading to nearly constant GPU memory usage during the training or rendering regardless of the video length. Extensive experimental results demonstrate the superiority of our method over alternative methods in terms of training cost, rendering speed, and storage usage. To our knowledge, this work is the first approach capable of efficiently handling minutes of volumetric video data while maintaining state-of-the-art rendering quality. Our project page is available at: https://zju3dv.github.io/longvolcap.
+</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="li2024simavatar" data-title="SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing" data-authors="Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles Macklin, Jan Kautz, Umar Iqbal" data-year="2024" data-tags='["Avatar", "Diffusion", "Language Embedding", "Project", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'li2024simavatar', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/li2024simavatar.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles Macklin, Jan Kautz, Umar Iqbal</p>
+      <div class="paper-tags"><span class="paper-tag">Avatar</span>
+<span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Language Embedding</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://nvlabs.github.io/SimAvatar/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.09545.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://www.youtube.com/watch?v=qEwBY7LBW2Y" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">We introduce SimAvatar, a framework designed to generate simulation-ready clothed 3D human avatars from a text prompt. Current text-driven human avatar generation methods either model hair, clothing, and the human body using a unified geometry or produce hair and garments that are not easily adaptable for simulation within existing simulation pipelines. The primary challenge lies in representing the hair and garment geometry in a way that allows leveraging established prior knowledge from foundational image diffusion models (e.g., Stable Diffusion) while being simulation-ready using either physics or neural simulators. To address this task, we propose a two-stage framework that combines the flexibility of 3D Gaussians with simulation-ready hair strands and garment meshes. Specifically, we first employ three text-conditioned 3D generative models to generate garment mesh, body shape and hair strands from the given text prompt. To leverage prior knowledge from foundational diffusion models, we attach 3D Gaussians to the body mesh, garment mesh, as well as hair strands and learn the avatar appearance through optimization. To drive the avatar given a pose sequence, we first apply physics simulators onto the garment meshes and hair strands. We then transfer the motion onto 3D Gaussians through carefully designed mechanisms for each body part. As a result, our synthesized avatars have vivid texture and realistic dynamic motion. To the best of our knowledge, our method is the first to produce highly realistic, fully simulation-ready 3D avatars, surpassing the capabilities of current approaches.
+</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="gomel2024diffusionbased" data-title="Diffusion-Based Attention Warping for Consistent 3D Scene Editing" data-authors="Eyal Gomel, Lior Wolf" data-year="2024" data-tags='["Diffusion", "Project", "Style Transfer"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'gomel2024diffusionbased', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/gomel2024diffusionbased.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for Diffusion-Based Attention Warping for Consistent 3D Scene Editing" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Diffusion-Based Attention Warping for Consistent 3D Scene Editing <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Eyal Gomel, Lior Wolf</p>
+      <div class="paper-tags"><span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Style Transfer</span></div>
+      <div class="paper-links"><a href="https://attention-warp.github.io/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.07984.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">We present a novel method for 3D scene editing using diffusion models, designed to ensure view consistency and realism across perspectives. Our approach leverages attention features extracted from a single reference image to define the intended edits. These features are warped across multiple views by aligning them with scene geometry derived from Gaussian splatting depth estimates. Injecting these warped features into other viewpoints enables coherent propagation of edits, achieving high fidelity and spatial alignment in 3D space. Extensive evaluations demonstrate the effectiveness of our method in generating versatile edits of 3D scenes, significantly advancing the capabilities of scene manipulation compared to the existing methods. Project page: \url{https://attention-warp.github.io}
 </div>
     </div>
   </div>
