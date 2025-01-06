@@ -994,6 +994,40 @@
   - Video
   thumbnail: assets/thumbnails/tang2024gaf.jpg
   publication_date: '2024-12-13T15:31:22+00:00'
+- id: park2024splinegs
+  title: 'SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians
+    from Monocular Video'
+  authors: Jongmin Park, Minh-Quan Viet Bui, Juan Luis Gonzalez Bello, Jaeho Moon,
+    Jihyong Oh, Munchurl Kim
+  year: '2024'
+  abstract: 'Synthesizing novel views from in-the-wild monocular videos is challenging
+    due to scene dynamics and the lack of multi-view cues. To address this, we propose
+    SplineGS, a COLMAP-free dynamic 3D Gaussian Splatting (3DGS) framework for high-quality
+    reconstruction and fast rendering from monocular videos. At its core is a novel
+    Motion-Adaptive Spline (MAS) method, which represents continuous dynamic 3D Gaussian
+    trajectories using cubic Hermite splines with a small number of control points.
+    For MAS, we introduce a Motion-Adaptive Control points Pruning (MACP) method to
+    model the deformation of each dynamic 3D Gaussian across varying motions, progressively
+    pruning control points while maintaining dynamic modeling integrity. Additionally,
+    we present a joint optimization strategy for camera parameter estimation and 3D
+    Gaussian attributes, leveraging photometric and geometric consistency. This eliminates
+    the need for Structure-from-Motion preprocessing and enhances SplineGS''s robustness
+    in real-world conditions. Experiments show that SplineGS significantly outperforms
+    state-of-the-art methods in novel view synthesis quality for dynamic scenes from
+    monocular videos, achieving thousands times faster rendering speed.
+
+    '
+  project_page: https://kaist-viclab.github.io/splinegs-site/
+  paper: https://arxiv.org/pdf/2412.09982v1.pdf
+  code: null
+  video: null
+  tags:
+  - Dynamic
+  - Monocular
+  - Project
+  thumbnail: assets/thumbnails/park2024splinegs.jpg
+  publication_date: '2024-12-13T09:09:14+00:00'
+  date_source: arxiv
 - id: xu2024representing
   title: Representing Long Volumetric Video with Temporal Gaussian Hierarchy
   authors: Zhen Xu, Yinghao Xu, Zhiyuan Yu, Sida Peng, Jiaming Sun, Hujun Bao, Xiaowei
