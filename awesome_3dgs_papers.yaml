@@ -792,6 +792,42 @@
   thumbnail: assets/thumbnails/weiss2024gaussian.jpg
   publication_date: '2024-12-17T09:57:04+00:00'
   date_source: arxiv
+- id: zhang2024pansplat
+  title: 'PanSplat: 4K Panorama Synthesis with Feed-Forward Gaussian Splatting'
+  authors: Cheng Zhang, Haofei Xu, Qianyi Wu, Camilo Cruz Gambardella, Dinh Phung,
+    Jianfei Cai
+  year: '2024'
+  abstract: 'With the advent of portable 360{\deg} cameras, panorama has gained significant
+    attention in applications like virtual reality (VR), virtual tours, robotics,
+    and autonomous driving. As a result, wide-baseline panorama view synthesis has
+    emerged as a vital task, where high resolution, fast inference, and memory efficiency
+    are essential. Nevertheless, existing methods are typically constrained to lower
+    resolutions (512 $\times$ 1024) due to demanding memory and computational requirements.
+    In this paper, we present PanSplat, a generalizable, feed-forward approach that
+    efficiently supports resolution up to 4K (2048 $\times$ 4096). Our approach features
+    a tailored spherical 3D Gaussian pyramid with a Fibonacci lattice arrangement,
+    enhancing image quality while reducing information redundancy. To accommodate
+    the demands of high resolution, we propose a pipeline that integrates a hierarchical
+    spherical cost volume and Gaussian heads with local operations, enabling two-step
+    deferred backpropagation for memory-efficient training on a single A100 GPU. Experiments
+    demonstrate that PanSplat achieves state-of-the-art results with superior efficiency
+    and image quality across both synthetic and real-world datasets. Code will be
+    available at \url{https://github.com/chengzhag/PanSplat}.
+
+    '
+  project_page: https://chengzhag.github.io/publication/pansplat/
+  paper: https://arxiv.org/pdf/2412.12096v1.pdf
+  code: null
+  video: https://youtu.be/R3qIzL77ZSc
+  tags:
+  - 360 degree
+  - Feed-Forward
+  - Project
+  - Video
+  - World Generation
+  thumbnail: assets/thumbnails/zhang2024pansplat.jpg
+  publication_date: '2024-12-16T18:59:45+00:00'
+  date_source: arxiv
 - id: taubner2024cap4d
   title: 'CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View
     Diffusion Models'
