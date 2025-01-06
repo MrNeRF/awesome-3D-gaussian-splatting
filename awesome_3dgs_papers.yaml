@@ -686,6 +686,43 @@
   thumbnail: assets/thumbnails/saito2024squeezeme.jpg
   publication_date: '2024-12-19T18:46:55+00:00'
   date_source: arxiv
+- id: lu2024turbogs
+  title: 'Turbo-GS: Accelerating 3D Gaussian Fitting for High-Quality Radiance Fields'
+  authors: Tao Lu, Ankit Dhiman, R Srinath, Emre Arslan, Angela Xing, Yuanbo Xiangli,
+    R Venkatesh Babu, Srinath Sridhar
+  year: '2024'
+  abstract: 'Novel-view synthesis is an important problem in computer vision with
+    applications in 3D reconstruction, mixed reality, and robotics. Recent methods
+    like 3D Gaussian Splatting (3DGS) have become the preferred method for this task,
+    providing high-quality novel views in real time. However, the training time of
+    a 3DGS model is slow, often taking 30 minutes for a scene with 200 views. In contrast,
+    our goal is to reduce the optimization time by training for fewer steps while
+    maintaining high rendering quality. Specifically, we combine the guidance from
+    both the position error and the appearance error to achieve a more effective densification.
+    To balance the rate between adding new Gaussians and fitting old Gaussians, we
+    develop a convergence-aware budget control mechanism. Moreover, to make the densification
+    process more reliable, we selectively add new Gaussians from mostly visited regions.
+    With these designs, we reduce the Gaussian optimization steps to one-third of
+    the previous approach while achieving a comparable or even better novel view rendering
+    quality. To further facilitate the rapid fitting of 4K resolution images, we introduce
+    a dilation-based rendering technique. Our method, Turbo-GS, speeds up optimization
+    for typical scenes and scales well to high-resolution (4K) scenarios on standard
+    datasets. Through extensive experiments, we show that our method is significantly
+    faster in optimization than other methods while retaining quality. Project page:
+    https://ivl.cs.brown.edu/research/turbo-gs.
+
+    '
+  project_page: https://ivl.cs.brown.edu/research/turbo-gs
+  paper: https://arxiv.org/pdf/2412.13547v1.pdf
+  code: null
+  video: null
+  tags:
+  - Acceleration
+  - Densification
+  - Project
+  thumbnail: assets/thumbnails/lu2024turbogs.jpg
+  publication_date: '2024-12-18T06:46:40+00:00'
+  date_source: arxiv
 - id: taubner2024cap4d
   title: 'CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View
     Diffusion Models'
