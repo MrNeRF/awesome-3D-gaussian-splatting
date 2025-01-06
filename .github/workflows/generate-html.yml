@@ -4,19 +4,21 @@ on:
   pull_request:
     types: [closed]
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-    # Only run if the PR was merged or if it's a direct push to main
-    if: github.event.pull_request.merged == true || github.event_name == 'push'
+    # Only run if PR was merged and it came from the bot, or if it's a direct push to main
+    if: (github.event.pull_request.merged == true && contains(github.event.pull_request.head.ref, 'MrNeRF/bot')) || github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        ref: main
+        fetch-depth: 0
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -32,16 +34,22 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Update generated HTML
-        title: Update generated HTML
-        body: |
-          Auto-generated PR to update the HTML based on recent YAML changes.
-          
-          This PR was automatically created by the Generate HTML workflow.
-        branch: update-html
-        base: main
-        delete-branch: true
+    - name: Commit and Push if Bot
+      if: contains(github.event.pull_request.head.ref, 'MrNeRF/bot')
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Configure git
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Check for changes
+        if git diff --quiet index.html; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Commit and push changes directly to main
+        git add index.html
+        git commit -m "Auto-update index.html based on bot PR merge [skip ci]"
+        git push origin main
