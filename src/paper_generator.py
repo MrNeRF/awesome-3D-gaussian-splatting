@@ -11,7 +11,7 @@ class PaperCardGenerator:
         """Initialize the generator with templates."""
         self.template = TemplateEngine(templates_dir / 'paper_card.html')
         self.fallback_url = "https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
-    
+
     def _generate_link(self, url: str, icon: str, text: str) -> str:
         """Generate HTML for a paper link with icon."""
         return (f'<a href="{url}" class="paper-link" target="_blank" rel="noopener">'
@@ -57,11 +57,19 @@ class PaperCardGenerator:
             'fallback_url': self.fallback_url,
             'tags_html': self._generate_tags(paper),
             'links_html': self._generate_links(paper),
-            'abstract_html': self._generate_abstract(paper)
+            'abstract_html': self._generate_abstract(paper),
+            'publication_date': paper.publication_date or ''
         }
         
         return self.template.render(context)
 
     def generate_cards(self, papers: List[Paper]) -> str:
         """Generate HTML for all paper cards."""
-        return "\n".join(self.generate_card(paper) for paper in papers)
+        # Sort papers by publication date (newest first), then author, then title
+        sorted_papers = sorted(papers, 
+            key=lambda p: (p.publication_date or '9999',
+                         p.authors.split(',')[0].strip().split()[-1].lower(),
+                         p.title.lower()),
+            reverse=True
+        )
+        return "\n".join(self.generate_card(paper) for paper in sorted_papers)

@@ -1,3 +1,4 @@
+import datetime
 from typing import List, Dict, Any
 from paper_schema import Paper
 from pathlib import Path
@@ -31,8 +32,24 @@ def generate_paper_cards(entries: List[Dict[str, Any]]) -> str:
             print(f"Warning: Invalid paper entry '{paper_id}' ({title}): {e}")
             continue
     
-    # Sort papers by year (newest first) and then by title
-    #papers.sort(key=lambda p: (-p.year, p.title))
+    # Sort papers by publication date (newest first), then author, then title
+    papers.sort(key=lambda p: (
+        p.publication_date or '9999',  # Use '9999' for papers without dates
+        p.authors.split(',')[0].strip().split()[-1].lower(),  # First author's last name
+        p.title.lower()
+    ), reverse=True)
     
     # Generate HTML using the card generator
     return card_generator.generate_cards(papers)
+
+def format_publication_date(date_str: str, date_source: str) -> str:
+    """Format publication date for display."""
+    if not date_str:
+        return ""
+    try:
+        date = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+        formatted_date = date.strftime("%B %d, %Y")
+        source_indicator = " (est.)" if date_source == 'estimated' else ""
+        return f"{formatted_date}{source_indicator}"
+    except ValueError:
+        return date_str

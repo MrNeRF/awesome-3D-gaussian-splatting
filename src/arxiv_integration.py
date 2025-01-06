@@ -96,8 +96,6 @@ class ArxivIntegration:
             f"  paper: {entry['paper']}",
             f"  code: {format_optional_field(entry.get('code'))}",
             f"  video: {format_optional_field(entry.get('video'))}",
-            f"  thumbnail_image: false",
-            f"  thumbnail_video: false",
             f"  tags:"
         ])
         for tag in sorted(entry.get('tags', [])):
