@@ -31,26 +31,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Check for existing branch
-      id: check_branch
-      run: |
-        if git ls-remote --heads origin update-html | grep update-html > /dev/null; then
-          echo "branch_exists=true" >> $GITHUB_OUTPUT
-        else
-          echo "branch_exists=false" >> $GITHUB_OUTPUT
-        fi
-
     - name: Setup Git
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-    - name: Update existing branch
-      if: steps.check_branch.outputs.branch_exists == 'true'
+    - name: Update HTML
       run: |
-        git fetch origin update-html
-        git checkout update-html
-        git reset --hard origin/main
+        git fetch origin update-html || true
+        git checkout -B update-html
         python src/generate.py awesome_3dgs_papers.yaml index.html
         git add index.html
         if ! git diff --staged --quiet; then
@@ -58,24 +47,25 @@ jobs:
           git push --force origin update-html
         fi
 
-    - name: Create new branch
-      if: steps.check_branch.outputs.branch_exists == 'false'
-      run: |
-        git checkout -b update-html
-        python src/generate.py awesome_3dgs_papers.yaml index.html
-        git add index.html
-        git commit -m "Update generated HTML"
-        git push origin update-html
-
-    - name: Create or Update PR
-      uses: peter-evans/create-pull-request@v5
+    - name: Create Pull Request
+      uses: actions/github-script@v6
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Update generated HTML
-        title: Update generated HTML
-        body: |
-          Auto-generated PR to update the HTML based on recent YAML changes.
-          This PR was automatically created by the Generate HTML workflow.
-        branch: update-html
-        base: main
-        delete-branch: false
+        script: |
+          const { data: pulls } = await github.rest.pulls.list({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            head: `${context.repo.owner}:update-html`,
+            base: 'main',
+            state: 'open'
+          });
+          
+          if (pulls.length === 0) {
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'update-html',
+              base: 'main',
+              title: 'Update generated HTML',
+              body: 'Auto-generated PR to update the HTML based on recent YAML changes.'
+            });
+          }
