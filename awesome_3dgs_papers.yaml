@@ -723,6 +723,37 @@
   thumbnail: assets/thumbnails/lu2024turbogs.jpg
   publication_date: '2024-12-18T06:46:40+00:00'
   date_source: arxiv
+- id: weiss2024gaussian
+  title: 'Gaussian Billboards: Expressive 2D Gaussian Splatting with Textures'
+  authors: Sebastian Weiss, Derek Bradley
+  year: '2024'
+  abstract: 'Gaussian Splatting has recently emerged as the go-to representation for
+    reconstructing and rendering 3D scenes. The transition from 3D to 2D Gaussian
+    primitives has further improved multi-view consistency and surface reconstruction
+    accuracy. In this work we highlight the similarity between 2D Gaussian Splatting
+    (2DGS) and billboards from traditional computer graphics. Both use flat semi-transparent
+    2D geometry that is positioned, oriented and scaled in 3D space. However 2DGS
+    uses a solid color per splat and an opacity modulated by a Gaussian distribution,
+    where billboards are more expressive, modulating the color with a uv-parameterized
+    texture. We propose to unify these concepts by presenting Gaussian Billboards,
+    a modification of 2DGS to add spatially-varying color achieved using per-splat
+    texture interpolation. The result is a mixture of the two representations, which
+    benefits from both the robust scene optimization power of 2DGS and the expressiveness
+    of texture mapping. We show that our method can improve the sharpness and quality
+    of the scene representation in a wide range of qualitative and quantitative evaluations
+    compared to the original 2DGS implementation.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.12734v1.pdf
+  code: null
+  video: null
+  tags:
+  - 2DGS
+  - Texturing
+  thumbnail: assets/thumbnails/weiss2024gaussian.jpg
+  publication_date: '2024-12-17T09:57:04+00:00'
+  date_source: arxiv
 - id: taubner2024cap4d
   title: 'CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View
     Diffusion Models'
