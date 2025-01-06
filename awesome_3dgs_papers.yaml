@@ -24,8 +24,6 @@
   paper: https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_low.pdf
   code: https://github.com/graphdeco-inria/gaussian-splatting
   video: https://youtu.be/T_kXY43VZnk?si=DrkbDFxQAv5scQNT
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Classic Work
   - Code
@@ -72,8 +70,6 @@
   paper: https://arxiv.org/pdf/2410.01647
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Object Detection
   thumbnail: assets/thumbnails/cao20243dgsdet.jpg
@@ -105,8 +101,6 @@
   paper: https://arxiv.org/pdf/2401.01339.pdf
   code: https://github.com/zju3dv/street_gaussians
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Code
@@ -141,8 +135,6 @@
   paper: https://arxiv.org/pdf/2404.02410.pdf
   code: null
   video: https://www.youtube.com/watch?v=CEo6mZ6FGg0
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Lidar
@@ -175,8 +167,6 @@
   paper: https://arxiv.org/pdf/2408.16760
   code: https://github.com/ziyc/drivestudio
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Code
@@ -209,8 +199,6 @@
   paper: https://arxiv.org/pdf/2411.16816
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Project
@@ -235,8 +223,6 @@
   paper: https://arxiv.org/pdf/2312.07920.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Project
@@ -264,8 +250,6 @@
   paper: https://arxiv.org/pdf/2403.12722.pdf
   code: https://github.com/hyzhou404/HUGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Code
@@ -294,8 +278,6 @@
   paper: https://arxiv.org/pdf/2401.09720.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/li2024gaussianbody.jpg
@@ -330,8 +312,6 @@
   paper: https://arxiv.org/pdf/2401.12900.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/zhao2024psavatar.jpg
@@ -358,8 +338,6 @@
   paper: https://arxiv.org/pdf/2402.03723.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -389,8 +367,6 @@
   paper: https://arxiv.org/pdf/2402.06149.pdf
   code: https://github.com/ZhenglinZhou/HeadStudio/
   video: https://zhenglinzhou.github.io/HeadStudio-ProjectPage/videos/demo_arxiv.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -426,8 +402,6 @@
   paper: https://arxiv.org/pdf/2402.06390.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/stanishevskii2024implicitdeepfake.jpg
@@ -462,8 +436,6 @@
   paper: https://arxiv.org/pdf/2402.10483.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/luo2024gaussianhair.jpg
@@ -492,8 +464,6 @@
   paper: https://arxiv.org/pdf/2402.16607.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -524,8 +494,6 @@
   paper: https://arxiv.org/pdf/2403.05087.pdf
   code: https://github.com/initialneil/SplattingAvatar
   video: https://www.youtube.com/watch?v=IzC-fLvdntA
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -556,8 +524,6 @@
   paper: https://arxiv.org/pdf/2403.18784
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/shao2024splatface.jpg
@@ -584,8 +550,6 @@
   paper: https://arxiv.org/pdf/2404.01053
   code: https://github.com/david-svitov/HAHA
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -615,8 +579,6 @@
   paper: https://arxiv.org/pdf/2404.10625
   code: https://github.com/fraunhoferhhi/gaussian_gan_decoder
   video: https://florian-barthel.github.io/gaussian_decoder/videos/latent.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -644,8 +606,6 @@
   paper: https://arxiv.org/pdf/2404.07991
   code: https://github.com/wenj/GoMAvatar
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -678,8 +638,6 @@
   paper: https://arxiv.org/pdf/2404.07991
   code: https://github.com/wenj/GoMAvatar
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -710,8 +668,6 @@
   paper: https://arxiv.org/pdf/2404.14410
   code: https://github.com/snuvclab/gtu/
   video: https://youtu.be/l9c_rd4hmFI
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -740,8 +696,6 @@
   paper: https://arxiv.org/pdf/2410.07971
   code: https://github.com/xg-chu/GAGAvatar
   video: https://youtu.be/9244ZgOl4Xk
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -779,8 +733,6 @@
   paper: https://arxiv.org/pdf/2409.08353
   code: null
   video: https://www.youtube.com/watch?v=vwDE8xr78Bg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -815,8 +767,6 @@
   paper: https://arxiv.org/pdf/2409.13648
   code: https://github.com/AuthorityWang/VideoGS
   video: https://youtu.be/Z5La9AporRU?si=iJ-m_mvUSxQN4Bwm
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -849,8 +799,6 @@
   paper: https://arxiv.org/pdf/2412.07739
   code: null
   video: https://www.youtube.com/watch?v=3oWB7-UJUYE
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -884,8 +832,6 @@
   paper: https://arxiv.org/pdf/2412.10209
   code: null
   video: https://www.youtube.com/embed/QuIYTljvhygE
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -917,8 +863,6 @@
   paper: https://arxiv.org/pdf/2412.12093
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -946,8 +890,6 @@
   paper: https://arxiv.org/pdf/2311.08581.pdf
   code: null
   video: https://youtu.be/C4IT1gnkaF0?si=zUJLm8adM68pVvR8
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -978,8 +920,6 @@
   paper: https://arxiv.org/pdf/2311.10812.pdf
   code: https://github.com/rohitrango/splatarmor
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1009,8 +949,6 @@
   paper: https://arxiv.org/pdf/2311.16096.pdf
   code: https://github.com/lizhe00/AnimatableGaussians
   video: https://www.youtube.com/watch?v=kOmZxD0HxZI
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1034,8 +972,6 @@
   paper: https://arxiv.org/pdf/2311.16099.pdf
   code: https://github.com/JiahuiLei/GART
   video: https://www.youtube.com/watch?v=-xYNtIlW4WY
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/lei2023gart.jpg
@@ -1063,8 +999,6 @@
   paper: https://arxiv.org/pdf/2311.17113.pdf
   code: null
   video: https://www.youtube.com/watch?v=R3CHg46SIfo
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -1096,8 +1030,6 @@
   paper: https://arxiv.org/pdf/2311.17910.pdf
   code: https://github.com/apple/ml-hugs
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1132,8 +1064,6 @@
   paper: https://arxiv.org/pdf/2311.17857
   code: https://github.com/computational-imaging/GSM
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1161,8 +1091,6 @@
   paper: https://arxiv.org/pdf/2312.01632.pdf
   code: https://github.com/chiehwangs/gaussian-head
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1191,8 +1119,6 @@
   paper: https://arxiv.org/pdf/2312.02069
   code: https://github.com/ShenhanQian/GaussianAvatars
   video: https://youtu.be/lVEY78RwU_I
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1220,8 +1146,6 @@
   paper: https://arxiv.org/pdf/2312.02155.pdf
   code: https://github.com/ShunyuanZheng/GPS-Gaussian
   video: https://youtu.be/TBIekcqt0j0
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1250,8 +1174,6 @@
   paper: https://arxiv.org/pdf/2312.02973.pdf
   code: https://github.com/skhu101/GauHuman
   video: https://www.youtube.com/embed/47772bgt5Xo
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1278,8 +1200,6 @@
   paper: https://arxiv.org/pdf/2312.02902.pdf
   code: null
   video: https://www.youtube.com/watch?v=fetxolufsgQ
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Video
@@ -1309,8 +1229,6 @@
   paper: https://arxiv.org/pdf/2312.03461.pdf
   code: null
   video: https://youtu.be/917WVr2EHh4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Project
@@ -1339,8 +1257,6 @@
   paper: https://arxiv.org/pdf/2312.02134.pdf
   code: https://github.com/huliangxiao/GaussianAvatar
   video: https://www.youtube.com/watch?v=a4g8Z9nCF-k&t=1s
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1366,8 +1282,6 @@
   paper: https://arxiv.org/pdf/2312.02214v2
   code: https://github.com/USTC3DV/FlashAvatar-code
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1400,8 +1314,6 @@
   paper: https://arxiv.org/pdf/2312.03704.pdf
   code: https://github.com/facebookresearch/goliath
   video: https://shunsukesaito.github.io/rgca/static/videos/full_video.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1437,8 +1349,6 @@
   paper: https://arxiv.org/pdf/2312.04558.pdf
   code: https://github.com/yufan1012/MonoGaussianAvatar
   video: https://youtu.be/3UvBkyPc-oc?si=SbveQKBLJh5GuhIY
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1469,8 +1379,6 @@
   paper: https://arxiv.org/pdf/2312.05941.pdf
   code: https://github.com/kv2000/ASH
   video: https://vcai.mpi-inf.mpg.de/projects/ash/videos/video_for_page.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1501,8 +1409,6 @@
   paper: https://arxiv.org/pdf/2312.09228.pdf
   code: https://github.com/mikeqzy/3dgs-avatar-release
   video: https://youtu.be/FJ29U9OkmmU?si=5ua2mtpv5ei2n28Z
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1536,8 +1442,6 @@
   paper: https://arxiv.org/pdf/2312.11461.pdf
   code: null
   video: https://www.youtube.com/watch?v=PbCF1HzrKrs
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Meshing
@@ -1572,8 +1476,6 @@
   paper: https://arxiv.org/pdf/2312.15059.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   thumbnail: assets/thumbnails/jung2023deformable.jpg
@@ -1600,8 +1502,6 @@
   paper: https://arxiv.org/pdf/2312.15258.pdf
   code: https://github.com/longxiang-ai/Human101
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1628,8 +1528,6 @@
   paper: https://arxiv.org/pdf/2312.03029.pdf
   code: https://github.com/YuelangX/Gaussian-Head-Avatar
   video: https://www.youtube.com/watch?v=kvrrI3EoM5g
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1659,8 +1557,6 @@
   paper: https://arxiv.org/pdf/2406.12459
   code: https://github.com/humansplat/humansplat
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -1688,8 +1584,6 @@
   paper: https://arxiv.org/pdf/2207.10606.pdf
   code: https://github.com/leonidk/fuzzy-metaballs
   video: https://www.youtube.com/watch?v=Ec7cxEc9eOU
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Classic Work
   - Code
@@ -1718,8 +1612,6 @@
   paper: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136930276.pdf
   code: https://github.com/muellerju/unbiased-differentiable-splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Classic Work
   - Code
@@ -1744,8 +1636,6 @@
   paper: https://old.cescg.org/CESCG-2006/papers/Prague-Man-Petr.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Classic Work
   thumbnail: assets/thumbnails/man2023generating.jpg
@@ -1775,8 +1665,6 @@
   paper: https://repo-sam.inria.fr/fungraph/reduced_3dgs/reduced_3DGS_i3d.pdf
   code: https://repo-sam.inria.fr/fungraph/reduced_3dgs
   video: https://www.youtube.com/watch?v=EnKE-d7eMds&t=48s
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -1804,8 +1692,6 @@
   paper: https://arxiv.org/pdf/2401.02436.pdf
   code: https://github.com/KeKsBoTer/c3dgs
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -1834,8 +1720,6 @@
   paper: https://arxiv.org/pdf/2406.01597.pdf
   code: https://github.com/USTC-IMCL/RDO-Gaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -1861,8 +1745,6 @@
   paper: https://arxiv.org/pdf/2407.09510
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Compression
   - Project
@@ -1887,8 +1769,6 @@
   paper: https://arxiv.org/pdf/2408.14823
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Compression
   - Project
@@ -1920,8 +1800,6 @@
   paper: https://arxiv.org/pdf/2311.17245.pdf
   code: https://github.com/VITA-Group/LightGaussian
   video: https://www.youtube.com/watch?v=470hul75bSM
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -1951,8 +1829,6 @@
   paper: https://arxiv.org/pdf/2311.18159.pdf
   code: https://github.com/UCDvision/compact3d
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -1988,8 +1864,6 @@
   paper: https://arxiv.org/pdf/2311.13681.pdf
   code: https://github.com/maincold2/Compact-3DGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -2021,8 +1895,6 @@
   paper: https://arxiv.org/pdf/2312.13299.pdf
   code: https://github.com/fraunhoferhhi/Self-Organizing-Gaussians
   video: https://www.youtube.com/watch?v=nb5U9xfx7-w
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -2054,8 +1926,6 @@
   paper: https://arxiv.org/pdf/2401.04099.pdf
   code: null
   video: https://youtu.be/jkwmp2UH0Ug?si=lBXjme-d9bVrXTNf
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -2083,8 +1953,6 @@
   paper: https://arxiv.org/pdf/2401.08742.pdf
   code: https://github.com/fudan-zvg/Efficient4D
   video: https://fudan-zvg.github.io/Efficient4D/assets/video/demo.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2119,8 +1987,6 @@
   paper: https://arxiv.org/pdf/2402.10259.pdf
   code: https://github.com/GaussianObject/GaussianObject
   video: https://youtu.be/ozoI0tmW3r0?si=KcaHtvVnrexqaf58
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2150,8 +2016,6 @@
   paper: https://arxiv.org/pdf/2402.05054.pdf
   code: https://github.com/3DTopia/LGM
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2178,8 +2042,6 @@
   paper: https://arxiv.org/pdf/2402.07207.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -2207,8 +2069,6 @@
   paper: https://arxiv.org/pdf/2402.08682.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -2241,8 +2101,6 @@
   paper: https://lizhiqi49.github.io/MVControl/assets/paper.pdf
   code: https://github.com/WU-CVGL/MVControl-threestudio
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2273,8 +2131,6 @@
   paper: https://arxiv.org/pdf/2403.09236.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   thumbnail: assets/thumbnails/di2024hyper3dgtextto3d.jpg
@@ -2305,8 +2161,6 @@
   paper: https://arxiv.org/pdf/2404.03575.pdf
   code: https://github.com/DreamScene-Project/DreamScene
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2333,8 +2187,6 @@
   paper: https://arxiv.org/pdf/2403.10242.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   thumbnail: assets/thumbnails/feng2024fdgaussian.jpg
@@ -2360,8 +2212,6 @@
   paper: https://arxiv.org/pdf/2403.11427
   code: https://github.com/Michaelszj/bags
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2397,8 +2247,6 @@
   paper: https://arxiv.org/pdf/2403.11273
   code: https://github.com/lutao2021/BrightDreamer
   video: https://vlislab22.github.io/BrightDreamer/videos/gui_demo.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2432,8 +2280,6 @@
   paper: https://arxiv.org/pdf/2403.12957
   code: https://github.com/GVGEN/GVGEN
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2459,8 +2305,6 @@
   paper: https://arxiv.org/pdf/2403.14370
   code: https://github.com/KAIST-Visual-AI-Group/SyncTweedies
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2496,8 +2340,6 @@
   paper: https://arxiv.org/pdf/2403.14939
   code: https://github.com/zeng-yifei/STAG4D
   video: https://www.youtube.com/watch?v=YJkFMIV2OyQ
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2528,8 +2370,6 @@
   paper: https://arxiv.org/pdf/2403.16993.pdf
   code: https://github.com/VITA-Group/Comp4D
   video: https://youtu.be/9q8SV1Xf_Xw
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2558,8 +2398,6 @@
   paper: https://arxiv.org/pdf/2403.17237
   code: https://github.com/yuanze-lin/DreamPolisher
   video: https://youtu.be/YJkFMIV2OyQ
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2589,8 +2427,6 @@
   paper: https://arxiv.org/pdf/2404.03736
   code: https://github.com/JarrentWu1031/SC4D
   video: https://youtu.be/SkpTEuX4B5c?si=yvrF_iRHnMQR9TD0
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2621,8 +2457,6 @@
   paper: https://arxiv.org/pdf/2404.06091
   code: https://github.com/Adamdad/hash3D
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Code
@@ -2648,8 +2482,6 @@
   paper: https://arxiv.org/pdf/2404.06814
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Point Cloud
@@ -2680,8 +2512,6 @@
   paper: https://arxiv.org/pdf/2404.06903
   code: https://github.com/ShijieZhou-UCLA/DreamScene360
   video: https://www.youtube.com/embed/6rMIQfe7b24?si=cm7cZ-T9r5na7YFD
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2709,8 +2539,6 @@
   paper: https://arxiv.org/pdf/2404.07199
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -2744,8 +2572,6 @@
   paper: https://arxiv.org/pdf/2403.19655.pdf
   code: https://github.com/GaussianCube/GaussianCube
   video: https://youtu.be/3uo4Oud4cxI
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2776,8 +2602,6 @@
   paper: https://arxiv.org/pdf/2406.07472.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -2806,8 +2630,6 @@
   paper: https://arxiv.org/pdf/2309.16585.pdf
   code: https://github.com/gsgen3d/gsgen
   video: https://streamable.com/28snte
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2838,8 +2660,6 @@
   paper: https://arxiv.org/pdf/2309.16653.pdf
   code: https://github.com/dreamgaussian/dreamgaussian
   video: https://www.youtube.com/live/l956ye13F8M?si=ZkvFL_lsY5OQUB7e
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2869,8 +2689,6 @@
   paper: https://arxiv.org/pdf/2310.08529.pdf
   code: https://github.com/hustvl/GaussianDreamer
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2906,8 +2724,6 @@
   paper: https://arxiv.org/pdf/2311.11221.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   thumbnail: assets/thumbnails/li2023gaussiandiffusion.jpg
@@ -2933,8 +2749,6 @@
   paper: https://arxiv.org/pdf/2311.11284.pdf
   code: https://github.com/EnVision-Research/LucidDreamer
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2964,8 +2778,6 @@
   paper: https://arxiv.org/pdf/2311.13384.pdf
   code: https://github.com/luciddreamer-cvlab/LucidDreamer?tab=readme-ov-file
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -2998,8 +2810,6 @@
   paper: https://arxiv.org/pdf/2311.17061.pdf
   code: https://github.com/alvinliu0/HumanGaussian
   video: https://www.youtube.com/watch?v=S3djzHoqPKY
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -3029,8 +2839,6 @@
   paper: https://arxiv.org/pdf/2311.17907.pdf
   code: null
   video: https://www.youtube.com/watch?v=FMAVeolsE7s
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -3062,8 +2870,6 @@
   paper: https://arxiv.org/pdf/2312.04820.pdf
   code: https://github.com/yangxiaofeng/LODS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -3101,8 +2907,6 @@
   paper: https://arxiv.org/pdf/2304.08818.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -3125,8 +2929,6 @@
   paper: https://arxiv.org/pdf/2312.17142.pdf
   code: https://github.com/jiawei-ren/dreamgaussian4d
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -3159,8 +2961,6 @@
   paper: https://arxiv.org/pdf/2312.17225.pdf
   code: https://github.com/VITA-Group/4DGen
   video: https://www.youtube.com/watch?v=-bXyBKdpQ1o
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Diffusion
@@ -3187,8 +2987,6 @@
   paper: https://arxiv.org/pdf/2312.09242.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -3218,8 +3016,6 @@
   paper: https://arxiv.org/pdf/2312.13271.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Project
@@ -3252,8 +3048,6 @@
   paper: https://arxiv.org/pdf/2402.03307.pdf
   code: https://github.com/weify627/4D-Rotor-Gaussians
   video: https://youtu.be/18zPuhQ3sSs
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3284,8 +3078,6 @@
   paper: https://arxiv.org/pdf/2403.12365
   code: null
   video: https://www.youtube.com/watch?v=0qRcjTw7-YU
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -3313,8 +3105,6 @@
   paper: https://arxiv.org/pdf/2403.11447
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   thumbnail: assets/thumbnails/guo2024motionaware.jpg
@@ -3346,8 +3136,6 @@
   paper: https://arxiv.org/pdf/2403.11453
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Dynamic
@@ -3373,8 +3161,6 @@
   paper: https://arxiv.org/pdf/2404.03613
   code: https://github.com/JeongminB/E-D3DGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3411,8 +3197,6 @@
   paper: https://arxiv.org/pdf/2405.02280
   code: https://github.com/dreamscene4d/dreamscene4d
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3443,8 +3227,6 @@
   paper: https://arxiv.org/pdf/2404.06270
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -3470,8 +3252,6 @@
   paper: https://arxiv.org/pdf/2406.00434
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Monocular
@@ -3497,8 +3277,6 @@
   paper: https://openreview.net/pdf?id=RQutkn4V9I
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   thumbnail: assets/thumbnails/kim2024optimizing.jpg
@@ -3528,8 +3306,6 @@
   paper: https://arxiv.org/pdf/2410.07707
   code: null
   video: https://youtu.be/25DgViuuKFI
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -3557,8 +3333,6 @@
   paper: https://arxiv.org/pdf/2405.19321
   code: https://github.com/Isaaclabe/DGD-Dynamic-3D-Gaussians-Distillation
   video: https://www.youtube.com/watch?v=GzX2GJn9OKs
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3591,8 +3365,6 @@
   paper: https://arxiv.org/pdf/2410.15629
   code: https://github.com/juno181/Ex4DGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3627,8 +3399,6 @@
   paper: https://arxiv.org/pdf/2406.19811
   code: https://github.com/zdwww/EgoGaussian
   video: https://youtu.be/nsZrmM7CJB0?si=IJnfWH_Vf_UW2JoF
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3660,8 +3430,6 @@
   paper: https://arxiv.org/pdf/2411.03706
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Robotics
   thumbnail: assets/thumbnails/lu20243dgscd.jpg
@@ -3689,8 +3457,6 @@
   paper: https://arxiv.org/pdf/2412.00851
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Poses
@@ -3718,8 +3484,6 @@
   paper: https://dynamic3dgaussians.github.io/paper.pdf
   code: https://github.com/JonathonLuiten/Dynamic3DGaussians
   video: https://www.youtube.com/live/hDuy1TgD8I4?si=6oGN0IYnPRxOibpg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3750,8 +3514,6 @@
   paper: https://arxiv.org/pdf/2309.13101.pdf
   code: https://github.com/ingra14m/Deformable-3D-Gaussians
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -3775,8 +3537,6 @@
   paper: https://arxiv.org/pdf/2310.08528.pdf
   code: https://github.com/hustvl/4DGaussians
   video: https://youtu.be/_wRbq8KnaVg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3811,8 +3571,6 @@
   paper: https://arxiv.org/pdf/2310.10642.pdf
   code: https://github.com/fudan-zvg/4d-gaussian-splatting
   video: https://youtu.be/3cXC9e4CujM
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3844,8 +3602,6 @@
   paper: https://arxiv.org/pdf/2311.12897.pdf
   code: https://github.com/raven38/EfficientDynamic3DGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
@@ -3881,8 +3637,6 @@
   paper: https://arxiv.org/pdf/2312.00112.pdf
   code: null
   video: https://agelosk.github.io/dynmf/img/presentation.mp4#t=0.8
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -3909,8 +3663,6 @@
   paper: https://arxiv.org/pdf/2305.20082.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Editing
@@ -3947,8 +3699,6 @@
   paper: https://yihua7.github.io/SC-GS-web/materials/SC_GS_Arxiv.pdf
   code: https://github.com/yihua7/SC-GS
   video: https://www.youtube.com/watch?v=CYQYX_0xi5E
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -3980,8 +3730,6 @@
   paper: https://arxiv.org/pdf/2312.01196.pdf
   code: https://github.com/DevikalyanDas/npgs
   video: https://youtu.be/ModbrI0GORU
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -4015,8 +3763,6 @@
   paper: https://arxiv.org/pdf/2310.08528.pdf
   code: https://github.com/NJU-3DV/Gaussian-Flow
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -4044,8 +3790,6 @@
   paper: https://arxiv.org/pdf/2312.05664.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -4072,8 +3816,6 @@
   paper: https://arxiv.org/pdf/2312.11458.pdf
   code: null
   video: https://youtu.be/YweWidWO8rI?si=jMssQdIXQV67kwzS
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -4103,8 +3845,6 @@
   paper: https://arxiv.org/pdf/2312.16812.pdf
   code: https://github.com/oppo-us-research/SpacetimeGaussians
   video: https://www.youtube.com/watch?v=YsPPmf-E6Lg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -4140,8 +3880,6 @@
   paper: https://arxiv.org/pdf/2312.00583
   code: https://github.com/momentum-robotics-lab/md-splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -4176,8 +3914,6 @@
   paper: https://arxiv.org/pdf/2312.13308.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   thumbnail: assets/thumbnails/shaw2023swings.jpg
@@ -4205,8 +3941,6 @@
   paper: https://arxiv.org/pdf/2403.01444.pdf
   code: https://github.com/SJoJoK/3DGStream
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -4235,8 +3969,6 @@
   paper: https://arxiv.org/pdf/2404.12784
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Segmentation
   thumbnail: assets/thumbnails/c2024contrastive.jpg
@@ -4270,8 +4002,6 @@
   paper: https://arxiv.org/pdf/2401.05925.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Segmentation
@@ -4301,8 +4031,6 @@
   paper: https://arxiv.org/pdf/2401.14828.pdf
   code: https://github.com/zjy526223908/TIP-Editor
   video: https://zjy526223908.github.io/TIP-Editor/static/videos/TIP_editor_video_short.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4337,8 +4065,6 @@
   paper: https://arxiv.org/pdf/2401.17857.pdf
   code: https://github.com/XuHu0529/SAGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Segmentation
@@ -4366,8 +4092,6 @@
   paper: https://arxiv.org/pdf/2403.05154.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   thumbnail: assets/thumbnails/palandra2024gsedit.jpg
@@ -4394,8 +4118,6 @@
   paper: https://arxiv.org/pdf/2403.08733.pdf
   code: https://github.com/ActiveVisionLab/gaussctrl
   video: https://gaussctrl.active.vision/assets/teaser_vid.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4424,8 +4146,6 @@
   paper: https://arxiv.org/pdf/2403.11868.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   - Project
@@ -4454,8 +4174,6 @@
   paper: https://arxiv.org/pdf/2403.14554
   code: https://github.com/Anttwo/Frosting
   video: https://youtu.be/h7LeWq8sG78
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -4488,8 +4206,6 @@
   paper: https://arxiv.org/pdf/2403.15624
   code: https://github.com/sharinka0715/semantic-gaussians
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -4520,8 +4236,6 @@
   paper: https://arxiv.org/pdf/2403.18118.pdf
   code: https://github.com/facebookresearch/egolifter
   video: https://www.youtube.com/watch?v=dWuZyeiOXyM&feature=youtu.be
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -4553,8 +4267,6 @@
   paper: https://arxiv.org/pdf/2404.11613
   code: https://github.com/ali-vilab/infusion
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4582,8 +4294,6 @@
   paper: https://arxiv.org/pdf/2404.07977.pdf
   code: null
   video: https://www.youtube.com/watch?v=rqs5BuVFOok
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   - Project
@@ -4615,8 +4325,6 @@
   paper: https://arxiv.org/pdf/2406.08488
   code: null
   video: https://youtu.be/dDsCwRXixp8?si=415s7-dEpM7-FPMq
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   - Project
@@ -4641,8 +4349,6 @@
   paper: https://arxiv.org/pdf/2409.11681
   code: https://github.com/JojiJoseph/3dgs-gradient-segmentation
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -4670,8 +4376,6 @@
   paper: https://arxiv.org/pdf/2407.04504
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Segmentation
@@ -4703,8 +4407,6 @@
   paper: https://arxiv.org/pdf/2411.19290
   code: null
   video: https://yunjinli.github.io/project-sadg/static/videos/split-cookie-2x4x.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -4736,8 +4438,6 @@
   paper: https://arxiv.org/pdf/2311.14521.pdf
   code: https://github.com/buaacyw/GaussianEditor
   video: https://youtu.be/TdZIICSFqsU?si=-U4tyOvaAPqIROYn
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4766,8 +4466,6 @@
   paper: https://arxiv.org/pdf/2311.16037.pdf
   code: null
   video: https://youtu.be/KWtALsigR3k?si=h6-A44brd5rm3_CM
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   - Project
@@ -4794,8 +4492,6 @@
   paper: https://arxiv.org/pdf/2311.16737.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   thumbnail: assets/thumbnails/huang2023pointn.jpg
@@ -4822,8 +4518,6 @@
   paper: https://arxiv.org/pdf/2312.00732.pdf
   code: https://github.com/lkeab/gaussian-grouping
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4854,8 +4548,6 @@
   paper: https://jumpat.github.io/SAGA/SAGA_paper.pdf
   code: https://github.com/Jumpat/SegAnyGAussians
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4895,8 +4587,6 @@
   paper: https://arxiv.org/pdf/2312.03203.pdf
   code: https://github.com/ShijieZhou-UCLA/feature-3dgs
   video: https://www.youtube.com/watch?v=h4zmQsCV_Qw
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -4928,8 +4618,6 @@
   paper: https://arxiv.org/pdf/2312.16047.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Segmentation
   thumbnail: assets/thumbnails/lan20232dguided.jpg
@@ -4956,8 +4644,6 @@
   paper: https://arxiv.org/pdf/2409.18108
   code: https://github.com/BerkeleyAutomation/L3GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -4989,8 +4675,6 @@
   paper: https://arxiv.org/pdf/2311.18482.pdf
   code: https://github.com/buaavrcg/LEGaussians
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -5026,8 +4710,6 @@
   paper: https://arxiv.org/pdf/2312.16084.pdf
   code: https://github.com/minghanqin/LangSplat
   video: https://www.youtube.com/watch?v=XMlyjsei-Es
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -5059,8 +4741,6 @@
   paper: https://arxiv.org/pdf/2410.06014
   code: null
   video: https://youtu.be/PUXNBfpeZkg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Language Embedding
   - Rendering
@@ -5092,8 +4772,6 @@
   paper: https://arxiv.org/pdf/2401.01970.pdf
   code: https://github.com/google-research/foundation-model-embedded-3dgs
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -5120,8 +4798,6 @@
   paper: https://arxiv.org/pdf/2408.07416
   code: https://github.com/hyunji12/Open3DRF
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -5157,8 +4833,6 @@
   paper: https://arxiv.org/pdf/2412.01807
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Language Embedding
@@ -5187,8 +4861,6 @@
   paper: https://arxiv.org/pdf/2401.15318.pdf
   code: null
   video: https://www.youtube.com/watch?v=KgaR1ni-Egg&t
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Physics
@@ -5222,8 +4894,6 @@
   paper: https://arxiv.org/pdf/2402.01459.pdf
   code: https://github.com/waczjoan/gaussian-mesh-splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -5262,8 +4932,6 @@
   paper: https://arxiv.org/pdf/2402.04796.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Meshing
@@ -5290,8 +4958,6 @@
   paper: https://arxiv.org/pdf/2403.09434
   code: https://github.com/Colmar-zlicheng/Spring-Gaus
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -5322,8 +4988,6 @@
   paper: https://arxiv.org/pdf/2403.10050
   code: https://github.com/slothfulxtx/Texture-GS
   video: https://www.youtube.com/watch?v=mn_vi4a_fu4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -5353,8 +5017,6 @@
   paper: https://arxiv.org/pdf/2403.17822
   code: https://github.com/maturk/dn-splatter
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Meshing
@@ -5382,8 +5044,6 @@
   paper: https://arxiv.org/pdf/2403.17888
   code: https://github.com/hbb1/2d-gaussian-splatting
   video: https://www.youtube.com/watch?v=oaHCtB6yiKU
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 2DGS
   - Code
@@ -5413,8 +5073,6 @@
   paper: https://arxiv.org/pdf/2404.01223
   code: https://github.com/vuer-ai/feature_splatting
   video: https://feature-splatting.github.io/resources/teaser_overview.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Editing
@@ -5453,8 +5111,6 @@
   paper: https://arxiv.org/pdf/2404.01810
   code: https://github.com/yanivw12/gs2mesh
   video: https://youtu.be/cjtmLDD8YZk
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 2DGS
   - Code
@@ -5488,8 +5144,6 @@
   paper: https://arxiv.org/pdf/2406.01467
   code: https://github.com/BaowenZ/RaDe-GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Meshing
@@ -5517,8 +5171,6 @@
   paper: https://arxiv.org/pdf/2406.07499
   code: https://github.com/YuxueYang1204/TrimGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 2DGS
   - Code
@@ -5548,8 +5200,6 @@
   paper: https://arxiv.org/pdf/2406.11672
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Densification
   - Meshing
@@ -5580,8 +5230,6 @@
   paper: https://arxiv.org/pdf/2411.00771
   code: https://github.com/DekuLiuTesla/CityGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Large-Scale
@@ -5609,8 +5257,6 @@
   paper: https://openreview.net/pdf?id=WmWbswjTsi
   code: https://github.com/KTH-RPL/cloth-splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Meshing
@@ -5645,8 +5291,6 @@
   paper: https://arxiv.org/pdf/2411.15468.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Meshing
   - Project
@@ -5679,8 +5323,6 @@
   paper: https://arxiv.org/pdf/2411.19271
   code: https://github.com/XuqianRen/AGS_Mesh
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Meshing
@@ -5712,8 +5354,6 @@
   paper: https://arxiv.org/pdf/2411.19454
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Meshing
   - Project
@@ -5741,8 +5381,6 @@
   paper: https://arxiv.org/pdf/2311.12198.pdf
   code: https://github.com/XPandora/PhysGaussian
   video: https://www.youtube.com/watch?v=V96GfcMUH2Q
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Physics
@@ -5777,8 +5415,6 @@
   paper: https://arxiv.org/pdf/2311.12775.pdf
   code: https://github.com/Anttwo/SuGaR
   video: https://www.youtube.com/watch?v=MAkFyWfiBQo.&t
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Meshing
@@ -5813,8 +5449,6 @@
   paper: https://arxiv.org/pdf/2312.00846.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Meshing
   thumbnail: assets/thumbnails/chen2023neusg.jpg
@@ -5840,8 +5474,6 @@
   paper: https://arxiv.org/pdf/2401.11535.pdf
   code: https://github.com/HKU-MedAI/EndoGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Medicine
@@ -5872,8 +5504,6 @@
   paper: https://arxiv.org/pdf/2401.12561.pdf
   code: https://github.com/CUHK-AIM-Group/EndoGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -5898,8 +5528,6 @@
   paper: https://arxiv.org/pdf/2401.14032.pdf
   code: https://github.com/saliteta/lidar_SfM_alignment
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Large-Scale
@@ -5932,8 +5560,6 @@
   paper: https://arxiv.org/pdf/2401.14857.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Large-Scale
   - Lidar
@@ -5965,8 +5591,6 @@
   paper: https://arxiv.org/pdf/2401.16663.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Meshing
   - Physics
@@ -5998,8 +5622,6 @@
   paper: https://arxiv.org/pdf/2403.02751.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Robotics
   thumbnail: assets/thumbnails/chen2024splatnav.jpg
@@ -6027,8 +5649,6 @@
   paper: https://arxiv.org/pdf/2403.04116.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Medicine
   thumbnail: assets/thumbnails/cai2024radiative.jpg
@@ -6055,8 +5675,6 @@
   paper: https://arxiv.org/pdf/2403.08321.pdf
   code: https://github.com/GuanxingLu/ManiGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Dynamic
@@ -6090,8 +5708,6 @@
   paper: https://arxiv.org/pdf/2403.08551
   code: https://github.com/Xinjie-Q/GaussianImage
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 2DGS
   - Code
@@ -6128,8 +5744,6 @@
   paper: https://arxiv.org/pdf/2403.09637
   code: https://github.com/MrSecant/GaussianGrasper
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Language Embedding
@@ -6165,8 +5779,6 @@
   paper: https://arxiv.org/pdf/2403.09973.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Virtual Reality
@@ -6194,8 +5806,6 @@
   paper: https://arxiv.org/pdf/2403.18476
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Uncertainty
   thumbnail: assets/thumbnails/savant2024modeling.jpg
@@ -6229,8 +5839,6 @@
   paper: https://arxiv.org/pdf/2403.19586
   code: https://github.com/hustvl/TOGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Medicine
@@ -6263,8 +5871,6 @@
   paper: https://arxiv.org/pdf/2404.03126
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Medicine
   thumbnail: assets/thumbnails/nikolakakis2024gaspct.jpg
@@ -6291,8 +5897,6 @@
   paper: https://arxiv.org/pdf/2404.04908
   code: https://github.com/ZcsrenlongZ/ZoomGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6326,8 +5930,6 @@
   paper: https://arxiv.org/pdf/2404.06128
   code: https://github.com/smbonilla/GaussianPancakes
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Medicine
@@ -6360,8 +5962,6 @@
   paper: https://arxiv.org/pdf/2404.06710
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Deblurring
   - Misc
@@ -6387,8 +5987,6 @@
   paper: https://arxiv.org/pdf/2404.06832
   code: https://github.com/m-kruse98/SplatPose
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6420,8 +6018,6 @@
   paper: https://arxiv.org/pdf/2404.07950
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Misc
   - Robotics
@@ -6447,8 +6043,6 @@
   paper: https://arxiv.org/pdf/2403.10814
   code: https://github.com/tyz1030/darkgs
   video: https://www.linkedin.com/posts/tianyi-zhang-396b0a186_darkgs-building-3d-gaussians-with-a-torch-activity-7197672371393019905-iY2-?utm_source=share&utm_medium=member_desktop
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6482,8 +6076,6 @@
   paper: https://arxiv.org/pdf/2406.02968
   code: https://github.com/hse1032/GSGAN
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - GAN
@@ -6516,8 +6108,6 @@
   paper: https://arxiv.org/pdf/2401.16663.pdf
   code: https://github.com/armlabstanford/NextBestSense
   video: https://www.youtube.com/watch?v=NHgb_16-Plg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6551,8 +6141,6 @@
   paper: https://arxiv.org/pdf/2407.20194
   code: https://github.com/leggedrobotics/radiance_field_ros
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6583,8 +6171,6 @@
   paper: https://arxiv.org/pdf/2311.17874.pdf
   code: https://github.com/JiangWenPL/FisherRF
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6617,8 +6203,6 @@
   paper: https://arxiv.org/pdf/2311.18561.pdf
   code: https://github.com/fudan-zvg/PVG
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Code
@@ -6649,8 +6233,6 @@
   paper: https://arxiv.org/pdf/2312.02137.pdf
   code: https://github.com/brown-ivl/manus
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6688,8 +6270,6 @@
   paper: https://arxiv.org/pdf/2312.09147.pdf
   code: https://github.com/VAST-AI-Research/TriplaneGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6710,8 +6290,6 @@
   paper: https://arxiv.org/pdf/2312.02121.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Misc
   thumbnail: assets/thumbnails/ye2023mathematical.jpg
@@ -6742,8 +6320,6 @@
   paper: https://arxiv.org/pdf/2401.02281.pdf
   code: https://github.com/meyerls/PEGASUS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Misc
@@ -6782,8 +6358,6 @@
   paper: https://arxiv.org/pdf/2401.05345.pdf
   code: https://github.com/Accelsnow/gaussian-splatting-distwar
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Code
@@ -6811,8 +6385,6 @@
   paper: https://arxiv.org/pdf/2403.06908.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Densification
   thumbnail: assets/thumbnails/zhang2024fregs.jpg
@@ -6837,8 +6409,6 @@
   paper: https://arxiv.org/pdf/2403.09413
   code: https://github.com/cvlab-kaist/RAIN-GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Densification
@@ -6869,8 +6439,6 @@
   paper: https://arxiv.org/pdf/2403.09143
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Densification
   thumbnail: assets/thumbnails/feng2024a.jpg
@@ -6893,8 +6461,6 @@
   paper: https://arxiv.org/pdf/2404.06109
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Densification
   thumbnail: assets/thumbnails/rota2024revising.jpg
@@ -6918,8 +6484,6 @@
   paper: https://arxiv.org/pdf/2311.13398.pdf
   code: https://github.com/robot0321/DepthRegularizedGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -6949,8 +6513,6 @@
   paper: https://arxiv.org/pdf/2312.04564.pdf
   code: https://github.com/Sharath-girish/efficientgaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Code
@@ -6979,8 +6541,6 @@
   paper: https://arxiv.org/pdf/2312.07504.pdf
   code: https://github.com/NVlabs/CF-3DGS
   video: https://youtu.be/IJtnx4keJvg
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Poses
@@ -7015,8 +6575,6 @@
   paper: https://arxiv.org/pdf/2312.09031.pdf
   code: https://github.com/YuanSun-XJTU/iComMa
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Poses
   thumbnail: assets/thumbnails/sun2023icomma.jpg
@@ -7044,8 +6602,6 @@
   paper: https://arxiv.org/pdf/2401.06116.pdf
   code: https://github.com/LuisBolanos17/GaussianShadowCasting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Code
@@ -7080,8 +6636,6 @@
   paper: https://arxiv.org/pdf/2402.00752.pdf
   code: https://github.com/LetianHuang/op43dgs
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Perspective-correct
@@ -7116,8 +6670,6 @@
   paper: https://arxiv.org/pdf/2402.00763.pdf
   code: https://github.com/LeoDarcy/360GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 360 degree
   - Code
@@ -7152,8 +6704,6 @@
   paper: https://arxiv.org/pdf/2402.00525.pdf
   code: https://github.com/r4dl/StopThePop
   video: https://youtu.be/EmcXtHYhigk
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Perspective-correct
@@ -7187,8 +6737,6 @@
   paper: https://arxiv.org/pdf/2402.10128.pdf
   code: https://github.com/ajhamdi/ges-splatting
   video: https://youtu.be/edSvNy3roV8?si=VGncH7op1OfqkEtx
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -7220,8 +6768,6 @@
   paper: https://arxiv.org/pdf/2402.14650.pdf
   code: https://github.com/kcheng1021/GaussianPro
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Densification
@@ -7252,8 +6798,6 @@
   paper: https://arxiv.org/pdf/2402.15870.pdf
   code: https://github.com/ingra14m/Specular-Gaussians
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -7282,8 +6826,6 @@
   paper: https://arxiv.org/pdf/2402.17427.pdf
   code: https://github.com/kangpeilun/VastGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Large-Scale
   thumbnail: assets/thumbnails/lin2024vastgaussian.jpg
@@ -7314,8 +6856,6 @@
   paper: https://arxiv.org/pdf/2403.04926.pdf
   code: https://github.com/snldmt/BAGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Deblurring
@@ -7347,8 +6887,6 @@
   paper: https://arxiv.org/pdf/2403.07807.pdf
   code: https://github.com/Kunhao-Liu/StyleGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -7378,8 +6916,6 @@
   paper: https://arxiv.org/pdf/2403.08498
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Style Transfer
   thumbnail: assets/thumbnails/saroha2024gaussian.jpg
@@ -7410,8 +6946,6 @@
   paper: https://arxiv.org/pdf/2403.11831.pdf
   code: https://github.com/WU-CVGL/BAD-Gaussians/
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Deblurring
@@ -7439,8 +6973,6 @@
   paper: https://arxiv.org/pdf/2403.10427.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - In the Wild
   - Rendering
@@ -7468,8 +7000,6 @@
   paper: https://arxiv.org/pdf/2403.11324.pdf
   code: https://github.com/yanyan-li/GeoGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Densification
@@ -7503,8 +7033,6 @@
   paper: https://arxiv.org/pdf/2403.11056.pdf
   code: https://github.com/lzhnb/Analytic-Splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Antialiasing
   - Code
@@ -7534,8 +7062,6 @@
   paper: https://arxiv.org/pdf/2403.13327.pdf
   code: https://github.com/SpectacularAI/3dgs-deblur
   video: https://www.youtube.com/watch?v=GwhNerXMLd4&feature=youtu.be
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Deblurring
@@ -7571,8 +7097,6 @@
   paper: https://arxiv.org/pdf/2403.13806.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Densification
   - Misc
@@ -7599,8 +7123,6 @@
   paper: https://arxiv.org/pdf/2403.14166.pdf
   code: https://github.com/fatPeter/mini-splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Densification
@@ -7633,8 +7155,6 @@
   paper: https://arxiv.org/pdf/2403.15530.pdf
   code: https://github.com/zhengzhang01/Pixel-GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Densification
@@ -7666,8 +7186,6 @@
   paper: https://arxiv.org/pdf/2403.15704
   code: https://github.com/EastbeanZhang/Gaussian-Wild
   video: https://www.youtube.com/watch?v=BNIX-OmIzgo
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - In the Wild
@@ -7701,8 +7219,6 @@
   paper: https://arxiv.org/pdf/2403.16964
   code: https://github.com/city-super/GSDF
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Meshing
@@ -7732,8 +7248,6 @@
   paper: https://arxiv.org/pdf/2403.17898
   code: https://github.com/city-super/Octree-GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Large-Scale
@@ -7770,8 +7284,6 @@
   paper: https://arxiv.org/pdf/2403.19615
   code: https://github.com/zsy1987/SA-GS/
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Antialiasing
   - Code
@@ -7803,8 +7315,6 @@
   paper: https://arxiv.org/pdf/2403.20275
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Rendering
@@ -7839,8 +7349,6 @@
   paper: https://arxiv.org/pdf/2404.00409.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Meshing
   - Rendering
@@ -7870,8 +7378,6 @@
   paper: https://arxiv.org/pdf/2404.01168.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Rendering
@@ -7901,8 +7407,6 @@
   paper: https://arxiv.org/pdf/2404.03202
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 360 degree
   - Project
@@ -7929,8 +7433,6 @@
   paper: https://arxiv.org/pdf/2404.04211
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Deblurring
   - Rendering
@@ -7959,8 +7461,6 @@
   paper: https://arxiv.org/pdf/2404.11358
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Deblurring
   - Rendering
@@ -7996,8 +7496,6 @@
   paper: https://arxiv.org/pdf/2404.05220
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Rendering
   - Style Transfer
@@ -8030,8 +7528,6 @@
   paper: https://arxiv.org/pdf/2404.08966
   code: https://github.com/Pokerlishao/LoopGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Physics
@@ -8059,8 +7555,6 @@
   paper: https://jaewoong.org/pubs/asplos24-gscore.pdf
   code: null
   video: https://youtu.be/TByYGw837IU?si=7zBe0yqpsJUoVbIV
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Rendering
@@ -8086,8 +7580,6 @@
   paper: https://arxiv.org/pdf/2412.00155
   code: https://github.com/Vadim200116/T-3DGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8114,8 +7606,6 @@
   paper: https://arxiv.org/pdf/2411.18966
   code: https://github.com/Xrvitd/SuperGaussians
   video: https://www.youtube.com/watch?v=K0liSjZGnIY&feature=youtu.be
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8142,8 +7632,6 @@
   paper: https://arxiv.org/pdf/2311.16493.pdf
   code: https://github.com/autonomousvision/mip-splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Antialiasing
   - Code
@@ -8176,8 +7664,6 @@
   paper: https://arxiv.org/pdf/2311.16043.pdf
   code: https://github.com/NJU-3DV/Relightable3DGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8210,8 +7696,6 @@
   paper: https://arxiv.org/pdf/2311.16473.pdf
   code: https://github.com/lzhnb/GS-IR
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8240,8 +7724,6 @@
   paper: https://arxiv.org/pdf/2311.17089.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Antialiasing
   - Rendering
@@ -8273,8 +7755,6 @@
   paper: https://arxiv.org/pdf/2311.17977.pdf
   code: https://github.com/Asparagus15/GaussianShader
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8305,8 +7785,6 @@
   paper: https://arxiv.org/pdf/2312.00109.pdf
   code: https://github.com/city-super/Scaffold-GS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Densification
@@ -8341,8 +7819,6 @@
   paper: https://arxiv.org/pdf/2401.00834.pdf
   code: https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Deblurring
@@ -8374,8 +7850,6 @@
   paper: https://arxiv.org/pdf/2312.05133
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Relight
@@ -8407,8 +7881,6 @@
   paper: https://arxiv.org/pdf/2312.13729.pdf
   code: https://github.com/gmum/ViewingDirectionGaussianSplatting
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Rendering
@@ -8440,8 +7912,6 @@
   paper: https://arxiv.org/pdf/2401.02620.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Review
@@ -8476,8 +7946,6 @@
   paper: https://arxiv.org/pdf/2401.03890.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   thumbnail: assets/thumbnails/chen2024a.jpg
@@ -8502,8 +7970,6 @@
   paper: https://arxiv.org/pdf/2402.07181.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   thumbnail: assets/thumbnails/fei20243d.jpg
@@ -8535,8 +8001,6 @@
   paper: https://arxiv.org/pdf/2410.20220
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   - Robotics
@@ -8561,8 +8025,6 @@
   paper: https://arxiv.org/pdf/2402.13255.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   thumbnail: assets/thumbnails/tosi2024how.jpg
@@ -8591,8 +8053,6 @@
   paper: https://arxiv.org/pdf/2403.11134
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   thumbnail: assets/thumbnails/wu2024recent.jpg
@@ -8615,8 +8075,6 @@
   paper: https://arxiv.org/pdf/2405.03417
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   thumbnail: assets/thumbnails/dalal2024gaussian.jpg
@@ -8642,8 +8100,6 @@
   paper: https://arxiv.org/pdf/2412.06257
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Review
   thumbnail: assets/thumbnails/qiu2024advancing.jpg
@@ -8667,8 +8123,6 @@
   paper: https://arxiv.org/pdf/2402.03246.pdf
   code: https://github.com/ShuhongLL/SGS-SLAM
   video: https://www.youtube.com/watch?v=y83yw1E-oUo
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - SLAM
@@ -8697,8 +8151,6 @@
   paper: https://arxiv.org/pdf/2403.07494.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - SLAM
   thumbnail: assets/thumbnails/zhu2024semgaussslam.jpg
@@ -8724,8 +8176,6 @@
   paper: https://arxiv.org/pdf/2403.11247.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - SLAM
   thumbnail: assets/thumbnails/deng2024compact.jpg
@@ -8753,8 +8203,6 @@
   paper: https://arxiv.org/pdf/2403.11679.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - SLAM
   thumbnail: assets/thumbnails/ji2024nedsslam.jpg
@@ -8778,8 +8226,6 @@
   paper: https://arxiv.org/pdf/2403.12535.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - SLAM
   thumbnail: assets/thumbnails/sun2024highfidelity.jpg
@@ -8805,8 +8251,6 @@
   paper: https://arxiv.org/pdf/2403.12550.pdf
   code: https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM
   video: https://www.youtube.com/watch?v=e-bHh_uMMxE
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - SLAM
@@ -8834,8 +8278,6 @@
   paper: https://arxiv.org/pdf/2403.15124.pdf
   code: https://github.com/endogslam/EndoGSLAM
   video: https://loping151.github.io/endogslam/static/video/3_1.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Medicine
@@ -8867,8 +8309,6 @@
   paper: https://arxiv.org/pdf/2403.16095
   code: null
   video: https://raw.githubusercontent.com/hjr37/open_access_assets/main/cg-slam/video/cg-slam-show.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - SLAM
@@ -8900,8 +8340,6 @@
   paper: https://arxiv.org/pdf/2404.00923
   code: https://github.com/VITA-Group/MM3DGS-SLAM
   video: https://www.youtube.com/watch?v=drf6UxehChE&feature=youtu.be
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8927,8 +8365,6 @@
   paper: https://arxiv.org/pdf/2404.06926
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - SLAM
@@ -8962,8 +8398,6 @@
   paper: https://arxiv.org/pdf/2404.19706
   code: https://github.com/MisEty/RTG-SLAM
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -8991,8 +8425,6 @@
   paper: https://arxiv.org/pdf/2408.10154
   code: https://github.com/GradientSpaces/LoopSplat
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9024,8 +8456,6 @@
   paper: https://arxiv.org/pdf/2411.08279
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - SLAM
@@ -9054,8 +8484,6 @@
   paper: https://arxiv.org/pdf/2411.10722
   code: null
   video: https://youtu.be/Mq3qZTTcN3E?feature=shared
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - SLAM
   - Video
@@ -9083,8 +8511,6 @@
   paper: https://arxiv.org/pdf/2311.11700.pdf
   code: https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9112,8 +8538,6 @@
   paper: https://arxiv.org/pdf/2312.02126.pdf
   code: https://github.com/spla-tam/SplaTAM
   video: https://www.youtube.com/watch?v=35SX8DTdQLs
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9143,8 +8567,6 @@
   paper: https://arxiv.org/pdf/2312.06741.pdf
   code: https://github.com/muskie82/MonoGS
   video: https://youtu.be/x604ghp9R_Q?si=fPtz4kgBKFfcnQf3
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9174,8 +8596,6 @@
   paper: https://ivi.fnwi.uva.nl/cv/paper/GaussianSLAM.pdf
   code: https://github.com/VladimirYugay/Gaussian-SLAM
   video: https://www.youtube.com/watch?v=RZK1o_ija7M
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9207,8 +8627,6 @@
   paper: https://arxiv.org/pdf/2311.16728.pdf
   code: https://github.com/HuajianUP/Photo-SLAM
   video: https://www.youtube.com/watch?v=WKXCFNJHZ4o
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9241,8 +8659,6 @@
   paper: https://arxiv.org/pdf/2403.06912.pdf
   code: https://github.com/Fictionarry/DNGaussian
   video: https://www.youtube.com/watch?v=WKXCFNJHZ4o
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9274,8 +8690,6 @@
   paper: https://arxiv.org/pdf/2403.09875.pdf
   code: https://github.com/armlabstanford/Touch-GS
   video: https://www.youtube.com/watch?v=FqejaTEt7aU
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9307,8 +8721,6 @@
   paper: https://arxiv.org/pdf/2403.14627
   code: https://github.com/donydchen/mvsplat
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Feed-Forward
@@ -9338,8 +8750,6 @@
   paper: https://arxiv.org/pdf/2403.16292.pdf
   code: https://github.com/Chrixtar/latentsplat
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Feed-Forward
   - Sparse
@@ -9364,8 +8774,6 @@
   paper: https://arxiv.org/pdf/2403.14621.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Project
   - Sparse
@@ -9396,8 +8804,6 @@
   paper: https://arxiv.org/pdf/2403.18795
   code: https://github.com/SkyworkAI/Gamba
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Feed-Forward
@@ -9431,8 +8837,6 @@
   paper: https://arxiv.org/pdf/2403.19495
   code: https://github.com/avinashpaliwal/CoherentGS
   video: https://www.youtube.com/watch?v=qiWdD3tOHKM
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9469,8 +8873,6 @@
   paper: https://arxiv.org/pdf/2403.20309.pdf
   code: https://github.com/NVlabs/InstantSplat
   video: https://www.youtube.com/live/JdfrG89iPOA?si=JhoiMxrjVIh91Ws1
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9505,8 +8907,6 @@
   paper: https://arxiv.org/pdf/2405.16517
   code: https://github.com/mvp18/sp2-360
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Sparse
@@ -9535,8 +8935,6 @@
   paper: https://arxiv.org/pdf/2408.13770
   code: https://github.com/xingyoujun/transplat
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Feed-Forward
@@ -9569,8 +8967,6 @@
   paper: https://arxiv.org/pdf/2409.11211.pdf
   code: https://github.com/markomih/SplatFields
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9600,8 +8996,6 @@
   paper: https://arxiv.org/pdf/2312.00206.pdf
   code: https://github.com/ForMyCat/SparseGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - 360 degree
   - Code
@@ -9632,8 +9026,6 @@
   paper: https://arxiv.org/pdf/2312.00451.pdf
   code: https://github.com/VITA-Group/FSGS
   video: https://www.youtube.com/watch?v=CarJgsx3DQY
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Project
@@ -9661,8 +9053,6 @@
   paper: https://arxiv.org/pdf/2312.12337.pdf
   code: https://github.com/dcharatan/pixelsplat
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Feed-Forward
@@ -9693,8 +9083,6 @@
   paper: https://arxiv.org/pdf/2312.13150.pdf
   code: https://github.com/szymanowiczs/splatter-image
   video: https://www.youtube.com/watch?v=pcKTf9SVh4g
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Feed-Forward
@@ -9724,8 +9112,6 @@
   paper: https://arxiv.org/pdf/2403.11625.pdf
   code: https://github.com/XiaohanLei/GaussNav
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Code
@@ -9753,8 +9139,6 @@
   paper: https://arxiv.org/pdf/2403.11367
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Poses
   thumbnail: assets/thumbnails/jiang20243dgsreloc.jpg
@@ -9782,8 +9166,6 @@
   paper: https://arxiv.org/pdf/2403.11396
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Robotics
@@ -9811,8 +9193,6 @@
   paper: https://arxiv.org/pdf/2403.11577
   code: null
   video: https://www.youtube.com/watch?v=9_RE_4xkRcM
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Misc
   - Project
@@ -9841,8 +9221,6 @@
   paper: https://arxiv.org/pdf/2403.20032.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Densification
   - Misc
@@ -9871,8 +9249,6 @@
   paper: https://arxiv.org/pdf/2403.20079.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Diffusion
   - Lidar
@@ -9899,8 +9275,6 @@
   paper: https://arxiv.org/pdf/2409.10216
   code: https://github.com/guaMass/BEINGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Code
@@ -9937,8 +9311,6 @@
   paper: https://arxiv.org/pdf/2403.10147
   code: https://github.com/lifuguan/GGRt_official
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Poses
@@ -9967,8 +9339,6 @@
   paper: https://arxiv.org/pdf/2408.11085
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Poses
   - Project
@@ -10001,8 +9371,6 @@
   paper: https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/hierarchical-3d-gaussians_low.pdf
   code: https://github.com/graphdeco-inria/hierarchical-3d-gaussians
   video: https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/content/videos/small_city.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Large-Scale
@@ -10033,8 +9401,6 @@
   paper: https://arxiv.org/pdf/2403.11460
   code: https://github.com/DensoITLab/Fed3DGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Distributed
   - Large-Scale
@@ -10061,8 +9427,6 @@
   paper: https://arxiv.org/pdf/2403.10683
   code: https://github.com/dingdingcai/GSPose
   video: https://youtu.be/SnJazusDLM8
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Poses
   thumbnail: assets/thumbnails/cai2024gspose.jpg
@@ -10090,8 +9454,6 @@
   paper: https://arxiv.org/pdf/2403.11364.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Misc
   thumbnail: assets/thumbnails/tarun2024creating.jpg
@@ -10123,8 +9485,6 @@
   paper: https://arxiv.org/pdf/2403.20159.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Large-Scale
   thumbnail: assets/thumbnails/wu2024hgsmapping.jpg
@@ -10150,8 +9510,6 @@
   paper: https://arxiv.org/pdf/2404.01133
   code: https://github.com/DekuLiuTesla/CityGaussian
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Large-Scale
@@ -10181,8 +9539,6 @@
   paper: https://arxiv.org/pdf/2404.04026
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Poses
   thumbnail: assets/thumbnails/wu2024mmgaussian.jpg
@@ -10212,8 +9568,6 @@
   paper: https://arxiv.org/pdf/2406.18533
   code: https://github.com/nyu-systems/Grendel-GS
   video: https://youtu.be/WaYfY3GTs6U
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Distributed
@@ -10252,8 +9606,6 @@
   paper: https://arxiv.org/pdf/2501.00602.pdf
   code: null
   video: https://jiawei-yang.github.io/STORM/
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Dynamic
@@ -10290,8 +9642,6 @@
   paper: https://arxiv.org/pdf/2501.00601.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Autonomous Driving
   - Dynamic
@@ -10320,8 +9670,6 @@
   paper: https://arxiv.org/pdf/2501.01003.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Densification
@@ -10357,8 +9705,6 @@
   paper: https://arxiv.org/pdf/2412.20720v1.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Compression
   - Dynamic
@@ -10398,8 +9744,6 @@
   paper: https://arxiv.org/pdf/2406.15643.pdf
   code: https://github.com/humansensinglab/taming-3dgs
   video: https://youtu.be/iiUXqYmezbY
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Code
@@ -10439,8 +9783,6 @@
   paper: https://arxiv.org/pdf/2412.09608.pdf
   code: null
   video: https://www.youtube.com/watch?v=y7e0YRNNmXw&feature=youtu.be
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   - Dynamic
@@ -10476,8 +9818,6 @@
   paper: https://arxiv.org/pdf/2412.16253.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Editing
   - World Generation
@@ -10510,8 +9850,6 @@
   paper: https://arxiv.org/pdf/2412.17378.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   thumbnail: assets/thumbnails/gui2024balanced.jpg
@@ -10537,8 +9875,6 @@
   paper: https://arxiv.org/pdf/2412.17612.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Distributed
   - Large-Scale
@@ -10570,8 +9906,6 @@
   paper: https://arxiv.org/pdf/2412.17812.pdf
   code: null
   video: https://huggingface.co/wlyu/FaceLift/resolve/main/videos/website_video.mp4
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Avatar
   - Feed-Forward
@@ -10602,8 +9936,6 @@
   paper: https://arxiv.org/pdf/2412.17804.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Physics
@@ -10762,8 +10094,6 @@
   paper: https://arxiv.org/pdf/2412.19282.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Meshing
   - Project
@@ -10801,8 +10131,6 @@
   paper: https://arxiv.org/pdf/2501.01895.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Dynamic
   - Project
@@ -10836,8 +10164,6 @@
   paper: https://arxiv.org/pdf/2501.00342.pdf
   code: null
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Acceleration
   thumbnail: assets/thumbnails/wang2024sgsplatting.jpg
@@ -10870,8 +10196,6 @@
   paper: https://arxiv.org/pdf/2412.18862.pdf
   code: https://github.com/Jumponthemoon/WeatherGS
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - In the Wild
@@ -10906,8 +10230,6 @@
   paper: https://arxiv.org/pdf/2403.14530.pdf
   code: https://github.com/YihangChen-ee/HAC
   video: null
-  thumbnail_image: false
-  thumbnail_video: false
   tags:
   - Code
   - Compression
