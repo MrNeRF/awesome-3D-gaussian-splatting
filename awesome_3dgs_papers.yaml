@@ -495,6 +495,38 @@
   - Project
   thumbnail: assets/thumbnails/shao2024gausim.jpg
   publication_date: '2024-12-23T18:58:17+00:00'
+- id: jin2024activegs
+  title: 'ActiveGS: Active Scene Reconstruction using Gaussian Splatting'
+  authors: Liren Jin, Xingguang Zhong, Yue Pan, Jens Behley, Cyrill Stachniss, Marija
+    Popović
+  year: '2024'
+  abstract: 'Robotics applications often rely on scene reconstructions to enable downstream
+    tasks. In this work, we tackle the challenge of actively building an accurate
+    map of an unknown scene using an on-board RGB-D camera. We propose a hybrid map
+    representation that combines a Gaussian splatting map with a coarse voxel map,
+    leveraging the strengths of both representations: the high-fidelity scene reconstruction
+    capabilities of Gaussian splatting and the spatial modelling strengths of the
+    voxel map. The core of our framework is an effective confidence modelling technique
+    for the Gaussian splatting map to identify under-reconstructed areas, while utilising
+    spatial information from the voxel map to target unexplored areas and assist in
+    collision-free path planning. By actively collecting scene information in under-reconstructed
+    and unexplored areas for map updates, our approach achieves superior Gaussian
+    splatting reconstruction results compared to state-of-the-art approaches. Additionally,
+    we demonstrate the applicability of our active scene reconstruction framework
+    in the real world using an unmanned aerial vehicle.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.17769.pdf
+  code: null
+  video: null
+  tags:
+  - Meshing
+  - Robotics
+  - SLAM
+  thumbnail: assets/thumbnails/jin2024activegs.jpg
+  publication_date: '2024-12-23T18:29:03+00:00'
+  date_source: arxiv
 - id: gao2024cosurfgscollaborative
   title: CoSurfGS:Collaborative 3D Surface Gaussian Splatting with Distributed Learning
     for Large Scene Reconstruction
