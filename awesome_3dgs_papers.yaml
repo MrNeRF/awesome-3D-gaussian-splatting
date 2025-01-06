@@ -10556,19 +10556,18 @@
   authors: Yuanyuan Gao, Yalun Dai, Hao Li, Weicai Ye, Junyi Chen, Danpeng Chen, Dingwen
     Zhang, Tong He, Guofeng Zhang, Junwei Han
   year: '2024'
-  abstract: '3D Gaussian Splatting (3DGS) has demonstrated impressive performance
-    in scene reconstruction. However, most existing GS-based surface reconstruction
-    methods focus on 3D objects or limited scenes. Directly applying these methods
-    to large-scale scene reconstruction will pose challenges such as high memory costs,
-    excessive time consumption, and lack of geometric detail, which makes it difficult
-    to implement in practical applications. To address these issues, we propose a
-    multi-agent collaborative fast 3DGS surface reconstruction framework based on
-    distributed learning for large-scale surface reconstruction. Specifically, we
-    develop local model compression (LMC) and model aggregation schemes (MAS) to achieve
-    high-quality surface representation of large scenes while reducing GPU memory
-    consumption. Extensive experiments on Urban3d, MegaNeRF, and BlendedMVS demonstrate
-    that our proposed method can achieve fast and scalable high-fidelity surface reconstruction
-    and photorealistic rendering.'
+  abstract: 3D Gaussian Splatting (3DGS) has demonstrated impressive performance in
+    scene reconstruction. However, most existing GS-based surface reconstruction methods
+    focus on 3D objects or limited scenes. Directly applying these methods to large-scale
+    scene reconstruction will pose challenges such as high memory costs, excessive
+    time consumption, and lack of geometric detail, which makes it difficult to implement
+    in practical applications. To address these issues, we propose a multi-agent collaborative
+    fast 3DGS surface reconstruction framework based on distributed learning for large-scale
+    surface reconstruction. Specifically, we develop local model compression (LMC)
+    and model aggregation schemes (MAS) to achieve high-quality surface representation
+    of large scenes while reducing GPU memory consumption. Extensive experiments on
+    Urban3d, MegaNeRF, and BlendedMVS demonstrate that our proposed method can achieve
+    fast and scalable high-fidelity surface reconstruction and photorealistic rendering.
   project_page: https://gyy456.github.io/CoSurfGS/
   paper: https://arxiv.org/pdf/2412.17612.pdf
   code: null
@@ -10585,7 +10584,7 @@
   title: 'FaceLift: Single Image to 3D Head with View Generation and GS-LRM'
   authors: Weijie Lyu, Yi Zhou, Ming-Hsuan Yang, Zhixin Shu
   year: '2024'
-  abstract: 'We present FaceLift, a feed-forward approach for rapid, high-quality,
+  abstract: We present FaceLift, a feed-forward approach for rapid, high-quality,
     360-degree head reconstruction from a single image. Our pipeline begins by employing
     a multi-view latent diffusion model that generates consistent side and back views
     of the head from a single facial input. These generated views then serve as input
@@ -10601,7 +10600,7 @@
     methods in 3D head reconstruction, highlighting its practical applicability and
     robust performance on real-world images. In addition to single image reconstruction,
     FaceLift supports video inputs for 4D novel view synthesis and seamlessly integrates
-    with 2D reanimation techniques to enable 3D facial animation.'
+    with 2D reanimation techniques to enable 3D facial animation.
   project_page: https://www.wlyu.me/FaceLift/
   paper: https://arxiv.org/pdf/2412.17812.pdf
   code: null
@@ -10618,7 +10617,7 @@
   title: 'GauSim: Registering Elastic Objects into Digital World by Gaussian Simulator'
   authors: Yidi Shao, Mu Huang, Chen Change Loy, Bo Dai
   year: '2024'
-  abstract: 'In this work, we introduce GauSim, a novel neural network-based simulator
+  abstract: In this work, we introduce GauSim, a novel neural network-based simulator
     designed to capture the dynamic behaviors of real-world elastic objects represented
     through Gaussian kernels. Unlike traditional methods that treat kernels as particles
     within particle-based simulations, we leverage continuum mechanics, modeling each
@@ -10633,7 +10632,7 @@
     READY, containing multi-view videos of real-world elastic deformations. Experimental
     results demonstrate that GauSim achieves superior performance compared to existing
     physics-driven baselines, offering a practical and accurate solution for simulating
-    complex dynamic behaviors. Code and model will be released.'
+    complex dynamic behaviors. Code and model will be released.
   project_page: https://www.mmlab-ntu.com/project/gausim/index.html
   paper: https://arxiv.org/pdf/2412.17804.pdf
   code: null
@@ -10645,3 +10644,97 @@
   - Physics
   - Project
   thumbnail: assets/thumbnails/shao2024gausim.jpg
+- id: cha2024perse
+  title: 'PERSE: Personalized 3D Generative Avatars from A Single Portrait'
+  authors: Hyunsoo Cha, Inhee Lee, Hanbyul Joo
+  year: '2024'
+  abstract: 'We present PERSE, a method for building an animatable personalized generative
+    avatar from a reference portrait. Our avatar model enables facial attribute
+    editing in a continuous and disentangled latent space to control each facial
+    attribute, while preserving the individual''s identity. To achieve this, our
+    method begins by synthesizing large-scale synthetic 2D video datasets, where
+    each video contains consistent changes in the facial expression and viewpoint,
+    combined with a variation in a specific facial attribute from the original
+    input. We propose a novel pipeline to produce high-quality, photorealistic 2D
+    videos with facial attribute editing. Leveraging this synthetic attribute
+    dataset, we present a personalized avatar creation method based on the 3D
+    Gaussian Splatting, learning a continuous and disentangled latent space for
+    intuitive facial attribute manipulation. To enforce smooth transitions in this
+    latent space, we introduce a latent space regularization technique by using
+    interpolated 2D faces as supervision. Compared to previous approaches, we
+    demonstrate that PERSE generates high-quality avatars with interpolated
+    attributes while preserving identity of reference person.'
+  project_page: https://hyunsoocha.github.io/perse/
+  paper: https://arxiv.org/pdf/2412.21206v1.pdf
+  code: null
+  video: https://youtu.be/zX881Zx03o4
+  tags:
+  - Avatar
+  - GAN
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/cha2024perse.jpg
+- id: zhang2025crossviewgs
+  title: 'CrossView-GS: Cross-view Gaussian Splatting For Large-scale Scene Reconstruction'
+  authors: Chenhao Zhang, Yuanping Cao, Lei Zhang
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a prominent method for scene
+    representation and reconstruction, leveraging densely distributed Gaussian
+    primitives to enable real-time rendering of high-resolution images. While
+    existing 3DGS methods perform well in scenes with minor view variation, large
+    view changes in cross-view scenes pose optimization challenges for these
+    methods. To address these issues, we propose a novel cross-view Gaussian
+    Splatting method for large-scale scene reconstruction, based on dual-branch
+    fusion. Our method independently reconstructs models from aerial and ground
+    views as two independent branches to establish the baselines of Gaussian
+    distribution, providing reliable priors for cross-view reconstruction during
+    both initialization and densification. Specifically, a gradient-aware
+    regularization strategy is introduced to mitigate smoothing issues caused by
+    significant view disparities. Additionally, a unique Gaussian supplementation
+    strategy is utilized to incorporate complementary information of dual-branch
+    into the cross-view model. Extensive experiments on benchmark datasets
+    demonstrate that our method achieves superior performance in novel view
+    synthesis compared to state-of-the-art methods.'
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.01695.pdf
+  code: null
+  video: null
+  tags:
+  - Large-Scale
+  - Optimization
+  thumbnail: assets/thumbnails/zhang2025crossviewgs.jpg
+- id: wang2025pgsag
+  title: 'PG-SAG: Parallel Gaussian Splatting for Fine-Grained Large-Scale Urban Buildings
+    Reconstruction via Semantic-Aware Grouping'
+  authors: Tengfei Wang, Xin Wang, Yongmao Hou, Yiwei Xu, Wendi Zhang, Zongqian Zhan
+  year: '2025'
+  abstract: |-
+    3D Gaussian Splatting (3DGS) has emerged as a transformative method in the
+    field of real-time novel synthesis. Based on 3DGS, recent advancements cope
+    with large-scale scenes via spatial-based partition strategy to reduce video
+    memory and optimization time costs. In this work, we introduce a parallel
+    Gaussian splatting method, termed PG-SAG, which fully exploits semantic cues
+    for both partitioning and Gaussian kernel optimization, enabling fine-grained
+    building surface reconstruction of large-scale urban areas without downsampling
+    the original image resolution. First, the Cross-modal model - Language Segment
+    Anything is leveraged to segment building masks. Then, the segmented building
+    regions is grouped into sub-regions according to the visibility check across
+    registered images. The Gaussian kernels for these sub-regions are optimized in
+    parallel with masked pixels. In addition, the normal loss is re-formulated for
+    the detected edges of masks to alleviate the ambiguities in normal vectors on
+    edges. Finally, to improve the optimization of 3D Gaussians, we introduce a
+    gradient-constrained balance-load loss that accounts for the complexity of the
+    corresponding scenes, effectively minimizing the thread waiting time in the
+    pixel-parallel rendering stage as well as the reconstruction lost. Extensive
+    experiments are tested on various urban datasets, the results demonstrated the
+    superior performance of our PG-SAG on building surface reconstruction, compared
+    to several state-of-the-art 3DGS-based methods.
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.01677.pdf
+  code: null
+  video: null
+  tags:
+  - Large-Scale
+  - Meshing
+  - Optimization
+  thumbnail: assets/thumbnails/wang2025pgsag.jpg
