@@ -10648,22 +10648,21 @@
   title: 'PERSE: Personalized 3D Generative Avatars from A Single Portrait'
   authors: Hyunsoo Cha, Inhee Lee, Hanbyul Joo
   year: '2024'
-  abstract: 'We present PERSE, a method for building an animatable personalized generative
-    avatar from a reference portrait. Our avatar model enables facial attribute
-    editing in a continuous and disentangled latent space to control each facial
-    attribute, while preserving the individual''s identity. To achieve this, our
-    method begins by synthesizing large-scale synthetic 2D video datasets, where
-    each video contains consistent changes in the facial expression and viewpoint,
-    combined with a variation in a specific facial attribute from the original
-    input. We propose a novel pipeline to produce high-quality, photorealistic 2D
-    videos with facial attribute editing. Leveraging this synthetic attribute
-    dataset, we present a personalized avatar creation method based on the 3D
-    Gaussian Splatting, learning a continuous and disentangled latent space for
-    intuitive facial attribute manipulation. To enforce smooth transitions in this
-    latent space, we introduce a latent space regularization technique by using
-    interpolated 2D faces as supervision. Compared to previous approaches, we
-    demonstrate that PERSE generates high-quality avatars with interpolated
-    attributes while preserving identity of reference person.'
+  abstract: We present PERSE, a method for building an animatable personalized generative
+    avatar from a reference portrait. Our avatar model enables facial attribute editing
+    in a continuous and disentangled latent space to control each facial attribute,
+    while preserving the individual's identity. To achieve this, our method begins
+    by synthesizing large-scale synthetic 2D video datasets, where each video contains
+    consistent changes in the facial expression and viewpoint, combined with a variation
+    in a specific facial attribute from the original input. We propose a novel pipeline
+    to produce high-quality, photorealistic 2D videos with facial attribute editing.
+    Leveraging this synthetic attribute dataset, we present a personalized avatar
+    creation method based on the 3D Gaussian Splatting, learning a continuous and
+    disentangled latent space for intuitive facial attribute manipulation. To enforce
+    smooth transitions in this latent space, we introduce a latent space regularization
+    technique by using interpolated 2D faces as supervision. Compared to previous
+    approaches, we demonstrate that PERSE generates high-quality avatars with interpolated
+    attributes while preserving identity of reference person.
   project_page: https://hyunsoocha.github.io/perse/
   paper: https://arxiv.org/pdf/2412.21206v1.pdf
   code: null
@@ -10678,23 +10677,21 @@
   title: 'CrossView-GS: Cross-view Gaussian Splatting For Large-scale Scene Reconstruction'
   authors: Chenhao Zhang, Yuanping Cao, Lei Zhang
   year: '2025'
-  abstract: '3D Gaussian Splatting (3DGS) has emerged as a prominent method for scene
-    representation and reconstruction, leveraging densely distributed Gaussian
-    primitives to enable real-time rendering of high-resolution images. While
-    existing 3DGS methods perform well in scenes with minor view variation, large
-    view changes in cross-view scenes pose optimization challenges for these
-    methods. To address these issues, we propose a novel cross-view Gaussian
-    Splatting method for large-scale scene reconstruction, based on dual-branch
-    fusion. Our method independently reconstructs models from aerial and ground
-    views as two independent branches to establish the baselines of Gaussian
-    distribution, providing reliable priors for cross-view reconstruction during
-    both initialization and densification. Specifically, a gradient-aware
-    regularization strategy is introduced to mitigate smoothing issues caused by
-    significant view disparities. Additionally, a unique Gaussian supplementation
-    strategy is utilized to incorporate complementary information of dual-branch
-    into the cross-view model. Extensive experiments on benchmark datasets
-    demonstrate that our method achieves superior performance in novel view
-    synthesis compared to state-of-the-art methods.'
+  abstract: 3D Gaussian Splatting (3DGS) has emerged as a prominent method for scene
+    representation and reconstruction, leveraging densely distributed Gaussian primitives
+    to enable real-time rendering of high-resolution images. While existing 3DGS methods
+    perform well in scenes with minor view variation, large view changes in cross-view
+    scenes pose optimization challenges for these methods. To address these issues,
+    we propose a novel cross-view Gaussian Splatting method for large-scale scene
+    reconstruction, based on dual-branch fusion. Our method independently reconstructs
+    models from aerial and ground views as two independent branches to establish the
+    baselines of Gaussian distribution, providing reliable priors for cross-view reconstruction
+    during both initialization and densification. Specifically, a gradient-aware regularization
+    strategy is introduced to mitigate smoothing issues caused by significant view
+    disparities. Additionally, a unique Gaussian supplementation strategy is utilized
+    to incorporate complementary information of dual-branch into the cross-view model.
+    Extensive experiments on benchmark datasets demonstrate that our method achieves
+    superior performance in novel view synthesis compared to state-of-the-art methods.
   project_page: null
   paper: https://arxiv.org/pdf/2501.01695.pdf
   code: null
@@ -10708,8 +10705,8 @@
     Reconstruction via Semantic-Aware Grouping'
   authors: Tengfei Wang, Xin Wang, Yongmao Hou, Yiwei Xu, Wendi Zhang, Zongqian Zhan
   year: '2025'
-  abstract: |-
-    3D Gaussian Splatting (3DGS) has emerged as a transformative method in the
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a transformative method in
+    the
     field of real-time novel synthesis. Based on 3DGS, recent advancements cope
     with large-scale scenes via spatial-based partition strategy to reduce video
     memory and optimization time costs. In this work, we introduce a parallel
@@ -10728,7 +10725,7 @@
     pixel-parallel rendering stage as well as the reconstruction lost. Extensive
     experiments are tested on various urban datasets, the results demonstrated the
     superior performance of our PG-SAG on building surface reconstruction, compared
-    to several state-of-the-art 3DGS-based methods.
+    to several state-of-the-art 3DGS-based methods.'
   project_page: null
   paper: https://arxiv.org/pdf/2501.01677.pdf
   code: null
@@ -10738,3 +10735,75 @@
   - Meshing
   - Optimization
   thumbnail: assets/thumbnails/wang2025pgsag.jpg
+- id: cai2024dust
+  title: 'Dust to Tower: Coarse-to-Fine Photo-Realistic Scene Reconstruction from
+    Sparse Uncalibrated Images'
+  authors: Xudong Cai, Yongcai Wang, Zhaoxin Fan, Deng Haoran, Shuo Wang, Wanting
+    Li, Deying Li, Lun Luo, Minhang Wang, Jintao Xu
+  year: '2024'
+  abstract: 'Photo-realistic scene reconstruction from sparse-view, uncalibrated images
+    is
+    highly required in practice. Although some successes have been made, existing
+    methods are either Sparse-View but require accurate camera parameters (i.e.,
+    intrinsic and extrinsic), or SfM-free but need densely captured images. To
+    combine the advantages of both methods while addressing their respective
+    weaknesses, we propose Dust to Tower (D2T), an accurate and efficient
+    coarse-to-fine framework to optimize 3DGS and image poses simultaneously from
+    sparse and uncalibrated images. Our key idea is to first construct a coarse
+    model efficiently and subsequently refine it using warped and inpainted images
+    at novel viewpoints. To do this, we first introduce a Coarse Construction
+    Module (CCM) which exploits a fast Multi-View Stereo model to initialize a 3D
+    Gaussian Splatting (3DGS) and recover initial camera poses. To refine the 3D
+    model at novel viewpoints, we propose a Confidence Aware Depth Alignment (CADA)
+    module to refine the coarse depth maps by aligning their confident parts with
+    estimated depths by a Mono-depth model. Then, a Warped Image-Guided Inpainting
+    (WIGI) module is proposed to warp the training images to novel viewpoints by
+    the refined depth maps, and inpainting is applied to fulfill the ``holes" in
+    the warped images caused by view-direction changes, providing high-quality
+    supervision to further optimize the 3D model and the camera poses. Extensive
+    experiments and ablation studies demonstrate the validity of D2T and its design
+    choices, achieving state-of-the-art performance in both tasks of novel view
+    synthesis and pose estimation while keeping high efficiency. Codes will be
+    publicly available.'
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.19518.pdf
+  code: null
+  video: null
+  tags:
+  - Inpainting
+  - Poses
+  - Sparse
+  thumbnail: assets/thumbnails/cai2024dust.jpg
+- id: yao2024reflective
+  title: Reflective Gaussian Splatting
+  authors: Yuxuan Yao, Zixuan Zeng, Chun Gu, Xiatian Zhu, Li Zhang
+  year: '2024'
+  abstract: |-
+    Novel view synthesis has experienced significant advancements owing to
+    increasingly capable NeRF- and 3DGS-based methods. However, reflective object
+    reconstruction remains challenging, lacking a proper solution to achieve
+    real-time, high-quality rendering while accommodating inter-reflection. To fill
+    this gap, we introduce a Reflective Gaussian splatting (\textbf{Ref-Gaussian})
+    framework characterized with two components: (I) {\em Physically based deferred
+    rendering} that empowers the rendering equation with pixel-level material
+    properties via formulating split-sum approximation; (II) {\em Gaussian-grounded
+    inter-reflection} that realizes the desired inter-reflection function within a
+    Gaussian splatting paradigm for the first time. To enhance geometry modeling,
+    we further introduce material-aware normal propagation and an initial
+    per-Gaussian shading stage, along with 2D Gaussian primitives. Extensive
+    experiments on standard datasets demonstrate that Ref-Gaussian surpasses
+    existing approaches in terms of quantitative metrics, visual quality, and
+    compute efficiency. Further, we show that our method serves as a unified
+    solution for both reflective and non-reflective scenes, going beyond the
+    previous alternatives focusing on only reflective scenes. Also, we illustrate
+    that Ref-Gaussian supports more applications such as relighting and editing.
+  project_page: https://fudan-zvg.github.io/ref-gaussian/
+  paper: https://arxiv.org/pdf/2412.19282.pdf
+  code: null
+  video: null
+  tags:
+  - Meshing
+  - Project
+  - Ray Tracing
+  - Relight
+  thumbnail: assets/thumbnails/yao2024reflective.jpg
