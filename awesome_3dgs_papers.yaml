@@ -1202,6 +1202,35 @@
   - Video
   thumbnail: assets/thumbnails/saunders2024gasp.jpg
   publication_date: '2024-12-10T18:36:21+00:00'
+- id: wang2024faster
+  title: Faster and Better 3D Splatting via Group Training
+  authors: Chengbo Wang, Guozheng Ma, Yifei Xue, Yizhen Lao
+  year: '2024'
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a powerful technique for
+    novel view synthesis, demonstrating remarkable capability in high-fidelity scene
+    reconstruction through its Gaussian primitive representations. However, the computational
+    overhead induced by the massive number of primitives poses a significant bottleneck
+    to training efficiency. To overcome this challenge, we propose Group Training,
+    a simple yet effective strategy that organizes Gaussian primitives into manageable
+    groups, optimizing training efficiency and improving rendering quality. This approach
+    shows universal compatibility with existing 3DGS frameworks, including vanilla
+    3DGS and Mip-Splatting, consistently achieving accelerated training while maintaining
+    superior synthesis quality. Extensive experiments reveal that our straightforward
+    Group Training strategy achieves up to 30% faster convergence and improved rendering
+    quality across diverse scenarios.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.07608.pdf
+  code: null
+  video: null
+  tags:
+  - Acceleration
+  - Densification
+  - Optimization
+  thumbnail: assets/thumbnails/wang2024faster.jpg
+  publication_date: '2024-12-10T15:47:17+00:00'
+  date_source: arxiv
 - id: li2024recap
   title: 'ReCap: Better Gaussian Relighting with Cross-Environment Captures'
   authors: Jingzhi Li, Zongwei Wu, Eduard Zamfir, Radu Timofte
