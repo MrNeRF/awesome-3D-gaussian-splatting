@@ -1,4 +1,5 @@
 import sys
+from src.fix_date import YAMLUpdater
 import yaml
 import webbrowser
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
@@ -16,6 +17,7 @@ from src.components.dialogs import ArxivAddDialog
 class YAMLEditor(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.yaml_updater = YAMLUpdater() 
         self.setWindowTitle("3D Gaussian Splatting Paper Editor")
         self.setMinimumSize(1200, 800)
         
@@ -249,7 +251,7 @@ class YAMLEditor(QMainWindow):
         main_layout.addLayout(content_layout)
 
     def auto_save(self):
-        """Automatically save changes"""
+        """Automatically save changes with date updating"""
         entry = self.data[self.current_index]
         
         # Update basic fields
@@ -273,11 +275,26 @@ class YAMLEditor(QMainWindow):
         # Update tags
         entry['tags'] = sorted([tag for tag, btn in self.tag_buttons.items() if btn.isChecked()])
         
+        # Process date information if needed
+        if 'publication_date' not in entry:
+            updated_entry, success = self.yaml_updater.process_paper(entry)
+            if success:
+                entry.update(updated_entry)
+        
         try:
+            # Sort data before saving
+            self.data.sort(key=self.yaml_updater.safe_sort_key, reverse=True)
+            
+            # Find the new index of the current entry after sorting
+            current_entry_id = entry['id']
+            self.current_index = next(i for i, e in enumerate(self.data) if e['id'] == current_entry_id)
+            
             with open("awesome_3dgs_papers.yaml", 'w', encoding='utf-8') as file:
                 yaml.dump(self.data, file, sort_keys=False, allow_unicode=True)
+            
             self.show_save_feedback(True)
             self.original_entry_state = self.get_entry_state(entry)
+            self.entry_counter.setText(f"Entry {self.current_index + 1} of {len(self.data)}")
             return True
         except Exception as e:
             self.show_save_feedback(False)
@@ -463,19 +480,27 @@ class YAMLEditor(QMainWindow):
         self.arxiv_button = QPushButton("Add from arXiv")
         self.arxiv_button.clicked.connect(self.show_arxiv_dialog)
         self.nav_layout.addWidget(self.arxiv_button)
-        
+
     def refresh_ui(self):
-        """Force a complete UI refresh"""
-        print("Starting refresh_ui")  # Debug print
-        old_len = len(self.data)  # Store old length
+        """Force a complete UI refresh with correct positioning"""
+        print("Starting refresh_ui")
+        old_index = self.current_index
+        old_id = self.data[old_index]['id'] if self.data else None
+        
         self.load_yaml()
-        new_len = len(self.data)  # New length
-        print(f"Data length before: {old_len}, after: {new_len}")  # Debug print
+        
+        # Find the index of the entry with the same ID
+        if old_id:
+            try:
+                self.current_index = next(i for i, entry in enumerate(self.data) if entry['id'] == old_id)
+            except StopIteration:
+                self.current_index = 0
+        
         self.show_current_entry()
         self.clear_search_results()
         self.entry_counter.setText(f"Entry {self.current_index + 1} of {len(self.data)}")
-        QApplication.processEvents()  # Force Qt to process pending events
-        print("Finished refresh_ui")  # Debug print
+        QApplication.processEvents()
+        print(f"Finished refresh_ui at index {self.current_index}")
 
     def show_arxiv_dialog(self):
         print("Opening arXiv dialog")
@@ -483,11 +508,45 @@ class YAMLEditor(QMainWindow):
         result = dialog.exec()
         print(f"Dialog result: {result}")
         if result == 1:
-            print("Dialog accepted, about to refresh")
-            self.refresh_ui()  # First refresh to get new data
-            self.current_index = len(self.data) - 1  # Then set to last entry
-            self.show_current_entry()  # Show the new entry
-            print(f"Refresh complete, showing entry {self.current_index + 1} of {len(self.data)}")
+            print("Dialog accepted, getting newly added entry")
+            
+            # Read the current YAML file
+            with open("awesome_3dgs_papers.yaml", 'r', encoding='utf-8') as file:
+                current_data = yaml.safe_load(file)
+            
+            # Get the newest entry and its ID before any modifications
+            new_entry = current_data[-1]
+            new_entry_id = new_entry['id']
+            print(f"New entry ID: {new_entry_id}")
+            
+            # Update date information
+            updated_entry, success = self.yaml_updater.process_paper(new_entry)
+            if success:
+                current_data[-1] = updated_entry
+                
+                # Sort the data
+                current_data.sort(key=self.yaml_updater.safe_sort_key, reverse=True)
+                
+                # Save the updated and sorted data
+                with open("awesome_3dgs_papers.yaml", 'w', encoding='utf-8') as file:
+                    yaml.dump(current_data, file, sort_keys=False, allow_unicode=True)
+            
+            # Reload the data
+            self.load_yaml()
+            
+            # Find the index of the new entry in the sorted data
+            try:
+                self.current_index = next(i for i, e in enumerate(self.data) if e['id'] == new_entry_id)
+                print(f"Found new entry at index {self.current_index}")
+            except StopIteration:
+                print(f"Warning: Could not find entry with ID {new_entry_id}")
+                self.current_index = 0
+            
+            # Show the entry
+            self.show_current_entry()
+            self.clear_search_results()
+            self.entry_counter.setText(f"Entry {self.current_index + 1} of {len(self.data)}")
+            print(f"Now showing entry {self.current_index + 1} of {len(self.data)}")
 
 def main():
     app = QApplication(sys.argv)
