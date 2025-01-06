@@ -12,16 +12,6 @@ from pathlib import Path
 from src.components.widgets import TagButton, URLWidget
 from src.components.dialogs import ArxivAddDialog
 
-
-class LiteralStr(str):
-    pass
-
-def literal_str_representer(dumper, data):
-    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
-
-yaml.add_representer(LiteralStr, literal_str_representer)
-
-
 class YAMLEditor(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -213,13 +203,11 @@ class YAMLEditor(QMainWindow):
         main_layout.addLayout(content_layout)
 
     def auto_save(self):
-        """Automatically save changes while preserving formatting"""
+        """Automatically save changes"""
         entry = self.data[self.current_index]
         
-        # Update basic fields except abstract
+        # Update basic fields
         for field, widget in self.fields.items():
-            if field == 'abstract':
-                continue
             if isinstance(widget, QLineEdit):
                 value = widget.text()
             elif isinstance(widget, QTextEdit):
@@ -228,13 +216,6 @@ class YAMLEditor(QMainWindow):
             if value.strip() == '':
                 value = None
             entry[field] = value
-        
-        # Handle abstract separately to preserve formatting
-        abstract_text = self.fields['abstract'].toPlainText()
-        if abstract_text.strip() == '':
-            entry['abstract'] = None
-        else:
-            entry['abstract'] = LiteralStr(abstract_text)
         
         # Update URL fields
         for field, widget in self.url_widgets.items():
@@ -305,19 +286,7 @@ class YAMLEditor(QMainWindow):
         self.original_entry_state = self.get_entry_state(entry)
         self.entry_counter.setText(f"Entry {self.current_index + 1} of {len(self.data)}")
         
-        # Handle abstract separately
-        abstract_value = entry.get('abstract', '')
-        self.fields['abstract'].blockSignals(True)
-        if isinstance(abstract_value, str):
-            self.fields['abstract'].setText(abstract_value)
-        else:
-            self.fields['abstract'].setText('')
-        self.fields['abstract'].blockSignals(False)
-        
-        # Handle other fields
         for field, widget in self.fields.items():
-            if field == 'abstract':
-                continue
             value = entry.get(field, '')
             if isinstance(widget, QLineEdit):
                 widget.blockSignals(True)
