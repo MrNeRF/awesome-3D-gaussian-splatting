@@ -927,6 +927,39 @@
   thumbnail: assets/thumbnails/huang2024deformable.jpg
   publication_date: '2024-12-16T13:11:02+00:00'
   date_source: arxiv
+- id: liang2024supergseg
+  title: 'SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians'
+  authors: Siyun Liang, Sen Wang, Kunyi Li, Michael Niemeyer, Stefano Gasperini, Nassir
+    Navab, Federico Tombari
+  year: '2024'
+  abstract: '3D Gaussian Splatting has recently gained traction for its efficient
+    training and real-time rendering. While the vanilla Gaussian Splatting representation
+    is mainly designed for view synthesis, more recent works investigated how to extend
+    it with scene understanding and language features. However, existing methods lack
+    a detailed comprehension of scenes, limiting their ability to segment and interpret
+    complex structures. To this end, We introduce SuperGSeg, a novel approach that
+    fosters cohesive, context-aware scene representation by disentangling segmentation
+    and language field distillation. SuperGSeg first employs neural Gaussians to learn
+    instance and hierarchical segmentation features from multi-view images with the
+    aid of off-the-shelf 2D masks. These features are then leveraged to create a sparse
+    set of what we call Super-Gaussians. Super-Gaussians facilitate the distillation
+    of 2D language features into 3D space. Through Super-Gaussians, our method enables
+    high-dimensional language feature rendering without extreme increases in GPU memory.
+    Extensive experiments demonstrate that SuperGSeg outperforms prior works on both
+    open-vocabulary object localization and semantic segmentation tasks.
+
+    '
+  project_page: https://supergseg.github.io/
+  paper: https://arxiv.org/pdf/2412.10231.pdf
+  code: null
+  video: null
+  tags:
+  - Language Embedding
+  - Project
+  - Segmentation
+  thumbnail: assets/thumbnails/liang2024supergseg.jpg
+  publication_date: '2024-12-13T16:01:19+00:00'
+  date_source: arxiv
 - id: tang2024gaf
   title: 'GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view
     Diffusion'
