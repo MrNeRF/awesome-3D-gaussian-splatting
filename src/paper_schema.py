@@ -10,6 +10,8 @@ class Paper:
     authors: str
     year: int
     tags: List[str]
+    publication_date: Optional[str] = None
+    date_source: Optional[str] = None
     thumbnail: Optional[str] = None
     abstract: Optional[str] = None
     project_page: Optional[str] = None
@@ -59,6 +61,8 @@ class Paper:
             authors=str(data['authors']),
             year=int(data['year']),
             tags=list(data['tags']),
+            publication_date=str(data.get('publication_date', '')),
+            date_source=str(data.get('date_source', '')),
             thumbnail=str(data.get('thumbnail', '')),
             abstract=str(data.get('abstract', '')),
             project_page=str(data.get('project_page', '')),
@@ -75,6 +79,8 @@ class Paper:
             'authors': self.authors,
             'year': self.year,
             'tags': self.tags,
+            'publication_date': self.publication_date if self.publication_date else None,
+            'date_source': self.date_source if self.date_source else None,
             'thumbnail': self.thumbnail if self.thumbnail else None,
             'abstract': self.abstract if self.abstract else None,
             'project_page': self.project_page if self.project_page else None,

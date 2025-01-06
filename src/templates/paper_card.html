@@ -1,4 +1,4 @@
-<div class="paper-row" data-id="$id" data-title="$title" data-authors="$authors" data-year="$year" data-tags='$tags_json'>
+<div class="paper-row" data-id="$id" data-title="$title" data-authors="$authors" data-year="$year" data-publication-date="$publication_date" data-tags='$tags_json'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, '$id', this)">
     <div class="paper-number"></div>
@@ -6,7 +6,11 @@
       <img data-src="$thumbnail" data-fallback="$fallback_url" alt="Paper thumbnail for $title" class="lazy" loading="lazy"/>
     </div>
     <div class="paper-content">
-      <h2 class="paper-title">$title <span class="paper-year">($year)</span></h2>
+      <h2 class="paper-title">$title</h2>
+      <p class="paper-metadata">
+        <span class="paper-year">$year</span>
+        $publication_date_html
+      </p>
       <p class="paper-authors">$authors</p>
       <div class="paper-tags">$tags_html</div>
       <div class="paper-links">$links_html</div>

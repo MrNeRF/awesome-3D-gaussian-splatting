@@ -8,6 +8,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PyQt6.QtCore import QTimer
 from PyQt6.QtCore import Qt
 from pathlib import Path
+from typing import Dict, Any
 
 from src.components.widgets import TagButton, URLWidget
 from src.components.dialogs import ArxivAddDialog
@@ -47,12 +48,51 @@ class YAMLEditor(QMainWindow):
         self.setup_status_bar()
         self.show_current_entry()
 
+    def safe_sort_key(self, x: Dict[str, Any]) -> tuple:
+            """Safe sort key that handles None values and missing fields."""
+            # Get publication date, default to '9999' for sorting
+            pub_date = x.get('publication_date', '9999')
+            if not isinstance(pub_date, str):
+                pub_date = '9999'
+                
+            # Get last name of first author, default to 'z' for sorting
+            authors = x.get('authors', '')
+            if authors and isinstance(authors, str):
+                try:
+                    first_author = authors.split(',')[0].strip()
+                    last_name = first_author.split()[-1].lower() if first_author else 'z'
+                except Exception:
+                    last_name = 'z'
+            else:
+                last_name = 'z'
+                
+            # Get title, default to 'z' for sorting
+            title = x.get('title', '')
+            if not isinstance(title, str):
+                title = 'z'
+            else:
+                title = title.lower()
+                
+            # Get date source for priority
+            date_source = x.get('date_source', 'unknown')
+            source_priority = {'arxiv': 0, 'estimated': 1, 'unknown': 2}
+            
+            return (pub_date, source_priority.get(date_source, 2), last_name, title)
+
     def load_yaml(self):
+        """Load and sort YAML data with safe handling of missing or invalid values."""
         try:
             print("Loading YAML file")  # Debug print
             with open("awesome_3dgs_papers.yaml", 'r', encoding='utf-8') as file:
                 self.data = yaml.safe_load(file)
+            
+            if not isinstance(self.data, list):
+                raise ValueError("YAML file does not contain a list of papers")
+
+            # Sort data using the safe sort key
+            self.data.sort(key=self.safe_sort_key, reverse=True)  # Newest first
             print(f"Loaded {len(self.data)} entries")  # Debug print
+            
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to load YAML file: {str(e)}")
             sys.exit(1)
@@ -141,17 +181,23 @@ class YAMLEditor(QMainWindow):
         self.form_layout = QVBoxLayout(form_widget)
         
         # Basic fields
-        basic_fields = ['id', 'title', 'authors', 'year']
+        basic_fields = ['id', 'title', 'authors', 'year', 'publication_date']  # Removed date_source
         for field in basic_fields:
             field_layout = QHBoxLayout()
             label = QLabel(field.replace('_', ' ').title() + ":")
             label.setMinimumWidth(100)
+            
+            # Create normal field - let Qt handle the styling consistently
             self.fields[field] = QLineEdit()
-            self.fields[field].textChanged.connect(self.auto_save)
+            if field == 'publication_date':
+                self.fields[field].setReadOnly(True)
+            else:
+                self.fields[field].textChanged.connect(self.auto_save)
+                
             field_layout.addWidget(label)
             field_layout.addWidget(self.fields[field])
             self.form_layout.addLayout(field_layout)
-        
+
         # URL fields with open buttons
         url_fields = ['project_page', 'paper', 'code', 'video']
         for field in url_fields:
