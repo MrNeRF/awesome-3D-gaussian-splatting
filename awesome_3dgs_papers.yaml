@@ -1067,6 +1067,42 @@
   - Video
   thumbnail: assets/thumbnails/xu2024representing.jpg
   publication_date: '2024-12-12T18:59:34+00:00'
+- id: chen2024feat2gs
+  title: 'Feat2GS: Probing Visual Foundation Models with Gaussian Splatting'
+  authors: Yue Chen, Xingyu Chen, Anpei Chen, Gerard Pons-Moll, Yuliang Xiu
+  year: '2024'
+  abstract: 'Given that visual foundation models (VFMs) are trained on extensive datasets
+    but often limited to 2D images, a natural question arises: how well do they understand
+    the 3D world? With the differences in architecture and training protocols (i.e.,
+    objectives, proxy tasks), a unified framework to fairly and comprehensively probe
+    their 3D awareness is urgently needed. Existing works on 3D probing suggest single-view
+    2.5D estimation (e.g., depth and normal) or two-view sparse 2D correspondence
+    (e.g., matching and tracking). Unfortunately, these tasks ignore texture awareness,
+    and require 3D data as ground-truth, which limits the scale and diversity of their
+    evaluation set. To address these issues, we introduce Feat2GS, which readout 3D
+    Gaussians attributes from VFM features extracted from unposed images. This allows
+    us to probe 3D awareness for geometry and texture via novel view synthesis, without
+    requiring 3D data. Additionally, the disentanglement of 3DGS parameters - geometry
+    ($\boldsymbol{x}, \alpha, \Sigma$) and texture ($\boldsymbol{c}$) - enables separate
+    analysis of texture and geometry awareness. Under Feat2GS, we conduct extensive
+    experiments to probe the 3D awareness of several VFMs, and investigate the ingredients
+    that lead to a 3D aware VFM. Building on these findings, we develop several variants
+    that achieve state-of-the-art across diverse datasets. This makes Feat2GS useful
+    for probing VFMs, and as a simple-yet-effective baseline for novel-view synthesis.
+
+    '
+  project_page: https://fanegg.github.io/Feat2GS/
+  paper: https://arxiv.org/pdf/2412.09606.pdf
+  code: null
+  video: https://youtu.be/4fT5lzcAJqo
+  tags:
+  - Project
+  - Rendering
+  - Video
+  - World Generation
+  thumbnail: assets/thumbnails/chen2024feat2gs.jpg
+  publication_date: '2024-12-12T18:59:28+00:00'
+  date_source: arxiv
 - id: li2024simavatar
   title: 'SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing'
   authors: Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles
