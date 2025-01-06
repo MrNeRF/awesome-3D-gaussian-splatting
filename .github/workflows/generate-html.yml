@@ -56,18 +56,26 @@ jobs:
         git push -f origin update-html
 
     - name: Create or Update PR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        # Check if PR exists
-        PR_NUMBER=$(gh pr list --base main --head update-html --json number -q '.[0].number')
-        
-        if [ -z "$PR_NUMBER" ]; then
-          # Create new PR if none exists
-          gh pr create --base main --head update-html \
-            --title "Update generated HTML" \
-            --body "This is an automatically maintained PR that keeps the generated HTML in sync with YAML changes."
-        else
-          # PR exists, no need to create a new one
-          echo "PR #$PR_NUMBER already exists"
-        fi
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const { data: pulls } = await github.rest.pulls.list({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            head: `${context.repo.owner}:update-html`,
+            base: 'main',
+            state: 'open'
+          });
+          
+          if (pulls.length === 0) {
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'update-html',
+              base: 'main',
+              title: 'Update generated HTML',
+              body: 'This is an automatically maintained PR that keeps the generated HTML in sync with YAML changes.'
+            });
+          } else {
+            console.log(`PR #${pulls[0].number} already exists`);
+          }
