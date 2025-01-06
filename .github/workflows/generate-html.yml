@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
     
     steps:
     - uses: actions/checkout@v3
@@ -35,7 +36,7 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Create Update Branch and PR
+    - name: Create Update Branch and Commit Changes
       run: |
         # Configure git
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -55,27 +56,20 @@ jobs:
         git commit -m "Auto-generate index.html"
         git push -f origin update-html
 
-    - name: Create or Update PR
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const { data: pulls } = await github.rest.pulls.list({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            head: `${context.repo.owner}:update-html`,
-            base: 'main',
-            state: 'open'
-          });
-          
-          if (pulls.length === 0) {
-            await github.rest.pulls.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              head: 'update-html',
-              base: 'main',
-              title: 'Update generated HTML',
-              body: 'This is an automatically maintained PR that keeps the generated HTML in sync with YAML changes.'
-            });
-          } else {
-            console.log(`PR #${pulls[0].number} already exists`);
-          }
+    - name: Create Pull Request
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Check if PR already exists
+        pr_exists=$(gh pr list --head update-html --base main --json number --jq 'length')
+        
+        if [ "$pr_exists" = "0" ]; then
+          # Create PR if it doesn't exist
+          gh pr create \
+            --title "Update generated HTML" \
+            --body "This is an automatically maintained PR that keeps the generated HTML in sync with YAML changes." \
+            --base main \
+            --head update-html || echo "Failed to create PR, may already exist"
+        else
+          echo "PR already exists, skipping creation"
+        fi
