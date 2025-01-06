@@ -1,6 +1,9 @@
-name: Generate HTML on Main
+name: Generate HTML
 
 on:
+  pull_request:
+    paths:
+      - 'awesome_3dgs_papers.yaml'
   push:
     branches: [ main ]
     paths:
@@ -9,18 +12,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     
     steps:
-    - name: Test Token Authentication
-      env:
-        GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
-      run: |
-        echo "Testing authentication with GitHub API..."
-        curl -H "Authorization: token ${GITHUB_TOKEN}" https://api.github.com/user
-
     - uses: actions/checkout@v3
       with:
-        token: ${{ secrets.BOT_PAT }}
+        ref: ${{ github.event.pull_request.head.ref }}
+        repository: ${{ github.event.pull_request.head.repo.full_name }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -36,12 +37,18 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Commit and push if changed
-      env:
-        GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+    - name: Commit changes
+      if: github.event_name == 'pull_request'
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git remote set-url origin https://oauth2:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         git add index.html
-        git diff --staged --quiet || (git commit -m "Update index.html" && git push)
+        git diff --staged --quiet || (git commit -m "Auto-generate index.html" && git push)
+
+    - name: Direct Push to Main
+      if: github.event_name == 'push'
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add index.html
+        git diff --staged --quiet || (git commit -m "Auto-generate index.html" && git push)
