@@ -2157,6 +2157,45 @@
   - Robotics
   thumbnail: assets/thumbnails/meng2024beings.jpg
   publication_date: '2024-09-16T12:07:02+00:00'
+- id: li2024pshuman
+  title: 'PSHuman: Photorealistic Single-view Human Reconstruction using Cross-Scale
+    Diffusion'
+  authors: Peng Li, Wangguandong Zheng, Yuan Liu, Tao Yu, Yangguang Li, Xingqun Qi,
+    Mengfei Li, Xiaowei Chi, Siyu Xia, Wei Xue, Wenhan Luo, Qifeng Liu, Yike Guo
+  year: '2024'
+  abstract: 'Detailed and photorealistic 3D human modeling is essential for various
+    applications and has seen tremendous progress. However, full-body reconstruction
+    from a monocular RGB image remains challenging due to the ill-posed nature of
+    the problem and sophisticated clothing topology with self-occlusions. In this
+    paper, we propose PSHuman, a novel framework that explicitly reconstructs human
+    meshes utilizing priors from the multiview diffusion model. It is found that directly
+    applying multiview diffusion on single-view human images leads to severe geometric
+    distortions, especially on generated faces. To address it, we propose a cross-scale
+    diffusion that models the joint probability distribution of global full-body shape
+    and local facial characteristics, enabling detailed and identity-preserved novel-view
+    generation without any geometric distortion. Moreover, to enhance cross-view body
+    shape consistency of varied human poses, we condition the generative model on
+    parametric models like SMPL-X, which provide body priors and prevent unnatural
+    views inconsistent with human anatomy. Leveraging the generated multi-view normal
+    and color images, we present SMPLX-initialized explicit human carving to recover
+    realistic textured human meshes efficiently. Extensive experimental results and
+    quantitative evaluations on CAPE and THuman2.1 datasets demonstrate PSHumans superiority
+    in geometry details, texture fidelity, and generalization capability.
+
+    '
+  project_page: https://penghtyx.github.io/PSHuman/
+  paper: https://arxiv.org/pdf/2409.10141.pdf
+  code: https://github.com/pengHTYX/PSHuman
+  video: null
+  tags:
+  - Avatar
+  - Code
+  - Diffusion
+  - Meshing
+  - Project
+  thumbnail: assets/thumbnails/li2024pshuman.jpg
+  publication_date: '2024-09-16T10:13:06+00:00'
+  date_source: arxiv
 - id: jiang2024dualgs
   title: 'DualGS: Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric
     Videos'
