@@ -1542,6 +1542,40 @@
   - Video
   thumbnail: assets/thumbnails/kong2024dgsslam.jpg
   publication_date: '2024-11-16T07:02:46+00:00'
+- id: svitov2024billboard
+  title: 'BillBoard Splatting (BBSplat): Learnable Textured Primitives for Novel View
+    Synthesis'
+  authors: David Svitov, Pietro Morerio, Lourdes Agapito, Alessio Del Bue
+  year: '2024'
+  abstract: 'We present billboard Splatting (BBSplat) - a novel approach for 3D scene
+    representation based on textured geometric primitives. BBSplat represents the
+    scene as a set of optimizable textured planar primitives with learnable RGB textures
+    and alpha-maps to control their shape. BBSplat primitives can be used in any Gaussian
+    Splatting pipeline as drop-in replacements for Gaussians. Our method''s qualitative
+    and quantitative improvements over 3D and 2D Gaussians are most noticeable when
+    fewer primitives are used, when BBSplat achieves over 1200 FPS. Our novel regularization
+    term encourages textures to have a sparser structure, unlocking an efficient compression
+    that leads to a reduction in storage space of the model. Our experiments show
+    the efficiency of BBSplat on standard datasets of real indoor and outdoor scenes
+    such as Tanks&Temples, DTU, and Mip-NeRF-360. We demonstrate improvements on PSNR,
+    SSIM, and LPIPS metrics compared to the state-of-the-art, especially for the case
+    when fewer primitives are used, which, on the other hand, leads to up to 2 times
+    inference speed improvement for the same rendering quality.
+
+    '
+  project_page: https://david-svitov.github.io/BBSplat_project_page/
+  paper: https://arxiv.org/pdf/2411.08508.pdf
+  code: https://github.com/david-svitov/BBSplat
+  video: https://youtu.be/uRM7WFo5vVg
+  tags:
+  - Code
+  - Optimization
+  - Project
+  - Texturing
+  - Video
+  thumbnail: assets/thumbnails/svitov2024billboard.jpg
+  publication_date: '2024-11-13T10:43:39+00:00'
+  date_source: arxiv
 - id: wang2024mbaslam
   title: 'MBA-SLAM: Motion Blur Aware Dense Visual SLAM with Radiance Fields Representation'
   authors: Peng Wang, Lingzhe Zhao, Yin Zhang, Shiyu Zhao, Peidong Liu
