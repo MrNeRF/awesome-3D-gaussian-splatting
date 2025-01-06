@@ -622,6 +622,37 @@
   - World Generation
   thumbnail: assets/thumbnails/jambon2024interactive.jpg
   publication_date: '2024-12-20T04:39:50+00:00'
+- id: shen2024solidgs
+  title: 'SolidGS: Consolidating Gaussian Surfel Splatting for Sparse-View Surface
+    Reconstruction'
+  authors: Zhuowen Shen, Yuan Liu, Zhang Chen, Zhong Li, Jiepeng Wang, Yongqing Liang,
+    Zhengming Yu, Jingdong Zhang, Yi Xu, Scott Schaefer, Xin Li, Wenping Wang
+  year: '2024'
+  abstract: 'Gaussian splatting has achieved impressive improvements for both novel-view
+    synthesis and surface reconstruction from multi-view images. However, current
+    methods still struggle to reconstruct high-quality surfaces from only sparse view
+    input images using Gaussian splatting. In this paper, we propose a novel method
+    called SolidGS to address this problem. We observed that the reconstructed geometry
+    can be severely inconsistent across multi-views, due to the property of Gaussian
+    function in geometry rendering. This motivates us to consolidate all Gaussians
+    by adopting a more solid kernel function, which effectively improves the surface
+    reconstruction quality. With the additional help of geometrical regularization
+    and monocular normal estimation, our method achieves superior performance on the
+    sparse view surface reconstruction than all the Gaussian splatting methods and
+    neural field methods on the widely used DTU, Tanks-and-Temples, and LLFF datasets.
+
+    '
+  project_page: https://mickshen7558.github.io/projects/SolidGS/
+  paper: https://arxiv.org/pdf/2412.15400.pdf
+  code: null
+  video: null
+  tags:
+  - Meshing
+  - Project
+  - Sparse
+  thumbnail: assets/thumbnails/shen2024solidgs.jpg
+  publication_date: '2024-12-19T21:04:43+00:00'
+  date_source: arxiv
 - id: taubner2024cap4d
   title: 'CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View
     Diffusion Models'
