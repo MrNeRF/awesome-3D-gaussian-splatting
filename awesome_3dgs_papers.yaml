@@ -1191,6 +1191,51 @@
   - Robotics
   thumbnail: assets/thumbnails/zubair2024neural.jpg
   publication_date: '2024-10-26T16:26:41+00:00'
+- id: fan2024large
+  title: 'Large Spatial Model: End-to-end Unposed Images to Semantic 3D'
+  authors: Zhiwen Fan, Jian Zhang, Wenyan Cong, Peihao Wang, Renjie Li, Kairun Wen,
+    Shijie Zhou, Achuta Kadambi, Zhangyang Wang, Danfei Xu, Boris Ivanovic, Marco
+    Pavone, Yue Wang
+  year: '2024'
+  abstract: 'Reconstructing and understanding 3D structures from a limited number
+    of images is a well-established problem in computer vision. Traditional methods
+    usually break this task into multiple subtasks, each requiring complex transformations
+    between different data representations. For instance, dense reconstruction through
+    Structure-from-Motion (SfM) involves converting images into key points, optimizing
+    camera parameters, and estimating structures. Afterward, accurate sparse reconstructions
+    are required for further dense modeling, which is subsequently fed into task-specific
+    neural networks. This multi-step process results in considerable processing time
+    and increased engineering complexity. In this work, we present the Large Spatial
+    Model (LSM), which processes unposed RGB images directly into semantic radiance
+    fields. LSM simultaneously estimates geometry, appearance, and semantics in a
+    single feed-forward operation, and it can generate versatile label maps by interacting
+    with language at novel viewpoints. Leveraging a Transformer-based architecture,
+    LSM integrates global geometry through pixel-aligned point maps. To enhance spatial
+    attribute regression, we incorporate local context aggregation with multi-scale
+    fusion, improving the accuracy of fine local details. To tackle the scarcity of
+    labeled 3D semantic data and enable natural language-driven scene manipulation,
+    we incorporate a pre-trained 2D language-based segmentation model into a 3D-consistent
+    semantic feature field. An efficient decoder then parameterizes a set of semantic
+    anisotropic Gaussians, facilitating supervised end-to-end learning. Extensive
+    experiments across various tasks show that LSM unifies multiple 3D vision tasks
+    directly from unposed images, achieving real-time semantic 3D reconstruction for
+    the first time.
+
+    '
+  project_page: https://largespatialmodel.github.io/
+  paper: https://arxiv.org/pdf/2410.18956.pdf
+  code: https://github.com/NVlabs/LSM
+  video: https://largespatialmodel.github.io/static/videos/LSM_demo1.mp4
+  tags:
+  - Code
+  - Feed-Forward
+  - Poses
+  - Project
+  - Segmentation
+  - Video
+  thumbnail: assets/thumbnails/fan2024large.jpg
+  publication_date: '2024-10-24T17:54:42+00:00'
+  date_source: arxiv
 - id: lee2024fully
   title: Fully Explicit Dynamic Gaussian Splatting
   authors: Junoh Lee, Changyeon Won, HyunJun Jung, Inhwan Bae, Hae-Gon Jeon

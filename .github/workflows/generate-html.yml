@@ -1,22 +1,19 @@
-name: Validate YAML and Generate HTML
+name: Generate HTML on Main
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
     paths:
       - 'awesome_3dgs_papers.yaml'
 
 jobs:
-  validate-and-build:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     
     steps:
     - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0  # Fetch all history for PR comparison
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -28,30 +25,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Validate Changed YAML entries
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PR_NUMBER: ${{ github.event.pull_request.number }}
-        REPO: ${{ github.repository }}
-      run: |
-        python src/validate_yaml.py
-
     - name: Generate HTML
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
     - name: Commit and push if changed
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git fetch origin
-        git checkout ${{ github.head_ref }}
         git add index.html
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update index.html"
-          git push origin ${{ github.head_ref }}
-        fi
+        git diff --staged --quiet || (git commit -m "Update index.html" && git push)
