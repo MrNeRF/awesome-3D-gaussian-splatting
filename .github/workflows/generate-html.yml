@@ -11,6 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Test Token Authentication
+      env:
+        GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+      run: |
+        echo "Testing authentication with GitHub API..."
+        curl -H "Authorization: token ${GITHUB_TOKEN}" https://api.github.com/user
+
     - uses: actions/checkout@v3
       with:
         token: ${{ secrets.BOT_PAT }}
@@ -29,36 +36,12 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Debug Info
-      env:
-        GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
-      run: |
-        echo "Repository: $GITHUB_REPOSITORY"
-        echo "Actor: $GITHUB_ACTOR"
-        # Test token validity (this will only show if token starts with)
-        echo "Token starts with: ${GITHUB_TOKEN:0:4}..."
-        # Test git config
-        git config --get remote.origin.url || echo "No remote URL"
-        git config --list
-
     - name: Commit and push if changed
       env:
         GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
       run: |
-        git config --local user.email "MrNeRF-bot@users.noreply.github.com"
-        git config --local user.name "MrNeRF-bot"
-        # Add debug output for the remote URL we're about to set
-        echo "Setting remote URL..."
-        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        echo "Remote URL set."
-        git remote -v
-        
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git remote set-url origin https://oauth2:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         git add index.html
-        if ! git diff --staged --quiet; then
-          echo "Changes detected, committing..."
-          git commit -m "Update index.html"
-          echo "Pushing changes..."
-          git push -v
-        else
-          echo "No changes detected"
-        fi
+        git diff --staged --quiet || (git commit -m "Update index.html" && git push)
