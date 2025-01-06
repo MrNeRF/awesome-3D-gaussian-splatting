@@ -10705,27 +10705,25 @@
     Reconstruction via Semantic-Aware Grouping'
   authors: Tengfei Wang, Xin Wang, Yongmao Hou, Yiwei Xu, Wendi Zhang, Zongqian Zhan
   year: '2025'
-  abstract: '3D Gaussian Splatting (3DGS) has emerged as a transformative method in
-    the
-    field of real-time novel synthesis. Based on 3DGS, recent advancements cope
-    with large-scale scenes via spatial-based partition strategy to reduce video
-    memory and optimization time costs. In this work, we introduce a parallel
-    Gaussian splatting method, termed PG-SAG, which fully exploits semantic cues
-    for both partitioning and Gaussian kernel optimization, enabling fine-grained
-    building surface reconstruction of large-scale urban areas without downsampling
-    the original image resolution. First, the Cross-modal model - Language Segment
-    Anything is leveraged to segment building masks. Then, the segmented building
-    regions is grouped into sub-regions according to the visibility check across
-    registered images. The Gaussian kernels for these sub-regions are optimized in
-    parallel with masked pixels. In addition, the normal loss is re-formulated for
-    the detected edges of masks to alleviate the ambiguities in normal vectors on
-    edges. Finally, to improve the optimization of 3D Gaussians, we introduce a
-    gradient-constrained balance-load loss that accounts for the complexity of the
-    corresponding scenes, effectively minimizing the thread waiting time in the
-    pixel-parallel rendering stage as well as the reconstruction lost. Extensive
-    experiments are tested on various urban datasets, the results demonstrated the
-    superior performance of our PG-SAG on building surface reconstruction, compared
-    to several state-of-the-art 3DGS-based methods.'
+  abstract: 3D Gaussian Splatting (3DGS) has emerged as a transformative method in
+    the field of real-time novel synthesis. Based on 3DGS, recent advancements cope
+    with large-scale scenes via spatial-based partition strategy to reduce video memory
+    and optimization time costs. In this work, we introduce a parallel Gaussian splatting
+    method, termed PG-SAG, which fully exploits semantic cues for both partitioning
+    and Gaussian kernel optimization, enabling fine-grained building surface reconstruction
+    of large-scale urban areas without downsampling the original image resolution.
+    First, the Cross-modal model - Language Segment Anything is leveraged to segment
+    building masks. Then, the segmented building regions is grouped into sub-regions
+    according to the visibility check across registered images. The Gaussian kernels
+    for these sub-regions are optimized in parallel with masked pixels. In addition,
+    the normal loss is re-formulated for the detected edges of masks to alleviate
+    the ambiguities in normal vectors on edges. Finally, to improve the optimization
+    of 3D Gaussians, we introduce a gradient-constrained balance-load loss that accounts
+    for the complexity of the corresponding scenes, effectively minimizing the thread
+    waiting time in the pixel-parallel rendering stage as well as the reconstruction
+    lost. Extensive experiments are tested on various urban datasets, the results
+    demonstrated the superior performance of our PG-SAG on building surface reconstruction,
+    compared to several state-of-the-art 3DGS-based methods.
   project_page: null
   paper: https://arxiv.org/pdf/2501.01677.pdf
   code: null
@@ -10741,30 +10739,28 @@
   authors: Xudong Cai, Yongcai Wang, Zhaoxin Fan, Deng Haoran, Shuo Wang, Wanting
     Li, Deying Li, Lun Luo, Minhang Wang, Jintao Xu
   year: '2024'
-  abstract: 'Photo-realistic scene reconstruction from sparse-view, uncalibrated images
-    is
-    highly required in practice. Although some successes have been made, existing
-    methods are either Sparse-View but require accurate camera parameters (i.e.,
-    intrinsic and extrinsic), or SfM-free but need densely captured images. To
-    combine the advantages of both methods while addressing their respective
-    weaknesses, we propose Dust to Tower (D2T), an accurate and efficient
-    coarse-to-fine framework to optimize 3DGS and image poses simultaneously from
-    sparse and uncalibrated images. Our key idea is to first construct a coarse
-    model efficiently and subsequently refine it using warped and inpainted images
-    at novel viewpoints. To do this, we first introduce a Coarse Construction
-    Module (CCM) which exploits a fast Multi-View Stereo model to initialize a 3D
-    Gaussian Splatting (3DGS) and recover initial camera poses. To refine the 3D
-    model at novel viewpoints, we propose a Confidence Aware Depth Alignment (CADA)
-    module to refine the coarse depth maps by aligning their confident parts with
-    estimated depths by a Mono-depth model. Then, a Warped Image-Guided Inpainting
-    (WIGI) module is proposed to warp the training images to novel viewpoints by
-    the refined depth maps, and inpainting is applied to fulfill the ``holes" in
-    the warped images caused by view-direction changes, providing high-quality
-    supervision to further optimize the 3D model and the camera poses. Extensive
-    experiments and ablation studies demonstrate the validity of D2T and its design
-    choices, achieving state-of-the-art performance in both tasks of novel view
-    synthesis and pose estimation while keeping high efficiency. Codes will be
-    publicly available.'
+  abstract: Photo-realistic scene reconstruction from sparse-view, uncalibrated images
+    is highly required in practice. Although some successes have been made, existing
+    methods are either Sparse-View but require accurate camera parameters (i.e., intrinsic
+    and extrinsic), or SfM-free but need densely captured images. To combine the advantages
+    of both methods while addressing their respective weaknesses, we propose Dust
+    to Tower (D2T), an accurate and efficient coarse-to-fine framework to optimize
+    3DGS and image poses simultaneously from sparse and uncalibrated images. Our key
+    idea is to first construct a coarse model efficiently and subsequently refine
+    it using warped and inpainted images at novel viewpoints. To do this, we first
+    introduce a Coarse Construction Module (CCM) which exploits a fast Multi-View
+    Stereo model to initialize a 3D Gaussian Splatting (3DGS) and recover initial
+    camera poses. To refine the 3D model at novel viewpoints, we propose a Confidence
+    Aware Depth Alignment (CADA) module to refine the coarse depth maps by aligning
+    their confident parts with estimated depths by a Mono-depth model. Then, a Warped
+    Image-Guided Inpainting (WIGI) module is proposed to warp the training images
+    to novel viewpoints by the refined depth maps, and inpainting is applied to fulfill
+    the ``holes" in the warped images caused by view-direction changes, providing
+    high-quality supervision to further optimize the 3D model and the camera poses.
+    Extensive experiments and ablation studies demonstrate the validity of D2T and
+    its design choices, achieving state-of-the-art performance in both tasks of novel
+    view synthesis and pose estimation while keeping high efficiency. Codes will be
+    publicly available.
   project_page: null
   paper: https://arxiv.org/pdf/2412.19518.pdf
   code: null
@@ -10778,32 +10774,72 @@
   title: Reflective Gaussian Splatting
   authors: Yuxuan Yao, Zixuan Zeng, Chun Gu, Xiatian Zhu, Li Zhang
   year: '2024'
-  abstract: |-
-    Novel view synthesis has experienced significant advancements owing to
+  abstract: 'Novel view synthesis has experienced significant advancements owing to
     increasingly capable NeRF- and 3DGS-based methods. However, reflective object
-    reconstruction remains challenging, lacking a proper solution to achieve
-    real-time, high-quality rendering while accommodating inter-reflection. To fill
-    this gap, we introduce a Reflective Gaussian splatting (\textbf{Ref-Gaussian})
-    framework characterized with two components: (I) {\em Physically based deferred
-    rendering} that empowers the rendering equation with pixel-level material
-    properties via formulating split-sum approximation; (II) {\em Gaussian-grounded
-    inter-reflection} that realizes the desired inter-reflection function within a
-    Gaussian splatting paradigm for the first time. To enhance geometry modeling,
-    we further introduce material-aware normal propagation and an initial
-    per-Gaussian shading stage, along with 2D Gaussian primitives. Extensive
-    experiments on standard datasets demonstrate that Ref-Gaussian surpasses
-    existing approaches in terms of quantitative metrics, visual quality, and
-    compute efficiency. Further, we show that our method serves as a unified
-    solution for both reflective and non-reflective scenes, going beyond the
-    previous alternatives focusing on only reflective scenes. Also, we illustrate
+    reconstruction remains challenging, lacking a proper solution to achieve real-time,
+    high-quality rendering while accommodating inter-reflection. To fill this gap,
+    we introduce a Reflective Gaussian splatting (\textbf{Ref-Gaussian}) framework
+    characterized with two components: (I) {\em Physically based deferred rendering}
+    that empowers the rendering equation with pixel-level material properties via
+    formulating split-sum approximation; (II) {\em Gaussian-grounded inter-reflection}
+    that realizes the desired inter-reflection function within a Gaussian splatting
+    paradigm for the first time. To enhance geometry modeling, we further introduce
+    material-aware normal propagation and an initial per-Gaussian shading stage, along
+    with 2D Gaussian primitives. Extensive experiments on standard datasets demonstrate
+    that Ref-Gaussian surpasses existing approaches in terms of quantitative metrics,
+    visual quality, and compute efficiency. Further, we show that our method serves
+    as a unified solution for both reflective and non-reflective scenes, going beyond
+    the previous alternatives focusing on only reflective scenes. Also, we illustrate
     that Ref-Gaussian supports more applications such as relighting and editing.
+
+    '
   project_page: https://fudan-zvg.github.io/ref-gaussian/
   paper: https://arxiv.org/pdf/2412.19282.pdf
   code: null
   video: null
+  thumbnail_image: false
+  thumbnail_video: false
   tags:
   - Meshing
   - Project
   - Ray Tracing
   - Relight
   thumbnail: assets/thumbnails/yao2024reflective.jpg
+- id: huang2025enerverse
+  title: 'EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation'
+  authors: Siyuan Huang, Liliang Chen, Pengfei Zhou, Shengcong Chen, Zhengkai Jiang,
+    Yue Hu, Peng Gao, Hongsheng Li, Maoqing Yao, Guanghui Ren
+  year: '2025'
+  abstract: 'We introduce EnerVerse, a comprehensive framework for embodied future
+    space generation specifically designed for robotic manipulation tasks. EnerVerse
+    seamlessly integrates convolutional and bidirectional attention mechanisms for
+    inner-chunk space modeling, ensuring low-level consistency and continuity. Recognizing
+    the inherent redundancy in video data, we propose a sparse memory context combined
+    with a chunkwise unidirectional generative paradigm to enable the generation of
+    infinitely long sequences. To further augment robotic capabilities, we introduce
+    the Free Anchor View (FAV) space, which provides flexible perspectives to enhance
+    observation and analysis. The FAV space mitigates motion modeling ambiguity, removes
+    physical constraints in confined environments, and significantly improves the
+    robot''s generalization and adaptability across various tasks and settings. To
+    address the prohibitive costs and labor intensity of acquiring multi-camera observations,
+    we present a data engine pipeline that integrates a generative model with 4D Gaussian
+    Splatting (4DGS). This pipeline leverages the generative model''s robust generalization
+    capabilities and the spatial constraints provided by 4DGS, enabling an iterative
+    enhancement of data quality and diversity, thus creating a data flywheel effect
+    that effectively narrows the sim-to-real gap. Finally, our experiments demonstrate
+    that the embodied future space generation prior substantially enhances policy
+    predictive capabilities, resulting in improved overall performance, particularly
+    in long-range robotic manipulation tasks.
+
+    '
+  project_page: https://sites.google.com/view/enerverse
+  paper: https://arxiv.org/pdf/2501.01895.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Dynamic
+  - Project
+  - Robotics
+  thumbnail: assets/thumbnails/huang2025enerverse.jpg
