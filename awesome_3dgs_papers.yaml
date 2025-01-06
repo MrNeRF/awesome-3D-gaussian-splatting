@@ -10843,3 +10843,71 @@
   - Project
   - Robotics
   thumbnail: assets/thumbnails/huang2025enerverse.jpg
+- id: wang2024sgsplatting
+  title: 'SG-Splatting: Accelerating 3D Gaussian Splatting with Spherical Gaussians'
+  authors: Yiwen Wang, Siyuan Chen, Ran Yi
+  year: '2024'
+  abstract: '3D Gaussian Splatting is emerging as a state-of-the-art technique in
+    novel view synthesis, recognized for its impressive balance between visual quality,
+    speed, and rendering efficiency. However, reliance on third-degree spherical harmonics
+    for color representation introduces significant storage demands and computational
+    overhead, resulting in a large memory footprint and slower rendering speed. We
+    introduce SG-Splatting with Spherical Gaussians based color representation, a
+    novel approach to enhance rendering speed and quality in novel view synthesis.
+    Our method first represents view-dependent color using Spherical Gaussians, instead
+    of three degree spherical harmonics, which largely reduces the number of parameters
+    used for color representation, and significantly accelerates the rendering process.
+    We then develop an efficient strategy for organizing multiple Spherical Gaussians,
+    optimizing their arrangement to achieve a balanced and accurate scene representation.
+    To further improve rendering quality, we propose a mixed representation that combines
+    Spherical Gaussians with low-degree spherical harmonics, capturing both high-
+    and low-frequency color information effectively. SG-Splatting also has plug-and-play
+    capability, allowing it to be easily integrated into existing systems. This approach
+    improves computational efficiency and overall visual fidelity, making it a practical
+    solution for real-time applications.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.00342.pdf
+  code: null
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Acceleration
+  thumbnail: assets/thumbnails/wang2024sgsplatting.jpg
+- id: qian2024weathergs
+  title: 'WeatherGS: 3D Scene Reconstruction in Adverse Weather Conditions via Gaussian
+    Splatting'
+  authors: Chenghao Qian, Yuhu Guo, Wenjing Li, Gustav Markkula
+  year: '2024'
+  abstract: 3D Gaussian Splatting (3DGS) has gained significant attention for 3D scene
+    reconstruction, but still suffers from complex outdoor environments, especially
+    under adverse weather. This is because 3DGS treats the artifacts caused by adverse
+    weather as part of the scene and will directly reconstruct them, largely reducing
+    the clarity of the reconstructed scene. To address this challenge, we propose
+    WeatherGS, a 3DGS-based framework for reconstructing clear scenes from multi-view
+    images under different weather conditions. Specifically, we explicitly categorize
+    the multi-weather artifacts into the dense particles and lens occlusions that
+    have very different characters, in which the former are caused by snowflakes and
+    raindrops in the air, and the latter are raised by the precipitation on the camera
+    lens. In light of this, we propose a dense-to-sparse preprocess strategy, which
+    sequentially removes the dense particles by an Atmospheric Effect Filter (AEF)
+    and then extracts the relatively sparse occlusion masks with a Lens Effect Detector
+    (LED). Finally, we train a set of 3D Gaussians by the processed images and generated
+    masks for excluding occluded areas, and accurately recover the underlying clear
+    scene by Gaussian splatting. We conduct a diverse and challenging benchmark to
+    facilitate the evaluation of 3D reconstruction under complex weather scenarios.
+    Extensive experiments on this benchmark demonstrate that our WeatherGS consistently
+    produces high-quality, clean scenes across various weather scenarios, outperforming
+    existing state-of-the-art methods.
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.18862.pdf
+  code: https://github.com/Jumponthemoon/WeatherGS
+  video: null
+  thumbnail_image: false
+  thumbnail_video: false
+  tags:
+  - Code
+  - In the Wild
+  thumbnail: assets/thumbnails/qian2024weathergs.jpg
