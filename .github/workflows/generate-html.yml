@@ -1,21 +1,22 @@
 name: Generate HTML
 
 on:
+  pull_request:
+    types: [closed]
   push:
     branches: [ main ]
-    paths:
-      - 'awesome_3dgs_papers.yaml'
 
 jobs:
   build:
+    # Only run if the PR was merged or if it's a direct push to main
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     
     steps:
     - uses: actions/checkout@v3
-      with:
-        ref: main
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -31,13 +32,16 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Commit and Push
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        if ! git diff --quiet index.html; then
-          git add index.html
-          git commit -m "Auto-update index.html from YAML changes [skip ci]"
-          git push origin main
-        fi
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Update generated HTML
+        title: Update generated HTML
+        body: |
+          Auto-generated PR to update the HTML based on recent YAML changes.
+          
+          This PR was automatically created by the Generate HTML workflow.
+        branch: update-html
+        base: main
+        delete-branch: true
