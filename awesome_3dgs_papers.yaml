@@ -11234,3 +11234,32 @@
   - Project
   thumbnail: assets/thumbnails/blattmann2023align.jpg
   publication_date: '2023-04-18T08:30:32+00:00'
+- id: kheradmand20243d
+  title: 3D Gaussian Splatting as Markov Chain Monte Carlo
+  authors: Shakiba Kheradmand, Daniel Rebain, Gopal Sharma, Weiwei Sun, Jeff Tseng, Hossam Isack, Abhishek Kar, Andrea Tagliasacchi, Kwang Moo Yi
+  year: '2024'
+  abstract: >
+    While 3D Gaussian Splatting has recently become popular for neural rendering,
+    current methods rely on carefully engineered cloning and splitting strategies
+    for placing Gaussians, which can lead to poor-quality renderings, and reliance
+    on a good initialization. In this work, we rethink the set of 3D Gaussians as a
+    random sample drawn from an underlying probability distribution describing the
+    physical representation of the scene-in other words, Markov Chain Monte Carlo
+    (MCMC) samples. Under this view, we show that the 3D Gaussian updates can be
+    converted as Stochastic Gradient Langevin Dynamics (SGLD) updates by simply
+    introducing noise. We then rewrite the densification and pruning strategies in
+    3D Gaussian Splatting as simply a deterministic state transition of MCMC
+    samples, removing these heuristics from the framework. To do so, we revise the
+    'cloning' of Gaussians into a relocalization scheme that approximately preserves
+    sample probability. To encourage efficient use of Gaussians, we introduce a
+    regularizer that promotes the removal of unused Gaussians. On various standard
+    evaluation scenes, we show that our method provides improved rendering quality,
+    easy control over the number of Gaussians, and robustness to initialization.
+  project_page: https://ubc-vision.github.io/3dgs-mcmc/
+  paper: https://arxiv.org/pdf/2404.09591.pdf
+  code: https://github.com/MrNeRF/awesome-3d-gaussian-splatting
+  video: null
+  tags:
+  - Densification
+  - Year 2024
+  thumbnail: assets/thumbnails/kheradmand20243d.jpg
