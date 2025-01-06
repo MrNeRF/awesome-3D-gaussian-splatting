@@ -2,25 +2,21 @@ name: Generate HTML
 
 on:
   pull_request:
-    paths:
-      - 'awesome_3dgs_papers.yaml'
+    types: [closed]
   push:
     branches: [ main ]
-    paths:
-      - 'awesome_3dgs_papers.yaml'
 
 jobs:
   build:
+    # Only run if the PR was merged or if it's a direct push to main
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-      issues: write
     
     steps:
     - uses: actions/checkout@v3
-      with:
-        ref: main
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -36,40 +32,16 @@ jobs:
       run: |
         python src/generate.py awesome_3dgs_papers.yaml index.html
 
-    - name: Create Update Branch and Commit Changes
-      run: |
-        # Configure git
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        # Create or update the branch
-        git checkout -B update-html
-        
-        # Stage and commit changes
-        git add index.html
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-          exit 0
-        fi
-        
-        # Commit and force push to update-html branch
-        git commit -m "Auto-generate index.html"
-        git push -f origin update-html
-
     - name: Create Pull Request
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        # Check if PR already exists
-        pr_exists=$(gh pr list --head update-html --base main --json number --jq 'length')
-        
-        if [ "$pr_exists" = "0" ]; then
-          # Create PR if it doesn't exist
-          gh pr create \
-            --title "Update generated HTML" \
-            --body "This is an automatically maintained PR that keeps the generated HTML in sync with YAML changes." \
-            --base main \
-            --head update-html || echo "Failed to create PR, may already exist"
-        else
-          echo "PR already exists, skipping creation"
-        fi
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Update generated HTML
+        title: Update generated HTML
+        body: |
+          Auto-generated PR to update the HTML based on recent YAML changes.
+          
+          This PR was automatically created by the Generate HTML workflow.
+        branch: update-html
+        base: main
+        delete-branch: true
