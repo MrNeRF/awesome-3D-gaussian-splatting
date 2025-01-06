@@ -1442,6 +1442,27 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="chen2024feat2gs" data-title="Feat2GS: Probing Visual Foundation Models with Gaussian Splatting" data-authors="Yue Chen, Xingyu Chen, Anpei Chen, Gerard Pons-Moll, Yuliang Xiu" data-year="2024" data-tags='["Project", "Rendering", "Video", "World Generation"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'chen2024feat2gs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/chen2024feat2gs.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for Feat2GS: Probing Visual Foundation Models with Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Feat2GS: Probing Visual Foundation Models with Gaussian Splatting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yue Chen, Xingyu Chen, Anpei Chen, Gerard Pons-Moll, Yuliang Xiu</p>
+      <div class="paper-tags"><span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Video</span>
+<span class="paper-tag">World Generation</span></div>
+      <div class="paper-links"><a href="https://fanegg.github.io/Feat2GS/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.09606.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://youtu.be/4fT5lzcAJqo" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">Given that visual foundation models (VFMs) are trained on extensive datasets but often limited to 2D images, a natural question arises: how well do they understand the 3D world? With the differences in architecture and training protocols (i.e., objectives, proxy tasks), a unified framework to fairly and comprehensively probe their 3D awareness is urgently needed. Existing works on 3D probing suggest single-view 2.5D estimation (e.g., depth and normal) or two-view sparse 2D correspondence (e.g., matching and tracking). Unfortunately, these tasks ignore texture awareness, and require 3D data as ground-truth, which limits the scale and diversity of their evaluation set. To address these issues, we introduce Feat2GS, which readout 3D Gaussians attributes from VFM features extracted from unposed images. This allows us to probe 3D awareness for geometry and texture via novel view synthesis, without requiring 3D data. Additionally, the disentanglement of 3DGS parameters - geometry ($\boldsymbol{x}, \alpha, \Sigma$) and texture ($\boldsymbol{c}$) - enables separate analysis of texture and geometry awareness. Under Feat2GS, we conduct extensive experiments to probe the 3D awareness of several VFMs, and investigate the ingredients that lead to a 3D aware VFM. Building on these findings, we develop several variants that achieve state-of-the-art across diverse datasets. This makes Feat2GS useful for probing VFMs, and as a simple-yet-effective baseline for novel-view synthesis.
+</div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="li2024simavatar" data-title="SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing" data-authors="Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles Macklin, Jan Kautz, Umar Iqbal" data-year="2024" data-tags='["Avatar", "Diffusion", "Language Embedding", "Project", "Video"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'li2024simavatar', this)">
@@ -1500,6 +1521,65 @@ h1 {
       <div class="paper-links"><a href="https://microsoft.github.io/GASP/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.07739" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://www.youtube.com/watch?v=3oWB7-UJUYE" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
       <button class="abstract-toggle">Show Abstract</button>
 <div class="paper-abstract">Gaussian Splatting has changed the game for real-time photo-realistic rendering. One of the most popular applications of Gaussian Splatting is to create animatable avatars, known as Gaussian Avatars. Recent works have pushed the boundaries of quality and rendering efficiency but suffer from two main limitations. Either they require expensive multi-camera rigs to produce avatars with free-view rendering, or they can be trained with a single camera but only rendered at high quality from this fixed viewpoint. An ideal model would be trained using a short monocular video or image from available hardware, such as a webcam, and rendered from any view. To this end, we propose GASP: Gaussian Avatars with Synthetic Priors. To overcome the limitations of existing datasets, we exploit the pixel-perfect nature of synthetic data to train a Gaussian Avatar prior. By fitting this prior model to a single photo or video and fine-tuning it, we get a high-quality Gaussian Avatar, which supports 360-degree rendering. Our prior is only required for fitting, not inference, enabling real-time application. Through our method, we obtain high-quality, animatable Avatars from limited data which can be animated and rendered at 70fps on commercial hardware.</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="wang2024faster" data-title="Faster and Better 3D Splatting via Group Training" data-authors="Chengbo Wang, Guozheng Ma, Yifei Xue, Yizhen Lao" data-year="2024" data-tags='["Acceleration", "Densification", "Optimization"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wang2024faster', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wang2024faster.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for Faster and Better 3D Splatting via Group Training" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Faster and Better 3D Splatting via Group Training <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Chengbo Wang, Guozheng Ma, Yifei Xue, Yizhen Lao</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Densification</span>
+<span class="paper-tag">Optimization</span></div>
+      <div class="paper-links"><a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.07608.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3DGS) has emerged as a powerful technique for novel view synthesis, demonstrating remarkable capability in high-fidelity scene reconstruction through its Gaussian primitive representations. However, the computational overhead induced by the massive number of primitives poses a significant bottleneck to training efficiency. To overcome this challenge, we propose Group Training, a simple yet effective strategy that organizes Gaussian primitives into manageable groups, optimizing training efficiency and improving rendering quality. This approach shows universal compatibility with existing 3DGS frameworks, including vanilla 3DGS and Mip-Splatting, consistently achieving accelerated training while maintaining superior synthesis quality. Extensive experiments reveal that our straightforward Group Training strategy achieves up to 30% faster convergence and improved rendering quality across diverse scenarios.
+</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="li2024recap" data-title="ReCap: Better Gaussian Relighting with Cross-Environment Captures" data-authors="Jingzhi Li, Zongwei Wu, Eduard Zamfir, Radu Timofte" data-year="2024" data-tags='["Project", "Relight"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'li2024recap', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/li2024recap.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for ReCap: Better Gaussian Relighting with Cross-Environment Captures" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">ReCap: Better Gaussian Relighting with Cross-Environment Captures <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Jingzhi Li, Zongwei Wu, Eduard Zamfir, Radu Timofte</p>
+      <div class="paper-tags"><span class="paper-tag">Project</span>
+<span class="paper-tag">Relight</span></div>
+      <div class="paper-links"><a href="https://jingzhi.github.io/ReCap/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.07534.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">Accurate 3D objects relighting in diverse unseen environments is crucial for realistic virtual object placement. Due to the albedo-lighting ambiguity, existing methods often fall short in producing faithful relights. Without proper constraints, observed training views can be explained by numerous combinations of lighting and material attributes, lacking physical correspondence with the actual environment maps used for relighting. In this work, we present ReCap, treating cross-environment captures as multi-task target to provide the missing supervision that cuts through the entanglement. Specifically, ReCap jointly optimizes multiple lighting representations that share a common set of material attributes. This naturally harmonizes a coherent set of lighting representations around the mutual material attributes, exploiting commonalities and differences across varied object appearances. Such coherence enables physically sound lighting reconstruction and robust material estimation - both essential for accurate relighting. Together with a streamlined shading function and effective post-processing, ReCap outperforms the leading competitor by 3.4 dB in PSNR on an expanded relighting benchmark.
+</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="guédon2024matcha" data-title="MAtCha Gaussians: Atlas of Charts for High-Quality Geometry and Photorealism From Sparse Views" data-authors="Antoine Guédon, Tomoki Ichikawa, Kohei Yamashita, Ko Nishino" data-year="2024" data-tags='["Meshing", "Project", "Sparse"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'guédon2024matcha', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/guédon2024matcha.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for MAtCha Gaussians: Atlas of Charts for High-Quality Geometry and Photorealism From Sparse Views" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MAtCha Gaussians: Atlas of Charts for High-Quality Geometry and Photorealism From Sparse Views <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Antoine Guédon, Tomoki Ichikawa, Kohei Yamashita, Ko Nishino</p>
+      <div class="paper-tags"><span class="paper-tag">Meshing</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Sparse</span></div>
+      <div class="paper-links"><a href="https://anttwo.github.io/matcha/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2412.06767.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">We present a novel appearance model that simultaneously realizes explicit high-quality 3D surface mesh recovery and photorealistic novel view synthesis from sparse view samples. Our key idea is to model the underlying scene geometry Mesh as an Atlas of Charts which we render with 2D Gaussian surfels (MAtCha Gaussians). MAtCha distills high-frequency scene surface details from an off-the-shelf monocular depth estimator and refines it through Gaussian surfel rendering. The Gaussian surfels are attached to the charts on the fly, satisfying photorealism of neural volumetric rendering and crisp geometry of a mesh model, i.e., two seemingly contradicting goals in a single model. At the core of MAtCha lies a novel neural deformation model and a structure loss that preserve the fine surface details distilled from learned monocular depths while addressing their fundamental scale ambiguities. Results of extensive experimental validation demonstrate MAtCha's state-of-the-art quality of surface reconstruction and photorealism on-par with top contenders but with dramatic reduction in the number of input views and computational time. We believe MAtCha will serve as a foundational tool for any visual application in vision, graphics, and robotics that require explicit geometry in addition to photorealism. Our project page is the following: https://anttwo.github.io/matcha/
+</div>
     </div>
   </div>
 </div>
@@ -1706,6 +1786,28 @@ h1 {
       <div class="paper-links"><a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2411.10722" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://youtu.be/Mq3qZTTcN3E?feature=shared" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
       <button class="abstract-toggle">Show Abstract</button>
 <div class="paper-abstract">We introduce Dynamic Gaussian Splatting SLAM (DGS-SLAM), the first dynamic SLAM framework built on the foundation of Gaussian Splatting. While recent advancements in dense SLAM have leveraged Gaussian Splatting to enhance scene representation, most approaches assume a static environment, making them vulnerable to photometric and geometric inconsistencies caused by dynamic objects. To address these challenges, we integrate Gaussian Splatting SLAM with a robust filtering process to handle dynamic objects throughout the entire pipeline, including Gaussian insertion and keyframe selection. Within this framework, to further improve the accuracy of dynamic object removal, we introduce a robust mask generation method that enforces photometric consistency across keyframes, reducing noise from inaccurate segmentation and artifacts such as shadows. Additionally, we propose the loop-aware window selection mechanism, which utilizes unique keyframe IDs of 3D Gaussians to detect loops between the current and past frames, facilitating joint optimization of the current camera poses and the Gaussian map. DGS-SLAM achieves state-of-the-art performance in both camera tracking and novel view synthesis on various dynamic SLAM benchmarks, proving its effectiveness in handling real-world dynamic scenes.</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="svitov2024billboard" data-title="BillBoard Splatting (BBSplat): Learnable Textured Primitives for Novel View Synthesis" data-authors="David Svitov, Pietro Morerio, Lourdes Agapito, Alessio Del Bue" data-year="2024" data-tags='["Code", "Optimization", "Project", "Texturing", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'svitov2024billboard', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/svitov2024billboard.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for BillBoard Splatting (BBSplat): Learnable Textured Primitives for Novel View Synthesis" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">BillBoard Splatting (BBSplat): Learnable Textured Primitives for Novel View Synthesis <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">David Svitov, Pietro Morerio, Lourdes Agapito, Alessio Del Bue</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Optimization</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Texturing</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://david-svitov.github.io/BBSplat_project_page/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2411.08508.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="https://github.com/david-svitov/BBSplat" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="https://youtu.be/uRM7WFo5vVg" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">We present billboard Splatting (BBSplat) - a novel approach for 3D scene representation based on textured geometric primitives. BBSplat represents the scene as a set of optimizable textured planar primitives with learnable RGB textures and alpha-maps to control their shape. BBSplat primitives can be used in any Gaussian Splatting pipeline as drop-in replacements for Gaussians. Our method's qualitative and quantitative improvements over 3D and 2D Gaussians are most noticeable when fewer primitives are used, when BBSplat achieves over 1200 FPS. Our novel regularization term encourages textures to have a sparser structure, unlocking an efficient compression that leads to a reduction in storage space of the model. Our experiments show the efficiency of BBSplat on standard datasets of real indoor and outdoor scenes such as Tanks&Temples, DTU, and Mip-NeRF-360. We demonstrate improvements on PSNR, SSIM, and LPIPS metrics compared to the state-of-the-art, especially for the case when fewer primitives are used, which, on the other hand, leads to up to 2 times inference speed improvement for the same rendering quality.
+</div>
     </div>
   </div>
 </div>
@@ -1995,6 +2097,28 @@ h1 {
       <div class="paper-links"><a href="https://www.mwg.ink/BEINGS-web" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2409.10216" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="https://github.com/guaMass/BEINGS" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
       <button class="abstract-toggle">Show Abstract</button>
 <div class="paper-abstract">Image-goal navigation enables a robot to reach the location where a target image was captured, using visual cues for guidance. However, current methods either rely heavily on data and computationally expensive learning-based approaches or lack efficiency in complex environments due to insufficient exploration strategies. To address these limitations, we propose Bayesian Embodied Image-goal Navigation Using Gaussian Splatting, a novel method that formulates ImageNav as an optimal control problem within a model predictive control framework. BEINGS leverages 3D Gaussian Splatting as a scene prior to predict future observations, enabling efficient, real-time navigation decisions grounded in the robot’s sensory experiences. By integrating Bayesian updates, our method dynamically refines the robot's strategy without requiring extensive prior experience or data. Our algorithm is validated through extensive simulations and physical experiments, showcasing its potential for embodied robot systems in visually complex scenarios.</div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="li2024pshuman" data-title="PSHuman: Photorealistic Single-view Human Reconstruction using Cross-Scale Diffusion" data-authors="Peng Li, Wangguandong Zheng, Yuan Liu, Tao Yu, Yangguang Li, Xingqun Qi, Mengfei Li, Xiaowei Chi, Siyu Xia, Wei Xue, Wenhan Luo, Qifeng Liu, Yike Guo" data-year="2024" data-tags='["Avatar", "Code", "Diffusion", "Meshing", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'li2024pshuman', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/li2024pshuman.jpg" data-fallback="https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg" alt="Paper thumbnail for PSHuman: Photorealistic Single-view Human Reconstruction using Cross-Scale Diffusion" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">PSHuman: Photorealistic Single-view Human Reconstruction using Cross-Scale Diffusion <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Peng Li, Wangguandong Zheng, Yuan Liu, Tao Yu, Yangguang Li, Xingqun Qi, Mengfei Li, Xiaowei Chi, Siyu Xia, Wei Xue, Wenhan Luo, Qifeng Liu, Yike Guo</p>
+      <div class="paper-tags"><span class="paper-tag">Avatar</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Meshing</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://penghtyx.github.io/PSHuman/" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a> <a href="https://arxiv.org/pdf/2409.10141.pdf" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a> <a href="https://github.com/pengHTYX/PSHuman" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a> <a href="None" class="paper-link" target="_blank" rel="noopener"><i class="fas fa-video"></i> Video</a></div>
+      <button class="abstract-toggle">Show Abstract</button>
+<div class="paper-abstract">Detailed and photorealistic 3D human modeling is essential for various applications and has seen tremendous progress. However, full-body reconstruction from a monocular RGB image remains challenging due to the ill-posed nature of the problem and sophisticated clothing topology with self-occlusions. In this paper, we propose PSHuman, a novel framework that explicitly reconstructs human meshes utilizing priors from the multiview diffusion model. It is found that directly applying multiview diffusion on single-view human images leads to severe geometric distortions, especially on generated faces. To address it, we propose a cross-scale diffusion that models the joint probability distribution of global full-body shape and local facial characteristics, enabling detailed and identity-preserved novel-view generation without any geometric distortion. Moreover, to enhance cross-view body shape consistency of varied human poses, we condition the generative model on parametric models like SMPL-X, which provide body priors and prevent unnatural views inconsistent with human anatomy. Leveraging the generated multi-view normal and color images, we present SMPLX-initialized explicit human carving to recover realistic textured human meshes efficiently. Extensive experimental results and quantitative evaluations on CAPE and THuman2.1 datasets demonstrate PSHumans superiority in geometry details, texture fidelity, and generalization capability.
+</div>
     </div>
   </div>
 </div>
