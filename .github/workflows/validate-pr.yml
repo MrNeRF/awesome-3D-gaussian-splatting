@@ -35,7 +35,3 @@ jobs:
         REPO: ${{ github.repository }}
       run: |
         python src/validate_yaml.py
-
-    - name: Generate HTML (validation only)
-      run: |
-        python src/generate.py awesome_3dgs_papers.yaml index.html
