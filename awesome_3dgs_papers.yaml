@@ -1515,6 +1515,39 @@
   - Project
   thumbnail: assets/thumbnails/ren2024agsmesh.jpg
   publication_date: '2024-11-28T17:04:32+00:00'
+- id: wimmer2024gaussianstolife
+  title: 'Gaussians-to-Life: Text-Driven Animation of 3D Gaussian Splatting Scenes'
+  authors: Thomas Wimmer, Michael Oechsle, Michael Niemeyer, Federico Tombari
+  year: '2024'
+  abstract: 'State-of-the-art novel view synthesis methods achieve impressive results
+    for multi-view captures of static 3D scenes. However, the reconstructed scenes
+    still lack "liveliness," a key component for creating engaging 3D experiences.
+    Recently, novel video diffusion models generate realistic videos with complex
+    motion and enable animations of 2D images, however they cannot naively be used
+    to animate 3D scenes as they lack multi-view consistency. To breathe life into
+    the static world, we propose Gaussians2Life, a method for animating parts of high-quality
+    3D scenes in a Gaussian Splatting representation. Our key idea is to leverage
+    powerful video diffusion models as the generative component of our model and to
+    combine these with a robust technique to lift 2D videos into meaningful 3D motion.
+    We find that, in contrast to prior work, this enables realistic animations of
+    complex, pre-existing 3D scenes and further enables the animation of a large variety
+    of object classes, while related work is mostly focused on prior-based character
+    animation, or single 3D objects. Our model enables the creation of consistent,
+    immersive 3D experiences for arbitrary scenes.
+
+    '
+  project_page: https://wimmerth.github.io/gaussians2life.html
+  paper: https://arxiv.org/pdf/2411.19233.pdf
+  code: https://github.com/wimmerth/gaussians2life
+  video: null
+  tags:
+  - Code
+  - Diffusion
+  - Dynamic
+  - Project
+  thumbnail: assets/thumbnails/wimmer2024gaussianstolife.jpg
+  publication_date: '2024-11-28T16:01:58+00:00'
+  date_source: arxiv
 - id: xu2024supergaussians
   title: 'SuperGaussians: Enhancing Gaussian Splatting Using Primitives with Spatially
     Varying Colors'
