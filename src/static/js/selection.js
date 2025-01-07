@@ -2,20 +2,28 @@ function toggleSelectionMode() {
     state.isSelectionMode = !state.isSelectionMode;
     document.body.classList.toggle('selection-mode', state.isSelectionMode);
 
-    const controls = document.querySelector('.selection-controls');
-    controls.style.display = state.isSelectionMode ? 'flex' : 'none';
+    // Update toggle button icon and tooltip
+    const toggleButton = document.querySelector('.selection-mode-toggle');
+    if (toggleButton) {
+        toggleButton.innerHTML = state.isSelectionMode ? 
+            `<i class="fas fa-times"></i><span class="tooltip">Exit Selection Mode</span>` :
+            `<i class="fas fa-list-check"></i><span class="tooltip">Enter Selection Mode</span>`;
+    }
 
-    const selectionButtons = document.querySelectorAll('[onclick="toggleSelectionMode()"]');
-    selectionButtons.forEach(button => {
-        button.innerHTML = state.isSelectionMode
-            ? '<i class="fas fa-times"></i> Exit Selection Mode'
-            : '<i class="fas fa-check-square"></i> Selection Mode';
-    });
-
+    // Handle visibility of paper cards and update numbers
     if (!state.isSelectionMode && state.onlyShowSelected) {
+        paperCards.forEach(row => row.classList.remove('visible'));
         const baseUrl = window.location.href.split('?')[0];
         window.location.href = baseUrl;
     }
+
+    // Handle checkboxes and selection display
+    if (!state.isSelectionMode) {
+        clearSelection();
+    }
+
+    updateSelectionCount();
+    updateURL();
 }
 
 function clearSelection() {
@@ -31,6 +39,7 @@ function clearSelection() {
 
     if (state.onlyShowSelected) {
         paperCards.forEach(row => row.classList.remove('visible'));
+        updatePaperNumbers();
     }
 }
 
@@ -41,11 +50,11 @@ function togglePaperSelection(paperId, checkbox) {
     const paperRow = paperCard.closest('.paper-row');
 
     if (checkbox.checked) {
-        // Add
+        // Add to selection
         state.selectedPapers.add(paperId);
         paperCard.classList.add('selected');
 
-        // Create preview
+        // Create preview item
         const title = paperRow.getAttribute('data-title');
         const authors = paperRow.getAttribute('data-authors');
         const year = paperRow.getAttribute('data-year');
@@ -54,7 +63,7 @@ function togglePaperSelection(paperId, checkbox) {
         previewItem.className = 'preview-item';
         previewItem.setAttribute('data-paper-id', paperId);
         previewItem.innerHTML = `
-            <div class="preview-content" style="cursor: pointer;" onclick="scrollToPaper('${paperId}')">
+            <div class="preview-content" onclick="scrollToPaper('${paperId}')">
                 <div class="preview-title">${title} (${year})</div>
                 <div class="preview-authors">${authors}</div>
             </div>
