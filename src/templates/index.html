@@ -22,6 +22,41 @@
 </head>
 <body>
     <div class="container">
+        <!-- Selection Mode Toggle Button -->
+        <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
+            <i class="fas fa-check-square"></i>
+        </button>
+
+        <!-- Selection Controls -->
+        <div class="selection-controls">
+            <button class="control-button secondary" onclick="toggleSelectionMode()">
+                <i class="fas fa-times"></i> Exit Selection Mode
+            </button>
+            <div class="selection-counter">0 papers selected</div>
+            <button class="control-button secondary" onclick="clearSelection()">
+                <i class="fas fa-trash"></i> Clear Selection
+            </button>
+            <button class="control-button primary" onclick="showShareModal()">
+                <i class="fas fa-share"></i> Share Selection
+            </button>
+        </div>
+
+        <!-- Selection Preview Bar -->
+        <div class="selection-preview">
+            <div class="preview-header">
+                <span>Selected Papers</span>
+                <div class="preview-controls">
+                    <button class="control-button secondary" onclick="clearSelection()">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                    <button class="control-button primary" onclick="showShareModal()">
+                        <i class="fas fa-share"></i> Share
+                    </button>
+                </div>
+            </div>
+            <div class="preview-container" id="selectionPreview"></div>
+        </div>
+
         <h1>MrNeRF's Awesome-3D-Gaussian-Splatting-Paper-List</h1>
 
         <!-- Donation Box -->
@@ -44,26 +79,6 @@
             <p><strong>Year:</strong> Filter by publication year</p>
             <p><strong>Tags:</strong> Click once to include (blue), twice to exclude (red), third time to remove filter</p>
             <p><strong>Selection:</strong> Use selection mode to pick and share specific papers</p>
-        </div>
-
-        <!-- Selection Controls -->
-        <div class="selection-controls">
-            <button class="control-button secondary" onclick="toggleSelectionMode()">
-                <i class="fas fa-times"></i> Exit Selection Mode
-            </button>
-            <div class="selection-counter">0 papers selected</div>
-            <button class="control-button secondary" onclick="clearSelection()">
-                <i class="fas fa-trash"></i> Clear Selection
-            </button>
-            <button class="control-button primary" onclick="showShareModal()">
-                <i class="fas fa-share"></i> Share Selection
-            </button>
-        </div>
-
-        <!-- Selection Preview -->
-        <div class="selection-preview">
-            <div class="preview-header">Selected Papers</div>
-            <div class="preview-container" id="selectionPreview"></div>
         </div>
 
         <!-- Share Modal -->
@@ -94,9 +109,6 @@
                 <option value="all">All Years</option>
                 ${year_options}
             </select>
-            <button class="control-button secondary" onclick="toggleSelectionMode()">
-                <i class="fas fa-check-square"></i> Selection Mode
-            </button>
         </div>
 
         <!-- Tag Filters -->
