@@ -9608,7 +9608,7 @@
   authors: Yi-Hua Huang, Yang-Tian Sun, Ziyi Yang, Xiaoyang Lyu, Yan-Pei Cao, Xiaojuan
     Qi
   year: '2023'
-  abstract: Novel view synthesis for dynamic scenes is still a challenging problem
+  abstract: 'Novel view synthesis for dynamic scenes is still a challenging problem
     in computer vision and graphics. Recently, Gaussian splatting has emerged as a
     robust technique to represent static scenes and enable high-quality and real-time
     novel view synthesis. Building upon this technique, we propose a new representation
@@ -9630,10 +9630,13 @@
     editing while retaining high-fidelity appearances. Extensive experiments demonstrate
     that our approach outperforms existing approaches on novel view synthesis with
     a high rendering speed and enables novel appearance-preserved motion editing applications.
+    Project page: https://yihua7.github.io/SC-GS-web/
+
+    '
   project_page: https://yihua7.github.io/SC-GS-web/
-  paper: https://arxiv.org/abs/2312.14937
+  paper: https://arxiv.org/pdf/2312.14937.pdf
   code: https://github.com/yihua7/SC-GS
-  video: https://www.youtube.com/watch?v=CYQYX_0xi5E
+  video: https://youtu.be/CYQYX_0xi5E
   tags:
   - Code
   - Dynamic
