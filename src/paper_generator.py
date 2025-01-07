@@ -9,11 +9,11 @@ class PaperCardGenerator:
     
     def __init__(self, templates_dir: Path):
         self.template = TemplateEngine(templates_dir / 'paper_card.html')
-        self.fallback_url = "https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
+        self.fallback_url = "None"
 
     def _generate_link(self, url: str, icon: str, text: str, emoji: str = "") -> str:
         """Generate HTML for a paper link with icon and emoji."""
-        if not url:
+        if not url or url.lower() == 'none':
             return ""
         return (f'<a href="{url}" class="paper-link" target="_blank" rel="noopener">'
                 f'{emoji} {text}</a>')
@@ -22,20 +22,20 @@ class PaperCardGenerator:
         """Generate HTML for all paper links in specified order."""
         links = []
         
-        # Paper link is always first if available
-        if paper.paper:
+        # Paper link is always first if available and valid
+        if paper.paper and paper.paper.lower() != 'none':
             links.append(self._generate_link(paper.paper, "file-alt", "Paper", "📄"))
         
         # Optional links in specific order
-        if paper.project_page:
+        if paper.project_page and paper.project_page.lower() != 'none':
             links.append(self._generate_link(paper.project_page, "globe", "Project", "🌐"))
-        if paper.code:
+        if paper.code and paper.code.lower() != 'none':
             links.append(self._generate_link(paper.code, "code", "Code", "💻"))
-        if paper.video:
+        if paper.video and paper.video.lower() != 'none':
             links.append(self._generate_link(paper.video, "video", "Video", "🎥"))
         
         # Abstract toggle button is always last if there's an abstract
-        if paper.abstract:
+        if paper.abstract and paper.abstract.lower() != 'none':
             links.append('<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>')
             links.append(f'<div class="paper-abstract">{paper.abstract}</div>')
         
