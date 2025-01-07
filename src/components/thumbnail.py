@@ -9,11 +9,11 @@ logger = logging.getLogger(__name__)
 
 class ThumbnailGenerator:
     def __init__(self, output_dir: str = "assets/thumbnails"):
-        """Initialize thumbnail generator with fixed dimensions"""
+        """Initialize thumbnail generator with updated dimensions"""
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
-        self.THUMB_WIDTH = 300
-        self.THUMB_HEIGHT = 424  # Roughly A4 proportion
+        self.THUMB_WIDTH = 360  # Increased from 300 to 360 (20% wider)
+        self.THUMB_HEIGHT = 300  # Adjusted to maintain proportions
 
     def download_pdf(self, url: str) -> bytes:
         """Download PDF with proper headers"""
@@ -27,7 +27,7 @@ class ThumbnailGenerator:
         return response.content
 
     def create_thumbnail(self, pdf_content: bytes, paper_id: str) -> bool:
-        """Create fixed-size thumbnail from PDF content"""
+        """Create thumbnail from PDF content with updated dimensions"""
         try:
             images = convert_from_bytes(
                 pdf_content,
