@@ -1,16 +1,6 @@
-// selection.js
 function toggleSelectionMode() {
     state.isSelectionMode = !state.isSelectionMode;
     document.body.classList.toggle('selection-mode', state.isSelectionMode);
-
-    // Update selection controls visibility
-    const selectionButton = document.querySelector('.selection-mode-toggle');
-    if (selectionButton) {
-        selectionButton.innerHTML = `
-            <i class="fas fa-list-check"></i>
-            <span class="tooltip">Enter Selection Mode</span>
-        `;
-    }
 
     if (!state.isSelectionMode && state.onlyShowSelected) {
         const baseUrl = window.location.href.split('?')[0];

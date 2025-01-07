@@ -24,28 +24,18 @@
     <div class="container">
         <!-- Selection Mode Toggle Button -->
         <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
-            <i class="fas fa-check-square"></i>
+            <i class="fas fa-list-check"></i>
+            <span class="tooltip">Enter Selection Mode</span>
         </button>
-
-        <!-- Selection Controls -->
-        <div class="selection-controls">
-            <button class="control-button secondary" onclick="toggleSelectionMode()">
-                <i class="fas fa-times"></i> Exit Selection Mode
-            </button>
-            <div class="selection-counter">0 papers selected</div>
-            <button class="control-button secondary" onclick="clearSelection()">
-                <i class="fas fa-trash"></i> Clear Selection
-            </button>
-            <button class="control-button primary" onclick="showShareModal()">
-                <i class="fas fa-share"></i> Share Selection
-            </button>
-        </div>
 
         <!-- Selection Preview Bar -->
         <div class="selection-preview">
             <div class="preview-header">
-                <span>Selected Papers</span>
-                <div class="preview-controls">
+                <div class="preview-header-left">
+                    <span>Selected Papers</span>
+                    <span class="selection-counter">0 papers selected</span>
+                </div>
+                <div class="preview-header-right">
                     <button class="control-button secondary" onclick="clearSelection()">
                         <i class="fas fa-trash"></i> Clear
                     </button>
