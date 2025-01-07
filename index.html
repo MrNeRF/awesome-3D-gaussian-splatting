@@ -9268,9 +9268,15 @@ function updateFilterStatus() {
             const tagText = tagEl.getAttribute('data-tag');
             const type = tagEl.classList.contains('include') ? 'Including' : 'Excluding';
             const tagTag = createFilterTag('tag', `${type} Tag`, tagText);
+            
+            // Update the click handler to completely remove the tag
             tagTag.querySelector('button').addEventListener('click', () => {
-                tagEl.click();
+                tagEl.classList.remove('include', 'exclude');
+                state.includeTags.delete(tagText);
+                state.excludeTags.delete(tagText);
+                filterPapers();
             });
+            
             activeFiltersEl.appendChild(tagTag);
         }
     });
@@ -9294,17 +9300,24 @@ function createFilterTag(type, title, info) {
 }
 
 function clearAllFilters() {
+    // Clear search
     document.getElementById('searchInput').value = '';
+    
+    // Reset year filter
     document.getElementById('yearFilter').value = 'all';
     
+    // Clear all tag filters completely (don't toggle through states)
     document.querySelectorAll('.tag-filter').forEach(tag => {
-        if (tag.classList.contains('include') || tag.classList.contains('exclude')) {
-            tag.click();
-        }
+        tag.classList.remove('include', 'exclude');
+        state.includeTags.delete(tag.getAttribute('data-tag'));
+        state.excludeTags.delete(tag.getAttribute('data-tag'));
     });
     
+    // Update the UI
     filterPapers();
+    updateFilterStatus();
 }
+
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
