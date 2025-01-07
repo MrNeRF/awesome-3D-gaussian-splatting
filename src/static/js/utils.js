@@ -22,6 +22,9 @@ function updateURL() {
     }
     if (state.selectedPapers.size > 0) {
         params.set('selected', Array.from(state.selectedPapers).join(','));
+        if (state.onlyShowSelected) {
+            params.set('show_selected', 'true');
+        }
     }
     const newSearch = params.toString() ? `?${params.toString()}` : '';
     window.history.replaceState(

@@ -1154,6 +1154,17 @@ h1 {
                 </a>
             </div>
         </div>
+        <div class="preview-header-right">
+                <button class="control-button secondary show-selected" onclick="toggleSelectedOnly()">
+                    <i class="fas fa-filter"></i> Show Selected Only
+                </button>
+                <button class="control-button secondary" onclick="clearSelection()">
+                    <i class="fas fa-trash"></i> Clear
+                </button>
+                <button class="control-button primary" onclick="showShareModal()">
+                    <i class="fas fa-share"></i> Share
+                </button>
+            </div>
 
         <!-- Filter Info -->
         <div class="filter-info">
@@ -8861,7 +8872,6 @@ and an Optimal Projection Strategy
     excludeTags: new Set(),
     onlyShowSelected: false
 };
-
 function debounce(fn, delay) {
     let timeout;
     return (...args) => {
@@ -8886,6 +8896,9 @@ function updateURL() {
     }
     if (state.selectedPapers.size > 0) {
         params.set('selected', Array.from(state.selectedPapers).join(','));
+        if (state.onlyShowSelected) {
+            params.set('show_selected', 'true');
+        }
     }
     const newSearch = params.toString() ? `?${params.toString()}` : '';
     window.history.replaceState(
@@ -8903,34 +8916,40 @@ function updatePaperNumbers() {
     });
 }
 function filterPapers() {
+    // Show/hide non-paper elements regardless of filter state
+    document.querySelectorAll('.papers-grid > *').forEach(el => {
+        if (!el.classList.contains('paper-row')) {
+            el.style.display = 'block'; // Always show headers, donation box, etc.
+        }
+    });
+
     if (state.onlyShowSelected) {
+        // When showing only selected papers, hide all non-selected papers
         paperCards.forEach(row => {
             const id = row.getAttribute('data-id');
             row.classList.toggle('visible', state.selectedPapers.has(id));
         });
-        updatePaperNumbers();
-        lazyLoadInstance.update();
-        updateURL();
-        return;
+    } else {
+        // Normal filtering
+        const sTerm = searchInput.value.toLowerCase();
+        const selYear = yearFilter.value;
+        
+        paperCards.forEach(row => {
+            const title = row.getAttribute('data-title').toLowerCase();
+            const authors = row.getAttribute('data-authors').toLowerCase();
+            const year = row.getAttribute('data-year');
+            const tags = JSON.parse(row.getAttribute('data-tags'));
+
+            const matchSearch = title.includes(sTerm) || authors.includes(sTerm);
+            const matchYear = (selYear === 'all') || (year === selYear);
+            const matchInc = (state.includeTags.size === 0) || [...state.includeTags].every(t => tags.includes(t));
+            const matchExc = (state.excludeTags.size === 0) || ![...state.excludeTags].some(t => tags.includes(t));
+
+            const visible = matchSearch && matchYear && matchInc && matchExc;
+            row.classList.toggle('visible', visible);
+        });
     }
-
-    // Normal filter
-    const sTerm = searchInput.value.toLowerCase();
-    const selYear = yearFilter.value;
-    paperCards.forEach(row => {
-        const title = row.getAttribute('data-title').toLowerCase();
-        const authors = row.getAttribute('data-authors').toLowerCase();
-        const year = row.getAttribute('data-year');
-        const tags = JSON.parse(row.getAttribute('data-tags'));
-
-        const matchSearch = title.includes(sTerm) || authors.includes(sTerm);
-        const matchYear = (selYear === 'all') || (year === selYear);
-        const matchInc = (state.includeTags.size === 0) || [...state.includeTags].every(t => tags.includes(t));
-        const matchExc = (state.excludeTags.size === 0) || ![...state.excludeTags].some(t => tags.includes(t));
-
-        const visible = matchSearch && matchYear && matchInc && matchExc;
-        row.classList.toggle('visible', visible);
-    });
+    
     updatePaperNumbers();
     lazyLoadInstance.update();
     updateURL();
@@ -8939,7 +8958,6 @@ function filterPapers() {
 function clearSearch() {
     searchInput.value = '';
     filterPapers();
-    updateURL();
 }
 
 function initializeFilters() {
@@ -8960,7 +8978,6 @@ function initializeFilters() {
                 state.excludeTags.delete(tag);
             }
             filterPapers();
-            updateURL();
         });
     });
 
@@ -8970,6 +8987,29 @@ function initializeFilters() {
     // Year filter
     yearFilter.addEventListener('change', filterPapers);
 }
+function toggleSelectedOnly() {
+    state.onlyShowSelected = !state.onlyShowSelected;
+    const button = document.querySelector('.preview-header-right .control-button.show-selected');
+    
+    if (button) {
+        button.innerHTML = state.onlyShowSelected ? 
+            '<i class="fas fa-list"></i> Show All Papers' :
+            '<i class="fas fa-filter"></i> Show Selected Only';
+    }
+    
+    // Update the URL first
+    const url = new URL(window.location.href);
+    if (state.onlyShowSelected) {
+        url.searchParams.set('show_selected', 'true');
+    } else {
+        url.searchParams.delete('show_selected');
+    }
+    window.history.replaceState({}, '', url.toString());
+    
+    // Then update the display
+    filterPapers();
+}
+
 function toggleSelectionMode() {
     state.isSelectionMode = !state.isSelectionMode;
     document.body.classList.toggle('selection-mode', state.isSelectionMode);
@@ -8982,37 +9022,48 @@ function toggleSelectionMode() {
             `<i class="fas fa-list-check"></i><span class="tooltip">Enter Selection Mode</span>`;
     }
 
-    // Handle visibility of paper cards and update numbers
-    if (!state.isSelectionMode && state.onlyShowSelected) {
-        paperCards.forEach(row => row.classList.remove('visible'));
-        const baseUrl = window.location.href.split('?')[0];
-        window.location.href = baseUrl;
-    }
-
-    // Handle checkboxes and selection display
+    // Handle visibility and selection display
     if (!state.isSelectionMode) {
-        clearSelection();
+        if (state.onlyShowSelected) {
+            state.onlyShowSelected = false;
+            const button = document.querySelector('.preview-header-right .control-button.show-selected');
+            if (button) {
+                button.innerHTML = '<i class="fas fa-filter"></i> Show Selected Only';
+            }
+            const url = new URL(window.location.href);
+            url.searchParams.delete('show_selected');
+            window.history.replaceState({}, '', url.toString());
+        }
+        filterPapers();
     }
 
     updateSelectionCount();
-    updateURL();
 }
 
 function clearSelection() {
     state.selectedPapers.clear();
+    state.onlyShowSelected = false;
     document.querySelectorAll('.paper-card').forEach(card => {
         card.classList.remove('selected');
         const checkbox = card.querySelector('.selection-checkbox');
         if (checkbox) checkbox.checked = false;
     });
     document.getElementById('selectionPreview').innerHTML = '';
-    updateSelectionCount();
-    updateURL();
-
-    if (state.onlyShowSelected) {
-        paperCards.forEach(row => row.classList.remove('visible'));
-        updatePaperNumbers();
+    
+    // Update button state
+    const button = document.querySelector('.preview-header-right .control-button.show-selected');
+    if (button) {
+        button.innerHTML = '<i class="fas fa-filter"></i> Show Selected Only';
     }
+    
+    // Update URL and display
+    const url = new URL(window.location.href);
+    url.searchParams.delete('show_selected');
+    url.searchParams.delete('selected');
+    window.history.replaceState({}, '', url.toString());
+    
+    updateSelectionCount();
+    filterPapers();
 }
 
 function togglePaperSelection(paperId, checkbox) {
@@ -9044,15 +9095,13 @@ function togglePaperSelection(paperId, checkbox) {
             </button>
         `;
         document.getElementById('selectionPreview').appendChild(previewItem);
-
-        if (state.onlyShowSelected) {
-            paperRow.classList.add('visible');
-            updatePaperNumbers();
-        }
     } else {
         removeFromSelection(paperId);
     }
     updateSelectionCount();
+    if (state.onlyShowSelected) {
+        filterPapers();
+    }
     updateURL();
 }
 
@@ -9073,13 +9122,10 @@ function removeFromSelection(paperId) {
         }
 
         updateSelectionCount();
-        updateURL();
-
         if (state.onlyShowSelected) {
-            const row = checkbox.closest('.paper-row');
-            row.classList.remove('visible');
-            updatePaperNumbers();
+            filterPapers();
         }
+        updateURL();
     }
 }
 
@@ -9115,6 +9161,11 @@ function showShareModal() {
     }
     const shareUrl = new URL(window.location.href);
     shareUrl.searchParams.set('selected', Array.from(state.selectedPapers).join(','));
+    if (state.onlyShowSelected) {
+        shareUrl.searchParams.set('show_selected', 'true');
+    } else {
+        shareUrl.searchParams.delete('show_selected');
+    }
     document.getElementById('shareUrl').value = shareUrl.toString();
     document.getElementById('shareModal').classList.add('show');
 }
@@ -9153,19 +9204,52 @@ function copyBitcoinAddress() {
 function applyURLParams() {
     const params = new URLSearchParams(window.location.search);
     
-    // Search
+    // First, check if we have selected papers
+    const selPapers = params.get('selected');
+    if (selPapers) {
+        const arr = selPapers.split(',');
+        if (arr.length > 0) {
+            // Enter selection mode
+            if (!state.isSelectionMode) {
+                toggleSelectionMode();
+            }
+            
+            // Select the papers first
+            arr.forEach(id => {
+                const row = document.querySelector(`.paper-row[data-id="${id}"]`);
+                if (row) {
+                    const cb = row.querySelector('.selection-checkbox');
+                    if (cb) {
+                        cb.checked = true;
+                        togglePaperSelection(id, cb);
+                    }
+                }
+            });
+            
+            // Then check if we should show only selected papers
+            const showSelected = params.get('show_selected');
+            if (showSelected === 'true') {
+                state.onlyShowSelected = true;
+                const button = document.querySelector('.preview-header-right .control-button.show-selected');
+                if (button) {
+                    button.innerHTML = '<i class="fas fa-list"></i> Show All Papers';
+                }
+                filterPapers(); // Apply the filter to show only selected papers
+            }
+        }
+    }
+    
+    // Handle other filters
     const searchTerm = params.get('search');
     if (searchTerm) {
         searchInput.value = searchTerm;
     }
     
-    // Year
     const yr = params.get('year');
     if (yr) {
         yearFilter.value = yr;
     }
 
-    // Tags
     const inc = params.get('include');
     if (inc) {
         state.includeTags = new Set(inc.split(','));
@@ -9183,27 +9267,8 @@ function applyURLParams() {
             if (tf) tf.classList.add('exclude');
         });
     }
-
-    // Selection
-    const selPapers = params.get('selected');
-    if (selPapers) {
-        const arr = selPapers.split(',');
-        if (arr.length > 0) {
-            toggleSelectionMode();
-            state.onlyShowSelected = true;
-            arr.forEach(id => {
-                const row = document.querySelector(`.paper-row[data-id="${id}"]`);
-                if (row) {
-                    const cb = row.querySelector('.selection-checkbox');
-                    if (cb) {
-                        cb.checked = true;
-                        togglePaperSelection(id, cb);
-                    }
-                }
-            });
-        }
-    }
     
+    // Final filter application
     filterPapers();
 }
 // Navigation controls

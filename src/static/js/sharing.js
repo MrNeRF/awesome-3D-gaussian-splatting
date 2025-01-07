@@ -5,6 +5,11 @@ function showShareModal() {
     }
     const shareUrl = new URL(window.location.href);
     shareUrl.searchParams.set('selected', Array.from(state.selectedPapers).join(','));
+    if (state.onlyShowSelected) {
+        shareUrl.searchParams.set('show_selected', 'true');
+    } else {
+        shareUrl.searchParams.delete('show_selected');
+    }
     document.getElementById('shareUrl').value = shareUrl.toString();
     document.getElementById('shareModal').classList.add('show');
 }
@@ -43,19 +48,52 @@ function copyBitcoinAddress() {
 function applyURLParams() {
     const params = new URLSearchParams(window.location.search);
     
-    // Search
+    // First, check if we have selected papers
+    const selPapers = params.get('selected');
+    if (selPapers) {
+        const arr = selPapers.split(',');
+        if (arr.length > 0) {
+            // Enter selection mode
+            if (!state.isSelectionMode) {
+                toggleSelectionMode();
+            }
+            
+            // Select the papers first
+            arr.forEach(id => {
+                const row = document.querySelector(`.paper-row[data-id="${id}"]`);
+                if (row) {
+                    const cb = row.querySelector('.selection-checkbox');
+                    if (cb) {
+                        cb.checked = true;
+                        togglePaperSelection(id, cb);
+                    }
+                }
+            });
+            
+            // Then check if we should show only selected papers
+            const showSelected = params.get('show_selected');
+            if (showSelected === 'true') {
+                state.onlyShowSelected = true;
+                const button = document.querySelector('.preview-header-right .control-button.show-selected');
+                if (button) {
+                    button.innerHTML = '<i class="fas fa-list"></i> Show All Papers';
+                }
+                filterPapers(); // Apply the filter to show only selected papers
+            }
+        }
+    }
+    
+    // Handle other filters
     const searchTerm = params.get('search');
     if (searchTerm) {
         searchInput.value = searchTerm;
     }
     
-    // Year
     const yr = params.get('year');
     if (yr) {
         yearFilter.value = yr;
     }
 
-    // Tags
     const inc = params.get('include');
     if (inc) {
         state.includeTags = new Set(inc.split(','));
@@ -73,26 +111,7 @@ function applyURLParams() {
             if (tf) tf.classList.add('exclude');
         });
     }
-
-    // Selection
-    const selPapers = params.get('selected');
-    if (selPapers) {
-        const arr = selPapers.split(',');
-        if (arr.length > 0) {
-            toggleSelectionMode();
-            state.onlyShowSelected = true;
-            arr.forEach(id => {
-                const row = document.querySelector(`.paper-row[data-id="${id}"]`);
-                if (row) {
-                    const cb = row.querySelector('.selection-checkbox');
-                    if (cb) {
-                        cb.checked = true;
-                        togglePaperSelection(id, cb);
-                    }
-                }
-            });
-        }
-    }
     
+    // Final filter application
     filterPapers();
 }

@@ -1,3 +1,26 @@
+function toggleSelectedOnly() {
+    state.onlyShowSelected = !state.onlyShowSelected;
+    const button = document.querySelector('.preview-header-right .control-button.show-selected');
+    
+    if (button) {
+        button.innerHTML = state.onlyShowSelected ? 
+            '<i class="fas fa-list"></i> Show All Papers' :
+            '<i class="fas fa-filter"></i> Show Selected Only';
+    }
+    
+    // Update the URL first
+    const url = new URL(window.location.href);
+    if (state.onlyShowSelected) {
+        url.searchParams.set('show_selected', 'true');
+    } else {
+        url.searchParams.delete('show_selected');
+    }
+    window.history.replaceState({}, '', url.toString());
+    
+    // Then update the display
+    filterPapers();
+}
+
 function toggleSelectionMode() {
     state.isSelectionMode = !state.isSelectionMode;
     document.body.classList.toggle('selection-mode', state.isSelectionMode);
@@ -10,37 +33,48 @@ function toggleSelectionMode() {
             `<i class="fas fa-list-check"></i><span class="tooltip">Enter Selection Mode</span>`;
     }
 
-    // Handle visibility of paper cards and update numbers
-    if (!state.isSelectionMode && state.onlyShowSelected) {
-        paperCards.forEach(row => row.classList.remove('visible'));
-        const baseUrl = window.location.href.split('?')[0];
-        window.location.href = baseUrl;
-    }
-
-    // Handle checkboxes and selection display
+    // Handle visibility and selection display
     if (!state.isSelectionMode) {
-        clearSelection();
+        if (state.onlyShowSelected) {
+            state.onlyShowSelected = false;
+            const button = document.querySelector('.preview-header-right .control-button.show-selected');
+            if (button) {
+                button.innerHTML = '<i class="fas fa-filter"></i> Show Selected Only';
+            }
+            const url = new URL(window.location.href);
+            url.searchParams.delete('show_selected');
+            window.history.replaceState({}, '', url.toString());
+        }
+        filterPapers();
     }
 
     updateSelectionCount();
-    updateURL();
 }
 
 function clearSelection() {
     state.selectedPapers.clear();
+    state.onlyShowSelected = false;
     document.querySelectorAll('.paper-card').forEach(card => {
         card.classList.remove('selected');
         const checkbox = card.querySelector('.selection-checkbox');
         if (checkbox) checkbox.checked = false;
     });
     document.getElementById('selectionPreview').innerHTML = '';
-    updateSelectionCount();
-    updateURL();
-
-    if (state.onlyShowSelected) {
-        paperCards.forEach(row => row.classList.remove('visible'));
-        updatePaperNumbers();
+    
+    // Update button state
+    const button = document.querySelector('.preview-header-right .control-button.show-selected');
+    if (button) {
+        button.innerHTML = '<i class="fas fa-filter"></i> Show Selected Only';
     }
+    
+    // Update URL and display
+    const url = new URL(window.location.href);
+    url.searchParams.delete('show_selected');
+    url.searchParams.delete('selected');
+    window.history.replaceState({}, '', url.toString());
+    
+    updateSelectionCount();
+    filterPapers();
 }
 
 function togglePaperSelection(paperId, checkbox) {
@@ -72,15 +106,13 @@ function togglePaperSelection(paperId, checkbox) {
             </button>
         `;
         document.getElementById('selectionPreview').appendChild(previewItem);
-
-        if (state.onlyShowSelected) {
-            paperRow.classList.add('visible');
-            updatePaperNumbers();
-        }
     } else {
         removeFromSelection(paperId);
     }
     updateSelectionCount();
+    if (state.onlyShowSelected) {
+        filterPapers();
+    }
     updateURL();
 }
 
@@ -101,13 +133,10 @@ function removeFromSelection(paperId) {
         }
 
         updateSelectionCount();
-        updateURL();
-
         if (state.onlyShowSelected) {
-            const row = checkbox.closest('.paper-row');
-            row.classList.remove('visible');
-            updatePaperNumbers();
+            filterPapers();
         }
+        updateURL();
     }
 }
 
