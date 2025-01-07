@@ -22,6 +22,17 @@
 </head>
 <body>
     <div class="container">
+        <!-- Floating Navigation -->
+        <div class="floating-nav">
+            <button onclick="scrollToTop()" aria-label="Scroll to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button onclick="scrollToBottom()" aria-label="Scroll to bottom">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <div class="scroll-progress">0%</div>
+        </div>
+
         <!-- Selection Mode Toggle Button -->
         <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
             <i class="fas fa-list-check"></i>
@@ -45,6 +56,24 @@
                 </div>
             </div>
             <div class="preview-container" id="selectionPreview"></div>
+        </div>
+
+        <!-- Filter Status Bar -->
+        <div class="filter-status">
+            <div class="preview-header">
+                <div class="preview-header-left">
+                    <span>Active Filters</span>
+                    <span class="filter-counter">Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers</span>
+                </div>
+                <div class="preview-header-right">
+                    <button class="control-button secondary" onclick="clearAllFilters()">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                </div>
+            </div>
+            <div class="preview-container" id="activeFilters">
+                <!-- Active filters will be inserted here -->
+            </div>
         </div>
 
         <h1>MrNeRF's Awesome-3D-Gaussian-Splatting-Paper-List</h1>
@@ -112,30 +141,6 @@
         <!-- Paper Cards -->
         <div class="papers-grid">
             ${paper_cards}
-        </div>
-    </div>
-    <div class="floating-nav">
-        <button onclick="scrollToTop()" aria-label="Scroll to top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        <button onclick="scrollToBottom()" aria-label="Scroll to bottom">
-            <i class="fas fa-arrow-down"></i>
-        </button>
-        <div class="scroll-progress">0%</div>
-    </div>
-
-    <!-- Filter Status Bar -->
-    <div class="filter-status">
-        <div class="filter-status-content">
-            <span class="filter-count">
-                Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers
-            </span>
-            <div class="active-filters" id="activeFilters">
-                <!-- Active filters will be inserted here dynamically -->
-            </div>
-            <button class="clear-all" onclick="clearAllFilters()">
-                Clear All
-            </button>
         </div>
     </div>
 

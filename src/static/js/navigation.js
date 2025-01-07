@@ -29,56 +29,59 @@ function updateFilterStatus() {
     document.getElementById('visibleCount').textContent = visiblePapers;
     document.getElementById('totalCount').textContent = totalPapers;
 
-    const searchTerm = document.getElementById('searchInput').value;
-    const yearFilter = document.getElementById('yearFilter').value;
-    const activeTags = Array.from(document.querySelectorAll('.tag-filter'))
-        .filter(tag => tag.classList.contains('include') || tag.classList.contains('exclude'))
-        .map(tag => ({
-            text: tag.getAttribute('data-tag'),
-            type: tag.classList.contains('include') ? 'include' : 'exclude'
-        }));
-
-    const filterStatusEl = document.querySelector('.filter-status');
     const activeFiltersEl = document.getElementById('activeFilters');
     activeFiltersEl.innerHTML = '';
 
-    // Create filter tags
+    // Search filter
+    const searchTerm = document.getElementById('searchInput').value;
     if (searchTerm) {
-        activeFiltersEl.appendChild(createFilterTag('search', `Search: ${searchTerm}`, () => {
+        const searchTag = createFilterTag('search', 'Search Filter', searchTerm);
+        searchTag.querySelector('button').addEventListener('click', () => {
             document.getElementById('searchInput').value = '';
             filterPapers();
-        }));
+        });
+        activeFiltersEl.appendChild(searchTag);
     }
 
+    // Year filter
+    const yearFilter = document.getElementById('yearFilter').value;
     if (yearFilter !== 'all') {
-        activeFiltersEl.appendChild(createFilterTag('year', `Year: ${yearFilter}`, () => {
+        const yearTag = createFilterTag('year', 'Year Filter', yearFilter);
+        yearTag.querySelector('button').addEventListener('click', () => {
             document.getElementById('yearFilter').value = 'all';
             filterPapers();
-        }));
+        });
+        activeFiltersEl.appendChild(yearTag);
     }
 
-    activeTags.forEach(tag => {
-        activeFiltersEl.appendChild(createFilterTag('tag', 
-            `${tag.text} (${tag.type})`,
-            () => document.querySelector(`.tag-filter[data-tag="${tag.text}"]`).click()
-        ));
+    // Tag filters
+    document.querySelectorAll('.tag-filter').forEach(tagEl => {
+        if (tagEl.classList.contains('include') || tagEl.classList.contains('exclude')) {
+            const tagText = tagEl.getAttribute('data-tag');
+            const type = tagEl.classList.contains('include') ? 'Including' : 'Excluding';
+            const tagTag = createFilterTag('tag', `${type} Tag`, tagText);
+            tagTag.querySelector('button').addEventListener('click', () => {
+                tagEl.click();
+            });
+            activeFiltersEl.appendChild(tagTag);
+        }
     });
-
-    // Show/hide filter status bar
-    filterStatusEl.classList.toggle('active', 
-        searchTerm || yearFilter !== 'all' || activeTags.length > 0);
 }
 
-function createFilterTag(type, text, onRemove) {
-    const tag = document.createElement('span');
+function createFilterTag(type, title, info) {
+    const tag = document.createElement('div');
     tag.className = `filter-tag ${type}`;
+    
     tag.innerHTML = `
-        ${text}
-        <button onclick="event.stopPropagation();" aria-label="Remove filter">
+        <div class="filter-tag-content">
+            <div class="filter-tag-title">${title}</div>
+            <div class="filter-tag-info">${info}</div>
+        </div>
+        <button class="preview-remove" onclick="event.stopPropagation();" aria-label="Remove filter">
             <i class="fas fa-times"></i>
         </button>
     `;
-    tag.querySelector('button').addEventListener('click', onRemove);
+    
     return tag;
 }
 
