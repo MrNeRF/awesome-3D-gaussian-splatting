@@ -44,8 +44,8 @@
     visibility: visible;
 }
 
-.selection-mode .selection-mode-toggle {
-    display: none;
+.selection-mode .selection-mode-toggle .tooltip {
+    content: "Exit Selection Mode";
 }
 
 .selection-checkbox {

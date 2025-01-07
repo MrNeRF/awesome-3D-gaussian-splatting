@@ -2,10 +2,28 @@ function toggleSelectionMode() {
     state.isSelectionMode = !state.isSelectionMode;
     document.body.classList.toggle('selection-mode', state.isSelectionMode);
 
+    // Update toggle button icon and tooltip
+    const toggleButton = document.querySelector('.selection-mode-toggle');
+    if (toggleButton) {
+        toggleButton.innerHTML = state.isSelectionMode ? 
+            `<i class="fas fa-times"></i><span class="tooltip">Exit Selection Mode</span>` :
+            `<i class="fas fa-list-check"></i><span class="tooltip">Enter Selection Mode</span>`;
+    }
+
+    // Handle visibility of paper cards and update numbers
     if (!state.isSelectionMode && state.onlyShowSelected) {
+        paperCards.forEach(row => row.classList.remove('visible'));
         const baseUrl = window.location.href.split('?')[0];
         window.location.href = baseUrl;
     }
+
+    // Handle checkboxes and selection display
+    if (!state.isSelectionMode) {
+        clearSelection();
+    }
+
+    updateSelectionCount();
+    updateURL();
 }
 
 function clearSelection() {
