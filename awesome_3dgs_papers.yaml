@@ -1,3 +1,42 @@
+- id: bian2025gsdit
+  title: 'GS-DiT: Advancing Video Generation with Pseudo 4D Gaussian Fields through
+    Efficient Dense 3D Point Tracking'
+  authors: Weikang Bian, Zhaoyang Huang, Xiaoyu Shi, Yijin Li, Fu-Yun Wang, Hongsheng
+    Li
+  year: '2025'
+  abstract: '4D video control is essential in video generation as it enables the use
+    of sophisticated lens techniques, such as multi-camera shooting and dolly zoom,
+    which are currently unsupported by existing methods. Training a video Diffusion
+    Transformer (DiT) directly to control 4D content requires expensive multi-view
+    videos. Inspired by Monocular Dynamic novel View Synthesis (MDVS) that optimizes
+    a 4D representation and renders videos according to different 4D elements, such
+    as camera pose and object motion editing, we bring pseudo 4D Gaussian fields to
+    video generation. Specifically, we propose a novel framework that constructs a
+    pseudo 4D Gaussian field with dense 3D point tracking and renders the Gaussian
+    field for all video frames. Then we finetune a pretrained DiT to generate videos
+    following the guidance of the rendered video, dubbed as GS-DiT. To boost the training
+    of the GS-DiT, we also propose an efficient Dense 3D Point Tracking (D3D-PT) method
+    for the pseudo 4D Gaussian field construction. Our D3D-PT outperforms SpatialTracker,
+    the state-of-the-art sparse 3D point tracking method, in accuracy and accelerates
+    the inference speed by two orders of magnitude. During the inference stage, GS-DiT
+    can generate videos with the same dynamic content while adhering to different
+    camera parameters, addressing a significant limitation of current video generation
+    models. GS-DiT demonstrates strong generalization capabilities and extends the
+    4D controllability of Gaussian splatting to video generation beyond just camera
+    poses. It supports advanced cinematic effects through the manipulation of the
+    Gaussian field and camera intrinsics, making it a powerful tool for creative video
+    production. Demos are available at https://wkbian.github.io/Projects/GS-DiT/.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.02690.pdf
+  code: null
+  video: null
+  tags:
+  - Year 2025
+  thumbnail: assets/thumbnails/bian2025gsdit.jpg
+  publication_date: '2025-01-05T23:55:33+00:00'
+  date_source: arxiv
 - id: huang2025enerverse
   title: 'EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation'
   authors: Siyuan Huang, Liliang Chen, Pengfei Zhou, Shengcong Chen, Zhengkai Jiang,
@@ -9569,7 +9608,7 @@
   authors: Yi-Hua Huang, Yang-Tian Sun, Ziyi Yang, Xiaoyang Lyu, Yan-Pei Cao, Xiaojuan
     Qi
   year: '2023'
-  abstract: Novel view synthesis for dynamic scenes is still a challenging problem
+  abstract: 'Novel view synthesis for dynamic scenes is still a challenging problem
     in computer vision and graphics. Recently, Gaussian splatting has emerged as a
     robust technique to represent static scenes and enable high-quality and real-time
     novel view synthesis. Building upon this technique, we propose a new representation
@@ -9591,10 +9630,13 @@
     editing while retaining high-fidelity appearances. Extensive experiments demonstrate
     that our approach outperforms existing approaches on novel view synthesis with
     a high rendering speed and enables novel appearance-preserved motion editing applications.
+    Project page: https://yihua7.github.io/SC-GS-web/
+
+    '
   project_page: https://yihua7.github.io/SC-GS-web/
-  paper: https://arxiv.org/abs/2312.14937
+  paper: https://arxiv.org/pdf/2312.14937.pdf
   code: https://github.com/yihua7/SC-GS
-  video: https://www.youtube.com/watch?v=CYQYX_0xi5E
+  video: https://youtu.be/CYQYX_0xi5E
   tags:
   - Code
   - Dynamic

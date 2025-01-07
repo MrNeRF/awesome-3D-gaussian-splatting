@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     window.searchInput = document.getElementById('searchInput');
     window.yearFilter = document.getElementById('yearFilter');
     window.tagFilters = document.querySelectorAll('.tag-filter');
+    
+    // Add toggleAbstract to window object so it's globally accessible
+    window.toggleAbstract = function(button) {
+        const abstract = button.nextElementSibling;
+        const isShowing = abstract.classList.toggle('show');
+        button.innerHTML = isShowing ? '📖 Hide Abstract' : '📖 Show Abstract';
+    };
 
     // Initialize LazyLoad
     window.lazyLoadInstance = new LazyLoad({
@@ -42,35 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize abstract toggles
-    document.querySelectorAll('.abstract-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const abstract = btn.nextElementSibling;
-            const open = abstract.classList.toggle('show');
-            btn.textContent = open ? 'Hide Abstract' : 'Show Abstract';
-        });
-    });
-
-    // Initialize browser history handling
-    window.addEventListener('popstate', () => {
-        searchInput.value = '';
-        yearFilter.value = 'all';
-        state.includeTags.clear();
-        state.excludeTags.clear();
-        clearSelection();
-        tagFilters.forEach(tag => {
-            tag.classList.remove('include','exclude');
-        });
-        state.onlyShowSelected = false;
-        applyURLParams();
-    });
+    // Apply URL parameters
+    applyURLParams();
 
     // Show initial papers
     paperCards.forEach(c => c.classList.add('visible'));
     updatePaperNumbers();
-
-    // Apply URL parameters
-    applyURLParams();
 
     // Expose global functions for HTML onclick handlers
     window.copyBitcoinAddress = copyBitcoinAddress;

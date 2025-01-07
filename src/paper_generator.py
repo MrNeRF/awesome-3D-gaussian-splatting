@@ -11,30 +11,35 @@ class PaperCardGenerator:
         self.template = TemplateEngine(templates_dir / 'paper_card.html')
         self.fallback_url = "https://raw.githubusercontent.com/yangcaogit/3DGS-DET/main/assets/teaser.jpg"
 
-    def _generate_link(self, url: str, icon: str, text: str) -> str:
-        """Generate HTML for a paper link with icon."""
-        if not url:  # Skip if URL is None, empty string, or whitespace
+    def _generate_link(self, url: str, icon: str, text: str, emoji: str = "") -> str:
+        """Generate HTML for a paper link with icon and emoji."""
+        if not url:
             return ""
         return (f'<a href="{url}" class="paper-link" target="_blank" rel="noopener">'
-                f'<i class="fas fa-{icon}"></i> {text}</a>')
+                f'{emoji} {text}</a>')
 
     def _generate_links(self, paper: Paper) -> str:
-        """Generate HTML for all paper links."""
+        """Generate HTML for all paper links in specified order."""
         links = []
-        # Helper function to validate non-empty and meaningful URLs
-        def is_valid_url(url):
-            return bool(url and url.strip() and url.startswith(('http://', 'https://')))
-
-        if is_valid_url(paper.project_page):
-            links.append(self._generate_link(paper.project_page, "globe", "Project Page"))
-        if is_valid_url(paper.paper):
-            links.append(self._generate_link(paper.paper, "file-alt", "Paper"))
-        if is_valid_url(paper.code):
-            links.append(self._generate_link(paper.code, "code", "Code"))
-        if is_valid_url(paper.video):
-            links.append(self._generate_link(paper.video, "video", "Video"))
         
-        return " ".join(links)
+        # Paper link is always first if available
+        if paper.paper:
+            links.append(self._generate_link(paper.paper, "file-alt", "Paper", "📄"))
+        
+        # Optional links in specific order
+        if paper.project_page:
+            links.append(self._generate_link(paper.project_page, "globe", "Project", "🌐"))
+        if paper.code:
+            links.append(self._generate_link(paper.code, "code", "Code", "💻"))
+        if paper.video:
+            links.append(self._generate_link(paper.video, "video", "Video", "🎥"))
+        
+        # Abstract toggle button is always last if there's an abstract
+        if paper.abstract:
+            links.append('<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>')
+            links.append(f'<div class="paper-abstract">{paper.abstract}</div>')
+        
+        return "\n".join(links)
 
     def _generate_tags(self, paper: Paper) -> str:
         """Generate HTML for paper tags."""
@@ -52,7 +57,6 @@ class PaperCardGenerator:
 
     def generate_card(self, paper: Paper) -> str:
         """Generate HTML for a paper card using the template."""
-        # Prepare template context
         context = {
             'id': paper.id,
             'title': paper.title,
@@ -63,10 +67,9 @@ class PaperCardGenerator:
             'fallback_url': self.fallback_url,
             'tags_html': self._generate_tags(paper),
             'links_html': self._generate_links(paper),
-            'abstract_html': self._generate_abstract(paper),
-            'publication_date': paper.publication_date or ''
+            'abstract_html': paper.abstract or ""
         }
-        
+    
         return self.template.render(context)
 
     def generate_cards(self, papers: List[Paper]) -> str:
