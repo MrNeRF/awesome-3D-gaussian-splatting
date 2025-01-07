@@ -14,7 +14,7 @@
     
     <!-- Site CSS -->
     <style>
-        /* css/base.css */
+        /* Root Variables */
 :root {
     --primary-color: #1772d0;
     --hover-color: #f09228;
@@ -24,6 +24,7 @@
     --text-color: #1f2937;
 }
 
+/* Base Styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
@@ -37,6 +38,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 h1 {
@@ -91,7 +93,7 @@ h1 {
     font-size: 0.9rem;
 }
 
-.copy-button {
+.copy-button, .sponsor-button {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -102,9 +104,11 @@ h1 {
     align-items: center;
     gap: 0.5rem;
     transition: background-color 0.2s;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
-.copy-button:hover {
+.copy-button:hover, .sponsor-button:hover {
     background-color: var(--hover-color);
 }
 
@@ -142,17 +146,17 @@ h1 {
     position: relative;
     flex: 1;
     min-width: 200px;
-    max-width: calc(100% - 20px); /* Prevent overflow */
+    max-width: calc(100% - 20px);
 }
 
 .search-box {
     width: 100%;
     padding: 0.75rem 1rem;
-    padding-right: 2.5rem; /* Make room for the clear button */
+    padding-right: 2.5rem;
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     font-size: 1rem;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box;
 }
 
 .clear-search-btn {
@@ -166,7 +170,7 @@ h1 {
     color: #9ca3af;
     font-size: 1.2rem;
     padding: 0.25rem;
-    z-index: 1; /* Ensure button stays above input */
+    z-index: 1;
     line-height: 1;
 }
 
@@ -212,6 +216,171 @@ h1 {
 .tag-filter.exclude {
     background: #dc2626;
     color: white;
+}
+
+/* Floating Navigation */
+.floating-nav {
+    position: fixed;
+    bottom: 100px;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.floating-nav button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.floating-nav button:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-progress {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Status Bar */
+.filter-status {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-status.active {
+    display: block;
+}
+
+.filter-status-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.filter-count {
+    font-weight: 500;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.filter-tag.search {
+    background: #e6f3ff;
+    color: #1a73e8;
+}
+
+.filter-tag.year {
+    background: #e6f7e6;
+    color: #1e8e1e;
+}
+
+.filter-tag.tag {
+    background: #f3e6ff;
+    color: #8e1eb8;
+}
+
+.filter-tag button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-tag button:hover {
+    opacity: 1;
+}
+
+.clear-all {
+    padding: 0.25rem 0.75rem;
+    border: none;
+    background: #f3f4f6;
+    color: #4b5563;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.clear-all:hover {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+/* Selection Mode Specific */
+.selection-mode .floating-nav {
+    bottom: 180px; /* Increased to accommodate selection preview */
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .floating-nav button,
+    .scroll-progress {
+        background: rgba(30, 41, 59, 0.9);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .floating-nav button:hover {
+        background: rgb(30, 41, 59);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .floating-nav,
+    .filter-status {
+        display: none !important;
+    }
 }
 /* Selection Controls */
 .selection-mode-toggle {
@@ -9029,6 +9198,30 @@ and an Optimal Projection Strategy
 </div>
         </div>
     </div>
+    <div class="floating-nav">
+        <button onclick="scrollToTop()" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <button onclick="scrollToBottom()" aria-label="Scroll to bottom">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+        <div class="scroll-progress">0%</div>
+    </div>
+
+    <!-- Filter Status Bar -->
+    <div class="filter-status">
+        <div class="filter-status-content">
+            <span class="filter-count">
+                Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers
+            </span>
+            <div class="active-filters" id="activeFilters">
+                <!-- Active filters will be inserted here dynamically -->
+            </div>
+            <button class="clear-all" onclick="clearAllFilters()">
+                Clear All
+            </button>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script>
@@ -9384,6 +9577,118 @@ function applyURLParams() {
     
     filterPapers();
 }
+// Navigation controls
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function scrollToBottom() {
+    window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+    });
+}
+
+// Update scroll progress
+function updateScrollProgress() {
+    const winScroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = Math.round((winScroll / height) * 100);
+    document.querySelector('.scroll-progress').textContent = `${scrolled}%`;
+}
+
+// Filter status functionality
+function updateFilterStatus() {
+    const visiblePapers = document.querySelectorAll('.paper-row.visible').length;
+    const totalPapers = document.querySelectorAll('.paper-row').length;
+    
+    document.getElementById('visibleCount').textContent = visiblePapers;
+    document.getElementById('totalCount').textContent = totalPapers;
+
+    const searchTerm = document.getElementById('searchInput').value;
+    const yearFilter = document.getElementById('yearFilter').value;
+    const activeTags = Array.from(document.querySelectorAll('.tag-filter'))
+        .filter(tag => tag.classList.contains('include') || tag.classList.contains('exclude'))
+        .map(tag => ({
+            text: tag.getAttribute('data-tag'),
+            type: tag.classList.contains('include') ? 'include' : 'exclude'
+        }));
+
+    const filterStatusEl = document.querySelector('.filter-status');
+    const activeFiltersEl = document.getElementById('activeFilters');
+    activeFiltersEl.innerHTML = '';
+
+    // Create filter tags
+    if (searchTerm) {
+        activeFiltersEl.appendChild(createFilterTag('search', `Search: ${searchTerm}`, () => {
+            document.getElementById('searchInput').value = '';
+            filterPapers();
+        }));
+    }
+
+    if (yearFilter !== 'all') {
+        activeFiltersEl.appendChild(createFilterTag('year', `Year: ${yearFilter}`, () => {
+            document.getElementById('yearFilter').value = 'all';
+            filterPapers();
+        }));
+    }
+
+    activeTags.forEach(tag => {
+        activeFiltersEl.appendChild(createFilterTag('tag', 
+            `${tag.text} (${tag.type})`,
+            () => document.querySelector(`.tag-filter[data-tag="${tag.text}"]`).click()
+        ));
+    });
+
+    // Show/hide filter status bar
+    filterStatusEl.classList.toggle('active', 
+        searchTerm || yearFilter !== 'all' || activeTags.length > 0);
+}
+
+function createFilterTag(type, text, onRemove) {
+    const tag = document.createElement('span');
+    tag.className = `filter-tag ${type}`;
+    tag.innerHTML = `
+        ${text}
+        <button onclick="event.stopPropagation();" aria-label="Remove filter">
+            <i class="fas fa-times"></i>
+        </button>
+    `;
+    tag.querySelector('button').addEventListener('click', onRemove);
+    return tag;
+}
+
+function clearAllFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('yearFilter').value = 'all';
+    
+    document.querySelectorAll('.tag-filter').forEach(tag => {
+        if (tag.classList.contains('include') || tag.classList.contains('exclude')) {
+            tag.click();
+        }
+    });
+    
+    filterPapers();
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    // Set initial paper counts
+    updateFilterStatus();
+    
+    // Add scroll listener
+    window.addEventListener('scroll', updateScrollProgress);
+    
+    // Override the existing filterPapers function to update filter status
+    const originalFilterPapers = window.filterPapers;
+    window.filterPapers = function() {
+        originalFilterPapers();
+        updateFilterStatus();
+    };
+});
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize variables
     window.paperCards = document.querySelectorAll('.paper-row');

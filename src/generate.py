@@ -13,8 +13,8 @@ def generate_html(entries: List[Dict[str, Any]], output_file: str) -> None:
 
     # Read CSS and JS files
     css_files = ['static/css/base.css', 'static/css/components.css', 'static/css/responsive.css']
-    js_files = ['static/js/state.js', 'static/js/utils.js', 'static/js/filters.js', 
-                'static/js/selection.js', 'static/js/sharing.js', 'static/js/main.js']
+    js_files = ['static/js/state.js', 'static/js/utils.js', 'static/js/filters.js', 'static/js/selection.js', 
+                'static/js/sharing.js', 'static/js/navigation.js', 'static/js/main.js']
     
     css_content = read_files(base_dir, css_files)
     js_content = read_files(base_dir, js_files)

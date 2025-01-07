@@ -114,6 +114,30 @@
             ${paper_cards}
         </div>
     </div>
+    <div class="floating-nav">
+        <button onclick="scrollToTop()" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <button onclick="scrollToBottom()" aria-label="Scroll to bottom">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+        <div class="scroll-progress">0%</div>
+    </div>
+
+    <!-- Filter Status Bar -->
+    <div class="filter-status">
+        <div class="filter-status-content">
+            <span class="filter-count">
+                Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers
+            </span>
+            <div class="active-filters" id="activeFilters">
+                <!-- Active filters will be inserted here dynamically -->
+            </div>
+            <button class="clear-all" onclick="clearAllFilters()">
+                Clear All
+            </button>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script>
