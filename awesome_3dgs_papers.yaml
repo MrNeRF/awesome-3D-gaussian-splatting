@@ -2280,6 +2280,45 @@
   - Project
   thumbnail: assets/thumbnails/lee2024fully.jpg
   publication_date: '2024-10-21T04:25:43+00:00'
+- id: hahlbohm2024efficient
+  title: Efficient Perspective-Correct 3D Gaussian Splatting Using Hybrid Transparency
+  authors: Florian Hahlbohm, Fabian Friederichs, Tim Weyrich, Linus Franke, Moritz
+    Kappel, Susana Castillo, Marc Stamminger, Martin Eisemann, Marcus Magnor
+  year: '2024'
+  abstract: '3D Gaussian Splats (3DGS) have proven a versatile rendering primitive,
+    both for inverse rendering as well as real-time exploration of scenes. In these
+    applications, coherence across camera frames and multiple views is crucial, be
+    it for robust convergence of a scene reconstruction or for artifact-free fly-throughs.
+    Recent work started mitigating artifacts that break multi-view coherence, including
+    popping artifacts due to inconsistent transparency sorting and perspective-correct
+    outlines of (2D) splats. At the same time, real-time requirements forced such
+    implementations to accept compromises in how transparency of large assemblies
+    of 3D Gaussians is resolved, in turn breaking coherence in other ways. In our
+    work, we aim at achieving maximum coherence, by rendering fully perspective-correct
+    3D Gaussians while using a high-quality approximation of accurate blending, hybrid
+    transparency, on a per-pixel level, in order to retain real-time frame rates.
+    Our fast and perspectively accurate approach for evaluation of 3D Gaussians does
+    not require matrix inversions, thereby ensuring numerical stability and eliminating
+    the need for special handling of degenerate splats, and the hybrid transparency
+    formulation for blending maintains similar quality as fully resolved per-pixel
+    transparencies at a fraction of the rendering costs. We further show that each
+    of these two components can be independently integrated into Gaussian splatting
+    systems. In combination, they achieve up to 2$\times$ higher frame rates, 2$\times$
+    faster optimization, and equal or better image quality with fewer rendering artifacts
+    compared to traditional 3DGS on common benchmarks.
+
+    '
+  project_page: https://fhahlbohm.github.io/htgs/
+  paper: https://arxiv.org/pdf/2410.08129.pdf
+  code: null
+  video: https://fhahlbohm.github.io/htgs/assets/htgs_twitter_teaser.mp4
+  tags:
+  - Perspective-correct
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/hahlbohm2024efficient.jpg
+  publication_date: '2024-10-10T17:14:16+00:00'
+  date_source: arxiv
 - id: chu2024generalizable
   title: Generalizable and Animatable Gaussian Head Avatar
   authors: Xuangeng Chu, Tatsuya Harada
@@ -3861,6 +3900,48 @@
   - Video
   thumbnail: assets/thumbnails/barthel2024gaussian.jpg
   publication_date: '2024-04-16T14:48:40+00:00'
+- id: cui2024letsgo
+  title: 'LetsGo: Large-Scale Garage Modeling and Rendering via LiDAR-Assisted Gaussian
+    Primitives'
+  authors: Jiadi Cui, Junming Cao, Fuqiang Zhao, Zhipeng He, Yifan Chen, Yuhui Zhong,
+    Lan Xu, Yujiao Shi, Yingliang Zhang, Jingyi Yu
+  year: '2024'
+  abstract: 'Large garages are ubiquitous yet intricate scenes that present unique
+    challenges due to their monotonous colors, repetitive patterns, reflective surfaces,
+    and transparent vehicle glass. Conventional Structure from Motion (SfM) methods
+    for camera pose estimation and 3D reconstruction often fail in these environments
+    due to poor correspondence construction. To address these challenges, we introduce
+    LetsGo, a LiDAR-assisted Gaussian splatting framework for large-scale garage modeling
+    and rendering. We develop a handheld scanner, Polar, equipped with IMU, LiDAR,
+    and a fisheye camera, to facilitate accurate data acquisition. Using this Polar
+    device, we present the GarageWorld dataset, consisting of eight expansive garage
+    scenes with diverse geometric structures, which will be made publicly available
+    for further research. Our approach demonstrates that LiDAR point clouds collected
+    by the Polar device significantly enhance a suite of 3D Gaussian splatting algorithms
+    for garage scene modeling and rendering. We introduce a novel depth regularizer
+    that effectively eliminates floating artifacts in rendered images. Additionally,
+    we propose a multi-resolution 3D Gaussian representation designed for Level-of-Detail
+    (LOD) rendering. This includes adapted scaling factors for individual levels and
+    a random-resolution-level training scheme to optimize the Gaussians across different
+    resolutions. This representation enables efficient rendering of large-scale garage
+    scenes on lightweight devices via a web-based renderer. Experimental results on
+    our GarageWorld dataset, as well as on ScanNet++ and KITTI-360, demonstrate the
+    superiority of our method in terms of rendering quality and resource efficiency.
+
+    '
+  project_page: https://zhaofuq.github.io/LetsGo/
+  paper: https://arxiv.org/pdf/2404.09748.pdf
+  code: https://github.com/zhaofuq/LOD-3DGS
+  video: https://youtu.be/fs42UBKvGRw?si=v1D0kPj1-QEzpMSR
+  tags:
+  - Code
+  - Large-Scale
+  - Lidar
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/cui2024letsgo.jpg
+  publication_date: '2024-04-15T12:50:44+00:00'
+  date_source: arxiv
 - id: kheradmand20243d
   title: 3D Gaussian Splatting as Markov Chain Monte Carlo
   authors: Shakiba Kheradmand, Daniel Rebain, Gopal Sharma, Weiwei Sun, Jeff Tseng,
