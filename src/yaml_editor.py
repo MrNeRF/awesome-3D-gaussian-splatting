@@ -30,7 +30,7 @@ class YAMLEditor(QMainWindow):
         
         # Available tags
         self.available_tags = [
-            "2DGS", "360 degree", "Acceleration", "Antialiasing", "Autonomous Driving", 
+            "2DGS", "360 degree", "3ster-based", "Acceleration", "Antialiasing", "Autonomous Driving", 
             "Avatar", "Classic Work", "Code", "Compression", "Deblurring", "Densification",
             "Diffusion", "Distributed", "Dynamic", "Editing", "Event Camera", "Feed-Forward", 
             "GAN", "Inpainting", "In the Wild", "Language Embedding", "Large-Scale", "Lidar", 
