@@ -1211,6 +1211,7 @@ h1 {
         <div class="tag-filters" id="tagFilters">
             <div class="tag-filter" data-tag="2DGS">2DGS</div>
 <div class="tag-filter" data-tag="360 degree">360 degree</div>
+<div class="tag-filter" data-tag="3ster-based">3ster-based</div>
 <div class="tag-filter" data-tag="Acceleration">Acceleration</div>
 <div class="tag-filter" data-tag="Antialiasing">Antialiasing</div>
 <div class="tag-filter" data-tag="Autonomous Driving">Autonomous Driving</div>
@@ -1477,7 +1478,7 @@ h1 {
     </div>
   </div>
 </div>
-<div class="paper-row" data-id="gao2025easysplat" data-title="EasySplat: View-Adaptive Learning makes 3D Gaussian Splatting Easy" data-authors="Ao Gao, Luosong Guo, Tao Chen, Zhao Wang, Ying Tai, Jian Yang, Zhenyu Zhang" data-year="2025" data-tags='["Acceleration", "Densification", "Rendering"]'>
+<div class="paper-row" data-id="gao2025easysplat" data-title="EasySplat: View-Adaptive Learning makes 3D Gaussian Splatting Easy" data-authors="Ao Gao, Luosong Guo, Tao Chen, Zhao Wang, Ying Tai, Jian Yang, Zhenyu Zhang" data-year="2025" data-tags='["3ster-based", "Acceleration", "Densification", "Rendering"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'gao2025easysplat', this)">
     <div class="paper-number"></div>
@@ -1487,7 +1488,8 @@ h1 {
     <div class="paper-content">
       <h2 class="paper-title">EasySplat: View-Adaptive Learning makes 3D Gaussian Splatting Easy <span class="paper-year">(2025)</span></h2>
       <p class="paper-authors">Ao Gao, Luosong Guo, Tao Chen, Zhao Wang, Ying Tai, Jian Yang, Zhenyu Zhang</p>
-      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Acceleration</span>
 <span class="paper-tag">Densification</span>
 <span class="paper-tag">Rendering</span></div>
       <div class="paper-links"><a href="https://arxiv.org/pdf/2501.01003.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
@@ -1611,6 +1613,29 @@ h1 {
 <a href="https://github.com/kaikai23/MaskGaussian" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">While 3D Gaussian Splatting (3DGS) has demonstrated remarkable performance in novel view synthesis and real-time rendering, the high memory consumption due to the use of millions of Gaussians limits its practicality. To mitigate this issue, improvements have been made by pruning unnecessary Gaussians, either through a hand-crafted criterion or by using learned masks. However, these methods deterministically remove Gaussians based on a snapshot of the pruning moment, leading to sub-optimized reconstruction performance from a long-term perspective. To address this issue, we introduce MaskGaussian, which models Gaussians as probabilistic entities rather than permanently removing them, and utilize them according to their probability of existence. To achieve this, we propose a masked-rasterization technique that enables unused yet probabilistically existing Gaussians to receive gradients, allowing for dynamic assessment of their contribution to the evolving scene and adjustment of their probability of existence. Hence, the importance of Gaussians iteratively changes and the pruned Gaussians are selected diversely. Extensive experiments demonstrate the superiority of the proposed method in achieving better rendering quality with fewer Gaussians than previous pruning methods, pruning over 60% of Gaussians on average with only a 0.02 PSNR decline. Our code can be found at: https://github.com/kaikai23/MaskGaussian
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="xu2024das3r" data-title="DAS3R: Dynamics-Aware Gaussian Splatting for Static Scene Reconstruction" data-authors="Kai Xu, Tze Ho Elden Tse, Jizong Peng, Angela Yao" data-year="2024" data-tags='["Code", "Project", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'xu2024das3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/xu2024das3r.jpg" data-fallback="None" alt="Paper thumbnail for DAS3R: Dynamics-Aware Gaussian Splatting for Static Scene Reconstruction" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">DAS3R: Dynamics-Aware Gaussian Splatting for Static Scene Reconstruction <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Kai Xu, Tze Ho Elden Tse, Jizong Peng, Angela Yao</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.19584.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://kai422.github.io/DAS3R/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/kai422/das3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://kai422.github.io/DAS3R/assets/davis.gif" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We propose a novel framework for scene decomposition and static background reconstruction from everyday videos. By integrating the trained motion masks and modeling the static scene as Gaussian splats with dynamics-aware optimization, our method achieves more accurate background reconstruction results than previous works. Our proposed method is termed DAS3R, an abbreviation for Dynamics-Aware Gaussian Splatting for Static Scene Reconstruction. Compared to existing methods, DAS3R is more robust in complex motion scenarios, capable of handling videos where dynamic objects occupy a significant portion of the scene, and does not require camera pose inputs or point cloud data from SLAM-based methods. We compared DAS3R against recent distractor-free approaches on the DAVIS and Sintel datasets; DAS3R demonstrates enhanced performance and robustness with a margin of more than 2 dB in PSNR. The project's webpage can be accessed via \url{https://kai422.github.io/DAS3R/}
 </div></div>
     </div>
   </div>
@@ -1945,6 +1970,27 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="murai2024mast3rslam" data-title="MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors" data-authors="Riku Murai, Eric Dexheimer, Andrew J. Davison" data-year="2024" data-tags='["3ster-based", "SLAM", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'murai2024mast3rslam', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/murai2024mast3rslam.jpg" data-fallback="None" alt="Paper thumbnail for MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Riku Murai, Eric Dexheimer, Andrew J. Davison</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">SLAM</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.12392.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://www.youtube.com/watch?v=wozt71NBFTQ" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We present a real-time monocular dense SLAM system designed bottom-up from MASt3R, a two-view 3D reconstruction and matching prior. Equipped with this strong prior, our system is robust on in-the-wild video sequences despite making no assumption on a fixed or parametric camera model beyond a unique camera centre. We introduce efficient methods for pointmap matching, camera tracking and local fusion, graph construction and loop closure, and second-order global optimisation. With known calibration, a simple modification to the system achieves state-of-the-art performance across various benchmarks. Altogether, we propose a plug-and-play monocular SLAM system capable of producing globally-consistent poses and dense geometry while operating at 15 FPS.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="zhang2024pansplat" data-title="PanSplat: 4K Panorama Synthesis with Feed-Forward Gaussian Splatting" data-authors="Cheng Zhang, Haofei Xu, Qianyi Wu, Camilo Cruz Gambardella, Dinh Phung, Jianfei Cai" data-year="2024" data-tags='["360 degree", "Feed-Forward", "Project", "Video", "World Generation"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang2024pansplat', this)">
@@ -2164,6 +2210,27 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="liu2024slam3r" data-title="SLAM3R: Real-Time Dense Scene Reconstruction from Monocular RGB Videos" data-authors="Yuzheng Liu, Siyan Dong, Shuzhe Wang, Yanchao Yang, Qingnan Fan, Baoquan Chen" data-year="2024" data-tags='["3ster-based", "Code", "SLAM"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'liu2024slam3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/liu2024slam3r.jpg" data-fallback="None" alt="Paper thumbnail for SLAM3R: Real-Time Dense Scene Reconstruction from Monocular RGB Videos" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SLAM3R: Real-Time Dense Scene Reconstruction from Monocular RGB Videos <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yuzheng Liu, Siyan Dong, Shuzhe Wang, Yanchao Yang, Qingnan Fan, Baoquan Chen</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">SLAM</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.09401.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://github.com/PKU-VCL-3DV/SLAM3R" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">In this paper, we introduce SLAM3R, a novel and effective monocular RGB SLAM system for real-time and high-quality dense 3D reconstruction. SLAM3R provides an end-to-end solution by seamlessly integrating local 3D reconstruction and global coordinate registration through feed-forward neural networks. Given an input video, the system first converts it into overlapping clips using a sliding window mechanism. Unlike traditional pose optimization-based methods, SLAM3R directly regresses 3D pointmaps from RGB images in each window and progressively aligns and deforms these local pointmaps to create a globally consistent scene reconstruction - all without explicitly solving any camera parameters. Experiments across datasets consistently show that SLAM3R achieves state-of-the-art reconstruction accuracy and completeness while maintaining real-time performance at 20+ FPS. Code and weights at: https://github.com/PKU-VCL-3DV/SLAM3R.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="gomel2024diffusionbased" data-title="Diffusion-Based Attention Warping for Consistent 3D Scene Editing" data-authors="Eyal Gomel, Lior Wolf" data-year="2024" data-tags='["Diffusion", "Project", "Style Transfer"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'gomel2024diffusionbased', this)">
@@ -2242,6 +2309,31 @@ h1 {
 <a href="https://jingzhi.github.io/ReCap/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Accurate 3D objects relighting in diverse unseen environments is crucial for realistic virtual object placement. Due to the albedo-lighting ambiguity, existing methods often fall short in producing faithful relights. Without proper constraints, observed training views can be explained by numerous combinations of lighting and material attributes, lacking physical correspondence with the actual environment maps used for relighting. In this work, we present ReCap, treating cross-environment captures as multi-task target to provide the missing supervision that cuts through the entanglement. Specifically, ReCap jointly optimizes multiple lighting representations that share a common set of material attributes. This naturally harmonizes a coherent set of lighting representations around the mutual material attributes, exploiting commonalities and differences across varied object appearances. Such coherence enables physically sound lighting reconstruction and robust material estimation - both essential for accurate relighting. Together with a streamlined shading function and effective post-processing, ReCap outperforms the leading competitor by 3.4 dB in PSNR on an expanded relighting benchmark.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="tang2024mvdust3r" data-title="MV-DUSt3R+: Single-Stage Scene Reconstruction from Sparse Views In 2 Seconds" data-authors="Zhenggang Tang, Yuchen Fan, Dilin Wang, Hongyu Xu, Rakesh Ranjan, Alexander Schwing, Zhicheng Yan" data-year="2024" data-tags='["3ster-based", "Code", "Project", "Sparse", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'tang2024mvdust3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/tang2024mvdust3r.jpg" data-fallback="None" alt="Paper thumbnail for MV-DUSt3R+: Single-Stage Scene Reconstruction from Sparse Views In 2 Seconds" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MV-DUSt3R+: Single-Stage Scene Reconstruction from Sparse Views In 2 Seconds <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Zhenggang Tang, Yuchen Fan, Dilin Wang, Hongyu Xu, Rakesh Ranjan, Alexander Schwing, Zhicheng Yan</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Sparse</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.06974.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://mv-dust3rp.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/facebookresearch/mvdust3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://youtu.be/LBvnuKQ8Rso" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent sparse multi-view scene reconstruction advances like DUSt3R and MASt3R no longer require camera calibration and camera pose estimation. However, they only process a pair of views at a time to infer pixel-aligned pointmaps. When dealing with more than two views, a combinatorial number of error prone pairwise reconstructions are usually followed by an expensive global optimization, which often fails to rectify the pairwise reconstruction errors. To handle more views, reduce errors, and improve inference time, we propose the fast single-stage feed-forward network MV-DUSt3R. At its core are multi-view decoder blocks which exchange information across any number of views while considering one reference view. To make our method robust to reference view selection, we further propose MV-DUSt3R+, which employs cross-reference-view blocks to fuse information across different reference view choices. To further enable novel view synthesis, we extend both by adding and jointly training Gaussian splatting heads. Experiments on multi-view stereo reconstruction, multi-view pose estimation, and novel view synthesis confirm that our methods improve significantly upon prior art. Code will be released.
 </div></div>
     </div>
   </div>
@@ -2792,6 +2884,32 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="zhang2024monst3r" data-title="MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion" data-authors="Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forrester Cole, Deqing Sun, Ming-Hsuan Yang" data-year="2024" data-tags='["3ster-based", "Code", "Dynamic", "Project", "Sparse", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang2024monst3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/zhang2024monst3r.jpg" data-fallback="None" alt="Paper thumbnail for MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forrester Cole, Deqing Sun, Ming-Hsuan Yang</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Sparse</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2410.03825.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://monst3r-project.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/Junyi42/monst3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://monst3r-project.github.io/files/teaser_vid_v2_lowres.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Estimating geometry from dynamic scenes, where objects move and deform over time, remains a core challenge in computer vision. Current approaches often rely on multi-stage pipelines or global optimizations that decompose the problem into subtasks, like depth and flow, leading to complex systems prone to errors. In this paper, we present Motion DUSt3R (MonST3R), a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes. Our key insight is that by simply estimating a pointmap for each timestep, we can effectively adapt DUST3R's representation, previously only used for static scenes, to dynamic scenes. However, this approach presents a significant challenge: the scarcity of suitable training data, namely dynamic, posed videos with depth labels. Despite this, we show that by posing the problem as a fine-tuning task, identifying several suitable datasets, and strategically training the model on this limited data, we can surprisingly enable the model to handle dynamics, even without an explicit motion representation. Based on this, we introduce new optimizations for several downstream video-specific tasks and demonstrate strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency. Moreover, MonST3R shows promising results for primarily feed-forward 4D reconstruction.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="cao20243dgsdet" data-title="3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused Sampling for 3D Object Detection" data-authors="Yang Cao, Yuanliang Jv, Dan Xu" data-year="2024" data-tags='["Object Detection"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'cao20243dgsdet', this)">
@@ -2806,6 +2924,25 @@ h1 {
       <div class="paper-links"><a href="https://arxiv.org/pdf/2410.01647" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Neural Radiance Fields (NeRF) are widely used for novel-view synthesis and have been adapted for 3D Object Detection (3DOD), offering a promising approach to 3D object detection through view-synthesis representation. However, NeRF faces inherent limitations: (i) It has limited representational capacity for 3DOD due to its implicit nature, and (ii) it suffers from slow rendering speeds. Recently, 3D Gaussian Splatting (3DGS) has emerged as an explicit 3D representation that addresses these limitations with faster rendering capabilities. Inspired by these advantages, this paper introduces 3DGS into 3DOD for the first time, identifying two main challenges: (i) Ambiguous spatial distribution of Gaussian blobs – 3DGS primarily relies on 2D pixel-level supervision, resulting in unclear 3D spatial distribution of Gaussian blobs and poor differentiation between objects and background, which hinders 3DOD; (ii) Excessive background blobs – 2D images often include numerous background pixels, leading to densely reconstructed 3DGS with many noisy Gaussian blobs representing the background, negatively affecting detection. To tackle the challenge (i), we leverage the fact that 3DGS reconstruction is derived from 2D images, and propose an elegant and efficient solution by incorporating 2D Boundary Guidance to significantly enhance the spatial distribution of Gaussian blobs, resulting in clearer differentiation between objects and their background (see Fig. 1). To address the challenge (ii), we propose a Box-Focused Sampling strategy using 2D boxes to generate object probability distribution in 3D spaces, allowing effective probabilistic sampling in 3D to retain more object blobs and reduce noisy background blobs. Benefiting from the proposed Boundary Guidance and Box-Focused Sampling, our final method, 3DGS-DET, achieves significant improvements (+5.6 on mAP@0.25, +3.7 on mAP@0.5) over our basic pipeline version, without introducing any additional learnable parameters. Furthermore, 3DGS-DET significantly outperforms the state-of-the-art NeRF-based method, NeRF-Det, achieving improvements of +6.6 on mAP@0.25 and +8.1 on mAP@0.5 for the ScanNet dataset, and impressive +31.5 on mAP@0.25 for the ARKITScenes dataset. Codes and models are publicly available at: https://github.com/yangcaoai/3DGS-DET.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="duisterhof2024mast3rsfm" data-title="MASt3R-SfM: a Fully-Integrated Solution for Unconstrained Structure-from-Motion" data-authors="Bardienus Duisterhof, Lojze Zust, Philippe Weinzaepfel, Vincent Leroy, Yohann Cabon, Jerome Revaud" data-year="2024" data-tags='["Code"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'duisterhof2024mast3rsfm', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/duisterhof2024mast3rsfm.jpg" data-fallback="None" alt="Paper thumbnail for MASt3R-SfM: a Fully-Integrated Solution for Unconstrained Structure-from-Motion" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MASt3R-SfM: a Fully-Integrated Solution for Unconstrained Structure-from-Motion <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Bardienus Duisterhof, Lojze Zust, Philippe Weinzaepfel, Vincent Leroy, Yohann Cabon, Jerome Revaud</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2409.19152.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://github.com/naver/mast3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Structure-from-Motion (SfM), a task aiming at jointly recovering camera poses and 3D geometry of a scene given a set of images, remains a hard problem with still many open challenges despite decades of significant progress. The traditional solution for SfM consists of a complex pipeline of minimal solvers which tends to propagate errors and fails when images do not sufficiently overlap, have too little motion, etc. Recent methods have attempted to revisit this paradigm, but we empirically show that they fall short of fixing these core issues. In this paper, we propose instead to build upon a recently released foundation model for 3D vision that can robustly produce local 3D reconstructions and accurate matches. We introduce a low-memory approach to accurately align these local reconstructions in a global coordinate system. We further show that such foundation models can serve as efficient image retrievers without any overhead, reducing the overall complexity from quadratic to linear. Overall, our novel SfM pipeline is simple, scalable, fast and truly unconstrained, i.e. it can handle any collection of images, ordered or not. Extensive experiments on multiple benchmarks show that our method provides steady performance across diverse settings, especially outperforming existing methods in small- and medium-scale settings.
+</div></div>
     </div>
   </div>
 </div>
@@ -3025,6 +3162,31 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="wang20243d" data-title="3D Reconstruction with Spatial Memory" data-authors="Hengyi Wang, Lourdes Agapito" data-year="2024" data-tags='["3ster-based", "Code", "Project", "SLAM", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wang20243d', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wang20243d.jpg" data-fallback="None" alt="Paper thumbnail for 3D Reconstruction with Spatial Memory" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">3D Reconstruction with Spatial Memory <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Hengyi Wang, Lourdes Agapito</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">SLAM</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2408.16061.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://hengyiwang.github.io/projects/spanner" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/HengyiWang/spann3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://hengyiwang.github.io/projects/spanner/videos/spanner_intro.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We present Spann3R, a novel approach for dense 3D reconstruction from ordered or unordered image collections. Built on the DUSt3R paradigm, Spann3R uses a transformer-based architecture to directly regress pointmaps from images without any prior knowledge of the scene or camera parameters. Unlike DUSt3R, which predicts per image-pair pointmaps each expressed in its local coordinate frame, Spann3R can predict per-image pointmaps expressed in a global coordinate system, thus eliminating the need for optimization-based global alignment. The key idea of Spann3R is to manage an external spatial memory that learns to keep track of all previous relevant 3D information. Spann3R then queries this spatial memory to predict the 3D structure of the next frame in a global coordinate system. Taking advantage of DUSt3R's pre-trained weights, and further fine-tuning on a subset of datasets, Spann3R shows competitive performance and generalization ability on various unseen datasets and can process ordered image collections in real time. Project page: \url{https://hengyiwang.github.io/projects/spanner}
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="shi2024lapisgs" data-title="LapisGS: Layered Progressive 3D Gaussian Splatting for Adaptive Streaming" data-authors="Yuang Shi, Simone Gasparini, Géraldine Morin, Wei Tsang Ooi," data-year="2024" data-tags='["Compression", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'shi2024lapisgs', this)">
@@ -3041,6 +3203,29 @@ h1 {
 <a href="https://yuang-ian.github.io/lapisgs/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">The rise of Extended Reality (XR) requires efficient streaming of 3D online worlds, challenging current 3DGS representations to adapt to bandwidth-constrained environments. We propose LapisGS, a layered 3DGS that supports adaptive streaming and progressive rendering. Our method constructs a layered structure for cumulative representation, incorporates dynamic opacity optimization to maintain visual fidelity, and utilizes occupancy maps to efficiently manage Gaussian splats. This proposed model offers a progressive representation supporting a continuous rendering quality adapted for bandwidth-aware streaming. Extensive experiments validate the effectiveness of our approach in balancing visual fidelity with the compactness of the model, with up to 50.71% improvement in SSIM, 286.53% improvement in LPIPS, and 318.41% reduction in model size, and shows its potential for bandwidth-adapted 3D streaming and rendering applications.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="smart2024splatt3r" data-title="Splatt3R: Zero-shot Gaussian Splatting from Uncalibrated Image Pairs" data-authors="Brandon Smart, Chuanxia Zheng, Iro Laina, Victor Adrian Prisacariu" data-year="2024" data-tags='["3ster-based", "Code", "Project", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'smart2024splatt3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/smart2024splatt3r.jpg" data-fallback="None" alt="Paper thumbnail for Splatt3R: Zero-shot Gaussian Splatting from Uncalibrated Image Pairs" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Splatt3R: Zero-shot Gaussian Splatting from Uncalibrated Image Pairs <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Brandon Smart, Chuanxia Zheng, Iro Laina, Victor Adrian Prisacariu</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2408.13912.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://splatt3r.active.vision/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/btsmart/splatt3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">In this paper, we introduce Splatt3R, a pose-free, feed-forward method for in-the-wild 3D reconstruction and novel view synthesis from stereo pairs. Given uncalibrated natural images, Splatt3R can predict 3D Gaussian Splats without requiring any camera parameters or depth information. For generalizability, we build Splatt3R upon a ``foundation'' 3D geometry reconstruction method, MASt3R, by extending it to deal with both 3D structure and appearance. Specifically, unlike the original MASt3R which reconstructs only 3D point clouds, we predict the additional Gaussian attributes required to construct a Gaussian primitive for each point. Hence, unlike other novel view synthesis methods, Splatt3R is first trained by optimizing the 3D point cloud's geometry loss, and then a novel view synthesis objective. By doing this, we avoid the local minima present in training 3D Gaussian Splats from stereo views. We also propose a novel loss masking strategy that we empirically find is critical for strong performance on extrapolated viewpoints. We train Splatt3R on the ScanNet++ dataset and demonstrate excellent generalisation to uncalibrated, in-the-wild images. Splatt3R can reconstruct scenes at 4FPS at 512 x 512 resolution, and the resultant splats can be rendered in real-time.
+</div></div>
     </div>
   </div>
 </div>
@@ -3403,6 +3588,27 @@ h1 {
 <a href="https://w-m.github.io/3dgs-compression-survey" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">We present a work-in-progress survey on 3D Gaussian Splatting compression methods, focusing on their statistical performance across various benchmarks. This survey aims to facilitate comparability by summarizing key statistics of different compression approaches in a tabulated format. The datasets evaluated include TanksAndTemples, MipNeRF360, DeepBlending, and SyntheticNeRF. For each method, we report the Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), Learned Perceptual Image Patch Similarity (LPIPS), and the resultant size in megabytes (MB), as provided by the respective authors. This is an ongoing, open project, and we invite contributions from the research community as GitHub issues or pull requests. Please visit https://w-m.github.io/3dgs-compression-survey/ for more information and a sortable version of the table.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="leroy2024grounding" data-title="Grounding Image Matching in 3D with MASt3R" data-authors="Vincent Leroy, Yohann Cabon, Jérôme Revaud" data-year="2024" data-tags='["Code", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'leroy2024grounding', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/leroy2024grounding.jpg" data-fallback="None" alt="Paper thumbnail for Grounding Image Matching in 3D with MASt3R" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Grounding Image Matching in 3D with MASt3R <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Vincent Leroy, Yohann Cabon, Jérôme Revaud</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2406.09756.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://europe.naverlabs.com/blog/mast3r-matching-and-stereo-3d-reconstruction/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/naver/mast3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Image Matching is a core component of all best-performing algorithms and pipelines in 3D vision. Yet despite matching being fundamentally a 3D problem, intrinsically linked to camera pose and scene geometry, it is typically treated as a 2D problem. This makes sense as the goal of matching is to establish correspondences between 2D pixel fields, but also seems like a potentially hazardous choice. In this work, we take a different stance and propose to cast matching as a 3D task with DUSt3R, a recent and powerful 3D reconstruction framework based on Transformers. Based on pointmaps regression, this method displayed impressive robustness in matching views with extreme viewpoint changes, yet with limited accuracy. We aim here to improve the matching capabilities of such an approach while preserving its robustness. We thus propose to augment the DUSt3R network with a new head that outputs dense local features, trained with an additional matching loss. We further address the issue of quadratic complexity of dense matching, which becomes prohibitively slow for downstream applications if not carefully treated. We introduce a fast reciprocal matching scheme that not only accelerates matching by orders of magnitude, but also comes with theoretical guarantees and, lastly, yields improved results. Extensive experiments show that our approach, coined MASt3R, significantly outperforms the state of the art on multiple matching tasks. In particular, it beats the best published methods by 30% (absolute improvement) in VCRE AUC on the extremely challenging Map-free localization dataset.
+</div></div>
     </div>
   </div>
 </div>
@@ -7220,6 +7426,30 @@ and an Optimal Projection Strategy
       <div class="paper-links"><a href="https://arxiv.org/pdf/2312.15059.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Recent advances in neural radiance fields enable novel view synthesis of photo-realistic images in dynamic settings, which can be applied to scenarios with human animation. Commonly used implicit backbones to establish accurate models, however, require many input views and additional annotations such as human masks, UV maps and depth maps. In this work, we propose ParDy-Human (Parameterized Dynamic Human Avatar), a fully explicit approach to construct a digital avatar from as little as a single monocular sequence. ParDy-Human introduces parameter-driven dynamics into 3D Gaussian Splatting where 3D Gaussians are deformed by a human pose model to animate the avatar. Our method is composed of two parts: A first module that deforms canonical 3D Gaussians according to SMPL vertices and a consecutive module that further takes their designed joint encodings and predicts per Gaussian deformations to deal with dynamics beyond SMPL vertex deformations. Images are then synthesized by a rasterizer. ParDy-Human constitutes an explicit model for realistic dynamic human avatars which requires significantly fewer training views and images. Our avatars learning is free of additional annotations such as masks and can be trained with variable backgrounds while inferring full-resolution images efficiently even on consumer hardware. We provide experimental evidence to show that ParDy-Human outperforms state-of-the-art methods on ZJU-MoCap and THUman4.0 datasets both quantitatively and visually.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="wang2023dust3r" data-title="DUSt3R: Geometric 3D Vision Made Easy" data-authors="Shuzhe Wang, Vincent Leroy, Yohann Cabon, Boris Chidlovskii, Jerome Revaud" data-year="2023" data-tags='["3ster-based", "Code", "Project", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wang2023dust3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wang2023dust3r.jpg" data-fallback="None" alt="Paper thumbnail for DUSt3R: Geometric 3D Vision Made Easy" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">DUSt3R: Geometric 3D Vision Made Easy <span class="paper-year">(2023)</span></h2>
+      <p class="paper-authors">Shuzhe Wang, Vincent Leroy, Yohann Cabon, Boris Chidlovskii, Jerome Revaud</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2312.14132.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://europe.naverlabs.com/research/publications/dust3r-geometric-3d-vision-made-easy/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/naver/dust3r" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://europe.naverlabs.com/wp-content/uploads/2024/09/supmat_dust3r_final_light_h264.mp4?_=1" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Multi-view stereo reconstruction (MVS) in the wild requires to first estimate the camera parameters e.g. intrinsic and extrinsic parameters. These are usually tedious and cumbersome to obtain, yet they are mandatory to triangulate corresponding pixels in 3D space, which is the core of all best performing MVS algorithms. In this work, we take an opposite stance and introduce DUSt3R, a radically novel paradigm for Dense and Unconstrained Stereo 3D Reconstruction of arbitrary image collections, i.e. operating without prior information about camera calibration nor viewpoint poses. We cast the pairwise reconstruction problem as a regression of pointmaps, relaxing the hard constraints of usual projective camera models. We show that this formulation smoothly unifies the monocular and binocular reconstruction cases. In the case where more than two images are provided, we further propose a simple yet effective global alignment strategy that expresses all pairwise pointmaps in a common reference frame. We base our network architecture on standard Transformer encoders and decoders, allowing us to leverage powerful pretrained models. Our formulation directly provides a 3D model of the scene as well as depth information, but interestingly, we can seamlessly recover from it, pixel matches, relative and absolute camera. Exhaustive experiments on all these tasks showcase that the proposed DUSt3R can unify various 3D vision tasks and set new SoTAs on monocular/multi-view depth estimation as well as relative pose estimation. In summary, DUSt3R makes many geometric 3D vision tasks easy.
+</div></div>
     </div>
   </div>
 </div>
