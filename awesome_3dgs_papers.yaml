@@ -566,6 +566,40 @@
   - Large-Scale
   thumbnail: assets/thumbnails/yang20244d.jpg
   publication_date: '2024-12-30T05:30:26+00:00'
+- id: liu2024maskgaussian
+  title: 'MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks'
+  authors: Yifei Liu, Zhihang Zhong, Yifan Zhan, Sheng Xu, Xiao Sun
+  year: '2024'
+  abstract: 'While 3D Gaussian Splatting (3DGS) has demonstrated remarkable performance
+    in novel view synthesis and real-time rendering, the high memory consumption due
+    to the use of millions of Gaussians limits its practicality. To mitigate this
+    issue, improvements have been made by pruning unnecessary Gaussians, either through
+    a hand-crafted criterion or by using learned masks. However, these methods deterministically
+    remove Gaussians based on a snapshot of the pruning moment, leading to sub-optimized
+    reconstruction performance from a long-term perspective. To address this issue,
+    we introduce MaskGaussian, which models Gaussians as probabilistic entities rather
+    than permanently removing them, and utilize them according to their probability
+    of existence. To achieve this, we propose a masked-rasterization technique that
+    enables unused yet probabilistically existing Gaussians to receive gradients,
+    allowing for dynamic assessment of their contribution to the evolving scene and
+    adjustment of their probability of existence. Hence, the importance of Gaussians
+    iteratively changes and the pruned Gaussians are selected diversely. Extensive
+    experiments demonstrate the superiority of the proposed method in achieving better
+    rendering quality with fewer Gaussians than previous pruning methods, pruning
+    over 60% of Gaussians on average with only a 0.02 PSNR decline. Our code can be
+    found at: https://github.com/kaikai23/MaskGaussian
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.20522.pdf
+  code: https://github.com/kaikai23/MaskGaussian
+  video: null
+  tags:
+  - Code
+  - Compression
+  thumbnail: assets/thumbnails/liu2024maskgaussian.jpg
+  publication_date: '2024-12-29T17:12:16+00:00'
+  date_source: arxiv
 - id: cai2024dust
   title: 'Dust to Tower: Coarse-to-Fine Photo-Realistic Scene Reconstruction from
     Sparse Uncalibrated Images'
@@ -892,6 +926,39 @@
   thumbnail: assets/thumbnails/shen2024solidgs.jpg
   publication_date: '2024-12-19T21:04:43+00:00'
   date_source: arxiv
+- id: xie2024envgs
+  title: 'EnvGS: Modeling View-Dependent Appearance with Environment Gaussian'
+  authors: Tao Xie, Xi Chen, Zhen Xu, Yiman Xie, Yudong Jin, Yujun Shen, Sida Peng,
+    Hujun Bao, Xiaowei Zhou
+  year: '2024'
+  abstract: 'Reconstructing complex reflections in real-world scenes from 2D images
+    is essential for achieving photorealistic novel view synthesis. Existing methods
+    that utilize environment maps to model reflections from distant lighting often
+    struggle with high-frequency reflection details and fail to account for near-field
+    reflections. In this work, we introduce EnvGS, a novel approach that employs a
+    set of Gaussian primitives as an explicit 3D representation for capturing reflections
+    of environments. These environment Gaussian primitives are incorporated with base
+    Gaussian primitives to model the appearance of the whole scene. To efficiently
+    render these environment Gaussian primitives, we developed a ray-tracing-based
+    renderer that leverages the GPU''s RT core for fast rendering. This allows us
+    to jointly optimize our model for high-quality reconstruction while maintaining
+    real-time rendering speeds. Results from multiple real-world and synthetic datasets
+    demonstrate that our method produces significantly more detailed reflections,
+    achieving the best rendering quality in real-time novel view synthesis.
+
+    '
+  project_page: https://zju3dv.github.io/envgs/
+  paper: https://arxiv.org/pdf/2412.15215.pdf
+  code: null
+  video: https://raw.githubusercontent.com/xbillowy/assets/refs/heads/main/envgs.github.io.assets/teaser.mp4
+  tags:
+  - Project
+  - Ray Tracing
+  - Rendering
+  - Video
+  thumbnail: assets/thumbnails/xie2024envgs.jpg
+  publication_date: '2024-12-19T18:59:57+00:00'
+  date_source: arxiv
 - id: saito2024squeezeme
   title: 'SqueezeMe: Efficient Gaussian Avatars for VR'
   authors: Shunsuke Saito, Stanislav Pidhorskyi, Igor Santesteban, Forrest Iandola,
@@ -961,6 +1028,40 @@
   - Project
   thumbnail: assets/thumbnails/lu2024turbogs.jpg
   publication_date: '2024-12-18T06:46:40+00:00'
+  date_source: arxiv
+- id: jiang2024gausstr
+  title: 'GaussTR: Foundation Model-Aligned Gaussian Transformer for Self-Supervised
+    3D Spatial Understanding'
+  authors: Haoyi Jiang, Liu Liu, Tianheng Cheng, Xinjie Wang, Tianwei Lin, Zhizhong
+    Su, Wenyu Liu, Xinggang Wang
+  year: '2024'
+  abstract: '3D Semantic Occupancy Prediction is fundamental for spatial understanding
+    as it provides a comprehensive semantic cognition of surrounding environments.
+    However, prevalent approaches primarily rely on extensive labeled data and computationally
+    intensive voxel-based modeling, restricting the scalability and generalizability
+    of 3D representation learning. In this paper, we introduce GaussTR, a novel Gaussian
+    Transformer that leverages alignment with foundation models to advance self-supervised
+    3D spatial understanding. GaussTR adopts a Transformer architecture to predict
+    sparse sets of 3D Gaussians that represent scenes in a feed-forward manner. Through
+    aligning rendered Gaussian features with diverse knowledge from pre-trained foundation
+    models, GaussTR facilitates the learning of versatile 3D representations and enables
+    open-vocabulary occupancy prediction without explicit annotations. Empirical evaluations
+    on the Occ3D-nuScenes dataset showcase GaussTR''s state-of-the-art zero-shot performance,
+    achieving 11.70 mIoU while reducing training duration by approximately 50%. These
+    experimental results highlight the significant potential of GaussTR for scalable
+    and holistic 3D spatial understanding, with promising implications for autonomous
+    driving and embodied agents. Code is available at https://github.com/hustvl/GaussTR.
+
+    '
+  project_page: https://hustvl.github.io/GaussTR/
+  paper: https://arxiv.org/pdf/2412.13193.pdf
+  code: https://github.com/hustvl/GaussTR
+  video: null
+  tags:
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/jiang2024gausstr.jpg
+  publication_date: '2024-12-17T18:59:46+00:00'
   date_source: arxiv
 - id: sun2024realtime
   title: Real-time Free-view Human Rendering from Sparse-view RGB Videos using Double
@@ -1847,6 +1948,40 @@
   - Project
   thumbnail: assets/thumbnails/hess2024splatad.jpg
   publication_date: '2024-11-25T16:18:22+00:00'
+- id: zhang2024quadratic
+  title: Quadratic Gaussian Splatting for Efficient and Detailed Surface Reconstruction
+  authors: Ziyu Zhang, Binbin Huang, Hanqing Jiang, Liyang Zhou, Xiaojun Xiang, Shunhan
+    Shen
+  year: '2024'
+  abstract: 'Recently, 3D Gaussian Splatting (3DGS) has attracted attention for its
+    superior rendering quality and speed over Neural Radiance Fields (NeRF). To address
+    3DGS''s limitations in surface representation, 2D Gaussian Splatting (2DGS) introduced
+    disks as scene primitives to model and reconstruct geometries from multi-view
+    images, offering view-consistent geometry. However, the disk''s first-order linear
+    approximation often leads to over-smoothed results. We propose Quadratic Gaussian
+    Splatting (QGS), a novel method that replaces disks with quadric surfaces, enhancing
+    geometric fitting, whose code will be open-sourced. QGS defines Gaussian distributions
+    in non-Euclidean space, allowing primitives to capture more complex textures.
+    As a second-order surface approximation, QGS also renders spatial curvature to
+    guide the normal consistency term, to effectively reduce over-smoothing. Moreover,
+    QGS is a generalized version of 2DGS that achieves more accurate and detailed
+    reconstructions, as verified by experiments on DTU and TNT, demonstrating its
+    effectiveness in surpassing current state-of-the-art methods in geometry reconstruction.
+    Our code willbe released as open source.
+
+    '
+  project_page: https://quadraticgs.github.io/QGS/
+  paper: https://arxiv.org/pdf/2411.16392.pdf
+  code: https://github.com/QuadraticGS/QGS
+  video: https://quadraticgs.github.io/QGS/assets/QGS_web.mp4
+  tags:
+  - Code
+  - Meshing
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/zhang2024quadratic.jpg
+  publication_date: '2024-11-25T13:55:00+00:00'
+  date_source: arxiv
 - id: blark2024splatsdf
   title: 'SplatSDF: Boosting Neural Implicit SDF via Gaussian Splatting Fusion'
   authors: Runfa Blark Li, Keito Suzuki, Bang Du, Ki Myung Brian Lee, Nikolay Atanasov,
@@ -2206,6 +2341,45 @@
   - Video
   thumbnail: assets/thumbnails/zhu2024motiongs.jpg
   publication_date: '2024-10-10T08:19:47+00:00'
+- id: tang2024hisplat
+  title: 'HiSplat: Hierarchical 3D Gaussian Splatting for Generalizable Sparse-View
+    Reconstruction'
+  authors: Shengji Tang, Weicai Ye, Peng Ye, Weihao Lin, Yang Zhou, Tao Chen, Wanli
+    Ouyang
+  year: '2024'
+  abstract: 'Reconstructing 3D scenes from multiple viewpoints is a fundamental task
+    in stereo vision. Recently, advances in generalizable 3D Gaussian Splatting have
+    enabled high-quality novel view synthesis for unseen scenes from sparse input
+    views by feed-forward predicting per-pixel Gaussian parameters without extra optimization.
+    However, existing methods typically generate single-scale 3D Gaussians, which
+    lack representation of both large-scale structure and texture details, resulting
+    in mislocation and artefacts. In this paper, we propose a novel framework, HiSplat,
+    which introduces a hierarchical manner in generalizable 3D Gaussian Splatting
+    to construct hierarchical 3D Gaussians via a coarse-to-fine strategy. Specifically,
+    HiSplat generates large coarse-grained Gaussians to capture large-scale structures,
+    followed by fine-grained Gaussians to enhance delicate texture details. To promote
+    inter-scale interactions, we propose an Error Aware Module for Gaussian compensation
+    and a Modulating Fusion Module for Gaussian repair. Our method achieves joint
+    optimization of hierarchical representations, allowing for novel view synthesis
+    using only two-view reference images. Comprehensive experiments on various datasets
+    demonstrate that HiSplat significantly enhances reconstruction quality and cross-dataset
+    generalization compared to prior single-scale methods. The corresponding ablation
+    study and analysis of different-scale 3D Gaussians reveal the mechanism behind
+    the effectiveness. Project website: https://open3dvlab.github.io/HiSplat/
+
+    '
+  project_page: https://open3dvlab.github.io/HiSplat/
+  paper: https://arxiv.org/pdf/2410.06245.pdf
+  code: https://github.com/Open3DVLab/HiSplat
+  video: null
+  tags:
+  - Code
+  - Feed-Forward
+  - Project
+  - Sparse
+  thumbnail: assets/thumbnails/tang2024hisplat.jpg
+  publication_date: '2024-10-08T17:59:32+00:00'
+  date_source: arxiv
 - id: liu2024splatraj
   title: 'SplaTraj: Camera Trajectory Generation with Semantic Gaussian Splatting'
   authors: Xinyi Liu, Tianyi Zhang, Matthew Johnson-Roberson, Weiming Zhi
@@ -2541,6 +2715,37 @@
   - Video
   thumbnail: assets/thumbnails/jiang2024dualgs.jpg
   publication_date: '2024-09-12T18:33:13+00:00'
+- id: liao2024fisheyegs
+  title: 'Fisheye-GS: Lightweight and Extensible Gaussian Splatting Module for Fisheye
+    Cameras'
+  authors: Zimu Liao, Siyan Chen, Rong Fu, Yi Wang, Zhongling Su, Hao Luo, Li Ma,
+    Linning Xu, Bo Dai, Hengjie Li, Zhilin Pei, Xingcheng Zhang
+  year: '2024'
+  abstract: 'Recently, 3D Gaussian Splatting (3DGS) has garnered attention for its
+    high fidelity and real-time rendering. However, adapting 3DGS to different camera
+    models, particularly fisheye lenses, poses challenges due to the unique 3D to
+    2D projection calculation. Additionally, there are inefficiencies in the tile-based
+    splatting, especially for the extreme curvature and wide field of view of fisheye
+    lenses, which are crucial for its broader real-life applications. To tackle these
+    challenges, we introduce Fisheye-GS.This innovative method recalculates the projection
+    transformation and its gradients for fisheye cameras. Our approach can be seamlessly
+    integrated as a module into other efficient 3D rendering methods, emphasizing
+    its extensibility, lightweight nature, and modular design. Since we only modified
+    the projection component, it can also be easily adapted for use with different
+    camera models. Compared to methods that train after undistortion, our approach
+    demonstrates a clear improvement in visual quality.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2409.04751.pdf
+  code: https://github.com/zmliao/Fisheye-GS
+  video: null
+  tags:
+  - Code
+  - Rendering
+  thumbnail: assets/thumbnails/liao2024fisheyegs.jpg
+  publication_date: '2024-09-07T07:53:40+00:00'
+  date_source: arxiv
 - id: chen2024omnire
   title: 'OmniRe: Omni Urban Scene Reconstruction'
   authors: Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez
@@ -3126,6 +3331,46 @@
   - Project
   thumbnail: assets/thumbnails/t20243dgszip.jpg
   publication_date: '2024-06-17T11:43:38+00:00'
+- id: kirschstein2024gghead
+  title: 'GGHead: Fast and Generalizable 3D Gaussian Heads'
+  authors: Tobias Kirschstein, Simon Giebenhain, Jiapeng Tang, Markos Georgopoulos,
+    Matthias Nießner
+  year: '2024'
+  abstract: 'Learning 3D head priors from large 2D image collections is an important
+    step towards high-quality 3D-aware human modeling. A core requirement is an efficient
+    architecture that scales well to large-scale datasets and large image resolutions.
+    Unfortunately, existing 3D GANs struggle to scale to generate samples at high
+    resolutions due to their relatively slow train and render speeds, and typically
+    have to rely on 2D superresolution networks at the expense of global 3D consistency.
+    To address these challenges, we propose Generative Gaussian Heads (GGHead), which
+    adopts the recent 3D Gaussian Splatting representation within a 3D GAN framework.
+    To generate a 3D representation, we employ a powerful 2D CNN generator to predict
+    Gaussian attributes in the UV space of a template head mesh. This way, GGHead
+    exploits the regularity of the template''s UV layout, substantially facilitating
+    the challenging task of predicting an unstructured set of 3D Gaussians. We further
+    improve the geometric fidelity of the generated 3D representations with a novel
+    total variation loss on rendered UV coordinates. Intuitively, this regularization
+    encourages that neighboring rendered pixels should stem from neighboring Gaussians
+    in the template''s UV space. Taken together, our pipeline can efficiently generate
+    3D heads trained only from single-view 2D image observations. Our proposed framework
+    matches the quality of existing 3D head GANs on FFHQ while being both substantially
+    faster and fully 3D consistent. As a result, we demonstrate real-time generation
+    and rendering of high-quality 3D-consistent heads at $1024^2$ resolution for the
+    first time. Project Website: https://tobias-kirschstein.github.io/gghead
+
+    '
+  project_page: https://tobias-kirschstein.github.io/gghead/
+  paper: https://arxiv.org/pdf/2406.09377.pdf
+  code: https://github.com/tobias-kirschstein/gghead
+  video: https://youtu.be/M5vq3DoZ7RI
+  tags:
+  - Code
+  - GAN
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/kirschstein2024gghead.jpg
+  publication_date: '2024-06-13T17:54:38+00:00'
+  date_source: arxiv
 - id: jaganathan2024iceg
   title: 'ICE-G: Image Conditional Editing of 3D Gaussian Splats'
   authors: Vishnu Jaganathan, Hannah Huang, Muhammad Zubair Irshad, Varun Jampani,
@@ -3764,9 +4009,10 @@
     such as scene understanding and manipulation.
   project_page: https://www.gaga.gallery/
   paper: https://arxiv.org/pdf/2404.07977.pdf
-  code: null
+  code: https://github.com/weijielyu/Gaga
   video: https://www.youtube.com/watch?v=rqs5BuVFOok
   tags:
+  - Code
   - Editing
   - Project
   - Segmentation
