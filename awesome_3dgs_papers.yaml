@@ -1,3 +1,168 @@
+- id: kwak2025modecgs
+  title: 'MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment
+    for Compact Dynamic 3D Gaussian Splatting'
+  authors: Sangwoon Kwak, Joonsoo Kim, Jun Young Jeong, Won-Sik Cheong, Jihyong Oh,
+    Munchurl Kim
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has made significant strides in scene representation
+    and neural rendering, with intense efforts focused on adapting it for dynamic
+    scenes. Despite delivering remarkable rendering quality and speed, existing methods
+    struggle with storage demands and representing complex real-world motions. To
+    tackle these issues, we propose MoDecGS, a memory-efficient Gaussian splatting
+    framework designed for reconstructing novel views in challenging scenarios with
+    complex motions. We introduce GlobaltoLocal Motion Decomposition (GLMD) to effectively
+    capture dynamic motions in a coarsetofine manner. This approach leverages Global
+    Canonical Scaffolds (Global CS) and Local Canonical Scaffolds (Local CS), extending
+    static Scaffold representation to dynamic video reconstruction. For Global CS,
+    we propose Global Anchor Deformation (GAD) to efficiently represent global dynamics
+    along complex motions, by directly deforming the implicit Scaffold attributes
+    which are anchor position, offset, and local context features. Next, we finely
+    adjust local motions via the Local Gaussian Deformation (LGD) of Local CS explicitly.
+    Additionally, we introduce Temporal Interval Adjustment (TIA) to automatically
+    control the temporal coverage of each Local CS during training, allowing MoDecGS
+    to find optimal interval assignments based on the specified number of temporal
+    segments. Extensive evaluations demonstrate that MoDecGS achieves an average 70%
+    reduction in model size over stateoftheart methods for dynamic 3D Gaussians from
+    realworld dynamic videos while maintaining or even improving rendering quality.
+
+    '
+  project_page: 'MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval
+    Adjustment for Compact Dynamic 3D Gaussian Splatting'
+  paper: https://arxiv.org/pdf/2501.03714.pdf
+  code: null
+  video: https://youtu.be/5L6gzc5-cw8?si=L6v6XLZFQrYK50iV
+  tags:
+  - Compression
+  - Dynamic
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/kwak2025modecgs.jpg
+  publication_date: '2025-01-07T11:43:13+00:00'
+  date_source: arxiv
+- id: yu2025dehazegs
+  title: 'DehazeGS: Seeing Through Fog with 3D Gaussian Splatting'
+  authors: Jinze Yu, Yiqun Wang, Zhengda Lu, Jianwei Guo, Yong Li, Hongxing Qin, Xiaopeng
+    Zhang
+  year: '2025'
+  abstract: 'Current novel view synthesis tasks primarily rely on high-quality and
+    clear images. However, in foggy scenes, scattering and attenuation can significantly
+    degrade the reconstruction and rendering quality. Although NeRF-based dehazing
+    reconstruction algorithms have been developed, their use of deep fully connected
+    neural networks and per-ray sampling strategies leads to high computational costs.
+    Moreover, NeRF''s implicit representation struggles to recover fine details from
+    hazy scenes. In contrast, recent advancements in 3D Gaussian Splatting achieve
+    high-quality 3D scene reconstruction by explicitly modeling point clouds into
+    3D Gaussians. In this paper, we propose leveraging the explicit Gaussian representation
+    to explain the foggy image formation process through a physically accurate forward
+    rendering process. We introduce DehazeGS, a method capable of decomposing and
+    rendering a fog-free background from participating media using only muti-view
+    foggy images as input. We model the transmission within each Gaussian distribution
+    to simulate the formation of fog. During this process, we jointly learn the atmospheric
+    light and scattering coefficient while optimizing the Gaussian representation
+    of the hazy scene. In the inference stage, we eliminate the effects of scattering
+    and attenuation on the Gaussians and directly project them onto a 2D plane to
+    obtain a clear view. Experiments on both synthetic and real-world foggy datasets
+    demonstrate that DehazeGS achieves state-of-the-art performance in terms of both
+    rendering quality and computational efficiency.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.03659.pdf
+  code: null
+  video: null
+  tags:
+  - In the Wild
+  - Rendering
+  thumbnail: assets/thumbnails/yu2025dehazegs.jpg
+  publication_date: '2025-01-07T09:47:46+00:00'
+  date_source: arxiv
+- id: lee2025compression
+  title: Compression of 3D Gaussian Splatting with Optimized Feature Planes and Standard
+    Video Codecs
+  authors: Soonbin Lee, Fangwen Shu, Yago Sanchez, Thomas Schierl, Cornelius Hellge
+  year: '2025'
+  abstract: '3D Gaussian Splatting is a recognized method for 3D scene representation,
+    known for its high rendering quality and speed. However, its substantial data
+    requirements present challenges for practical applications. In this paper, we
+    introduce an efficient compression technique that significantly reduces storage
+    overhead by using compact representation. We propose a unified architecture that
+    combines point cloud data and feature planes through a progressive tri-plane structure.
+    Our method utilizes 2D feature planes, enabling continuous spatial representation.
+    To further optimize these representations, we incorporate entropy modeling in
+    the frequency domain, specifically designed for standard video codecs. We also
+    propose channel-wise bit allocation to achieve a better trade-off between bitrate
+    consumption and feature plane representation. Consequently, our model effectively
+    leverages spatial correlations within the feature planes to enhance rate-distortion
+    performance using standard, non-differentiable video codecs. Experimental results
+    demonstrate that our method outperforms existing methods in data compactness while
+    maintaining high rendering quality. Our project page is available at https://fraunhoferhhi.github.io/CodecGS
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.03399.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  thumbnail: assets/thumbnails/lee2025compression.jpg
+  publication_date: '2025-01-06T21:37:30+00:00'
+  date_source: arxiv
+- id: rajasegaran2025gaussian
+  title: Gaussian Masked Autoencoders
+  authors: Jathushan Rajasegaran, Xinlei Chen, Rulilong Li, Christoph Feichtenhofer,
+    Jitendra Malik, Shiry Ginosar
+  year: '2025'
+  abstract: 'This paper explores Masked Autoencoders (MAE) with Gaussian Splatting.
+    While reconstructive self-supervised learning frameworks such as MAE learns good
+    semantic abstractions, it is not trained for explicit spatial awareness. Our approach,
+    named Gaussian Masked Autoencoder, or GMAE, aims to learn semantic abstractions
+    and spatial understanding jointly. Like MAE, it reconstructs the image end-to-end
+    in the pixel space, but beyond MAE, it also introduces an intermediate, 3D Gaussian-based
+    representation and renders images via splatting. We show that GMAE can enable
+    various zero-shot learning capabilities of spatial understanding (e.g., figure-ground
+    segmentation, image layering, edge detection, etc.) while preserving the high-level
+    semantics of self-supervised representation quality from MAE. To our knowledge,
+    we are the first to employ Gaussian primitives in an image representation learning
+    framework beyond optimization-based single-scene reconstructions. We believe GMAE
+    will inspire further research in this direction and contribute to developing next-generation
+    techniques for modeling high-fidelity visual data. More details at https://brjathu.github.io/gmae
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.03229.pdf
+  code: null
+  video: null
+  tags:
+  - Transformer
+  thumbnail: assets/thumbnails/rajasegaran2025gaussian.jpg
+  publication_date: '2025-01-06T18:59:57+00:00'
+  date_source: arxiv
+- id: nguyen2025pointmapconditioned
+  title: Pointmap-Conditioned Diffusion for Consistent Novel View Synthesis
+  authors: Thang-Anh-Quan Nguyen, Nathan Piasco, Luis Roldão, Moussab Bennehar, Dzmitry
+    Tsishkou, Laurent Caraffa, Jean-Philippe Tarel, Roland Brémond
+  year: '2025'
+  abstract: 'In this paper, we present PointmapDiffusion, a novel framework for single-image
+    novel view synthesis (NVS) that utilizes pre-trained 2D diffusion models. Our
+    method is the first to leverage pointmaps (i.e. rasterized 3D scene coordinates)
+    as a conditioning signal, capturing geometric prior from the reference images
+    to guide the diffusion process. By embedding reference attention blocks and a
+    ControlNet for pointmap features, our model balances between generative capability
+    and geometric consistency, enabling accurate view synthesis across varying viewpoints.
+    Extensive experiments on diverse real-world datasets demonstrate that PointmapDiffusion
+    achieves high-quality, multi-view consistent results with significantly fewer
+    trainable parameters compared to other baselines for single-image NVS tasks.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.02913.pdf
+  code: null
+  video: null
+  tags:
+  - Diffusion
+  thumbnail: assets/thumbnails/nguyen2025pointmapconditioned.jpg
+  publication_date: '2025-01-06T10:48:31+00:00'
+  date_source: arxiv
 - id: bian2025gsdit
   title: 'GS-DiT: Advancing Video Generation with Pseudo 4D Gaussian Fields through
     Efficient Dense 3D Point Tracking'
@@ -36,6 +201,41 @@
   - Year 2025
   thumbnail: assets/thumbnails/bian2025gsdit.jpg
   publication_date: '2025-01-05T23:55:33+00:00'
+  date_source: arxiv
+- id: cong2025videolifter
+  title: 'VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment'
+  authors: Wenyan Cong, Kevin Wang, Jiahui Lei, Colton Stearns, Yuanhao Cai, Dilin
+    Wang, Rakesh Ranjan, Matt Feiszli, Leonidas Guibas, Zhangyang Wang, Weiyao Wang,
+    Zhiwen Fan
+  year: '2025'
+  abstract: 'Efficiently reconstructing accurate 3D models from monocular video is
+    a key challenge in computer vision, critical for advancing applications in virtual
+    reality, robotics, and scene understanding. Existing approaches typically require
+    pre-computed camera parameters and frame-by-frame reconstruction pipelines, which
+    are prone to error accumulation and entail significant computational overhead.
+    To address these limitations, we introduce VideoLifter, a novel framework that
+    leverages geometric priors from a learnable model to incrementally optimize a
+    globally sparse to dense 3D representation directly from video sequences. VideoLifter
+    segments the video sequence into local windows, where it matches and registers
+    frames, constructs consistent fragments, and aligns them hierarchically to produce
+    a unified 3D model. By tracking and propagating sparse point correspondences across
+    frames and fragments, VideoLifter incrementally refines camera poses and 3D structure,
+    minimizing reprojection error for improved accuracy and robustness. This approach
+    significantly accelerates the reconstruction process, reducing training time by
+    over 82% while surpassing current state-of-the-art methods in visual fidelity
+    and computational efficiency.
+
+    '
+  project_page: https://videolifter.github.io/
+  paper: https://arxiv.org/pdf/2501.01949.pdf
+  code: null
+  video: null
+  tags:
+  - Acceleration
+  - Diffusion
+  - Project
+  thumbnail: assets/thumbnails/cong2025videolifter.jpg
+  publication_date: '2025-01-03T18:52:36+00:00'
   date_source: arxiv
 - id: huang2025enerverse
   title: 'EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation'
