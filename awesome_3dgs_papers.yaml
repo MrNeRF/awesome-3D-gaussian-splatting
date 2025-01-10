@@ -1,3 +1,131 @@
+- id: meng2025zero1tog
+  title: 'Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation'
+  authors: Xuyi Meng, Chen Wang, Jiahui Lei, Kostas Daniilidis, Jiatao Gu, Lingjie
+    Liu
+  year: '2025'
+  abstract: 'Recent advances in 2D image generation have achieved remarkable quality,largely
+    driven by the capacity of diffusion models and the availability of large-scale
+    datasets. However, direct 3D generation is still constrained by the scarcity and
+    lower fidelity of 3D datasets. In this paper, we introduce Zero-1-to-G, a novel
+    approach that addresses this problem by enabling direct single-view generation
+    on Gaussian splats using pretrained 2D diffusion models. Our key insight is that
+    Gaussian splats, a 3D representation, can be decomposed into multi-view images
+    encoding different attributes. This reframes the challenging task of direct 3D
+    generation within a 2D diffusion framework, allowing us to leverage the rich priors
+    of pretrained 2D diffusion models. To incorporate 3D awareness, we introduce cross-view
+    and cross-attribute attention layers, which capture complex correlations and enforce
+    3D consistency across generated splats. This makes Zero-1-to-G the first direct
+    image-to-3D generative model to effectively utilize pretrained 2D diffusion priors,
+    enabling efficient training and improved generalization to unseen objects. Extensive
+    experiments on both synthetic and in-the-wild datasets demonstrate superior performance
+    in 3D object generation, offering a new approach to high-quality 3D generation.
+
+    '
+  project_page: https://mengxuyigit.github.io/projects/zero-1-to-G/
+  paper: https://arxiv.org/pdf/2501.05427.pdf
+  code: null
+  video: null
+  tags:
+  - Diffusion
+  - Project
+  thumbnail: assets/thumbnails/meng2025zero1tog.jpg
+  publication_date: '2025-01-09T18:37:35+00:00'
+  date_source: arxiv
+- id: gerogiannis2025arc2avatar
+  title: 'Arc2Avatar: Generating Expressive 3D Avatars from a Single Image via ID
+    Guidance'
+  authors: Dimitrios Gerogiannis, Foivos Paraperas Papantoniou, Rolandos Alexandros
+    Potamias, Alexandros Lattas, Stefanos Zafeiriou
+  year: '2025'
+  abstract: 'Inspired by the effectiveness of 3D Gaussian Splatting (3DGS) in reconstructing
+    detailed 3D scenes within multi-view setups and the emergence of large 2D human
+    foundation models, we introduce Arc2Avatar, the first SDS-based method utilizing
+    a human face foundation model as guidance with just a single image as input. To
+    achieve that, we extend such a model for diverse-view human head generation by
+    fine-tuning on synthetic data and modifying its conditioning. Our avatars maintain
+    a dense correspondence with a human face mesh template, allowing blendshape-based
+    expression generation. This is achieved through a modified 3DGS approach, connectivity
+    regularizers, and a strategic initialization tailored for our task. Additionally,
+    we propose an optional efficient SDS-based correction step to refine the blendshape
+    expressions, enhancing realism and diversity. Experiments demonstrate that Arc2Avatar
+    achieves state-of-the-art realism and identity preservation, effectively addressing
+    color issues by allowing the use of very low guidance, enabled by our strong identity
+    prior and initialization strategy, without compromising detail.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.05379.pdf
+  code: null
+  video: null
+  tags:
+  - Avatar
+  - Diffusion
+  thumbnail: assets/thumbnails/gerogiannis2025arc2avatar.jpg
+  publication_date: '2025-01-09T17:04:33+00:00'
+  date_source: arxiv
+- id: tianci2025scaffoldslam
+  title: 'Scaffold-SLAM: Structured 3D Gaussians for Simultaneous Localization and
+    Photorealistic Mapping'
+  authors: Wen Tianci, Liu Zhiang, Lu Biao, Fang Yongchun
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has recently revolutionized novel view synthesis
+    in the Simultaneous Localization and Mapping (SLAM). However, existing SLAM methods
+    utilizing 3DGS have failed to provide high-quality novel view rendering for monocular,
+    stereo, and RGB-D cameras simultaneously. Notably, some methods perform well for
+    RGB-D cameras but suffer significant degradation in rendering quality for monocular
+    cameras. In this paper, we present Scaffold-SLAM, which delivers simultaneous
+    localization and high-quality photorealistic mapping across monocular, stereo,
+    and RGB-D cameras. We introduce two key innovations to achieve this state-of-the-art
+    visual quality. First, we propose Appearance-from-Motion embedding, enabling 3D
+    Gaussians to better model image appearance variations across different camera
+    poses. Second, we introduce a frequency regularization pyramid to guide the distribution
+    of Gaussians, allowing the model to effectively capture finer details in the scene.
+    Extensive experiments on monocular, stereo, and RGB-D datasets demonstrate that
+    Scaffold-SLAM significantly outperforms state-of-the-art methods in photorealistic
+    mapping quality, e.g., PSNR is 16.76% higher in the TUM RGB-D datasets for monocular
+    cameras.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.05242.pdf
+  code: null
+  video: null
+  tags:
+  - SLAM
+  thumbnail: assets/thumbnails/tianci2025scaffoldslam.jpg
+  publication_date: '2025-01-09T13:50:26+00:00'
+  date_source: arxiv
+- id: bond2025gaussianvideo
+  title: 'GaussianVideo: Efficient Video Representation via Hierarchical Gaussian
+    Splatting'
+  authors: Andrew Bond, Jui-Hsien Wang, Long Mai, Erkut Erdem, Aykut Erdem
+  year: '2025'
+  abstract: 'Efficient neural representations for dynamic video scenes are critical
+    for applications ranging from video compression to interactive simulations. Yet,
+    existing methods often face challenges related to high memory usage, lengthy training
+    times, and temporal consistency. To address these issues, we introduce a novel
+    neural video representation that combines 3D Gaussian splatting with continuous
+    camera motion modeling. By leveraging Neural ODEs, our approach learns smooth
+    camera trajectories while maintaining an explicit 3D scene representation through
+    Gaussians. Additionally, we introduce a spatiotemporal hierarchical learning strategy,
+    progressively refining spatial and temporal features to enhance reconstruction
+    quality and accelerate convergence. This memory-efficient approach achieves high-quality
+    rendering at impressive speeds. Experimental results show that our hierarchical
+    learning, combined with robust camera motion modeling, captures complex dynamic
+    scenes with strong temporal consistency, achieving state-of-the-art performance
+    across diverse video datasets in both high- and low-motion scenarios.
+
+    '
+  project_page: https://cyberiada.github.io/GaussianVideo/
+  paper: https://arxiv.org/pdf/2501.04782.pdf
+  code: null
+  video: null
+  tags:
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/bond2025gaussianvideo.jpg
+  publication_date: '2025-01-08T19:01:12+00:00'
+  date_source: arxiv
 - id: kwak2025modecgs
   title: 'MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment
     for Compact Dynamic 3D Gaussian Splatting'
@@ -3796,6 +3924,45 @@
   - Project
   thumbnail: assets/thumbnails/yu20244real.jpg
   publication_date: '2024-06-11T17:19:26+00:00'
+- id: jin2024lighting
+  title: 'Lighting Every Darkness with 3DGS: Fast Training and Real-Time Rendering
+    for HDR View Synthesis'
+  authors: Xin Jin, Pengyi Jiao, Zheng-Peng Duan, Xingchao Yang, Chun-Le Guo, Bo Ren,
+    Chongyi Li
+  year: '2024'
+  abstract: 'Volumetric rendering based methods, like NeRF, excel in HDR view synthesis
+    from RAWimages, especially for nighttime scenes. While, they suffer from long
+    training times and cannot perform real-time rendering due to dense sampling requirements.
+    The advent of 3D Gaussian Splatting (3DGS) enables real-time rendering and faster
+    training. However, implementing RAW image-based view synthesis directly using
+    3DGS is challenging due to its inherent drawbacks: 1) in nighttime scenes, extremely
+    low SNR leads to poor structure-from-motion (SfM) estimation in distant views;
+    2) the limited representation capacity of spherical harmonics (SH) function is
+    unsuitable for RAW linear color space; and 3) inaccurate scene structure hampers
+    downstream tasks such as refocusing. To address these issues, we propose LE3D
+    (Lighting Every darkness with 3DGS). Our method proposes Cone Scatter Initialization
+    to enrich the estimation of SfM, and replaces SH with a Color MLP to represent
+    the RAW linear color space. Additionally, we introduce depth distortion and near-far
+    regularizations to improve the accuracy of scene structure for downstream tasks.
+    These designs enable LE3D to perform real-time novel view synthesis, HDR rendering,
+    refocusing, and tone-mapping changes. Compared to previous volumetric rendering
+    based methods, LE3D reduces training time to 1% and improves rendering speed by
+    up to 4,000 times for 2K resolution images in terms of FPS. Code and viewer can
+    be found in https://github.com/Srameo/LE3D .
+
+    '
+  project_page: https://srameo.github.io/projects/le3d/intro.htmla
+  paper: https://arxiv.org/pdf/2406.06216.pdf
+  code: https://github.com/Srameo/LE3D
+  video: https://srameo.github.io/projects/le3d/assets/demo_video_interactive_viewer_compressed.mp4
+  tags:
+  - Code
+  - Project
+  - Rendering
+  - Video
+  thumbnail: assets/thumbnails/jin2024lighting.jpg
+  publication_date: '2024-06-10T12:33:08+00:00'
+  date_source: arxiv
 - id: hyun2024adversarial
   title: Adversarial Generation of Hierarchical Gaussians for 3d Generative Model
   authors: Sangeek Hyun, Jae-Pil Heo
