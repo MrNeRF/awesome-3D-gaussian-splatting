@@ -1263,7 +1263,84 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="kwak2025modecgs" data-title="MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting" data-authors="Sangwoon Kwak, Joonsoo Kim, Jun Young Jeong, Won-Sik Cheong, Jihyong Oh, Munchurl Kim" data-year="2025" data-tags='["Compression", "Dynamic", "Project", "Video"]'>
+            <div class="paper-row" data-id="meng2025zero1tog" data-title="Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation" data-authors="Xuyi Meng, Chen Wang, Jiahui Lei, Kostas Daniilidis, Jiatao Gu, Lingjie Liu" data-year="2025" data-tags='["Diffusion", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'meng2025zero1tog', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/meng2025zero1tog.jpg" data-fallback="None" alt="Paper thumbnail for Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Xuyi Meng, Chen Wang, Jiahui Lei, Kostas Daniilidis, Jiatao Gu, Lingjie Liu</p>
+      <div class="paper-tags"><span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2501.05427.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://mengxuyigit.github.io/projects/zero-1-to-G/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent advances in 2D image generation have achieved remarkable quality,largely driven by the capacity of diffusion models and the availability of large-scale datasets. However, direct 3D generation is still constrained by the scarcity and lower fidelity of 3D datasets. In this paper, we introduce Zero-1-to-G, a novel approach that addresses this problem by enabling direct single-view generation on Gaussian splats using pretrained 2D diffusion models. Our key insight is that Gaussian splats, a 3D representation, can be decomposed into multi-view images encoding different attributes. This reframes the challenging task of direct 3D generation within a 2D diffusion framework, allowing us to leverage the rich priors of pretrained 2D diffusion models. To incorporate 3D awareness, we introduce cross-view and cross-attribute attention layers, which capture complex correlations and enforce 3D consistency across generated splats. This makes Zero-1-to-G the first direct image-to-3D generative model to effectively utilize pretrained 2D diffusion priors, enabling efficient training and improved generalization to unseen objects. Extensive experiments on both synthetic and in-the-wild datasets demonstrate superior performance in 3D object generation, offering a new approach to high-quality 3D generation.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="gerogiannis2025arc2avatar" data-title="Arc2Avatar: Generating Expressive 3D Avatars from a Single Image via ID Guidance" data-authors="Dimitrios Gerogiannis, Foivos Paraperas Papantoniou, Rolandos Alexandros Potamias, Alexandros Lattas, Stefanos Zafeiriou" data-year="2025" data-tags='["Avatar", "Diffusion"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'gerogiannis2025arc2avatar', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/gerogiannis2025arc2avatar.jpg" data-fallback="None" alt="Paper thumbnail for Arc2Avatar: Generating Expressive 3D Avatars from a Single Image via ID Guidance" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Arc2Avatar: Generating Expressive 3D Avatars from a Single Image via ID Guidance <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Dimitrios Gerogiannis, Foivos Paraperas Papantoniou, Rolandos Alexandros Potamias, Alexandros Lattas, Stefanos Zafeiriou</p>
+      <div class="paper-tags"><span class="paper-tag">Avatar</span>
+<span class="paper-tag">Diffusion</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2501.05379.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Inspired by the effectiveness of 3D Gaussian Splatting (3DGS) in reconstructing detailed 3D scenes within multi-view setups and the emergence of large 2D human foundation models, we introduce Arc2Avatar, the first SDS-based method utilizing a human face foundation model as guidance with just a single image as input. To achieve that, we extend such a model for diverse-view human head generation by fine-tuning on synthetic data and modifying its conditioning. Our avatars maintain a dense correspondence with a human face mesh template, allowing blendshape-based expression generation. This is achieved through a modified 3DGS approach, connectivity regularizers, and a strategic initialization tailored for our task. Additionally, we propose an optional efficient SDS-based correction step to refine the blendshape expressions, enhancing realism and diversity. Experiments demonstrate that Arc2Avatar achieves state-of-the-art realism and identity preservation, effectively addressing color issues by allowing the use of very low guidance, enabled by our strong identity prior and initialization strategy, without compromising detail.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="tianci2025scaffoldslam" data-title="Scaffold-SLAM: Structured 3D Gaussians for Simultaneous Localization and Photorealistic Mapping" data-authors="Wen Tianci, Liu Zhiang, Lu Biao, Fang Yongchun" data-year="2025" data-tags='["SLAM"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'tianci2025scaffoldslam', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/tianci2025scaffoldslam.jpg" data-fallback="None" alt="Paper thumbnail for Scaffold-SLAM: Structured 3D Gaussians for Simultaneous Localization and Photorealistic Mapping" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Scaffold-SLAM: Structured 3D Gaussians for Simultaneous Localization and Photorealistic Mapping <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Wen Tianci, Liu Zhiang, Lu Biao, Fang Yongchun</p>
+      <div class="paper-tags"><span class="paper-tag">SLAM</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2501.05242.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3DGS) has recently revolutionized novel view synthesis in the Simultaneous Localization and Mapping (SLAM). However, existing SLAM methods utilizing 3DGS have failed to provide high-quality novel view rendering for monocular, stereo, and RGB-D cameras simultaneously. Notably, some methods perform well for RGB-D cameras but suffer significant degradation in rendering quality for monocular cameras. In this paper, we present Scaffold-SLAM, which delivers simultaneous localization and high-quality photorealistic mapping across monocular, stereo, and RGB-D cameras. We introduce two key innovations to achieve this state-of-the-art visual quality. First, we propose Appearance-from-Motion embedding, enabling 3D Gaussians to better model image appearance variations across different camera poses. Second, we introduce a frequency regularization pyramid to guide the distribution of Gaussians, allowing the model to effectively capture finer details in the scene. Extensive experiments on monocular, stereo, and RGB-D datasets demonstrate that Scaffold-SLAM significantly outperforms state-of-the-art methods in photorealistic mapping quality, e.g., PSNR is 16.76% higher in the TUM RGB-D datasets for monocular cameras.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="bond2025gaussianvideo" data-title="GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting" data-authors="Andrew Bond, Jui-Hsien Wang, Long Mai, Erkut Erdem, Aykut Erdem" data-year="2025" data-tags='["Project", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'bond2025gaussianvideo', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/bond2025gaussianvideo.jpg" data-fallback="None" alt="Paper thumbnail for GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Andrew Bond, Jui-Hsien Wang, Long Mai, Erkut Erdem, Aykut Erdem</p>
+      <div class="paper-tags"><span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2501.04782.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://cyberiada.github.io/GaussianVideo/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Efficient neural representations for dynamic video scenes are critical for applications ranging from video compression to interactive simulations. Yet, existing methods often face challenges related to high memory usage, lengthy training times, and temporal consistency. To address these issues, we introduce a novel neural video representation that combines 3D Gaussian splatting with continuous camera motion modeling. By leveraging Neural ODEs, our approach learns smooth camera trajectories while maintaining an explicit 3D scene representation through Gaussians. Additionally, we introduce a spatiotemporal hierarchical learning strategy, progressively refining spatial and temporal features to enhance reconstruction quality and accelerate convergence. This memory-efficient approach achieves high-quality rendering at impressive speeds. Experimental results show that our hierarchical learning, combined with robust camera motion modeling, captures complex dynamic scenes with strong temporal consistency, achieving state-of-the-art performance across diverse video datasets in both high- and low-motion scenarios.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="kwak2025modecgs" data-title="MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting" data-authors="Sangwoon Kwak, Joonsoo Kim, Jun Young Jeong, Won-Sik Cheong, Jihyong Oh, Munchurl Kim" data-year="2025" data-tags='["Compression", "Dynamic", "Project", "Video"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'kwak2025modecgs', this)">
     <div class="paper-number"></div>
@@ -3695,6 +3772,30 @@ h1 {
 <a href="https://snap-research.github.io/4Real/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Existing dynamic scene generation methods mostly rely on distilling knowledge from pre-trained 3D generative models, which are typically fine-tuned on synthetic object datasets. As a result, the generated scenes are often object-centric and lack photorealism. To address these limitations, we introduce a novel pipeline designed for photorealistic text-to-4D scene generation, discarding the dependency on multi-view generative models and instead fully utilizing video generative models trained on diverse real-world datasets. Our method begins by generating a reference video using the video generation model. We then learn the canonical 3D representation of the video using a freeze-time video, delicately generated from the reference video. To handle inconsistencies in the freeze-time video, we jointly learn a per-frame deformation to model these imperfections. We then learn the temporal deformation based on the canonical representation to capture dynamic interactions in the reference video. The pipeline facilitates the generation of dynamic scenes with enhanced photorealism and structural integrity, viewable from multiple perspectives, thereby setting a new standard in 4D scene generation.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="jin2024lighting" data-title="Lighting Every Darkness with 3DGS: Fast Training and Real-Time Rendering for HDR View Synthesis" data-authors="Xin Jin, Pengyi Jiao, Zheng-Peng Duan, Xingchao Yang, Chun-Le Guo, Bo Ren, Chongyi Li" data-year="2024" data-tags='["Code", "Project", "Rendering", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'jin2024lighting', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/jin2024lighting.jpg" data-fallback="None" alt="Paper thumbnail for Lighting Every Darkness with 3DGS: Fast Training and Real-Time Rendering for HDR View Synthesis" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Lighting Every Darkness with 3DGS: Fast Training and Real-Time Rendering for HDR View Synthesis <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Xin Jin, Pengyi Jiao, Zheng-Peng Duan, Xingchao Yang, Chun-Le Guo, Bo Ren, Chongyi Li</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2406.06216.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://srameo.github.io/projects/le3d/intro.htmla" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/Srameo/LE3D" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://srameo.github.io/projects/le3d/assets/demo_video_interactive_viewer_compressed.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Volumetric rendering based methods, like NeRF, excel in HDR view synthesis from RAWimages, especially for nighttime scenes. While, they suffer from long training times and cannot perform real-time rendering due to dense sampling requirements. The advent of 3D Gaussian Splatting (3DGS) enables real-time rendering and faster training. However, implementing RAW image-based view synthesis directly using 3DGS is challenging due to its inherent drawbacks: 1) in nighttime scenes, extremely low SNR leads to poor structure-from-motion (SfM) estimation in distant views; 2) the limited representation capacity of spherical harmonics (SH) function is unsuitable for RAW linear color space; and 3) inaccurate scene structure hampers downstream tasks such as refocusing. To address these issues, we propose LE3D (Lighting Every darkness with 3DGS). Our method proposes Cone Scatter Initialization to enrich the estimation of SfM, and replaces SH with a Color MLP to represent the RAW linear color space. Additionally, we introduce depth distortion and near-far regularizations to improve the accuracy of scene structure for downstream tasks. These designs enable LE3D to perform real-time novel view synthesis, HDR rendering, refocusing, and tone-mapping changes. Compared to previous volumetric rendering based methods, LE3D reduces training time to 1% and improves rendering speed by up to 4,000 times for 2K resolution images in terms of FPS. Code and viewer can be found in https://github.com/Srameo/LE3D .
+</div></div>
     </div>
   </div>
 </div>
