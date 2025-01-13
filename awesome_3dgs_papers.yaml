@@ -1390,6 +1390,38 @@
   thumbnail: assets/thumbnails/weiss2024gaussian.jpg
   publication_date: '2024-12-17T09:57:04+00:00'
   date_source: arxiv
+- id: wu20243dgut
+  title: '3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting'
+  authors: Qi Wu, Janick Martinez Esturo, Ashkan Mirzaei, Nicolas Moenne-Loccoz, Zan
+    Gojcic
+  year: '2024'
+  abstract: '3D Gaussian Splatting (3DGS) has shown great potential for efficient
+    reconstruction and high-fidelity real-time rendering of complex scenes on consumer
+    hardware. However, due to its rasterization-based formulation, 3DGS is constrained
+    to ideal pinhole cameras and lacks support for secondary lighting effects. Recent
+    methods address these limitations by tracing volumetric particles instead, however,
+    this comes at the cost of significantly slower rendering speeds. In this work,
+    we propose 3D Gaussian Unscented Transform (3DGUT), replacing the EWA splatting
+    formulation in 3DGS with the Unscented Transform that approximates the particles
+    through sigma points, which can be projected exactly under any nonlinear projection
+    function. This modification enables trivial support of distorted cameras with
+    time dependent effects such as rolling shutter, while retaining the efficiency
+    of rasterization. Additionally, we align our rendering formulation with that of
+    tracing-based methods, enabling secondary ray tracing required to represent phenomena
+    such as reflections and refraction within the same 3D representation.
+
+    '
+  project_page: https://research.nvidia.com/labs/toronto-ai/3DGUT/
+  paper: https://arxiv.org/pdf/2412.12507.pdf
+  code: null
+  video: https://research.nvidia.com/labs/toronto-ai/3DGUT/res/3DGUT_ready_compressed.mp4
+  tags:
+  - Perspective-correct
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/wu20243dgut.jpg
+  publication_date: '2024-12-17T03:21:25+00:00'
+  date_source: arxiv
 - id: murai2024mast3rslam
   title: 'MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors'
   authors: Riku Murai, Eric Dexheimer, Andrew J. Davison
@@ -1916,6 +1948,36 @@
   - Relight
   thumbnail: assets/thumbnails/li2024recap.jpg
   publication_date: '2024-12-10T14:15:32+00:00'
+  date_source: arxiv
+- id: lyu2024resgs
+  title: 'ResGS: Residual Densification of 3D Gaussian for Efficient Detail Recovery'
+  authors: Yanzhe Lyu, Kai Cheng, Xin Kang, Xuejin Chen
+  year: '2024'
+  abstract: 'Recently, 3D Gaussian Splatting (3D-GS) has prevailed in novel view synthesis,
+    achieving high fidelity and efficiency. However, it often struggles to capture
+    rich details and complete geometry. Our analysis highlights a key limitation of
+    3D-GS caused by the fixed threshold in densification, which balances geometry
+    coverage against detail recovery as the threshold varies. To address this, we
+    introduce a novel densification method, residual split, which adds a downscaled
+    Gaussian as a residual. Our approach is capable of adaptively retrieving details
+    and complementing missing geometry while enabling progressive refinement. To further
+    support this method, we propose a pipeline named ResGS. Specifically, we integrate
+    a Gaussian image pyramid for progressive supervision and implement a selection
+    scheme that prioritizes the densification of coarse Gaussians over time. Extensive
+    experiments demonstrate that our method achieves SOTA rendering quality. Consistent
+    performance improvements can be achieved by applying our residual split on various
+    3D-GS variants, underscoring its versatility and potential for broader application
+    in 3D-GS-based applications.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.07494.pdf
+  code: null
+  video: null
+  tags:
+  - Densification
+  thumbnail: assets/thumbnails/lyu2024resgs.jpg
+  publication_date: '2024-12-10T13:19:27+00:00'
   date_source: arxiv
 - id: tang2024mvdust3r
   title: 'MV-DUSt3R+: Single-Stage Scene Reconstruction from Sparse Views In 2 Seconds'
