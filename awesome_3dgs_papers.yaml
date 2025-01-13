@@ -4580,6 +4580,42 @@
   - Video
   thumbnail: assets/thumbnails/labe2024dgd.jpg
   publication_date: '2024-05-29T17:52:22+00:00'
+- id: jurca2024rtgs2
+  title: 'RT-GS2: Real-Time Generalizable Semantic Segmentation for 3D Gaussian Representations
+    of Radiance Fields'
+  authors: Mihnea-Bogdan Jurca, Remco Royen, Ion Giosan, Adrian Munteanu
+  year: '2024'
+  abstract: Gaussian Splatting has revolutionized the world of novel view synthesis
+    by achieving high rendering performance in real-time. Recently, studies have focused
+    on enriching these 3D representations with semantic information for downstream
+    tasks. In this paper, we introduce RT-GS2, the first generalizable semantic segmentation
+    method employing Gaussian Splatting. While existing Gaussian Splatting-based approaches
+    rely on scene-specific training, RT-GS2 demonstrates the ability to generalize
+    to unseen scenes. Our method adopts a new approach by first extracting view-independent
+    3D Gaussian features in a self-supervised manner, followed by a novel View-Dependent
+    / View-Independent (VDVI) feature fusion to enhance semantic consistency over
+    different views. Extensive experimentation on three different datasets showcases
+    RT-GS2's superiority over the state-of-the-art methods in semantic segmentation
+    quality, exemplified by a 8.01% increase in mIoU on the Replica dataset. Moreover,
+    our method achieves real-time performance of 27.03 FPS, marking an astonishing
+    901 times speedup compared to existing approaches. This work represents a significant
+    advancement in the field by introducing, to the best of our knowledge, the first
+    real-time generalizable semantic segmentation method for 3D Gaussian representations
+    of radiance fields. The project page and implementation can be found at https://mbjurca.github.io/rt-gs2/.
+  project_page: https://mbjurca.github.io/rt-gs2/
+  paper: https://arxiv.org/pdf/2405.18033.pdf
+  code: https://github.com/mbjurca/RT_GS2
+  video: null
+  tags:
+  - Code
+  - Point Cloud
+  - Project
+  - Segmentation
+  - Transformer
+  - Virtual Reality
+  thumbnail: assets/thumbnails/jurca2024rtgs2.jpg
+  publication_date: '2024-05-28T10:34:28+00:00'
+  date_source: arxiv
 - id: wang2024vidu4d
   title: 'Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic
     Gaussian Surfels'
