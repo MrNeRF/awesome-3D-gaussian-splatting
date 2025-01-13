@@ -4647,7 +4647,7 @@
     of Radiance Fields'
   authors: Mihnea-Bogdan Jurca, Remco Royen, Ion Giosan, Adrian Munteanu
   year: '2024'
-  abstract: Gaussian Splatting has revolutionized the world of novel view synthesis
+  abstract: 'Gaussian Splatting has revolutionized the world of novel view synthesis
     by achieving high rendering performance in real-time. Recently, studies have focused
     on enriching these 3D representations with semantic information for downstream
     tasks. In this paper, we introduce RT-GS2, the first generalizable semantic segmentation
@@ -4657,13 +4657,15 @@
     3D Gaussian features in a self-supervised manner, followed by a novel View-Dependent
     / View-Independent (VDVI) feature fusion to enhance semantic consistency over
     different views. Extensive experimentation on three different datasets showcases
-    RT-GS2's superiority over the state-of-the-art methods in semantic segmentation
+    RT-GS2''s superiority over the state-of-the-art methods in semantic segmentation
     quality, exemplified by a 8.01% increase in mIoU on the Replica dataset. Moreover,
     our method achieves real-time performance of 27.03 FPS, marking an astonishing
     901 times speedup compared to existing approaches. This work represents a significant
     advancement in the field by introducing, to the best of our knowledge, the first
     real-time generalizable semantic segmentation method for 3D Gaussian representations
-    of radiance fields. The project page and implementation can be found at https://mbjurca.github.io/rt-gs2/.
+    of radiance fields.
+
+    '
   project_page: https://mbjurca.github.io/rt-gs2/
   paper: https://arxiv.org/pdf/2405.18033.pdf
   code: https://github.com/mbjurca/RT_GS2
