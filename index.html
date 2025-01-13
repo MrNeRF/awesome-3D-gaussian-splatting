@@ -221,7 +221,7 @@ h1 {
 /* Floating Navigation */
 .floating-nav {
     position: fixed;
-    bottom: 100px;
+    bottom: 180px;
     right: 2rem;
     display: flex;
     flex-direction: column;
@@ -490,7 +490,7 @@ h1 {
     }
 
     .floating-nav {
-        bottom: 80px;
+        bottom: 140px;
         right: 1rem;
     }
 
@@ -509,6 +509,60 @@ h1 {
         display: none !important;
     }
 }
+.selected-only-mode-toggle {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.selected-only-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+.selected-only-mode-toggle .tooltip {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.selected-only-mode-toggle:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.selected-only-mode .selection-mode-toggle .tooltip {
+    content: "Exit Selection Mode";
+}
+
+.selection-mode .selection-checkbox {
+    display: block !important;
+    pointer-events: auto !important;
+}
+
 /* Selection Controls */
 .selection-mode-toggle {
     position: fixed;
@@ -1095,10 +1149,19 @@ h1 {
         </div>
 
         <!-- Selection Mode Toggle Button -->
-        <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
-            <i class="fas fa-list-check"></i>
-            <span class="tooltip">Enter Selection Mode</span>
-        </button>
+        <div class="selection-buttons">
+            <!-- Show Selected Only -->
+            <button class="selected-only-mode-toggle" onclick="toggleSelectedOnly()">
+                <i class="fas fa-filter"></i>
+                <span class="tooltip">Show Selected Only</span>
+            </button>
+
+            <!-- Enter Selection Mode -->
+            <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
+                <i class="fas fa-list-check"></i>
+                <span class="tooltip">Enter Selection Mode</span>
+            </button>
+        </div>
 
         <!-- Selection Preview Bar -->
         <div class="selection-preview">
@@ -1154,17 +1217,6 @@ h1 {
                 </a>
             </div>
         </div>
-        <div class="preview-header-right">
-                <button class="control-button secondary show-selected" onclick="toggleSelectedOnly()">
-                    <i class="fas fa-filter"></i> Show Selected Only
-                </button>
-                <button class="control-button secondary" onclick="clearSelection()">
-                    <i class="fas fa-trash"></i> Clear
-                </button>
-                <button class="control-button primary" onclick="showShareModal()">
-                    <i class="fas fa-share"></i> Share
-                </button>
-            </div>
 
         <!-- Filter Info -->
         <div class="filter-info">
@@ -1263,7 +1315,25 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="meng2025zero1tog" data-title="Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation" data-authors="Xuyi Meng, Chen Wang, Jiahui Lei, Kostas Daniilidis, Jiatao Gu, Lingjie Liu" data-year="2025" data-tags='["Diffusion", "Project"]'>
+            <div class="paper-row" data-id="shin2025localityaware" data-title="Locality-aware Gaussian Compression for Fast and High-quality Rendering" data-authors="Seungjoo Shin, Jaesik Park, Sunghyun Cho" data-year="2025" data-tags='["Compression"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'shin2025localityaware', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/shin2025localityaware.jpg" data-fallback="None" alt="Paper thumbnail for Locality-aware Gaussian Compression for Fast and High-quality Rendering" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Locality-aware Gaussian Compression for Fast and High-quality Rendering <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Seungjoo Shin, Jaesik Park, Sunghyun Cho</p>
+      <div class="paper-tags"><span class="paper-tag">Compression</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2501.05757.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We present LocoGS, a locality-aware 3D Gaussian Splatting (3DGS) framework that exploits the spatial coherence of 3D Gaussians for compact modeling of volumetric scenes. To this end, we first analyze the local coherence of 3D Gaussian attributes, and propose a novel locality-aware 3D Gaussian representation that effectively encodes locally-coherent Gaussian attributes using a neural field representation with a minimal storage requirement. On top of the novel representation, LocoGS is carefully designed with additional components such as dense initialization, an adaptive spherical harmonics bandwidth scheme and different encoding schemes for different Gaussian attributes to maximize compression performance. Experimental results demonstrate that our approach outperforms the rendering quality of existing compact Gaussian representations for representative real-world 3D datasets while achieving from 54.6$\times$ to 96.6$\times$ compressed storage size and from 2.1$\times$ to 2.4$\times$ rendering speed than 3DGS. Even our approach also demonstrates an averaged 2.4$\times$ higher rendering speed than the state-of-the-art compression method with comparable compression performance.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="meng2025zero1tog" data-title="Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation" data-authors="Xuyi Meng, Chen Wang, Jiahui Lei, Kostas Daniilidis, Jiatao Gu, Lingjie Liu" data-year="2025" data-tags='["Diffusion", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'meng2025zero1tog', this)">
     <div class="paper-number"></div>
@@ -10464,7 +10534,7 @@ document.addEventListener('DOMContentLoaded', function() {
     applyURLParams();
 
     // Show initial papers
-    paperCards.forEach(c => c.classList.add('visible'));
+    filterPapers();
     updatePaperNumbers();
 
     // Expose global functions for HTML onclick handlers
