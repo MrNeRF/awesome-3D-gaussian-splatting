@@ -1,3 +1,33 @@
+- id: shin2025localityaware
+  title: Locality-aware Gaussian Compression for Fast and High-quality Rendering
+  authors: Seungjoo Shin, Jaesik Park, Sunghyun Cho
+  year: '2025'
+  abstract: 'We present LocoGS, a locality-aware 3D Gaussian Splatting (3DGS) framework
+    that exploits the spatial coherence of 3D Gaussians for compact modeling of volumetric
+    scenes. To this end, we first analyze the local coherence of 3D Gaussian attributes,
+    and propose a novel locality-aware 3D Gaussian representation that effectively
+    encodes locally-coherent Gaussian attributes using a neural field representation
+    with a minimal storage requirement. On top of the novel representation, LocoGS
+    is carefully designed with additional components such as dense initialization,
+    an adaptive spherical harmonics bandwidth scheme and different encoding schemes
+    for different Gaussian attributes to maximize compression performance. Experimental
+    results demonstrate that our approach outperforms the rendering quality of existing
+    compact Gaussian representations for representative real-world 3D datasets while
+    achieving from 54.6$\times$ to 96.6$\times$ compressed storage size and from 2.1$\times$
+    to 2.4$\times$ rendering speed than 3DGS. Even our approach also demonstrates
+    an averaged 2.4$\times$ higher rendering speed than the state-of-the-art compression
+    method with comparable compression performance.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.05757.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  thumbnail: assets/thumbnails/shin2025localityaware.jpg
+  publication_date: '2025-01-10T07:19:41+00:00'
+  date_source: arxiv
 - id: meng2025zero1tog
   title: 'Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation'
   authors: Xuyi Meng, Chen Wang, Jiahui Lei, Kostas Daniilidis, Jiatao Gu, Lingjie
