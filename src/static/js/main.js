@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     applyURLParams();
 
     // Show initial papers
-    paperCards.forEach(c => c.classList.add('visible'));
+    filterPapers();
     updatePaperNumbers();
 
     // Expose global functions for HTML onclick handlers
