@@ -2162,6 +2162,28 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="wu20243dgut" data-title="3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting" data-authors="Qi Wu, Janick Martinez Esturo, Ashkan Mirzaei, Nicolas Moenne-Loccoz, Zan Gojcic" data-year="2024" data-tags='["Perspective-correct", "Project", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wu20243dgut', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wu20243dgut.jpg" data-fallback="None" alt="Paper thumbnail for 3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian Splatting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Qi Wu, Janick Martinez Esturo, Ashkan Mirzaei, Nicolas Moenne-Loccoz, Zan Gojcic</p>
+      <div class="paper-tags"><span class="paper-tag">Perspective-correct</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.12507.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://research.nvidia.com/labs/toronto-ai/3DGUT/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://research.nvidia.com/labs/toronto-ai/3DGUT/res/3DGUT_ready_compressed.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3DGS) has shown great potential for efficient reconstruction and high-fidelity real-time rendering of complex scenes on consumer hardware. However, due to its rasterization-based formulation, 3DGS is constrained to ideal pinhole cameras and lacks support for secondary lighting effects. Recent methods address these limitations by tracing volumetric particles instead, however, this comes at the cost of significantly slower rendering speeds. In this work, we propose 3D Gaussian Unscented Transform (3DGUT), replacing the EWA splatting formulation in 3DGS with the Unscented Transform that approximates the particles through sigma points, which can be projected exactly under any nonlinear projection function. This modification enables trivial support of distorted cameras with time dependent effects such as rolling shutter, while retaining the efficiency of rasterization. Additionally, we align our rendering formulation with that of tracing-based methods, enabling secondary ray tracing required to represent phenomena such as reflections and refraction within the same 3D representation.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="murai2024mast3rslam" data-title="MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors" data-authors="Riku Murai, Eric Dexheimer, Andrew J. Davison" data-year="2024" data-tags='["3ster-based", "SLAM", "Video"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'murai2024mast3rslam', this)">
@@ -2501,6 +2523,24 @@ h1 {
 <a href="https://jingzhi.github.io/ReCap/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Accurate 3D objects relighting in diverse unseen environments is crucial for realistic virtual object placement. Due to the albedo-lighting ambiguity, existing methods often fall short in producing faithful relights. Without proper constraints, observed training views can be explained by numerous combinations of lighting and material attributes, lacking physical correspondence with the actual environment maps used for relighting. In this work, we present ReCap, treating cross-environment captures as multi-task target to provide the missing supervision that cuts through the entanglement. Specifically, ReCap jointly optimizes multiple lighting representations that share a common set of material attributes. This naturally harmonizes a coherent set of lighting representations around the mutual material attributes, exploiting commonalities and differences across varied object appearances. Such coherence enables physically sound lighting reconstruction and robust material estimation - both essential for accurate relighting. Together with a streamlined shading function and effective post-processing, ReCap outperforms the leading competitor by 3.4 dB in PSNR on an expanded relighting benchmark.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="lyu2024resgs" data-title="ResGS: Residual Densification of 3D Gaussian for Efficient Detail Recovery" data-authors="Yanzhe Lyu, Kai Cheng, Xin Kang, Xuejin Chen" data-year="2024" data-tags='["Densification"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'lyu2024resgs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/lyu2024resgs.jpg" data-fallback="None" alt="Paper thumbnail for ResGS: Residual Densification of 3D Gaussian for Efficient Detail Recovery" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">ResGS: Residual Densification of 3D Gaussian for Efficient Detail Recovery <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yanzhe Lyu, Kai Cheng, Xin Kang, Xuejin Chen</p>
+      <div class="paper-tags"><span class="paper-tag">Densification</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.07494.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recently, 3D Gaussian Splatting (3D-GS) has prevailed in novel view synthesis, achieving high fidelity and efficiency. However, it often struggles to capture rich details and complete geometry. Our analysis highlights a key limitation of 3D-GS caused by the fixed threshold in densification, which balances geometry coverage against detail recovery as the threshold varies. To address this, we introduce a novel densification method, residual split, which adds a downscaled Gaussian as a residual. Our approach is capable of adaptively retrieving details and complementing missing geometry while enabling progressive refinement. To further support this method, we propose a pipeline named ResGS. Specifically, we integrate a Gaussian image pyramid for progressive supervision and implement a selection scheme that prioritizes the densification of coarse Gaussians over time. Extensive experiments demonstrate that our method achieves SOTA rendering quality. Consistent performance improvements can be achieved by applying our residual split on various 3D-GS variants, underscoring its versatility and potential for broader application in 3D-GS-based applications.
 </div></div>
     </div>
   </div>
@@ -4245,6 +4285,30 @@ h1 {
 <a href="https://www.youtube.com/watch?v=GzX2GJn9OKs" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">We tackle the task of learning dynamic 3D semantic radiance fields given a single monocular video as input. Our learned semantic radiance field captures per-point semantics as well as color and geometric properties for a dynamic 3D scene, enabling the generation of novel views and their corresponding semantics. This enables the segmentation and tracking of a diverse set of 3D semantic entities, specified using a simple and intuitive interface that includes a user click or a text prompt. To this end, we present DGD, a unified 3D representation for both the appearance and semantics of a dynamic 3D scene, building upon the recently proposed dynamic 3D Gaussians representation. Our representation is optimized over time with both color and semantic information. Key to our method is the joint optimization of the appearance and semantic attributes, which jointly affect the geometric properties of the scene. We evaluate our approach in its ability to enable dense semantic 3D object tracking and demonstrate high-quality results that are fast to render, for a diverse set of scenes.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="jurca2024rtgs2" data-title="RT-GS2: Real-Time Generalizable Semantic Segmentation for 3D Gaussian Representations of Radiance Fields" data-authors="Mihnea-Bogdan Jurca, Remco Royen, Ion Giosan, Adrian Munteanu" data-year="2024" data-tags='["Code", "Point Cloud", "Project", "Segmentation", "Transformer", "Virtual Reality"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'jurca2024rtgs2', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/jurca2024rtgs2.jpg" data-fallback="None" alt="Paper thumbnail for RT-GS2: Real-Time Generalizable Semantic Segmentation for 3D Gaussian Representations of Radiance Fields" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">RT-GS2: Real-Time Generalizable Semantic Segmentation for 3D Gaussian Representations of Radiance Fields <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Mihnea-Bogdan Jurca, Remco Royen, Ion Giosan, Adrian Munteanu</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Point Cloud</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Segmentation</span>
+<span class="paper-tag">Transformer</span>
+<span class="paper-tag">Virtual Reality</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2405.18033.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://mbjurca.github.io/rt-gs2/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/mbjurca/RT_GS2" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Gaussian Splatting has revolutionized the world of novel view synthesis by achieving high rendering performance in real-time. Recently, studies have focused on enriching these 3D representations with semantic information for downstream tasks. In this paper, we introduce RT-GS2, the first generalizable semantic segmentation method employing Gaussian Splatting. While existing Gaussian Splatting-based approaches rely on scene-specific training, RT-GS2 demonstrates the ability to generalize to unseen scenes. Our method adopts a new approach by first extracting view-independent 3D Gaussian features in a self-supervised manner, followed by a novel View-Dependent / View-Independent (VDVI) feature fusion to enhance semantic consistency over different views. Extensive experimentation on three different datasets showcases RT-GS2's superiority over the state-of-the-art methods in semantic segmentation quality, exemplified by a 8.01% increase in mIoU on the Replica dataset. Moreover, our method achieves real-time performance of 27.03 FPS, marking an astonishing 901 times speedup compared to existing approaches. This work represents a significant advancement in the field by introducing, to the best of our knowledge, the first real-time generalizable semantic segmentation method for 3D Gaussian representations of radiance fields. The project page and implementation can be found at https://mbjurca.github.io/rt-gs2/.</div></div>
     </div>
   </div>
 </div>
