@@ -205,7 +205,7 @@ h1 {
 /* Floating Navigation */
 .floating-nav {
     position: fixed;
-    bottom: 100px;
+    bottom: 180px;
     right: 2rem;
     display: flex;
     flex-direction: column;
@@ -474,7 +474,7 @@ h1 {
     }
 
     .floating-nav {
-        bottom: 80px;
+        bottom: 140px;
         right: 1rem;
     }
 

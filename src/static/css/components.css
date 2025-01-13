@@ -1,3 +1,57 @@
+.selected-only-mode-toggle {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.selected-only-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+.selected-only-mode-toggle .tooltip {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.selected-only-mode-toggle:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.selected-only-mode .selection-mode-toggle .tooltip {
+    content: "Exit Selection Mode";
+}
+
+.selection-mode .selection-checkbox {
+    display: block !important;
+    pointer-events: auto !important;
+}
+
 /* Selection Controls */
 .selection-mode-toggle {
     position: fixed;
