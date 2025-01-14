@@ -2189,6 +2189,45 @@
   - Review
   thumbnail: assets/thumbnails/qiu2024advancing.jpg
   publication_date: '2024-12-09T07:14:58+00:00'
+- id: javed2024temporally
+  title: Temporally Compressed 3D Gaussian Splatting for Dynamic Scenes
+  authors: Saqib Javed, Ahmad Jarrar Khan, Corentin Dumery, Chen Zhao, Mathieu Salzmann
+  year: '2024'
+  abstract: 'Recent advancements in high-fidelity dynamic scene reconstruction have
+    leveraged dynamic 3D Gaussians and 4D Gaussian Splatting for realistic scene representation.
+    However, to make these methods viable for real-time applications such as AR/VR,
+    gaming, and rendering on low-power devices, substantial reductions in memory usage
+    and improvements in rendering efficiency are required. While many state-of-the-art
+    methods prioritize lightweight implementations, they struggle in handling scenes
+    with complex motions or long sequences. In this work, we introduce Temporally
+    Compressed 3D Gaussian Splatting (TC3DGS), a novel technique designed specifically
+    to effectively compress dynamic 3D Gaussian representations. TC3DGS selectively
+    prunes Gaussians based on their temporal relevance and employs gradient-aware
+    mixed-precision quantization to dynamically compress Gaussian parameters. It additionally
+    relies on a variation of the Ramer-Douglas-Peucker algorithm in a post-processing
+    step to further reduce storage by interpolating Gaussian trajectories across frames.
+    Our experiments across multiple datasets demonstrate that TC3DGS achieves up to
+    67$\times$ compression with minimal or no degradation in visual quality.
+
+    '
+  project_page: https://ahmad-jarrar.github.io/tc-3dgs/
+  paper: https://arxiv.org/pdf/2412.05700.pdf
+  code: https://github.com/saqibjaved1/TC3DGS
+  video: null
+  tags:
+  - Acceleration
+  - Code
+  - Compression
+  - Dynamic
+  - Object Detection
+  - Optimization
+  - Project
+  - Rendering
+  - Robotics
+  - Video
+  thumbnail: assets/thumbnails/javed2024temporally.jpg
+  publication_date: '2024-12-07T17:03:09+00:00'
+  date_source: arxiv
 - id: fan2024momentumgs
   title: 'Momentum-GS: Momentum Gaussian Self-Distillation for High-Quality Large
     Scene Reconstruction'
