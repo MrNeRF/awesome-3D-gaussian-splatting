@@ -2291,6 +2291,29 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="xu2024gaussianproperty" data-title="GaussianProperty: Integrating Physical Properties to 3D Gaussians with LMMs" data-authors="Xinli Xu, Wenhang Ge, Dicong Qiu, ZhiFei Chen, Dongyu Yan, Zhuoyun Liu, Haoyu Zhao, Hanfeng Zhao, Shunsi Zhang, Junwei Liang, Ying-Cong Chen" data-year="2024" data-tags='["Code", "Language Embedding", "Project", "Robotics"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'xu2024gaussianproperty', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/xu2024gaussianproperty.jpg" data-fallback="None" alt="Paper thumbnail for GaussianProperty: Integrating Physical Properties to 3D Gaussians with LMMs" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GaussianProperty: Integrating Physical Properties to 3D Gaussians with LMMs <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Xinli Xu, Wenhang Ge, Dicong Qiu, ZhiFei Chen, Dongyu Yan, Zhuoyun Liu, Haoyu Zhao, Hanfeng Zhao, Shunsi Zhang, Junwei Liang, Ying-Cong Chen</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Language Embedding</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Robotics</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.11258.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://gaussian-property.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/xxlbigbrother/Gaussian-Property" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Estimating physical properties for visual data is a crucial task in computer vision, graphics, and robotics, underpinning applications such as augmented reality, physical simulation, and robotic grasping. However, this area remains under-explored due to the inherent ambiguities in physical property estimation. To address these challenges, we introduce GaussianProperty, a training-free framework that assigns physical properties of materials to 3D Gaussians. Specifically, we integrate the segmentation capability of SAM with the recognition capability of GPT-4V(ision) to formulate a global-local physical property reasoning module for 2D images. Then we project the physical properties from multi-view 2D images to 3D Gaussians using a voting strategy. We demonstrate that 3D Gaussians with physical property annotations enable applications in physics-based dynamic simulation and robotic grasping. For physics-based dynamic simulation, we leverage the Material Point Method (MPM) for realistic dynamic simulation. For robot grasping, we develop a grasping force prediction strategy that estimates a safe force range required for object grasping based on the estimated physical properties. Extensive experiments on material segmentation, physics-based dynamic simulation, and robotic grasping validate the effectiveness of our proposed method, highlighting its crucial role in understanding physical properties from visual data. Online demo, code, more cases and annotated datasets are available on \href{https://Gaussian-Property.github.io}{this https URL}.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="liang2024supergseg" data-title="SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians" data-authors="Siyun Liang, Sen Wang, Kunyi Li, Michael Niemeyer, Stefano Gasperini, Nassir Navab, Federico Tombari" data-year="2024" data-tags='["Language Embedding", "Project", "Segmentation"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'liang2024supergseg', this)">
@@ -2680,6 +2703,89 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="liang2024feedforward" data-title="Feed-Forward Bullet-Time Reconstruction of Dynamic Scenes from Monocular Videos" data-authors="Hanxue Liang, Jiawei Ren, Ashkan Mirzaei, Antonio Torralba, Ziwei Liu, Igor Gilitschenski, Sanja Fidler, Cengiz Oztireli, Huan Ling, Zan Gojcic, Jiahui Huang" data-year="2024" data-tags='["Dynamic", "Feed-Forward", "Monocular"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'liang2024feedforward', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/liang2024feedforward.jpg" data-fallback="None" alt="Paper thumbnail for Feed-Forward Bullet-Time Reconstruction of Dynamic Scenes from Monocular Videos" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Feed-Forward Bullet-Time Reconstruction of Dynamic Scenes from Monocular Videos <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Hanxue Liang, Jiawei Ren, Ashkan Mirzaei, Antonio Torralba, Ziwei Liu, Igor Gilitschenski, Sanja Fidler, Cengiz Oztireli, Huan Ling, Zan Gojcic, Jiahui Huang</p>
+      <div class="paper-tags"><span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Monocular</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.03526.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent advancements in static feed-forward scene reconstruction have demonstrated significant progress in high-quality novel view synthesis. However, these models often struggle with generalizability across diverse environments and fail to effectively handle dynamic content. We present BTimer (short for BulletTimer), the first motion-aware feed-forward model for real-time reconstruction and novel view synthesis of dynamic scenes. Our approach reconstructs the full scene in a 3D Gaussian Splatting representation at a given target ('bullet') timestamp by aggregating information from all the context frames. Such a formulation allows BTimer to gain scalability and generalization by leveraging both static and dynamic scene datasets. Given a casual monocular dynamic video, BTimer reconstructs a bullet-time scene within 150ms while reaching state-of-the-art performance on both static and dynamic scene datasets, even compared with optimization-based approaches.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="tan2024planarsplatting" data-title="PlanarSplatting: Accurate Planar Surface Reconstruction in 3 Minutes" data-authors="Bin Tan, Rui Yu, Yujun Shen, Nan Xue" data-year="2024" data-tags='["Acceleration", "Project", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'tan2024planarsplatting', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/tan2024planarsplatting.jpg" data-fallback="None" alt="Paper thumbnail for PlanarSplatting: Accurate Planar Surface Reconstruction in 3 Minutes" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">PlanarSplatting: Accurate Planar Surface Reconstruction in 3 Minutes <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Bin Tan, Rui Yu, Yujun Shen, Nan Xue</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.03451.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://icetttb.github.io/PlanarSplatting/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">This paper presents PlanarSplatting, an ultra-fast and accurate surface reconstruction approach for multiview indoor images. We take the 3D planes as the main objective due to their compactness and structural expressiveness in indoor scenes, and develop an explicit optimization framework that learns to fit the expected surface of indoor scenes by splatting the 3D planes into 2.5D depth and normal maps. As our PlanarSplatting operates directly on the 3D plane primitives, it eliminates the dependencies on 2D/3D plane detection and plane matching and tracking for planar surface reconstruction. Furthermore, the essential merits of plane-based representation plus CUDA-based implementation of planar splatting functions, PlanarSplatting reconstructs an indoor scene in 3 minutes while having significantly better geometric accuracy. Thanks to our ultra-fast reconstruction speed, the largest quantitative evaluation on the ScanNet and ScanNet++ datasets over hundreds of scenes clearly demonstrated the advantages of our method. We believe that our accurate and ultrafast planar surface reconstruction method will be applied in the structured data curation for surface reconstruction in the future. The code of our CUDA implementation will be publicly available. Project page: https://icetttb.github.io/PlanarSplatting/
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="schmidt2024nerf" data-title="NeRF and Gaussian Splatting SLAM in the Wild" data-authors="Fabian Schmidt, Markus Enzweiler, Abhinav Valada" data-year="2024" data-tags='["Code", "In the Wild", "Review", "SLAM"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'schmidt2024nerf', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/schmidt2024nerf.jpg" data-fallback="None" alt="Paper thumbnail for NeRF and Gaussian Splatting SLAM in the Wild" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">NeRF and Gaussian Splatting SLAM in the Wild <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Fabian Schmidt, Markus Enzweiler, Abhinav Valada</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">In the Wild</span>
+<span class="paper-tag">Review</span>
+<span class="paper-tag">SLAM</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.03263.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://github.com/iis-esslingen/nerf-3dgs-benchmark" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Navigating outdoor environments with visual Simultaneous Localization and Mapping (SLAM) systems poses significant challenges due to dynamic scenes, lighting variations, and seasonal changes, requiring robust solutions. While traditional SLAM methods struggle with adaptability, deep learning-based approaches and emerging neural radiance fields as well as Gaussian Splatting-based SLAM methods, offer promising alternatives. However, these methods have primarily been evaluated in controlled indoor environments with stable conditions, leaving a gap in understanding their performance in unstructured and variable outdoor settings. This study addresses this gap by evaluating these methods in natural outdoor environments, focusing on camera tracking accuracy, robustness to environmental factors, and computational efficiency, highlighting distinct trade-offs. Extensive evaluations demonstrate that neural SLAM methods achieve superior robustness, particularly under challenging conditions such as low light, but at a high computational cost. At the same time, traditional methods perform the best across seasons but are highly sensitive to variations in lighting conditions. The code of the benchmark is publicly available at https://github.com/iis-esslingen/nerf-3dgs-benchmark.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="song2024hdgs" data-title="HDGS: Textured 2D Gaussian Splatting for Enhanced Scene Rendering" data-authors="Yunzhou Song, Heguang Lin, Jiahui Lei, Lingjie Liu, Kostas Daniilidis" data-year="2024" data-tags='["2DGS", "Antialiasing", "Meshing"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'song2024hdgs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/song2024hdgs.jpg" data-fallback="None" alt="Paper thumbnail for HDGS: Textured 2D Gaussian Splatting for Enhanced Scene Rendering" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">HDGS: Textured 2D Gaussian Splatting for Enhanced Scene Rendering <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yunzhou Song, Heguang Lin, Jiahui Lei, Lingjie Liu, Kostas Daniilidis</p>
+      <div class="paper-tags"><span class="paper-tag">2DGS</span>
+<span class="paper-tag">Antialiasing</span>
+<span class="paper-tag">Meshing</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.01823.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent advancements in neural rendering, particularly 2D Gaussian Splatting (2DGS), have shown promising results for jointly reconstructing fine appearance and geometry by leveraging 2D Gaussian surfels. However, current methods face significant challenges when rendering at arbitrary viewpoints, such as anti-aliasing for down-sampled rendering, and texture detail preservation for high-resolution rendering. We proposed a novel method to align the 2D surfels with texture maps and augment it with per-ray depth sorting and fisher-based pruning for rendering consistency and efficiency. With correct order, per-surfel texture maps significantly improve the capabilities to capture fine details. Additionally, to render high-fidelity details in varying viewpoints, we designed a frustum-based sampling method to mitigate the aliasing artifacts. Experimental results on benchmarks and our custom texture-rich dataset demonstrate that our method surpasses existing techniques, particularly in detail preservation and anti-aliasing.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="joanna2024occams" data-title="Occam's LGS: A Simple Approach for Language Gaussian Splatting" data-authors="Jiahuan (Joanna) Cheng, Jan-Nico Zaech, Luc Van Gool, Danda Pani Paudel" data-year="2024" data-tags='["Acceleration", "Language Embedding", "Project", "Segmentation"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'joanna2024occams', this)">
@@ -2718,6 +2824,25 @@ h1 {
 <a href="https://colin-de.github.io/DynSUP/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Recent advances in 3D Gaussian Splatting have shown promising results. Existing methods typically assume static scenes and/or multiple images with prior poses. Dynamics, sparse views, and unknown poses significantly increase the problem complexity due to insufficient geometric constraints. To overcome this challenge, we propose a method that can use only two images without prior poses to fit Gaussians in dynamic environments. To achieve this, we introduce two technical contributions. First, we propose an object-level two-view bundle adjustment. This strategy decomposes dynamic scenes into piece-wise rigid components, and jointly estimates the camera pose and motions of dynamic objects. Second, we design an SE(3) field-driven Gaussian training method. It enables fine-grained motion modeling through learnable per-Gaussian transformations. Our method leads to high-fidelity novel view synthesis of dynamic scenes while accurately preserving temporal consistency and object motion. Experiments on both synthetic and real-world datasets demonstrate that our method significantly outperforms state-of-the-art approaches designed for the cases of static environments, multiple images, and/or known poses. Our project page is available at https://colin-de.github.io/DynSUP/.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="hanson2024speedysplat" data-title="Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives" data-authors="Alex Hanson, Allen Tu, Geng Lin, Vasu Singla, Matthias Zwicker, Tom Goldstein" data-year="2024" data-tags='["Acceleration", "Sparse"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'hanson2024speedysplat', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/hanson2024speedysplat.jpg" data-fallback="None" alt="Paper thumbnail for Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Alex Hanson, Allen Tu, Geng Lin, Vasu Singla, Matthias Zwicker, Tom Goldstein</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Sparse</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2412.00578.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3D-GS) is a recent 3D scene reconstruction technique that enables real-time rendering of novel views by modeling scenes as parametric point clouds of differentiable 3D Gaussians. However, its rendering speed and model size still present bottlenecks, especially in resource-constrained settings. In this paper, we identify and address two key inefficiencies in 3D-GS, achieving substantial improvements in rendering speed, model size, and training time. First, we optimize the rendering pipeline to precisely localize Gaussians in the scene, boosting rendering speed without altering visual fidelity. Second, we introduce a novel pruning technique and integrate it into the training pipeline, significantly reducing model size and training time while further raising rendering speed. Our Speedy-Splat approach combines these techniques to accelerate average rendering speed by a drastic $6.71\times$ across scenes from the Mip-NeRF 360, Tanks & Temples, and Deep Blending datasets with $10.6\times$ fewer primitives than 3D-GS.
+</div></div>
     </div>
   </div>
 </div>
@@ -2850,6 +2975,95 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="chao2024textured" data-title="Textured Gaussians for Enhanced 3D Scene Appearance Modeling" data-authors="Brian Chao, Hung-Yu Tseng, Lorenzo Porzi, Chen Gao, Tuotuo Li, Qinbo Li, Ayush Saraf, Jia-Bin Huang, Johannes Kopf, Gordon Wetzstein, Changil Kim" data-year="2024" data-tags='["In the Wild", "Project", "Rendering", "Texturing"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'chao2024textured', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/chao2024textured.jpg" data-fallback="None" alt="Paper thumbnail for Textured Gaussians for Enhanced 3D Scene Appearance Modeling" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Textured Gaussians for Enhanced 3D Scene Appearance Modeling <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Brian Chao, Hung-Yu Tseng, Lorenzo Porzi, Chen Gao, Tuotuo Li, Qinbo Li, Ayush Saraf, Jia-Bin Huang, Johannes Kopf, Gordon Wetzstein, Changil Kim</p>
+      <div class="paper-tags"><span class="paper-tag">In the Wild</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Texturing</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.18625.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://textured-gaussians.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3DGS) has recently emerged as a state-of-the-art 3D reconstruction and rendering technique due to its high-quality results and fast training and rendering time. However, pixels covered by the same Gaussian are always shaded in the same color up to a Gaussian falloff scaling factor. Furthermore, the finest geometric detail any individual Gaussian can represent is a simple ellipsoid. These properties of 3DGS greatly limit the expressivity of individual Gaussian primitives. To address these issues, we draw inspiration from texture and alpha mapping in traditional graphics and integrate it with 3DGS. Specifically, we propose a new generalized Gaussian appearance representation that augments each Gaussian with alpha~(A), RGB, or RGBA texture maps to model spatially varying color and opacity across the extent of each Gaussian. As such, each Gaussian can represent a richer set of texture patterns and geometric structures, instead of just a single color and ellipsoid as in naive Gaussian Splatting. Surprisingly, we found that the expressivity of Gaussians can be greatly improved by using alpha-only texture maps, and further augmenting Gaussians with RGB texture maps achieves the highest expressivity. We validate our method on a wide variety of standard benchmark datasets and our own custom captures at both the object and scene levels. We demonstrate image quality improvements over existing methods while using a similar or lower number of Gaussians.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="wu2024cat4d" data-title="CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models" data-authors="Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barron, Aleksander Holynski" data-year="2024" data-tags='["Diffusion", "Dynamic", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wu2024cat4d', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wu2024cat4d.jpg" data-fallback="None" alt="Paper thumbnail for CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barron, Aleksander Holynski</p>
+      <div class="paper-tags"><span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.18613.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://cat-4d.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular video. CAT4D leverages a multi-view video diffusion model trained on a diverse combination of datasets to enable novel view synthesis at any specified camera poses and timestamps. Combined with a novel sampling approach, this model can transform a single monocular video into a multi-view video, enabling robust 4D reconstruction via optimization of a deformable 3D Gaussian representation. We demonstrate competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, and highlight the creative capabilities for 4D scene generation from real or generated videos. See our project page for results and interactive demos: https://cat-4d.github.io/.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="kang2024selfsplat" data-title="SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting" data-authors="Gyeongjin Kang, Jisang Yoo, Jihyeon Park, Seungtae Nam, Hyeonsoo Im, Sangheon Shin, Sangpil Kim, Eunbyung Park" data-year="2024" data-tags='["Code", "Feed-Forward", "Poses", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'kang2024selfsplat', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/kang2024selfsplat.jpg" data-fallback="None" alt="Paper thumbnail for SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Gyeongjin Kang, Jisang Yoo, Jihyeon Park, Seungtae Nam, Hyeonsoo Im, Sangheon Shin, Sangpil Kim, Eunbyung Park</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Poses</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.17190.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://gynjn.github.io/selfsplat/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/Gynjn/selfsplat" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We propose SelfSplat, a novel 3D Gaussian Splatting model designed to perform pose-free and 3D prior-free generalizable 3D reconstruction from unposed multi-view images. These settings are inherently ill-posed due to the lack of ground-truth data, learned geometric information, and the need to achieve accurate 3D reconstruction without finetuning, making it difficult for conventional methods to achieve high-quality results. Our model addresses these challenges by effectively integrating explicit 3D representations with self-supervised depth and pose estimation techniques, resulting in reciprocal improvements in both pose accuracy and 3D reconstruction quality. Furthermore, we incorporate a matching-aware pose estimation network and a depth refinement module to enhance geometry consistency across views, ensuring more accurate and stable 3D reconstructions. To present the performance of our method, we evaluated it on large-scale real-world datasets, including RealEstate10K, ACID, and DL3DV. SelfSplat achieves superior results over previous state-of-the-art methods in both appearance and geometry quality, also demonstrates strong cross-dataset generalization capabilities. Extensive ablation studies and analysis also validate the effectiveness of our proposed methods. Code and pretrained models are available at https://gynjn.github.io/selfsplat/
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="flynn2024quark" data-title="Quark: Real-time, High-resolution, and General Neural View Synthesis" data-authors="John Flynn, Michael Broxton, Lukas Murmann, Lucy Chai, Matthew DuVall, Clément Godard, Kathryn Heal, Srinivas Kaza, Stephen Lombardi, Xuan Luo, Supreeth Achar, Kira Prabhu, Tiancheng Sun, Lynn Tsai, Ryan Overbeck" data-year="2024" data-tags='["Feed-Forward", "Project", "Rendering", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'flynn2024quark', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/flynn2024quark.jpg" data-fallback="None" alt="Paper thumbnail for Quark: Real-time, High-resolution, and General Neural View Synthesis" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Quark: Real-time, High-resolution, and General Neural View Synthesis <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">John Flynn, Michael Broxton, Lukas Murmann, Lucy Chai, Matthew DuVall, Clément Godard, Kathryn Heal, Srinivas Kaza, Stephen Lombardi, Xuan Luo, Supreeth Achar, Kira Prabhu, Tiancheng Sun, Lynn Tsai, Ryan Overbeck</p>
+      <div class="paper-tags"><span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.16680.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://arxiv.org/abs/2411.16680" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://youtu.be/w9Oqhaqbsyo?si=ochKsH7fuxgM5BFg" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We present a novel neural algorithm for performing high-quality, high-resolution, real-time novel view synthesis. From a sparse set of input RGB images or videos streams, our network both reconstructs the 3D scene and renders novel views at 1080p resolution at 30fps on an NVIDIA A100. Our feed-forward network generalizes across a wide variety of datasets and scenes and produces state-of-the-art quality for a real-time method. Our quality approaches, and in some cases surpasses, the quality of some of the top offline methods. In order to achieve these results we use a novel combination of several key concepts, and tie them together into a cohesive and effective algorithm. We build on previous works that represent the scene using semi-transparent layers and use an iterative learned render-and-refine approach to improve those layers. Instead of flat layers, our method reconstructs layered depth maps (LDMs) that efficiently represent scenes with complex depth and occlusions. The iterative update steps are embedded in a multi-scale, UNet-style architecture to perform as much compute as possible at reduced resolution. Within each update step, to better aggregate the information from multiple input views, we use a specialized Transformer-based network component. This allows the majority of the per-input image processing to be performed in the input image space, as opposed to layer space, further increasing efficiency. Finally, due to the real-time nature of our reconstruction and rendering, we dynamically create and discard the internal 3D geometry for each frame, generating the LDM for each view. Taken together, this produces a novel and effective algorithm for view synthesis. Through extensive evaluation, we demonstrate that we achieve state-of-the-art quality at real-time rates. Project page: https://quark-3d.github.io/
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="hess2024splatad" data-title="SplatAD: Real-Time Lidar and Camera Rendering with 3D Gaussian Splatting for Autonomous Driving" data-authors="Georg Hess, Carl Lindström, Maryam Fatemi, Christoffer Petersson, Lennart Svensson" data-year="2024" data-tags='["Autonomous Driving", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'hess2024splatad', this)">
@@ -2938,6 +3152,70 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="chou2024generating" data-title="Generating 3D-Consistent Videos from Unposed Internet Photos" data-authors="Gene Chou, Kai Zhang, Sai Bi, Hao Tan, Zexiang Xu, Fujun Luan, Bharath Hariharan, Noah Snavely" data-year="2024" data-tags='["Feed-Forward", "In the Wild", "Poses", "Project", "Transformer"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'chou2024generating', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/chou2024generating.jpg" data-fallback="None" alt="Paper thumbnail for Generating 3D-Consistent Videos from Unposed Internet Photos" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Generating 3D-Consistent Videos from Unposed Internet Photos <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Gene Chou, Kai Zhang, Sai Bi, Hao Tan, Zexiang Xu, Fujun Luan, Bharath Hariharan, Noah Snavely</p>
+      <div class="paper-tags"><span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">In the Wild</span>
+<span class="paper-tag">Poses</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Transformer</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.13549.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://genechou.com/kfcw/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We address the problem of generating videos from unposed internet photos. A handful of input images serve as keyframes, and our model interpolates between them to simulate a path moving between the cameras. Given random images, a model's ability to capture underlying geometry, recognize scene identity, and relate frames in terms of camera position and orientation reflects a fundamental understanding of 3D structure and scene layout. However, existing video models such as Luma Dream Machine fail at this task. We design a self-supervised method that takes advantage of the consistency of videos and variability of multiview internet photos to train a scalable, 3D-aware video model without any 3D annotations such as camera parameters. We validate that our method outperforms all baselines in terms of geometric and appearance consistency. We also show our model benefits applications that enable camera control, such as 3D Gaussian Splatting. Our results suggest that we can scale up scene-level 3D learning using only 2D data such as videos and multiview internet photos.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="fang2024minisplatting2" data-title="Mini-Splatting2: Building 360 Scenes within Minutes via Aggressive Gaussian Densification" data-authors="Guangchi Fang, Bing Wang" data-year="2024" data-tags='["Acceleration", "Densification"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'fang2024minisplatting2', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/fang2024minisplatting2.jpg" data-fallback="None" alt="Paper thumbnail for Mini-Splatting2: Building 360 Scenes within Minutes via Aggressive Gaussian Densification" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Mini-Splatting2: Building 360 Scenes within Minutes via Aggressive Gaussian Densification <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Guangchi Fang, Bing Wang</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Densification</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.12788.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">In this study, we explore the essential challenge of fast scene optimization for Gaussian Splatting. Through a thorough analysis of the geometry modeling process, we reveal that dense point clouds can be effectively reconstructed early in optimization through Gaussian representations. This insight leads to our approach of aggressive Gaussian densification, which provides a more efficient alternative to conventional progressive densification methods. By significantly increasing the number of critical Gaussians, we enhance the model capacity to capture dense scene geometry at the early stage of optimization. This strategy is seamlessly integrated into the Mini-Splatting densification and simplification framework, enabling rapid convergence without compromising quality. Additionally, we introduce visibility culling within Gaussian Splatting, leveraging per-view Gaussian importance as precomputed visibility to accelerate the optimization process. Our Mini-Splatting2 achieves a balanced trade-off among optimization time, the number of Gaussians, and rendering quality, establishing a strong baseline for future Gaussian-Splatting-based works. Our work sets the stage for more efficient, high-quality 3D scene modeling in real-world applications, and the code will be made available no matter acceptance.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="zhou2024gpsgaussian" data-title="GPS-Gaussian+: Generalizable Pixel-wise 3D Gaussian Splatting for Real-Time Human-Scene Rendering from Sparse Views" data-authors="Boyao Zhou, Shunyuan Zheng, Hanzhang Tu, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu" data-year="2024" data-tags='["Acceleration", "Dynamic", "Project", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhou2024gpsgaussian', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/zhou2024gpsgaussian.jpg" data-fallback="None" alt="Paper thumbnail for GPS-Gaussian+: Generalizable Pixel-wise 3D Gaussian Splatting for Real-Time Human-Scene Rendering from Sparse Views" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GPS-Gaussian+: Generalizable Pixel-wise 3D Gaussian Splatting for Real-Time Human-Scene Rendering from Sparse Views <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Boyao Zhou, Shunyuan Zheng, Hanzhang Tu, Ruizhi Shao, Boning Liu, Shengping Zhang, Liqiang Nie, Yebin Liu</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.11363.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://yaourtb.github.io/GPS-Gaussian+" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Differentiable rendering techniques have recently shown promising results for free-viewpoint video synthesis of characters. However, such methods, either Gaussian Splatting or neural implicit rendering, typically necessitate per-subject optimization which does not meet the requirement of real-time rendering in an interactive application. We propose a generalizable Gaussian Splatting approach for high-resolution image rendering under a sparse-view camera setting. To this end, we introduce Gaussian parameter maps defined on the source views and directly regress Gaussian properties for instant novel view synthesis without any fine-tuning or optimization. We train our Gaussian parameter regression module on human-only data or human-scene data, jointly with a depth estimation module to lift 2D parameter maps to 3D space. The proposed framework is fully differentiable with both depth and rendering supervision or with only rendering supervision. We further introduce a regularization term and an epipolar attention mechanism to preserve geometry consistency between two source views, especially when neglecting depth supervision. Experiments on several datasets demonstrate that our method outperforms state-of-the-art methods while achieving an exceeding rendering speed.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="kong2024dgsslam" data-title="DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment" data-authors="Mangyu Kong, Jaewon Lee, Seongwon Lee, Euntai Kim" data-year="2024" data-tags='["SLAM", "Video"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'kong2024dgsslam', this)">
@@ -2954,6 +3232,26 @@ h1 {
 <a href="https://youtu.be/Mq3qZTTcN3E?feature=shared" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">We introduce Dynamic Gaussian Splatting SLAM (DGS-SLAM), the first dynamic SLAM framework built on the foundation of Gaussian Splatting. While recent advancements in dense SLAM have leveraged Gaussian Splatting to enhance scene representation, most approaches assume a static environment, making them vulnerable to photometric and geometric inconsistencies caused by dynamic objects. To address these challenges, we integrate Gaussian Splatting SLAM with a robust filtering process to handle dynamic objects throughout the entire pipeline, including Gaussian insertion and keyframe selection. Within this framework, to further improve the accuracy of dynamic object removal, we introduce a robust mask generation method that enforces photometric consistency across keyframes, reducing noise from inaccurate segmentation and artifacts such as shadows. Additionally, we propose the loop-aware window selection mechanism, which utilizes unique keyframe IDs of 3D Gaussians to detect loops between the current and past frames, facilitating joint optimization of the current camera poses and the Gaussian map. DGS-SLAM achieves state-of-the-art performance in both camera tracking and novel view synthesis on various dynamic SLAM benchmarks, proving its effectiveness in handling real-world dynamic scenes.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="tang2024spars3r" data-title="SPARS3R: Semantic Prior Alignment and Regularization for Sparse 3D Reconstruction" data-authors="Yutao Tang, Yuxiang Guo, Deming Li, Cheng Peng" data-year="2024" data-tags='["3ster-based", "Poses", "Sparse"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'tang2024spars3r', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/tang2024spars3r.jpg" data-fallback="None" alt="Paper thumbnail for SPARS3R: Semantic Prior Alignment and Regularization for Sparse 3D Reconstruction" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SPARS3R: Semantic Prior Alignment and Regularization for Sparse 3D Reconstruction <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yutao Tang, Yuxiang Guo, Deming Li, Cheng Peng</p>
+      <div class="paper-tags"><span class="paper-tag">3ster-based</span>
+<span class="paper-tag">Poses</span>
+<span class="paper-tag">Sparse</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.12592.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent efforts in Gaussian-Splat-based Novel View Synthesis can achieve photorealistic rendering; however, such capability is limited in sparse-view scenarios due to sparse initialization and over-fitting floaters. Recent progress in depth estimation and alignment can provide dense point cloud with few views; however, the resulting pose accuracy is suboptimal. In this work, we present SPARS3R, which combines the advantages of accurate pose estimation from Structure-from-Motion and dense point cloud from depth estimation. To this end, SPARS3R first performs a Global Fusion Alignment process that maps a prior dense point cloud to a sparse point cloud from Structure-from-Motion based on triangulated correspondences. RANSAC is applied during this process to distinguish inliers and outliers. SPARS3R then performs a second, Semantic Outlier Alignment step, which extracts semantically coherent regions around the outliers and performs local alignment in these regions. Along with several improvements in the evaluation process, we demonstrate that SPARS3R can achieve photorealistic rendering with sparse images and significantly outperforms existing approaches.
+</div></div>
     </div>
   </div>
 </div>
@@ -2998,6 +3296,27 @@ h1 {
 <a href="https://wangpeng000.github.io/MBA-SLAM/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Emerging 3D scene representations, such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS), have demonstrated their effectiveness in Simultaneous Localization and Mapping (SLAM) for photo-realistic rendering, particularly when using high-quality video sequences as input. However, existing methods struggle with motion-blurred frames, which are common in real-world scenarios like low-light or long-exposure conditions. This often results in a significant reduction in both camera localization accuracy and map reconstruction quality. To address this challenge, we propose a dense visual SLAM pipeline (i.e. MBA-SLAM) to handle severe motion-blurred inputs. Our approach integrates an efficient motion blur-aware tracker with either neural radiance fields or Gaussian Splatting based mapper. By accurately modeling the physical image formation process of motion-blurred images, our method simultaneously learns 3D scene representation and estimates the cameras' local trajectory during exposure time, enabling proactive compensation for motion blur caused by camera movement. In our experiments, we demonstrate that MBA-SLAM surpasses previous state-of-the-art methods in both camera localization and map reconstruction, showcasing superior performance across a range of datasets, including synthetic and real datasets featuring sharp images as well as those affected by motion blur, highlighting the versatility and robustness of our approach.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="zhang2024gaussianspa" data-title="GaussianSpa: An "Optimizing-Sparsifying" Simplification Framework for Compact and High-Quality 3D Gaussian Splatting" data-authors="Yangming Zhang, Wenqi Jia, Wei Niu, Miao Yin" data-year="2024" data-tags='["Compression", "Densification", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang2024gaussianspa', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/zhang2024gaussianspa.jpg" data-fallback="None" alt="Paper thumbnail for GaussianSpa: An "Optimizing-Sparsifying" Simplification Framework for Compact and High-Quality 3D Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GaussianSpa: An "Optimizing-Sparsifying" Simplification Framework for Compact and High-Quality 3D Gaussian Splatting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yangming Zhang, Wenqi Jia, Wei Niu, Miao Yin</p>
+      <div class="paper-tags"><span class="paper-tag">Compression</span>
+<span class="paper-tag">Densification</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.06019.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://gaussianspa.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3DGS) has emerged as a mainstream for novel view synthesis, leveraging continuous aggregations of Gaussian functions to model scene geometry. However, 3DGS suffers from substantial memory requirements to store the multitude of Gaussians, hindering its practicality. To address this challenge, we introduce GaussianSpa, an optimization-based simplification framework for compact and high-quality 3DGS. Specifically, we formulate the simplification as an optimization problem associated with the 3DGS training. Correspondingly, we propose an efficient "optimizing-sparsifying" solution that alternately solves two independent sub-problems, gradually imposing strong sparsity onto the Gaussians in the training process. Our comprehensive evaluations on various datasets show the superiority of GaussianSpa over existing state-of-the-art approaches. Notably, GaussianSpa achieves an average PSNR improvement of 0.9 dB on the real-world Deep Blending dataset with 10$\times$ fewer Gaussians compared to the vanilla 3DGS. Our project page is available at https://gaussianspa.github.io/.
+</div></div>
     </div>
   </div>
 </div>
@@ -3102,6 +3421,25 @@ h1 {
 <a href="https://largespatialmodel.github.io/static/videos/LSM_demo1.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Reconstructing and understanding 3D structures from a limited number of images is a well-established problem in computer vision. Traditional methods usually break this task into multiple subtasks, each requiring complex transformations between different data representations. For instance, dense reconstruction through Structure-from-Motion (SfM) involves converting images into key points, optimizing camera parameters, and estimating structures. Afterward, accurate sparse reconstructions are required for further dense modeling, which is subsequently fed into task-specific neural networks. This multi-step process results in considerable processing time and increased engineering complexity. In this work, we present the Large Spatial Model (LSM), which processes unposed RGB images directly into semantic radiance fields. LSM simultaneously estimates geometry, appearance, and semantics in a single feed-forward operation, and it can generate versatile label maps by interacting with language at novel viewpoints. Leveraging a Transformer-based architecture, LSM integrates global geometry through pixel-aligned point maps. To enhance spatial attribute regression, we incorporate local context aggregation with multi-scale fusion, improving the accuracy of fine local details. To tackle the scarcity of labeled 3D semantic data and enable natural language-driven scene manipulation, we incorporate a pre-trained 2D language-based segmentation model into a 3D-consistent semantic feature field. An efficient decoder then parameterizes a set of semantic anisotropic Gaussians, facilitating supervised end-to-end learning. Extensive experiments across various tasks show that LSM unifies multiple 3D vision tasks directly from unposed images, achieving real-time semantic 3D reconstruction for the first time.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="hou2024sortfree" data-title="Sort-free Gaussian Splatting via Weighted Sum Rendering" data-authors="Qiqi Hou, Randall Rauwendaal, Zifeng Li, Hoang Le, Farzad Farhadzadeh, Fatih Porikli, Alexei Bourd, Amir Said" data-year="2024" data-tags='["Acceleration", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'hou2024sortfree', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/hou2024sortfree.jpg" data-fallback="None" alt="Paper thumbnail for Sort-free Gaussian Splatting via Weighted Sum Rendering" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Sort-free Gaussian Splatting via Weighted Sum Rendering <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Qiqi Hou, Randall Rauwendaal, Zifeng Li, Hoang Le, Farzad Farhadzadeh, Fatih Porikli, Alexei Bourd, Amir Said</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2410.18931.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recently, 3D Gaussian Splatting (3DGS) has emerged as a significant advancement in 3D scene reconstruction, attracting considerable attention due to its ability to recover high-fidelity details while maintaining low complexity. Despite the promising results achieved by 3DGS, its rendering performance is constrained by its dependence on costly non-commutative alpha-blending operations. These operations mandate complex view dependent sorting operations that introduce computational overhead, especially on the resource-constrained platforms such as mobile phones. In this paper, we propose Weighted Sum Rendering, which approximates alpha blending with weighted sums, thereby removing the need for sorting. This simplifies implementation, delivers superior performance, and eliminates the "popping" artifacts caused by sorting. Experimental results show that optimizing a generalized Gaussian splatting formulation to the new differentiable rendering yields competitive image quality. The method was implemented and tested in a mobile device GPU, achieving on average $1.23\times$ faster rendering.
 </div></div>
     </div>
   </div>
@@ -3258,6 +3596,26 @@ h1 {
 <a href="https://monst3r-project.github.io/files/teaser_vid_v2_lowres.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Estimating geometry from dynamic scenes, where objects move and deform over time, remains a core challenge in computer vision. Current approaches often rely on multi-stage pipelines or global optimizations that decompose the problem into subtasks, like depth and flow, leading to complex systems prone to errors. In this paper, we present Motion DUSt3R (MonST3R), a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes. Our key insight is that by simply estimating a pointmap for each timestep, we can effectively adapt DUST3R's representation, previously only used for static scenes, to dynamic scenes. However, this approach presents a significant challenge: the scarcity of suitable training data, namely dynamic, posed videos with depth labels. Despite this, we show that by posing the problem as a fine-tuning task, identifying several suitable datasets, and strategically training the model on this limited data, we can surprisingly enable the model to handle dynamics, even without an explicit motion representation. Based on this, we introduce new optimizations for several downstream video-specific tasks and demonstrate strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency. Moreover, MonST3R shows promising results for primarily feed-forward 4D reconstruction.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="xie2024supergs" data-title="SuperGS: Super-Resolution 3D Gaussian Splatting via Latent Feature Field and Gradient-guided Splitting" data-authors="Shiyun Xie, Zhiru Wang, Yinghao Zhu, Chengwei Pan" data-year="2024" data-tags='["Densification", "Feed-Forward", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'xie2024supergs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/xie2024supergs.jpg" data-fallback="None" alt="Paper thumbnail for SuperGS: Super-Resolution 3D Gaussian Splatting via Latent Feature Field and Gradient-guided Splitting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">SuperGS: Super-Resolution 3D Gaussian Splatting via Latent Feature Field and Gradient-guided Splitting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Shiyun Xie, Zhiru Wang, Yinghao Zhu, Chengwei Pan</p>
+      <div class="paper-tags"><span class="paper-tag">Densification</span>
+<span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2410.02571v1.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recently, 3D Gaussian Splatting (3DGS) has exceled in novel view synthesis with its real-time rendering capabilities and superior quality. However, it faces challenges for high-resolution novel view synthesis (HRNVS) due to the coarse nature of primitives derived from low-resolution input views. To address this issue, we propose Super-Resolution 3DGS (SuperGS), which is an expansion of 3DGS designed with a two-stage coarse-to-fine training framework, utilizing pretrained low-resolution scene representation as an initialization for super-resolution optimization. Moreover, we introduce Multi-resolution Feature Gaussian Splatting (MFGS) to incorporates a latent feature field for flexible feature sampling and Gradient-guided Selective Splitting (GSS) for effective Gaussian upsampling. By integrating these strategies within the coarse-to-fine framework ensure both high fidelity and memory efficiency. Extensive experiments demonstrate that SuperGS surpasses state-of-the-art HRNVS methods on challenging real-world datasets using only low-resolution inputs.
 </div></div>
     </div>
   </div>
@@ -3493,6 +3851,25 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="seidenschwarz2024dynomo" data-title="DynOMo: Online Point Tracking by Dynamic Online Monocular Gaussian Reconstruction" data-authors="Jenny Seidenschwarz, Qunjie Zhou, Bardienus Duisterhof, Deva Ramanan, Laura Leal-Taixé" data-year="2024" data-tags='["Dynamic", "Monocular"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'seidenschwarz2024dynomo', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/seidenschwarz2024dynomo.jpg" data-fallback="None" alt="Paper thumbnail for DynOMo: Online Point Tracking by Dynamic Online Monocular Gaussian Reconstruction" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">DynOMo: Online Point Tracking by Dynamic Online Monocular Gaussian Reconstruction <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Jenny Seidenschwarz, Qunjie Zhou, Bardienus Duisterhof, Deva Ramanan, Laura Leal-Taixé</p>
+      <div class="paper-tags"><span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Monocular</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2409.02104.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Reconstructing scenes and tracking motion are two sides of the same coin. Tracking points allow for geometric reconstruction [14], while geometric reconstruction of (dynamic) scenes allows for 3D tracking of points over time [24, 39]. The latter was recently also exploited for 2D point tracking to overcome occlusion ambiguities by lifting tracking directly into 3D [38]. However, above approaches either require offline processing or multi-view camera setups both unrealistic for real-world applications like robot navigation or mixed reality. We target the challenge of online 2D and 3D point tracking from unposed monocular camera input introducing Dynamic Online Monocular Reconstruction (DynOMo). We leverage 3D Gaussian splatting to reconstruct dynamic scenes in an online fashion. Our approach extends 3D Gaussians to capture new content and object motions while estimating camera movements from a single RGB frame. DynOMo stands out by enabling emergence of point trajectories through robust image feature reconstruction and a novel similarity-enhanced regularization term, without requiring any correspondence-level supervision. It sets the first baseline for online point tracking with monocular unposed cameras, achieving performance on par with existing methods. We aim to inspire the community to advance online point tracking and reconstruction, expanding the applicability to diverse real-world scenarios.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="chen2024omnire" data-title="OmniRe: Omni Urban Scene Reconstruction" data-authors="Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang" data-year="2024" data-tags='["Autonomous Driving", "Code", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'chen2024omnire', this)">
@@ -3581,15 +3958,15 @@ h1 {
     </div>
   </div>
 </div>
-<div class="paper-row" data-id="zhang202425" data-title="'25] 10. TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers" data-authors="Chuanrui Zhang, Yingshuang Zou, Zhuoling Li, Minmin Yi, Haoqian Wang" data-year="2024" data-tags='["Code", "Feed-Forward", "Project", "Sparse", "Transformer"]'>
+<div class="paper-row" data-id="zhang202425" data-title="TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers" data-authors="Chuanrui Zhang, Yingshuang Zou, Zhuoling Li, Minmin Yi, Haoqian Wang" data-year="2024" data-tags='["Code", "Feed-Forward", "Project", "Sparse", "Transformer"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang202425', this)">
     <div class="paper-number"></div>
     <div class="paper-thumbnail">
-      <img data-src="assets/thumbnails/zhang202425.jpg" data-fallback="None" alt="Paper thumbnail for '25] 10. TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers" class="lazy" loading="lazy"/>
+      <img data-src="assets/thumbnails/zhang202425.jpg" data-fallback="None" alt="Paper thumbnail for TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers" class="lazy" loading="lazy"/>
     </div>
     <div class="paper-content">
-      <h2 class="paper-title">'25] 10. TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers <span class="paper-year">(2024)</span></h2>
+      <h2 class="paper-title">TranSplat: Generalizable 3D Gaussian Splatting from Sparse Multi-View Images with Transformers <span class="paper-year">(2024)</span></h2>
       <p class="paper-authors">Chuanrui Zhang, Yingshuang Zou, Zhuoling Li, Minmin Yi, Haoqian Wang</p>
       <div class="paper-tags"><span class="paper-tag">Code</span>
 <span class="paper-tag">Feed-Forward</span>
@@ -3601,6 +3978,27 @@ h1 {
 <a href="https://github.com/xingyoujun/transplat" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Compared with previous 3D reconstruction methods like Nerf, recent Generalizable 3D Gaussian Splatting (G-3DGS) methods demonstrate impressive efficiency even in the sparse-view setting. However, the promising reconstruction performance of existing G-3DGS methods relies heavily on accurate multi-view feature matching, which is quite challenging. Especially for the scenes that have many non-overlapping areas between various views and contain numerous similar regions, the matching performance of existing methods is poor and the reconstruction precision is limited. To address this problem, we develop a strategy that utilizes a predicted depth confidence map to guide accurate local feature matching. In addition, we propose to utilize the knowledge of existing monocular depth estimation models as prior to boost the depth estimation precision in non-overlapping areas between views. Combining the proposed strategies, we present a novel G-3DGS method named TranSplat, which obtains the best performance on both the RealEstate10K and ACID benchmarks while maintaining competitive speed and presenting strong cross-dataset generalization ability.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="dihlmann2024subsurface" data-title="Subsurface Scattering for 3D Gaussian Splatting" data-authors="Jan-Niklas Dihlmann, Arjun Majumdar, Andreas Engelhardt, Raphael Braun, Hendrik P. A. Lensch" data-year="2024" data-tags='["Project", "Relight", "Rendering"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'dihlmann2024subsurface', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/dihlmann2024subsurface.jpg" data-fallback="None" alt="Paper thumbnail for Subsurface Scattering for 3D Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Subsurface Scattering for 3D Gaussian Splatting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Jan-Niklas Dihlmann, Arjun Majumdar, Andreas Engelhardt, Raphael Braun, Hendrik P. A. Lensch</p>
+      <div class="paper-tags"><span class="paper-tag">Project</span>
+<span class="paper-tag">Relight</span>
+<span class="paper-tag">Rendering</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2408.12282.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://sss.jdihlmann.com/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D reconstruction and relighting of objects made from scattering materials present a significant challenge due to the complex light transport beneath the surface. 3D Gaussian Splatting introduced high-quality novel view synthesis at real-time speeds. While 3D Gaussians efficiently approximate an object's surface, they fail to capture the volumetric properties of subsurface scattering. We propose a framework for optimizing an object's shape together with the radiance transfer field given multi-view OLAT (one light at a time) data. Our method decomposes the scene into an explicit surface represented as 3D Gaussians, with a spatially varying BRDF, and an implicit volumetric representation of the scattering component. A learned incident light field accounts for shadowing. We optimize all parameters jointly via ray-traced differentiable rendering. Our approach enables material editing, relighting and novel view synthesis at interactive rates. We show successful application on synthetic data and introduce a newly acquired multi-view multi-light dataset of objects in a light-stage setup. Compared to previous work we achieve comparable or better results at a fraction of optimization and rendering time while enabling detailed control over material attributes. Project page https://sss.jdihlmann.com/
+</div></div>
     </div>
   </div>
 </div>
@@ -3663,6 +4061,27 @@ h1 {
 <a href="https://github.com/hyunji12/Open3DRF" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Understanding the 3D semantics of a scene is a fundamental problem for various scenarios such as embodied agents. While NeRFs and 3DGS excel at novel-view synthesis, previous methods for understanding their semantics have been limited to incomplete 3D understanding: their segmentation results are 2D masks and their supervision is anchored at 2D pixels. This paper revisits the problem set to pursue a better 3D understanding of a scene modeled by NeRFs and 3DGS as follows. 1) We directly supervise the 3D points to train the language embedding field. It achieves state-of-the-art accuracy without relying on multi-scale language embeddings. 2) We transfer the pre-trained language field to 3DGS, achieving the first real-time rendering speed without sacrificing training time or accuracy. 3) We introduce a 3D querying and evaluation protocol for assessing the reconstructed geometry and semantics together. Code, checkpoints, and annotations will be available online.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="zheng2024headgap" data-title="HeadGAP: Few-shot 3D Head Avatar via Generalizable Gaussian Priors" data-authors="Xiaozheng Zheng, Chao Wen, Zhaohu Li, Weiyi Zhang, Zhuo Su, Xu Chang, Yang Zhao, Zheng Lv, Xiaoyuan Zhang, Yongjie Zhang, Guidong Wang, Lan Xu" data-year="2024" data-tags='["Avatar", "Dynamic", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zheng2024headgap', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/zheng2024headgap.jpg" data-fallback="None" alt="Paper thumbnail for HeadGAP: Few-shot 3D Head Avatar via Generalizable Gaussian Priors" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">HeadGAP: Few-shot 3D Head Avatar via Generalizable Gaussian Priors <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Xiaozheng Zheng, Chao Wen, Zhaohu Li, Weiyi Zhang, Zhuo Su, Xu Chang, Yang Zhao, Zheng Lv, Xiaoyuan Zhang, Yongjie Zhang, Guidong Wang, Lan Xu</p>
+      <div class="paper-tags"><span class="paper-tag">Avatar</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2408.06019.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://headgap.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">In this paper, we present a novel 3D head avatar creation approach capable of generalizing from few-shot in-the-wild data with high-fidelity and animatable robustness. Given the underconstrained nature of this problem, incorporating prior knowledge is essential. Therefore, we propose a framework comprising prior learning and avatar creation phases. The prior learning phase leverages 3D head priors derived from a large-scale multi-view dynamic dataset, and the avatar creation phase applies these priors for few-shot personalization. Our approach effectively captures these priors by utilizing a Gaussian Splatting-based auto-decoder network with part-based dynamic modeling. Our method employs identity-shared encoding with personalized latent codes for individual identities to learn the attributes of Gaussian primitives. During the avatar creation phase, we achieve fast head avatar personalization by leveraging inversion and fine-tuning strategies. Extensive experiments demonstrate that our model effectively exploits head priors and successfully generalizes them to few-shot personalization, achieving photo-realistic rendering quality, multi-view consistency, and stable animation.
+</div></div>
     </div>
   </div>
 </div>
@@ -3729,6 +4148,24 @@ h1 {
 <a href="https://github.com/leggedrobotics/radiance_field_ros" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Radiance field methods such as Neural Radiance Fields (NeRFs) or 3D Gaussian Splatting (3DGS), have revolutionized graphics and novel view synthesis. Their ability to synthesize new viewpoints with photo-realistic quality, as well as capture complex volumetric and specular scenes, makes them an ideal visualization for robotic teleoperation setups. Direct camera teleoperation provides high-fidelity operation at the cost of maneuverability, while reconstruction-based approaches offer controllable scenes with lower fidelity. With this in mind, we propose replacing the traditional reconstruction-visualization components of the robotic teleoperation pipeline with online Radiance Fields, offering highly maneuverable scenes with photorealistic quality. As such, there are three main contributions to state of the art: (1) online training of Radiance Fields using live data from multiple cameras, (2) support for a variety of radiance methods including NeRF and 3DGS, (3) visualization suite for these methods including a virtual reality scene. To enable seamless integration with existing setups, these components were tested with multiple robots in multiple configurations and were displayed using traditional tools as well as the VR headset. The results across methods and robots were compared quantitatively to a baseline of mesh reconstruction, and a user study was conducted to compare the different visualization methods.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="bao20243d" data-title="3D Gaussian Splatting: Survey, Technologies, Challenges, and Opportunities" data-authors="Yanqi Bao, Tianyu Ding, Jing Huo, Yaoli Liu, Yuxin Li, Wenbin Li, Yang Gao, Jiebo Luo" data-year="2024" data-tags='["Review"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'bao20243d', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/bao20243d.jpg" data-fallback="None" alt="Paper thumbnail for 3D Gaussian Splatting: Survey, Technologies, Challenges, and Opportunities" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">3D Gaussian Splatting: Survey, Technologies, Challenges, and Opportunities <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Yanqi Bao, Tianyu Ding, Jing Huo, Yaoli Liu, Yuxin Li, Wenbin Li, Yang Gao, Jiebo Luo</p>
+      <div class="paper-tags"><span class="paper-tag">Review</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2407.17418.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">3D Gaussian Splatting (3DGS) has emerged as a prominent technique with the potential to become a mainstream method for 3D representations. It can effectively transform multi-view images into explicit 3D Gaussian through efficient training, and achieve real-time rendering of novel views. This survey aims to analyze existing 3DGS-related works from multiple intersecting perspectives, including related tasks, technologies, challenges, and opportunities. The primary objective is to provide newcomers with a rapid understanding of the field and to assist researchers in methodically organizing existing technologies and challenges. Specifically, we delve into the optimization, application, and extension of 3DGS, categorizing them based on their focuses or motivations. Additionally, we summarize and classify nine types of technical modules and corresponding improvements identified in existing works. Based on these analyses, we further examine the common challenges and technologies across various tasks, proposing potential research opportunities.
+</div></div>
     </div>
   </div>
 </div>
@@ -3876,6 +4313,24 @@ h1 {
 <a href="https://youtu.be/WaYfY3GTs6U" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">3D Gaussian Splatting (3DGS) is increasingly popular for 3D reconstruction due to its superior visual quality and rendering speed. However, 3DGS training currently occurs on a single GPU, limiting its ability to handle high-resolution and large-scale 3D reconstruction tasks due to memory constraints. We introduce Grendel, a distributed system designed to partition 3DGS parameters and parallelize computation across multiple GPUs. As each Gaussian affects a small, dynamic subset of rendered pixels, Grendel employs sparse all-to-all communication to transfer the necessary Gaussians to pixel partitions and performs dynamic load balancing. Unlike existing 3DGS systems that train using one camera view image at a time, Grendel supports batched training with multiple views. We explore various optimization hyperparameter scaling strategies and find that a simple sqrt(batch size) scaling rule is highly effective. Evaluations using large-scale, high-resolution scenes show that Grendel enhances rendering quality by scaling up 3DGS parameters across multiple GPUs. On the Rubble dataset, we achieve a test PSNR of 27.28 by distributing 40.4 million Gaussians across 16 GPUs, compared to a PSNR of 26.28 using 11.2 million Gaussians on a single GPU. Grendel is an open-source project available at: https://github.com/nyu-systems/Grendel-GS</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="li2024gsoctree" data-title="GS-Octree: Octree-based 3D Gaussian Splatting for Robust Object-level 3D Reconstruction Under Strong Lighting" data-authors="Jiaze Li, Zhengyu Wen, Luo Zhang, Jiangbei Hu, Fei Hou, Zhebin Zhang, Ying He" data-year="2024" data-tags='["Meshing"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'li2024gsoctree', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/li2024gsoctree.jpg" data-fallback="None" alt="Paper thumbnail for GS-Octree: Octree-based 3D Gaussian Splatting for Robust Object-level 3D Reconstruction Under Strong Lighting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GS-Octree: Octree-based 3D Gaussian Splatting for Robust Object-level 3D Reconstruction Under Strong Lighting <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Jiaze Li, Zhengyu Wen, Luo Zhang, Jiangbei Hu, Fei Hou, Zhebin Zhang, Ying He</p>
+      <div class="paper-tags"><span class="paper-tag">Meshing</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2406.18199.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">The 3D Gaussian Splatting technique has significantly advanced the construction of radiance fields from multi-view images, enabling real-time rendering. While point-based rasterization effectively reduces computational demands for rendering, it often struggles to accurately reconstruct the geometry of the target object, especially under strong lighting. To address this challenge, we introduce a novel approach that combines octree-based implicit surface representations with Gaussian splatting. Our method consists of four stages. Initially, it reconstructs a signed distance field (SDF) and a radiance field through volume rendering, encoding them in a low-resolution octree. The initial SDF represents the coarse geometry of the target object. Subsequently, it introduces 3D Gaussians as additional degrees of freedom, which are guided by the SDF. In the third stage, the optimized Gaussians further improve the accuracy of the SDF, allowing it to recover finer geometric details compared to the initial SDF obtained in the first stage. Finally, it adopts the refined SDF to further optimize the 3D Gaussians via splatting, eliminating those that contribute little to visual appearance. Experimental results show that our method, which leverages the distribution of 3D Gaussians with SDFs, reconstructs more accurate geometry, particularly in images with specular highlights caused by strong lighting.
+</div></div>
     </div>
   </div>
 </div>
@@ -4377,6 +4832,54 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="li2024garmentdreamer" data-title="GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details" data-authors="Boqian Li, Xuan Li, Ying Jiang, Tianyi Xie, Feng Gao, Huamin Wang, Yin Yang, Chenfanfu Jiang" data-year="2024" data-tags='["Avatar", "Code", "Dynamic", "Project", "Rendering", "Texturing", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'li2024garmentdreamer', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/li2024garmentdreamer.jpg" data-fallback="None" alt="Paper thumbnail for GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Boqian Li, Xuan Li, Ying Jiang, Tianyi Xie, Feng Gao, Huamin Wang, Yin Yang, Chenfanfu Jiang</p>
+      <div class="paper-tags"><span class="paper-tag">Avatar</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Texturing</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2405.12420.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://xuan-li.github.io/GarmentDreamerDemo/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/boqian-li/GarmentDreamer" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://xuan-li.github.io/GarmentDreamerDemo/dance.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Traditional 3D garment creation is labor-intensive, involving sketching, modeling, UV mapping, and texturing, which are time-consuming and costly. Recent advances in diffusion-based generative models have enabled new possibilities for 3D garment generation from text prompts, images, and videos. However, existing methods either suffer from inconsistencies among multi-view images or require additional processes to separate cloth from the underlying human model. In this paper, we propose GarmentDreamer, a novel method that leverages 3D Gaussian Splatting (GS) as guidance to generate wearable, simulation-ready 3D garment meshes from text prompts. In contrast to using multi-view images directly predicted by generative models as guidance, our 3DGS guidance ensures consistent optimization in both garment deformation and texture synthesis. Our method introduces a novel garment augmentation module, guided by normal and RGBA information, and employs implicit Neural Texture Fields (NeTF) combined with Score Distillation Sampling (SDS) to generate diverse geometric and texture details. We validate the effectiveness of our approach through comprehensive qualitative and quantitative experiments, showcasing the superior performance of GarmentDreamer over state-of-the-art alternatives. Our project page is available at: https://xuan-li.github.io/GarmentDreamerDemo/.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="wu2024gaussian" data-title="Gaussian Head & Shoulders: High Fidelity Neural Upper Body Avatars with Anchor Gaussian Guided Texture Warping" data-authors="Tianhao Wu, Jing Yang, Zhilin Guo, Jingyi Wan, Fangcheng Zhong, Cengiz Oztireli" data-year="2024" data-tags='["Avatar", "Dynamic", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wu2024gaussian', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wu2024gaussian.jpg" data-fallback="None" alt="Paper thumbnail for Gaussian Head & Shoulders: High Fidelity Neural Upper Body Avatars with Anchor Gaussian Guided Texture Warping" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Gaussian Head & Shoulders: High Fidelity Neural Upper Body Avatars with Anchor Gaussian Guided Texture Warping <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Tianhao Wu, Jing Yang, Zhilin Guo, Jingyi Wan, Fangcheng Zhong, Cengiz Oztireli</p>
+      <div class="paper-tags"><span class="paper-tag">Avatar</span>
+<span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2405.12069.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://gaussian-head-shoulders.netlify.app/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">By equipping the most recent 3D Gaussian Splatting representation with head 3D morphable models (3DMM), existing methods manage to create head avatars with high fidelity. However, most existing methods only reconstruct a head without the body, substantially limiting their application scenarios. We found that naively applying Gaussians to model the clothed chest and shoulders tends to result in blurry reconstruction and noisy floaters under novel poses. This is because of the fundamental limitation of Gaussians and point clouds -- each Gaussian or point can only have a single directional radiance without spatial variance, therefore an unnecessarily large number of them is required to represent complicated spatially varying texture, even for simple geometry. In contrast, we propose to model the body part with a neural texture that consists of coarse and pose-dependent fine colors. To properly render the body texture for each view and pose without accurate geometry nor UV mapping, we optimize another sparse set of Gaussians as anchors that constrain the neural warping field that maps image plane coordinates to the texture space. We demonstrate that Gaussian Head & Shoulders can fit the high-frequency details on the clothed upper body with high fidelity and potentially improve the accuracy and fidelity of the head region. We evaluate our method with casual phone-captured and internet videos and show our method archives superior reconstruction quality and robustness in both self and cross reenactment tasks. To fully utilize the efficient rendering speed of Gaussian splatting, we additionally propose an accelerated inference method of our trained model without Multi-Layer Perceptron (MLP) queries and reach a stable rendering speed of around 130 FPS for any subjects.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="dalal2024gaussian" data-title="Gaussian Splatting: 3D Reconstruction and Novel View Synthesis, a Review" data-authors="Anurag Dalal, Daniel Hagen, Kjell G. Robbersmyr, Kristian Muri Knausgård" data-year="2024" data-tags='["Review"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'dalal2024gaussian', this)">
@@ -4814,7 +5317,7 @@ h1 {
     </div>
   </div>
 </div>
-<div class="paper-row" data-id="lu20243d" data-title="3D Geometry-aware Deformable Gaussian Splatting for Dynamic View Synthesis" data-authors="Zhicheng Lu, Xiang Guo, Le Hui, Tianrui Chen, Min Yang, Xiao Tang, Feng Zhu, Yuchao Dai" data-year="2024" data-tags='["Dynamic", "Project"]'>
+<div class="paper-row" data-id="lu20243d" data-title="3D Geometry-aware Deformable Gaussian Splatting for Dynamic View Synthesis" data-authors="Zhicheng Lu, Xiang Guo, Le Hui, Tianrui Chen, Min Yang, Xiao Tang, Feng Zhu, Yuchao Dai" data-year="2024" data-tags='["Code", "Dynamic", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'lu20243d', this)">
     <div class="paper-number"></div>
@@ -4824,10 +5327,12 @@ h1 {
     <div class="paper-content">
       <h2 class="paper-title">3D Geometry-aware Deformable Gaussian Splatting for Dynamic View Synthesis <span class="paper-year">(2024)</span></h2>
       <p class="paper-authors">Zhicheng Lu, Xiang Guo, Le Hui, Tianrui Chen, Min Yang, Xiao Tang, Feng Zhu, Yuchao Dai</p>
-      <div class="paper-tags"><span class="paper-tag">Dynamic</span>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Dynamic</span>
 <span class="paper-tag">Project</span></div>
       <div class="paper-links"><a href="https://arxiv.org/pdf/2404.06270" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
 <a href="https://npucvr.github.io/GaGS/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/zhichengLuxx/GaGS" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">In this paper, we propose a 3D geometry-aware deformable Gaussian Splatting method for dynamic view synthesis. Existing neural radiance fields (NeRF) based solutions learn the deformation in an implicit manner, which cannot incorporate 3D scene geometry. Therefore, the learned deformation is not necessarily geometrically coherent, which results in unsatisfactory dynamic view synthesis and 3D dynamic reconstruction. Recently, 3D Gaussian Splatting provides a new representation of the 3D scene, building upon which the 3D geometry could be exploited in learning the complex 3D deformation. Specifically, the scenes are represented as a collection of 3D Gaussian, where each 3D Gaussian is optimized to move and rotate over time to model the deformation. To enforce the 3D scene geometry constraint during deformation, we explicitly extract 3D geometry features and integrate them in learning the 3D deformation. In this way, our solution achieves 3D geometry-aware deformation modeling, which enables improved dynamic view synthesis and 3D dynamic reconstruction. Extensive experimental results on both synthetic and real datasets prove the superiority of our solution, which achieves new state-of-the-art performance.</div></div>
     </div>
