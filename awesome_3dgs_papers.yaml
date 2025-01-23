@@ -1,3 +1,606 @@
+- id: shi2025sketch
+  title: 'Sketch and Patch: Efficient 3D Gaussian Representation for Man-Made Scenes'
+  authors: Yuang Shi, Simone Gasparini, Géraldine Morin, Chenggang Yang, Wei Tsang
+    Ooi
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a promising representation
+    for photorealistic rendering of 3D scenes. However, its high storage requirements
+    pose significant challenges for practical applications. We observe that Gaussians
+    exhibit distinct roles and characteristics that are analogous to traditional artistic
+    techniques -- Like how artists first sketch outlines before filling in broader
+    areas with color, some Gaussians capture high-frequency features like edges and
+    contours; While other Gaussians represent broader, smoother regions, that are
+    analogous to broader brush strokes that add volume and depth to a painting. Based
+    on this observation, we propose a novel hybrid representation that categorizes
+    Gaussians into (i) Sketch Gaussians, which define scene boundaries, and (ii) Patch
+    Gaussians, which cover smooth regions. Sketch Gaussians are efficiently encoded
+    using parametric models, leveraging their geometric coherence, while Patch Gaussians
+    undergo optimized pruning, retraining, and vector quantization to maintain volumetric
+    consistency and storage efficiency. Our comprehensive evaluation across diverse
+    indoor and outdoor scenes demonstrates that this structure-aware approach achieves
+    up to 32.62% improvement in PSNR, 19.12% in SSIM, and 45.41% in LPIPS at equivalent
+    model sizes, and correspondingly, for an indoor scene, our model maintains the
+    visual quality with 2.3% of the original model size.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.13045.pdf
+  code: null
+  video: null
+  tags:
+  - Densification
+  thumbnail: assets/thumbnails/shi2025sketch.jpg
+  publication_date: '2025-01-22T17:52:45+00:00'
+  date_source: arxiv
+- id: arunan2025darbsplatting
+  title: 'DARB-Splatting: Generalizing Splatting with Decaying Anisotropic Radial
+    Basis Functions'
+  authors: Vishagar Arunan, Saeedha Nazar, Hashiru Pramuditha, Vinasirajan Viruthshaan,
+    Sameera Ramasinghe, Simon Lucey, Ranga Rodrigo
+  year: '2025'
+  abstract: 'Splatting-based 3D reconstruction methods have gained popularity with
+    the advent of 3D Gaussian Splatting, efficiently synthesizing high-quality novel
+    views. These methods commonly resort to using exponential family functions, such
+    as the Gaussian function, as reconstruction kernels due to their anisotropic nature,
+    ease of projection, and differentiability in rasterization. However, the field
+    remains restricted to variations within the exponential family, leaving generalized
+    reconstruction kernels largely underexplored, partly due to the lack of easy integrability
+    in 3D to 2D projections. In this light, we show that a class of decaying anisotropic
+    radial basis functions (DARBFs), which are non-negative functions of the Mahalanobis
+    distance, supports splatting by approximating the Gaussian function''s closed-form
+    integration advantage. With this fresh perspective, we demonstrate up to 34% faster
+    convergence during training and a 15% reduction in memory consumption across various
+    DARB reconstruction kernels, while maintaining comparable PSNR, SSIM, and LPIPS
+    results. We will make the code available.
+
+    '
+  project_page: https://randomnerds.github.io/darbs.github.io/
+  paper: https://arxiv.org/pdf/2501.12369.pdf
+  code: null
+  video: null
+  tags:
+  - Project
+  - Rendering
+  thumbnail: assets/thumbnails/arunan2025darbsplatting.jpg
+  publication_date: '2025-01-21T18:49:06+00:00'
+  date_source: arxiv
+- id: chen2025hac
+  title: 'HAC++: Towards 100X Compression of 3D Gaussian Splatting'
+  authors: Yihang Chen, Qianyi Wu, Weiyao Lin, Mehrtash Harandi, Jianfei Cai
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a promising framework for
+    novel view synthesis, boasting rapid rendering speed with high fidelity. However,
+    the substantial Gaussians and their associated attributes necessitate effective
+    compression techniques. Nevertheless, the sparse and unorganized nature of the
+    point cloud of Gaussians (or anchors in our paper) presents challenges for compression.
+    To achieve a compact size, we propose HAC++, which leverages the relationships
+    between unorganized anchors and a structured hash grid, utilizing their mutual
+    information for context modeling. Additionally, HAC++ captures intra-anchor contextual
+    relationships to further enhance compression performance. To facilitate entropy
+    coding, we utilize Gaussian distributions to precisely estimate the probability
+    of each quantized attribute, where an adaptive quantization module is proposed
+    to enable high-precision quantization of these attributes for improved fidelity
+    restoration. Moreover, we incorporate an adaptive masking strategy to eliminate
+    invalid Gaussians and anchors. Overall, HAC++ achieves a remarkable size reduction
+    of over 100X compared to vanilla 3DGS when averaged on all datasets, while simultaneously
+    improving fidelity. It also delivers more than 20X size reduction compared to
+    Scaffold-GS. Our code is available at https://github.com/YihangChen-ee/HAC-plus.
+
+    '
+  project_page: https://yihangchen-ee.github.io/project_hac++/
+  paper: https://arxiv.org/pdf/2501.12255.pdf
+  code: https://github.com/YihangChen-ee/HAC-plus
+  video: null
+  tags:
+  - Code
+  - Compression
+  - Project
+  thumbnail: assets/thumbnails/chen2025hac.jpg
+  publication_date: '2025-01-21T16:23:05+00:00'
+  date_source: arxiv
+- id: li2025cargs
+  title: 'Car-GS: Addressing Reflective and Transparent Surface Challenges in 3D Car
+    Reconstruction'
+  authors: Congcong Li, Jin Wang, Xiaomeng Wang, Xingchen Zhou, Wei Wu, Yuzhi Zhang,
+    Tongyi Cao
+  year: '2025'
+  abstract: '3D car modeling is crucial for applications in autonomous driving systems,
+    virtual and augmented reality, and gaming. However, due to the distinctive properties
+    of cars, such as highly reflective and transparent surface materials, existing
+    methods often struggle to achieve accurate 3D car reconstruction.To address these
+    limitations, we propose Car-GS, a novel approach designed to mitigate the effects
+    of specular highlights and the coupling of RGB and geometry in 3D geometric and
+    shading reconstruction (3DGS). Our method incorporates three key innovations:
+    First, we introduce view-dependent Gaussian primitives to effectively model surface
+    reflections. Second, we identify the limitations of using a shared opacity parameter
+    for both image rendering and geometric attributes when modeling transparent objects.
+    To overcome this, we assign a learnable geometry-specific opacity to each 2D Gaussian
+    primitive, dedicated solely to rendering depth and normals. Third, we observe
+    that reconstruction errors are most prominent when the camera view is nearly orthogonal
+    to glass surfaces. To address this issue, we develop a quality-aware supervision
+    module that adaptively leverages normal priors from a pre-trained large-scale
+    normal model.Experimental results demonstrate that Car-GS achieves precise reconstruction
+    of car surfaces and significantly outperforms prior methods. The project page
+    is available at https://lcc815.github.io/Car-GS.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.11020.pdf
+  code: https://lcc815.github.io/Car-GS/
+  video: null
+  tags:
+  - Code
+  - Meshing
+  - Rendering
+  thumbnail: assets/thumbnails/li2025cargs.jpg
+  publication_date: '2025-01-19T11:49:35+00:00'
+  date_source: arxiv
+- id: zheng2025gstar
+  title: 'GSTAR: Gaussian Surface Tracking and Reconstruction'
+  authors: Chengwei Zheng, Lixin Xue, Juan Zarate, Jie Song
+  year: '2025'
+  abstract: '3D Gaussian Splatting techniques have enabled efficient photo-realistic
+    rendering of static scenes. Recent works have extended these approaches to support
+    surface reconstruction and tracking. However, tracking dynamic surfaces with 3D
+    Gaussians remains challenging due to complex topology changes, such as surfaces
+    appearing, disappearing, or splitting. To address these challenges, we propose
+    GSTAR, a novel method that achieves photo-realistic rendering, accurate surface
+    reconstruction, and reliable 3D tracking for general dynamic scenes with changing
+    topology. Given multi-view captures as input, GSTAR binds Gaussians to mesh faces
+    to represent dynamic objects. For surfaces with consistent topology, GSTAR maintains
+    the mesh topology and tracks the meshes using Gaussians. In regions where topology
+    changes, GSTAR adaptively unbinds Gaussians from the mesh, enabling accurate registration
+    and the generation of new surfaces based on these optimized Gaussians. Additionally,
+    we introduce a surface-based scene flow method that provides robust initialization
+    for tracking between frames. Experiments demonstrate that our method effectively
+    tracks and reconstructs dynamic surfaces, enabling a range of applications. Our
+    project page with the code release is available at https://eth-ait.github.io/GSTAR/.
+
+    '
+  project_page: chengwei-zheng.github.io/GSTAR/
+  paper: https://arxiv.org/pdf/2501.10283.pdf
+  code: null
+  video: https://www.youtube.com/watch?v=Fwby4PrjFeM
+  tags:
+  - Avatar
+  - Dynamic
+  - Meshing
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/zheng2025gstar.jpg
+  publication_date: '2025-01-17T16:26:24+00:00'
+  date_source: arxiv
+- id: ma2025cityloc
+  title: 'CityLoc: 6 DoF Localization of Text Descriptions in Large-Scale Scenes with
+    Gaussian Representation'
+  authors: Qi Ma, Runyi Yang, Bin Ren, Ender Konukoglu, Luc Van Gool, Danda Pani Paudel
+  year: '2025'
+  abstract: 'Localizing text descriptions in large-scale 3D scenes is inherently an
+    ambiguous task. This nonetheless arises while describing general concepts, e.g.
+    all traffic lights in a city.   To facilitate reasoning based on such concepts,
+    text localization in the form of distribution is required. In this paper, we generate
+    the distribution of the camera poses conditioned upon the textual description.
+    To facilitate such generation, we propose a diffusion-based architecture that
+    conditionally diffuses the noisy 6DoF camera poses to their plausible locations.
+    The conditional signals are derived from the text descriptions, using the pre-trained
+    text encoders. The connection between text descriptions and pose distribution
+    is established through pretrained Vision-Language-Model, i.e. CLIP. Furthermore,
+    we demonstrate that the candidate poses for the distribution can be further refined
+    by rendering potential poses using 3D Gaussian splatting, guiding incorrectly
+    posed samples towards locations that better align with the textual description,
+    through visual reasoning.   We demonstrate the effectiveness of our method by
+    comparing it with both standard retrieval methods and learning-based approaches.
+    Our proposed method consistently outperforms these baselines across all five large-scale
+    datasets. Our source code and dataset will be made publicly available.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.08982.pdf
+  code: null
+  video: null
+  tags:
+  - Language Embedding
+  - Large-Scale
+  thumbnail: assets/thumbnails/ma2025cityloc.jpg
+  publication_date: '2025-01-15T17:59:32+00:00'
+  date_source: arxiv
+- id: hong2025gslivo
+  title: 'GS-LIVO: Real-Time LiDAR, Inertial, and Visual Multi-sensor Fused Odometry
+    with Gaussian Mapping'
+  authors: Sheng Hong, Chunran Zheng, Yishu Shen, Changze Li, Fu Zhang, Tong Qin,
+    Shaojie Shen
+  year: '2025'
+  abstract: 'In recent years, 3D Gaussian splatting (3D-GS) has emerged as a novel
+    scene representation approach. However, existing vision-only 3D-GS methods often
+    rely on hand-crafted heuristics for point-cloud densification and face challenges
+    in handling occlusions and high GPU memory and computation consumption. LiDAR-Inertial-Visual
+    (LIV) sensor configuration has demonstrated superior performance in localization
+    and dense mapping by leveraging complementary sensing characteristics: rich texture
+    information from cameras, precise geometric measurements from LiDAR, and high-frequency
+    motion data from IMU. Inspired by this, we propose a novel real-time Gaussian-based
+    simultaneous localization and mapping (SLAM) system. Our map system comprises
+    a global Gaussian map and a sliding window of Gaussians, along with an IESKF-based
+    odometry. The global Gaussian map consists of hash-indexed voxels organized in
+    a recursive octree, effectively covering sparse spatial volumes while adapting
+    to different levels of detail and scales. The Gaussian map is initialized through
+    multi-sensor fusion and optimized with photometric gradients. Our system incrementally
+    maintains a sliding window of Gaussians, significantly reducing GPU computation
+    and memory consumption by only optimizing the map within the sliding window. Moreover,
+    we implement a tightly coupled multi-sensor fusion odometry with an iterative
+    error state Kalman filter (IESKF), leveraging real-time updating and rendering
+    of the Gaussian map. Our system represents the first real-time Gaussian-based
+    SLAM framework deployable on resource-constrained embedded systems, demonstrated
+    on the NVIDIA Jetson Orin NX platform. The framework achieves real-time performance
+    while maintaining robust multi-sensor fusion capabilities. All implementation
+    algorithms, hardware designs, and CAD models will be publicly available.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.08672.pdf
+  code: null
+  video: null
+  tags:
+  - Large-Scale
+  - Lidar
+  thumbnail: assets/thumbnails/hong2025gslivo.jpg
+  publication_date: '2025-01-15T09:04:56+00:00'
+  date_source: arxiv
+- id: wu2025vingsmono
+  title: 'VINGS-Mono: Visual-Inertial Gaussian Splatting Monocular SLAM in Large Scenes'
+  authors: Ke Wu, Zicheng Zhang, Muer Tie, Ziqing Ai, Zhongxue Gan, Wenchao Ding
+  year: '2025'
+  abstract: 'VINGS-Mono is a monocular (inertial) Gaussian Splatting (GS) SLAM framework
+    designed for large scenes. The framework comprises four main components: VIO Front
+    End, 2D Gaussian Map, NVS Loop Closure, and Dynamic Eraser. In the VIO Front End,
+    RGB frames are processed through dense bundle adjustment and uncertainty estimation
+    to extract scene geometry and poses. Based on this output, the mapping module
+    incrementally constructs and maintains a 2D Gaussian map. Key components of the
+    2D Gaussian Map include a Sample-based Rasterizer, Score Manager, and Pose Refinement,
+    which collectively improve mapping speed and localization accuracy. This enables
+    the SLAM system to handle large-scale urban environments with up to 50 million
+    Gaussian ellipsoids. To ensure global consistency in large-scale scenes, we design
+    a Loop Closure module, which innovatively leverages the Novel View Synthesis (NVS)
+    capabilities of Gaussian Splatting for loop closure detection and correction of
+    the Gaussian map. Additionally, we propose a Dynamic Eraser to address the inevitable
+    presence of dynamic objects in real-world outdoor scenes. Extensive evaluations
+    in indoor and outdoor environments demonstrate that our approach achieves localization
+    performance on par with Visual-Inertial Odometry while surpassing recent GS/NeRF
+    SLAM methods. It also significantly outperforms all existing methods in terms
+    of mapping and rendering quality. Furthermore, we developed a mobile app and verified
+    that our framework can generate high-quality Gaussian maps in real time using
+    only a smartphone camera and a low-frequency IMU sensor. To the best of our knowledge,
+    VINGS-Mono is the first monocular Gaussian SLAM method capable of operating in
+    outdoor environments and supporting kilometer-scale large scenes.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.08286.pdf
+  code: null
+  video: null
+  tags:
+  - Large-Scale
+  - Meshing
+  - SLAM
+  thumbnail: assets/thumbnails/wu2025vingsmono.jpg
+  publication_date: '2025-01-14T18:01:15+00:00'
+  date_source: arxiv
+- id: rogge2025objectcentric
+  title: 'Object-Centric 2D Gaussian Splatting: Background Removal and Occlusion-Aware
+    Pruning for Compact Object Models'
+  authors: Marcel Rogge, Didier Stricker
+  year: '2025'
+  abstract: 'Current Gaussian Splatting approaches are effective for reconstructing
+    entire scenes but lack the option to target specific objects, making them computationally
+    expensive and unsuitable for object-specific applications. We propose a novel
+    approach that leverages object masks to enable targeted reconstruction, resulting
+    in object-centric models. Additionally, we introduce an occlusion-aware pruning
+    strategy to minimize the number of Gaussians without compromising quality. Our
+    method reconstructs compact object models, yielding object-centric Gaussian and
+    mesh representations that are up to 96\% smaller and up to 71\% faster to train
+    compared to the baseline while retaining competitive quality. These representations
+    are immediately usable for downstream applications such as appearance editing
+    and physics simulation without additional processing.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.08174.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  - Densification
+  - Editing
+  thumbnail: assets/thumbnails/rogge2025objectcentric.jpg
+  publication_date: '2025-01-14T14:56:31+00:00'
+  date_source: arxiv
+- id: liu2025uncommon
+  title: UnCommon Objects in 3D
+  authors: Xingchen Liu, Piyush Tayal, Jianyuan Wang, Jesus Zarzar, Tom Monnier, Konstantinos
+    Tertikas, Jiali Duan, Antoine Toisoul, Jason Y. Zhang, Natalia Neverova, Andrea
+    Vedaldi, Roman Shapovalov, David Novotny
+  year: '2025'
+  abstract: 'We introduce Uncommon Objects in 3D (uCO3D), a new object-centric dataset
+    for 3D deep learning and 3D generative AI. uCO3D is the largest publicly-available
+    collection of high-resolution videos of objects with 3D annotations that ensures
+    full-360$^{\circ}$ coverage. uCO3D is significantly more diverse than MVImgNet
+    and CO3Dv2, covering more than 1,000 object categories. It is also of higher quality,
+    due to extensive quality checks of both the collected videos and the 3D annotations.
+    Similar to analogous datasets, uCO3D contains annotations for 3D camera poses,
+    depth maps and sparse point clouds. In addition, each object is equipped with
+    a caption and a 3D Gaussian Splat reconstruction. We train several large 3D models
+    on MVImgNet, CO3Dv2, and uCO3D and obtain superior results using the latter, showing
+    that uCO3D is better for learning applications.
+
+    '
+  project_page: https://uco3d.github.io/
+  paper: https://arxiv.org/pdf/2501.07574.pdf
+  code: https://github.com/facebookresearch/uco3d
+  video: null
+  tags:
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/liu2025uncommon.jpg
+  publication_date: '2025-01-13T18:59:20+00:00'
+  date_source: arxiv
+- id: stuart20253dgstopc
+  title: '3DGS-to-PC: Convert a 3D Gaussian Splatting Scene into a Dense Point Cloud
+    or Mesh'
+  authors: Lewis A G Stuart, Michael P Pound
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) excels at producing highly detailed 3D reconstructions,
+    but these scenes often require specialised renderers for effective visualisation.
+    In contrast, point clouds are a widely used 3D representation and are compatible
+    with most popular 3D processing software, yet converting 3DGS scenes into point
+    clouds is a complex challenge. In this work we introduce 3DGS-to-PC, a flexible
+    and highly customisable framework that is capable of transforming 3DGS scenes
+    into dense, high-accuracy point clouds. We sample points probabilistically from
+    each Gaussian as a 3D density function. We additionally threshold new points using
+    the Mahalanobis distance to the Gaussian centre, preventing extreme outliers.
+    The result is a point cloud that closely represents the shape encoded into the
+    3D Gaussian scene. Individual Gaussians use spherical harmonics to adapt colours
+    depending on view, and each point may contribute only subtle colour hints to the
+    resulting rendered scene. To avoid spurious or incorrect colours that do not fit
+    with the final point cloud, we recalculate Gaussian colours via a customised image
+    rendering approach, assigning each Gaussian the colour of the pixel to which it
+    contributes most across all views. 3DGS-to-PC also supports mesh generation through
+    Poisson Surface Reconstruction, applied to points sampled from predicted surface
+    Gaussians. This allows coloured meshes to be generated from 3DGS scenes without
+    the need for re-training. This package is highly customisable and capability of
+    simple integration into existing 3DGS pipelines. 3DGS-to-PC provides a powerful
+    tool for converting 3DGS data into point cloud and surface-based formats.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.07478.pdf
+  code: https://github.com/Lewis-Stuart-11/3DGS-to-PC
+  video: null
+  tags:
+  - Code
+  - Point Cloud
+  thumbnail: assets/thumbnails/stuart20253dgstopc.jpg
+  publication_date: '2025-01-13T16:52:28+00:00'
+  date_source: arxiv
+- id: zhang2025evaluating
+  title: 'Evaluating Human Perception of Novel View Synthesis: Subjective Quality
+    Assessment of Gaussian Splatting and NeRF in Dynamic Scenes'
+  authors: Yuhang Zhang, Joshua Maraval, Zhengyu Zhang, Nicolas Ramin, Shishun Tian,
+    Lu Zhang
+  year: '2025'
+  abstract: 'Gaussian Splatting (GS) and Neural Radiance Fields (NeRF) are two groundbreaking
+    technologies that have revolutionized the field of Novel View Synthesis (NVS),
+    enabling immersive photorealistic rendering and user experiences by synthesizing
+    multiple viewpoints from a set of images of sparse views. The potential applications
+    of NVS, such as high-quality virtual and augmented reality, detailed 3D modeling,
+    and realistic medical organ imaging, underscore the importance of quality assessment
+    of NVS methods from the perspective of human perception. Although some previous
+    studies have explored subjective quality assessments for NVS technology, they
+    still face several challenges, especially in NVS methods selection, scenario coverage,
+    and evaluation methodology. To address these challenges, we conducted two subjective
+    experiments for the quality assessment of NVS technologies containing both GS-based
+    and NeRF-based methods, focusing on dynamic and real-world scenes. This study
+    covers 360{\deg}, front-facing, and single-viewpoint videos while providing a
+    richer and greater number of real scenes. Meanwhile, it''s the first time to explore
+    the impact of NVS methods in dynamic scenes with moving objects. The two types
+    of subjective experiments help to fully comprehend the influences of different
+    viewing paths from a human perception perspective and pave the way for future
+    development of full-reference and no-reference quality metrics. In addition, we
+    established a comprehensive benchmark of various state-of-the-art objective metrics
+    on the proposed database, highlighting that existing methods still struggle to
+    accurately capture subjective quality. The results give us some insights into
+    the limitations of existing NVS methods and may promote the development of new
+    NVS methods.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.08072.pdf
+  code: null
+  video: null
+  tags:
+  - Dynamic
+  thumbnail: assets/thumbnails/zhang2025evaluating.jpg
+  publication_date: '2025-01-13T10:01:27+00:00'
+  date_source: arxiv
+- id: peng2025rmavatar
+  title: 'RMAvatar: Photorealistic Human Avatar Reconstruction from Monocular Video
+    Based on Rectified Mesh-embedded Gaussians'
+  authors: Sen Peng, Weixing Xie, Zilong Wang, Xiaohu Guo, Zhonggui Chen, Baorong
+    Yang, Xiao Dong
+  year: '2025'
+  abstract: 'We introduce RMAvatar, a novel human avatar representation with Gaussian
+    splatting embedded on mesh to learn clothed avatar from a monocular video. We
+    utilize the explicit mesh geometry to represent motion and shape of a virtual
+    human and implicit appearance rendering with Gaussian Splatting. Our method consists
+    of two main modules: Gaussian initialization module and Gaussian rectification
+    module. We embed Gaussians into triangular faces and control their motion through
+    the mesh, which ensures low-frequency motion and surface deformation of the avatar.
+    Due to the limitations of LBS formula, the human skeleton is hard to control complex
+    non-rigid transformations. We then design a pose-related Gaussian rectification
+    module to learn fine-detailed non-rigid deformations, further improving the realism
+    and expressiveness of the avatar. We conduct extensive experiments on public datasets,
+    RMAvatar shows state-of-the-art performance on both rendering quality and quantitative
+    evaluations. Please see our project page at https://rm-avatar.github.io.
+
+    '
+  project_page: https://rm-avatar.github.io/
+  paper: https://arxiv.org/pdf/2501.07104.pdf
+  code: https://github.com/RMAvatar/RMAvatar
+  video: null
+  tags:
+  - Avatar
+  - Code
+  - Dynamic
+  - Meshing
+  - Monocular
+  - Project
+  thumbnail: assets/thumbnails/peng2025rmavatar.jpg
+  publication_date: '2025-01-13T07:32:44+00:00'
+  date_source: arxiv
+- id: zielonka2025synthetic
+  title: Synthetic Prior for Few-Shot Drivable Head Avatar Inversion
+  authors: Wojciech Zielonka, Stephan J. Garbin, Alexandros Lattas, George Kopanas,
+    Paulo Gotardo, Thabo Beeler, Justus Thies, Timo Bolkart
+  year: '2025'
+  abstract: 'We present SynShot, a novel method for the few-shot inversion of a drivable
+    head avatar based on a synthetic prior. We tackle two major challenges. First,
+    training a controllable 3D generative network requires a large number of diverse
+    sequences, for which pairs of images and high-quality tracked meshes are not always
+    available. Second, state-of-the-art monocular avatar models struggle to generalize
+    to new views and expressions, lacking a strong prior and often overfitting to
+    a specific viewpoint distribution. Inspired by machine learning models trained
+    solely on synthetic data, we propose a method that learns a prior model from a
+    large dataset of synthetic heads with diverse identities, expressions, and viewpoints.
+    With few input images, SynShot fine-tunes the pretrained synthetic prior to bridge
+    the domain gap, modeling a photorealistic head avatar that generalizes to novel
+    expressions and viewpoints. We model the head avatar using 3D Gaussian splatting
+    and a convolutional encoder-decoder that outputs Gaussian parameters in UV texture
+    space. To account for the different modeling complexities over parts of the head
+    (e.g., skin vs hair), we embed the prior with explicit control for upsampling
+    the number of per-part primitives. Compared to state-of-the-art monocular methods
+    that require thousands of real training images, SynShot significantly improves
+    novel view and expression synthesis.
+
+    '
+  project_page: https://zielon.github.io/synshot/
+  paper: https://arxiv.org/pdf/2501.06903.pdf
+  code: null
+  video: https://www.youtube.com/watch?v=4KQQatkaSgc
+  tags:
+  - Avatar
+  - Dynamic
+  - Project
+  - Sparse
+  - Video
+  thumbnail: assets/thumbnails/zielonka2025synthetic.jpg
+  publication_date: '2025-01-12T19:01:05+00:00'
+  date_source: arxiv
+- id: chen2025generalized
+  title: Generalized and Efficient 2D Gaussian Splatting for Arbitrary-scale Super-Resolution
+  authors: Du Chen, Liyi Chen, Zhengqiang Zhang, Lei Zhang
+  year: '2025'
+  abstract: 'Equipped with the continuous representation capability of Multi-Layer
+    Perceptron (MLP), Implicit Neural Representation (INR) has been successfully employed
+    for Arbitrary-scale Super-Resolution (ASR). However, the limited receptive field
+    of the linear layers in MLP restricts the representation capability of INR, while
+    it is computationally expensive to query the MLP numerous times to render each
+    pixel. Recently, Gaussian Splatting (GS) has shown its advantages over INR in
+    both visual quality and rendering speed in 3D tasks, which motivates us to explore
+    whether GS can be employed for the ASR task. However, directly applying GS to
+    ASR is exceptionally challenging because the original GS is an optimization-based
+    method through overfitting each single scene, while in ASR we aim to learn a single
+    model that can generalize to different images and scaling factors. We overcome
+    these challenges by developing two novel techniques. Firstly, to generalize GS
+    for ASR, we elaborately design an architecture to predict the corresponding image-conditioned
+    Gaussians of the input low-resolution image in a feed-forward manner. Secondly,
+    we implement an efficient differentiable 2D GPU/CUDA-based scale-aware rasterization
+    to render super-resolved images by sampling discrete RGB values from the predicted
+    contiguous Gaussians. Via end-to-end training, our optimized network, namely GSASR,
+    can perform ASR for any image and unseen scaling factors. Extensive experiments
+    validate the effectiveness of our proposed method. The project page can be found
+    at \url{https://mt-cly.github.io/GSASR.github.io/}.
+
+    '
+  project_page: https://mt-cly.github.io/GSASR.github.io/
+  paper: https://arxiv.org/pdf/2501.06838.pdf
+  code: null
+  video: null
+  tags:
+  - Project
+  - Super Resolution
+  thumbnail: assets/thumbnails/chen2025generalized.jpg
+  publication_date: '2025-01-12T15:14:58+00:00'
+  date_source: arxiv
+- id: wang2025f3dgaus
+  title: 'F3D-Gaus: Feed-forward 3D-aware Generation on ImageNet with Cycle-Consistent
+    Gaussian Splatting'
+  authors: Yuxin Wang, Qianyi Wu, Dan Xu
+  year: '2025'
+  abstract: 'This paper tackles the problem of generalizable 3D-aware generation from
+    monocular datasets, e.g., ImageNet. The key challenge of this task is learning
+    a robust 3D-aware representation without multi-view or dynamic data, while ensuring
+    consistent texture and geometry across different viewpoints. Although some baseline
+    methods are capable of 3D-aware generation, the quality of the generated images
+    still lags behind state-of-the-art 2D generation approaches, which excel in producing
+    high-quality, detailed images. To address this severe limitation, we propose a
+    novel feed-forward pipeline based on pixel-aligned Gaussian Splatting, coined
+    as F3D-Gaus, which can produce more realistic and reliable 3D renderings from
+    monocular inputs. In addition, we introduce a self-supervised cycle-consistent
+    constraint to enforce cross-view consistency in the learned 3D representation.
+    This training strategy naturally allows aggregation of multiple aligned Gaussian
+    primitives and significantly alleviates the interpolation limitations inherent
+    in single-view pixel-aligned Gaussian Splatting. Furthermore, we incorporate video
+    model priors to perform geometry-aware refinement, enhancing the generation of
+    fine details in wide-viewpoint scenarios and improving the model''s capability
+    to capture intricate 3D textures. Extensive experiments demonstrate that our approach
+    not only achieves high-quality, multi-view consistent 3D-aware generation from
+    monocular datasets, but also significantly improves training and inference efficiency.
+
+    '
+  project_page: https://arxiv.org/abs/2501.06714
+  paper: https://arxiv.org/pdf/2501.06714.pdf
+  code: https://github.com/W-Ted/F3D-Gaus
+  video: null
+  tags:
+  - Code
+  - Feed-Forward
+  - Monocular
+  - Project
+  thumbnail: assets/thumbnails/wang2025f3dgaus.jpg
+  publication_date: '2025-01-12T04:44:44+00:00'
+  date_source: arxiv
+- id: asim2025met3r
+  title: 'MEt3R: Measuring Multi-View Consistency in Generated Images'
+  authors: Mohammad Asim, Christopher Wewer, Thomas Wimmer, Bernt Schiele, Jan Eric
+    Lenssen
+  year: '2025'
+  abstract: 'We introduce MEt3R, a metric for multi-view consistency in generated
+    images. Large-scale generative models for multi-view image generation are rapidly
+    advancing the field of 3D inference from sparse observations. However, due to
+    the nature of generative modeling, traditional reconstruction metrics are not
+    suitable to measure the quality of generated outputs and metrics that are independent
+    of the sampling procedure are desperately needed. In this work, we specifically
+    address the aspect of consistency between generated multi-view images, which can
+    be evaluated independently of the specific scene. Our approach uses DUSt3R to
+    obtain dense 3D reconstructions from image pairs in a feed-forward manner, which
+    are used to warp image contents from one view into the other. Then, feature maps
+    of these images are compared to obtain a similarity score that is invariant to
+    view-dependent effects. Using MEt3R, we evaluate the consistency of a large set
+    of previous methods for novel view and video generation, including our open, multi-view
+    latent diffusion model.
+
+    '
+  project_page: https://geometric-rl.mpi-inf.mpg.de/met3r/
+  paper: https://arxiv.org/pdf/2501.06336.pdf
+  code: https://github.com/mohammadasim98/MEt3R
+  video: https://geometric-rl.mpi-inf.mpg.de/met3r/static/videos/teaser.mp4
+  tags:
+  - 3ster-based
+  - Code
+  - Diffusion
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/asim2025met3r.jpg
+  publication_date: '2025-01-10T20:43:33+00:00'
+  date_source: arxiv
 - id: shin2025localityaware
   title: Locality-aware Gaussian Compression for Fast and High-quality Rendering
   authors: Seungjoo Shin, Jaesik Park, Sunghyun Cho
@@ -27,6 +630,35 @@
   - Compression
   thumbnail: assets/thumbnails/shin2025localityaware.jpg
   publication_date: '2025-01-10T07:19:41+00:00'
+  date_source: arxiv
+- id: yan2025consistent
+  title: Consistent Flow Distillation for Text-to-3D Generation
+  authors: Runjie Yan, Yinbo Chen, Xiaolong Wang
+  year: '2025'
+  abstract: 'Score Distillation Sampling (SDS) has made significant strides in distilling
+    image-generative models for 3D generation. However, its maximum-likelihood-seeking
+    behavior often leads to degraded visual quality and diversity, limiting its effectiveness
+    in 3D applications. In this work, we propose Consistent Flow Distillation (CFD),
+    which addresses these limitations. We begin by leveraging the gradient of the
+    diffusion ODE or SDE sampling process to guide the 3D generation. From the gradient-based
+    sampling perspective, we find that the consistency of 2D image flows across different
+    viewpoints is important for high-quality 3D generation. To achieve this, we introduce
+    multi-view consistent Gaussian noise on the 3D object, which can be rendered from
+    various viewpoints to compute the flow gradient. Our experiments demonstrate that
+    CFD, through consistent flows, significantly outperforms previous methods in text-to-3D
+    generation.
+
+    '
+  project_page: https://runjie-yan.github.io/cfd/
+  paper: https://arxiv.org/pdf/2501.05445.pdf
+  code: https://github.com/runjie-yan/ConsistentFlowDistillation
+  video: null
+  tags:
+  - Code
+  - Diffusion
+  - Project
+  thumbnail: assets/thumbnails/yan2025consistent.jpg
+  publication_date: '2025-01-09T18:56:05+00:00'
   date_source: arxiv
 - id: meng2025zero1tog
   title: 'Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation'
@@ -151,6 +783,7 @@
   code: null
   video: null
   tags:
+  - Gaussian Video
   - Project
   - Video
   thumbnail: assets/thumbnails/bond2025gaussianvideo.jpg
@@ -421,10 +1054,11 @@
     '
   project_page: https://videolifter.github.io/
   paper: https://arxiv.org/pdf/2501.01949.pdf
-  code: null
+  code: https://github.com/VITA-Group/VideoLifter
   video: null
   tags:
   - Acceleration
+  - Code
   - Diffusion
   - Project
   thumbnail: assets/thumbnails/cong2025videolifter.jpg
@@ -1474,10 +2108,11 @@
     '
   project_page: https://chengzhag.github.io/publication/pansplat/
   paper: https://arxiv.org/pdf/2412.12096v1.pdf
-  code: null
+  code: https://github.com/chengzhag/PanSplat
   video: https://youtu.be/R3qIzL77ZSc
   tags:
   - 360 degree
+  - Code
   - Feed-Forward
   - Project
   - Video
@@ -5737,6 +6372,48 @@
   - SLAM
   thumbnail: assets/thumbnails/peng2024rtgslam.jpg
   publication_date: '2024-04-30T16:54:59+00:00'
+- id: ni2024phyrecon
+  title: 'PhyRecon: Physically Plausible Neural Scene Reconstruction'
+  authors: Junfeng Ni, Yixin Chen, Bohan Jing, Nan Jiang, Bin Wang, Bo Dai, Puhao
+    Li, Yixin Zhu, Song-Chun Zhu, Siyuan Huang
+  year: '2024'
+  abstract: 'We address the issue of physical implausibility in multi-view neural
+    reconstruction. While implicit representations have gained popularity in multi-view
+    3D reconstruction, previous work struggles to yield physically plausible results,
+    limiting their utility in domains requiring rigorous physical accuracy. This lack
+    of plausibility stems from the absence of physics modeling in existing methods
+    and their inability to recover intricate geometrical structures. In this paper,
+    we introduce PHYRECON, the first approach to leverage both differentiable rendering
+    and differentiable physics simulation to learn implicit surface representations.
+    PHYRECON features a novel differentiable particle-based physical simulator built
+    on neural implicit representations. Central to this design is an efficient transformation
+    between SDF-based implicit representations and explicit surface points via our
+    proposed Surface Points Marching Cubes (SP-MC), enabling differentiable learning
+    with both rendering and physical losses. Additionally, PHYRECON models both rendering
+    and physical uncertainty to identify and compensate for inconsistent and inaccurate
+    monocular geometric priors. The physical uncertainty further facilitates physics-guided
+    pixel sampling to enhance the learning of slender structures. By integrating these
+    techniques, our model supports differentiable joint modeling of appearance, geometry,
+    and physics. Extensive experiments demonstrate that PHYRECON significantly improves
+    the reconstruction quality. Our results also exhibit superior physical stability
+    in physical simulators, with at least a 40% improvement across all datasets, paving
+    the way for future physics-based applications.
+
+    '
+  project_page: https://phyrecon.github.io/
+  paper: https://arxiv.org/pdf/2404.16666.pdf
+  code: https://github.com/PhyRecon/PhyRecon
+  video: https://www.youtube.com/watch?v=ZXe3bGJiL_k
+  tags:
+  - Code
+  - Dynamic
+  - Meshing
+  - Physics
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/ni2024phyrecon.jpg
+  publication_date: '2024-04-25T15:06:58+00:00'
+  date_source: arxiv
 - id: lee2024guess
   title: 'Guess The Unseen: Dynamic 3D Scene Reconstruction from Partial 2D Glimpses'
   authors: Inhee Lee, Byungjun Kim, Hanbyul Joo
