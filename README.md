@@ -65,6 +65,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 ### Native Applications
 - [Blender Add-on](https://github.com/ReshotAI/gaussian-splatting-blender-addon)
+- [Blender Add-on (KIRI)](https://github.com/Kiri-Innovation/3dgs-render-blender-addon)
 - [iOS Metal Viewer](https://github.com/laanlabs/metal-splats)
 - [OpenGL Viewer](https://github.com/limacv/GaussianSplattingViewer)
 - [VR Support (OpenXR)](https://github.com/hyperlogic/splatapult)
@@ -76,6 +77,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - Format conversion tool
 - [SuperSplat](https://github.com/playcanvas/super-splat) - Browser-based cleanup tool
 - [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Web-based point cloud editing
+- [SPZ Converter](https://github.com/stytim/spz) - SPZ conversion tool
 
 ### Development Tools
 - [GSOPs for Houdini](https://github.com/david-rhodes/GSOPs) - Houdini integration tools
