@@ -82,6 +82,39 @@
   thumbnail: assets/thumbnails/li2025micromacro.jpg
   publication_date: '2025-01-24T04:37:57+00:00'
   date_source: arxiv
+- id: yu2025hammer
+  title: 'HAMMER: Heterogeneous, Multi-Robot Semantic Gaussian Splatting'
+  authors: Javier Yu, Timothy Chen, Mac Schwager
+  year: '2025'
+  abstract: '3D Gaussian Splatting offers expressive scene reconstruction, modeling
+    a broad range of visual, geometric, and semantic information. However, efficient
+    real-time map reconstruction with data streamed from multiple robots and devices
+    remains a challenge. To that end, we propose HAMMER, a server-based collaborative
+    Gaussian Splatting method that leverages widely available ROS communication infrastructure
+    to generate 3D, metric-semantic maps from asynchronous robot data-streams with
+    no prior knowledge of initial robot positions and varying on-device pose estimators.
+    HAMMER consists of (i) a frame alignment module that transforms local SLAM poses
+    and image data into a global frame and requires no prior relative pose knowledge,
+    and (ii) an online module for training semantic 3DGS maps from streaming data.
+    HAMMER handles mixed perception modes, adjusts automatically for variations in
+    image pre-processing among different devices, and distills CLIP semantic codes
+    into the 3D scene for open-vocabulary language queries. In our real-world experiments,
+    HAMMER creates higher-fidelity maps (2x) compared to competing baselines and is
+    useful for downstream tasks, such as semantic goal-conditioned navigation (e.g.,
+    ``go to the couch"). Accompanying content available at hammer-project.github.io.
+
+    '
+  project_page: https://hammer-project.github.io/
+  paper: https://arxiv.org/pdf/2501.14147.pdf
+  code: null
+  video: null
+  tags:
+  - Project
+  - Robotics
+  - SLAM
+  thumbnail: assets/thumbnails/yu2025hammer.jpg
+  publication_date: '2025-01-24T00:21:10+00:00'
+  date_source: arxiv
 - id: yang2025fast3r
   title: 'Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass'
   authors: Jianing Yang, Alexander Sax, Kevin J. Liang, Mikael Henaff, Hao Tang, Ang
@@ -112,6 +145,37 @@
   - Project
   thumbnail: assets/thumbnails/yang2025fast3r.jpg
   publication_date: '2025-01-23T18:59:55+00:00'
+  date_source: arxiv
+- id: sario2025gode
+  title: 'GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression'
+  authors: Francesco Di Sario, Riccardo Renzulli, Marco Grangetto, Akihiro Sugimoto,
+    Enzo Tartaglione
+  year: '2025'
+  abstract: '3D Gaussian Splatting enhances real-time performance in novel view synthesis
+    by representing scenes with mixtures of Gaussians and utilizing differentiable
+    rasterization. However, it typically requires large storage capacity and high
+    VRAM, demanding the design of effective pruning and compression techniques. Existing
+    methods, while effective in some scenarios, struggle with scalability and fail
+    to adapt models based on critical factors such as computing capabilities or bandwidth,
+    requiring to re-train the model under different configurations. In this work,
+    we propose a novel, model-agnostic technique that organizes Gaussians into several
+    hierarchical layers, enabling progressive Level of Detail (LoD) strategy. This
+    method, combined with recent approach of compression of 3DGS, allows a single
+    model to instantly scale across several compression ratios, with minimal to none
+    impact to quality compared to a single non-scalable model and without requiring
+    re-training. We validate our approach on typical datasets and benchmarks, showcasing
+    low distortion and substantial gains in terms of scalability and adaptability.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.13558.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  - LoD
+  thumbnail: assets/thumbnails/sario2025gode.jpg
+  publication_date: '2025-01-23T11:05:45+00:00'
   date_source: arxiv
 - id: lan20253dgs2
   title: '3DGS$^2$: Near Second-order Converging 3D Gaussian Splatting'
