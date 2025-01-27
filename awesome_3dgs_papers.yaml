@@ -1,3 +1,216 @@
+- id: armagan2025trickgs
+  title: 'Trick-GS: A Balanced Bag of Tricks for Efficient Gaussian Splatting'
+  authors: Anil Armagan, Albert Saà-Garriga, Bruno Manganelli, Mateusz Nowak, Mehmet
+    Kerim Yucel
+  year: '2025'
+  abstract: 'Gaussian splatting (GS) for 3D reconstruction has become quite popular
+    due to their fast training, inference speeds and high quality reconstruction.
+    However, GS-based reconstructions generally consist of millions of Gaussians,
+    which makes them hard to use on computationally constrained devices such as smartphones.
+    In this paper, we first propose a principled analysis of advances in efficient
+    GS methods. Then, we propose Trick-GS, which is a careful combination of several
+    strategies including (1) progressive training with resolution, noise and Gaussian
+    scales, (2) learning to prune and mask primitives and SH bands by their significance,
+    and (3) accelerated GS training framework. Trick-GS takes a large step towards
+    resource-constrained GS, where faster run-time, smaller and faster-convergence
+    of models is of paramount concern. Our results on three datasets show that Trick-GS
+    achieves up to 2x faster training, 40x smaller disk size and 2x faster rendering
+    speed compared to vanilla GS, while having comparable accuracy.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.14534.pdf
+  code: null
+  video: null
+  tags:
+  - Acceleration
+  thumbnail: assets/thumbnails/armagan2025trickgs.jpg
+  publication_date: '2025-01-24T14:40:40+00:00'
+  date_source: arxiv
+- id: lee2025densesfm
+  title: 'Dense-SfM: Structure from Motion with Dense Consistent Matching'
+  authors: JongMin Lee, Sungjoo Yoo
+  year: '2025'
+  abstract: 'We present Dense-SfM, a novel Structure from Motion (SfM) framework designed
+    for dense and accurate 3D reconstruction from multi-view images. Sparse keypoint
+    matching, which traditional SfM methods often rely on, limits both accuracy and
+    point density, especially in texture-less areas. Dense-SfM addresses this limitation
+    by integrating dense matching with a Gaussian Splatting (GS) based track extension
+    which gives more consistent, longer feature tracks. To further improve reconstruction
+    accuracy, Dense-SfM is equipped with a multi-view kernelized matching module leveraging
+    transformer and Gaussian Process architectures, for robust track refinement across
+    multi-views. Evaluations on the ETH3D and Texture-Poor SfM datasets show that
+    Dense-SfM offers significant improvements in accuracy and density over state-of-the-art
+    methods.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.14277.pdf
+  code: null
+  video: null
+  tags:
+  - Point Cloud
+  - Poses
+  thumbnail: assets/thumbnails/lee2025densesfm.jpg
+  publication_date: '2025-01-24T06:45:12+00:00'
+  date_source: arxiv
+- id: li2025micromacro
+  title: Micro-macro Wavelet-based Gaussian Splatting for 3D Reconstruction from Unconstrained
+    Images
+  authors: Yihui Li, Chengxin Lv, Hongyu Yang, Di Huang
+  year: '2025'
+  abstract: '3D reconstruction from unconstrained image collections presents substantial
+    challenges due to varying appearances and transient occlusions. In this paper,
+    we introduce Micro-macro Wavelet-based Gaussian Splatting (MW-GS), a novel approach
+    designed to enhance 3D reconstruction by disentangling scene representations into
+    global, refined, and intrinsic components. The proposed method features two key
+    innovations: Micro-macro Projection, which allows Gaussian points to capture details
+    from feature maps across multiple scales with enhanced diversity; and Wavelet-based
+    Sampling, which leverages frequency domain information to refine feature representations
+    and significantly improve the modeling of scene appearances. Additionally, we
+    incorporate a Hierarchical Residual Fusion Network to seamlessly integrate these
+    features. Extensive experiments demonstrate that MW-GS delivers state-of-the-art
+    rendering performance, surpassing existing methods.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.14231.pdf
+  code: null
+  video: null
+  tags:
+  - In the Wild
+  thumbnail: assets/thumbnails/li2025micromacro.jpg
+  publication_date: '2025-01-24T04:37:57+00:00'
+  date_source: arxiv
+- id: yu2025hammer
+  title: 'HAMMER: Heterogeneous, Multi-Robot Semantic Gaussian Splatting'
+  authors: Javier Yu, Timothy Chen, Mac Schwager
+  year: '2025'
+  abstract: '3D Gaussian Splatting offers expressive scene reconstruction, modeling
+    a broad range of visual, geometric, and semantic information. However, efficient
+    real-time map reconstruction with data streamed from multiple robots and devices
+    remains a challenge. To that end, we propose HAMMER, a server-based collaborative
+    Gaussian Splatting method that leverages widely available ROS communication infrastructure
+    to generate 3D, metric-semantic maps from asynchronous robot data-streams with
+    no prior knowledge of initial robot positions and varying on-device pose estimators.
+    HAMMER consists of (i) a frame alignment module that transforms local SLAM poses
+    and image data into a global frame and requires no prior relative pose knowledge,
+    and (ii) an online module for training semantic 3DGS maps from streaming data.
+    HAMMER handles mixed perception modes, adjusts automatically for variations in
+    image pre-processing among different devices, and distills CLIP semantic codes
+    into the 3D scene for open-vocabulary language queries. In our real-world experiments,
+    HAMMER creates higher-fidelity maps (2x) compared to competing baselines and is
+    useful for downstream tasks, such as semantic goal-conditioned navigation (e.g.,
+    ``go to the couch"). Accompanying content available at hammer-project.github.io.
+
+    '
+  project_page: https://hammer-project.github.io/
+  paper: https://arxiv.org/pdf/2501.14147.pdf
+  code: null
+  video: null
+  tags:
+  - Project
+  - Robotics
+  - SLAM
+  thumbnail: assets/thumbnails/yu2025hammer.jpg
+  publication_date: '2025-01-24T00:21:10+00:00'
+  date_source: arxiv
+- id: yang2025fast3r
+  title: 'Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass'
+  authors: Jianing Yang, Alexander Sax, Kevin J. Liang, Mikael Henaff, Hao Tang, Ang
+    Cao, Joyce Chai, Franziska Meier, Matt Feiszli
+  year: '2025'
+  abstract: 'Multi-view 3D reconstruction remains a core challenge in computer vision,
+    particularly in applications requiring accurate and scalable representations across
+    diverse perspectives. Current leading methods such as DUSt3R employ a fundamentally
+    pairwise approach, processing images in pairs and necessitating costly global
+    alignment procedures to reconstruct from multiple views. In this work, we propose
+    Fast 3D Reconstruction (Fast3R), a novel multi-view generalization to DUSt3R that
+    achieves efficient and scalable 3D reconstruction by processing many views in
+    parallel. Fast3R''s Transformer-based architecture forwards N images in a single
+    forward pass, bypassing the need for iterative alignment. Through extensive experiments
+    on camera pose estimation and 3D reconstruction, Fast3R demonstrates state-of-the-art
+    performance, with significant improvements in inference speed and reduced error
+    accumulation. These results establish Fast3R as a robust alternative for multi-view
+    applications, offering enhanced scalability without compromising reconstruction
+    accuracy.
+
+    '
+  project_page: https://fast3r-3d.github.io/
+  paper: https://arxiv.org/pdf/2501.13928.pdf
+  code: null
+  video: null
+  tags:
+  - 3ster-based
+  - Project
+  thumbnail: assets/thumbnails/yang2025fast3r.jpg
+  publication_date: '2025-01-23T18:59:55+00:00'
+  date_source: arxiv
+- id: sario2025gode
+  title: 'GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression'
+  authors: Francesco Di Sario, Riccardo Renzulli, Marco Grangetto, Akihiro Sugimoto,
+    Enzo Tartaglione
+  year: '2025'
+  abstract: '3D Gaussian Splatting enhances real-time performance in novel view synthesis
+    by representing scenes with mixtures of Gaussians and utilizing differentiable
+    rasterization. However, it typically requires large storage capacity and high
+    VRAM, demanding the design of effective pruning and compression techniques. Existing
+    methods, while effective in some scenarios, struggle with scalability and fail
+    to adapt models based on critical factors such as computing capabilities or bandwidth,
+    requiring to re-train the model under different configurations. In this work,
+    we propose a novel, model-agnostic technique that organizes Gaussians into several
+    hierarchical layers, enabling progressive Level of Detail (LoD) strategy. This
+    method, combined with recent approach of compression of 3DGS, allows a single
+    model to instantly scale across several compression ratios, with minimal to none
+    impact to quality compared to a single non-scalable model and without requiring
+    re-training. We validate our approach on typical datasets and benchmarks, showcasing
+    low distortion and substantial gains in terms of scalability and adaptability.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.13558.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  - LoD
+  thumbnail: assets/thumbnails/sario2025gode.jpg
+  publication_date: '2025-01-23T11:05:45+00:00'
+  date_source: arxiv
+- id: lan20253dgs2
+  title: '3DGS$^2$: Near Second-order Converging 3D Gaussian Splatting'
+  authors: Lei Lan, Tianjia Shao, Zixuan Lu, Yu Zhang, Chenfanfu Jiang, Yin Yang
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has emerged as a mainstream solution for
+    novel view synthesis and 3D reconstruction. By explicitly encoding a 3D scene
+    using a collection of Gaussian kernels, 3DGS achieves high-quality rendering with
+    superior efficiency. As a learning-based approach, 3DGS training has been dealt
+    with the standard stochastic gradient descent (SGD) method, which offers at most
+    linear convergence. Consequently, training often requires tens of minutes, even
+    with GPU acceleration. This paper introduces a (near) second-order convergent
+    training algorithm for 3DGS, leveraging its unique properties. Our approach is
+    inspired by two key observations. First, the attributes of a Gaussian kernel contribute
+    independently to the image-space loss, which endorses isolated and local optimization
+    algorithms. We exploit this by splitting the optimization at the level of individual
+    kernel attributes, analytically constructing small-size Newton systems for each
+    parameter group, and efficiently solving these systems on GPU threads. This achieves
+    Newton-like convergence per training image without relying on the global Hessian.
+    Second, kernels exhibit sparse and structured coupling across input images. This
+    property allows us to effectively utilize spatial information to mitigate overshoot
+    during stochastic training. Our method converges an order faster than standard
+    GPU-based 3DGS training, requiring over $10\times$ fewer iterations while maintaining
+    or surpassing the quality of the compared with the SGD-based 3DGS reconstructions.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2501.13975.pdf
+  code: null
+  video: null
+  tags:
+  - Optimization
+  thumbnail: assets/thumbnails/lan20253dgs2.jpg
+  publication_date: '2025-01-22T22:28:11+00:00'
+  date_source: arxiv
 - id: shi2025sketch
   title: 'Sketch and Patch: Efficient 3D Gaussian Representation for Man-Made Scenes'
   authors: Yuang Shi, Simone Gasparini, Géraldine Morin, Chenggang Yang, Wei Tsang
@@ -956,9 +1169,10 @@
     '
   project_page: null
   paper: https://arxiv.org/pdf/2501.03229.pdf
-  code: null
+  code: https://github.com/darshanmakwana412/gaussian-mae
   video: null
   tags:
+  - Code
   - Transformer
   thumbnail: assets/thumbnails/rajasegaran2025gaussian.jpg
   publication_date: '2025-01-06T18:59:57+00:00'
@@ -3649,10 +3863,11 @@
     '
   project_page: null
   paper: https://arxiv.org/pdf/2411.12788.pdf
-  code: null
+  code: https://github.com/fatPeter/mini-splatting2
   video: null
   tags:
   - Acceleration
+  - Code
   - Densification
   thumbnail: assets/thumbnails/fang2024minisplatting2.jpg
   publication_date: '2024-11-19T11:47:40+00:00'
@@ -4294,6 +4509,45 @@
   - Video
   thumbnail: assets/thumbnails/zhang2024monst3r.jpg
   publication_date: '2024-10-04T18:00:07+00:00'
+  date_source: arxiv
+- id: chen2024gigs
+  title: 'GI-GS: Global Illumination Decomposition on Gaussian Splatting for Inverse
+    Rendering'
+  authors: Hongze Chen, Zehong Lin, Jun Zhang
+  year: '2024'
+  abstract: 'We present GI-GS, a novel inverse rendering framework that leverages
+    3D Gaussian Splatting (3DGS) and deferred shading to achieve photo-realistic novel
+    view synthesis and relighting. In inverse rendering, accurately modeling the shading
+    processes of objects is essential for achieving high-fidelity results. Therefore,
+    it is critical to incorporate global illumination to account for indirect lighting
+    that reaches an object after multiple bounces across the scene. Previous 3DGS-based
+    methods have attempted to model indirect lighting by characterizing indirect illumination
+    as learnable lighting volumes or additional attributes of each Gaussian, while
+    using baked occlusion to represent shadow effects. These methods, however, fail
+    to accurately model the complex physical interactions between light and objects,
+    making it impossible to construct realistic indirect illumination during relighting.
+    To address this limitation, we propose to calculate indirect lighting using efficient
+    path tracing with deferred shading. In our framework, we first render a G-buffer
+    to capture the detailed geometry and material properties of the scene. Then, we
+    perform physically-based rendering (PBR) only for direct lighting. With the G-buffer
+    and previous rendering results, the indirect lighting can be calculated through
+    a lightweight path tracing. Our method effectively models indirect lighting under
+    any given lighting conditions, thereby achieving better novel view synthesis and
+    relighting. Quantitative and qualitative results show that our GI-GS outperforms
+    existing baselines in both rendering quality and efficiency.
+
+    '
+  project_page: https://stopaimme.github.io/GI-GS/
+  paper: https://arxiv.org/pdf/2410.02619.pdf
+  code: https://github.com/stopaimme/GI-GS
+  video: null
+  tags:
+  - Code
+  - Project
+  - Ray Tracing
+  - Relight
+  thumbnail: assets/thumbnails/chen2024gigs.jpg
+  publication_date: '2024-10-03T15:58:18+00:00'
   date_source: arxiv
 - id: xie2024supergs
   title: 'SuperGS: Super-Resolution 3D Gaussian Splatting via Latent Feature Field
