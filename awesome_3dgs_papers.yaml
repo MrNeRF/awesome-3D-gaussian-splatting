@@ -1,3 +1,35 @@
+- id: lin2025diffsplat
+  title: 'DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat
+    Generation'
+  authors: Chenguo Lin, Panwang Pan, Bangbang Yang, Zeming Li, Yadong Mu
+  year: '2025'
+  abstract: 'Recent advancements in 3D content generation from text or a single image
+    struggle with limited high-quality 3D datasets and inconsistency from 2D multi-view
+    generation. We introduce DiffSplat, a novel 3D generative framework that natively
+    generates 3D Gaussian splats by taming large-scale text-to-image diffusion models.
+    It differs from previous 3D generative models by effectively utilizing web-scale
+    2D priors while maintaining 3D consistency in a unified model. To bootstrap the
+    training, a lightweight reconstruction model is proposed to instantly produce
+    multi-view Gaussian splat grids for scalable dataset curation. In conjunction
+    with the regular diffusion loss on these grids, a 3D rendering loss is introduced
+    to facilitate 3D coherence across arbitrary views. The compatibility with image
+    diffusion models enables seamless adaptions of numerous techniques for image generation
+    to the 3D realm. Extensive experiments reveal the superiority of DiffSplat in
+    text- and image-conditioned generation tasks and downstream applications. Thorough
+    ablation studies validate the efficacy of each critical design choice and provide
+    insights into the underlying mechanism.
+
+    '
+  project_page: https://chenguolin.github.io/projects/DiffSplat/
+  paper: https://arxiv.org/pdf/2501.16764.pdf
+  code: null
+  video: null
+  tags:
+  - Diffusion
+  - Project
+  thumbnail: assets/thumbnails/lin2025diffsplat.jpg
+  publication_date: '2025-01-28T07:38:59+00:00'
+  date_source: arxiv
 - id: armagan2025trickgs
   title: 'Trick-GS: A Balanced Bag of Tricks for Efficient Gaussian Splatting'
   authors: Anil Armagan, Albert Saà-Garriga, Bruno Manganelli, Mateusz Nowak, Mehmet
