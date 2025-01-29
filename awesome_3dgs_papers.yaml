@@ -22,7 +22,7 @@
     '
   project_page: https://chenguolin.github.io/projects/DiffSplat/
   paper: https://arxiv.org/pdf/2501.16764.pdf
-  code: null
+  code: https://github.com/chenguolin/DiffSplat
   video: null
   tags:
   - Diffusion
