@@ -2053,7 +2053,7 @@
     \ additional speedup. To accelerate the rendering, we develop a custom pipeline\
     \ in Vulkan that runs on the mobile GPU. Putting it all together, we run 3 Gaussian\
     \ avatars concurrently at 72 FPS on a VR headset. \n"
-  project_page: https://forresti.github.io/squeezeme.
+  project_page: https://forresti.github.io/squeezeme
   paper: https://arxiv.org/pdf/2412.15171.pdf
   code: null
   video: null
