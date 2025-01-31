@@ -1,3 +1,34 @@
+- id: condor2024dsyg
+  title: 'Don''t Splat your Gaussians: Volumetric Ray-Traced Primitives for
+                Modeling and Rendering Scattering and Emissive Media'
+  authors: Jorge Condor, Sebastien Speierer, Lukas Bode, Aljaz Bozic, Simon Green, Piotr Didyk, Adrian Jarabo
+  year: '2024'
+  abstract: 'Banking on the popularity of rasterized 3D Gaussian Splatting methods,
+    we formalize the ray-tracing of volumes composed of kernel mixture models (Gaussian 
+    or otherwise). Our physically-based, path-traced formulation allows us to render and 
+    optimize both scattering and emissive volumes, as well as radiance fields, in an 
+    extremely efficient and compact manner. We also introduce the Epanechnikov kernel 
+    as an efficient alternative for the Gaussian kernel in radiance field rendering, 
+    and showcase the advantages of a ray-traced framework, while maintaining real-time 
+    performance.
+    '
+  project_page: https://arcanous98.github.io/projectPages/gaussianVolumes.html
+  paper: https://arcanous98.github.io/assets/data/papers/Gaussian_tracing_meta_TOG-compressed.pdf
+  code: https://github.com/facebookresearch/volumetric_primitives
+  video: null
+  tags:
+  - Physics
+  - Ray Tracing
+  - Relight
+  - Rendering
+  - Project
+  - Code
+  - 360 degree
+  - Antialiasing
+  - Perspective-correct
+  thumbnail: assets/thumbnails/condor2024dsyg.jpg
+  publication_date: '2024-05-24T10:42:05+00:00'
+  date_source: arxiv 
 - id: lin2025diffsplat
   title: 'DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat
     Generation'
