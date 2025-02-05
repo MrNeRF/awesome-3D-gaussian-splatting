@@ -1,34 +1,3 @@
-- id: condor2024dsyg
-  title: 'Don''t Splat your Gaussians: Volumetric Ray-Traced Primitives for
-                Modeling and Rendering Scattering and Emissive Media'
-  authors: Jorge Condor, Sebastien Speierer, Lukas Bode, Aljaz Bozic, Simon Green, Piotr Didyk, Adrian Jarabo
-  year: '2024'
-  abstract: 'Banking on the popularity of rasterized 3D Gaussian Splatting methods,
-    we formalize the ray-tracing of volumes composed of kernel mixture models (Gaussian 
-    or otherwise). Our physically-based, path-traced formulation allows us to render and 
-    optimize both scattering and emissive volumes, as well as radiance fields, in an 
-    extremely efficient and compact manner. We also introduce the Epanechnikov kernel 
-    as an efficient alternative for the Gaussian kernel in radiance field rendering, 
-    and showcase the advantages of a ray-traced framework, while maintaining real-time 
-    performance.
-    '
-  project_page: https://arcanous98.github.io/projectPages/gaussianVolumes.html
-  paper: https://arcanous98.github.io/assets/data/papers/Gaussian_tracing_meta_TOG-compressed.pdf
-  code: https://github.com/facebookresearch/volumetric_primitives
-  video: null
-  tags:
-  - Physics
-  - Ray Tracing
-  - Relight
-  - Rendering
-  - Project
-  - Code
-  - 360 degree
-  - Antialiasing
-  - Perspective-correct
-  thumbnail: assets/thumbnails/condor2024dsyg.jpg
-  publication_date: '2024-05-24T10:42:05+00:00'
-  date_source: arxiv 
 - id: lin2025diffsplat
   title: 'DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat
     Generation'
@@ -1705,6 +1674,37 @@
   - Densification
   thumbnail: assets/thumbnails/liu2024maskgaussian.jpg
   publication_date: '2024-12-29T17:12:16+00:00'
+  date_source: arxiv
+- id: zeller2024gsplatloc
+  title: 'GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting'
+  authors: Atticus J. Zeller
+  year: '2024'
+  abstract: 'We present GSplatLoc, a camera localization method that leverages the
+    differentiable rendering capabilities of 3D Gaussian splatting for ultra-precise
+    pose estimation. By formulating pose estimation as a gradient-based optimization
+    problem that minimizes discrepancies between rendered depth maps from a pre-existing
+    3D Gaussian scene and observed depth images, GSplatLoc achieves translational
+    errors within 0.01 cm and near-zero rotational errors on the Replica dataset -
+    significantly outperforming existing methods. Evaluations on the Replica and TUM
+    RGB-D datasets demonstrate the method''s robustness in challenging indoor environments
+    with complex camera motions. GSplatLoc sets a new benchmark for localization in
+    dense mapping, with important implications for applications requiring accurate
+    real-time localization, such as robotics and augmented reality.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2412.20056.pdf
+  code: https://github.com/AtticusZeller/GsplatLoc
+  video: null
+  tags:
+  - Code
+  - In the Wild
+  - Point Cloud
+  - Poses
+  - Robotics
+  - SLAM
+  thumbnail: assets/thumbnails/zeller2024gsplatloc.jpg
+  publication_date: '2024-12-28T07:14:14+00:00'
   date_source: arxiv
 - id: xu2024das3r
   title: 'DAS3R: Dynamics-Aware Gaussian Splatting for Static Scene Reconstruction'
@@ -6478,6 +6478,37 @@
   - Sparse
   thumbnail: assets/thumbnails/paul2024spsup2sup360.jpg
   publication_date: '2024-05-26T11:01:39+00:00'
+- id: condor2024dsyg
+  title: 'Don''t Splat your Gaussians: Volumetric Ray-Traced Primitives for Modeling
+    and Rendering Scattering and Emissive Media'
+  authors: Jorge Condor, Sebastien Speierer, Lukas Bode, Aljaz Bozic, Simon Green,
+    Piotr Didyk, Adrian Jarabo
+  year: '2024'
+  abstract: 'Banking on the popularity of rasterized 3D Gaussian Splatting methods,
+    we formalize the ray-tracing of volumes composed of kernel mixture models (Gaussian
+    or otherwise). Our physically-based, path-traced formulation allows us to render
+    and optimize both scattering and emissive volumes, as well as radiance fields,
+    in an extremely efficient and compact manner. We also introduce the Epanechnikov
+    kernel as an efficient alternative for the Gaussian kernel in radiance field rendering,
+    and showcase the advantages of a ray-traced framework, while maintaining real-time
+    performance. '
+  project_page: https://arcanous98.github.io/projectPages/gaussianVolumes.html
+  paper: https://arcanous98.github.io/assets/data/papers/Gaussian_tracing_meta_TOG-compressed.pdf
+  code: https://github.com/facebookresearch/volumetric_primitives
+  video: null
+  tags:
+  - Physics
+  - Ray Tracing
+  - Relight
+  - Rendering
+  - Project
+  - Code
+  - 360 degree
+  - Antialiasing
+  - Perspective-correct
+  thumbnail: assets/thumbnails/condor2024dsyg.jpg
+  publication_date: '2024-05-24T10:42:05+00:00'
+  date_source: arxiv
 - id: chen2024dogs
   title: 'DOGS: Distributed-Oriented Gaussian Splatting for Large-Scale 3D Reconstruction
     Via Gaussian Consensus'
