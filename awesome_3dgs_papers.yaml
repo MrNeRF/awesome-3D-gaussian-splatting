@@ -4644,6 +4644,38 @@
   thumbnail: assets/thumbnails/xie2024supergs.jpg
   publication_date: '2024-10-03T15:18:28+00:00'
   date_source: arxiv
+- id: mai2024ever
+  title: 'EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis'
+  authors: Alexander Mai, Peter Hedman, George Kopanas, Dor Verbin, David Futschik,
+    Qiangeng Xu, Falko Kuester, Jonathan T. Barron, Yinda Zhang
+  year: '2024'
+  abstract: 'We present Exact Volumetric Ellipsoid Rendering (EVER), a method for
+    real-time differentiable emission-only volume rendering. Unlike recent rasterization
+    based approach by 3D Gaussian Splatting (3DGS), our primitive based representation
+    allows for exact volume rendering, rather than alpha compositing 3D Gaussian billboards.
+    As such, unlike 3DGS our formulation does not suffer from popping artifacts and
+    view dependent density, but still achieves frame rates of $\sim\!30$ FPS at 720p
+    on an NVIDIA RTX4090. Since our approach is built upon ray tracing it enables
+    effects such as defocus blur and camera distortion (e.g. such as from fisheye
+    cameras), which are difficult to achieve by rasterization. We show that our method
+    is more accurate with fewer blending issues than 3DGS and follow-up work on view-consistent
+    rendering, especially on the challenging large-scale scenes from the Zip-NeRF
+    dataset where it achieves sharpest results among real-time techniques.
+
+    '
+  project_page: https://half-potato.gitlab.io/posts/ever/
+  paper: https://arxiv.org/pdf/2410.01804.pdf
+  code: https://github.com/half-potato/ever_training
+  video: https://youtu.be/dqLi2-v38LE
+  tags:
+  - Code
+  - Project
+  - Ray Tracing
+  - Rendering
+  - Video
+  thumbnail: assets/thumbnails/mai2024ever.jpg
+  publication_date: '2024-10-02T17:59:09+00:00'
+  date_source: arxiv
 - id: cao20243dgsdet
   title: '3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused
     Sampling for 3D Object Detection'
