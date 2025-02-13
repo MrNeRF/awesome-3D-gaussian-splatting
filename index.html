@@ -4243,6 +4243,31 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="mai2024ever" data-title="EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis" data-authors="Alexander Mai, Peter Hedman, George Kopanas, Dor Verbin, David Futschik, Qiangeng Xu, Falko Kuester, Jonathan T. Barron, Yinda Zhang" data-year="2024" data-tags='["Code", "Project", "Ray Tracing", "Rendering", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'mai2024ever', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/mai2024ever.jpg" data-fallback="None" alt="Paper thumbnail for EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Alexander Mai, Peter Hedman, George Kopanas, Dor Verbin, David Futschik, Qiangeng Xu, Falko Kuester, Jonathan T. Barron, Yinda Zhang</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Ray Tracing</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2410.01804.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://half-potato.gitlab.io/posts/ever/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/half-potato/ever_training" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://youtu.be/dqLi2-v38LE" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">We present Exact Volumetric Ellipsoid Rendering (EVER), a method for real-time differentiable emission-only volume rendering. Unlike recent rasterization based approach by 3D Gaussian Splatting (3DGS), our primitive based representation allows for exact volume rendering, rather than alpha compositing 3D Gaussian billboards. As such, unlike 3DGS our formulation does not suffer from popping artifacts and view dependent density, but still achieves frame rates of $\sim\!30$ FPS at 720p on an NVIDIA RTX4090. Since our approach is built upon ray tracing it enables effects such as defocus blur and camera distortion (e.g. such as from fisheye cameras), which are difficult to achieve by rasterization. We show that our method is more accurate with fewer blending issues than 3DGS and follow-up work on view-consistent rendering, especially on the challenging large-scale scenes from the Zip-NeRF dataset where it achieves sharpest results among real-time techniques.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="cao20243dgsdet" data-title="3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused Sampling for 3D Object Detection" data-authors="Yang Cao, Yuanliang Jv, Dan Xu" data-year="2024" data-tags='["Object Detection"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'cao20243dgsdet', this)">
@@ -5587,6 +5612,29 @@ h1 {
 <a href="https://github.com/MisEty/RTG-SLAM" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconstruction system with an RGBD camera for large-scale environments using Gaussian splatting. The system features a compact Gaussian representation and a highly efficient on-the-fly Gaussian optimization scheme. We force each Gaussian to be either opaque or nearly transparent, with the opaque ones fitting the surface and dominant colors, and transparent ones fitting residual colors. By rendering depth in a different way from color rendering, we let a single opaque Gaussian well fit a local surface region without the need of multiple overlapping Gaussians, hence largely reducing the memory and computation cost. For on-the-fly Gaussian optimization, we explicitly add Gaussians for three types of pixels per frame: newly observed, with large color errors, and with large depth errors. We also categorize all Gaussians into stable and unstable ones, where the stable Gaussians are expected to well fit previously observed RGBD images and otherwise unstable. We only optimize the unstable Gaussians and only render the pixels occupied by unstable Gaussians. In this way, both the number of Gaussians to be optimized and pixels to be rendered are largely reduced, and the optimization can be done in real time. We show real-time reconstructions of a variety of large scenes. Compared with the state-of-the-art NeRF-based RGBD SLAM, our system achieves comparable high-quality reconstruction but with around twice the speed and half the memory cost, and shows superior performance in the realism of novel view synthesis and camera tracking accuracy.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="ye20243d" data-title="3D Gaussian Splatting with Deferred Reflection" data-authors="Keyang Ye, Qiming Hou, Kun Zhou" data-year="2024" data-tags='["Code", "Project", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'ye20243d', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/ye20243d.jpg" data-fallback="None" alt="Paper thumbnail for 3D Gaussian Splatting with Deferred Reflection" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">3D Gaussian Splatting with Deferred Reflection <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Keyang Ye, Qiming Hou, Kun Zhou</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2404.18454.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://gapszju.github.io/3DGS-DR/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/gapszju/3DGS-DR" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<a href="https://youtu.be/3SsQZNXQBs8" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">The advent of neural and Gaussian-based radiance field methods have achieved great success in the field of novel view synthesis. However, specular reflection remains non-trivial, as the high frequency radiance field is notoriously difficult to fit stably and accurately. We present a deferred shading method to effectively render specular reflection with Gaussian splatting. The key challenge comes from the environment map reflection model, which requires accurate surface normal while simultaneously bottlenecks normal estimation with discontinuous gradients. We leverage the per-pixel reflection gradients generated by deferred shading to bridge the optimization process of neighboring Gaussians, allowing nearly correct normal estimations to gradually propagate and eventually spread over all reflective objects. Our method significantly outperforms state-of-the-art techniques and concurrent work in synthesizing high-quality specular reflection effects, demonstrating a consistent improvement of peak signal-to-noise ratio (PSNR) for both synthetic and real-world scenes, while running at a frame rate almost identical to vanilla Gaussian splatting.
+</div></div>
     </div>
   </div>
 </div>
