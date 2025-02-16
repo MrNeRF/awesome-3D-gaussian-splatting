@@ -5111,7 +5111,9 @@
   code: null
   video: null
   tags:
-  - Year 2024
+  - Compression
+  - LoD
+  - Rendering
   thumbnail: assets/thumbnails/zoomers2024progs.jpg
   publication_date: '2024-09-03T10:15:30+00:00'
   date_source: arxiv
