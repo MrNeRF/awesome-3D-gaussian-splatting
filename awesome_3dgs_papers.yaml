@@ -5080,6 +5080,43 @@
   thumbnail: assets/thumbnails/seidenschwarz2024dynomo.jpg
   publication_date: '2024-09-03T17:58:03+00:00'
   date_source: arxiv
+- id: zoomers2024progs
+  title: 'PRoGS: Progressive Rendering of Gaussian Splats'
+  authors: Brent Zoomers, Maarten Wijnants, Ivan Molenaers, Joni Vanherck, Jeroen
+    Put, Lode Jorissen, Nick Michiels
+  year: '2024'
+  abstract: 'Over the past year, 3D Gaussian Splatting (3DGS) has received significant
+    attention for its ability to represent 3D scenes in a perceptually accurate manner.
+    However, it can require a substantial amount of storage since each splat''s individual
+    data must be stored. While compression techniques offer a potential solution by
+    reducing the memory footprint, they still necessitate retrieving the entire scene
+    before any part of it can be rendered. In this work, we introduce a novel approach
+    for progressively rendering such scenes, aiming to display visible content that
+    closely approximates the final scene as early as possible without loading the
+    entire scene into memory. This approach benefits both on-device rendering applications
+    limited by memory constraints and streaming applications where minimal bandwidth
+    usage is preferred. To achieve this, we approximate the contribution of each Gaussian
+    to the final scene and construct an order of prioritization on their inclusion
+    in the rendering process. Additionally, we demonstrate that our approach can be
+    combined with existing compression methods to progressively render (and stream)
+    3DGS scenes, optimizing bandwidth usage by focusing on the most important splats
+    within a scene. Overall, our work establishes a foundation for making remotely
+    hosted 3DGS content more quickly accessible to end-users in over-the-top consumption
+    scenarios, with our results showing significant improvements in quality across
+    all metrics compared to existing methods.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2409.01761.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  - LoD
+  - Rendering
+  thumbnail: assets/thumbnails/zoomers2024progs.jpg
+  publication_date: '2024-09-03T10:15:30+00:00'
+  date_source: arxiv
 - id: chen2024omnire
   title: 'OmniRe: Omni Urban Scene Reconstruction'
   authors: Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez
