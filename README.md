@@ -66,6 +66,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 ### Native Applications
 - [Blender Add-on](https://github.com/ReshotAI/gaussian-splatting-blender-addon)
 - [Blender Add-on (KIRI)](https://github.com/Kiri-Innovation/3dgs-render-blender-addon)
+- [Blender Add-on (404—GEN)](https://github.com/404-Repo/three-gen-blender-plugin)
 - [iOS Metal Viewer](https://github.com/laanlabs/metal-splats)
 - [OpenGL Viewer](https://github.com/limacv/GaussianSplattingViewer)
 - [VR Support (OpenXR)](https://github.com/hyperlogic/splatapult)
