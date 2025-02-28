@@ -3860,6 +3860,38 @@
   thumbnail: assets/thumbnails/zhang2024quadratic.jpg
   publication_date: '2024-11-25T13:55:00+00:00'
   date_source: arxiv
+- id: yugay2024magicslam
+  title: 'MAGiC-SLAM: Multi-Agent Gaussian Globally Consistent SLAM'
+  authors: Vladimir Yugay, Theo Gevers, Martin R. Oswald
+  year: CVPR 2025
+  abstract: 'Simultaneous localization and mapping (SLAM) systems with novel view
+    synthesis capabilities are widely used in computer vision, with applications in
+    augmented reality, robotics, and autonomous driving. However, existing approaches
+    are limited to single-agent operation. Recent work has addressed this problem
+    using a distributed neural scene representation. Unfortunately, existing methods
+    are slow, cannot accurately render real-world data, are restricted to two agents,
+    and have limited tracking accuracy. In contrast, we propose a rigidly deformable
+    3D Gaussian-based scene representation that dramatically speeds up the system.
+    However, improving tracking accuracy and reconstructing a globally consistent
+    map from multiple agents remains challenging due to trajectory drift and discrepancies
+    across agents'' observations. Therefore, we propose new tracking and map-merging
+    mechanisms and integrate loop closure in the Gaussian-based SLAM pipeline. We
+    evaluate MAGiC-SLAM on synthetic and real-world datasets and find it more accurate
+    and faster than the state of the art.
+
+    '
+  project_page: https://vladimiryugay.github.io/magic_slam/index.html
+  paper: https://arxiv.org/pdf/2411.16785.pdf
+  code: https://github.com/VladimirYugay/MAGiC-SLAM
+  video: https://www.youtube.com/watch?v=e0WjMK72LEg
+  tags:
+  - Code
+  - Project
+  - SLAM
+  - Video
+  thumbnail: assets/thumbnails/yugay2024magicslam.jpg
+  publication_date: '2024-11-25T08:34:01+00:00'
+  date_source: arxiv
 - id: zhang2024fate
   title: 'FATE: Full-head Gaussian Avatar with Textural Editing from Monocular Video'
   authors: Jiawei Zhang, Zijian Wu, Zhiyang Liang, Yicheng Gong, Dongfang Hu, Yao
