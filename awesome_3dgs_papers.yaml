@@ -31,6 +31,44 @@
   thumbnail: assets/thumbnails/chacko2025lifting.jpg
   publication_date: '2025-01-31T21:30:59+00:00'
   date_source: arxiv
+- id: lin2025omniphysgs
+  title: 'OmniPhysGS: 3D Constitutive Gaussians for General Physics-Based Dynamics
+    Generation'
+  authors: Yuchen Lin, Chenguo Lin, Jianjin Xu, Yadong Mu
+  year: '2025'
+  abstract: 'Recently, significant advancements have been made in the reconstruction
+    and generation of 3D assets, including static cases and those with physical interactions.
+    To recover the physical properties of 3D assets, existing methods typically assume
+    that all materials belong to a specific predefined category (e.g., elasticity).
+    However, such assumptions ignore the complex composition of multiple heterogeneous
+    objects in real scenarios and tend to render less physically plausible animation
+    given a wider range of objects. We propose OmniPhysGS for synthesizing a physics-based
+    3D dynamic scene composed of more general objects. A key design of OmniPhysGS
+    is treating each 3D asset as a collection of constitutive 3D Gaussians. For each
+    Gaussian, its physical material is represented by an ensemble of 12 physical domain-expert
+    sub-models (rubber, metal, honey, water, etc.), which greatly enhances the flexibility
+    of the proposed model. In the implementation, we define a scene by user-specified
+    prompts and supervise the estimation of material weighting factors via a pretrained
+    video diffusion model. Comprehensive experiments demonstrate that OmniPhysGS achieves
+    more general and realistic physical dynamics across a broader spectrum of materials,
+    including elastic, viscoelastic, plastic, and fluid substances, as well as interactions
+    between different materials. Our method surpasses existing methods by approximately
+    3% to 16% in metrics of visual quality and text alignment.
+
+    '
+  project_page: https://wgsxm.github.io/projects/omniphysgs/
+  paper: https://arxiv.org/pdf/2501.18982.pdf
+  code: https://github.com/wgsxm/omniphysgs
+  video: https://wgsxm.github.io/videos/omniphysgs.mp4
+  tags:
+  - Code
+  - Dynamic
+  - Physics
+  - Project
+  - Video
+  thumbnail: assets/thumbnails/lin2025omniphysgs.jpg
+  publication_date: '2025-01-31T09:28:07+00:00'
+  date_source: arxiv
 - id: lin2025diffsplat
   title: 'DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat
     Generation'
