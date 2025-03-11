@@ -3995,6 +3995,34 @@
   thumbnail: assets/thumbnails/chou2024generating.jpg
   publication_date: '2024-11-20T18:58:31+00:00'
   date_source: arxiv
+- id: joseph2024gradientweighted
+  title: 'Gradient-Weighted Feature Back-Projection: A Fast Alternative to Feature
+    Distillation in 3D Gaussian Splatting'
+  authors: Joji Joseph, Bharadwaj Amrutur, Shalabh Bhatnagar
+  year: '2024'
+  abstract: 'We introduce a training-free method for feature field rendering in Gaussian
+    splatting. Our approach back-projects 2D features into pre-trained 3D Gaussians,
+    using a weighted sum based on each Gaussian''s influence in the final rendering.
+    While most training-based feature field rendering methods excel at 2D segmentation
+    but perform poorly at 3D segmentation without post-processing, our method achieves
+    high-quality results in both 2D and 3D segmentation. Experimental results demonstrate
+    that our approach is fast, scalable, and offers performance comparable to training-based
+    methods.
+
+    '
+  project_page: https://jojijoseph.github.io/3dgs-backprojection/
+  paper: https://arxiv.org/pdf/2411.15193.pdf
+  code: https://github.com/JojiJoseph/3dgs-gradient-backprojection
+  video: null
+  tags:
+  - Code
+  - Editing
+  - Language Embedding
+  - Project
+  - Segmentation
+  thumbnail: assets/thumbnails/joseph2024gradientweighted.jpg
+  publication_date: '2024-11-19T12:17:15+00:00'
+  date_source: arxiv
 - id: fang2024minisplatting2
   title: 'Mini-Splatting2: Building 360 Scenes within Minutes via Aggressive Gaussian
     Densification'
