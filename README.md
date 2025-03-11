@@ -3,7 +3,7 @@
 <div align="center">
   A curated collection of resources focused on 3D Gaussian Splatting (3DGS) and related technologies.
   
-  [**Browse the Paper List**](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) | [**Contribute**](CONTRIBUTING.md)
+  [**Browse the Paper List**](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) | [**Contribute**](CONTRIBUTING.md) | [**MrNeRF**](https://www.mrnerf.com)
 </div>
 
 ## Contents

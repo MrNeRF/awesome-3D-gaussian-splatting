@@ -3901,7 +3901,7 @@
 - id: yugay2024magicslam
   title: 'MAGiC-SLAM: Multi-Agent Gaussian Globally Consistent SLAM'
   authors: Vladimir Yugay, Theo Gevers, Martin R. Oswald
-  year: CVPR 2025
+  year: 2025
   abstract: 'Simultaneous localization and mapping (SLAM) systems with novel view
     synthesis capabilities are widely used in computer vision, with applications in
     augmented reality, robotics, and autonomous driving. However, existing approaches
@@ -5524,6 +5524,39 @@
   - SLAM
   thumbnail: assets/thumbnails/zhu2024loopsplat.jpg
   publication_date: '2024-08-19T17:04:18+00:00'
+- id: feng2024flashgs
+  title: 'FlashGS: Efficient 3D Gaussian Splatting for Large-scale and High-resolution
+    Rendering'
+  authors: Guofeng Feng, Siyan Chen, Rong Fu, Zimu Liao, Yi Wang, Tao Liu, Zhilin
+    Pei, Hengjie Li, Xingcheng Zhang, Bo Dai
+  year: '2024'
+  abstract: 'This work introduces FlashGS, an open-source CUDA Python library, designed
+    to facilitate the efficient differentiable rasterization of 3D Gaussian Splatting
+    through algorithmic and kernel-level optimizations. FlashGS is developed based
+    on the observations from a comprehensive analysis of the rendering process to
+    enhance computational efficiency and bring the technique to wide adoption. The
+    paper includes a suite of optimization strategies, encompassing redundancy elimination,
+    efficient pipelining, refined control and scheduling mechanisms, and memory access
+    optimizations, all of which are meticulously integrated to amplify the performance
+    of the rasterization process. An extensive evaluation of FlashGS'' performance
+    has been conducted across a diverse spectrum of synthetic and real-world large-scale
+    scenes, encompassing a variety of image resolutions. The empirical findings demonstrate
+    that FlashGS consistently achieves an average 4x acceleration over mobile consumer
+    GPUs, coupled with reduced memory consumption. These results underscore the superior
+    performance and resource optimization capabilities of FlashGS, positioning it
+    as a formidable tool in the domain of 3D rendering.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2408.07967.pdf
+  code: https://github.com/InternLandMark/FlashGS
+  video: null
+  tags:
+  - Acceleration
+  - Code
+  thumbnail: assets/thumbnails/feng2024flashgs.jpg
+  publication_date: '2024-08-15T06:27:42+00:00'
+  date_source: arxiv
 - id: lee2024rethinking
   title: Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space
   authors: Hyunjee Lee*, Youngsik Yun*, Jeongmin Bae, Seoha Kim, Youngjung Uh
