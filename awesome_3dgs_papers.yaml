@@ -3901,7 +3901,7 @@
 - id: yugay2024magicslam
   title: 'MAGiC-SLAM: Multi-Agent Gaussian Globally Consistent SLAM'
   authors: Vladimir Yugay, Theo Gevers, Martin R. Oswald
-  year: CVPR 2025
+  year: 2025
   abstract: 'Simultaneous localization and mapping (SLAM) systems with novel view
     synthesis capabilities are widely used in computer vision, with applications in
     augmented reality, robotics, and autonomous driving. However, existing approaches

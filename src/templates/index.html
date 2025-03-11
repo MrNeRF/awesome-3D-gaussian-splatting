@@ -15,6 +15,99 @@
     <!-- Site CSS -->
     <style>
         ${styles}
+
+        /* Common button styling for donation box */
+        .copy-button, .sponsor-button, .website-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 8px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        .copy-button:hover, .sponsor-button:hover, .website-button:hover {
+            background: linear-gradient(to bottom, #45a049, #409343);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+        
+        .copy-button i, .sponsor-button i, .website-button i {
+            margin-right: 5px;
+        }
+        
+        /* Button group container */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 0;
+            justify-content: flex-start;
+        }
+        
+        .button-group .copy-button,
+        .button-group .sponsor-button,
+        .button-group .website-button {
+            margin-left: 0;
+        }
+
+        /* Bitcoin info styling */
+        .bitcoin-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .bitcoin-address-container {
+            display: flex;
+            align-items: center;
+            background: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .bitcoin-label {
+            font-weight: 600;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        .address-field {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .bitcoin-address {
+            font-family: monospace;
+            background: transparent;
+            border: none;
+            padding: 0;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+        }
+
+        /* Remove any individual button styling that might be in the original styles */
+        /* Website button styling - keeping this for reference but it will be overridden by the common styling above */
+        .website-button {
+            /* All styling now handled by the common button class above */
+        }
     </style>
 
     <!-- Lazy load -->
@@ -92,14 +185,23 @@
             <h3>Support This Project</h3>
             <p>If you find this resource helpful, consider supporting its development and maintenance.</p>
             <div class="bitcoin-info">
-                <span class="bitcoin-label">Bitcoin:</span>
-                <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
-                <button class="copy-button" onclick="copyBitcoinAddress()">
-                    <i class="fas fa-copy"></i> Copy
-                </button>
-                <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
-                    <i class="fas fa-heart"></i> Sponsor
-                </a>
+                <div class="bitcoin-address-container">
+                    <span class="bitcoin-label">Bitcoin:</span>
+                    <div class="address-field">
+                        <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="copy-button" onclick="copyBitcoinAddress()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
+                        <i class="fas fa-heart"></i> Sponsor
+                    </a>
+                    <a href="https://www.mrnerf.com" class="website-button" target="_blank" rel="noopener">
+                        <i class="fas fa-globe"></i> MrNeRF.com
+                    </a>
+                </div>
                 <!-- Discord Badge -->
                 <div class="discord-badge">
                     <a href="https://discord.gg/TbxJST2BbC">
