@@ -1130,6 +1130,99 @@ h1 {
         padding: 0.25rem 0.5rem;
     }
 }
+
+        /* Common button styling for donation box */
+        .copy-button, .sponsor-button, .website-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 8px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        .copy-button:hover, .sponsor-button:hover, .website-button:hover {
+            background: linear-gradient(to bottom, #45a049, #409343);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+        
+        .copy-button i, .sponsor-button i, .website-button i {
+            margin-right: 5px;
+        }
+        
+        /* Button group container */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 0;
+            justify-content: flex-start;
+        }
+        
+        .button-group .copy-button,
+        .button-group .sponsor-button,
+        .button-group .website-button {
+            margin-left: 0;
+        }
+
+        /* Bitcoin info styling */
+        .bitcoin-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .bitcoin-address-container {
+            display: flex;
+            align-items: center;
+            background: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .bitcoin-label {
+            font-weight: 600;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        .address-field {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .bitcoin-address {
+            font-family: monospace;
+            background: transparent;
+            border: none;
+            padding: 0;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+        }
+
+        /* Remove any individual button styling that might be in the original styles */
+        /* Website button styling - keeping this for reference but it will be overridden by the common styling above */
+        .website-button {
+            /* All styling now handled by the common button class above */
+        }
     </style>
 
     <!-- Lazy load -->
@@ -1207,14 +1300,23 @@ h1 {
             <h3>Support This Project</h3>
             <p>If you find this resource helpful, consider supporting its development and maintenance.</p>
             <div class="bitcoin-info">
-                <span class="bitcoin-label">Bitcoin:</span>
-                <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
-                <button class="copy-button" onclick="copyBitcoinAddress()">
-                    <i class="fas fa-copy"></i> Copy
-                </button>
-                <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
-                    <i class="fas fa-heart"></i> Sponsor
-                </a>
+                <div class="bitcoin-address-container">
+                    <span class="bitcoin-label">Bitcoin:</span>
+                    <div class="address-field">
+                        <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="copy-button" onclick="copyBitcoinAddress()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
+                        <i class="fas fa-heart"></i> Sponsor
+                    </a>
+                    <a href="https://www.mrnerf.com" class="website-button" target="_blank" rel="noopener">
+                        <i class="fas fa-globe"></i> MrNeRF.com
+                    </a>
+                </div>
                 <!-- Discord Badge -->
                 <div class="discord-badge">
                     <a href="https://discord.gg/TbxJST2BbC">
@@ -1260,8 +1362,7 @@ h1 {
             </div>
             <select id="yearFilter" class="filter-select">
                 <option value="all">All Years</option>
-                <option value="CVPR 2025">CVPR 2025</option>
-<option value="2025">2025</option>
+                <option value="2025">2025</option>
 <option value="2024">2024</option>
 <option value="2023">2023</option>
             </select>
@@ -3774,6 +3875,28 @@ h1 {
     </div>
   </div>
 </div>
+<div class="paper-row" data-id="yugay2024magicslam" data-title="MAGiC-SLAM: Multi-Agent Gaussian Globally Consistent SLAM" data-authors="Vladimir Yugay, Theo Gevers, Martin R. Oswald" data-year="2025" data-tags='["Project", "SLAM", "Video"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'yugay2024magicslam', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/yugay2024magicslam.jpg" data-fallback="None" alt="Paper thumbnail for MAGiC-SLAM: Multi-Agent Gaussian Globally Consistent SLAM" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MAGiC-SLAM: Multi-Agent Gaussian Globally Consistent SLAM <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Vladimir Yugay, Theo Gevers, Martin R. Oswald</p>
+      <div class="paper-tags"><span class="paper-tag">Project</span>
+<span class="paper-tag">SLAM</span>
+<span class="paper-tag">Video</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2411.16785.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://vladimiryugay.github.io/magic_slam/index.html" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://www.youtube.com/watch?v=e0WjMK72LEg" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Simultaneous localization and mapping (SLAM) systems with novel view synthesis capabilities are widely used in computer vision, with applications in augmented reality, robotics, and autonomous driving. However, existing approaches are limited to single-agent operation. Recent work has addressed this problem using a distributed neural scene representation. Unfortunately, existing methods are slow, cannot accurately render real-world data, are restricted to two agents, and have limited tracking accuracy. In contrast, we propose a rigidly deformable 3D Gaussian-based scene representation that dramatically speeds up the system. However, improving tracking accuracy and reconstructing a globally consistent map from multiple agents remains challenging due to trajectory drift and discrepancies across agents' observations. Therefore, we propose new tracking and map-merging mechanisms and integrate loop closure in the Gaussian-based SLAM pipeline. We evaluate MAGiC-SLAM on synthetic and real-world datasets and find it more accurate and faster than the state of the art.
+</div></div>
+    </div>
+  </div>
+</div>
 <div class="paper-row" data-id="zhang2024fate" data-title="FATE: Full-head Gaussian Avatar with Textural Editing from Monocular Video" data-authors="Jiawei Zhang, Zijian Wu, Zhiyang Liang, Yicheng Gong, Dongfang Hu, Yao Yao, Xun Cao, Hao Zhu" data-year="2024" data-tags='["Avatar", "Code", "Dynamic", "Editing", "Monocular", "Project", "Texturing"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang2024fate', this)">
@@ -4800,6 +4923,26 @@ h1 {
 <a href="https://github.com/GradientSpaces/LoopSplat" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Simultaneous Localization and Mapping (SLAM) based on 3D Gaussian Splats (3DGS) has recently shown promise towards more accurate, dense 3D scene maps. However, existing 3DGS-based methods fail to address the global consistency of the scene via loop closure and/or global bundle adjustment. To this end, we propose LoopSplat, which takes RGB-D images as input and performs dense mapping with 3DGS submaps and frame-to-model tracking. LoopSplat triggers loop closure online and computes relative loop edge constraints between submaps directly via 3DGS registration, leading to improvements in efficiency and accuracy over traditional global-to-local point cloud registration. It uses a robust pose graph optimization formulation and rigidly aligns the submaps to achieve global consistency. Evaluation on the synthetic Replica and real-world TUM-RGBD, ScanNet, and ScanNet++ datasets demonstrates competitive or superior tracking, mapping, and rendering compared to existing methods for dense RGB-D SLAM.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="feng2024flashgs" data-title="FlashGS: Efficient 3D Gaussian Splatting for Large-scale and High-resolution Rendering" data-authors="Guofeng Feng, Siyan Chen, Rong Fu, Zimu Liao, Yi Wang, Tao Liu, Zhilin Pei, Hengjie Li, Xingcheng Zhang, Bo Dai" data-year="2024" data-tags='["Acceleration", "Code"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'feng2024flashgs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/feng2024flashgs.jpg" data-fallback="None" alt="Paper thumbnail for FlashGS: Efficient 3D Gaussian Splatting for Large-scale and High-resolution Rendering" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">FlashGS: Efficient 3D Gaussian Splatting for Large-scale and High-resolution Rendering <span class="paper-year">(2024)</span></h2>
+      <p class="paper-authors">Guofeng Feng, Siyan Chen, Rong Fu, Zimu Liao, Yi Wang, Tao Liu, Zhilin Pei, Hengjie Li, Xingcheng Zhang, Bo Dai</p>
+      <div class="paper-tags"><span class="paper-tag">Acceleration</span>
+<span class="paper-tag">Code</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2408.07967.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://github.com/InternLandMark/FlashGS" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">This work introduces FlashGS, an open-source CUDA Python library, designed to facilitate the efficient differentiable rasterization of 3D Gaussian Splatting through algorithmic and kernel-level optimizations. FlashGS is developed based on the observations from a comprehensive analysis of the rendering process to enhance computational efficiency and bring the technique to wide adoption. The paper includes a suite of optimization strategies, encompassing redundancy elimination, efficient pipelining, refined control and scheduling mechanisms, and memory access optimizations, all of which are meticulously integrated to amplify the performance of the rasterization process. An extensive evaluation of FlashGS' performance has been conducted across a diverse spectrum of synthetic and real-world large-scale scenes, encompassing a variety of image resolutions. The empirical findings demonstrate that FlashGS consistently achieves an average 4x acceleration over mobile consumer GPUs, coupled with reduced memory consumption. These results underscore the superior performance and resource optimization capabilities of FlashGS, positioning it as a formidable tool in the domain of 3D rendering.
+</div></div>
     </div>
   </div>
 </div>
