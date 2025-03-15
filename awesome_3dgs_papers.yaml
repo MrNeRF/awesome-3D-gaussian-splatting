@@ -106,6 +106,44 @@
   thumbnail: assets/thumbnails/lin2025omniphysgs.jpg
   publication_date: '2025-01-31T09:28:07+00:00'
   date_source: arxiv
+- id: guizilini2025zeroshot
+  title: Zero-Shot Novel View and Depth Synthesis with Multi-View Geometric Diffusion
+  authors: Vitor Guizilini, Muhammad Zubair Irshad, Dian Chen, Greg Shakhnarovich,
+    Rares Ambrus
+  year: '2025'
+  abstract: 'Current methods for 3D scene reconstruction from sparse posed images
+    employ intermediate 3D representations such as neural fields, voxel grids, or
+    3D Gaussians, to achieve multi-view consistent scene appearance and geometry.
+    In this paper we introduce MVGD, a diffusion-based architecture capable of direct
+    pixel-level generation of images and depth maps from novel viewpoints, given an
+    arbitrary number of input views. Our method uses raymap conditioning to both augment
+    visual features with spatial information from different viewpoints, as well as
+    to guide the generation of images and depth maps from novel views. A key aspect
+    of our approach is the multi-task generation of images and depth maps, using learnable
+    task embeddings to guide the diffusion process towards specific modalities. We
+    train this model on a collection of more than 60 million multi-view samples from
+    publicly available datasets, and propose techniques to enable efficient and consistent
+    learning in such diverse conditions. We also propose a novel strategy that enables
+    the efficient training of larger models by incrementally fine-tuning smaller ones,
+    with promising scaling behavior. Through extensive experiments, we report state-of-the-art
+    results in multiple novel view synthesis benchmarks, as well as multi-view stereo
+    and video depth estimation.
+
+    '
+  project_page: https://mvgd.github.io/
+  paper: https://arxiv.org/pdf/2501.18804.pdf
+  code: null
+  video: null
+  tags:
+  - 360 degree
+  - Diffusion
+  - Feed-Forward
+  - Large-Scale
+  - Point Cloud
+  - Project
+  thumbnail: assets/thumbnails/guizilini2025zeroshot.jpg
+  publication_date: '2025-01-30T23:43:06+00:00'
+  date_source: arxiv
 - id: lin2025diffsplat
   title: 'DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat
     Generation'
