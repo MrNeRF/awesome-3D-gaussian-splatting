@@ -1,3 +1,40 @@
+- id: yu2025persistent
+  title: Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation
+    of Irregularly Shaped Objects
+  authors: Justin Yu, Kush Hari, Karim El-Refai, Arnav Dalal, Justin Kerr, Chung Min
+    Kim, Richard Cheng, Muhammad Zubair Irshad, Ken Goldberg
+  year: '2025'
+  abstract: 'Tracking and manipulating irregularly-shaped, previously unseen objects
+    in dynamic environments is important for robotic applications in manufacturing,
+    assembly, and logistics. Recently introduced Gaussian Splats efficiently model
+    object geometry, but lack persistent state estimation for task-oriented manipulation.
+    We present Persistent Object Gaussian Splat (POGS), a system that embeds semantics,
+    self-supervised visual features, and object grouping features into a compact representation
+    that can be continuously updated to estimate the pose of scanned objects. POGS
+    updates object states without requiring expensive rescanning or prior CAD models
+    of objects. After an initial multi-view scene capture and training phase, POGS
+    uses a single stereo camera to integrate depth estimates along with self-supervised
+    vision encoder features for object pose estimation. POGS supports grasping, reorientation,
+    and natural language-driven manipulation by refining object pose estimates, facilitating
+    sequential object reset operations with human-induced object perturbations and
+    tool servoing, where robots recover tool pose despite tool perturbations of up
+    to 30{\deg}. POGS achieves up to 12 consecutive successful object resets and recovers
+    from 80% of in-grasp tool perturbations.
+
+    '
+  project_page: https://berkeleyautomation.github.io/POGS/
+  paper: https://arxiv.org/pdf/2503.05189.pdf
+  code: https://github.com/uynitsuj/pogs
+  video: null
+  tags:
+  - Code
+  - Language Embedding
+  - Project
+  - Robotics
+  - Segmentation
+  thumbnail: assets/thumbnails/yu2025persistent.jpg
+  publication_date: '2025-03-07T07:20:25+00:00'
+  date_source: arxiv
 - id: chacko2025lifting
   title: 'Lifting by Gaussians: A Simple, Fast and Flexible Method for 3D Instance
     Segmentation'
