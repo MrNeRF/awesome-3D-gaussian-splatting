@@ -1427,7 +1427,31 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="chacko2025lifting" data-title="Lifting by Gaussians: A Simple, Fast and Flexible Method for 3D Instance Segmentation" data-authors="Rohan Chacko, Nicolai Haeni, Eldar Khaliullin, Lin Sun, Douglas Lee" data-year="2025" data-tags='["Language Embedding", "Segmentation", "Virtual Reality"]'>
+            <div class="paper-row" data-id="yu2025persistent" data-title="Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation of Irregularly Shaped Objects" data-authors="Justin Yu, Kush Hari, Karim El-Refai, Arnav Dalal, Justin Kerr, Chung Min Kim, Richard Cheng, Muhammad Zubair Irshad, Ken Goldberg" data-year="2025" data-tags='["Code", "Language Embedding", "Project", "Robotics", "Segmentation"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'yu2025persistent', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/yu2025persistent.jpg" data-fallback="None" alt="Paper thumbnail for Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation of Irregularly Shaped Objects" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation of Irregularly Shaped Objects <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Justin Yu, Kush Hari, Karim El-Refai, Arnav Dalal, Justin Kerr, Chung Min Kim, Richard Cheng, Muhammad Zubair Irshad, Ken Goldberg</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Language Embedding</span>
+<span class="paper-tag">Project</span>
+<span class="paper-tag">Robotics</span>
+<span class="paper-tag">Segmentation</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2503.05189.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://berkeleyautomation.github.io/POGS/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/uynitsuj/pogs" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Tracking and manipulating irregularly-shaped, previously unseen objects in dynamic environments is important for robotic applications in manufacturing, assembly, and logistics. Recently introduced Gaussian Splats efficiently model object geometry, but lack persistent state estimation for task-oriented manipulation. We present Persistent Object Gaussian Splat (POGS), a system that embeds semantics, self-supervised visual features, and object grouping features into a compact representation that can be continuously updated to estimate the pose of scanned objects. POGS updates object states without requiring expensive rescanning or prior CAD models of objects. After an initial multi-view scene capture and training phase, POGS uses a single stereo camera to integrate depth estimates along with self-supervised vision encoder features for object pose estimation. POGS supports grasping, reorientation, and natural language-driven manipulation by refining object pose estimates, facilitating sequential object reset operations with human-induced object perturbations and tool servoing, where robots recover tool pose despite tool perturbations of up to 30{\deg}. POGS achieves up to 12 consecutive successful object resets and recovers from 80% of in-grasp tool perturbations.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="chacko2025lifting" data-title="Lifting by Gaussians: A Simple, Fast and Flexible Method for 3D Instance Segmentation" data-authors="Rohan Chacko, Nicolai Haeni, Eldar Khaliullin, Lin Sun, Douglas Lee" data-year="2025" data-tags='["Language Embedding", "Segmentation", "Virtual Reality"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'chacko2025lifting', this)">
     <div class="paper-number"></div>
@@ -1468,6 +1492,30 @@ h1 {
 <a href="https://wgsxm.github.io/videos/omniphysgs.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Recently, significant advancements have been made in the reconstruction and generation of 3D assets, including static cases and those with physical interactions. To recover the physical properties of 3D assets, existing methods typically assume that all materials belong to a specific predefined category (e.g., elasticity). However, such assumptions ignore the complex composition of multiple heterogeneous objects in real scenarios and tend to render less physically plausible animation given a wider range of objects. We propose OmniPhysGS for synthesizing a physics-based 3D dynamic scene composed of more general objects. A key design of OmniPhysGS is treating each 3D asset as a collection of constitutive 3D Gaussians. For each Gaussian, its physical material is represented by an ensemble of 12 physical domain-expert sub-models (rubber, metal, honey, water, etc.), which greatly enhances the flexibility of the proposed model. In the implementation, we define a scene by user-specified prompts and supervise the estimation of material weighting factors via a pretrained video diffusion model. Comprehensive experiments demonstrate that OmniPhysGS achieves more general and realistic physical dynamics across a broader spectrum of materials, including elastic, viscoelastic, plastic, and fluid substances, as well as interactions between different materials. Our method surpasses existing methods by approximately 3% to 16% in metrics of visual quality and text alignment.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="guizilini2025zeroshot" data-title="Zero-Shot Novel View and Depth Synthesis with Multi-View Geometric Diffusion" data-authors="Vitor Guizilini, Muhammad Zubair Irshad, Dian Chen, Greg Shakhnarovich, Rares Ambrus" data-year="2025" data-tags='["360 degree", "Diffusion", "Feed-Forward", "Large-Scale", "Point Cloud", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'guizilini2025zeroshot', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/guizilini2025zeroshot.jpg" data-fallback="None" alt="Paper thumbnail for Zero-Shot Novel View and Depth Synthesis with Multi-View Geometric Diffusion" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Zero-Shot Novel View and Depth Synthesis with Multi-View Geometric Diffusion <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Vitor Guizilini, Muhammad Zubair Irshad, Dian Chen, Greg Shakhnarovich, Rares Ambrus</p>
+      <div class="paper-tags"><span class="paper-tag">360 degree</span>
+<span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Large-Scale</span>
+<span class="paper-tag">Point Cloud</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2501.18804.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://mvgd.github.io/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Current methods for 3D scene reconstruction from sparse posed images employ intermediate 3D representations such as neural fields, voxel grids, or 3D Gaussians, to achieve multi-view consistent scene appearance and geometry. In this paper we introduce MVGD, a diffusion-based architecture capable of direct pixel-level generation of images and depth maps from novel viewpoints, given an arbitrary number of input views. Our method uses raymap conditioning to both augment visual features with spatial information from different viewpoints, as well as to guide the generation of images and depth maps from novel views. A key aspect of our approach is the multi-task generation of images and depth maps, using learnable task embeddings to guide the diffusion process towards specific modalities. We train this model on a collection of more than 60 million multi-view samples from publicly available datasets, and propose techniques to enable efficient and consistent learning in such diverse conditions. We also propose a novel strategy that enables the efficient training of larger models by incrementally fine-tuning smaller ones, with promising scaling behavior. Through extensive experiments, we report state-of-the-art results in multiple novel view synthesis benchmarks, as well as multi-view stereo and video depth estimation.
 </div></div>
     </div>
   </div>
