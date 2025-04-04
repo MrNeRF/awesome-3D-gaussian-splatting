@@ -58,6 +58,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Splat Viewer](https://github.com/antimatter15/splat)
 - [Gauzilla](https://github.com/BladeTransformerLLC/gauzilla)
 - [Interactive Viewer](https://github.com/kishimisu/Gaussian-Splatting-WebGL)
+- [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D)
 
 **WebGPU**
 - [EPFL Viewer](https://github.com/cvlab-epfl/gaussian-splatting-web)
