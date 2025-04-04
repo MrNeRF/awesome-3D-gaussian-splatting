@@ -71,6 +71,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [iOS Metal Viewer](https://github.com/laanlabs/metal-splats)
 - [OpenGL Viewer](https://github.com/limacv/GaussianSplattingViewer)
 - [VR Support (OpenXR)](https://github.com/hyperlogic/splatapult)
+- [ROS2 Support](https://github.com/shadygm/ROSplat)
 
 ## Tools & Utilities
 
