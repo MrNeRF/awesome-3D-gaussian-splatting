@@ -1,3 +1,35 @@
+- id: liu2025abcgs
+  title: 'ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting'
+  authors: Wenjie Liu, Zhongliang Liu, Xiaoyan Yang, Man Sha, Yang Li
+  year: '2025'
+  abstract: '3D scene stylization approaches based on Neural Radiance Fields (NeRF)
+    achieve promising results by optimizing with Nearest Neighbor Feature Matching
+    (NNFM) loss. However, NNFM loss does not consider global style information. In
+    addition, the implicit representation of NeRF limits their fine-grained control
+    over the resulting scenes. In this paper, we introduce ABC-GS, a novel framework
+    based on 3D Gaussian Splatting to achieve high-quality 3D style transfer. To this
+    end, a controllable matching stage is designed to achieve precise alignment between
+    scene content and style features through segmentation masks. Moreover, a style
+    transfer loss function based on feature alignment is proposed to ensure that the
+    outcomes of style transfer accurately reflect the global style of the reference
+    image. Furthermore, the original geometric information of the scene is preserved
+    with the depth loss and Gaussian regularization terms. Extensive experiments show
+    that our ABC-GS provides controllability of style transfer and achieves stylization
+    results that are more faithfully aligned with the global style of the chosen artistic
+    reference. Our homepage is available at https://vpx-ecnu.github.io/ABC-GS-website.
+
+    '
+  project_page: https://vpx-ecnu.github.io/ABC-GS-website/
+  paper: https://arxiv.org/pdf/2503.22218.pdf
+  code: https://github.com/vpx-ecnu/ABC-GS
+  video: null
+  tags:
+  - Code
+  - Project
+  - Style Transfer
+  thumbnail: assets/thumbnails/liu2025abcgs.jpg
+  publication_date: '2025-03-28T08:07:57+00:00'
+  date_source: arxiv
 - id: yu2025persistent
   title: Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation
     of Irregularly Shaped Objects
