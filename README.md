@@ -77,10 +77,11 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 ### Data Processing
 - [Kapture](https://github.com/naver/kapture) - Unified data format for visual localization
-- [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - Format conversion tool
+- [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - Format conversion tool 
 - [SuperSplat](https://github.com/playcanvas/super-splat) - Browser-based cleanup tool
 - [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Web-based point cloud editing
 - [SPZ Converter](https://github.com/stytim/spz) - SPZ conversion tool
+- [gsbox Converter](https://github.com/gotoeasy/gsbox) - PLY SPLAT SPZ SPX conversion tool
 
 ### Development Tools
 - [GSOPs for Houdini](https://github.com/david-rhodes/GSOPs) - Houdini integration tools
