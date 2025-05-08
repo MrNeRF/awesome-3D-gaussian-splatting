@@ -30,6 +30,36 @@
   thumbnail: assets/thumbnails/liu2025abcgs.jpg
   publication_date: '2025-03-28T08:07:57+00:00'
   date_source: arxiv
+- id: huang2025stdloc
+  title: 'From Sparse to Dense: Camera Relocalization with Scene-Specific Detector
+    from Feature Gaussian Splatting'
+  authors: Zhiwei Huang, Hailin Yu, Yichun Shentu, Jin Yuan, Guofeng Zhang
+  year: '2025'
+  abstract: 'This paper presents a novel camera relocalization method, STDLoc, which
+    leverages Feature Gaussian as scene representation. STDLoc is a full relocalization
+    pipeline that can achieve accurate relocalization without relying on any pose
+    prior. Unlike previous coarse-to-fine localization methods that require image
+    retrieval first and then feature matching, we propose a novel sparse-to-dense
+    localization paradigm. Based on this scene representation, we introduce a novel
+    matching-oriented Gaussian sampling strategy and a scene-specific detector to
+    achieve efficient and robust initial pose estimation. Furthermore, based on the
+    initial localization results, we align the query feature map to the Gaussian feature
+    field by dense feature matching to enable accurate localization. The experiments
+    on indoor and outdoor datasets show that STDLoc outperforms current state-of-the-art
+    localization methods in terms of localization accuracy and recall.
+
+    '
+  project_page: https://zju3dv.github.io/STDLoc/
+  paper: https://arxiv.org/pdf/2503.19358.pdf
+  code: https://github.com/zju3dv/STDLoc
+  video: null
+  tags:
+  - Code
+  - Poses
+  - Project
+  thumbnail: assets/thumbnails/huang2025from.jpg
+  publication_date: '2025-03-25T05:18:19+00:00'
+  date_source: arxiv
 - id: yu2025persistent
   title: Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation
     of Irregularly Shaped Objects
