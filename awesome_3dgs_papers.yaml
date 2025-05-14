@@ -60,6 +60,43 @@
   thumbnail: assets/thumbnails/huang2025from.jpg
   publication_date: '2025-03-25T05:18:19+00:00'
   date_source: arxiv
+- id: zhang2025motion
+  title: Motion Blender Gaussian Splatting for Dynamic Scene Reconstruction
+  authors: Xinyu Zhang, Haonan Chang, Yuhan Liu, Abdeslam Boularias
+  year: '2025'
+  abstract: 'Gaussian splatting has emerged as a powerful tool for high-fidelity reconstruction
+    of dynamic scenes. However, existing methods primarily rely on implicit motion
+    representations, such as encoding motions into neural networks or per-Gaussian
+    parameters, which makes it difficult to further manipulate the reconstructed motions.
+    This lack of explicit controllability limits existing methods to replaying recorded
+    motions only, which hinders a wider application in robotics. To address this,
+    we propose Motion Blender Gaussian Splatting (MBGS), a novel framework that uses
+    motion graphs as an explicit and sparse motion representation. The motion of a
+    graph''s links is propagated to individual Gaussians via dual quaternion skinning,
+    with learnable weight painting functions that determine the influence of each
+    link. The motion graphs and 3D Gaussians are jointly optimized from input videos
+    via differentiable rendering. Experiments show that MBGS achieves state-of-the-art
+    performance on the highly challenging iPhone dataset while being competitive on
+    HyperNeRF. We demonstrate the application potential of our method in animating
+    novel object poses, synthesizing real robot demonstrations, and predicting robot
+    actions through visual planning. The source code, models, video demonstrations
+    can be found at http://mlzxy.github.io/motion-blender-gs.
+
+    '
+  project_page: https://mlzxy.github.io/motion-blender-gs/
+  paper: https://arxiv.org/pdf/2503.09040.pdf
+  code: https://github.com/mlzxy/motion-blender-gs
+  video: null
+  tags:
+  - Code
+  - Dynamic
+  - Editing
+  - Project
+  - Robotics
+  - Segmentation
+  thumbnail: assets/thumbnails/zhang2025motion.jpg
+  publication_date: '2025-03-12T03:55:16+00:00'
+  date_source: arxiv
 - id: yu2025persistent
   title: Persistent Object Gaussian Splat (POGS) for Tracking Human and Robot Manipulation
     of Irregularly Shaped Objects
