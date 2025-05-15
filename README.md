@@ -64,6 +64,10 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [EPFL Viewer](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [WebGPU Splat](https://github.com/KeKsBoTer/web-splat)
 
+### Desktop Viewers
+**Linux**
+- [DearGaussianGUI](https://github.com/leviome/DearGaussianGUI)
+
 ### Native Applications
 - [Blender Add-on](https://github.com/ReshotAI/gaussian-splatting-blender-addon)
 - [Blender Add-on (KIRI)](https://github.com/Kiri-Innovation/3dgs-render-blender-addon)
