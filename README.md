@@ -40,6 +40,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 | [fast](https://github.com/MrNeRF/gaussian-splatting-cuda) | C++/CUDA | Inria/MPII | High-performance implementation |
 | [OpenSplat](https://github.com/pierotofy/OpenSplat) | C++/CPU/GPU | AGPL-3.0 | Cross-platform solution |
 | [Grendel](https://github.com/nyu-systems/Grendel-GS) | Python/CUDA | Apache-2.0 | Distributed computing focus |
+| [Warp 3DGS](https://github.com/guoriyue/3dgs-warp-scratch) | Warp/Python | AGPL-3.0 | Warp-based implementation |
 
 ### Frameworks
 - [Pointrix](https://github.com/pointrix-project/pointrix) - Differentiable point-based rendering
