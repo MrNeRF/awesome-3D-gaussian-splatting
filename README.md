@@ -68,6 +68,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 ### Desktop Viewers
 **Linux**
 - [DearGaussianGUI](https://github.com/leviome/DearGaussianGUI)
+- [LiteViz-GS](https://github.com/panxkun/liteviz-gs)
 
 ### Native Applications
 - [Blender Add-on](https://github.com/ReshotAI/gaussian-splatting-blender-addon)
