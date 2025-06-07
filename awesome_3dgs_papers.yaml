@@ -2872,8 +2872,8 @@
     '
   project_page: https://kaist-viclab.github.io/splinegs-site/
   paper: https://arxiv.org/pdf/2412.09982v1.pdf
-  code: null
-  video: null
+  code: https://github.com/KAIST-VICLab/SplineGS
+  video: https://www.youtube.com/watch?v=EZbSV7QCbE8
   tags:
   - Dynamic
   - Monocular
