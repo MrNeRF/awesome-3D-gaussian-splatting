@@ -46,6 +46,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Pointrix](https://github.com/pointrix-project/pointrix) - Differentiable point-based rendering
 - [GauStudio](https://github.com/GAP-LAB-CUHK-SZ/gaustudio) - Unified framework with multiple implementations
 - [DriveStudio](https://github.com/ziyc/drivestudio) - Urban scene reconstruction framework
+- [GSCodecStudio](https://github.com/JasonLSC/GSCodec_Studio) - Compression and Dynamic splattings
 
 ## Viewers & Game Engine Support
 
