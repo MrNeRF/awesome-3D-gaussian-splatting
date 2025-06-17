@@ -1,3 +1,31 @@
+- id: howil2025clipgaussianuniversalmultimodalstyle
+  title: 'CLIPGaussian: Universal and Multimodal Style Transfer Based on Gaussian Splatting'
+  authors: Kornel Howil and Joanna Waczyńska and Piotr Borycki and Tadeusz Dziarmaga and Marcin Mazur and Przemysław Spurek
+  year: '2025'
+  abstract: 'Gaussian Splatting (GS) has recently emerged as an efficient representation 
+    for rendering 3D scenes from 2D images and has been extended to images, videos, and 
+    dynamic 4D content. However, applying style transfer to GS-based representations, 
+    especially beyond simple color changes, remains challenging. In this work, we 
+    introduce CLIPGaussians, the first unified style transfer framework that supports 
+    text and image guided stylization across multiple modalities 2D images, videos,
+    3D objects, and 4D scenes. Our method operates directly on Gaussian primitives and
+    integrates into existing GS pipelines as a plug-in module, without requiring large
+    generative models or retraining from scratch. CLIPGaussians approach enables joint
+    optimization of color and geometry in 3D and 4D settings, and achieves temporal
+    coherence in videos, while preserving a model size. We demonstrate superior style
+    fidelity and consistency across all tasks, validating CLIPGaussians as a universal
+    and efficient solution for multimodal style transfer.
+  project_page: https://kornelhowil.github.io/CLIPGaussian/
+  paper: https://arxiv.org/pdf/2505.22854
+  code: https://github.com/kornelhowil/CLIPGaussian
+  video: null
+  tags:
+  - Code
+  - Project
+  - Style Transfer
+  thumbnail: assets/thumbnails/howil2025clipgaussianuniversalmultimodalstyle.jpg
+  publication_date: '2025-05-28T20:41:24+00:00'
+  
 - id: liu2025abcgs
   title: 'ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting'
   authors: Wenjie Liu, Zhongliang Liu, Xiaoyan Yang, Man Sha, Yang Li
