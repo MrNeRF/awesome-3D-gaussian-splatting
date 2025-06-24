@@ -118,6 +118,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Implementation Details](https://github.com/kwea123/gaussian_splatting_notes) - Technical deep dive
 - [Mathematical Foundation](https://github.com/chiehwangs/3d-gaussian-theory) - Theory explanation
 - [Capture Guide](https://medium.com/@heyulei/capture-images-for-gaussian-splatting-81d081bbc826) - Image capture tutorial
+- [PyTorch Implementation](https://myasincifci.github.io/) - Curated implementation of Vanilla 3DGS in PyTorch
 
 ### Talks
 
