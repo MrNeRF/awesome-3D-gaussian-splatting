@@ -1,0 +1,37 @@
+name: Validate PR Changes
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'awesome_3dgs_papers.yaml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+      contents: read
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Validate Changed YAML entries
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        REPO: ${{ github.repository }}
+      run: |
+        python src/validate_yaml.py

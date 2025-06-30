@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome 3D Gaussian Splatting Paper List</title>
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Site CSS -->
+    <style>
+        ${styles}
+
+        /* Common button styling for donation box */
+        .copy-button, .sponsor-button, .website-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 8px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        .copy-button:hover, .sponsor-button:hover, .website-button:hover {
+            background: linear-gradient(to bottom, #45a049, #409343);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+        
+        .copy-button i, .sponsor-button i, .website-button i {
+            margin-right: 5px;
+        }
+        
+        /* Button group container */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 0;
+            justify-content: flex-start;
+        }
+        
+        .button-group .copy-button,
+        .button-group .sponsor-button,
+        .button-group .website-button {
+            margin-left: 0;
+        }
+
+        /* Bitcoin info styling */
+        .bitcoin-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .bitcoin-address-container {
+            display: flex;
+            align-items: center;
+            background: #f5f5f5;
+            border-radius: 4px;
+            padding: 8px 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .bitcoin-label {
+            font-weight: 600;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        .address-field {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .bitcoin-address {
+            font-family: monospace;
+            background: transparent;
+            border: none;
+            padding: 0;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+        }
+
+        /* Remove any individual button styling that might be in the original styles */
+        /* Website button styling - keeping this for reference but it will be overridden by the common styling above */
+        .website-button {
+            /* All styling now handled by the common button class above */
+        }
+    </style>
+
+    <!-- Lazy load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Floating Navigation -->
+        <div class="floating-nav">
+            <button onclick="scrollToTop()" aria-label="Scroll to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button onclick="scrollToBottom()" aria-label="Scroll to bottom">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <div class="scroll-progress">0%</div>
+        </div>
+
+        <!-- Selection Mode Toggle Button -->
+        <div class="selection-buttons">
+            <!-- Show Selected Only -->
+            <button class="selected-only-mode-toggle" onclick="toggleSelectedOnly()">
+                <i class="fas fa-filter"></i>
+                <span class="tooltip">Show Selected Only</span>
+            </button>
+
+            <!-- Enter Selection Mode -->
+            <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
+                <i class="fas fa-list-check"></i>
+                <span class="tooltip">Enter Selection Mode</span>
+            </button>
+        </div>
+
+        <!-- Selection Preview Bar -->
+        <div class="selection-preview">
+            <div class="preview-header">
+                <div class="preview-header-left">
+                    <span>Selected Papers</span>
+                    <span class="selection-counter">0 papers selected</span>
+                </div>
+                <div class="preview-header-right">
+                    <button class="control-button secondary" onclick="clearSelection()">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                    <button class="control-button primary" onclick="showShareModal()">
+                        <i class="fas fa-share"></i> Share
+                    </button>
+                </div>
+            </div>
+            <div class="preview-container" id="selectionPreview"></div>
+        </div>
+
+        <!-- Filter Status Bar -->
+        <div class="filter-status">
+            <div class="preview-header">
+                <div class="preview-header-left">
+                    <span>Active Filters</span>
+                    <span class="filter-counter">Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers</span>
+                </div>
+                <div class="preview-header-right">
+                    <button class="control-button secondary" onclick="clearAllFilters()">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                </div>
+            </div>
+            <div class="preview-container" id="activeFilters">
+                <!-- Active filters will be inserted here -->
+            </div>
+        </div>
+
+        <h1>MrNeRF's Awesome-3D-Gaussian-Splatting-Paper-List</h1>
+
+        <!-- Donation Box -->
+        <div class="donate-box">
+            <h3>Support This Project</h3>
+            <p>If you find this resource helpful, consider supporting its development and maintenance.</p>
+            <div class="bitcoin-info">
+                <div class="bitcoin-address-container">
+                    <span class="bitcoin-label">Bitcoin:</span>
+                    <div class="address-field">
+                        <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="copy-button" onclick="copyBitcoinAddress()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
+                        <i class="fas fa-heart"></i> Sponsor
+                    </a>
+                    <a href="https://www.mrnerf.com" class="website-button" target="_blank" rel="noopener">
+                        <i class="fas fa-globe"></i> MrNeRF.com
+                    </a>
+                </div>
+                <!-- Discord Badge -->
+                <div class="discord-badge">
+                    <a href="https://discord.gg/TbxJST2BbC">
+                        <img src="https://dcbadge.limes.pink/api/server/https://discord.gg/TbxJST2BbC" alt="Discord Badge" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Filter Info -->
+        <div class="filter-info">
+            <h3>Filter Options</h3>
+            <p><strong>Search:</strong> Enter paper title or author names, then click <i class="fas fa-times"></i> to clear.</p>
+            <p><strong>Year:</strong> Filter by publication year</p>
+            <p><strong>Tags:</strong> Click once to include (blue), twice to exclude (red), third time to remove filter</p>
+            <p><strong>Selection:</strong> Use selection mode to pick and share specific papers</p>
+        </div>
+
+        <!-- Share Modal -->
+        <div class="share-modal" id="shareModal">
+            <div class="share-modal-content">
+                <button class="share-modal-close" onclick="hideShareModal()">&times;</button>
+                <div class="share-modal-header">
+                    <h2>Share Selected Papers</h2>
+                </div>
+                <div class="share-url-container">
+                    <input type="text" class="share-url-input" id="shareUrl" readonly>
+                    <button class="control-button primary" onclick="copyShareLink()">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Bar -->
+        <div class="filters">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
+                <button class="clear-search-btn" onclick="clearSearch()" title="Clear search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <select id="yearFilter" class="filter-select">
+                <option value="all">All Years</option>
+                ${year_options}
+            </select>
+        </div>
+
+        <!-- Tag Filters -->
+        <div class="tag-filters" id="tagFilters">
+            ${tag_filters}
+        </div>
+
+        <!-- Paper Cards -->
+        <div class="papers-grid">
+            ${paper_cards}
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        ${scripts}
+    </script>
+</body>
+</html>

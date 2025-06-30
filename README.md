@@ -1,203 +1,142 @@
-# Awesome 3D Gaussian Splatting Resources 
+# Awesome 3D Gaussian Splatting
 
-A curated list of papers and open-source resources focused on 3D Gaussian Splatting, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
+<div align="center">
+  A curated collection of resources focused on 3D Gaussian Splatting (3DGS) and related technologies.
 
-## Table of contents
+  [**Browse the Paper List**](https://mrnerf.github.io/awesome-3D-gaussian-splatting/) | [**Contribute**](CONTRIBUTING.md) | [**MrNeRF**](https://www.mrnerf.com)
 
-- [Seminal Paper introducing 3D Gaussian Splatting](#seminal-paper-introducing-3d-gaussian-splatting)
-<br>
+</div>
 
-- [3D Object Detection](#3D-Object-Detection)
-- [Autonomous Driving](#autonomous-driving)
-- [Avatars](#avatars)
-- [Classic work](#classic-work)
-- [Compression](#compression)
-- [Diffusion](#diffusion)
-- [Dynamics and Deformation](#dynamics-and-deformation)
-- [Editing](#editing)
-- [Language Embedding](#language-embedding)
-- [Mesh Extraction and Physics](#mesh-extraction-and-physics)
-- [Misc](#misc)
-- [Regularization and Optimization](#regularization-and-optimization)
-- [Rendering](#rendering)
-- [Reviews](#reviews)
-- [SLAM](#slam)
-- [Sparse](#sparse)
-- [Navigation and Autonomous Driving](#navigation)
-- [Poses](#poses)
-- [Large-Scale](#large-scale)
+## Contents
 
-<br>
+- [Papers &amp; Documentation](#papers--documentation)
+- [Implementations](#implementations)
+- [Viewers &amp; Game Engine Support](#viewers--game-engine-support)
+- [Tools &amp; Utilities](#tools--utilities)
+- [Learning Resources](#learning-resources)
+- [Sponsors](#sponsors)
 
-- [Data](#data)
-- [Courses](#courses)
+## Papers & Documentation
 
-<br>
+### Papers Database
 
-- [Open Source Implementations](#open-source-implementations)
-  * [Reference](#reference)
-  * [Unofficial Implementations](#unofficial-implementations)
-  * [2D Gaussian Splatting](#2d-gaussian-splatting)
-  * [Game Engines](#game-engines)
-  * [Viewers](#viewers)
-  * [Utilities](#utilities)
-  * [Tutorial](#tutorial)
-  * [Framework](#framework)
-  * [Other](#other)
-<br>
+Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
+[Papers Database](https://mrnerf.github.io/awesome-3D-gaussian-splatting/)
 
-- [Blog Posts](#blog-posts)
-- [Tutorial Videos](#tutorial-videos)
-- [Credits](#credits)
+### Courses
 
-<details span>
-<summary><b>Update Log:</b></summary>
-<br>
- **Oct 16, 2024**
- - Added one paper:DGD
- 
- **Sept 07, 2024**
- - Added one paper:MoDGS
- 
- **May 10, 2024**
- - Added 18 papers: Z-Splat, Dual-Camera, StylizedGS, Hash3D, Revisiting Densification, Gaussian Pancakes, 3D-aware Deformable Gaussians, SpikeNVS, Zero-shot PC completion, SplatPose, DreamScene360, RealmDreamer, Gaussian-ILC, Reinforcment Learning with GGS, GoMAvatar, OccGaussian, LoopGaussian, Review
+- [MIT Inverse Rendering Lectures (Module 2)](https://www.scenerepresentations.org/courses/inverse-graphics-23/) - Academic deep dive into inverse rendering
 
- **April 11, 2024**
- - Code release of latentSplat
+### Datasets
 
- **April 9, 2024**
- - Added 1 paper: EgoLifter
+- [NERDS 360 Multi-View dataset](https://zubair-irshad.github.io/projects/neo360.html) - High-quality outdoor scene dataset
 
- **April 8, 2024**
- - Added 3 papers: Robust Gaussian Splatting, SC4D, and MM-Gaussian
+## Implementations
 
- **April 5, 2024**
- - Added 5 papers: Surface Reconstruction, TCLC-GS, GaSpCT, OmniGS, and Per-Gaussian Embedding, 
- - Fixes
+### Official Reference
 
- **April 2, 2024**
- - Added 11 papers: HO, SGD, HGS, Snap-it, InstantSplat, 3DGSR, MM3DGS, HAHA, CityGaussain, Mirror-3DGS, and Feature Splatting
+- [Original Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting) - The reference implementation by the original authors
 
- **March 30, 2024**
- - Added 8 papers: Modeling uncertainty, GRM, Gamba, CoherentGS, TOGS, SA-GS, and GaussianCube
+### Community Implementations
 
- **March 27, 2024**
- - Added Other Implementation: 360-gaussian-splatting
- - CVPR '24 labels added
- - Added 5 papers: Comp4D, DreamPolisher, DN-Splatter, 2D GS, and Octree-GS
+| Implementation                                                           | Language    | License    | Description                     |
+| ------------------------------------------------------------------------ | ----------- | ---------- | ------------------------------- |
+| [Taichi 3D GS](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting) | Taichi      | Apache-2.0 | Taichi-based implementation     |
+| [Nerfstudio gsplat](https://github.com/nerfstudio-project/gsplat)           | Python/CUDA | Apache-2.0 | Integration with Nerfstudio     |
+| [fast](https://github.com/MrNeRF/gaussian-splatting-cuda)                   | C++/CUDA    | Inria/MPII | High-performance implementation |
+| [OpenSplat](https://github.com/pierotofy/OpenSplat)                         | C++/CPU/GPU | AGPL-3.0   | Cross-platform solution         |
+| [Grendel](https://github.com/nyu-systems/Grendel-GS)                        | Python/CUDA | Apache-2.0 | Distributed computing focus     |
+| [Warp 3DGS](https://github.com/guoriyue/3dgs-warp-scratch)                  | Warp/Python | AGPL-3.0   | Warp-based implementation       |
 
- **March 26, 2024**
- - Added 13 paper: latentSplat, GS on the Move, RadSplat, Mini-Splatting, SyncTweedies, HAC, STAG4D, EndoGSLAM, Pixel-GS, Semantic Gaussians, Gaussian in the Wild, CG-SLAM, and GSDF
+### Frameworks
 
- **March 24, 2024**:
- - Added paper: Gaussian Frosting
+- [Pointrix](https://github.com/pointrix-project/pointrix) - Differentiable point-based rendering
+- [GauStudio](https://github.com/GAP-LAB-CUHK-SZ/gaustudio) - Unified framework with multiple implementations
+- [DriveStudio](https://github.com/ziyc/drivestudio) - Urban scene reconstruction framework
+- [GSCodecStudio](https://github.com/JasonLSC/GSCodec_Studio) - Compression and Dynamic splattings
 
- **March 20, 2024**:
- - Added 4 papers: GVGEN, HUGS, RGBD GS-ICP SLAM, and High-Fidelity SLAM
+## Viewers & Game Engine Support
 
- **March 19, 2024**:
- - Added Pointrix
- - Added 3DGS tutorial by the original authors 
- - Added GauStudio
- - Added 23 papers: Touch-GS, GGRt, FDGaussian, SWAG, Den-SOFT, Gaussian-Flow, View-Consistent 3D Editing, BAGS, GeoGaussian, GS-Pose, Analytic-Splatting, Seamless 3D Maps, Texture-GS, Recent Advances in 3DGS, Compact 3DGS for Dense Visual SLAM, BrightDreamer, 3DGS-Reloc, Beyond Uncertainty, Motion-Aware 3DGS, Fed3DGS, GaussNav, 3DGS-Calib, and NEDS-SLAM 
+### Game Engines
 
- **March 17, 2024**:
- - Update repo name and link for 3DGS.cpp (originally VulkanSplatting)
+- [Unity Plugin](https://github.com/aras-p/UnityGaussianSplatting)
+- [Unreal Plugin](https://github.com/xverse-engine/XV3DGS-UEPlugin)
+- [PlayCanvas Integration](https://github.com/playcanvas/engine/tree/main/src/scene/gsplat)
 
- **March 16, 2024**:
- - SplatTV
- - Added 6 papers: GaussianGrasper, new splitting algorithm, Controllable Text-to-3D Generation, Spring-Mass 3DGS, Hyper-3DGS, and DreamScene
+### Web Viewers
 
- **March 14, 2024**:
- - Added 6 papers: SemGauss, StyleGaussian, Gaussian Splatting in Style, GaussCtrl, GaussianImage, and RAIN-GS
+**WebGL**
 
- **March 8, 2024**:
- - Tutorial: Howto capture images for 3DGS
- - Added 6 papers: SplattingAvatar, DNGaussian, Radiative Gaussians, BAGS, GSEdit, and ManiGaussian
+- [Splat Viewer](https://github.com/antimatter15/splat)
+- [Gauzilla](https://github.com/BladeTransformerLLC/gauzilla)
+- [Interactive Viewer](https://github.com/kishimisu/Gaussian-Splatting-WebGL)
+- [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D)
 
- **March 8, 2024**:
- - Added 3DGStream Viewer
+**WebGPU**
 
- **March 6, 2024**:
- - 1 paper added: Splat-Nav
+- [EPFL Viewer](https://github.com/cvlab-epfl/gaussian-splatting-web)
+- [WebGPU Splat](https://github.com/KeKsBoTer/web-splat)
 
- **March 5, 2024**:
- - 1 paper added: 3DGStream
- - Code releases 
- - New viewer added
+### Desktop Viewers
 
- **March 2, 2024**:
- - 1 paper added: 3D Gaussian Model for Animation and Texturing
- - New section: Courses that also teach 3DGS.
+**Linux**
 
- **February 28, 2024**:
- - VastGaussian
+- [DearGaussianGUI](https://github.com/leviome/DearGaussianGUI)
+- [LiteViz-GS](https://github.com/panxkun/liteviz-gs)
 
- **February 27, 2024**:
-- 2 papers added: Spec-Gaussian and GEA
-- SC-GS code released
+### Native Applications
 
- **February 24, 2024**:
-- 2 papers added: Identifying unnecessary Gaussians and Gaussian Pro
+- [Blender Add-on](https://github.com/ReshotAI/gaussian-splatting-blender-addon)
+- [Blender Add-on (KIRI)](https://github.com/Kiri-Innovation/3dgs-render-blender-addon)
+- [Blender Add-on (404—GEN)](https://github.com/404-Repo/three-gen-blender-plugin)
+- [iOS Metal Viewer](https://github.com/laanlabs/metal-splats)
+- [OpenGL Viewer](https://github.com/limacv/GaussianSplattingViewer)
+- [VR Support (OpenXR)](https://github.com/hyperlogic/splatapult)
+- [ROS2 Support](https://github.com/shadygm/ROSplat)
 
- **February 23, 2024**:
- - Corrected Authors and updated abstract for EndoGS: Deformable Endoscopic Tissues Reconstruction with Gaussian Splatting
+## Tools & Utilities
 
- **February 21, 2024**:
- - Added one paper: Reshaping SLAM: a Survey
+### Data Processing
 
- **February 20, 2024**:
- - GaussianObject code released
- - Added one paper: GaussianHair
+- [Kapture](https://github.com/naver/kapture) - Unified data format for visual localization
+- [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - Format conversion tool
+- [SuperSplat](https://github.com/playcanvas/super-splat) - Browser-based cleanup tool
+- [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Web-based point cloud editing
+- [SPZ Converter](https://github.com/stytim/spz) - SPZ conversion tool
+- [gsbox Converter](https://github.com/gotoeasy/gsbox) - PLY SPLAT SPZ SPX conversion tool
 
- **February 19, 2024**:
- - Blog post added: NeRFs vs. 3DGS.
+### Development Tools
 
- **February 16, 2024**:
- - 2 papers added: IM-3D and GES
- - GaMeS code released
+- [GSOPs for Houdini](https://github.com/david-rhodes/GSOPs) - Houdini integration tools
+- [camorph](https://github.com/Fraunhofer-IIS/camorph) - Camera parameter conversion
 
- **February 14, 2024**:
- - Added viewer: VulkanSplatting - cross-platform, high performance 3DGS renderer in C++ and Vulkan Compute
+## Learning Resources
 
- **February 13, 2024**:
- - Code releases: (16th Jan 2024) Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting
- - 3 papers added: 3DGala, ImplicitDeepFake, and 3D Gaussians as a New Vision Era.
- 
- **February 9, 2024**:
- - 1 paper added: HeadStudio
+### Blog Posts
 
- **February 8, 2024**:
- - 3 papers added: Rig3DGS, Mesh-based GS, and LGM
- **February 6, 2024**:
- - Added 2 papers: SGS-SLAM and 4D Gaussian Splatting
+- [3DGS Introduction](https://huggingface.co/blog/gaussian-splatting) - HuggingFace guide
+- [Implementation Details](https://github.com/kwea123/gaussian_splatting_notes) - Technical deep dive
+- [Mathematical Foundation](https://github.com/chiehwangs/3d-gaussian-theory) - Theory explanation
+- [Capture Guide](https://medium.com/@heyulei/capture-images-for-gaussian-splatting-81d081bbc826) - Image capture tutorial
+- [PyTorch Implementation](https://myasincifci.github.io/) - Curated implementation of Vanilla 3DGS in PyTorch
 
- **February 5, 2024**:
- - Moved SWAGS to Dynmatics and Deformation section
- - Added 2 paper: GaussianObject and GaMeSh
- - GS++ renamed to Optimal Projection
- 
- **February 2, 2024**:
-  - Added 6 papers: VR-GS, Segment Anything, Gaussian Splashing, GS++, 360-GS, and StopThePop
-  - TRIPS code release
+### Talks
 
- **January 30, 2024**:
-  - Code changes: GaussianAvatars code changed to private
+- [Gaussian Splats: Ready for Standardization?](https://www.youtube.com/watch?v=0xdPpKSkO3I) - Metaverse Standards Forum 1/28/2025
+- [Unity Integration Guide](https://www.youtube.com/watch?v=pM_HV2TU4rU&t=5298s) - Metaverse Standards Forum 5/6/2025
 
- **January 29, 2024**:
- - Added 2 papers: LIV-GaussMap and TIP-Editor
+### Video Tutorials
 
- **January 26, 2024**:
- - Removed retracted paper: Animatable 3D Gaussians for High-fidelity Synthesis of Human Motions
- - 3 papers added: EndoGaussians, PSAvatar, and GauU-Scene
+- [Getting Started (Windows)](https://youtu.be/UXtuigy_wYc)
+- [Gaussian Splats Town Hall - Part 2](https://youtu.be/5_GaPYBHqOo)
+- [Two-Minute Explanation](https://youtu.be/HVv_IQKlafQ)
+- [Jupyter Tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM)
 
- **January 25, 2024**:
- - Added viewer: Splatapult - 3d gaussian splatting renderer in C++ and OpenGL, works with OpenXR for tethered VR
+## Sponsors
 
- **January 24, 2024**:
- - Added utility: GSOPs (Gaussian Splat Operators) for SideFX Houdini
- - Code releases: GaussianAvatars
+A big thank you to our sponsors for their generous support:
 
+<<<<<<< HEAD
  **January 23, 2024**:
  - 3 papers added: Amortized Gen3D, Deformable Endoscopic Tissues, Fast dynamic 3D Object Generation
  - Code releases: Animatable Avatars, Compressed 3D Gaussians, GaussianAvatar
@@ -3599,3 +3538,6 @@ Localization and mapping are critical tasks for various applications such as aut
 - Thanks to [Leonid Keselman](https://github.com/leonidk) for informing me about the release of the paper "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting".
 - Thanks to [Eric Haines](https://github.com/erich666) for suggesting the jupyter notebook viewer, windows tutorial and for fixing text hyphenations and other issues.
 - Thanks to [Henry Pearce](https://github.com/henrypearce4D) for maintaining contributions.
+=======
+- [Yehe Liu](https://x.com/YeheLiu)
+>>>>>>> 7656f5e7ed3bc239fae0e9a8e1990be82bd7daa9

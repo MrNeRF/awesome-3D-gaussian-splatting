@@ -1,0 +1,71 @@
+name: Generate HTML
+on:
+  pull_request:
+    types: [closed]
+  push:
+    branches: [main]
+    paths:
+      - 'awesome_3dgs_papers.yaml'
+
+jobs:
+  build:
+    if: github.event.pull_request.merged == true || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        ref: main
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Setup Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+    - name: Update HTML
+      run: |
+        git fetch origin update-html || true
+        git checkout -B update-html
+        python src/generate.py awesome_3dgs_papers.yaml index.html
+        git add index.html
+        if ! git diff --staged --quiet; then
+          git commit -m "Update generated HTML"
+          git push --force origin update-html
+        fi
+
+    - name: Create Pull Request
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const { data: pulls } = await github.rest.pulls.list({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            head: `${context.repo.owner}:update-html`,
+            base: 'main',
+            state: 'open'
+          });
+          
+          if (pulls.length === 0) {
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'update-html',
+              base: 'main',
+              title: 'Update generated HTML',
+              body: 'Auto-generated PR to update the HTML based on recent YAML changes.'
+            });
+          }
