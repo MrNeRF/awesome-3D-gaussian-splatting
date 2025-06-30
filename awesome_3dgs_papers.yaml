@@ -1,3 +1,23 @@
+- id: kwon2025instruct4dgsefficientdynamicscene
+  title: 'Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation'
+  authors: Joohyun Kwon, Hanbyel Cho, Junmo Kim
+  year: '2025'
+  abstract: 'Recent 4D dynamic scene editing methods require editing thousands of 2D images used for dynamic scene synthesis and updating the entire scene with additional training loops, resulting in several hours of processing to edit a single dynamic scene. Therefore, these methods are not scalable with respect to the temporal dimension of the dynamic scene (i.e., the number of timesteps). In this work, we propose Instruct-4DGS, an efficient dynamic scene editing method that is more scalable in terms of temporal dimension. To achieve computational efficiency, we leverage a 4D Gaussian representation that models a 4D dynamic scene by combining static 3D Gaussians with a Hexplane-based deformation field, which captures dynamic information. We then perform editing solely on the static 3D Gaussians, which is the minimal but sufficient component required for visual editing. To resolve the misalignment between the edited 3D Gaussians and the deformation field, which may arise from the editing process, we introduce a refinement stage using a score distillation mechanism. Extensive editing results demonstrate that Instruct-4DGS is efficient, reducing editing time by more than half compared to existing methods while achieving high-quality edits that better follow user instructions.'
+  project_page: https://hanbyelcho.info/instruct-4dgs/
+  paper: https://arxiv.org/pdf/2502.02091.pdf
+  code: null
+  video: null
+  tags:
+  - Dynamic
+  - Editing
+  - Gaussian Splatting
+  - Efficient
+  - 4D
+  - Project
+  - Code
+  thumbnail: null
+  publication_date: '2025-03-25T12:01:47+00:00'
+  date_source: arxiv 
 - id: howil2025clipgaussian
   title: 'CLIPGaussian: Universal and Multimodal Style Transfer Based on Gaussian
     Splatting'
