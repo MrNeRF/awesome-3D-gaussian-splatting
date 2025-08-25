@@ -1,3 +1,32 @@
+- id: zhu2025objectgs
+  title: 'ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via Gaussian Splatting'
+  authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang, Jiangmiao Pang, Bo Dai
+  year: '2025'
+  abstract: '3D Gaussian Splatting is renowned for its high-fidelity reconstructions and 
+    real-time novel view synthesis, yet its lack of semantic understanding limits object-level 
+    perception. In this work, we propose ObjectGS, an object-aware framework that unifies 3D 
+    scene reconstruction with semantic understanding. Instead of treating the scene as a 
+    unified whole, ObjectGS models individual objects as local anchors that generate neural 
+    Gaussians and share object IDs, enabling precise object-level reconstruction. During 
+    training, we dynamically grow or prune these anchors and optimize their features, while 
+    a one-hot ID encoding with a classification loss enforces clear semantic constraints. 
+    We show through extensive experiments that ObjectGS not only outperforms state-of-the-art 
+    methods on open-vocabulary and panoptic segmentation tasks, but also integrates seamlessly 
+    with applications like mesh extraction and scene editing.
+  
+    '
+  project_page: https://ruijiezhu94.github.io/ObjectGS_page/
+  paper: https://arxiv.org/pdf/2507.15454.pdf
+  code: https://github.com/RuijieZhu94/ObjectGS
+  video: null
+  tags:
+  - Code
+  - Project
+  - Segmentation
+  - Language Embedding
+  thumbnail: assets/thumbnails/zhu2025objectgs.jpg
+  publication_date: '2025-07-21T10:06:23+00:00'
+  date_source: arxiv
 - id: howil2025clipgaussian
   title: 'CLIPGaussian: Universal and Multimodal Style Transfer Based on Gaussian
     Splatting'
