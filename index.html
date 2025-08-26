@@ -1427,7 +1427,29 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="zhu2025objectgs" data-title="ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via Gaussian Splatting" data-authors="Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang, Jiangmiao Pang, Bo Dai" data-year="2025" data-tags='["Code", "Project", "Segmentation", "Language Embedding"]'>
+            <div class="paper-row" data-id="chang2025meshsplat" data-title="MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting" data-authors="Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao Lu, Zhuoyuan Li, Tianzhu Zhang" data-year="2025" data-tags='["2DGS", "Feed-Forward", "Meshing"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'chang2025meshsplat', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/chang2025meshsplat.jpg" data-fallback="None" alt="Paper thumbnail for MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao Lu, Zhuoyuan Li, Tianzhu Zhang</p>
+      <div class="paper-tags"><span class="paper-tag">2DGS</span>
+<span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">Meshing</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2508.17811.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://hanzhichang.github.io/meshsplat_web/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://hanzhichang.github.io/meshsplat_web/static/images/meshsplat/demo.mp4" class="paper-link" target="_blank" rel="noopener">🎥 Video</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Surface reconstruction has been widely studied in computer vision and graphics. However, existing surface reconstruction works struggle to recover accurate scene geometry when the input views are extremely sparse. To address this issue, we propose MeshSplat, a generalizable sparse-view surface reconstruction framework via Gaussian Splatting. Our key idea is to leverage 2DGS as a bridge, which connects novel view synthesis to learned geometric priors and then transfers these priors to achieve surface reconstruction. Specifically, we incorporate a feed-forward network to predict per-view pixel-aligned 2DGS, which enables the network to synthesize novel view images and thus eliminates the need for direct 3D ground-truth supervision. To improve the accuracy of 2DGS position and orientation prediction, we propose a Weighted Chamfer Distance Loss to regularize the depth maps, especially in overlapping areas of input views, and also a normal prediction network to align the orientation of 2DGS with normal vectors predicted by a monocular normal estimator. Extensive experiments validate the effectiveness of our proposed improvement, demonstrating that our method achieves state-of-the-art performance in generalizable sparse-view mesh reconstruction tasks.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="zhu2025objectgs" data-title="ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via Gaussian Splatting" data-authors="Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang, Jiangmiao Pang, Bo Dai" data-year="2025" data-tags='["Code", "Project", "Segmentation", "Language Embedding"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhu2025objectgs', this)">
     <div class="paper-number"></div>
