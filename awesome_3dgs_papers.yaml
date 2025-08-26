@@ -21,11 +21,9 @@
     '
   project_page: https://hanzhichang.github.io/meshsplat_web/
   paper: https://arxiv.org/pdf/2508.17811.pdf
-  code: https://github.com/HanzhiChang/MeshSplat
+  code: null
   video: https://hanzhichang.github.io/meshsplat_web/static/images/meshsplat/demo.mp4
   tags:
-  - Code
-  - Project
   - 2DGS
   - Feed-Forward
   - Meshing
