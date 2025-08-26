@@ -1,3 +1,35 @@
+- id: chang2025meshsplat
+  title: 'MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting'
+  authors: Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao Lu, Zhuoyuan Li, Tianzhu Zhang
+  year: '2025'
+  abstract: 'Surface reconstruction has been widely studied in computer vision and graphics. 
+    However, existing surface reconstruction works struggle to recover accurate scene geometry
+    when the input views are extremely sparse. To address this issue, we propose MeshSplat, 
+    a generalizable sparse-view surface reconstruction framework via Gaussian Splatting.
+    Our key idea is to leverage 2DGS as a bridge, which connects novel view synthesis to 
+    learned geometric priors and then transfers these priors to achieve surface reconstruction. 
+    Specifically, we incorporate a feed-forward network to predict per-view pixel-aligned 2DGS, 
+    which enables the network to synthesize novel view images and thus eliminates the need 
+    for direct 3D ground-truth supervision. To improve the accuracy of 2DGS position and 
+    orientation prediction, we propose a Weighted Chamfer Distance Loss to regularize the 
+    depth maps, especially in overlapping areas of input views, and also a normal prediction 
+    network to align the orientation of 2DGS with normal vectors predicted by a monocular 
+    normal estimator. Extensive experiments validate the effectiveness of our proposed improvement,
+    demonstrating that our method achieves state-of-the-art performance in generalizable 
+    sparse-view mesh reconstruction tasks.
+  
+    '
+  project_page: https://hanzhichang.github.io/meshsplat_web/
+  paper: https://arxiv.org/pdf/2508.17811.pdf
+  code: null
+  video: https://hanzhichang.github.io/meshsplat_web/static/images/meshsplat/demo.mp4
+  tags:
+  - 2DGS
+  - Feed-Forward
+  - Meshing
+  thumbnail: assets/thumbnails/chang2025meshsplat.jpg
+  publication_date: '2025-08-25T09:04:20+00:00'
+  date_source: arxiv
 - id: zhu2025objectgs
   title: 'ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via Gaussian Splatting'
   authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang, Jiangmiao Pang, Bo Dai
