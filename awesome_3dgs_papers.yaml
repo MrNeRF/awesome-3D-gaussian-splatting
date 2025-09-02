@@ -1,23 +1,26 @@
 - id: chang2025meshsplat
-  title: 'MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting'
-  authors: Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao Lu, Zhuoyuan Li, Tianzhu Zhang
+  title: 'MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian
+    Splatting'
+  authors: Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao
+    Lu, Zhuoyuan Li, Tianzhu Zhang
   year: '2025'
-  abstract: 'Surface reconstruction has been widely studied in computer vision and graphics. 
-    However, existing surface reconstruction works struggle to recover accurate scene geometry
-    when the input views are extremely sparse. To address this issue, we propose MeshSplat, 
-    a generalizable sparse-view surface reconstruction framework via Gaussian Splatting.
-    Our key idea is to leverage 2DGS as a bridge, which connects novel view synthesis to 
-    learned geometric priors and then transfers these priors to achieve surface reconstruction. 
-    Specifically, we incorporate a feed-forward network to predict per-view pixel-aligned 2DGS, 
-    which enables the network to synthesize novel view images and thus eliminates the need 
-    for direct 3D ground-truth supervision. To improve the accuracy of 2DGS position and 
-    orientation prediction, we propose a Weighted Chamfer Distance Loss to regularize the 
-    depth maps, especially in overlapping areas of input views, and also a normal prediction 
-    network to align the orientation of 2DGS with normal vectors predicted by a monocular 
-    normal estimator. Extensive experiments validate the effectiveness of our proposed improvement,
-    demonstrating that our method achieves state-of-the-art performance in generalizable 
-    sparse-view mesh reconstruction tasks.
-  
+  abstract: 'Surface reconstruction has been widely studied in computer vision and
+    graphics. However, existing surface reconstruction works struggle to recover accurate
+    scene geometry when the input views are extremely sparse. To address this issue,
+    we propose MeshSplat, a generalizable sparse-view surface reconstruction framework
+    via Gaussian Splatting. Our key idea is to leverage 2DGS as a bridge, which connects
+    novel view synthesis to learned geometric priors and then transfers these priors
+    to achieve surface reconstruction. Specifically, we incorporate a feed-forward
+    network to predict per-view pixel-aligned 2DGS, which enables the network to synthesize
+    novel view images and thus eliminates the need for direct 3D ground-truth supervision.
+    To improve the accuracy of 2DGS position and orientation prediction, we propose
+    a Weighted Chamfer Distance Loss to regularize the depth maps, especially in overlapping
+    areas of input views, and also a normal prediction network to align the orientation
+    of 2DGS with normal vectors predicted by a monocular normal estimator. Extensive
+    experiments validate the effectiveness of our proposed improvement, demonstrating
+    that our method achieves state-of-the-art performance in generalizable sparse-view
+    mesh reconstruction tasks.
+
     '
   project_page: https://hanzhichang.github.io/meshsplat_web/
   paper: https://arxiv.org/pdf/2508.17811.pdf
@@ -31,21 +34,24 @@
   publication_date: '2025-08-25T09:04:20+00:00'
   date_source: arxiv
 - id: zhu2025objectgs
-  title: 'ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via Gaussian Splatting'
-  authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang, Jiangmiao Pang, Bo Dai
+  title: 'ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via
+    Gaussian Splatting'
+  authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang,
+    Jiangmiao Pang, Bo Dai
   year: '2025'
-  abstract: '3D Gaussian Splatting is renowned for its high-fidelity reconstructions and 
-    real-time novel view synthesis, yet its lack of semantic understanding limits object-level 
-    perception. In this work, we propose ObjectGS, an object-aware framework that unifies 3D 
-    scene reconstruction with semantic understanding. Instead of treating the scene as a 
-    unified whole, ObjectGS models individual objects as local anchors that generate neural 
-    Gaussians and share object IDs, enabling precise object-level reconstruction. During 
-    training, we dynamically grow or prune these anchors and optimize their features, while 
-    a one-hot ID encoding with a classification loss enforces clear semantic constraints. 
-    We show through extensive experiments that ObjectGS not only outperforms state-of-the-art 
-    methods on open-vocabulary and panoptic segmentation tasks, but also integrates seamlessly 
-    with applications like mesh extraction and scene editing.
-  
+  abstract: '3D Gaussian Splatting is renowned for its high-fidelity reconstructions
+    and real-time novel view synthesis, yet its lack of semantic understanding limits
+    object-level perception. In this work, we propose ObjectGS, an object-aware framework
+    that unifies 3D scene reconstruction with semantic understanding. Instead of treating
+    the scene as a unified whole, ObjectGS models individual objects as local anchors
+    that generate neural Gaussians and share object IDs, enabling precise object-level
+    reconstruction. During training, we dynamically grow or prune these anchors and
+    optimize their features, while a one-hot ID encoding with a classification loss
+    enforces clear semantic constraints. We show through extensive experiments that
+    ObjectGS not only outperforms state-of-the-art methods on open-vocabulary and
+    panoptic segmentation tasks, but also integrates seamlessly with applications
+    like mesh extraction and scene editing.
+
     '
   project_page: https://ruijiezhu94.github.io/ObjectGS_page/
   paper: https://arxiv.org/pdf/2507.15454.pdf
@@ -90,6 +96,38 @@
   - Style Transfer
   thumbnail: assets/thumbnails/howil2025clipgaussian.jpg
   publication_date: '2025-05-28T20:41:24+00:00'
+  date_source: arxiv
+- id: gomez2025foci
+  title: 'FOCI: Trajectory Optimization on Gaussian Splats'
+  authors: Mario Gomez Andreu, Maximum Wilder-Smith, Victor Klemm, Vaishakh Patil,
+    Jesus Tordesillas, Marco Hutter
+  year: '2025'
+  abstract: '3D Gaussian Splatting (3DGS) has recently gained popularity as a faster
+    alternative to Neural Radiance Fields (NeRFs) in 3D reconstruction and view synthesis
+    methods. Leveraging the spatial information encoded in 3DGS, this work proposes
+    FOCI (Field Overlap Collision Integral), an algorithm that is able to optimize
+    trajectories directly on the Gaussians themselves. FOCI leverages a novel and
+    interpretable collision formulation for 3DGS using the notion of the overlap integral
+    between Gaussians. Contrary to other approaches, which represent the robot with
+    conservative bounding boxes that underestimate the traversability of the environment,
+    we propose to represent the environment and the robot as Gaussian Splats. This
+    not only has desirable computational properties, but also allows for orientation-aware
+    planning, allowing the robot to pass through very tight and narrow spaces. We
+    extensively test our algorithm in both synthetic and real Gaussian Splats, showcasing
+    that collision-free trajectories for the ANYmal legged robot that can be computed
+    in a few seconds, even with hundreds of thousands of Gaussians making up the environment.
+    The project page and code are available at https://rffr.leggedrobotics.com/works/foci/
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2505.08510.pdf
+  code: null
+  video: null
+  tags:
+  - Optimization
+  - Robotics
+  thumbnail: assets/thumbnails/andreu2025foci.jpg
+  publication_date: '2025-05-13T12:40:19+00:00'
   date_source: arxiv
 - id: liu2025abcgs
   title: 'ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting'
