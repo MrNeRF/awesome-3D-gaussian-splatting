@@ -41,9 +41,9 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 | Implementation                                                           | Language    | License    | Description                     |
 | ------------------------------------------------------------------------ | ----------- | ---------- | ------------------------------- |
+| [LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio)                   | C++/CUDA    | GPL-3.0 | High-performance implementation |
 | [Taichi 3D GS](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting) | Taichi      | Apache-2.0 | Taichi-based implementation     |
 | [Nerfstudio gsplat](https://github.com/nerfstudio-project/gsplat)           | Python/CUDA | Apache-2.0 | Integration with Nerfstudio     |
-| [fast](https://github.com/MrNeRF/gaussian-splatting-cuda)                   | C++/CUDA    | Inria/MPII | High-performance implementation |
 | [OpenSplat](https://github.com/pierotofy/OpenSplat)                         | C++/CPU/GPU | AGPL-3.0   | Cross-platform solution         |
 | [Grendel](https://github.com/nyu-systems/Grendel-GS)                        | Python/CUDA | Apache-2.0 | Distributed computing focus     |
 | [Warp 3DGS](https://github.com/guoriyue/3dgs-warp-scratch)                  | Warp/Python | AGPL-3.0   | Warp-based implementation       |
