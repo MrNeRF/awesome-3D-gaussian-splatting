@@ -60,6 +60,8 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 ### Game Engines
 
 - [Unity Plugin](https://github.com/aras-p/UnityGaussianSplatting)
+- [Unity Plugin (gsplat-unity)](https://github.com/wuyize25/gsplat-unity)
+- [Unity Plugin (DynGsplat-unity)](https://github.com/HiFi-Human/DynGsplat-unity) - For dynamic splattings
 - [Unreal Plugin](https://github.com/xverse-engine/XV3DGS-UEPlugin)
 - [PlayCanvas Integration](https://github.com/playcanvas/engine/tree/main/src/scene/gsplat)
 
