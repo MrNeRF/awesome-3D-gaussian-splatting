@@ -63,7 +63,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Unity Plugin (gsplat-unity)](https://github.com/wuyize25/gsplat-unity)
 - [Unity Plugin (DynGsplat-unity)](https://github.com/HiFi-Human/DynGsplat-unity) - For dynamic splattings
 - [Unreal Plugin](https://github.com/xverse-engine/XV3DGS-UEPlugin)
-- [PlayCanvas Integration](https://github.com/playcanvas/engine/tree/main/src/scene/gsplat)
+- [PlayCanvas Engine](https://github.com/playcanvas/engine)
 
 ### Web Viewers
 
@@ -73,6 +73,8 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Gauzilla](https://github.com/BladeTransformerLLC/gauzilla)
 - [Interactive Viewer](https://github.com/kishimisu/Gaussian-Splatting-WebGL)
 - [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D)
+- [PlayCanvas Model Viewer](https://github.com/playcanvas/model-viewer)
+- [SuperSplat Viewer](https://github.com/playcanvas/supersplat-viewer)
 
 **WebGPU**
 
@@ -102,15 +104,16 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 - [Kapture](https://github.com/naver/kapture) - Unified data format for visual localization
 - [3DGS Converter](https://github.com/francescofugazzi/3dgsconverter) - Format conversion tool
-- [SuperSplat](https://github.com/playcanvas/super-splat) - Browser-based cleanup tool
 - [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Web-based point cloud editing
 - [SPZ Converter](https://github.com/stytim/spz) - SPZ conversion tool
 - [gsbox Converter](https://github.com/gotoeasy/gsbox) - PLY SPLAT SPZ SPX conversion tool
+- [SplatTransform](https://github.com/playcanvas/splat-transform) - CLI tool for converting and editing splats
 
 ### Development Tools
 
 - [GSOPs for Houdini](https://github.com/david-rhodes/GSOPs) - Houdini integration tools
 - [camorph](https://github.com/Fraunhofer-IIS/camorph) - Camera parameter conversion
+- [SuperSplat](https://github.com/playcanvas/supersplat) - Browser-based 3DGS editor
 
 ## Learning Resources
 
