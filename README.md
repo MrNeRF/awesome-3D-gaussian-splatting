@@ -141,7 +141,6 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 A big thank you to our sponsors for their generous support:
 
-<<<<<<< HEAD
  **January 23, 2024**:
  - 3 papers added: Amortized Gen3D, Deformable Endoscopic Tissues, Fast dynamic 3D Object Generation
  - Code releases: Animatable Avatars, Compressed 3D Gaussians, GaussianAvatar
