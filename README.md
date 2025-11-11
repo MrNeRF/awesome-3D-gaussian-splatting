@@ -75,6 +75,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D)
 - [PlayCanvas Model Viewer](https://github.com/playcanvas/model-viewer)
 - [SuperSplat Viewer](https://github.com/playcanvas/supersplat-viewer)
+- [Blurry](https://www.useblurry.com)
 
 **WebGPU**
 
@@ -213,6 +214,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [SpectacularAI](https://github.com/SpectacularAI/point-cloud-tools) - Conversion scripts for different 3DGS conventions
 - [GSOPs](https://github.com/david-rhodes/GSOPs) - GSOPs (Gaussian Splat Operators) for SideFX Houdini. Import, edit, and export models, or generate synthetic training data
 - [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Clean and edit pointclouds from that are in colmap sparse format in a browser to improve reconstruction results
+- [Blurry](https://www.useblurry.com) - Browser-based viewer and a hosting platform with built in compression. Allows editing, annotating, sharing, and embedding Gaussian Splatting models
 
 ### Tutorial
 - [Tutorial from the authors of 3DGS](https://3dgstutorial.github.io/)
