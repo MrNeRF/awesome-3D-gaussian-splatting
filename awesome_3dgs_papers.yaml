@@ -1,3 +1,39 @@
+- id: ren2025fastgs
+  title: 'FastGS: Training 3D Gaussian Splatting in 100 Seconds'
+  authors: Shiwei Ren, Tianci Wen, Yongchun Fang, Biao Lu
+  year: '2025'
+  abstract: 'The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to
+    properly regulate the number of Gaussians during training, causing redundant computational
+    time overhead. In this paper, we propose FastGS, a novel, simple, and general
+    acceleration framework that fully considers the importance of each Gaussian based
+    on multi-view consistency, efficiently solving the trade-off between training
+    time and rendering quality. We innovatively design a densification and pruning
+    strategy based on multi-view consistency, dispensing with the budgeting mechanism.
+    Extensive experiments on Mip-NeRF 360, Tanks & Temples, and Deep Blending datasets
+    demonstrate that our method significantly outperforms the state-of-the-art methods
+    in training speed, achieving a 3.32$\times$ training acceleration and comparable
+    rendering quality compared with DashGaussian on the Mip-NeRF 360 dataset and a
+    15.45$\times$ acceleration compared with vanilla 3DGS on the Deep Blending dataset.
+    We demonstrate that FastGS exhibits strong generality, delivering 2-7$\times$
+    training acceleration across various tasks, including dynamic scene reconstruction,
+    surface reconstruction, sparse-view reconstruction, large-scale reconstruction,
+    and simultaneous localization and mapping. The project page is available at https://fastgs.github.io/
+
+    '
+  project_page: https://fastgs.github.io/
+  paper: https://arxiv.org/pdf/2511.04283.pdf
+  code: https://github.com/fastgs/FastGS
+  video: null
+  tags:
+  - Acceleration
+  - Code
+  - Densification
+  - Dynamic
+  - Project
+  - Sparse
+  thumbnail: assets/thumbnails/ren2025fastgs.jpg
+  publication_date: '2025-11-06T11:21:16+00:00'
+  date_source: arxiv
 - id: chang2025meshsplat
   title: 'MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian
     Splatting'
