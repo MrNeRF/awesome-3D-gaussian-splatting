@@ -3270,14 +3270,16 @@
     quality across diverse scenarios.
 
     '
-  project_page: null
-  paper: https://arxiv.org/pdf/2412.07608.pdf
-  code: null
+  project_page: https://chengbo-wang.github.io/3DGS-with-Group-Training/
+  paper: https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Faster_and_Better_3D_Splatting_via_Group_Training_ICCV_2025_paper.pdf
+  code: https://github.com/Chengbo-Wang/3DGS-with-Group-Training
   video: null
   tags:
   - Acceleration
+  - Code
   - Densification
   - Optimization
+  - Project
   thumbnail: assets/thumbnails/wang2024faster.jpg
   publication_date: '2024-12-10T15:47:17+00:00'
   date_source: arxiv
