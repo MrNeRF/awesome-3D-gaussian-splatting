@@ -34,6 +34,45 @@
   thumbnail: assets/thumbnails/ren2025fastgs.jpg
   publication_date: '2025-11-06T11:21:16+00:00'
   date_source: arxiv
+- id: pan2025diff4splat
+  title: 'Diff4Splat: Controllable 4D Scene Generation with Latent Dynamic Reconstruction
+    Models'
+  authors: Panwang Pan, Chenguo Lin, Jingjing Zhao, Chenxin Li, Yuchen Lin, Haopeng
+    Li, Honglei Yan, Kairun Wen, Yunlong Lin, Yixuan Yuan, Yadong Mu
+  year: '2025'
+  abstract: 'We introduce Diff4Splat, a feed-forward method that synthesizes controllable
+    and explicit 4D scenes from a single image. Our approach unifies the generative
+    priors of video diffusion models with geometry and motion constraints learned
+    from large-scale 4D datasets. Given a single input image, a camera trajectory,
+    and an optional text prompt, Diff4Splat directly predicts a deformable 3D Gaussian
+    field that encodes appearance, geometry, and motion, all in a single forward pass,
+    without test-time optimization or post-hoc refinement. At the core of our framework
+    lies a video latent transformer, which augments video diffusion models to jointly
+    capture spatio-temporal dependencies and predict time-varying 3D Gaussian primitives.
+    Training is guided by objectives on appearance fidelity, geometric accuracy, and
+    motion consistency, enabling Diff4Splat to synthesize high-quality 4D scenes in
+    30 seconds. We demonstrate the effectiveness of Diff4Splatacross video generation,
+    novel view synthesis, and geometry extraction, where it matches or surpasses optimization-based
+    methods for dynamic scene synthesis while being significantly more efficient.
+
+    '
+  project_page: https://paulpanwang.github.io/Diff4Splat/
+  paper: https://arxiv.org/pdf/2511.00503.pdf
+  code: https://github.com/paulpanwang/Diff4Splat
+  video: https://www.youtube.com/watch?v=IZKt-pvCLd0
+  tags:
+  - Code
+  - Diffusion
+  - Dynamic
+  - Feed-Forward
+  - Gaussian Video
+  - Project
+  - Video
+  - Virtual Reality
+  - World Generation
+  thumbnail: assets/thumbnails/pan2025diff4splat.jpg
+  publication_date: '2025-11-01T11:16:25+00:00'
+  date_source: arxiv
 - id: chang2025meshsplat
   title: 'MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian
     Splatting'
