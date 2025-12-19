@@ -108,6 +108,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [SPZ Converter](https://github.com/stytim/spz) - SPZ conversion tool
 - [gsbox Converter](https://github.com/gotoeasy/gsbox) - PLY SPLAT SPZ SPX conversion tool
 - [SplatTransform](https://github.com/playcanvas/splat-transform) - CLI tool for converting and editing splats
+- [GaussForge](https://github.com/gotoeasy/gsbox) - C++/WASM-based conversion between PLY, SPZ, SPLAT, and KSPLAT.
 
 ### Development Tools
 
