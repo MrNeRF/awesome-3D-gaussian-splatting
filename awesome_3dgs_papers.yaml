@@ -25,12 +25,8 @@
   code: https://github.com/fastgs/FastGS
   video: null
   tags:
-  - Acceleration
   - Code
-  - Densification
-  - Dynamic
-  - Project
-  - Sparse
+  - Compression
   thumbnail: assets/thumbnails/ren2025fastgs.jpg
   publication_date: '2025-11-06T11:21:16+00:00'
   date_source: arxiv
@@ -139,6 +135,41 @@
   - Language Embedding
   thumbnail: assets/thumbnails/zhu2025objectgs.jpg
   publication_date: '2025-07-21T10:06:23+00:00'
+  date_source: arxiv
+- id: wang2025adaptive
+  title: Adaptive Voxelization for Transform coding of 3D Gaussian splatting data
+  authors: Chenjunjie Wang, Shashank N. Sridhara, Eduardo Pavez, Antonio Ortega, Cheng
+    Chang
+  year: '2025'
+  abstract: 'We present a novel compression framework for 3D Gaussian splatting (3DGS)
+    data that leverages transform coding tools originally developed for point clouds.
+    Contrary to existing 3DGS compression methods, our approach can produce compressed
+    3DGS models at multiple bitrates in a computationally efficient way. Point cloud
+    voxelization is a discretization technique that point cloud codecs use to improve
+    coding efficiency while enabling the use of fast transform coding algorithms.
+    We propose an adaptive voxelization algorithm tailored to 3DGS data, to avoid
+    the inefficiencies introduced by uniform voxelization used in point cloud codecs.
+    We ensure the positions of larger volume Gaussians are represented at high resolution,
+    as these significantly impact rendering quality. Meanwhile, a low-resolution representation
+    is used for dense regions with smaller Gaussians, which have a relatively lower
+    impact on rendering quality. This adaptive voxelization approach significantly
+    reduces the number of Gaussians and the bitrate required to encode the 3DGS data.
+    After voxelization, many Gaussians are moved or eliminated. Thus, we propose to
+    fine-tune/recolor the remaining 3DGS attributes with an initialization that can
+    reduce the amount of retraining required. Experimental results on pre-trained
+    datasets show that our proposed compression framework outperforms existing methods.
+
+    '
+  project_page: null
+  paper: https://arxiv.org/pdf/2506.00271.pdf
+  code: https://github.com/STAC-USC/3DGS_Compression_Adaptive_Voxelization
+  video: https://www.youtube.com/watch?v=o92Bj0k1izA
+  tags:
+  - Code
+  - Compression
+  - Video
+  thumbnail: assets/thumbnails/wang2025adaptive.jpg
+  publication_date: '2025-05-30T22:12:33+00:00'
   date_source: arxiv
 - id: howil2025clipgaussian
   title: 'CLIPGaussian: Universal and Multimodal Style Transfer Based on Gaussian
