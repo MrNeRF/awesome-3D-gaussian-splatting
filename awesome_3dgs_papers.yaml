@@ -73,6 +73,38 @@
   thumbnail: assets/thumbnails/pan2025diff4splat.jpg
   publication_date: '2025-11-01T11:16:25+00:00'
   date_source: arxiv
+- id: xin2025learning
+  title: Learning Unified Representation of 3D Gaussian Splatting
+  authors: Yuelin Xin, Yuheng Liu, Xiaohui Xie, Xinke Li
+  year: '2025'
+  abstract: 'A well-designed vectorized representation is crucial for the learning
+    systems natively based on 3D Gaussian Splatting. While 3DGS enables efficient
+    and explicit 3D reconstruction, its parameter-based representation remains hard
+    to learn as features, especially for neural-network-based models. Directly feeding
+    raw Gaussian parameters into learning frameworks fails to address the non-unique
+    and heterogeneous nature of the Gaussian parameterization, yielding highly data-dependent
+    models. This challenge motivates us to explore a more principled approach to represent
+    3D Gaussian Splatting in neural networks that preserves the underlying color and
+    geometric structure while enforcing unique mapping and channel homogeneity. In
+    this paper, we propose an embedding representation of 3DGS based on continuous
+    submanifold fields that encapsulate the intrinsic information of Gaussian primitives,
+    thereby benefiting the learning of 3DGS.
+
+    '
+  project_page: https://cilix-ai.github.io/gs-embedding-page/
+  paper: https://arxiv.org/pdf/2509.22917.pdf
+  code: https://github.com/cilix-ai/gs-embedding
+  video: null
+  tags:
+  - Code
+  - Compression
+  - Feed-Forward
+  - Point Cloud
+  - Project
+  - Segmentation
+  thumbnail: assets/thumbnails/xin2025learning.jpg
+  publication_date: '2025-09-26T20:44:59+00:00'
+  date_source: arxiv
 - id: chang2025meshsplat
   title: 'MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian
     Splatting'
