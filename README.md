@@ -62,7 +62,8 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Unity Plugin](https://github.com/aras-p/UnityGaussianSplatting)
 - [Unity Plugin (gsplat-unity)](https://github.com/wuyize25/gsplat-unity)
 - [Unity Plugin (DynGsplat-unity)](https://github.com/HiFi-Human/DynGsplat-unity) - For dynamic splattings
-- [Unreal Plugin](https://github.com/xverse-engine/XV3DGS-UEPlugin)
+- [Unreal Plugin (MLSLabsGaussianSplattingRenderer-UE) ](https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE))
+- [Unreal Plugin (XV3DGS-UEPlugin)](https://github.com/xverse-engine/XV3DGS-UEPlugin)
 - [PlayCanvas Engine](https://github.com/playcanvas/engine)
 
 ### Web Viewers
