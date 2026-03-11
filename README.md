@@ -76,6 +76,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D)
 - [PlayCanvas Model Viewer](https://github.com/playcanvas/model-viewer)
 - [SuperSplat Viewer](https://github.com/playcanvas/supersplat-viewer)
+- [Polyvia3D Splat Viewer](https://polyvia3d.com/splat-viewer/ply) - Browser-based viewer supporting PLY, SPLAT, SPZ, and KSPLAT formats with format conversion.
 
 **WebGPU**
 
