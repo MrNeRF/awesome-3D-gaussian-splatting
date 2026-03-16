@@ -1427,7 +1427,31 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="ren2025fastgs" data-title="FastGS: Training 3D Gaussian Splatting in 100 Seconds" data-authors="Shiwei Ren, Tianci Wen, Yongchun Fang, Biao Lu" data-year="2025" data-tags='["Acceleration", "Code", "Densification", "Dynamic", "Project", "Sparse"]'>
+            <div class="paper-row" data-id="lee2025legoslam" data-title="LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM" data-authors="Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo Yu" data-year="2025" data-tags='["SLAM", "Language Embedding", "Robotics", "Segmentation", "Code", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'lee2025legoslam', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/lee2025legoslam.jpg" data-fallback="None" alt="Paper thumbnail for LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo Yu</p>
+      <div class="paper-tags"><span class="paper-tag">SLAM</span>
+<span class="paper-tag">Language Embedding</span>
+<span class="paper-tag">Robotics</span>
+<span class="paper-tag">Segmentation</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2511.16144.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://lab-of-ai-and-robotics.github.io/LEGO-SLAM/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/Lab-of-AI-and-Robotics/LEGO-SLAM" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent advances in 3D Gaussian Splatting (3DGS) have enabled Simultaneous Localization and Mapping (SLAM) systems to build photorealistic maps. However, these maps lack the open-vocabulary semantic understanding required for advanced robotic interaction. Integrating language features into SLAM remains a significant challenge, as storing high-dimensional features demands excessive memory and rendering overhead, while existing methods with static models lack adaptability for novel environments. To address these limitations, we propose LEGO-SLAM (Language-Embedded Gaussian Optimization SLAM), the first framework to achieve real-time, open-vocabulary mapping within a 3DGS-based SLAM system. At the core of our method is a scene-adaptive encoder-decoder that distills high-dimensional language embeddings into a compact 16-dimensional feature space. This design reduces the memory per Gaussian and accelerates rendering, enabling real-time performance. Unlike static approaches, our encoder adapts online to unseen scenes. These compact features also enable a language-guided pruning strategy that identifies semantic redundancy, reducing the map's Gaussian count by over 60% while maintaining rendering quality. Furthermore, we introduce a language-based loop detection approach that reuses these mapping features, eliminating the need for a separate detection model. Extensive experiments demonstrate that LEGO-SLAM achieves competitive mapping quality and tracking accuracy, all while providing open-vocabulary capabilities at 15 FPS.</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="ren2025fastgs" data-title="FastGS: Training 3D Gaussian Splatting in 100 Seconds" data-authors="Shiwei Ren, Tianci Wen, Yongchun Fang, Biao Lu" data-year="2025" data-tags='["Acceleration", "Code", "Densification", "Dynamic", "Project", "Sparse"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'ren2025fastgs', this)">
     <div class="paper-number"></div>
