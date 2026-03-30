@@ -1,3 +1,40 @@
+- id: lee2025legoslam
+  title: 'LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM'
+  authors: Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo
+    Yu
+  year: '2025'
+  abstract: Recent advances in 3D Gaussian Splatting (3DGS) have enabled Simultaneous
+    Localization and Mapping (SLAM) systems to build photorealistic maps. However,
+    these maps lack the open-vocabulary semantic understanding required for advanced
+    robotic interaction. Integrating language features into SLAM remains a significant
+    challenge, as storing high-dimensional features demands excessive memory and rendering
+    overhead, while existing methods with static models lack adaptability for novel
+    environments. To address these limitations, we propose LEGO-SLAM (Language-Embedded
+    Gaussian Optimization SLAM), the first framework to achieve real-time, open-vocabulary
+    mapping within a 3DGS-based SLAM system. At the core of our method is a scene-adaptive
+    encoder-decoder that distills high-dimensional language embeddings into a compact
+    16-dimensional feature space. This design reduces the memory per Gaussian and
+    accelerates rendering, enabling real-time performance. Unlike static approaches,
+    our encoder adapts online to unseen scenes. These compact features also enable
+    a language-guided pruning strategy that identifies semantic redundancy, reducing
+    the map's Gaussian count by over 60% while maintaining rendering quality. Furthermore,
+    we introduce a language-based loop detection approach that reuses these mapping
+    features, eliminating the need for a separate detection model. Extensive experiments
+    demonstrate that LEGO-SLAM achieves competitive mapping quality and tracking accuracy,
+    all while providing open-vocabulary capabilities at 15 FPS.
+  project_page: https://lab-of-ai-and-robotics.github.io/LEGO-SLAM/
+  paper: https://arxiv.org/pdf/2511.16144.pdf
+  code: https://github.com/Lab-of-AI-and-Robotics/LEGO-SLAM
+  video: null
+  tags:
+  - SLAM
+  - Language Embedding
+  - Robotics
+  - Segmentation
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/lee2025legoslam.jpg
+  publication_date: '2025-11-20T00:00:00+00:00'
 - id: ren2025fastgs
   title: 'FastGS: Training 3D Gaussian Splatting in 100 Seconds'
   authors: Shiwei Ren, Tianci Wen, Yongchun Fang, Biao Lu
@@ -5623,6 +5660,34 @@
   - Video
   thumbnail: assets/thumbnails/jiang2024dualgs.jpg
   publication_date: '2024-09-12T18:33:13+00:00'
+- id: safadoust2024selfevolving
+  title: Self-Evolving Depth-Supervised 3D Gaussian Splatting from Rendered Stereo
+    Pairs
+  authors: Sadra Safadoust, Fabio Tosi, Fatma Güney, Matteo Poggi
+  year: '2024'
+  abstract: '3D Gaussian Splatting (GS) significantly struggles to accurately represent
+    the underlying 3D scene geometry, resulting in inaccuracies and floating artifacts
+    when rendering depth maps. In this paper, we address this limitation, undertaking
+    a comprehensive analysis of the integration of depth priors throughout the optimization
+    process of Gaussian primitives, and present a novel strategy for this purpose.
+    This latter dynamically exploits depth cues from a readily available stereo network,
+    processing virtual stereo pairs rendered by the GS model itself during training
+    and achieving consistent self-improvement of the scene representation. Experimental
+    results on three popular datasets, breaking ground as the first to assess depth
+    accuracy for these models, validate our findings.
+
+    '
+  project_page: https://kuis-ai.github.io/StereoGS/
+  paper: https://arxiv.org/pdf/2409.07456.pdf
+  code: https://github.com/sadrasafa/StereoGS
+  video: null
+  tags:
+  - Code
+  - Project
+  - Stereo
+  thumbnail: assets/thumbnails/safadoust2024selfevolving.jpg
+  publication_date: '2024-09-11T17:59:58+00:00'
+  date_source: arxiv
 - id: liao2024fisheyegs
   title: 'Fisheye-GS: Lightweight and Extensible Gaussian Splatting Module for Fisheye
     Cameras'
@@ -15734,40 +15799,3 @@
   - Project
   thumbnail: assets/thumbnails/blattmann2023align.jpg
   publication_date: '2023-04-18T08:30:32+00:00'
-- id: lee2025legoslam
-  title: 'LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM'
-  authors: Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo
-    Yu
-  year: '2025'
-  abstract: 'Recent advances in 3D Gaussian Splatting (3DGS) have enabled Simultaneous
-    Localization and Mapping (SLAM) systems to build photorealistic maps. However,
-    these maps lack the open-vocabulary semantic understanding required for advanced
-    robotic interaction. Integrating language features into SLAM remains a significant
-    challenge, as storing high-dimensional features demands excessive memory and rendering
-    overhead, while existing methods with static models lack adaptability for novel
-    environments. To address these limitations, we propose LEGO-SLAM (Language-Embedded
-    Gaussian Optimization SLAM), the first framework to achieve real-time, open-vocabulary
-    mapping within a 3DGS-based SLAM system. At the core of our method is a scene-adaptive
-    encoder-decoder that distills high-dimensional language embeddings into a compact
-    16-dimensional feature space. This design reduces the memory per Gaussian and accelerates
-    rendering, enabling real-time performance. Unlike static approaches, our encoder
-    adapts online to unseen scenes. These compact features also enable a language-guided
-    pruning strategy that identifies semantic redundancy, reducing the map''s Gaussian
-    count by over 60% while maintaining rendering quality. Furthermore, we introduce
-    a language-based loop detection approach that reuses these mapping features, eliminating
-    the need for a separate detection model. Extensive experiments demonstrate that
-    LEGO-SLAM achieves competitive mapping quality and tracking accuracy, all while
-    providing open-vocabulary capabilities at 15 FPS.'
-  project_page: https://lab-of-ai-and-robotics.github.io/LEGO-SLAM/
-  paper: https://arxiv.org/pdf/2511.16144.pdf
-  code: https://github.com/Lab-of-AI-and-Robotics/LEGO-SLAM
-  video: null
-  tags:
-  - SLAM
-  - Language Embedding
-  - Robotics
-  - Segmentation
-  - Code
-  - Project
-  thumbnail: assets/thumbnails/lee2025legoslam.jpg
-  publication_date: '2025-11-20T00:00:00+00:00'
