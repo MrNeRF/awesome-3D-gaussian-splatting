@@ -209,6 +209,35 @@
   thumbnail: assets/thumbnails/zhu2025objectgs.jpg
   publication_date: '2025-07-21T10:06:23+00:00'
   date_source: arxiv
+- id: safadoust2025warprf
+  title: 'WarpRF: Multi-View Consistency for Training-Free Uncertainty Quantification
+    and Applications in Radiance Fields'
+  authors: Sadra Safadoust, Fabio Tosi, Fatma Güney, Matteo Poggi
+  year: '2025'
+  abstract: 'We introduce WarpRF, a training-free general-purpose framework for quantifying
+    the uncertainty of radiance fields. Built upon the assumption that photometric
+    and geometric consistency should hold among images rendered by an accurate model,
+    WarpRF quantifies its underlying uncertainty from an unseen point of view by leveraging
+    backward warping across viewpoints, projecting reliable renderings to the unseen
+    viewpoint and measuring the consistency with images rendered there. WarpRF is
+    simple and inexpensive, does not require any training, and can be applied to any
+    radiance field implementation for free. WarpRF excels at both uncertainty quantification
+    and downstream tasks, e.g., active view selection and active mapping, outperforming
+    any existing method tailored to specific frameworks.
+
+    '
+  project_page: https://kuis-ai.github.io/WarpRF/
+  paper: https://arxiv.org/pdf/2506.22433.pdf
+  code: https://github.com/sadrasafa/WarpRF/
+  video: https://www.youtube.com/watch?v=k3XDwqlY2yQ
+  tags:
+  - Code
+  - Project
+  - Uncertainty
+  - Video
+  thumbnail: assets/thumbnails/safadoust2025warprf.jpg
+  publication_date: '2025-06-27T17:59:13+00:00'
+  date_source: arxiv
 - id: wang2025adaptive
   title: Adaptive Voxelization for Transform coding of 3D Gaussian splatting data
   authors: Chenjunjie Wang, Shashank N. Sridhara, Eduardo Pavez, Antonio Ortega, Cheng
