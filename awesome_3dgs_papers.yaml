@@ -1,3 +1,31 @@
+- id: na2026glint
+  title: 'GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport'
+  authors: Youngju Na, Jaeseong Yun, Soohyun Ryu, Hyunsu Kim, Sung-Eui Yoon, Suyong
+    Yeon
+  year: '2026'
+  abstract: 'While 3D Gaussian splatting has emerged as a powerful paradigm, it fundamentally
+    fails to model transparency such as glass panels. The core challenge lies in decoupling
+    the intertwined radiance contributions from transparent interfaces and the transmitted
+    geometry observed through the glass. We present GLINT, a framework that models
+    scene-scale transparency through explicit decomposed Gaussian representation.
+    GLINT reconstructs the primary interface and models reflected and transmitted
+    radiance separately, enabling consistent radiance transport. During optimization,
+    GLINT bootstraps transparency localization from geometry-separation cues induced
+    by the decomposition, together with geometry and material priors from a pre-trained
+    video relighting model. Extensive experiments demonstrate consistent improvements
+    over prior methods for reconstructing complex transparent scenes.
+
+    '
+  project_page: https://youngju-na.github.io/GLINT/
+  paper: https://arxiv.org/pdf/2603.26181v1.pdf
+  code: https://github.com/youngju-na/GLINT
+  video: null
+  tags:
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/na2026glint.jpg
+  publication_date: '2026-03-27T08:52:12+00:00'
+  date_source: arxiv
 - id: lee2025legoslam
   title: 'LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM'
   authors: Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo
