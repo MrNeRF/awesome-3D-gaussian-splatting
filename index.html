@@ -1362,7 +1362,8 @@ h1 {
             </div>
             <select id="yearFilter" class="filter-select">
                 <option value="all">All Years</option>
-                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+<option value="2025">2025</option>
 <option value="2024">2024</option>
 <option value="2023">2023</option>
             </select>
@@ -1427,7 +1428,28 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="lee2025legoslam" data-title="LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM" data-authors="Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo Yu" data-year="2025" data-tags='["SLAM", "Language Embedding", "Robotics", "Segmentation", "Code", "Project"]'>
+            <div class="paper-row" data-id="na2026glint" data-title="GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport" data-authors="Youngju Na, Jaeseong Yun, Soohyun Ryu, Hyunsu Kim, Sung-Eui Yoon, Suyong Yeon" data-year="2026" data-tags='["Code", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'na2026glint', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/na2026glint.jpg" data-fallback="None" alt="Paper thumbnail for GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport <span class="paper-year">(2026)</span></h2>
+      <p class="paper-authors">Youngju Na, Jaeseong Yun, Soohyun Ryu, Hyunsu Kim, Sung-Eui Yoon, Suyong Yeon</p>
+      <div class="paper-tags"><span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2603.26181v1.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://youngju-na.github.io/GLINT/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/youngju-na/GLINT" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">While 3D Gaussian splatting has emerged as a powerful paradigm, it fundamentally fails to model transparency such as glass panels. The core challenge lies in decoupling the intertwined radiance contributions from transparent interfaces and the transmitted geometry observed through the glass. We present GLINT, a framework that models scene-scale transparency through explicit decomposed Gaussian representation. GLINT reconstructs the primary interface and models reflected and transmitted radiance separately, enabling consistent radiance transport. During optimization, GLINT bootstraps transparency localization from geometry-separation cues induced by the decomposition, together with geometry and material priors from a pre-trained video relighting model. Extensive experiments demonstrate consistent improvements over prior methods for reconstructing complex transparent scenes.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="lee2025legoslam" data-title="LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM" data-authors="Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo Yu" data-year="2025" data-tags='["SLAM", "Language Embedding", "Robotics", "Segmentation", "Code", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'lee2025legoslam', this)">
     <div class="paper-number"></div>
