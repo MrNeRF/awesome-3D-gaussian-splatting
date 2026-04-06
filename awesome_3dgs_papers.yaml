@@ -1,3 +1,40 @@
+- id: zhang2026flashmono
+  title: 'Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM'
+  authors: Zicheng Zhang, Ke Wu, Xiangting Meng, Keyu Liu, Jieru Zhao, Wenchao Ding
+  year: '2026'
+  abstract: 'Monocular 3D Gaussian Splatting SLAM suffers from critical limitations
+    in time efficiency, geometric accuracy, and multi-view consistency. These issues
+    stem from the time-consuming Train-from-Scratch optimization and the lack of inter-frame
+    scale consistency from single-frame geometry priors. We contend that a feed-forward
+    paradigm, leveraging multi-frame context to predict Gaussian attributes directly,
+    is crucial for addressing these challenges. We present Flash-Mono, a system composed
+    of three core modules: a feed-forward prediction frontend, a 2D Gaussian Splatting
+    mapping backend, and an efficient hidden-state-based loop closure module. We trained
+    a recurrent feed-forward frontend model that progressively aggregates multi-frame
+    visual features into a hidden state via cross attention and jointly predicts camera
+    poses and per-pixel Gaussian properties. By directly predicting Gaussian attributes,
+    our method bypasses the burdensome per-frame optimization required in optimization-based
+    GS-SLAM, achieving a 10x speedup while ensuring high-quality rendering. The power
+    of our recurrent architecture extends beyond efficient prediction. The hidden states
+    act as compact submap descriptors, facilitating efficient loop closure and global
+    Sim(3) optimization to mitigate the long-standing challenge of drift. For enhanced
+    geometric fidelity, we replace conventional 3D Gaussian ellipsoids with 2D Gaussian
+    surfels. Extensive experiments demonstrate that Flash-Mono achieves state-of-the-art
+    performance in both tracking and mapping quality, highlighting its potential for
+    embodied perception and real-time reconstruction applications.
+
+    '
+  project_page: https://victkk.github.io/flash-mono
+  paper: https://arxiv.org/pdf/2604.03092v1.pdf
+  code: null
+  video: null
+  tags:
+  - Feed-Forward
+  - Project
+  - SLAM
+  thumbnail: assets/thumbnails/zhang2026flashmono.jpg
+  publication_date: '2026-04-03T15:17:23+00:00'
+  date_source: arxiv
 - id: na2026glint
   title: 'GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport'
   authors: Youngju Na, Jaeseong Yun, Soohyun Ryu, Hyunsu Kim, Sung-Eui Yoon, Suyong
