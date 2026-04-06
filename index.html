@@ -1428,7 +1428,31 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="zhang2026flashmono" data-title="Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM" data-authors="Zicheng Zhang, Ke Wu, Xiangting Meng, Keyu Liu, Jieru Zhao, Wenchao Ding" data-year="2026" data-tags='["Feed-Forward", "SLAM"]'>
+            <div class="paper-row" data-id="kwon2025instruct4dgs" data-title="Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation" data-authors="Joohyun Kwon, Hanbyel Cho, Junmo Kim" data-year="2025" data-tags='["Dynamic", "Diffusion", "Video", "Rendering", "Editing", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'kwon2025instruct4dgs', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/kwon2025instruct4dgs.jpg" data-fallback="None" alt="Paper thumbnail for Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Joohyun Kwon, Hanbyel Cho, Junmo Kim</p>
+      <div class="paper-tags"><span class="paper-tag">Dynamic</span>
+<span class="paper-tag">Diffusion</span>
+<span class="paper-tag">Video</span>
+<span class="paper-tag">Rendering</span>
+<span class="paper-tag">Editing</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2502.02091.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://hanbyelcho.info/instruct-4dgs/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Recent 4D dynamic scene editing methods require editing thousands of 2D images used for dynamic scene synthesis and updating the entire scene with additional training loops, resulting in several hours of processing to edit a single dynamic scene. Therefore, these methods are not scalable with respect to the temporal dimension of the dynamic scene (i.e., the number of timesteps). In this work, we propose Instruct-4DGS, an efficient dynamic scene editing method that is more scalable in terms of temporal dimension. To achieve computational efficiency, we leverage a 4D Gaussian representation that models a 4D dynamic scene by combining static 3D Gaussians with a Hexplane-based deformation field, which captures dynamic information. We then perform editing solely on the static 3D Gaussians, which is the minimal but sufficient component required for visual editing. To resolve the misalignment between the edited 3D Gaussians and the deformation field, which may arise from the editing process, we introduce a refinement stage using a score distillation mechanism. Extensive editing results demonstrate that Instruct-4DGS is efficient, reducing editing time by more than half compared to existing methods while achieving high-quality edits that better follow user instructions. Code and results: https://hanbyelcho.info/instruct-4dgs/
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="zhang2026flashmono" data-title="Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM" data-authors="Zicheng Zhang, Ke Wu, Xiangting Meng, Keyu Liu, Jieru Zhao, Wenchao Ding" data-year="2026" data-tags='["Feed-Forward", "SLAM"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang2026flashmono', this)">
     <div class="paper-number"></div>
