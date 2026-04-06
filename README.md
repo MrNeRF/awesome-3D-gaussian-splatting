@@ -7,6 +7,7 @@
 
 </div>
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for 3D development workflow orchestration, automated pipeline management, and multi-agent coordination. MIT licensed.
 ## Contents
 
 - [Papers &amp; Documentation](#papers--documentation)
