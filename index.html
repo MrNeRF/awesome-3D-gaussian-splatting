@@ -1428,7 +1428,27 @@ h1 {
 
         <!-- Paper Cards -->
         <div class="papers-grid">
-            <div class="paper-row" data-id="na2026glint" data-title="GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport" data-authors="Youngju Na, Jaeseong Yun, Soohyun Ryu, Hyunsu Kim, Sung-Eui Yoon, Suyong Yeon" data-year="2026" data-tags='["Code", "Project"]'>
+            <div class="paper-row" data-id="zhang2026flashmono" data-title="Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM" data-authors="Zicheng Zhang, Ke Wu, Xiangting Meng, Keyu Liu, Jieru Zhao, Wenchao Ding" data-year="2026" data-tags='["Feed-Forward", "SLAM"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'zhang2026flashmono', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/zhang2026flashmono.jpg" data-fallback="None" alt="Paper thumbnail for Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM <span class="paper-year">(2026)</span></h2>
+      <p class="paper-authors">Zicheng Zhang, Ke Wu, Xiangting Meng, Keyu Liu, Jieru Zhao, Wenchao Ding</p>
+      <div class="paper-tags"><span class="paper-tag">Feed-Forward</span>
+<span class="paper-tag">SLAM</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/pdf/2604.03092v1.pdf" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://victkk.github.io/flash-mono" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency. These issues stem from the time-consuming Train-from-Scratch optimization and the lack of inter-frame scale consistency from single-frame geometry priors. We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges. We present Flash-Mono, a system composed of three core modules: a feed-forward prediction frontend, a 2D Gaussian Splatting mapping backend, and an efficient hidden-state-based loop closure module. We trained a recurrent feed-forward frontend model that progressively aggregates multi-frame visual features into a hidden state via cross attention and jointly predicts camera poses and per-pixel Gaussian properties. By directly predicting Gaussian attributes, our method bypasses the burdensome per-frame optimization required in optimization-based GS-SLAM, achieving a 10x speedup while ensuring high-quality rendering. The power of our recurrent architecture extends beyond efficient prediction. The hidden states act as compact submap descriptors, facilitating efficient loop closure and global Sim(3) optimization to mitigate the long-standing challenge of drift. For enhanced geometric fidelity, we replace conventional 3D Gaussian ellipsoids with 2D Gaussian surfels. Extensive experiments demonstrate that Flash-Mono achieves state-of-the-art performance in both tracking and mapping quality, highlighting its potential for embodied perception and real-time reconstruction applications.
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="na2026glint" data-title="GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport" data-authors="Youngju Na, Jaeseong Yun, Soohyun Ryu, Hyunsu Kim, Sung-Eui Yoon, Suyong Yeon" data-year="2026" data-tags='["Code", "Project"]'>
   <div class="paper-card">
     <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'na2026glint', this)">
     <div class="paper-number"></div>
