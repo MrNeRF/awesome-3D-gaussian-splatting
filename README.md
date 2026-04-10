@@ -101,6 +101,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 ## Tools & Utilities
 
+- [Gitstar](https://dev.gitstar.ai?utm_medium=github_readme&utm_source=awesome_list&utm_campaign=MrNeRF_awesome-3D-gaussian-splatting) - Follow developers on GitHub and get a feed of what they star and build.
 ### Data Processing
 
 - [Kapture](https://github.com/naver/kapture) - Unified data format for visual localization
