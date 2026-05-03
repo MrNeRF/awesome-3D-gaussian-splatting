@@ -47,6 +47,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 | [OpenSplat](https://github.com/pierotofy/OpenSplat)                         | C++/CPU/GPU | AGPL-3.0   | Cross-platform solution         |
 | [Grendel](https://github.com/nyu-systems/Grendel-GS)                        | Python/CUDA | Apache-2.0 | Distributed computing focus     |
 | [Warp 3DGS](https://github.com/guoriyue/3dgs-warp-scratch)                  | Warp/Python | AGPL-3.0   | Warp-based implementation       |
+| [RI3D](https://github.com/Asus-Monitor/ri3d-impl)                           | Python/CUDA | Unlicense  | Few-shot gaussian splatting pipeline |
 
 ### Frameworks
 
