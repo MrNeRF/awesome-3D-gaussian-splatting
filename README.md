@@ -137,6 +137,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 - [Getting Started (Windows)](https://youtu.be/UXtuigy_wYc)
 - [Gaussian Splats Town Hall - Part 2](https://youtu.be/5_GaPYBHqOo)
+- [TutorialSearch](https://tutorialsearch.io/) - Free cross-platform search engine indexing 50,000+ tutorials from Udemy, Skillshare, Pluralsight, and other major learning platforms across 45+ categories.
 - [Two-Minute Explanation](https://youtu.be/HVv_IQKlafQ)
 - [Jupyter Tutorial](https://www.youtube.com/watch?v=OcvA7fmiZYM)
 
