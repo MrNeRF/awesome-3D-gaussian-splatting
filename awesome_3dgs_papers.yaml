@@ -96,7 +96,7 @@
     feed-forward models. Extensive experimental results demonstrate that SparseSplat
     can achieve state-of-the-art rendering quality with only 22% of the Gaussians and
     maintain reasonable rendering quality with only 1.5% of the Gaussians.
-    
+
     '
   project_page: https://victkk.github.io/SparseSplat-page/
   paper: https://arxiv.org/pdf/2604.03069v1.pdf
