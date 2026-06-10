@@ -111,6 +111,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [gsbox Converter](https://github.com/gotoeasy/gsbox) - PLY SPLAT SPZ SPX conversion tool
 - [SplatTransform](https://github.com/playcanvas/splat-transform) - CLI tool for converting and editing splats
 - [GaussForge](https://github.com/3dgscloud/GaussForge) - C++/WASM-based conversion between PLY, SPZ, SPLAT, and KSPLAT.
+- [splatreg](https://github.com/Archerkattri/splatreg) - pip-installable splat registration: align & merge two 3DGS scans into one SE(3)/Sim(3) frame (recovers scale), CLI + pure-PyTorch API, no manual gizmo.
 
 ### Development Tools
 
