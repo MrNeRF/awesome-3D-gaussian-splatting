@@ -117,6 +117,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 - [GSOPs for Houdini](https://github.com/david-rhodes/GSOPs) - Houdini integration tools
 - [camorph](https://github.com/Fraunhofer-IIS/camorph) - Camera parameter conversion
+- [SplatMart](https://www.splatmart.com) - Marketplace for buying and selling Gaussian splat scenes and assets (PLY/SOGS/SPZ)
 - [SuperSplat](https://github.com/playcanvas/supersplat) - Browser-based 3DGS editor
 
 ## Learning Resources
