@@ -32,7 +32,7 @@ allowed_tags = [
     "Medicine", "Meshing", "Misc", "Monocular", "Perspective-correct", "Object Detection", 
     "Optimization", "Physics", "Point Cloud", "Poses", "Project", "Ray Tracing", 
     "Rendering", "Relight", "Review", "Robotics", "Segmentation", "SLAM", "Sparse", "Super Resolution",
-    "Stereo", "Style Transfer", "Texturing", "Transformer", "Uncertainty", "Video", 
+    "Stereo", "Style Transfer", "Texturing", "Transformer", "Uncertainty", "Video", "Wireless",
     "Virtual Reality", "World Generation"
 ]
 

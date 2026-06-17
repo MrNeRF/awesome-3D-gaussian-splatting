@@ -57,6 +57,34 @@
   thumbnail: assets/thumbnails/na2026glint.jpg
   publication_date: '2026-03-27T08:52:12+00:00'
   date_source: arxiv
+- id: xue2026tangent
+  title: 'Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent
+    Gaussian Splatting'
+  authors: Ye Xue, Yiheng Wang, Xinhua Shao, Qi Yan, Shutao Zhang, Tsung-Hui Chang
+  year: '2026'
+  abstract: >-
+    Accurate channel state information is critical for modern wireless communication
+    systems, yet obtaining it at every location is practically infeasible. We propose
+    PC-TGS, the first framework to extrapolate channel Angular Power Spectrum (APS)
+    to unmeasured outdoor locations by fusing sparse RSRP measurements with dense
+    LiDAR point cloud geometry. PC-TGS reimagines the 3D Gaussian Splatting pipeline
+    for the electromagnetic domain: complex spherical harmonics encode channel angular
+    statistics, tangent-plane projection replaces splatting onto the camera image
+    plane, and explicit geometric path loss models capture distance-dependent propagation
+    effects. Published in IEEE Transactions on Wireless Communications, 2026.
+  project_page: https://chenjiadie.github.io/PC-TGS/
+  paper: https://doi.org/10.1109/TWC.2026.3696997
+  code: https://github.com/yeehengwang/HUAWEI-RF-3DGS-Project
+  video: null
+  tags:
+  - Wireless
+  - Point Cloud
+  - Lidar
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/xue2026tangent.jpg
+  publication_date: '2026-03-01T00:00:00'
+  date_source: estimated
 - id: lee2025legoslam
   title: 'LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM'
   authors: Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo
@@ -531,6 +559,33 @@
   - Segmentation
   thumbnail: assets/thumbnails/yu2025persistent.jpg
   publication_date: '2025-03-07T07:20:25+00:00'
+  date_source: arxiv
+- id: wang2025radcloudsplat
+  title: 'RadCloudSplat: Scatterer-Driven 3D Gaussian Splatting with Point-Cloud
+    Priors for Radiomap Extrapolation'
+  authors: Yiheng Wang, Ye Xue, Shutao Zhang, Hongmiao Fan, Tsung-Hui Chang
+  year: '2025'
+  abstract: Radiomap extrapolation -- predicting received signal strength at unobserved
+    locations -- is fundamental to wireless network planning and optimization. We
+    introduce RadCloudSplat, a framework that extends 3D Gaussian Splatting to the
+    radio frequency domain by treating environmental scatterers as electromagnetic
+    Gaussian primitives anchored on LiDAR point cloud geometry. Key innovations include
+    a Relaxed-Mean reparameterization for effective scatterer selection, a camera-free
+    3DGS projection mechanism replacing the perspective camera model with an MLP-based
+    rendering pipeline, and a recursive fine-tuning strategy for iterative refinement.
+    Accepted at IEEE INFOCOM 2026.
+  project_page: https://yeehengwang.github.io/RadCloudSplat/
+  paper: https://arxiv.org/abs/2502.12686
+  code: https://github.com/yeehengwang/RadCloudSplat
+  video: null
+  tags:
+  - Wireless
+  - Point Cloud
+  - Lidar
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/wang2025radcloudsplat.jpg
+  publication_date: '2025-02-18T00:00:00+00:00'
   date_source: arxiv
 - id: chacko2025lifting
   title: 'Lifting by Gaussians: A Simple, Fast and Flexible Method for 3D Instance
