@@ -84,7 +84,7 @@
     RSRP prediction performance compared to state-of-the-art baselines and faster
     inference time for APS extrapolation task.
   project_page: https://chenjiadie.github.io/PC-TGS/
-  paper: https://doi.org/10.1109/TWC.2026.3696997
+  paper: https://ieeexplore.ieee.org/document/11540378
   code: https://github.com/chenjiadie/PC-TGS
   video: null
   tags:
