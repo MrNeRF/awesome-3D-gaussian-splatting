@@ -84,7 +84,7 @@
     RSRP prediction performance compared to state-of-the-art baselines and faster
     inference time for APS extrapolation task.
   project_page: https://chenjiadie.github.io/PC-TGS/
-  paper: https://ieeexplore.ieee.org/document/11540378
+  paper: https://arxiv.org/abs/2606.18734
   code: https://github.com/chenjiadie/PC-TGS
   video: null
   tags:
@@ -94,8 +94,8 @@
   - Code
   - Project
   thumbnail: assets/thumbnails/xue2026tangent.jpg
-  publication_date: '2026-03'
-  date_source: estimated
+  publication_date: '2026-06-17T00:00:00+00:00'
+  date_source: arxiv
 - id: lee2025legoslam
   title: 'LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM'
   authors: Sibaek Lee, Seongbo Ha, Kyeongsu Kang, Joonyeol Choi, Seungjun Tak, Hyeonwoo
