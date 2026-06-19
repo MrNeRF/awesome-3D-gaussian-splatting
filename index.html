@@ -1423,6 +1423,7 @@ h1 {
 <div class="tag-filter" data-tag="Uncertainty">Uncertainty</div>
 <div class="tag-filter" data-tag="Video">Video</div>
 <div class="tag-filter" data-tag="Virtual Reality">Virtual Reality</div>
+<div class="tag-filter" data-tag="Wireless">Wireless</div>
 <div class="tag-filter" data-tag="World Generation">World Generation</div>
         </div>
 
@@ -1449,6 +1450,29 @@ h1 {
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Recent 4D dynamic scene editing methods require editing thousands of 2D images used for dynamic scene synthesis and updating the entire scene with additional training loops, resulting in several hours of processing to edit a single dynamic scene. Therefore, these methods are not scalable with respect to the temporal dimension of the dynamic scene (i.e., the number of timesteps). In this work, we propose Instruct-4DGS, an efficient dynamic scene editing method that is more scalable in terms of temporal dimension. To achieve computational efficiency, we leverage a 4D Gaussian representation that models a 4D dynamic scene by combining static 3D Gaussians with a Hexplane-based deformation field, which captures dynamic information. We then perform editing solely on the static 3D Gaussians, which is the minimal but sufficient component required for visual editing. To resolve the misalignment between the edited 3D Gaussians and the deformation field, which may arise from the editing process, we introduce a refinement stage using a score distillation mechanism. Extensive editing results demonstrate that Instruct-4DGS is efficient, reducing editing time by more than half compared to existing methods while achieving high-quality edits that better follow user instructions. Code and results: https://hanbyelcho.info/instruct-4dgs/
 </div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="xue2026tangent" data-title="Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent Gaussian Splatting" data-authors="Ye Xue, Yiheng Wang, Xinhua Shao, Qi Yan, Shutao Zhang, Tsung-Hui Chang" data-year="2026" data-tags='["Wireless", "Point Cloud", "Lidar", "Code", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'xue2026tangent', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/xue2026tangent.jpg" data-fallback="None" alt="Paper thumbnail for Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent Gaussian Splatting" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent Gaussian Splatting <span class="paper-year">(2026)</span></h2>
+      <p class="paper-authors">Ye Xue, Yiheng Wang, Xinhua Shao, Qi Yan, Shutao Zhang, Tsung-Hui Chang</p>
+      <div class="paper-tags"><span class="paper-tag">Wireless</span>
+<span class="paper-tag">Point Cloud</span>
+<span class="paper-tag">Lidar</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/abs/2606.18734" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://chenjiadie.github.io/PC-TGS/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/chenjiadie/PC-TGS" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Accurate, site-specific channel information is crucial for optimizing next-generation wireless networks. Among various approaches, localized statistical channel modeling (LSCM), which models the channel multipath angular power spectrum (APS) from the reference signal received power (RSRP) measurement, has emerged as a state-of-the-art method tailored for efficient network optimization. However, despite its effectiveness, LSCM cannot predict APS at the vast majority of locations where no measurements are available, which significantly restricts its applicability in large-scale, real-world scenarios. To address this challenge, we present point-cloud-assisted tangent Gaussian splatting (PC-TGS), the first framework to extrapolate APS to unmeasured outdoor grids by integrating sparse radio measurements with dense LiDAR-based geometry. PC-TGS represents environmental scatterers as anisotropic 3D Gaussians, initialized and refined through a relaxed-mean reparameterization of the raw point cloud. A tangent-plane projection accurately maps each Gaussian into the local angular domain, while a depth-aware electromagnetic splatting process aggregates their contributions. To ensure practical deployment, we derive a closed-form Gaussian-weighted average (GWA) for APS bin integration and provide a provable error bound. Evaluations on a LiDAR-scanned city-scale dataset demonstrate that PC-TGS achieves better APS and RSRP prediction performance compared to state-of-the-art baselines and faster inference time for APS extrapolation task.</div></div>
     </div>
   </div>
 </div>
@@ -1818,6 +1842,29 @@ h1 {
 <button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
 <div class="paper-abstract">Tracking and manipulating irregularly-shaped, previously unseen objects in dynamic environments is important for robotic applications in manufacturing, assembly, and logistics. Recently introduced Gaussian Splats efficiently model object geometry, but lack persistent state estimation for task-oriented manipulation. We present Persistent Object Gaussian Splat (POGS), a system that embeds semantics, self-supervised visual features, and object grouping features into a compact representation that can be continuously updated to estimate the pose of scanned objects. POGS updates object states without requiring expensive rescanning or prior CAD models of objects. After an initial multi-view scene capture and training phase, POGS uses a single stereo camera to integrate depth estimates along with self-supervised vision encoder features for object pose estimation. POGS supports grasping, reorientation, and natural language-driven manipulation by refining object pose estimates, facilitating sequential object reset operations with human-induced object perturbations and tool servoing, where robots recover tool pose despite tool perturbations of up to 30{\deg}. POGS achieves up to 12 consecutive successful object resets and recovers from 80% of in-grasp tool perturbations.
 </div></div>
+    </div>
+  </div>
+</div>
+<div class="paper-row" data-id="wang2025radcloudsplat" data-title="RadCloudSplat: Scatterer-Driven 3D Gaussian Splatting with Point-Cloud Priors for Radiomap Extrapolation" data-authors="Yiheng Wang, Ye Xue, Shutao Zhang, Hongmiao Fan, Tsung-Hui Chang" data-year="2025" data-tags='["Wireless", "Point Cloud", "Lidar", "Code", "Project"]'>
+  <div class="paper-card">
+    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, 'wang2025radcloudsplat', this)">
+    <div class="paper-number"></div>
+    <div class="paper-thumbnail">
+      <img data-src="assets/thumbnails/wang2025radcloudsplat.jpg" data-fallback="None" alt="Paper thumbnail for RadCloudSplat: Scatterer-Driven 3D Gaussian Splatting with Point-Cloud Priors for Radiomap Extrapolation" class="lazy" loading="lazy"/>
+    </div>
+    <div class="paper-content">
+      <h2 class="paper-title">RadCloudSplat: Scatterer-Driven 3D Gaussian Splatting with Point-Cloud Priors for Radiomap Extrapolation <span class="paper-year">(2025)</span></h2>
+      <p class="paper-authors">Yiheng Wang, Ye Xue, Shutao Zhang, Hongmiao Fan, Tsung-Hui Chang</p>
+      <div class="paper-tags"><span class="paper-tag">Wireless</span>
+<span class="paper-tag">Point Cloud</span>
+<span class="paper-tag">Lidar</span>
+<span class="paper-tag">Code</span>
+<span class="paper-tag">Project</span></div>
+      <div class="paper-links"><a href="https://arxiv.org/abs/2502.12686" class="paper-link" target="_blank" rel="noopener">📄 Paper</a>
+<a href="https://yeehengwang.github.io/RadCloudSplat/" class="paper-link" target="_blank" rel="noopener">🌐 Project</a>
+<a href="https://github.com/yeehengwang/RadCloudSplat" class="paper-link" target="_blank" rel="noopener">💻 Code</a>
+<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>
+<div class="paper-abstract">Radiomap represents the spatial distribution of wireless signal strength, critical for applications like network optimization and autonomous driving. However, constructing radiomap relies on measuring radio signal power across the entire system, which is costly in outdoor environments due to large network scales. We present RadSplatter, a framework that extends 3D Gaussian Splatting (3DGS) to radio frequencies for efficient and accurate radiomap extrapolation from sparse measurements. RadSplatter models environmental scatterers and radio paths using 3D Gaussians, capturing key factors of radio wave propagation. It employs a relaxed-mean (RM) scheme to reparameterize the positions of 3D Gaussians from noisy and dense 3D point clouds. A camera-free 3DGS-based projection is proposed to map 3D Gaussians onto 2D radio beam patterns. Furthermore, a regularized loss function and recursive fine-tuning using highly structured sparse measurements in real-world settings are applied to ensure robust generalization. Experiments on synthetic and real-world data show state-of-the-art extrapolation accuracy and execution speed. Accepted at IEEE INFOCOM 2026.</div></div>
     </div>
   </div>
 </div>
