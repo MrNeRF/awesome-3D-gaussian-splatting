@@ -111,6 +111,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [SplatTransform](https://github.com/playcanvas/splat-transform) - CLI tool for converting and editing splats
 - [GaussForge](https://github.com/3dgscloud/GaussForge) - C++/WASM-based conversion between PLY, SPZ, SPLAT, and KSPLAT.
 - [splatreg](https://github.com/Archerkattri/splatreg) - pip-installable splat registration: align & merge two 3DGS scans into one SE(3)/Sim(3) frame (recovers scale), CLI + pure-PyTorch API, no manual gizmo.
+- [AURA](https://github.com/Archerkattri/aura) - Calibrated per-splat confidence for 3DGS assets: held-out reliability labels, isotonic calibration, and a distribution-free conformal pruning certificate with a certified LOD ladder; exports via glTF/OpenUSD/SPZ (pip install aura-splat).
 
 ### Development Tools
 
