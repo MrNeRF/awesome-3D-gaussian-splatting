@@ -41,7 +41,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 | Implementation                                                           | Language    | License    | Description                     |
 | ------------------------------------------------------------------------ | ----------- | ---------- | ------------------------------- |
-| [LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio)              | C++/CUDA    | GPL-v3.0   | Train, inspect, and Edit        |
+| [LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) ([lichtfeld.io](https://lichtfeld.io)) | C++/CUDA    | GPL-v3.0   | Train, inspect, and Edit        |
 | [Taichi 3D GS](https://github.com/wanmeihuali/taichi_3d_gaussian_splatting) | Taichi      | Apache-2.0 | Taichi-based implementation     |
 | [Nerfstudio gsplat](https://github.com/nerfstudio-project/gsplat)           | Python/CUDA | Apache-2.0 | Integration with Nerfstudio     |
 | [OpenSplat](https://github.com/pierotofy/OpenSplat)                         | C++/CPU/GPU | AGPL-3.0   | Cross-platform solution         |
