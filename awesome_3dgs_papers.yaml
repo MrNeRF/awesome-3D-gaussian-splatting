@@ -1,3 +1,145 @@
+- id: kwon2025instruct4dgs
+  title: 'Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic
+    Separation'
+  authors: Joohyun Kwon, Hanbyel Cho, Junmo Kim
+  year: '2025'
+  abstract: 'Recent 4D dynamic scene editing methods require editing thousands of
+    2D images used for dynamic scene synthesis and updating the entire scene with
+    additional training loops, resulting in several hours of processing to edit a
+    single dynamic scene. Therefore, these methods are not scalable with respect to
+    the temporal dimension of the dynamic scene (i.e., the number of timesteps). In
+    this work, we propose Instruct-4DGS, an efficient dynamic scene editing method
+    that is more scalable in terms of temporal dimension. To achieve computational
+    efficiency, we leverage a 4D Gaussian representation that models a 4D dynamic
+    scene by combining static 3D Gaussians with a Hexplane-based deformation field,
+    which captures dynamic information. We then perform editing solely on the static
+    3D Gaussians, which is the minimal but sufficient component required for visual
+    editing. To resolve the misalignment between the edited 3D Gaussians and the deformation
+    field, which may arise from the editing process, we introduce a refinement stage
+    using a score distillation mechanism. Extensive editing results demonstrate that
+    Instruct-4DGS is efficient, reducing editing time by more than half compared to
+    existing methods while achieving high-quality edits that better follow user instructions.
+    Code and results: https://hanbyelcho.info/instruct-4dgs/
+
+    '
+  project_page: https://hanbyelcho.info/instruct-4dgs/
+  paper: https://arxiv.org/pdf/2502.02091.pdf
+  code: null
+  video: null
+  tags:
+  - Dynamic
+  - Diffusion
+  - Video
+  - Rendering
+  - Editing
+  - Project
+  thumbnail: assets/thumbnails/kwon2025instruct4dgs.jpg
+- id: wang2026exploration
+  title: Exploration Matters for Escaping the Blur Trap in 3D Gaussian Splatting
+  authors: Chengbo Wang, Guozheng Ma, Jinhong Wu, Tie Ji, Yizhen Lao
+  year: '2026'
+  abstract: '3D Gaussian Splatting (3DGS) employs Gaussian primitives for explicit
+    scene representation, facilitating real-time, high-fidelity reconstruction and
+    novel view synthesis of complex scenes. However, the explicit modeling inherent
+    in 3DGS introduces a gradient bias during optimization, rendering its non-convex
+    optimization process highly susceptible to convergence toward local suboptimal
+    solutions. This constitutes a fundamental limitation in 3DGS optimization, which
+    we term the Blur Trap. To address this limitation, we integrate simple explicit
+    exploration into the 3DGS optimization framework. First, through rigorous mathematical
+    analysis of the 3DGS optimization formulation, we identify the underlying optimization
+    bias responsible for the Blur Trap and categorize it into two distinct subtypes:
+    the Far-Side Blur Trap and the Near-Side Blur Trap. Subsequently, we propose two
+    highly straightforward exploration strategies (Random Seeding and Random Splitting)
+    to mitigate the far-side and near-side blur traps, respectively. Experimental
+    validation demonstrates that the incorporation of these exploration operators
+    effectively and complementarily overcome the Blur Trap, achieving high-quality
+    rendering performance across multiple datasets. Project page: https://chengbo-wang.github.io/ExploreGS/
+
+    '
+  project_page: https://chengbo-wang.github.io/Exploration-for-GS/
+  paper: https://arxiv.org/pdf/2607.17965.pdf
+  code: https://github.com/Chengbo-Wang/Exploration-for-GS
+  video: null
+  tags:
+  - Code
+  - Densification
+  - Optimization
+  - Project
+  - Rendering
+  thumbnail: assets/thumbnails/wang2026exploration.jpg
+  publication_date: '2026-07-20T14:05:54+00:00'
+  date_source: arxiv
+- id: xue2026tangent
+  title: Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent
+    Gaussian Splatting
+  authors: Ye Xue, Yiheng Wang, Xinhua Shao, Qi Yan, Shutao Zhang, Tsung-Hui Chang
+  year: '2026'
+  abstract: Accurate, site-specific channel information is crucial for optimizing
+    next-generation wireless networks. Among various approaches, localized statistical
+    channel modeling (LSCM), which models the channel multipath angular power spectrum
+    (APS) from the reference signal received power (RSRP) measurement, has emerged
+    as a state-of-the-art method tailored for efficient network optimization. However,
+    despite its effectiveness, LSCM cannot predict APS at the vast majority of locations
+    where no measurements are available, which significantly restricts its applicability
+    in large-scale, real-world scenarios. To address this challenge, we present point-cloud-assisted
+    tangent Gaussian splatting (PC-TGS), the first framework to extrapolate APS to
+    unmeasured outdoor grids by integrating sparse radio measurements with dense LiDAR-based
+    geometry. PC-TGS represents environmental scatterers as anisotropic 3D Gaussians,
+    initialized and refined through a relaxed-mean reparameterization of the raw point
+    cloud. A tangent-plane projection accurately maps each Gaussian into the local
+    angular domain, while a depth-aware electromagnetic splatting process aggregates
+    their contributions. To ensure practical deployment, we derive a closed-form Gaussian-weighted
+    average (GWA) for APS bin integration and provide a provable error bound. Evaluations
+    on a LiDAR-scanned city-scale dataset demonstrate that PC-TGS achieves better
+    APS and RSRP prediction performance compared to state-of-the-art baselines and
+    faster inference time for APS extrapolation task.
+  project_page: https://chenjiadie.github.io/PC-TGS/
+  paper: https://arxiv.org/abs/2606.18734
+  code: https://github.com/chenjiadie/PC-TGS
+  video: null
+  tags:
+  - Wireless
+  - Point Cloud
+  - Lidar
+  - Code
+  - Project
+  thumbnail: assets/thumbnails/xue2026tangent.jpg
+  publication_date: '2026-06-17T00:00:00+00:00'
+  date_source: arxiv
+- id: lieber2026instant
+  title: Instant Colorization of Gaussian Splats
+  authors: Daniel Lieber, Alexander Mock, Nils Wandel
+  year: '2026'
+  abstract: Gaussian Splatting has recently become one of the most popular frameworks
+    for photorealistic 3D scene reconstruction and rendering. While current rasterizers
+    allow for efficient mappings of 3D Gaussian splats onto 2D camera views, this
+    work focuses on mapping 2D image information (e.g. color, neural features or segmentation
+    masks) efficiently back onto an existing scene of Gaussian splats. This 'opposite'
+    direction enables applications ranging from scene relighting and stylization to
+    3D semantic segmentation, but also introduces challenges, such as view-dependent
+    colorization and occlusion handling.   Our approach tackles these challenges using
+    the normal equation to solve a visibility-weighted least squares problem for every
+    Gaussian and can be implemented efficiently with existing differentiable rasterizers.
+    We demonstrate the effectiveness of our approach on scene relighting, feature
+    enrichment and 3D semantic segmentation tasks, achieving up to an order of magnitude
+    speedup compared to gradient descent-based baselines.
+  project_page: null
+  paper: https://arxiv.org/pdf/2604.17155.pdf
+  code: https://github.com/dlieber01/Instant-Colorization-of-Gaussian-Splats
+  video: https://www.youtube.com/watch?v=2Y0fsnWYIsY
+  tags:
+  - Acceleration
+  - Code
+  - Editing
+  - Language Embedding
+  - Optimization
+  - Relight
+  - Rendering
+  - Segmentation
+  - Video
+  thumbnail: assets/thumbnails/lieber2026instant.jpg
+  publication_date: '2026-04-18T21:56:52+00:00'
+  date_source: arxiv
 - id: zhang2026sparsesplat
   title: 'SparseSplat: Towards Applicable Feed-Forward 3D Gaussian Splatting with
     Pixel-Unaligned Prediction'
@@ -10,13 +152,13 @@
     3DGS model that adaptively adjusts Gaussian density according to scene structure
     and information richness of local regions, yielding highly compact 3DGS maps.
     To achieve this, we propose entropy-based probabilistic sampling, generating large,
-    sparse Gaussians in textureless areas and assigning small, dense Gaussians to regions
-    with rich information. Additionally, we designed a specialized point cloud network
-    that efficiently encodes local context and decodes it into 3DGS attributes, addressing
-    the receptive field mismatch between the general 3DGS optimization pipeline and
-    feed-forward models. Extensive experimental results demonstrate that SparseSplat
-    can achieve state-of-the-art rendering quality with only 22% of the Gaussians and
-    maintain reasonable rendering quality with only 1.5% of the Gaussians.
+    sparse Gaussians in textureless areas and assigning small, dense Gaussians to
+    regions with rich information. Additionally, we designed a specialized point cloud
+    network that efficiently encodes local context and decodes it into 3DGS attributes,
+    addressing the receptive field mismatch between the general 3DGS optimization
+    pipeline and feed-forward models. Extensive experimental results demonstrate that
+    SparseSplat can achieve state-of-the-art rendering quality with only 22% of the
+    Gaussians and maintain reasonable rendering quality with only 1.5% of the Gaussians.
 
     '
   project_page: https://victkk.github.io/SparseSplat-page/
@@ -56,79 +198,6 @@
   - Project
   thumbnail: assets/thumbnails/na2026glint.jpg
   publication_date: '2026-03-27T08:52:12+00:00'
-  date_source: arxiv
-- id: xue2026tangent
-  title: 'Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent
-    Gaussian Splatting'
-  authors: Ye Xue, Yiheng Wang, Xinhua Shao, Qi Yan, Shutao Zhang, Tsung-Hui Chang
-  year: '2026'
-  abstract: >-
-    Accurate, site-specific channel information is crucial for optimizing
-    next-generation wireless networks. Among various approaches, localized statistical
-    channel modeling (LSCM), which models the channel multipath angular power spectrum
-    (APS) from the reference signal received power (RSRP) measurement, has emerged
-    as a state-of-the-art method tailored for efficient network optimization. However,
-    despite its effectiveness, LSCM cannot predict APS at the vast majority of
-    locations where no measurements are available, which significantly restricts its
-    applicability in large-scale, real-world scenarios. To address this challenge,
-    we present point-cloud-assisted tangent Gaussian splatting (PC-TGS), the first
-    framework to extrapolate APS to unmeasured outdoor grids by integrating sparse
-    radio measurements with dense LiDAR-based geometry. PC-TGS represents environmental
-    scatterers as anisotropic 3D Gaussians, initialized and refined through a
-    relaxed-mean reparameterization of the raw point cloud. A tangent-plane projection
-    accurately maps each Gaussian into the local angular domain, while a depth-aware
-    electromagnetic splatting process aggregates their contributions. To ensure
-    practical deployment, we derive a closed-form Gaussian-weighted average (GWA) for
-    APS bin integration and provide a provable error bound. Evaluations on a
-    LiDAR-scanned city-scale dataset demonstrate that PC-TGS achieves better APS and
-    RSRP prediction performance compared to state-of-the-art baselines and faster
-    inference time for APS extrapolation task.
-  project_page: https://chenjiadie.github.io/PC-TGS/
-  paper: https://arxiv.org/abs/2606.18734
-  code: https://github.com/chenjiadie/PC-TGS
-  video: null
-  tags:
-  - Wireless
-  - Point Cloud
-  - Lidar
-  - Code
-  - Project
-  thumbnail: assets/thumbnails/xue2026tangent.jpg
-  publication_date: '2026-06-17T00:00:00+00:00'
-  date_source: arxiv
-- id: lieber2026instant
-  title: 'Instant Colorization of Gaussian Splats'
-  authors: Daniel Lieber, Alexander Mock, Nils Wandel
-  year: '2026'
-  abstract: 'Gaussian Splatting has recently become one of the most popular frameworks
-    for photorealistic 3D scene reconstruction and rendering. While current rasterizers
-    allow for efficient mappings of 3D Gaussian splats onto 2D camera views, this
-    work focuses on mapping 2D image information (e.g. color, neural features or segmentation
-    masks) efficiently back onto an existing scene of Gaussian splats. This ''opposite''
-    direction enables applications ranging from scene relighting and stylization to
-    3D semantic segmentation, but also introduces challenges, such as view-dependent
-    colorization and occlusion handling.   Our approach tackles these challenges using
-    the normal equation to solve a visibility-weighted least squares problem for every
-    Gaussian and can be implemented efficiently with existing differentiable rasterizers.
-    We demonstrate the effectiveness of our approach on scene relighting, feature
-    enrichment and 3D semantic segmentation tasks, achieving up to an order of magnitude
-    speedup compared to gradient descent-based baselines.'
-  project_page: null
-  paper: https://arxiv.org/pdf/2604.17155.pdf
-  code: https://github.com/dlieber01/Instant-Colorization-of-Gaussian-Splats
-  video: https://www.youtube.com/watch?v=2Y0fsnWYIsY
-  tags:
-  - Acceleration
-  - Code
-  - Editing
-  - Language Embedding
-  - Optimization
-  - Relight
-  - Rendering
-  - Segmentation
-  - Video
-  thumbnail: assets/thumbnails/lieber2026instant.jpg
-  publication_date: '2026-04-18T21:56:52+00:00'
   date_source: arxiv
 - id: lee2025legoslam
   title: 'LEGO-SLAM: Language-Embedded Gaussian Optimization SLAM'
@@ -606,27 +675,25 @@
   publication_date: '2025-03-07T07:20:25+00:00'
   date_source: arxiv
 - id: wang2025radcloudsplat
-  title: 'RadCloudSplat: Scatterer-Driven 3D Gaussian Splatting with Point-Cloud
-    Priors for Radiomap Extrapolation'
+  title: 'RadCloudSplat: Scatterer-Driven 3D Gaussian Splatting with Point-Cloud Priors
+    for Radiomap Extrapolation'
   authors: Yiheng Wang, Ye Xue, Shutao Zhang, Hongmiao Fan, Tsung-Hui Chang
   year: '2025'
-  abstract: >-
-    Radiomap represents the spatial distribution of wireless signal strength,
-    critical for applications like network optimization and autonomous driving.
-    However, constructing radiomap relies on measuring radio signal power across the
-    entire system, which is costly in outdoor environments due to large network
-    scales. We present RadSplatter, a framework that extends 3D Gaussian Splatting
-    (3DGS) to radio frequencies for efficient and accurate radiomap extrapolation
-    from sparse measurements. RadSplatter models environmental scatterers and radio
-    paths using 3D Gaussians, capturing key factors of radio wave propagation. It
-    employs a relaxed-mean (RM) scheme to reparameterize the positions of 3D
-    Gaussians from noisy and dense 3D point clouds. A camera-free 3DGS-based
-    projection is proposed to map 3D Gaussians onto 2D radio beam patterns.
-    Furthermore, a regularized loss function and recursive fine-tuning using highly
-    structured sparse measurements in real-world settings are applied to ensure
-    robust generalization. Experiments on synthetic and real-world data show
-    state-of-the-art extrapolation accuracy and execution speed. Accepted at IEEE
-    INFOCOM 2026.
+  abstract: Radiomap represents the spatial distribution of wireless signal strength,
+    critical for applications like network optimization and autonomous driving. However,
+    constructing radiomap relies on measuring radio signal power across the entire
+    system, which is costly in outdoor environments due to large network scales. We
+    present RadSplatter, a framework that extends 3D Gaussian Splatting (3DGS) to
+    radio frequencies for efficient and accurate radiomap extrapolation from sparse
+    measurements. RadSplatter models environmental scatterers and radio paths using
+    3D Gaussians, capturing key factors of radio wave propagation. It employs a relaxed-mean
+    (RM) scheme to reparameterize the positions of 3D Gaussians from noisy and dense
+    3D point clouds. A camera-free 3DGS-based projection is proposed to map 3D Gaussians
+    onto 2D radio beam patterns. Furthermore, a regularized loss function and recursive
+    fine-tuning using highly structured sparse measurements in real-world settings
+    are applied to ensure robust generalization. Experiments on synthetic and real-world
+    data show state-of-the-art extrapolation accuracy and execution speed. Accepted
+    at IEEE INFOCOM 2026.
   project_page: https://yeehengwang.github.io/RadCloudSplat/
   paper: https://arxiv.org/abs/2502.12686
   code: https://github.com/yeehengwang/RadCloudSplat
@@ -638,7 +705,7 @@
   - Code
   - Project
   thumbnail: assets/thumbnails/wang2025radcloudsplat.jpg
-  publication_date: '2025-02'
+  publication_date: 2025-02
   date_source: arxiv
 - id: chacko2025lifting
   title: 'Lifting by Gaussians: A Simple, Fast and Flexible Method for 3D Instance
@@ -15995,38 +16062,3 @@
   - Project
   thumbnail: assets/thumbnails/blattmann2023align.jpg
   publication_date: '2023-04-18T08:30:32+00:00'
-- id: kwon2025instruct4dgs
-  title: 'Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation'
-  authors: Joohyun Kwon, Hanbyel Cho, Junmo Kim
-  year: '2025'
-  abstract: >
-    Recent 4D dynamic scene editing methods require editing thousands of 2D images
-    used for dynamic scene synthesis and updating the entire scene with additional
-    training loops, resulting in several hours of processing to edit a single
-    dynamic scene. Therefore, these methods are not scalable with respect to the
-    temporal dimension of the dynamic scene (i.e., the number of timesteps). In this
-    work, we propose Instruct-4DGS, an efficient dynamic scene editing method that
-    is more scalable in terms of temporal dimension. To achieve computational
-    efficiency, we leverage a 4D Gaussian representation that models a 4D dynamic
-    scene by combining static 3D Gaussians with a Hexplane-based deformation field,
-    which captures dynamic information. We then perform editing solely on the static
-    3D Gaussians, which is the minimal but sufficient component required for visual
-    editing. To resolve the misalignment between the edited 3D Gaussians and the
-    deformation field, which may arise from the editing process, we introduce a
-    refinement stage using a score distillation mechanism. Extensive editing results
-    demonstrate that Instruct-4DGS is efficient, reducing editing time by more than
-    half compared to existing methods while achieving high-quality edits that better
-    follow user instructions. Code and results:
-    https://hanbyelcho.info/instruct-4dgs/
-  project_page: https://hanbyelcho.info/instruct-4dgs/
-  paper: https://arxiv.org/pdf/2502.02091.pdf
-  code: null
-  video: null
-  tags:
-  - Dynamic
-  - Diffusion
-  - Video
-  - Rendering
-  - Editing
-  - Project
-  thumbnail: assets/thumbnails/kwon2025instruct4dgs.jpg
