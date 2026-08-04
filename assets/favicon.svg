@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Awesome 3D Gaussian Splatting">
+  <defs>
+    <radialGradient id="a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#db2777" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#86efac" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <ellipse cx="25" cy="26" rx="20" ry="14" fill="url(#a)" transform="rotate(-20 25 26)"/>
+  <ellipse cx="41" cy="34" rx="17" ry="12" fill="url(#b)" transform="rotate(25 41 34)"/>
+  <ellipse cx="31" cy="43" rx="15" ry="10" fill="url(#c)" transform="rotate(-8 31 43)"/>
+</svg>

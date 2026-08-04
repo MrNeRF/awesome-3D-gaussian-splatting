@@ -48,7 +48,9 @@ jobs:
         python src/generate.py awesome_3dgs_papers.yaml _site/index.html
         cp -r assets _site/assets
         test -s _site/index.html
+        test -s _site/sitemap.xml
         test -d _site/assets/thumbnails
+        test -s _site/assets/og-card.png
 
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3

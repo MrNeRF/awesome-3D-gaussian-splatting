@@ -184,6 +184,8 @@ h1 {
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 0.9rem;
+    font-family: inherit;
+    line-height: inherit;
     transition: all 0.2s;
     color: var(--text-color);
 }
@@ -200,6 +202,52 @@ h1 {
 .tag-filter.exclude {
     background: #dc2626;
     color: white;
+}
+
+/* Include/exclude must not be signalled by colour alone. */
+.tag-filter.include .tag-filter-state::before {
+    content: "✓ ";
+}
+
+.tag-filter.exclude .tag-filter-state::before {
+    content: "✕ ";
+}
+
+/* Inline SVG icons replace the former Font Awesome webfont. */
+.icon {
+    width: 1em;
+    height: 1em;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: -0.125em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:where(a, button, summary, input, select):focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.site-intro {
+    max-width: 70ch;
+    margin: 0 0 2rem;
+    color: #4b5563;
+    line-height: 1.7;
 }
 
 /* Floating Navigation */

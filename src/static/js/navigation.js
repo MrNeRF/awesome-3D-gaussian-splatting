@@ -63,7 +63,7 @@ function updateFilterStatus() {
             
             // Update the click handler to completely remove the tag
             tagTag.querySelector('button').addEventListener('click', () => {
-                tagEl.classList.remove('include', 'exclude');
+                setTagState(tagEl, 'none');
                 state.includeTags.delete(tagText);
                 state.excludeTags.delete(tagText);
                 filterPapers();
@@ -84,7 +84,7 @@ function createFilterTag(type, title, info) {
             <div class="filter-tag-info">${info}</div>
         </div>
         <button class="preview-remove" onclick="event.stopPropagation();" aria-label="Remove filter">
-            <i class="fas fa-times"></i>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
     `;
     
@@ -100,7 +100,7 @@ function clearAllFilters() {
     
     // Clear all tag filters completely (don't toggle through states)
     document.querySelectorAll('.tag-filter').forEach(tag => {
-        tag.classList.remove('include', 'exclude');
+        setTagState(tag, 'none');
         state.includeTags.delete(tag.getAttribute('data-tag'));
         state.excludeTags.delete(tag.getAttribute('data-tag'));
     });

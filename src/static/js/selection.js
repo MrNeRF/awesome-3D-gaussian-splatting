@@ -4,8 +4,8 @@ function toggleSelectedOnly() {
     
     if (button) {
         button.innerHTML = state.onlyShowSelected ? 
-            '<i class="fas fa-list"></i> Show All Papers' :
-            '<i class="fas fa-filter"></i> Show Selected Only';
+            '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg> Show All Papers' :
+            '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg> Show Selected Only';
     }
     
     // Update the URL first
@@ -29,8 +29,8 @@ function toggleSelectionMode() {
     const toggleButton = document.querySelector('.selection-mode-toggle');
     if (toggleButton) {
         toggleButton.innerHTML = state.isSelectionMode ? 
-            `<i class="fas fa-times"></i><span class="tooltip">Exit Selection Mode</span>` :
-            `<i class="fas fa-list-check"></i><span class="tooltip">Enter Selection Mode</span>`;
+            `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span class="tooltip">Exit Selection Mode</span>` :
+            `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 6h10M11 12h10M11 18h10M3 6l1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/></svg><span class="tooltip">Enter Selection Mode</span>`;
     }
 
     // Handle visibility and selection display
@@ -39,7 +39,7 @@ function toggleSelectionMode() {
             state.onlyShowSelected = false;
             const button = document.querySelector('.preview-header-right .control-button.show-selected');
             if (button) {
-                button.innerHTML = '<i class="fas fa-filter"></i> Show Selected Only';
+                button.innerHTML = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg> Show Selected Only';
             }
             const url = new URL(window.location.href);
             url.searchParams.delete('show_selected');
@@ -64,7 +64,7 @@ function clearSelection() {
     // Update button state
     const button = document.querySelector('.preview-header-right .control-button.show-selected');
     if (button) {
-        button.innerHTML = '<i class="fas fa-filter"></i> Show Selected Only';
+        button.innerHTML = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg> Show Selected Only';
     }
     
     // Update URL and display
@@ -102,7 +102,7 @@ function togglePaperSelection(paperId, checkbox) {
                 <div class="preview-authors">${authors}</div>
             </div>
             <button class="preview-remove" onclick="event.stopPropagation(); removeFromSelection('${paperId}')">
-                <i class="fas fa-times"></i>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
             </button>
         `;
         document.getElementById('selectionPreview').appendChild(previewItem);

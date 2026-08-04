@@ -1,9 +1,9 @@
-<div class="paper-row" data-id="$id" data-title="$title" data-authors="$authors" data-year="$year" data-tags='$tags_json'>
+<div class="paper-row" data-id="$id" data-title="$title_attr" data-authors="$authors_attr" data-year="$year" data-tags='$tags_json'>
   <div class="paper-card">
-    <input type="checkbox" class="selection-checkbox" onclick="handleCheckboxClick(event, '$id', this)">
+    <input type="checkbox" class="selection-checkbox" aria-label="Select paper: $title_attr" onclick="handleCheckboxClick(event, '$id', this)">
     <div class="paper-number"></div>
     <div class="paper-thumbnail">
-      <img src="$thumbnail" alt="Paper thumbnail for $title" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"/>
+      <img src="$thumbnail" alt="Paper thumbnail for $title_attr" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"/>
     </div>
     <div class="paper-content">
       <h2 class="paper-title">$title <span class="paper-year">($year)</span></h2>

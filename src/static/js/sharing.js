@@ -24,7 +24,7 @@ async function copyShareLink() {
         await navigator.clipboard.writeText(shareUrl.value);
         const copyButton = document.querySelector('.share-url-container .control-button');
         const origText = copyButton.innerHTML;
-        copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        copyButton.innerHTML = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Copied!';
         setTimeout(() => {
             copyButton.innerHTML = origText;
         }, 2000);
@@ -38,7 +38,7 @@ function copyBitcoinAddress() {
     navigator.clipboard.writeText(address).then(() => {
         const button = document.querySelector('.copy-button');
         const originalText = button.innerHTML;
-        button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        button.innerHTML = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Copied!';
         setTimeout(() => {
             button.innerHTML = originalText;
         }, 2000);
@@ -76,7 +76,7 @@ function applyURLParams() {
                 state.onlyShowSelected = true;
                 const button = document.querySelector('.preview-header-right .control-button.show-selected');
                 if (button) {
-                    button.innerHTML = '<i class="fas fa-list"></i> Show All Papers';
+                    button.innerHTML = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg> Show All Papers';
                 }
                 filterPapers(); // Apply the filter to show only selected papers
             }
@@ -98,8 +98,7 @@ function applyURLParams() {
     if (inc) {
         state.includeTags = new Set(inc.split(','));
         state.includeTags.forEach(t => {
-            const tf = document.querySelector(`.tag-filter[data-tag="${t}"]`);
-            if (tf) tf.classList.add('include');
+            setTagState(document.querySelector(`.tag-filter[data-tag="${t}"]`), 'include');
         });
     }
     
@@ -107,8 +106,7 @@ function applyURLParams() {
     if (exc) {
         state.excludeTags = new Set(exc.split(','));
         state.excludeTags.forEach(t => {
-            const tf = document.querySelector(`.tag-filter[data-tag="${t}"]`);
-            if (tf) tf.classList.add('exclude');
+            setTagState(document.querySelector(`.tag-filter[data-tag="${t}"]`), 'exclude');
         });
     }
     

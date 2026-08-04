@@ -269,19 +269,30 @@
     color: var(--hover-color);
 }
 
+.paper-abstract-wrap {
+    width: 100%;
+}
+
+.abstract-toggle {
+    list-style: none;
+}
+
+.abstract-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.paper-abstract-wrap[open] .abstract-toggle {
+    background: #e5e7eb;
+}
+
 .paper-abstract {
     margin-top: 1rem;
-    display: none;
     background: #f9fafb;
     padding: 1rem;
     border-radius: 0.5rem;
     color: #4b5563;
     line-height: 1.6;
     border: 1px solid var(--border-color);
-}
-
-.paper-abstract.show {
-    display: block;
 }
 
 .paper-row {

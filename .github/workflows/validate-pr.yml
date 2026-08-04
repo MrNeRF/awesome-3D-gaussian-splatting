@@ -36,13 +36,16 @@ jobs:
       run: pip install -r requirements-ci.txt
 
     - name: Build the site
-      run: python src/generate.py awesome_3dgs_papers.yaml preview.html
+      run: |
+        mkdir -p preview
+        python src/generate.py awesome_3dgs_papers.yaml preview/index.html
+        cp -r assets preview/assets
 
     - name: Upload site preview
       uses: actions/upload-artifact@v5
       with:
         name: site-preview
-        path: preview.html
+        path: preview
         retention-days: 7
 
     - name: Validate changed YAML entries

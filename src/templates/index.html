@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Awesome 3D Gaussian Splatting Paper List</title>
 
-    <!-- Preconnects -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <title>${site_title}</title>
+    <meta name="description" content="${description}">
+    <link rel="canonical" href="${site_url}">
+    <meta name="theme-color" content="#2563eb">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Awesome 3D Gaussian Splatting">
+    <meta property="og:url" content="${site_url}">
+    <meta property="og:title" content="${site_title}">
+    <meta property="og:description" content="${description}">
+    <meta property="og:image" content="${site_url}assets/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Awesome 3D Gaussian Splatting — searchable paper database">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@janusch_patas">
+    <meta name="twitter:creator" content="@janusch_patas">
+    <meta name="twitter:title" content="${site_title}">
+    <meta name="twitter:description" content="${description}">
+    <meta name="twitter:image" content="${site_url}assets/og-card.png">
+
     <!-- Site CSS -->
     <style>
         ${styles}
@@ -110,16 +126,19 @@
         }
     </style>
 
+    <script type="application/ld+json">
+${structured_data}
+    </script>
 </head>
 <body>
     <div class="container">
         <!-- Floating Navigation -->
         <div class="floating-nav">
             <button onclick="scrollToTop()" aria-label="Scroll to top">
-                <i class="fas fa-arrow-up"></i>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
             </button>
             <button onclick="scrollToBottom()" aria-label="Scroll to bottom">
-                <i class="fas fa-arrow-down"></i>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
             </button>
             <div class="scroll-progress">0%</div>
         </div>
@@ -128,13 +147,13 @@
         <div class="selection-buttons">
             <!-- Show Selected Only -->
             <button class="selected-only-mode-toggle" onclick="toggleSelectedOnly()">
-                <i class="fas fa-filter"></i>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
                 <span class="tooltip">Show Selected Only</span>
             </button>
 
             <!-- Enter Selection Mode -->
             <button class="selection-mode-toggle" onclick="toggleSelectionMode()">
-                <i class="fas fa-list-check"></i>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 6h10M11 12h10M11 18h10M3 6l1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/></svg>
                 <span class="tooltip">Enter Selection Mode</span>
             </button>
         </div>
@@ -148,10 +167,10 @@
                 </div>
                 <div class="preview-header-right">
                     <button class="control-button secondary" onclick="clearSelection()">
-                        <i class="fas fa-trash"></i> Clear
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg> Clear
                     </button>
                     <button class="control-button primary" onclick="showShareModal()">
-                        <i class="fas fa-share"></i> Share
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/></svg> Share
                     </button>
                 </div>
             </div>
@@ -167,7 +186,7 @@
                 </div>
                 <div class="preview-header-right">
                     <button class="control-button secondary" onclick="clearAllFilters()">
-                        <i class="fas fa-trash"></i> Clear All
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg> Clear All
                     </button>
                 </div>
             </div>
@@ -176,7 +195,16 @@
             </div>
         </div>
 
-        <h1>MrNeRF's Awesome-3D-Gaussian-Splatting-Paper-List</h1>
+        <h1>Awesome 3D Gaussian Splatting Paper List</h1>
+        <p class="site-intro">
+            A continuously updated index of <strong>${paper_count} papers</strong> on 3D Gaussian Splatting
+            (3DGS) — covering SLAM, dynamic and 4D scenes, compression, avatars, relighting, feed-forward
+            reconstruction and real-time rendering. Search by title or author, filter by year and tag, or
+            select papers and share a link to your selection. Maintained by
+            <a href="https://www.mrnerf.com">MrNeRF</a> alongside
+            <a href="https://lichtfeld.io">LichtFeld Studio</a>, an open-source 3DGS training and editing
+            application.
+        </p>
 
         <!-- Donation Box -->
         <div class="donate-box">
@@ -191,16 +219,16 @@
                 </div>
                 <div class="button-group">
                     <button class="copy-button" onclick="copyBitcoinAddress()">
-                        <i class="fas fa-copy"></i> Copy
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zM5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy
                     </button>
                     <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
-                        <i class="fas fa-heart"></i> Sponsor
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8l1.1 1.1L12 21l7.7-7.7 1.1-1.1a5.5 5.5 0 0 0 0-7.6z"/></svg> Sponsor
                     </a>
                     <a href="https://www.mrnerf.com" class="website-button" target="_blank" rel="noopener">
-                        <i class="fas fa-globe"></i> MrNeRF.com
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> MrNeRF.com
                     </a>
                     <a href="https://lichtfeld.io" class="website-button" target="_blank" rel="noopener">
-                        <i class="fas fa-globe"></i> LichtFeld Studio
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> LichtFeld Studio
                     </a>
                 </div>
                 <!-- Discord Badge -->
@@ -216,9 +244,9 @@
         <!-- Filter Info -->
         <div class="filter-info">
             <h3>Filter Options</h3>
-            <p><strong>Search:</strong> Enter paper title or author names, then click <i class="fas fa-times"></i> to clear.</p>
+            <p><strong>Search:</strong> Enter paper title or author names, then click <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg> to clear.</p>
             <p><strong>Year:</strong> Filter by publication year</p>
-            <p><strong>Tags:</strong> Click once to include (blue), twice to exclude (red), third time to remove filter</p>
+            <p><strong>Tags:</strong> Click once to include (✓), twice to exclude (✕), third time to remove the filter</p>
             <p><strong>Selection:</strong> Use selection mode to pick and share specific papers</p>
         </div>
 
@@ -232,7 +260,7 @@
                 <div class="share-url-container">
                     <input type="text" class="share-url-input" id="shareUrl" readonly>
                     <button class="control-button primary" onclick="copyShareLink()">
-                        <i class="fas fa-copy"></i> Copy Link
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zM5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy Link
                     </button>
                 </div>
             </div>
@@ -241,11 +269,13 @@
         <!-- Filters Bar -->
         <div class="filters">
             <div class="search-wrapper">
-                <input type="text" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
-                <button class="clear-search-btn" onclick="clearSearch()" title="Clear search">
-                    <i class="fas fa-times"></i>
+                <label for="searchInput" class="sr-only">Search papers by title or authors</label>
+                <input type="search" id="searchInput" class="search-box" placeholder="Search papers by title or authors...">
+                <button type="button" class="clear-search-btn" onclick="clearSearch()" title="Clear search" aria-label="Clear search">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
                 </button>
             </div>
+            <label for="yearFilter" class="sr-only">Filter by publication year</label>
             <select id="yearFilter" class="filter-select">
                 <option value="all">All Years</option>
                 ${year_options}

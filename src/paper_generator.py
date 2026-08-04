@@ -1,8 +1,21 @@
 from pathlib import Path
 import json
+import re
+from html import escape
 from typing import List
 from paper_schema import Paper
 from template_engine import TemplateEngine
+
+_TAG_RE = re.compile(r'<[^>]+>')
+
+def _attr(value: str) -> str:
+    """Plain-text, quote-safe version of a field for use inside an HTML attribute.
+
+    Titles may carry inline markup (Sp<sup>2</sup>360) and quotes (GaussianSpa: An
+    "Optimizing-Sparsifying" ...). Interpolated raw, either one terminates the attribute
+    early and corrupts the row, which also truncates what the search filter can match on.
+    """
+    return escape(_TAG_RE.sub('', value or ''), quote=True)
 
 class PaperCardGenerator:
     """Generates HTML for paper cards using templates."""
@@ -33,10 +46,15 @@ class PaperCardGenerator:
         if paper.video and paper.video.lower() != 'none':
             links.append(self._generate_link(paper.video, "video", "Video", "🎥"))
         
-        # Abstract toggle button is always last if there's an abstract
+        # Abstract is always last if present. <details> gives the disclosure behaviour
+        # natively, so it works without JavaScript and is keyboard operable.
         if paper.abstract and paper.abstract.lower() != 'none':
-            links.append('<button class="abstract-toggle" onclick="toggleAbstract(this)">📖 Show Abstract</button>')
-            links.append(f'<div class="paper-abstract">{paper.abstract}</div>')
+            links.append(
+                '<details class="paper-abstract-wrap">'
+                '<summary class="abstract-toggle">📖 Abstract</summary>'
+                f'<div class="paper-abstract">{paper.abstract}</div>'
+                '</details>'
+            )
         
         return "\n".join(links)
 
@@ -45,21 +63,14 @@ class PaperCardGenerator:
         display_tags = [t for t in paper.tags if not t.startswith("Year ")]
         return "\n".join(f'<span class="paper-tag">{t}</span>' for t in display_tags)
 
-    def _generate_abstract(self, paper: Paper) -> str:
-        """Generate HTML for paper abstract section."""
-        if not paper.abstract:
-            return ""
-        return (
-            '<button class="abstract-toggle">Show Abstract</button>\n'
-            f'<div class="paper-abstract">{paper.abstract}</div>'
-        )
-
     def generate_card(self, paper: Paper) -> str:
         """Generate HTML for a paper card using the template."""
         context = {
             'id': paper.id,
             'title': paper.title,
+            'title_attr': _attr(paper.title),
             'authors': paper.authors,
+            'authors_attr': _attr(paper.authors),
             'year': paper.year,
             'tags_json': json.dumps(paper.tags),
             'thumbnail': paper.thumbnail or f"assets/thumbnails/{paper.id}.jpg",

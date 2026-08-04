@@ -1,3 +1,34 @@
+// Read each row's filterable fields once instead of re-reading and re-parsing
+// data-tags for every row on every keystroke.
+function buildPaperIndex() {
+    window.paperIndex = Array.from(document.querySelectorAll('.paper-row')).map(row => ({
+        row,
+        id: row.getAttribute('data-id'),
+        title: row.getAttribute('data-title').toLowerCase(),
+        authors: row.getAttribute('data-authors').toLowerCase(),
+        year: row.getAttribute('data-year'),
+        tags: JSON.parse(row.getAttribute('data-tags'))
+    }));
+    return window.paperIndex;
+}
+
+// Single place that keeps a tag button's class, pressed state and label in sync.
+function setTagState(el, mode) {
+    if (!el) return;
+    el.classList.toggle('include', mode === 'include');
+    el.classList.toggle('exclude', mode === 'exclude');
+    el.setAttribute('aria-pressed', mode === 'include' ? 'true' : 'false');
+    const tag = el.getAttribute('data-tag');
+    const described = mode === 'include' ? 'included' : mode === 'exclude' ? 'excluded' : 'not filtered';
+    el.setAttribute('aria-label', `${tag}: ${described}`);
+}
+
+function tagStateOf(el) {
+    if (el.classList.contains('include')) return 'include';
+    if (el.classList.contains('exclude')) return 'exclude';
+    return 'none';
+}
+
 function debounce(fn, delay) {
     let timeout;
     return (...args) => {

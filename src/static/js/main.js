@@ -1,16 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize variables
-    window.paperCards = document.querySelectorAll('.paper-row');
     window.searchInput = document.getElementById('searchInput');
     window.yearFilter = document.getElementById('yearFilter');
     window.tagFilters = document.querySelectorAll('.tag-filter');
-    
-    // Add toggleAbstract to window object so it's globally accessible
-    window.toggleAbstract = function(button) {
-        const abstract = button.nextElementSibling;
-        const isShowing = abstract.classList.toggle('show');
-        button.innerHTML = isShowing ? '📖 Hide Abstract' : '📖 Show Abstract';
-    };
+    buildPaperIndex();
 
     // Initialize filters
     initializeFilters();
