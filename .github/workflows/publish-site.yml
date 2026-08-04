@@ -1,0 +1,75 @@
+name: Publish Site
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'awesome_3dgs_papers.yaml'
+      - 'src/**'
+  workflow_dispatch:
+
+concurrency:
+  group: publish-site
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
+        ref: main
+
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.10'
+        cache: pip
+        cache-dependency-path: requirements-ci.txt
+
+    - name: Install dependencies
+      run: pip install -r requirements-ci.txt
+
+    - name: Regenerate index.html and commit to main
+      id: commit
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+        for attempt in 1 2 3; do
+          git fetch origin main
+          git reset --hard origin/main
+
+          python src/generate.py awesome_3dgs_papers.yaml index.html
+
+          if git diff --quiet -- index.html; then
+            echo "index.html is already up to date"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git add index.html
+          git commit -m "Update generated HTML"
+
+          if git push origin HEAD:main; then
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Push rejected (attempt $attempt); main moved, regenerating on top of it"
+        done
+
+        echo "Could not push index.html to main after 3 attempts"
+        exit 1
+
+    - name: Request GitHub Pages build
+      if: steps.commit.outputs.pushed == 'true'
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: gh api --method POST repos/${{ github.repository }}/pages/builds

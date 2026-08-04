@@ -43,6 +43,15 @@ python src/yaml_editor.py
 
 6. The editor will automatically save changes to `awesome_3dgs_papers.yaml`
 
+## What Happens After You Open a Pull Request
+
+Do **not** commit `index.html` — it is generated. Only `awesome_3dgs_papers.yaml` (or `README.md`) should appear in your diff.
+
+1. The `Validate PR Changes` workflow checks the entries you touched: tags come from the allowed list, and every link resolves. It also builds the site and attaches the result as a `site-preview` artifact so the new card can be reviewed before merging.
+2. Once the checks are green and a maintainer merges, the `Publish Site` workflow regenerates `index.html`, commits it to `main`, and triggers a GitHub Pages build.
+
+No follow-up pull request is needed — merging your PR publishes the site.
+
 ## Adding Other Resources
 
 For adding other resources (implementations, tools, tutorials, etc.):
