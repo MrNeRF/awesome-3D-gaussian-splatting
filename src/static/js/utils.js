@@ -36,7 +36,7 @@ function updateURL() {
 
 function updatePaperNumbers() {
     let num = 1;
-    document.querySelectorAll('.paper-row.visible').forEach(row => {
+    document.querySelectorAll('.paper-row:not(.hidden)').forEach(row => {
         const numElem = row.querySelector('.paper-number');
         numElem.textContent = num++;
     });

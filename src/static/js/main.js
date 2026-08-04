@@ -12,19 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         button.innerHTML = isShowing ? '📖 Hide Abstract' : '📖 Show Abstract';
     };
 
-    // Initialize LazyLoad
-    window.lazyLoadInstance = new LazyLoad({
-        elements_selector: ".lazy",
-        callback_error: (img) => {
-            if (img.dataset.fallback) {
-                img.src = img.dataset.fallback;
-            }
-        },
-        callback_loaded: (img) => {
-            img.classList.add('loaded');
-        }
-    });
-
     // Initialize filters
     initializeFilters();
 

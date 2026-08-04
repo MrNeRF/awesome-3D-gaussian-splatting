@@ -9,7 +9,6 @@ class PaperCardGenerator:
     
     def __init__(self, templates_dir: Path):
         self.template = TemplateEngine(templates_dir / 'paper_card.html')
-        self.fallback_url = "None"
 
     def _generate_link(self, url: str, icon: str, text: str, emoji: str = "") -> str:
         """Generate HTML for a paper link with icon and emoji."""
@@ -64,7 +63,6 @@ class PaperCardGenerator:
             'year': paper.year,
             'tags_json': json.dumps(paper.tags),
             'thumbnail': paper.thumbnail or f"assets/thumbnails/{paper.id}.jpg",
-            'fallback_url': self.fallback_url,
             'tags_html': self._generate_tags(paper),
             'links_html': self._generate_links(paper),
             'abstract_html': paper.abstract or ""

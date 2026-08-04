@@ -285,11 +285,11 @@
 }
 
 .paper-row {
-    display: none;
+    display: block;
 }
 
-.paper-row.visible {
-    display: block;
+.paper-row.hidden {
+    display: none;
 }
 
 /* Selection Preview Bar */

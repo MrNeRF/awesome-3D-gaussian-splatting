@@ -23,7 +23,7 @@ function updateScrollProgress() {
 
 // Filter status functionality
 function updateFilterStatus() {
-    const visiblePapers = document.querySelectorAll('.paper-row.visible').length;
+    const visiblePapers = document.querySelectorAll('.paper-row:not(.hidden)').length;
     const totalPapers = document.querySelectorAll('.paper-row').length;
     
     document.getElementById('visibleCount').textContent = visiblePapers;

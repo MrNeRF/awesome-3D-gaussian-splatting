@@ -10,7 +10,7 @@ function filterPapers() {
         // When showing only selected papers, hide all non-selected papers
         paperCards.forEach(row => {
             const id = row.getAttribute('data-id');
-            row.classList.toggle('visible', state.selectedPapers.has(id));
+            row.classList.toggle('hidden', !state.selectedPapers.has(id));
         });
     } else {
         // Normal filtering
@@ -29,12 +29,11 @@ function filterPapers() {
             const matchExc = (state.excludeTags.size === 0) || ![...state.excludeTags].some(t => tags.includes(t));
 
             const visible = matchSearch && matchYear && matchInc && matchExc;
-            row.classList.toggle('visible', visible);
+            row.classList.toggle('hidden', !visible);
         });
     }
     
     updatePaperNumbers();
-    lazyLoadInstance.update();
     updateURL();
 }
 
