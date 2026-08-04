@@ -35,6 +35,8 @@ async function copyShareLink() {
 
 function copyBitcoinAddress() {
     const address = document.querySelector('.bitcoin-address').textContent;
+    const strip = document.querySelector('.support-strip');
+    if (strip) strip.classList.add('show-address');
     navigator.clipboard.writeText(address).then(() => {
         const button = document.querySelector('.copy-button');
         const originalText = button.innerHTML;

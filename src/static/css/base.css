@@ -89,8 +89,10 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--border-color);
+    padding: 0.9rem 1.1rem;
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 0.6rem;
 }
 
 .support-strip-label {
@@ -100,18 +102,52 @@ h1 {
     margin-right: 0.25rem;
 }
 
-.support-strip .bitcoin-address {
+.btn-sponsor {
+    color: #ffffff;
+    background: #db61a2;
+    border-color: #db61a2;
+}
+
+.btn-sponsor:hover {
+    color: #ffffff;
+    background: #c74e8f;
+    border-color: #c74e8f;
+}
+
+.btn-bitcoin .icon {
+    color: #f7931a;
+}
+
+.btn-discord .icon {
+    color: #5865f2;
+}
+
+/* Revealed by the copy handler so the row stays on one line until asked for. */
+.bitcoin-reveal {
+    display: none;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.support-strip.show-address .bitcoin-reveal {
+    display: block;
+}
+
+.bitcoin-address {
+    display: inline-block;
+    max-width: 100%;
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 0.75rem;
     color: #6b7280;
-    background: #f8fafc;
+    background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 0.4rem;
     padding: 0.35rem 0.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 100%;
+    vertical-align: middle;
 }
 
 /* Collapsed by default so the controls are not buried under instructions. */
