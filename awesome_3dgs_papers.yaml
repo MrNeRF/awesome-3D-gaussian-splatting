@@ -536,7 +536,7 @@
     '
   project_page: https://kornelhowil.github.io/CLIPGaussian/
   paper: https://arxiv.org/pdf/2505.22854.pdf
-  code: ' https://github.com/kornelhowil/CLIPGaussian'
+  code: https://github.com/kornelhowil/CLIPGaussian
   video: null
   tags:
   - Code
@@ -1259,7 +1259,7 @@
     project page with the code release is available at https://eth-ait.github.io/GSTAR/.
 
     '
-  project_page: chengwei-zheng.github.io/GSTAR/
+  project_page: https://chengwei-zheng.github.io/GSTAR/
   paper: https://arxiv.org/pdf/2501.10283.pdf
   code: null
   video: https://www.youtube.com/watch?v=Fwby4PrjFeM
@@ -1954,8 +1954,7 @@
     realworld dynamic videos while maintaining or even improving rendering quality.
 
     '
-  project_page: 'MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval
-    Adjustment for Compact Dynamic 3D Gaussian Splatting'
+  project_page: https://kaist-viclab.github.io/MoDecGS-site/
   paper: https://arxiv.org/pdf/2501.03714.pdf
   code: null
   video: https://youtu.be/5L6gzc5-cw8?si=L6v6XLZFQrYK50iV
