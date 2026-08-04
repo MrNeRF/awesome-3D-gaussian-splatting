@@ -41,11 +41,11 @@ h1 {
     color: var(--text-color);
 }
 
-/* Header block: one readable column, left-aligned so the title, intro and callout
-   share their left edge with the search box and the paper cards below. */
+/* Header block: one readable column, centred on the page. */
 .site-header {
     max-width: 72ch;
-    margin: 1rem 0 2.5rem;
+    margin: 1rem auto 2.5rem;
+    text-align: center;
 }
 
 /* Generic button used by the support strip. */
@@ -87,6 +87,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding-top: 1.25rem;
     border-top: 1px solid var(--border-color);
@@ -260,7 +261,7 @@ h1 {
 
 .site-intro {
     max-width: 70ch;
-    margin: 0 0 1.25rem;
+    margin: 0 auto 1.25rem;
     color: #4b5563;
     line-height: 1.7;
 }
@@ -271,7 +272,8 @@ h1 {
     align-items: baseline;
     gap: 0.4rem;
     max-width: 70ch;
-    margin: 0 0 2rem;
+    margin: 0 auto 2rem;
+    text-align: left;
     padding: 0.85rem 1.1rem;
     background: #f8fafc;
     border: 1px solid var(--border-color);
