@@ -1,0 +1,7 @@
+# Dependencies needed by the GitHub Actions workflows only.
+# The full requirements.txt additionally pulls in PyQt6 for the local editor GUI,
+# which CI never runs.
+PyGithub==2.5.0
+PyYAML==6.0.2
+requests==2.32.3
+urllib3==2.3.0
