@@ -6,25 +6,31 @@ on:
     paths:
       - 'awesome_3dgs_papers.yaml'
       - 'src/**'
+      - 'assets/**'
+      - '.github/workflows/publish-site.yml'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
-  group: publish-site
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    permissions:
-      contents: write
-      pages: write
 
     steps:
     - uses: actions/checkout@v5
+
+    - name: Configure Pages for Actions deployment
+      uses: actions/configure-pages@v5
       with:
-        fetch-depth: 0
-        ref: main
+        enablement: true
 
     - name: Set up Python
       uses: actions/setup-python@v6
@@ -36,40 +42,28 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements-ci.txt
 
-    - name: Regenerate index.html and commit to main
-      id: commit
+    - name: Build site
       run: |
-        git config user.name 'github-actions[bot]'
-        git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        mkdir -p _site
+        python src/generate.py awesome_3dgs_papers.yaml _site/index.html
+        cp -r assets _site/assets
+        test -s _site/index.html
+        test -d _site/assets/thumbnails
 
-        for attempt in 1 2 3; do
-          git fetch origin main
-          git reset --hard origin/main
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: _site
 
-          python src/generate.py awesome_3dgs_papers.yaml index.html
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
-          if git diff --quiet -- index.html; then
-            echo "index.html is already up to date"
-            echo "pushed=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          git add index.html
-          git commit -m "Update generated HTML"
-
-          if git push origin HEAD:main; then
-            echo "pushed=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "Push rejected (attempt $attempt); main moved, regenerating on top of it"
-        done
-
-        echo "Could not push index.html to main after 3 attempts"
-        exit 1
-
-    - name: Request GitHub Pages build
-      if: steps.commit.outputs.pushed == 'true'
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: gh api --method POST repos/${{ github.repository }}/pages/builds
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
