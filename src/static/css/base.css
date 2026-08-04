@@ -25,95 +25,110 @@ body {
     position: relative;
 }
 
+/* The floating controls are fixed to the right edge; reserve a gutter so they
+   never sit on top of the tag filters or the Clear All button. */
+@media (min-width: 768px) {
+    .container {
+        padding-right: 80px;
+    }
+}
+
 h1 {
-    text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+    letter-spacing: -0.02em;
     color: var(--text-color);
 }
 
-/* Donation Box */
-.donate-box {
-    background-color: #f8fafc;
-    border: 1px solid var(--border-color);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
+/* Header block: one readable column, left-aligned so the title, intro and callout
+   share their left edge with the search box and the paper cards below. */
+.site-header {
+    max-width: 72ch;
+    margin: 1rem 0 2.5rem;
 }
 
-.donate-box h3 {
-    margin-top: 0;
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.donate-box p {
-    margin: 0.5rem 0 1rem;
-    color: #4b5563;
-}
-
-.bitcoin-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
-
-.bitcoin-label {
-    font-weight: 600;
-    color: #4b5563;
-}
-
-.bitcoin-address {
-    background: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid var(--border-color);
-    font-family: monospace;
-    font-size: 0.9rem;
-}
-
-.copy-button, .sponsor-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+/* Generic button used by the support strip. */
+.btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.2s;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.copy-button:hover, .sponsor-button:hover {
-    background-color: var(--hover-color);
-}
-
-/* Filter Info */
-.filter-info {
-    background-color: #f8fafc;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    font: inherit;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--text-color);
+    background: #ffffff;
     border: 1px solid var(--border-color);
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
-    margin-bottom: 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
 }
 
-.filter-info h3 {
-    margin-top: 0;
-    color: var(--primary-color);
-    font-size: 1.1rem;
+.btn:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
 }
 
-.filter-info p {
-    margin: 0.5rem 0;
+.btn-primary {
+    color: #ffffff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: #1360b4;
+    border-color: #1360b4;
+    color: #ffffff;
+}
+
+.support-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.support-strip-label {
+    font-size: 0.875rem;
+    font-weight: 600;
     color: #4b5563;
+    margin-right: 0.25rem;
+}
+
+.support-strip .bitcoin-address {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.75rem;
+    color: #6b7280;
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    padding: 0.35rem 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+/* Collapsed by default so the controls are not buried under instructions. */
+.filter-help {
+    margin: 0 0 1.5rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.filter-help > summary {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 500;
+    width: fit-content;
+}
+
+.filter-help p {
+    margin: 0.5rem 0 0;
 }
 
 /* Search and Filters */
@@ -282,17 +297,24 @@ h1 {
 /* Floating Navigation */
 .floating-nav {
     position: fixed;
-    bottom: 180px;
-    right: 2rem;
+    bottom: 9rem;
+    right: 0.9rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     z-index: 1000;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.floating-nav:hover,
+.floating-nav:focus-within {
+    opacity: 1;
 }
 
 .floating-nav button {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid var(--border-color);
@@ -311,8 +333,8 @@ h1 {
 }
 
 .scroll-progress {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid var(--border-color);
@@ -347,14 +369,24 @@ h1 {
 .filter-status {
     position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: white;
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+/* JS empties this container when nothing is filtered; without this it renders
+   as a blank strip under the counter. */
+.filter-status .preview-container:empty {
+    display: none;
+}
+
+.filter-status .preview-container:empty + .preview-header,
+.filter-status .preview-header:last-child {
+    border-bottom: none;
 }
 
 /* Preview Header (shared by both bars) */

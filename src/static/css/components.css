@@ -1,17 +1,17 @@
 .selected-only-mode-toggle {
     position: fixed;
-    bottom: 6rem;
-    right: 2rem;
+    bottom: 5rem;
+    right: 0.9rem;
     background: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 0;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border: none;
     z-index: 1000;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,18 +55,18 @@
 /* Selection Controls */
 .selection-mode-toggle {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 0.9rem;
     background: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 0;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border: none;
     z-index: 1000;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,6 +301,18 @@
 
 .paper-row.hidden {
     display: none;
+}
+
+/* The results bar is slimmer than the selection bar it shares markup with.
+   Scoped because the generic .preview-header rules below would otherwise win. */
+.filter-status .preview-header {
+    gap: 1rem;
+    padding: 0.5rem 0.85rem;
+    background: transparent;
+}
+
+.filter-status .preview-container {
+    padding: 0.6rem 0.85rem;
 }
 
 /* Selection Preview Bar */

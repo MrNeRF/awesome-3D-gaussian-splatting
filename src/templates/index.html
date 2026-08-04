@@ -31,99 +31,6 @@
     <!-- Site CSS -->
     <style>
         ${styles}
-
-        /* Common button styling for donation box */
-        .copy-button, .sponsor-button, .website-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(to bottom, #4CAF50, #45a049);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            text-decoration: none;
-            margin-left: 8px;
-            transition: all 0.2s;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            min-width: 100px;
-            text-align: center;
-        }
-        
-        .copy-button:hover, .sponsor-button:hover, .website-button:hover {
-            background: linear-gradient(to bottom, #45a049, #409343);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-        }
-        
-        .copy-button i, .sponsor-button i, .website-button i {
-            margin-right: 5px;
-        }
-        
-        /* Button group container */
-        .button-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 0;
-            justify-content: flex-start;
-        }
-        
-        .button-group .copy-button,
-        .button-group .sponsor-button,
-        .button-group .website-button {
-            margin-left: 0;
-        }
-
-        /* Bitcoin info styling */
-        .bitcoin-info {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin: 15px 0;
-        }
-
-        .bitcoin-address-container {
-            display: flex;
-            align-items: center;
-            background: #f5f5f5;
-            border-radius: 4px;
-            padding: 8px 16px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e0e0e0;
-        }
-
-        .bitcoin-label {
-            font-weight: 600;
-            margin-right: 10px;
-            white-space: nowrap;
-        }
-
-        .address-field {
-            flex: 1;
-            overflow: hidden;
-        }
-
-        .bitcoin-address {
-            font-family: monospace;
-            background: transparent;
-            border: none;
-            padding: 0;
-            font-size: 14px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            display: block;
-            width: 100%;
-        }
-
-        /* Remove any individual button styling that might be in the original styles */
-        /* Website button styling - keeping this for reference but it will be overridden by the common styling above */
-        .website-button {
-            /* All styling now handled by the common button class above */
-        }
     </style>
 
     <script type="application/ld+json">
@@ -177,83 +84,36 @@ ${structured_data}
             <div class="preview-container" id="selectionPreview"></div>
         </div>
 
-        <!-- Filter Status Bar -->
-        <div class="filter-status">
-            <div class="preview-header">
-                <div class="preview-header-left">
-                    <span>Active Filters</span>
-                    <span class="filter-counter">Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers</span>
-                </div>
-                <div class="preview-header-right">
-                    <button class="control-button secondary" onclick="clearAllFilters()">
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg> Clear All
-                    </button>
-                </div>
+        <header class="site-header">
+            <h1>Awesome 3D Gaussian Splatting Paper List</h1>
+            <p class="site-intro">
+                A continuously updated index of <strong>${paper_count} papers</strong> on 3D Gaussian Splatting
+                (3DGS) — covering SLAM, dynamic and 4D scenes, compression, avatars, relighting, feed-forward
+                reconstruction and real-time rendering. Search by title or author, filter by year and tag, or
+                select papers and share a link to your selection. Maintained by
+                <a href="https://www.mrnerf.com">MrNeRF</a>.
+            </p>
+
+            <aside class="tool-callout">
+                <span class="tool-callout-label">Want to build your own splats?</span>
+                <a href="https://lichtfeld.io" class="tool-callout-link">LichtFeld Studio</a>
+                <span class="tool-callout-text">— free and open source: train, inspect, edit and export
+                3D Gaussian Splatting scenes from a single native application.</span>
+            </aside>
+
+            <div class="support-strip">
+                <span class="support-strip-label">Support this project</span>
+                <a href="https://github.com/sponsors/MrNeRF" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8l1.1 1.1L12 21l7.7-7.7 1.1-1.1a5.5 5.5 0 0 0 0-7.6z"/></svg> Sponsor
+                </a>
+                <button type="button" class="btn copy-button" onclick="copyBitcoinAddress()" title="Copy Bitcoin address">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zM5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Bitcoin
+                </button>
+                <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
+                <a href="https://discord.gg/TbxJST2BbC" class="btn" target="_blank" rel="noopener">Discord</a>
+                <a href="https://www.mrnerf.com" class="btn" target="_blank" rel="noopener">MrNeRF.com</a>
             </div>
-            <div class="preview-container" id="activeFilters">
-                <!-- Active filters will be inserted here -->
-            </div>
-        </div>
-
-        <h1>Awesome 3D Gaussian Splatting Paper List</h1>
-        <p class="site-intro">
-            A continuously updated index of <strong>${paper_count} papers</strong> on 3D Gaussian Splatting
-            (3DGS) — covering SLAM, dynamic and 4D scenes, compression, avatars, relighting, feed-forward
-            reconstruction and real-time rendering. Search by title or author, filter by year and tag, or
-            select papers and share a link to your selection. Maintained by
-            <a href="https://www.mrnerf.com">MrNeRF</a>.
-        </p>
-
-        <aside class="tool-callout">
-            <span class="tool-callout-label">Want to build your own splats?</span>
-            <a href="https://lichtfeld.io" class="tool-callout-link">LichtFeld Studio</a>
-            <span class="tool-callout-text">— free and open source: train, inspect, edit and export
-            3D Gaussian Splatting scenes from a single native application.</span>
-        </aside>
-
-        <!-- Donation Box -->
-        <div class="donate-box">
-            <h3>Support This Project</h3>
-            <p>If you find this resource helpful, consider supporting its development and maintenance.</p>
-            <div class="bitcoin-info">
-                <div class="bitcoin-address-container">
-                    <span class="bitcoin-label">Bitcoin:</span>
-                    <div class="address-field">
-                        <code class="bitcoin-address">bc1qz7z4c2cn46t7rkgsh7mr8tw9ssgctepzxrtqfw</code>
-                    </div>
-                </div>
-                <div class="button-group">
-                    <button class="copy-button" onclick="copyBitcoinAddress()">
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zM5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy
-                    </button>
-                    <a href="https://github.com/sponsors/MrNeRF" class="sponsor-button" target="_blank" rel="noopener">
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8l1.1 1.1L12 21l7.7-7.7 1.1-1.1a5.5 5.5 0 0 0 0-7.6z"/></svg> Sponsor
-                    </a>
-                    <a href="https://www.mrnerf.com" class="website-button" target="_blank" rel="noopener">
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> MrNeRF.com
-                    </a>
-                    <a href="https://lichtfeld.io" class="website-button" target="_blank" rel="noopener">
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> LichtFeld Studio
-                    </a>
-                </div>
-                <!-- Discord Badge -->
-                <div class="discord-badge">
-                    <a href="https://discord.gg/TbxJST2BbC">
-                        <img src="https://dcbadge.limes.pink/api/server/https://discord.gg/TbxJST2BbC" alt="Discord Badge" />
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Filter Info -->
-        <div class="filter-info">
-            <h3>Filter Options</h3>
-            <p><strong>Search:</strong> Enter paper title or author names, then click <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg> to clear.</p>
-            <p><strong>Year:</strong> Filter by publication year</p>
-            <p><strong>Tags:</strong> Click once to include (✓), twice to exclude (✕), third time to remove the filter</p>
-            <p><strong>Selection:</strong> Use selection mode to pick and share specific papers</p>
-        </div>
+        </header>
 
         <!-- Share Modal -->
         <div class="share-modal" id="shareModal">
@@ -290,6 +150,28 @@ ${structured_data}
         <!-- Tag Filters -->
         <div class="tag-filters" id="tagFilters">
             ${tag_filters}
+        </div>
+
+        <details class="filter-help">
+            <summary>How filtering works</summary>
+            <p><strong>Search</strong> matches paper titles and author names.</p>
+            <p><strong>Tags</strong> cycle on click: include (✓), exclude (✕), then off.</p>
+            <p><strong>Selection</strong> mode lets you pick papers and share a link to just those.</p>
+        </details>
+
+        <!-- Filter Status Bar -->
+        <div class="filter-status">
+            <div class="preview-header">
+                <div class="preview-header-left">
+                    <span class="filter-counter">Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> papers</span>
+                </div>
+                <div class="preview-header-right">
+                    <button class="control-button secondary" onclick="clearAllFilters()">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg> Clear All
+                    </button>
+                </div>
+            </div>
+            <div class="preview-container" id="activeFilters"></div>
         </div>
 
         <!-- Paper Cards -->
