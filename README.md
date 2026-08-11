@@ -77,6 +77,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Unreal Plugin (MLSLabsGaussianSplattingRenderer-UE)](https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE)
 - [Unreal Plugin (XScene-UEPlugin)](https://github.com/xverse-engine/XScene-UEPlugin)
 - [PlayCanvas Engine](https://github.com/playcanvas/engine)
+- [Godot Plugin (gdgs)](https://github.com/ReconWorldLab/godot-gaussian-splatting) - Real-time 3DGS rendering plugin for Godot 4.3+
 
 ### Web Viewers
 
