@@ -1,3 +1,27 @@
+- id: chen2026endomdslam
+  title: 'EndoMD-SLAM: Endoscopic Gaussian Splatting SLAM under Optical Degradation with Memory and Static-Transient Decomposition'
+  authors: Nuo Chen, Kangqi Ni, Lulin Liu, Joga Ivatury, Ying Ding, Farshid Alambeigi, Tianlong Chen, Zhiwen Fan
+  year: '2026'
+  abstract: >-
+    EndoMD-SLAM is an endoscopic Gaussian-splatting SLAM framework designed for
+    intermittent optical degradation such as moving debris and water flushing.
+    It combines memory-driven reliability gating and drift-aware relocalization
+    with a self-supervised static-transient decomposition that prevents visual
+    contaminants from corrupting the persistent anatomical map.
+  project_page: https://endomd-slam.github.io/
+  paper: https://arxiv.org/pdf/2608.08949.pdf
+  code: https://github.com/phai-lab/EndoMD-SLAM
+  video: null
+  tags:
+  - Code
+  - Dynamic
+  - Medicine
+  - Project
+  - Rendering
+  - SLAM
+  thumbnail: null
+  publication_date: '2026-08-09T22:59:01+00:00'
+  date_source: arxiv
 - id: kwon2025instruct4dgs
   title: 'Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic
     Separation'
