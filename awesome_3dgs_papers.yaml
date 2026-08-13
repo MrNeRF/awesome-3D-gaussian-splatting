@@ -1,27 +1,3 @@
-- id: chen2026endomdslam
-  title: 'EndoMD-SLAM: Endoscopic Gaussian Splatting SLAM under Optical Degradation with Memory and Static-Transient Decomposition'
-  authors: Nuo Chen, Kangqi Ni, Lulin Liu, Joga Ivatury, Ying Ding, Farshid Alambeigi, Tianlong Chen, Zhiwen Fan
-  year: '2026'
-  abstract: >-
-    EndoMD-SLAM is an endoscopic Gaussian-splatting SLAM framework designed for
-    intermittent optical degradation such as moving debris and water flushing.
-    It combines memory-driven reliability gating and drift-aware relocalization
-    with a self-supervised static-transient decomposition that prevents visual
-    contaminants from corrupting the persistent anatomical map.
-  project_page: https://endomd-slam.github.io/
-  paper: https://arxiv.org/pdf/2608.08949.pdf
-  code: https://github.com/phai-lab/EndoMD-SLAM
-  video: null
-  tags:
-  - Code
-  - Dynamic
-  - Medicine
-  - Project
-  - Rendering
-  - SLAM
-  thumbnail: null
-  publication_date: '2026-08-09T22:59:01+00:00'
-  date_source: arxiv
 - id: kwon2025instruct4dgs
   title: 'Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic
     Separation'
@@ -58,6 +34,47 @@
   - Editing
   - Project
   thumbnail: assets/thumbnails/kwon2025instruct4dgs.jpg
+- id: chen2026endomdslam
+  title: 'EndoMD-SLAM: Endoscopic Gaussian Splatting SLAM under Optical Degradation
+    with Memory and Static-Transient Decomposition'
+  authors: Nuo Chen, Kangqi Ni, Lulin Liu, Joga Ivatury, Ying Ding, Farshid Alambeigi,
+    Tianlong Chen, Zhiwen Fan
+  year: '2026'
+  abstract: 'Dense 3D reconstruction is critical for clinical endoscopic navigation
+    and documentation. While Gaussian Splatting SLAM systems show promise in this
+    domain, they fundamentally rely on strict multi-view photometric consistency.
+    In routine procedures, this assumption is severely violated by intermittent optical
+    degradations like moving debris and water flushing. Standard systems erroneously
+    fuse these cameraattached artifacts into the persistent 3D geometry, causing severe
+    tracking drift and irreversible map corruption. To address this limitation, we
+    propose EndoMD-SLAM, a framework designed to maintain stability under optical
+    degradation through specialized tracking and mapping mechanisms. On the tracking
+    side, a memory-driven gating mechanism detects unreliable observations to suspend
+    map updates and utilizes historical keyframes for drift-aware relocalization.
+    On the mapping side, a self-supervised static-transient decomposition isolates
+    visual contaminants into a dedicated transient field. This explicit separation
+    prevents artifacts from structurally entangling with the persistent anatomical
+    map. We curate a degradationfocused benchmark from colonoscopy videos to systematically
+    evaluate these failure modes. Extensive experiments show that while standard baselines
+    fail under severe optical degradation, EndoMD-SLAM preserves geometric integrity,
+    reducing absolute trajectory error by 91% and improving rendering fidelity by
+    9.9 dB PSNR.
+
+    '
+  project_page: https://endomd-slam.github.io/
+  paper: https://arxiv.org/pdf/2608.08949.pdf
+  code: https://github.com/phai-lab/EndoMD-SLAM
+  video: null
+  tags:
+  - Code
+  - Dynamic
+  - Medicine
+  - Project
+  - Rendering
+  - SLAM
+  thumbnail: assets/thumbnails/chen2026endomdslam.jpg
+  publication_date: '2026-08-09T22:59:01+00:00'
+  date_source: arxiv
 - id: wang2026exploration
   title: Exploration Matters for Escaping the Blur Trap in 3D Gaussian Splatting
   authors: Chengbo Wang, Guozheng Ma, Jinhong Wu, Tie Ji, Yizhen Lao
