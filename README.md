@@ -91,14 +91,14 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
 - [splaTV](https://github.com/antimatter15/splaTV) - Viewer for 4D Gaussians, with a [live demo](http://antimatter15.com/splaTV/)
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
-- [PlayCanvas Model Viewer](https://github.com/playcanvas/model-viewer)
-- [SuperSplat Viewer](https://github.com/playcanvas/supersplat-viewer)
 
 **WebGPU**
 
 - [EPFL Viewer](https://github.com/cvlab-epfl/gaussian-splatting-web)
 - [WebGPU Splat](https://github.com/KeKsBoTer/web-splat)
 - [gaussian-splatting-webgpu](https://github.com/MarcusAndreasSvensson/gaussian-splatting-webgpu)
+- [SuperSplat Viewer](https://github.com/playcanvas/supersplat-viewer) - High-performance splat viewer
+- [PlayCanvas Model Viewer](https://github.com/playcanvas/model-viewer) - Viewer for glTF and 3DGS assets
 
 ### Desktop Viewers
 
@@ -133,7 +133,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Point Cloud Editor](https://github.com/JohannesKrueger/pointcloudeditor) - Web-based point cloud editing
 - [SPZ Converter](https://github.com/stytim/spz) - SPZ conversion tool
 - [gsbox Converter](https://github.com/gotoeasy/gsbox) - PLY SPLAT SPZ SPX conversion tool
-- [SplatTransform](https://github.com/playcanvas/splat-transform) - CLI tool for converting and editing splats
+- [SplatTransform](https://github.com/playcanvas/splat-transform) - CLI tool and Node/browser library for converting and editing splats, reads PLY, SOG, SPZ, SPLAT, KSPLAT and LCC/LCC2, writes PLY, SOG, SPZ, GLB, CSV, LOD and WebP
 - [GaussForge](https://github.com/3dgscloud/GaussForge) - C++/WASM-based conversion between PLY, SPZ, SPLAT, and KSPLAT
 - [SpectacularAI](https://github.com/SpectacularAI/point-cloud-tools) - Conversion scripts for different 3DGS conventions
 - [VGGT Factor Refinement](https://github.com/jashshah999/vggt-factor-refinement) - COLMAP-free pipeline using VGGT + factor graph, from video to COLMAP-format output
@@ -144,7 +144,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 - [GSOPs for Houdini](https://github.com/cgnomads/GSOPs) - Houdini integration tools
 - [camorph](https://github.com/Fraunhofer-IIS/camorph) - Camera parameter conversion
-- [SuperSplat](https://github.com/playcanvas/supersplat) - Browser-based 3DGS editor
+- [SuperSplat](https://github.com/playcanvas/supersplat) - Free, open source browser-based 3DGS editor with one-click publishing
 
 ## Learning Resources
 
@@ -157,6 +157,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [Making Gaussian Splats smaller](https://aras-p.info/blog/2023/09/13/Making-Gaussian-Splats-smaller/)
 - [Making Gaussian Splats more smaller](https://aras-p.info/blog/2023/09/27/Making-Gaussian-Splats-more-smaller/)
 - [Compressing Gaussian Splats](https://blog.playcanvas.com/compressing-gaussian-splats/)
+- [PlayCanvas Open Sources SOG](https://blog.playcanvas.com/playcanvas-open-sources-sog-format-for-gaussian-splatting/) - Spatially Ordered Gaussians, a super-compressed format based on WebP that is 15-20x smaller than PLY
 - [Implementation Details](https://github.com/kwea123/gaussian_splatting_notes) - Technical deep dive
 - [Mathematical Foundation](https://github.com/chiehwangs/3d-gaussian-theory) - Theory explanation
 - [Mathematical details of forward and backward passes](https://github.com/joeyan/gaussian_splatting/blob/main/MATH.md)
