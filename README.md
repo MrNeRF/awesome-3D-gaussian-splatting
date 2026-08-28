@@ -122,6 +122,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [iOS Metal Viewer](https://github.com/laanlabs/metal-splats)
 - [VR Support (OpenXR)](https://github.com/hyperlogic/splatapult)
 - [ROS2 Support](https://github.com/shadygm/ROSplat)
+- [Splat Local](https://github.com/michael-L-i/splat-local) - Video-to-3DGS pipeline running fully locally on Apple Silicon (COLMAP/GLOMAP poses, Metal-native training via Brush), with training checkpoints streamed live into a browser viewer
 
 ## Tools & Utilities
 
