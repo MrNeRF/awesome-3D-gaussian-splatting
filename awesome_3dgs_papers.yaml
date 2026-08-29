@@ -110,6 +110,39 @@
   thumbnail: assets/thumbnails/wang2026exploration.jpg
   publication_date: '2026-07-20T14:05:54+00:00'
   date_source: arxiv
+- id: bang2026geometryaware
+  title: Geometry-Aware Style Transfer in 3D Gaussian Splatting
+  authors: Min Hyeok Bang, Jun Hyeong Kim, Seung-Wook Kim, Se-Ho Lee
+  year: '2026'
+  abstract: 'In this paper, we present a novel geometry-aware style transfer framework
+    for 3D Gaussian splatting (3DGS) that simultaneously transfers appearance attributes
+    and geometric structures. Unlike prior works that primarily focus on color-based
+    stylization and often overlook structural adaptation, our method explicitly incorporates
+    geometry adaptation through a decoupled optimization scheme that alternately updates
+    color and geometry parameters. This strategy alleviates potential interference
+    between color and geometry updates, leading to stable and consistent scene-level
+    geometry transformation. The decoupled optimization is enabled by the proposed
+    geometry-aware contrastive feature matching (GCFM). GCFM integrates RGB, depth,
+    and edge cues into a contrastive objective and is employed in both optimization
+    phases to effectively transfer structural characteristics from style images to
+    Gaussian primitives. Extensive experiments show that our approach achieves superior
+    performance in both qualitative fidelity and quantitative metrics, significantly
+    outperforming existing 3DGS-based stylization methods. Our code is available at
+    \href{https://github.com/oweixx/gast}{https://github.com/oweixx/gast}.
+
+    '
+  project_page: https://kjun627.github.io/gast-web/
+  paper: https://arxiv.org/pdf/2606.24144.pdf
+  code: https://github.com/oweixx/gast
+  video: null
+  tags:
+  - Code
+  - Editing
+  - Project
+  - Style Transfer
+  thumbnail: assets/thumbnails/bang2026geometryaware.jpg
+  publication_date: '2026-06-23T04:53:56+00:00'
+  date_source: arxiv
 - id: xue2026tangent
   title: Point-Cloud-Assistant Localized Statistical Channel Prediction by Tangent
     Gaussian Splatting
