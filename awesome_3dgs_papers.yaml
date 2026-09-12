@@ -2277,6 +2277,24 @@
   - Robotics
   thumbnail: assets/thumbnails/huang2025enerverse.jpg
   publication_date: '2025-01-03T17:00:33+00:00'
+- id: guan2025retri3d
+  title: 'Retri3D: 3D Neural Graphics Representation Retrieval'
+  authors: Yushi Guan, Daniel Kwan, Jean Sebastien Dandurand, Xi Yan, Ruofan Liang,
+    Yuxuan Zhang, Nilesh Jain, Nilesh Ahuja, Selvakumar Panneer, Nandita Vijaykumar
+  year: '2025'
+  abstract: Retri3D searches collections of pretrained NeRF and 3D Gaussian Splatting
+    scenes using text queries. It combines artifact analysis with camera-view
+    selection to obtain cleaner renderings, then uses vision-language embeddings
+    for retrieval. The framework is evaluated on LERF and ScanNet++ scenes.
+  project_page: https://gavinguan95.github.io/Retri3D/
+  paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/4ec3ddc465c6d650c9c419fb91f1c00a-Abstract-Conference.html
+  code: https://github.com/GavinGuan95/Retri3DCode
+  video: null
+  tags:
+  - Code
+  - Language Embedding
+  - Project
+  thumbnail: https://raw.githubusercontent.com/GavinGuan95/Retri3DCode/main/figure1_iclr.jpg
 - id: longhini2024clothsplatting
   title: 'Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision'
   authors: Alberta Longhini, Marcel Büsching, Bardienus Pieter Duisterhof, Jens Lundell,
