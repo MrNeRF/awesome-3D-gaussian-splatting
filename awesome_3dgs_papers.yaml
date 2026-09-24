@@ -1,3 +1,36 @@
+- id: wang2026robust
+  title: Robust, Estimator-Agnostic Dynamic 3DGS Compression
+  authors: Chenjunjie Wang, Zixi Huang, Yao Wang, Jona Ballé
+  year: '2026'
+  abstract: 'Dynamic 3D Gaussian splats (3DGS) model time-varying scenes using a separate
+    Gaussian set per frame. While neighboring video frames are highly correlated due to smooth
+    motion, Gaussian representations retain this correlation to varying degrees, depending
+    on whether the estimator tracks them across time. Some 3DGS compression methods integrate
+    the estimation to exploit temporal redundancy; here, we focus on robust compression regardless
+    of the estimator. We concatenate groups of frames into one Gaussian set, augment each
+    Gaussian with a frame index, and pass it to a static (i.e., non-temporal) 3DGS codec,
+    converting temporal redundancy into spatial redundancy. Concatenated sets are spatially
+    partitioned to limit memory. Our technique requires neither a motion model nor knowledge
+    of the training method. Averaged over six N3DV sequences, all six static codecs achieve
+    gains on tracked sets (-42.0% to -71.8% BD-rate) over per-frame coding. On untracked sets,
+    all codecs except HGSC, which appears incompatible with our technique, remain competitive
+    with per-frame coding (-3.5% to +5.0%). We further replace D-FCGS''s I-frame coding with
+    our technique while retaining its P-frame coding, yielding an overall BD-rate of -46.2%.
+    We propose to visualize "trackedness" using an inter-frame similarity metric. The project
+    is available at https://wcjj1236.github.io/d3dgs-benchmark.
+
+    '
+  project_page: https://wcjj1236.github.io/d3dgs-benchmark/
+  paper: https://arxiv.org/pdf/2609.25633.pdf
+  code: null
+  video: null
+  tags:
+  - Compression
+  - Dynamic
+  - Project
+  thumbnail: assets/thumbnails/wang2026robust.jpg
+  publication_date: '2026-09-22T03:43:44+00:00'
+  date_source: arxiv
 - id: kwon2025instruct4dgs
   title: 'Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic
     Separation'
