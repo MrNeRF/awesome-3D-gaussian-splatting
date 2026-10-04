@@ -16208,27 +16208,28 @@
   thumbnail: assets/thumbnails/blattmann2023align.jpg
   publication_date: '2023-04-18T08:30:32+00:00'
 - id: jia2026splaxel
-  title: 'Splaxel: Efficient Distributed Training of 3D Gaussian Splatting for Large-scale
-    Scene Reconstruction via Pixel-level Communication'
-  authors: Wenqi Jia, Zhewen Hu, Ying Huang, Yu Gong, Stavros Kalafatis, Yuke Wang, Wei Niu,
-    Chengming Zhang, Ang Li, Sheng Di, Yuede Ji, Bo Fang, Miao Yin
+  title: 'Splaxel: Efficient Distributed Training of 3D Gaussian Splatting for Large-scale Scene Reconstruction via Pixel-level Communication'
+  authors: Wenqi Jia, Zhewen Hu, Ying Huang, Yu Gong, Stavros Kalafatis, Yuke Wang, Wei Niu, Chengming Zhang, Ang Li, Sheng Di, Yuede Ji, Bo Fang, Miao Yin
   year: '2026'
-  abstract: 3D Gaussian Splatting (3DGS) enables high-fidelity and real-time 3D scene reconstruction,
-    but scaling training to large-scale scenes requires optimizing hundreds of millions of
-    Gaussians across multiple GPUs. Existing distributed approaches either partition scenes
-    into isolated regions, causing global inconsistency, or rely on global Gaussian-level
-    exchanges, which lead to substantial growth in inter-GPU communication and quickly dominate
-    iteration time. We propose Splaxel, a communication-efficient distributed 3DGS training
-    framework based on pixel-level local rendering and global composition. Instead of synchronizing
-    Gaussians, each GPU renders its local subset and exchanges only partial pixel values,
-    maintaining mathematical consistency while keeping communication cost stable as the scene
-    size increases. Splaxel further reduces pixel-level redundancy through geometric and transmittance
-    visibility prediction and improves GPU utilization via conflict-free camera-view consolidation.
-    Evaluated on large-scale datasets with up to 120M Gaussians, Splaxel achieves up to 7.6×
-    speedup over the state-of-the-art distributed 3DGS framework while preserving high reconstruction
-    quality.
+  abstract: >
+    3D Gaussian Splatting (3DGS) enables high-fidelity and real-time 3D scene
+    reconstruction, but scaling training to large-scale scenes requires optimizing
+    hundreds of millions of Gaussians across multiple GPUs. Existing distributed
+    approaches either partition scenes into isolated regions, causing global
+    inconsistency, or rely on global Gaussian-level exchanges, which lead to
+    substantial growth in inter-GPU communication and quickly dominate iteration
+    time. We propose Splaxel, a communication-efficient distributed 3DGS training
+    framework based on pixel-level local rendering and global composition. Instead
+    of synchronizing Gaussians, each GPU renders its local subset and exchanges only
+    partial pixel values, maintaining mathematical consistency while keeping
+    communication cost stable as the scene size increases. Splaxel further reduces
+    pixel-level redundancy through geometric and transmittance visibility prediction
+    and improves GPU utilization via conflict-free camera-view consolidation.
+    Evaluated on large-scale datasets with up to 120M Gaussians, Splaxel achieves up
+    to 7.6$\times$ speedup over the state-of-the-art distributed 3DGS framework
+    while preserving high reconstruction quality.
   project_page: null
-  paper: https://arxiv.org/pdf/2606.18588
+  paper: https://arxiv.org/pdf/2606.18588.pdf
   code: null
   video: null
   tags:
