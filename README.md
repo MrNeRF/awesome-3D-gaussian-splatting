@@ -144,6 +144,9 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [AURA](https://github.com/Archerkattri/aura) - Calibrated per-splat confidence for 3DGS assets: held-out reliability labels, isotonic calibration, and a distribution-free conformal pruning certificate with a certified LOD ladder; exports via glTF/OpenUSD/SPZ (pip install aura-splat)
 - [Open Reality](https://github.com/reality-opened/openreality) - Phone video to a 3D scene (VGGT-SLAM based, splat export with optional gsplat refinement) that an AI assistant can query over MCP: measurements, floor and wall planes, path planning, object list, robot-training exports; self-hostable
 
+- [COLMAP Model Audit](https://github.com/Afloat16/colmap-model-audit) - Offline legacy COLMAP text-model checks for reciprocal tracks, connectivity and supported pinhole reprojection, before using camera inputs for reconstruction or splatting
+- [Pose Convention Bridge](https://github.com/Afloat16/pose-convention-bridge) - Explicit OpenCV/OpenGL and camera-to-world/world-to-camera pose conversion from COLMAP, TUM or JSON, with Nerfstudio camera export
+
 ### Development Tools
 
 - [GSOPs for Houdini](https://github.com/cgnomads/GSOPs) - Houdini integration tools
