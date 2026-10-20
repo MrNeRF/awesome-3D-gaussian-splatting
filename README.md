@@ -27,6 +27,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 
 - [MIT Inverse Rendering Lectures (Module 2)](https://www.scenerepresentations.org/courses/inverse-graphics-23/) - Academic deep dive into inverse rendering
 - [3DGS Tutorial](https://3dgstutorial.github.io/) - Tutorial from the authors of the original 3DGS paper
+- [Gaussian Splats in Three.js: Native Renderer and Spark Tested](https://digitalgarden.si/blog/gaussian-splats-threejs/) - Practical loading, SPZ v4, cropping and mesh-compositing checks using an owned synthetic fixture.
 
 ### Datasets
 
