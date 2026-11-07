@@ -125,6 +125,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [VR Support (OpenXR)](https://github.com/hyperlogic/splatapult)
 - [ROS2 Support](https://github.com/shadygm/ROSplat)
 - [Splat Local](https://github.com/michael-L-i/splat-local) - Video-to-3DGS pipeline running fully locally on Apple Silicon (COLMAP/GLOMAP poses, Metal-native training via Brush), with training checkpoints streamed live into a browser viewer
+- [Immuch360](https://github.com/freeKC/Immuch360) - Splat viewer for Android, Windows, Linux, macOS and Meta Quest 3 and 3S, and a Windows maker of splat scenes from photos or a video (COLMAP poses, Brush training), all experimental
 
 ## Tools & Utilities
 
