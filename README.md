@@ -31,6 +31,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 ### Datasets
 
 - [NERDS 360 Multi-View dataset](https://zubair-irshad.github.io/projects/neo360.html) - High-quality outdoor scene dataset
+- [FUNES Open 3D Architecture Dataset](https://funes.world/datasets/open-3d-architecture) - 10,594 multi-view photos across 20 buildings in 6 countries (<1h capture per site) with COLMAP poses and reference OBJ/PLY meshes (CC BY-NC 4.0)
 
 ## Implementations
 
