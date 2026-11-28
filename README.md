@@ -94,6 +94,7 @@ Visit our comprehensive, searchable database of 3D Gaussian Splatting papers:
 - [A-Frame](https://github.com/quadjr/aframe-gaussian-splatting)
 - [splaTV](https://github.com/antimatter15/splaTV) - Viewer for 4D Gaussians, with a [live demo](http://antimatter15.com/splaTV/)
 - [WebRTC viewer](https://github.com/dylanebert/gaussian-viewer)
+- [XDReality SPZ Viewer](https://www.xdreality.ai/gaussian-splat-viewer) - Browser viewer for SPZ v2/v3 files and direct scene URLs, with a built-in sample.
 
 **WebGPU**
 
